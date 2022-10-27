@@ -1,0 +1,46 @@
+name: awake
+description: A neumorphic themed digital calculator which has keyboard and dark mode support
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+
+  android_alarm_manager_plus: ^2.1.0
+  flutter_inset_box_shadow: ^1.0.8
+  flutter_native_splash: ^2.2.12
+  isar: ^3.0.2
+  isar_flutter_libs: ^3.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  isar_generator: ^3.0.2
+  build_runner: ^2.3.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/fonts/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+
+flutter_native_splash:
+  color: "#EEF0F5"
+  color_dark: "#363E46"
+  image: assets/icon.png
+  android_12:
+    image: assets/icon.png
+    color: "#EEF0F5"
+    image_dark: assets/icon.png
+    color_dark: "#363E46"
