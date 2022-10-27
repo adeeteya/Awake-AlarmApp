@@ -1,8 +1,7 @@
-import 'dart:isolate';
 import 'dart:math';
-import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:awake/constants.dart';
 import 'package:awake/models/alarm.dart';
+import 'package:awake/services/notification_service.dart';
 import 'package:awake/widgets/add_alarm.dart';
 import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
@@ -21,6 +20,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   late final Isar isar;
   late IsarCollection<Alarm> alarmsCollection;
+  NotificationService notificationService = NotificationService();
   List<Alarm> alarmsList = [];
 
   Future loadData() async {
@@ -30,6 +30,42 @@ class _HomeState extends State<Home> {
     FlutterNativeSplash.remove();
     if (mounted) {
       setState(() {});
+    }
+  }
+
+  Future setPeriodic(Alarm alarm) async {
+    List<DateTime> daysUpcoming = [
+      DateTime.now(),
+      DateTime.now().add(const Duration(days: 1)),
+      DateTime.now().add(const Duration(days: 2)),
+      DateTime.now().add(const Duration(days: 3)),
+      DateTime.now().add(const Duration(days: 4)),
+      DateTime.now().add(const Duration(days: 5)),
+      DateTime.now().add(const Duration(days: 6)),
+    ];
+    for (int i = 0; i < 7; i++) {
+      if (alarm.repeatDays![i] == true) {
+        DateTime matchingDay;
+        if (i == 0) {
+          //for sunday
+          matchingDay =
+              daysUpcoming.firstWhere((element) => element.weekday == 7);
+        } else {
+          matchingDay =
+              daysUpcoming.firstWhere((element) => element.weekday == i);
+        }
+        await notificationService.showWeeklyRepeatNotification(
+          int.parse("${i + 2}${alarm.id}"),
+          DateTime(matchingDay.year, matchingDay.month, matchingDay.day,
+              alarm.hour, alarm.minute),
+        );
+      }
+    }
+  }
+
+  Future cancelPeriodic(int id) async {
+    for (int i = 2; i <= 9; i++) {
+      notificationService.cancelNotification(int.parse("$i$id"));
     }
   }
 
@@ -63,8 +99,8 @@ class _HomeState extends State<Home> {
       setState(() {
         alarmsList.add(newAlarm);
       });
-      //create an alarm notification for that particular day
-      setAlarm(newAlarm);
+      notificationService.showScheduledNotification(
+          newAlarm.id, newAlarm.dateTime!);
     } else if (weekDaySelectedList.every((element) => element == false)) {
       //no repeat day selected error handling
       return;
@@ -78,22 +114,7 @@ class _HomeState extends State<Home> {
       setState(() {
         alarmsList.add(newAlarm);
       });
-      //create recurring alarm notification
-    }
-  }
-
-  @pragma('vm:entry-point')
-  static void printHello() {
-    final DateTime now = DateTime.now();
-    final int isolateId = Isolate.current.hashCode;
-  }
-
-  Future setAlarm(Alarm alarm) async {
-    if (alarm.repeat) {
-      //periodic
-    } else {
-      await AndroidAlarmManager.oneShotAt(alarm.dateTime!, alarm.id, printHello,
-          alarmClock: true, wakeup: true, rescheduleOnReboot: true);
+      setPeriodic(newAlarm);
     }
   }
 
@@ -101,9 +122,18 @@ class _HomeState extends State<Home> {
     await isar.writeTxn(() async {
       alarm.isTurnedOn = isTurnedOn;
       if (isTurnedOn) {
-        //setAlarm
+        if (alarm.repeat) {
+          setPeriodic(alarm);
+        } else {
+          notificationService.showScheduledNotification(
+              alarm.id, alarm.dateTime!);
+        }
       } else {
-        AndroidAlarmManager.cancel(alarm.id);
+        if (alarm.repeat) {
+          cancelPeriodic(alarm.id);
+        } else {
+          notificationService.cancelNotification(int.parse("1${alarm.id}"));
+        }
       }
       await isar.alarms.put(alarm);
       setState(() {});
@@ -116,10 +146,14 @@ class _HomeState extends State<Home> {
       isSuccessful = await isar.alarms.delete(alarm.id);
     });
     if (isSuccessful) {
+      if (alarm.repeat) {
+        cancelPeriodic(alarm.id);
+      } else {
+        notificationService.cancelNotification(int.parse("1${alarm.id}"));
+      }
       setState(() {
         alarmsList.remove(alarm);
       });
-      AndroidAlarmManager.cancel(alarm.id);
     } else {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content: Text("Unable To Delete, Some Unknown Error Ocurred")));

@@ -8,11 +8,12 @@ dependencies:
   flutter:
     sdk: flutter
 
-  android_alarm_manager_plus: ^2.1.0
   flutter_inset_box_shadow: ^1.0.8
+  flutter_local_notifications: ^12.0.3
   flutter_native_splash: ^2.2.12
   isar: ^3.0.2
   isar_flutter_libs: ^3.0.2
+  timezone: ^0.9.0
 
 dev_dependencies:
   flutter_test:

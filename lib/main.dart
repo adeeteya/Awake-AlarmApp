@@ -1,14 +1,22 @@
-import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:awake/constants.dart';
 import 'package:awake/screens/home.dart';
+import 'package:awake/services/notification_service.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+
+const AndroidInitializationSettings initializationSettingsAndroid =
+    AndroidInitializationSettings('app_icon');
+const InitializationSettings initializationSettings =
+    InitializationSettings(android: initializationSettingsAndroid);
 
 void main() async {
   final WidgetsBinding widgetsBinding =
       WidgetsFlutterBinding.ensureInitialized();
+
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  await AndroidAlarmManager.initialize();
+  await NotificationService().init();
+
   runApp(const MyApp());
 }
 
