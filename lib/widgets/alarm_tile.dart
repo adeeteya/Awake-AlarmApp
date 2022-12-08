@@ -14,72 +14,26 @@ class AlarmTile extends StatelessWidget {
       : super(key: key);
 
   Widget repeatDayText(bool isDark) {
-    return Text.rich(
-      TextSpan(
-        text: "S ",
+    return DefaultTextStyle(
+      style: const TextStyle(
+        fontFamily: 'Poppins',
+        fontSize: 12,
+        letterSpacing: 0.03,
+      ),
+      child: Row(
         children: [
-          TextSpan(
-            text: "M ",
-            children: [
-              TextSpan(
-                text: "T ",
-                children: [
-                  TextSpan(
-                    text: "W ",
-                    children: [
-                      TextSpan(
-                        text: "T ",
-                        children: [
-                          TextSpan(
-                            text: "F ",
-                            children: [
-                              TextSpan(
-                                text: "S ",
-                                style: TextStyle(
-                                  color: (alarm.repeatDays![6] == true)
-                                      ? const Color(0xFFFD251E)
-                                      : (isDark)
-                                          ? const Color(0xFF8E98A1)
-                                          : const Color(0xFF646E82),
-                                ),
-                              ),
-                            ],
-                            style: TextStyle(
-                              color: (alarm.repeatDays![5] == true)
-                                  ? const Color(0xFFFD251E)
-                                  : (isDark)
-                                      ? const Color(0xFF8E98A1)
-                                      : const Color(0xFF646E82),
-                            ),
-                          ),
-                        ],
-                        style: TextStyle(
-                          color: (alarm.repeatDays![4] == true)
-                              ? const Color(0xFFFD251E)
-                              : (isDark)
-                                  ? const Color(0xFF8E98A1)
-                                  : const Color(0xFF646E82),
-                        ),
-                      ),
-                    ],
-                    style: TextStyle(
-                      color: (alarm.repeatDays![3] == true)
-                          ? const Color(0xFFFD251E)
-                          : (isDark)
-                              ? const Color(0xFF8E98A1)
-                              : const Color(0xFF646E82),
-                    ),
-                  ),
-                ],
-                style: TextStyle(
-                  color: (alarm.repeatDays![2] == true)
-                      ? const Color(0xFFFD251E)
-                      : (isDark)
-                          ? const Color(0xFF8E98A1)
-                          : const Color(0xFF646E82),
-                ),
-              ),
-            ],
+          Text(
+            "S ",
+            style: TextStyle(
+              color: (alarm.repeatDays![0] == true)
+                  ? const Color(0xFFFD251E)
+                  : (isDark)
+                      ? const Color(0xFF8E98A1)
+                      : const Color(0xFF646E82),
+            ),
+          ),
+          Text(
+            "M ",
             style: TextStyle(
               color: (alarm.repeatDays![1] == true)
                   ? const Color(0xFFFD251E)
@@ -88,21 +42,148 @@ class AlarmTile extends StatelessWidget {
                       : const Color(0xFF646E82),
             ),
           ),
+          Text(
+            "T ",
+            style: TextStyle(
+              color: (alarm.repeatDays![2] == true)
+                  ? const Color(0xFFFD251E)
+                  : (isDark)
+                      ? const Color(0xFF8E98A1)
+                      : const Color(0xFF646E82),
+            ),
+          ),
+          Text(
+            "W ",
+            style: TextStyle(
+              color: (alarm.repeatDays![3] == true)
+                  ? const Color(0xFFFD251E)
+                  : (isDark)
+                      ? const Color(0xFF8E98A1)
+                      : const Color(0xFF646E82),
+            ),
+          ),
+          Text(
+            "T ",
+            style: TextStyle(
+              color: (alarm.repeatDays![4] == true)
+                  ? const Color(0xFFFD251E)
+                  : (isDark)
+                      ? const Color(0xFF8E98A1)
+                      : const Color(0xFF646E82),
+            ),
+          ),
+          Text(
+            "F ",
+            style: TextStyle(
+              color: (alarm.repeatDays![5] == true)
+                  ? const Color(0xFFFD251E)
+                  : (isDark)
+                      ? const Color(0xFF8E98A1)
+                      : const Color(0xFF646E82),
+            ),
+          ),
+          Text(
+            "S ",
+            style: TextStyle(
+              color: (alarm.repeatDays![6] == true)
+                  ? const Color(0xFFFD251E)
+                  : (isDark)
+                      ? const Color(0xFF8E98A1)
+                      : const Color(0xFF646E82),
+            ),
+          ),
         ],
-        style: TextStyle(
-          color: (alarm.repeatDays![0] == true)
-              ? const Color(0xFFFD251E)
-              : (isDark)
-                  ? const Color(0xFF8E98A1)
-                  : const Color(0xFF646E82),
-        ),
-      ),
-      style: const TextStyle(
-        fontFamily: 'Poppins',
-        fontSize: 12,
-        letterSpacing: 0.03,
       ),
     );
+    // return Text.rich(
+    //   TextSpan(
+    //     text: "S ",
+    //     children: [
+    //       TextSpan(
+    //         text: "M ",
+    //         children: [
+    //           TextSpan(
+    //             text: "T ",
+    //             children: [
+    //               TextSpan(
+    //                 text: "W ",
+    //                 children: [
+    //                   TextSpan(
+    //                     text: "T ",
+    //                     children: [
+    //                       TextSpan(
+    //                         text: "F ",
+    //                         children: [
+    //                           TextSpan(
+    //                             text: "S ",
+    //                             style: TextStyle(
+    //                               color: (alarm.repeatDays![6] == true)
+    //                                   ? const Color(0xFFFD251E)
+    //                                   : (isDark)
+    //                                       ? const Color(0xFF8E98A1)
+    //                                       : const Color(0xFF646E82),
+    //                             ),
+    //                           ),
+    //                         ],
+    //                         style: TextStyle(
+    //                           color: (alarm.repeatDays![5] == true)
+    //                               ? const Color(0xFFFD251E)
+    //                               : (isDark)
+    //                                   ? const Color(0xFF8E98A1)
+    //                                   : const Color(0xFF646E82),
+    //                         ),
+    //                       ),
+    //                     ],
+    //                     style: TextStyle(
+    //                       color: (alarm.repeatDays![4] == true)
+    //                           ? const Color(0xFFFD251E)
+    //                           : (isDark)
+    //                               ? const Color(0xFF8E98A1)
+    //                               : const Color(0xFF646E82),
+    //                     ),
+    //                   ),
+    //                 ],
+    //                 style: TextStyle(
+    //                   color: (alarm.repeatDays![3] == true)
+    //                       ? const Color(0xFFFD251E)
+    //                       : (isDark)
+    //                           ? const Color(0xFF8E98A1)
+    //                           : const Color(0xFF646E82),
+    //                 ),
+    //               ),
+    //             ],
+    //             style: TextStyle(
+    //               color: (alarm.repeatDays![2] == true)
+    //                   ? const Color(0xFFFD251E)
+    //                   : (isDark)
+    //                       ? const Color(0xFF8E98A1)
+    //                       : const Color(0xFF646E82),
+    //             ),
+    //           ),
+    //         ],
+    //         style: TextStyle(
+    //           color: (alarm.repeatDays![1] == true)
+    //               ? const Color(0xFFFD251E)
+    //               : (isDark)
+    //                   ? const Color(0xFF8E98A1)
+    //                   : const Color(0xFF646E82),
+    //         ),
+    //       ),
+    //     ],
+    //     style: TextStyle(
+    //       color: (alarm.repeatDays![0] == true)
+    //           ? const Color(0xFFFD251E)
+    //           : (isDark)
+    //               ? const Color(0xFF8E98A1)
+    //               : const Color(0xFF646E82),
+    //     ),
+    //   ),
+    //   style: const TextStyle(
+    //     fontFamily: 'Poppins',
+    //     fontSize: 12,
+    //     letterSpacing: 0.03,
+    //   ),
+    // );
   }
 
   String weekDayHelper(int pos) {

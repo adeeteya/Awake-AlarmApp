@@ -144,20 +144,21 @@ class _HomeState extends State<Home> {
     bool isSuccessful = false;
     await isar.writeTxn(() async {
       isSuccessful = await isar.alarms.delete(alarm.id);
-    });
-    if (isSuccessful) {
-      if (alarm.repeat) {
-        cancelPeriodic(alarm.id);
+    }).then((value) {
+      if (isSuccessful) {
+        if (alarm.repeat) {
+          cancelPeriodic(alarm.id);
+        } else {
+          notificationService.cancelNotification(int.parse("1${alarm.id}"));
+        }
+        setState(() {
+          alarmsList.remove(alarm);
+        });
       } else {
-        notificationService.cancelNotification(int.parse("1${alarm.id}"));
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text("Unable To Delete, Some Unknown Error Ocurred")));
       }
-      setState(() {
-        alarmsList.remove(alarm);
-      });
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-          content: Text("Unable To Delete, Some Unknown Error Ocurred")));
-    }
+    });
   }
 
   @override

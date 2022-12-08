@@ -59,7 +59,7 @@ const AlarmSchema = CollectionSchema(
   getId: _alarmGetId,
   getLinks: _alarmGetLinks,
   attach: _alarmAttach,
-  version: '3.0.2',
+  version: '3.0.5',
 );
 
 int _alarmEstimateSize(
