@@ -1,21 +1,12 @@
+import 'package:alarm/alarm.dart';
 import 'package:awake/constants.dart';
 import 'package:awake/screens/home.dart';
-import 'package:awake/services/notification_service.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
-
-const AndroidInitializationSettings initializationSettingsAndroid =
-    AndroidInitializationSettings('app_icon');
-const InitializationSettings initializationSettings =
-    InitializationSettings(android: initializationSettingsAndroid);
 
 void main() async {
-  final WidgetsBinding widgetsBinding =
-      WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
 
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  await NotificationService().init();
+  await Alarm.init();
 
   runApp(const MyApp());
 }
@@ -31,7 +22,9 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: ThemeData(
         colorSchemeSeed: primaryColor,
-        dialogBackgroundColor: lightScaffoldGradient1Color,
+        dialogTheme: DialogThemeData(
+          backgroundColor: lightScaffoldGradient1Color,
+        ),
         timePickerTheme: const TimePickerThemeData(
           backgroundColor: lightScaffoldGradient1Color,
           hourMinuteTextColor: lightBackgroundTextColor,
@@ -46,7 +39,9 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData(
         colorSchemeSeed: primaryAlternateColor,
-        dialogBackgroundColor: darkScaffoldGradient1Color,
+        dialogTheme: DialogThemeData(
+          backgroundColor: darkScaffoldGradient1Color,
+        ),
         timePickerTheme: const TimePickerThemeData(
           backgroundColor: darkScaffoldGradient2Color,
           hourMinuteTextColor: darkBackgroundTextColor,

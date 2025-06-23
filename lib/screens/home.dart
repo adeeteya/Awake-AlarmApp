@@ -1,181 +1,89 @@
+import 'dart:async';
 import 'dart:math';
+import 'package:alarm/alarm.dart';
+import 'package:alarm/utils/alarm_set.dart';
 import 'package:awake/constants.dart';
-import 'package:awake/models/alarm.dart';
-import 'package:awake/services/notification_service.dart';
+import 'package:awake/services/alarm_permissions.dart';
+import 'package:awake/services/alarm_service.dart';
 import 'package:awake/widgets/add_alarm.dart';
 import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
-import 'package:awake/widgets/weekday_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:isar/isar.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-  late final Isar isar;
-  late IsarCollection<Alarm> alarmsCollection;
-  NotificationService notificationService = NotificationService();
-  List<Alarm> alarmsList = [];
+  List<AlarmSettings> _alarms = [];
+  final _alarmService = AlarmService();
+  static StreamSubscription<AlarmSet>? _ringSubscription;
+  static StreamSubscription<AlarmSet>? _updateSubscription;
 
-  Future loadData() async {
-    isar = await Isar.open([AlarmSchema]);
-    alarmsCollection = isar.alarms;
-    alarmsList = await alarmsCollection.where().findAll();
-    FlutterNativeSplash.remove();
-    if (mounted) {
-      setState(() {});
-    }
+  Future<void> _loadAlarms() async {
+    final updatedAlarms = await Alarm.getAlarms();
+    updatedAlarms.sort((a, b) => a.dateTime.isBefore(b.dateTime) ? 0 : 1);
+    setState(() {
+      _alarms = updatedAlarms;
+    });
   }
 
-  Future setPeriodic(Alarm alarm) async {
-    List<DateTime> daysUpcoming = [
-      DateTime.now(),
-      DateTime.now().add(const Duration(days: 1)),
-      DateTime.now().add(const Duration(days: 2)),
-      DateTime.now().add(const Duration(days: 3)),
-      DateTime.now().add(const Duration(days: 4)),
-      DateTime.now().add(const Duration(days: 5)),
-      DateTime.now().add(const Duration(days: 6)),
-    ];
-    for (int i = 0; i < 7; i++) {
-      if (alarm.repeatDays![i] == true) {
-        DateTime matchingDay;
-        if (i == 0) {
-          //for sunday
-          matchingDay =
-              daysUpcoming.firstWhere((element) => element.weekday == 7);
-        } else {
-          matchingDay =
-              daysUpcoming.firstWhere((element) => element.weekday == i);
-        }
-        await notificationService.showWeeklyRepeatNotification(
-          int.parse("${i + 2}${alarm.id}"),
-          DateTime(matchingDay.year, matchingDay.month, matchingDay.day,
-              alarm.hour, alarm.minute),
-        );
-      }
-    }
+  Future<void> _ringingAlarmsChanged(AlarmSet alarms) async {
+    debugPrint("Ringing Alarms Changed: $alarms");
   }
 
-  Future cancelPeriodic(int id) async {
-    for (int i = 2; i <= 9; i++) {
-      notificationService.cancelNotification(int.parse("$i$id"));
-    }
-  }
-
-  Future addAlarm() async {
+  Future<void> _addAlarm() async {
     TimeOfDay? timeOfDay = await showTimePicker(
       context: context,
       initialTime: TimeOfDay.now(),
       helpText: "Set Alarm Time",
-      confirmText: "Next",
+      confirmText: "Confirm",
     );
-    if (timeOfDay == null) return;
-    List<bool>? weekDaySelectedList = await weekDayPicker(context: context);
-    if (weekDaySelectedList == null) {
-      DateTime? dateTime = await showDatePicker(
-        context: context,
-        initialDate: DateTime.now(),
-        firstDate: DateTime.now(),
-        lastDate: DateTime.now().add(const Duration(days: 365)),
-        helpText: "Select Alarm Date",
-        confirmText: "Set Alarm",
+    if (timeOfDay != null && mounted) {
+      await _alarmService.setAlarm(
+        _alarms.length + 1,
+        DateTime.now().copyWith(hour: timeOfDay.hour, minute: timeOfDay.minute),
       );
-      if (dateTime == null) return;
-      //insert into db
-      dateTime = dateTime
-          .add(Duration(hours: timeOfDay.hour, minutes: timeOfDay.minute));
-      Alarm newAlarm = Alarm(timeOfDay.hour, timeOfDay.minute,
-          dateTime: dateTime, repeat: false);
-      await isar.writeTxn(() async {
-        await isar.alarms.put(newAlarm);
-      });
-      setState(() {
-        alarmsList.add(newAlarm);
-      });
-      notificationService.showScheduledNotification(
-          newAlarm.id, newAlarm.dateTime!);
-    } else if (weekDaySelectedList.every((element) => element == false)) {
-      //no repeat day selected error handling
-      return;
-    } else {
-      //insert into db
-      Alarm newAlarm = Alarm(timeOfDay.hour, timeOfDay.minute,
-          repeatDays: weekDaySelectedList);
-      await isar.writeTxn(() async {
-        await isar.alarms.put(newAlarm);
-      });
-      setState(() {
-        alarmsList.add(newAlarm);
-      });
-      setPeriodic(newAlarm);
+      unawaited(_loadAlarms());
     }
   }
 
-  Future updateAlarmState(Alarm alarm, bool isTurnedOn) async {
-    await isar.writeTxn(() async {
-      alarm.isTurnedOn = isTurnedOn;
-      if (isTurnedOn) {
-        if (alarm.repeat) {
-          setPeriodic(alarm);
-        } else {
-          notificationService.showScheduledNotification(
-              alarm.id, alarm.dateTime!);
-        }
-      } else {
-        if (alarm.repeat) {
-          cancelPeriodic(alarm.id);
-        } else {
-          notificationService.cancelNotification(int.parse("1${alarm.id}"));
-        }
-      }
-      await isar.alarms.put(alarm);
-      setState(() {});
-    });
-  }
-
-  Future deleteAlarm(Alarm alarm) async {
-    bool isSuccessful = false;
-    await isar.writeTxn(() async {
-      isSuccessful = await isar.alarms.delete(alarm.id);
-    }).then((value) {
-      if (isSuccessful) {
-        if (alarm.repeat) {
-          cancelPeriodic(alarm.id);
-        } else {
-          notificationService.cancelNotification(int.parse("1${alarm.id}"));
-        }
-        setState(() {
-          alarmsList.remove(alarm);
-        });
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-            content: Text("Unable To Delete, Some Unknown Error Ocurred")));
-      }
-    });
+  Future<void> _deleteAlarm(int id) async {
+    await _alarmService.cancelAlarm(id);
   }
 
   @override
   void initState() {
-    loadData();
     super.initState();
+    AlarmPermissions.checkNotificationPermission().then(
+      (_) => AlarmPermissions.checkAndroidScheduleExactAlarmPermission(),
+    );
+    unawaited(_loadAlarms());
+    _ringSubscription ??= Alarm.ringing.listen(_ringingAlarmsChanged);
+    _updateSubscription ??= Alarm.scheduled.listen((_) {
+      unawaited(_loadAlarms());
+    });
+  }
+
+  @override
+  void dispose() {
+    _ringSubscription?.cancel();
+    _updateSubscription?.cancel();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final bool isDark =
-        MediaQuery.of(context).platformBrightness == Brightness.dark;
+        MediaQuery.platformBrightnessOf(context) == Brightness.dark;
 
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: GestureDetector(
-        onTap: addAlarm,
+        onTap: _addAlarm,
         child: const AddAlarmButton(),
       ),
       body: DecoratedBox(
@@ -183,9 +91,13 @@ class _HomeState extends State<Home> {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: (isDark)
-                ? [darkScaffoldGradient1Color, darkScaffoldGradient2Color]
-                : [lightScaffoldGradient1Color, lightScaffoldGradient2Color],
+            colors:
+                (isDark)
+                    ? [darkScaffoldGradient1Color, darkScaffoldGradient2Color]
+                    : [
+                      lightScaffoldGradient1Color,
+                      lightScaffoldGradient2Color,
+                    ],
           ),
         ),
         child: SafeArea(
@@ -194,8 +106,10 @@ class _HomeState extends State<Home> {
               Expanded(
                 child: LayoutBuilder(
                   builder: (context, constraints) {
-                    double radius =
-                        min(constraints.maxHeight, constraints.maxWidth);
+                    double radius = min(
+                      constraints.maxHeight,
+                      constraints.maxWidth,
+                    );
                     return Container(
                       height: radius,
                       width: radius,
@@ -204,60 +118,67 @@ class _HomeState extends State<Home> {
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
-                          colors: (isDark)
-                              ? [
-                                  const Color(0xFF3E464F),
-                                  const Color(0xFF424A53),
-                                ]
-                              : [
-                                  const Color(0xFFF1F2F7),
-                                  const Color(0xFFECEEF3),
-                                ],
+                          colors:
+                              (isDark)
+                                  ? [
+                                    const Color(0xFF3E464F),
+                                    const Color(0xFF424A53),
+                                  ]
+                                  : [
+                                    const Color(0xFFF1F2F7),
+                                    const Color(0xFFECEEF3),
+                                  ],
                         ),
-                        boxShadow: (isDark)
-                            ? [
-                                BoxShadow(
-                                  offset: const Offset(19, 25),
-                                  blurRadius: 92,
-                                  spreadRadius: -32,
-                                  color:
-                                      const Color(0xFF23282D).withOpacity(0.35),
-                                ),
-                                BoxShadow(
-                                  offset: const Offset(-20, -20),
-                                  blurRadius: 61,
-                                  color:
-                                      const Color(0xFF48535C).withOpacity(0.25),
-                                ),
-                                BoxShadow(
-                                  offset: const Offset(13, 14),
-                                  blurRadius: 12,
-                                  spreadRadius: -6,
-                                  color:
-                                      const Color(0xFF23282D).withOpacity(0.50),
-                                ),
-                              ]
-                            : [
-                                BoxShadow(
-                                  offset: const Offset(19, 25),
-                                  blurRadius: 92,
-                                  spreadRadius: -32,
-                                  color:
-                                      const Color(0xFFA6B4C8).withOpacity(0.45),
-                                ),
-                                BoxShadow(
-                                  offset: const Offset(-20, -20),
-                                  blurRadius: 61,
-                                  color: Colors.white.withOpacity(0.53),
-                                ),
-                                BoxShadow(
-                                  offset: const Offset(13, 14),
-                                  blurRadius: 12,
-                                  spreadRadius: -6,
-                                  color:
-                                      const Color(0xFFA6B4C8).withOpacity(0.57),
-                                ),
-                              ],
+                        boxShadow:
+                            (isDark)
+                                ? [
+                                  BoxShadow(
+                                    offset: const Offset(19, 25),
+                                    blurRadius: 92,
+                                    spreadRadius: -32,
+                                    color: const Color(
+                                      0xFF23282D,
+                                    ).withValues(alpha: 0.35),
+                                  ),
+                                  BoxShadow(
+                                    offset: const Offset(-20, -20),
+                                    blurRadius: 61,
+                                    color: const Color(
+                                      0xFF48535C,
+                                    ).withValues(alpha: 0.25),
+                                  ),
+                                  BoxShadow(
+                                    offset: const Offset(13, 14),
+                                    blurRadius: 12,
+                                    spreadRadius: -6,
+                                    color: const Color(
+                                      0xFF23282D,
+                                    ).withValues(alpha: 0.50),
+                                  ),
+                                ]
+                                : [
+                                  BoxShadow(
+                                    offset: const Offset(19, 25),
+                                    blurRadius: 92,
+                                    spreadRadius: -32,
+                                    color: const Color(
+                                      0xFFA6B4C8,
+                                    ).withValues(alpha: 0.45),
+                                  ),
+                                  BoxShadow(
+                                    offset: const Offset(-20, -20),
+                                    blurRadius: 61,
+                                    color: Colors.white.withValues(alpha: 0.53),
+                                  ),
+                                  BoxShadow(
+                                    offset: const Offset(13, 14),
+                                    blurRadius: 12,
+                                    spreadRadius: -6,
+                                    color: const Color(
+                                      0xFFA6B4C8,
+                                    ).withValues(alpha: 0.57),
+                                  ),
+                                ],
                         shape: BoxShape.circle,
                       ),
                       child: Transform.rotate(
@@ -272,8 +193,10 @@ class _HomeState extends State<Home> {
                 flex: 2,
                 child: Container(
                   width: double.infinity,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 24,
+                  ),
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: (isDark) ? const Color(0xFF5D666D) : Colors.white,
@@ -285,75 +208,79 @@ class _HomeState extends State<Home> {
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: (isDark)
-                          ? [
-                              darkScaffoldGradient1Color,
-                              darkScaffoldGradient2Color,
-                            ]
-                          : [
-                              lightContainerGradient1Color,
-                              lightContainerGradient2Color
-                            ],
+                      colors:
+                          (isDark)
+                              ? [
+                                darkScaffoldGradient1Color,
+                                darkScaffoldGradient2Color,
+                              ]
+                              : [
+                                lightContainerGradient1Color,
+                                lightContainerGradient2Color,
+                              ],
                     ),
                   ),
-                  child: (alarmsList.isEmpty)
-                      ? Center(
-                          child: Text(
-                            "No Alarms Added Yet",
-                            style: TextStyle(
-                              color: (isDark)
-                                  ? const Color(0xFF8E98A1)
-                                  : const Color(0xFF646E82),
-                              fontFamily: 'Poppins',
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500,
-                              letterSpacing: 0.03,
-                            ),
-                          ),
-                        )
-                      : ListView(
-                          physics: const BouncingScrollPhysics(),
-                          children: [
-                            Row(
-                              children: [
-                                const SizedBox(width: 15),
-                                Text(
-                                  "Alarms",
-                                  style: TextStyle(
-                                    color: (isDark)
+                  child:
+                      (_alarms.isEmpty)
+                          ? Center(
+                            child: Text(
+                              "No Alarms Added Yet",
+                              style: TextStyle(
+                                color:
+                                    (isDark)
                                         ? const Color(0xFF8E98A1)
                                         : const Color(0xFF646E82),
-                                    fontFamily: 'Poppins',
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w500,
-                                    letterSpacing: 0.03,
-                                  ),
-                                ),
-                                const Spacer(),
-                                Icon(
-                                  Icons.more_horiz_rounded,
-                                  color: (isDark)
-                                      ? const Color(0xFF8E98A1)
-                                      : const Color(0xFF646E82),
-                                ),
-                                const SizedBox(width: 15),
-                              ],
+                                fontFamily: 'Poppins',
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                letterSpacing: 0.03,
+                              ),
                             ),
-                            ...[
-                              for (int index = 0;
-                                  index < alarmsList.length;
-                                  index++)
-                                AlarmTile(
-                                  alarm: alarmsList[index],
-                                  onChanged: (val) {
-                                    updateAlarmState(alarmsList[index], val);
-                                  },
-                                  onDelete: () =>
-                                      deleteAlarm(alarmsList[index]),
-                                ),
+                          )
+                          : ListView(
+                            physics: const BouncingScrollPhysics(),
+                            children: [
+                              Row(
+                                children: [
+                                  const SizedBox(width: 15),
+                                  Text(
+                                    "Alarms",
+                                    style: TextStyle(
+                                      color:
+                                          (isDark)
+                                              ? const Color(0xFF8E98A1)
+                                              : const Color(0xFF646E82),
+                                      fontFamily: 'Poppins',
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500,
+                                      letterSpacing: 0.03,
+                                    ),
+                                  ),
+                                  const Spacer(),
+                                  Icon(
+                                    Icons.more_horiz_rounded,
+                                    color:
+                                        (isDark)
+                                            ? const Color(0xFF8E98A1)
+                                            : const Color(0xFF646E82),
+                                  ),
+                                  const SizedBox(width: 15),
+                                ],
+                              ),
+                              ...[
+                                for (
+                                  int index = 0;
+                                  index < _alarms.length;
+                                  index++
+                                )
+                                  AlarmTile(
+                                    alarmSettings: _alarms[index],
+                                    onDelete:
+                                        () => _deleteAlarm(_alarms[index].id),
+                                  ),
+                              ],
                             ],
-                          ],
-                        ),
+                          ),
                 ),
               ),
             ],
