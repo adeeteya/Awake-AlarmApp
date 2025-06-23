@@ -43,10 +43,7 @@ class _HomeState extends State<Home> {
       confirmText: "Confirm",
     );
     if (timeOfDay != null && mounted) {
-      await _alarmService.setAlarm(
-        _alarms.length + 1,
-        DateTime.now().copyWith(hour: timeOfDay.hour, minute: timeOfDay.minute),
-      );
+      await _alarmService.setPeriodicAlarms(time: timeOfDay);
       unawaited(_loadAlarms());
     }
   }
@@ -238,7 +235,6 @@ class _HomeState extends State<Home> {
                             ),
                           )
                           : ListView(
-                            physics: const BouncingScrollPhysics(),
                             children: [
                               Row(
                                 children: [
