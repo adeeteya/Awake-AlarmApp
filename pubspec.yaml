@@ -10,6 +10,7 @@ dependencies:
   alarm: ^5.1.4
   flutter:
     sdk: flutter
+  flutter_bloc: ^9.1.1
   flutter_inset_box_shadow: ^1.0.8
   permission_handler: ^12.0.0+1
 

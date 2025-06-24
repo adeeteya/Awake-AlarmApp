@@ -1,12 +1,12 @@
-import 'package:alarm/alarm.dart';
+import 'package:awake/models/alarm_model.dart';
 import 'package:flutter/material.dart';
 
 class AlarmTile extends StatelessWidget {
-  final AlarmSettings alarmSettings;
+  final AlarmModel alarmModel;
   final VoidCallback onDelete;
   const AlarmTile({
     super.key,
-    required this.alarmSettings,
+    required this.alarmModel,
     required this.onDelete,
   });
 
@@ -74,7 +74,7 @@ class AlarmTile extends StatelessWidget {
         child: Row(
           children: [
             Text(
-              "${alarmSettings.dateTime.hour < 10 ? "0${alarmSettings.dateTime.hour}" : alarmSettings.dateTime.hour}:${alarmSettings.dateTime.minute < 10 ? "0${alarmSettings.dateTime.minute}" : alarmSettings.dateTime.minute}",
+              "${alarmModel.timeOfDay.hour < 10 ? "0${alarmModel.timeOfDay.hour}" : alarmModel.timeOfDay.hour}:${alarmModel.timeOfDay.minute < 10 ? "0${alarmModel.timeOfDay.minute}" : alarmModel.timeOfDay.minute}",
               style: TextStyle(
                 color:
                     (isDark)

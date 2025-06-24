@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'dart:math';
-import 'package:alarm/alarm.dart';
-import 'package:alarm/utils/alarm_set.dart';
 import 'package:awake/constants.dart';
+import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_permissions.dart';
-import 'package:awake/services/alarm_service.dart';
+import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/widgets/add_alarm.dart';
 import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -18,23 +18,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List<AlarmSettings> _alarms = [];
-  final _alarmService = AlarmService();
-  static StreamSubscription<AlarmSet>? _ringSubscription;
-  static StreamSubscription<AlarmSet>? _updateSubscription;
-
-  Future<void> _loadAlarms() async {
-    final updatedAlarms = await Alarm.getAlarms();
-    updatedAlarms.sort((a, b) => a.dateTime.isBefore(b.dateTime) ? 0 : 1);
-    setState(() {
-      _alarms = updatedAlarms;
-    });
-  }
-
-  Future<void> _ringingAlarmsChanged(AlarmSet alarms) async {
-    debugPrint("Ringing Alarms Changed: $alarms");
-  }
-
   Future<void> _addAlarm() async {
     TimeOfDay? timeOfDay = await showTimePicker(
       context: context,
@@ -43,13 +26,8 @@ class _HomeState extends State<Home> {
       confirmText: "Confirm",
     );
     if (timeOfDay != null && mounted) {
-      await _alarmService.setPeriodicAlarms(time: timeOfDay);
-      unawaited(_loadAlarms());
+      await context.read<AlarmCubit>().setPeriodicAlarms(timeOfDay: timeOfDay);
     }
-  }
-
-  Future<void> _deleteAlarm(int id) async {
-    await _alarmService.cancelAlarm(id);
   }
 
   @override
@@ -58,18 +36,6 @@ class _HomeState extends State<Home> {
     AlarmPermissions.checkNotificationPermission().then(
       (_) => AlarmPermissions.checkAndroidScheduleExactAlarmPermission(),
     );
-    unawaited(_loadAlarms());
-    _ringSubscription ??= Alarm.ringing.listen(_ringingAlarmsChanged);
-    _updateSubscription ??= Alarm.scheduled.listen((_) {
-      unawaited(_loadAlarms());
-    });
-  }
-
-  @override
-  void dispose() {
-    _ringSubscription?.cancel();
-    _updateSubscription?.cancel();
-    super.dispose();
   }
 
   @override
@@ -178,9 +144,11 @@ class _HomeState extends State<Home> {
                                 ],
                         shape: BoxShape.circle,
                       ),
-                      child: Transform.rotate(
-                        angle: -pi / 2,
-                        child: const ClockWidget(),
+                      child: RepaintBoundary(
+                        child: Transform.rotate(
+                          angle: -pi / 2,
+                          child: const ClockWidget(),
+                        ),
                       ),
                     );
                   },
@@ -188,12 +156,7 @@ class _HomeState extends State<Home> {
               ),
               Expanded(
                 flex: 2,
-                child: Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 24,
-                  ),
+                child: DecoratedBox(
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: (isDark) ? const Color(0xFF5D666D) : Colors.white,
@@ -217,66 +180,83 @@ class _HomeState extends State<Home> {
                               ],
                     ),
                   ),
-                  child:
-                      (_alarms.isEmpty)
-                          ? Center(
-                            child: Text(
-                              "No Alarms Added Yet",
-                              style: TextStyle(
-                                color:
-                                    (isDark)
-                                        ? const Color(0xFF8E98A1)
-                                        : const Color(0xFF646E82),
-                                fontFamily: 'Poppins',
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                letterSpacing: 0.03,
-                              ),
+                  child: BlocBuilder<AlarmCubit, List<AlarmModel>>(
+                    buildWhen: (previous, current) => previous != current,
+                    builder: (context, alarms) {
+                      if (alarms.isEmpty) {
+                        return Center(
+                          child: Text(
+                            "No Alarms Added Yet",
+                            style: TextStyle(
+                              color:
+                                  (isDark)
+                                      ? const Color(0xFF8E98A1)
+                                      : const Color(0xFF646E82),
+                              fontFamily: 'Poppins',
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 0.03,
                             ),
-                          )
-                          : ListView(
-                            children: [
-                              Row(
-                                children: [
-                                  const SizedBox(width: 15),
-                                  Text(
-                                    "Alarms",
-                                    style: TextStyle(
-                                      color:
-                                          (isDark)
-                                              ? const Color(0xFF8E98A1)
-                                              : const Color(0xFF646E82),
-                                      fontFamily: 'Poppins',
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w500,
-                                      letterSpacing: 0.03,
-                                    ),
-                                  ),
-                                  const Spacer(),
-                                  Icon(
-                                    Icons.more_horiz_rounded,
+                          ),
+                        );
+                      } else {
+                        return ListView(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 20,
+                            vertical: 24,
+                          ),
+                          children: [
+                            Row(
+                              children: [
+                                const SizedBox(width: 15),
+                                Text(
+                                  "Alarms",
+                                  style: TextStyle(
                                     color:
                                         (isDark)
                                             ? const Color(0xFF8E98A1)
                                             : const Color(0xFF646E82),
+                                    fontFamily: 'Poppins',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500,
+                                    letterSpacing: 0.03,
                                   ),
-                                  const SizedBox(width: 15),
-                                ],
-                              ),
-                              ...[
-                                for (
-                                  int index = 0;
-                                  index < _alarms.length;
-                                  index++
-                                )
-                                  AlarmTile(
-                                    alarmSettings: _alarms[index],
-                                    onDelete:
-                                        () => _deleteAlarm(_alarms[index].id),
+                                ),
+                                const Spacer(),
+                                IconButton(
+                                  onPressed: () {
+                                    //TODO: Navigate to settings page
+                                  },
+                                  style: IconButton.styleFrom(
+                                    foregroundColor:
+                                        (isDark)
+                                            ? const Color(0xFF8E98A1)
+                                            : const Color(0xFF646E82),
                                   ),
+                                  icon: Icon(Icons.settings),
+                                ),
+                                const SizedBox(width: 15),
                               ],
+                            ),
+                            ...[
+                              for (
+                                int index = 0;
+                                index < alarms.length;
+                                index++
+                              )
+                                AlarmTile(
+                                  alarmModel: alarms[index],
+                                  onDelete:
+                                      () => context
+                                          .read<AlarmCubit>()
+                                          .deleteAlarmModel(alarms[index]),
+                                ),
                             ],
-                          ),
+                          ],
+                        );
+                      }
+                    },
+                  ),
                 ),
               ),
             ],

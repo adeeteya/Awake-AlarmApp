@@ -1,7 +1,9 @@
 import 'package:alarm/alarm.dart';
 import 'package:awake/constants.dart';
 import 'package:awake/screens/home.dart';
+import 'package:awake/services/alarm_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -55,7 +57,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const Home(),
+      home: BlocProvider(create: (_) => AlarmCubit(), child: const Home()),
     );
   }
 }
