@@ -56,6 +56,17 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     return null;
   }
 
+  Future<void> snoozeAlarm({
+    required AlarmSettings alarmSettings,
+    int snoozeMinutes = 5,
+  }) async {
+    await Alarm.set(
+      alarmSettings: alarmSettings.copyWith(
+        dateTime: DateTime.now().add(Duration(minutes: snoozeMinutes)),
+      ),
+    );
+  }
+
   Future<void> setPeriodicAlarms({
     required TimeOfDay timeOfDay,
     List<int> days = const [
@@ -105,13 +116,13 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     }
   }
 
-  Future<void> _cancelAlarm(int id) async {
+  Future<void> stopAlarm(int id) async {
     await Alarm.stop(id);
   }
 
   Future<void> deleteAlarmModel(AlarmModel alarmModel) async {
     for (final alarm in alarmModel.alarmSettings) {
-      await _cancelAlarm(alarm.id);
+      await stopAlarm(alarm.id);
     }
     emit(state.where((e) => e != alarmModel).toList());
   }

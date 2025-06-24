@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
-import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
+import 'package:flutter_inset_box_shadow_update/flutter_inset_box_shadow_update.dart';
 
 class GradientSwitch extends StatefulWidget {
   final bool value;

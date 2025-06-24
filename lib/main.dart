@@ -18,46 +18,49 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Awake- The Alarm Clock',
-      themeMode: ThemeMode.system,
-      theme: ThemeData(
-        colorSchemeSeed: primaryColor,
-        dialogTheme: DialogThemeData(
-          backgroundColor: lightScaffoldGradient1Color,
-        ),
-        timePickerTheme: const TimePickerThemeData(
-          backgroundColor: lightScaffoldGradient1Color,
-          hourMinuteTextColor: lightBackgroundTextColor,
-          dayPeriodTextColor: lightBackgroundTextColor,
-          entryModeIconColor: lightBackgroundTextColor,
-          dialTextColor: lightBackgroundTextColor,
-          helpTextStyle: TextStyle(
-            color: darkBackgroundTextColor,
-            fontFamily: "Poppins",
+    return BlocProvider(
+      create: (_) => AlarmCubit(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Awake- The Alarm Clock',
+        themeMode: ThemeMode.system,
+        theme: ThemeData(
+          colorSchemeSeed: primaryColor,
+          dialogTheme: DialogThemeData(
+            backgroundColor: lightScaffoldGradient1Color,
+          ),
+          timePickerTheme: const TimePickerThemeData(
+            backgroundColor: lightScaffoldGradient1Color,
+            hourMinuteTextColor: lightBackgroundTextColor,
+            dayPeriodTextColor: lightBackgroundTextColor,
+            entryModeIconColor: lightBackgroundTextColor,
+            dialTextColor: lightBackgroundTextColor,
+            helpTextStyle: TextStyle(
+              color: darkBackgroundTextColor,
+              fontFamily: "Poppins",
+            ),
           ),
         ),
-      ),
-      darkTheme: ThemeData(
-        colorSchemeSeed: primaryAlternateColor,
-        dialogTheme: DialogThemeData(
-          backgroundColor: darkScaffoldGradient1Color,
-        ),
-        timePickerTheme: const TimePickerThemeData(
-          backgroundColor: darkScaffoldGradient2Color,
-          hourMinuteTextColor: darkBackgroundTextColor,
-          dayPeriodTextColor: darkBackgroundTextColor,
-          dialTextColor: darkBackgroundTextColor,
-          entryModeIconColor: darkBackgroundTextColor,
-          dialBackgroundColor: darkScaffoldGradient1Color,
-          helpTextStyle: TextStyle(
-            color: darkBackgroundTextColor,
-            fontFamily: "Poppins",
+        darkTheme: ThemeData(
+          colorSchemeSeed: primaryAlternateColor,
+          dialogTheme: DialogThemeData(
+            backgroundColor: darkScaffoldGradient1Color,
+          ),
+          timePickerTheme: const TimePickerThemeData(
+            backgroundColor: darkScaffoldGradient2Color,
+            hourMinuteTextColor: darkBackgroundTextColor,
+            dayPeriodTextColor: darkBackgroundTextColor,
+            dialTextColor: darkBackgroundTextColor,
+            entryModeIconColor: darkBackgroundTextColor,
+            dialBackgroundColor: darkScaffoldGradient1Color,
+            helpTextStyle: TextStyle(
+              color: darkBackgroundTextColor,
+              fontFamily: "Poppins",
+            ),
           ),
         ),
+        home: const Home(),
       ),
-      home: BlocProvider(create: (_) => AlarmCubit(), child: const Home()),
     );
   }
 }
