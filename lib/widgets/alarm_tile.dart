@@ -10,6 +10,37 @@ class AlarmTile extends StatelessWidget {
     required this.onDelete,
   });
 
+  Widget _repeatDayText(bool isDark) {
+    const dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'Su'];
+    final textSpans = <TextSpan>[];
+
+    for (int i = 0; i < dayLabels.length; i++) {
+      final isSelected =
+          alarmModel.alarmSettings
+              .where((e) => e.dateTime.weekday == i + 1)
+              .isNotEmpty;
+      final color =
+          isSelected
+              ? const Color(0xFFFD251E)
+              : isDark
+              ? const Color(0xFF8E98A1)
+              : const Color(0xFF646E82);
+
+      textSpans.add(
+        TextSpan(text: '${dayLabels[i]} ', style: TextStyle(color: color)),
+      );
+    }
+
+    return Text.rich(
+      TextSpan(children: textSpans),
+      style: const TextStyle(
+        fontFamily: 'Poppins',
+        fontSize: 12,
+        letterSpacing: 0.03,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final bool isDark =
@@ -86,6 +117,8 @@ class AlarmTile extends StatelessWidget {
               ),
             ),
             const Spacer(),
+            if (alarmModel.alarmSettings.isNotEmpty) _repeatDayText(isDark),
+            const SizedBox(width: 12),
             IconButton(
               onPressed: onDelete,
               tooltip: "Delete",
