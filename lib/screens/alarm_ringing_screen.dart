@@ -1,7 +1,8 @@
 import 'package:alarm/alarm.dart';
 import 'package:awake/constants.dart';
 import 'package:awake/services/alarm_cubit.dart';
-import 'package:awake/widgets/gradient_elevated_button.dart';
+import 'package:awake/widgets/snooze_button.dart';
+import 'package:awake/widgets/stop_alarm.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';
@@ -34,27 +35,30 @@ class AlarmRingingScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Lottie.asset("assets/lottie/clock.json"),
-              SizedBox(height: 20),
-              GradientElevatedButton(
-                onPressed: () {
-                  context.read<AlarmCubit>().snoozeAlarm(
-                    alarmSettings: alarmSettings,
-                  );
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Alarm snoozed for 5 minutes")),
-                  );
-                  Navigator.pop(context);
-                },
-                label: "Snooze",
-              ),
-              SizedBox(height: 20),
-              GradientElevatedButton(
-                onPressed: () {
+              Spacer(),
+              GestureDetector(
+                onTap: () {
                   context.read<AlarmCubit>().stopAlarm(alarmSettings.id);
                   Navigator.pop(context);
                 },
-                label: "Stop",
+                child: StopButton(),
               ),
+              Spacer(flex: 2),
+              SnoozeButton(
+                onSnoozePressed: (snoozeMinutes) {
+                  context.read<AlarmCubit>().snoozeAlarm(
+                    alarmSettings: alarmSettings,
+                    snoozeMinutes: snoozeMinutes,
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text("Alarm snoozed for $snoozeMinutes minutes"),
+                    ),
+                  );
+                  Navigator.pop(context);
+                },
+              ),
+              SizedBox(height: 20),
             ],
           ),
         ),

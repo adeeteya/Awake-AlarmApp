@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-class AddAlarmButton extends StatelessWidget {
-  const AddAlarmButton({super.key});
+class StopButton extends StatelessWidget {
+  const StopButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,22 +48,23 @@ class AddAlarmButton extends StatelessWidget {
       ),
       child: CustomPaint(
         size: const Size(78, 78),
-        painter: AddAlarmPainter(isDark),
+        painter: StopButtonPainter(isDark),
       ),
     );
   }
 }
 
-class AddAlarmPainter extends CustomPainter {
+class StopButtonPainter extends CustomPainter {
   final bool isDark;
 
-  AddAlarmPainter(this.isDark);
+  StopButtonPainter(this.isDark);
 
   @override
   void paint(Canvas canvas, Size size) {
     final Rect rectOuter = Offset.zero & size;
     final Offset center = Offset(size.width / 2, size.height / 2);
-    final Paint rectangle = Paint()..color = const Color(0xFFECF0F3);
+    final Paint xPaint = Paint()..color = const Color(0xFFECF0F3);
+
     final Paint sphere1 =
         Paint()
           ..shader = const LinearGradient(
@@ -71,6 +72,7 @@ class AddAlarmPainter extends CustomPainter {
             end: Alignment.bottomRight,
             colors: [Color(0xFFFD251E), Color(0xFFFE725C)],
           ).createShader(rectOuter);
+
     final Paint sphereInset1 =
         Paint()
           ..shader = const LinearGradient(
@@ -78,16 +80,18 @@ class AddAlarmPainter extends CustomPainter {
             end: Alignment.bottomRight,
             colors: [Color(0xFFFE725C), Color(0xFFE5120A)],
           ).createShader(rectOuter);
+
     final Paint sphereInset2 =
         Paint()
           ..shader = LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors:
-                (isDark)
+                isDark
                     ? [const Color(0xFF5D666D), const Color(0xFF21272D)]
                     : [const Color(0xFFA6B4C8), const Color(0xFF768FB1)],
           ).createShader(rectOuter);
+
     Path semiOvalBottomRight =
         Path()..addArc(
           Rect.fromCenter(center: center, width: 74, height: 74),
@@ -104,18 +108,24 @@ class AddAlarmPainter extends CustomPainter {
     canvas.drawCircle(center, 31.5, sphereInset2);
     canvas.drawCircle(center, 30, sphere1);
     canvas.drawCircle(center, 28, sphereInset1);
+
+    const double barLength = 18;
+    const double barWidth = 4;
+
+    canvas.save();
+    canvas.translate(center.dx, center.dy);
+    canvas.rotate(math.pi / 4); // 45 degrees
     canvas.drawRect(
-      Rect.fromCenter(center: center, width: 18, height: 4),
-      rectangle,
+      Rect.fromCenter(center: Offset.zero, width: barLength, height: barWidth),
+      xPaint,
     );
     canvas.drawRect(
-      Rect.fromCenter(center: center, width: 4, height: 18),
-      rectangle,
+      Rect.fromCenter(center: Offset.zero, width: barWidth, height: barLength),
+      xPaint,
     );
+    canvas.restore();
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return false;
-  }
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

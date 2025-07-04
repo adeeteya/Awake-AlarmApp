@@ -8,7 +8,7 @@ import 'package:awake/screens/alarm_ringing_screen.dart';
 import 'package:awake/screens/settings_screen.dart';
 import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/alarm_cubit.dart';
-import 'package:awake/widgets/add_alarm.dart';
+import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
 import 'package:flutter/material.dart';
@@ -71,7 +71,7 @@ class _HomeState extends State<Home> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: GestureDetector(
         onTap: _addAlarm,
-        child: const AddAlarmButton(),
+        child: AddButton(),
       ),
       body: DecoratedBox(
         decoration: BoxDecoration(
