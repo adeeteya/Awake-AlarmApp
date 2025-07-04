@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow_update/flutter_inset_box_shadow_update.dart';
+import 'package:awake/theme/app_colors.dart';
 
 class GradientSwitch extends StatefulWidget {
   final bool value;
@@ -49,15 +50,15 @@ class _GradientSwitchState extends State<GradientSwitch> {
                   isChecked
                       ? null
                       : (isDark)
-                      ? const Color(0xFF282F35)
-                      : const Color(0xFFA6B4C8).withValues(alpha: 0.25),
+                      ? AppColors.darkDeep
+                      : AppColors.shadowLight.withOpacity(0.25),
               borderRadius: BorderRadius.circular(40),
               gradient:
                   isChecked
                       ? const LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
-                        colors: [Color(0xFFFD2A22), Color(0xFFFE6C57)],
+                        colors: [AppColors.primary, AppColors.primaryLight],
                       )
                       : null,
               boxShadow:
@@ -66,7 +67,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
                         BoxShadow(
                           offset: const Offset(1.6, 1.3),
                           blurRadius: 1.98,
-                          color: Colors.black.withValues(alpha: 0.2),
+                          color: Colors.black.withOpacity(0.2),
                           inset: true,
                         ),
                         BoxShadow(
@@ -75,7 +76,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
                           spreadRadius: 2,
                           color: const Color(
                             0xFFFD251E,
-                          ).withValues(alpha: 0.35),
+                          ).withOpacity(0.35),
                         ),
                       ]
                       : (isDark)
@@ -85,13 +86,13 @@ class _GradientSwitchState extends State<GradientSwitch> {
                           blurRadius: 4.9,
                           color: const Color(
                             0xFF454D55,
-                          ).withValues(alpha: 0.25),
+                          ).withOpacity(0.25),
                           inset: true,
                         ),
                         BoxShadow(
                           offset: const Offset(1.6, 1.3),
                           blurRadius: 1.98,
-                          color: const Color(0xFF23282D).withValues(alpha: 0.7),
+                          color: AppColors.shadowDark.withOpacity(0.7),
                           inset: true,
                         ),
                       ]
@@ -99,13 +100,13 @@ class _GradientSwitchState extends State<GradientSwitch> {
                         BoxShadow(
                           offset: const Offset(-1.6, -1.6),
                           blurRadius: 3,
-                          color: Colors.white.withValues(alpha: 0.41),
+                          color: Colors.white.withOpacity(0.41),
                           inset: true,
                         ),
                         BoxShadow(
                           offset: const Offset(1.6, 1.3),
                           blurRadius: 1.98,
-                          color: const Color(0xFF63748B).withValues(alpha: 0.2),
+                          color: AppColors.lightBackgroundText.withOpacity(0.2),
                           inset: true,
                         ),
                       ],
@@ -123,8 +124,8 @@ class _GradientSwitchState extends State<GradientSwitch> {
                 color:
                     (isDark)
                         ? (isChecked)
-                            ? const Color(0xFFA2ADB9)
-                            : const Color(0xFF4E565F)
+                            ? AppColors.lightScaffold2
+                            : AppColors.darkGrey
                         : null,
                 gradient:
                     (isDark)
@@ -132,7 +133,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
                         : const LinearGradient(
                           begin: Alignment.bottomLeft,
                           end: Alignment.topRight,
-                          colors: [Color(0xFFEEF0F5), Color(0xFFE6E9EF)],
+                          colors: [AppColors.lightScaffold1, AppColors.lightGradient2],
                         ),
                 boxShadow:
                     (isChecked)
@@ -144,28 +145,28 @@ class _GradientSwitchState extends State<GradientSwitch> {
                             blurRadius: 6,
                             color: const Color(
                               0xFF454D56,
-                            ).withValues(alpha: 0.52),
+                            ).withOpacity(0.52),
                           ),
                           BoxShadow(
                             offset: const Offset(3, 3),
                             blurRadius: 6,
                             color: const Color(
                               0xFF181E24,
-                            ).withValues(alpha: 0.65),
+                            ).withOpacity(0.65),
                           ),
                         ]
                         : [
                           BoxShadow(
                             offset: const Offset(-3, -3),
                             blurRadius: 6,
-                            color: Colors.white.withValues(alpha: 0.9),
+                            color: Colors.white.withOpacity(0.9),
                           ),
                           BoxShadow(
                             offset: const Offset(3, 3),
                             blurRadius: 6,
                             color: const Color(
                               0xFFA6B4C8,
-                            ).withValues(alpha: 0.65),
+                            ).withOpacity(0.65),
                           ),
                         ],
               ),

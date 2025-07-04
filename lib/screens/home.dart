@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:alarm/alarm.dart';
 import 'package:alarm/utils/alarm_set.dart';
-import 'package:awake/constants.dart';
+import 'package:awake/theme/app_colors.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/screens/alarm_ringing_screen.dart';
 import 'package:awake/screens/settings_screen.dart';
@@ -80,10 +80,10 @@ class _HomeState extends State<Home> {
             end: Alignment.bottomCenter,
             colors:
                 (isDark)
-                    ? [darkScaffoldGradient1Color, darkScaffoldGradient2Color]
+                    ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
                     : [
-                      lightScaffoldGradient1Color,
-                      lightScaffoldGradient2Color,
+                      AppColors.lightScaffold1,
+                      AppColors.lightScaffold2,
                     ],
           ),
         ),
@@ -108,12 +108,12 @@ class _HomeState extends State<Home> {
                           colors:
                               (isDark)
                                   ? [
-                                    const Color(0xFF3E464F),
-                                    const Color(0xFF424A53),
+                                    AppColors.darkClock1,
+                                    AppColors.darkClock2,
                                   ]
                                   : [
-                                    const Color(0xFFF1F2F7),
-                                    const Color(0xFFECEEF3),
+                                    AppColors.lightClock1,
+                                    AppColors.lightClock2,
                                   ],
                         ),
                         boxShadow:
@@ -123,24 +123,18 @@ class _HomeState extends State<Home> {
                                     offset: const Offset(19, 25),
                                     blurRadius: 92,
                                     spreadRadius: -32,
-                                    color: const Color(
-                                      0xFF23282D,
-                                    ).withValues(alpha: 0.35),
+                                    color: AppColors.shadowDark.withOpacity(0.35),
                                   ),
                                   BoxShadow(
                                     offset: const Offset(-20, -20),
                                     blurRadius: 61,
-                                    color: const Color(
-                                      0xFF48535C,
-                                    ).withValues(alpha: 0.25),
+                                    color: AppColors.darkGrey.withOpacity(0.25),
                                   ),
                                   BoxShadow(
                                     offset: const Offset(13, 14),
                                     blurRadius: 12,
                                     spreadRadius: -6,
-                                    color: const Color(
-                                      0xFF23282D,
-                                    ).withValues(alpha: 0.50),
+                                    color: AppColors.shadowDark.withOpacity(0.50),
                                   ),
                                 ]
                                 : [
@@ -148,22 +142,18 @@ class _HomeState extends State<Home> {
                                     offset: const Offset(19, 25),
                                     blurRadius: 92,
                                     spreadRadius: -32,
-                                    color: const Color(
-                                      0xFFA6B4C8,
-                                    ).withValues(alpha: 0.45),
+                                    color: AppColors.shadowLight.withOpacity(0.45),
                                   ),
                                   BoxShadow(
                                     offset: const Offset(-20, -20),
                                     blurRadius: 61,
-                                    color: Colors.white.withValues(alpha: 0.53),
+                                    color: Colors.white.withOpacity(0.53),
                                   ),
                                   BoxShadow(
                                     offset: const Offset(13, 14),
                                     blurRadius: 12,
                                     spreadRadius: -6,
-                                    color: const Color(
-                                      0xFFA6B4C8,
-                                    ).withValues(alpha: 0.57),
+                                    color: AppColors.shadowLight.withOpacity(0.57),
                                   ),
                                 ],
                         shape: BoxShape.circle,
@@ -186,7 +176,7 @@ class _HomeState extends State<Home> {
                     decoration: BoxDecoration(
                       border: Border.all(
                         color:
-                            (isDark) ? const Color(0xFF5D666D) : Colors.white,
+                            (isDark) ? AppColors.darkBorder : Colors.white,
                       ),
                       borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(20),
@@ -198,12 +188,12 @@ class _HomeState extends State<Home> {
                         colors:
                             (isDark)
                                 ? [
-                                  darkScaffoldGradient1Color,
-                                  darkScaffoldGradient2Color,
+                                  AppColors.darkScaffold1,
+                                  AppColors.darkScaffold2,
                                 ]
                                 : [
-                                  lightContainerGradient1Color,
-                                  lightContainerGradient2Color,
+                                  AppColors.lightContainer1,
+                                  AppColors.lightContainer2,
                                 ],
                       ),
                     ),
@@ -217,8 +207,8 @@ class _HomeState extends State<Home> {
                               style: TextStyle(
                                 color:
                                     (isDark)
-                                        ? const Color(0xFF8E98A1)
-                                        : const Color(0xFF646E82),
+                                        ? AppColors.darkBackgroundText
+                                        : AppColors.lightBackgroundText,
                                 fontFamily: 'Poppins',
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
@@ -241,8 +231,8 @@ class _HomeState extends State<Home> {
                                     style: TextStyle(
                                       color:
                                           (isDark)
-                                              ? const Color(0xFF8E98A1)
-                                              : const Color(0xFF646E82),
+                                              ? AppColors.darkBackgroundText
+                                              : AppColors.lightBackgroundText,
                                       fontFamily: 'Poppins',
                                       fontSize: 18,
                                       fontWeight: FontWeight.w500,
@@ -262,8 +252,8 @@ class _HomeState extends State<Home> {
                                     style: IconButton.styleFrom(
                                       foregroundColor:
                                           (isDark)
-                                              ? const Color(0xFF8E98A1)
-                                              : const Color(0xFF646E82),
+                                              ? AppColors.darkBackgroundText
+                                              : AppColors.lightBackgroundText,
                                     ),
                                     icon: Icon(Icons.settings),
                                   ),

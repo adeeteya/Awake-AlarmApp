@@ -1,4 +1,4 @@
-import 'package:awake/constants.dart';
+import 'package:awake/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -9,23 +9,23 @@ class SettingsScreen extends StatelessWidget {
     final bool isDark =
         MediaQuery.platformBrightnessOf(context) == Brightness.dark;
     return Scaffold(
-      backgroundColor: (isDark) ? const Color(0xFF5D666D) : Colors.white,
+      backgroundColor: (isDark) ? AppColors.darkBorder : Colors.white,
       body: Hero(
         tag: "InnerDecoratedBox",
         child: DecoratedBox(
           decoration: BoxDecoration(
             border: Border.all(
-              color: (isDark) ? const Color(0xFF5D666D) : Colors.white,
+              color: (isDark) ? AppColors.darkBorder : Colors.white,
             ),
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors:
                   (isDark)
-                      ? [darkScaffoldGradient1Color, darkScaffoldGradient2Color]
+                      ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
                       : [
-                        lightContainerGradient1Color,
-                        lightContainerGradient2Color,
+                        AppColors.lightContainer1,
+                        AppColors.lightContainer2,
                       ],
             ),
           ),
@@ -41,8 +41,8 @@ class SettingsScreen extends StatelessWidget {
                       style: IconButton.styleFrom(
                         foregroundColor:
                             (isDark)
-                                ? const Color(0xFF8E98A1)
-                                : const Color(0xFF646E82),
+                                ? AppColors.darkBackgroundText
+                                : AppColors.lightBackgroundText,
                       ),
                       icon: Icon(Icons.arrow_back),
                     ),
@@ -51,8 +51,8 @@ class SettingsScreen extends StatelessWidget {
                       style: TextStyle(
                         color:
                             (isDark)
-                                ? const Color(0xFF8E98A1)
-                                : const Color(0xFF646E82),
+                                ? AppColors.darkBackgroundText
+                                : AppColors.lightBackgroundText,
                         fontFamily: 'Poppins',
                         fontSize: 18,
                         fontWeight: FontWeight.w500,

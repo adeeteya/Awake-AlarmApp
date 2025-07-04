@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:awake/theme/app_colors.dart';
 import 'dart:math' as math;
 
 class MinusButton extends StatelessWidget {
@@ -16,8 +17,8 @@ class MinusButton extends StatelessWidget {
           end: Alignment.bottomRight,
           colors:
               isDark
-                  ? [const Color(0xFF3B444D), const Color(0xFF343E46)]
-                  : [const Color(0xFFE4E8F1), const Color(0xFFE6E9EF)],
+                  ? [AppColors.darkGradient1, AppColors.darkGradient2]
+                  : [AppColors.lightGradient1, AppColors.lightGradient2],
         ),
         boxShadow:
             isDark
@@ -25,24 +26,24 @@ class MinusButton extends StatelessWidget {
                   BoxShadow(
                     offset: const Offset(-5, -5),
                     blurRadius: 20,
-                    color: const Color(0xFF48535C).withAlpha(90),
+                    color: AppColors.darkGrey.withOpacity(0.35),
                   ),
                   BoxShadow(
                     offset: const Offset(5, 5),
                     blurRadius: 10,
-                    color: const Color(0xFF23282D).withAlpha(180),
+                    color: AppColors.shadowDark.withOpacity(0.7),
                   ),
                 ]
                 : [
                   BoxShadow(
                     offset: const Offset(-5, -5),
                     blurRadius: 10,
-                    color: Colors.white.withAlpha(180),
+                    color: Colors.white.withOpacity(0.7),
                   ),
                   BoxShadow(
                     offset: const Offset(5, 5),
                     blurRadius: 10,
-                    color: const Color(0xFFA6B4C8).withAlpha(180),
+                    color: AppColors.shadowLight.withOpacity(0.7),
                   ),
                 ],
         shape: BoxShape.circle,
@@ -64,20 +65,20 @@ class MinusButtonPainter extends CustomPainter {
     final Rect rectOuter = Offset.zero & size;
     final Offset center = Offset(size.width / 2, size.height / 2);
 
-    final Paint rectangle = Paint()..color = const Color(0xFFECF0F3);
+    final Paint rectangle = Paint()..color = AppColors.lightSurface;
     final Paint sphere1 =
         Paint()
           ..shader = const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Color(0xFFFD251E), Color(0xFFFE725C)],
+            colors: [AppColors.primary, AppColors.primaryLight],
           ).createShader(rectOuter);
     final Paint sphereInset1 =
         Paint()
           ..shader = const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Color(0xFFFE725C), Color(0xFFE5120A)],
+            colors: [AppColors.primaryLight, AppColors.accentDark],
           ).createShader(rectOuter);
     final Paint sphereInset2 =
         Paint()
@@ -86,8 +87,8 @@ class MinusButtonPainter extends CustomPainter {
             end: Alignment.bottomRight,
             colors:
                 isDark
-                    ? [const Color(0xFF5D666D), const Color(0xFF21272D)]
-                    : [const Color(0xFFA6B4C8), const Color(0xFF768FB1)],
+                    ? [AppColors.darkBorder, AppColors.darkDeep]
+                    : [AppColors.shadowLight, AppColors.lightBlueGrey],
           ).createShader(rectOuter);
 
     final Path semiOvalBottomRight =
@@ -98,7 +99,7 @@ class MinusButtonPainter extends CustomPainter {
         );
     canvas.drawShadow(
       semiOvalBottomRight,
-      const Color(0xFFFD251E).withAlpha(90),
+      AppColors.primary.withOpacity(0.35),
       11,
       true,
     );
