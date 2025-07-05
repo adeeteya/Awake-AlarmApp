@@ -64,8 +64,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark =
-        MediaQuery.platformBrightnessOf(context) == Brightness.dark;
+    final bool isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
@@ -247,8 +246,7 @@ class _HomeState extends State<Home> {
                                     onPressed: () {
                                       Navigator.of(context).push(
                                         MaterialPageRoute(
-                                          builder:
-                                              (context) => SettingsScreen(),
+                                          builder: (context) => const SettingsScreen(),
                                         ),
                                       );
                                     },
