@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:awake/theme/app_colors.dart';
 import 'dart:math' as math;
+
+import 'package:awake/theme/app_colors.dart';
+import 'package:flutter/material.dart';
 
 class AddButton extends StatelessWidget {
   const AddButton({super.key});
@@ -14,12 +15,12 @@ class AddButton extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors:
-              (isDark)
+              isDark
                   ? [AppColors.darkGradient1, AppColors.darkGradient2]
                   : [AppColors.lightGradient1, AppColors.lightGradient2],
         ),
         boxShadow:
-            (isDark)
+            isDark
                 ? [
                   BoxShadow(
                     offset: const Offset(-5, -5),
@@ -84,11 +85,11 @@ class AddButtonPainter extends CustomPainter {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors:
-                (isDark)
+                isDark
                     ? [AppColors.darkBorder, AppColors.darkDeep]
                     : [AppColors.shadowLight, AppColors.lightBlueGrey],
           ).createShader(rectOuter);
-    Path semiOvalBottomRight =
+    final Path semiOvalBottomRight =
         Path()..addArc(
           Rect.fromCenter(center: center, width: 74, height: 74),
           -math.pi / 3,

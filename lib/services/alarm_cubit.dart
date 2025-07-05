@@ -1,30 +1,34 @@
+import 'dart:async';
+
 import 'package:alarm/alarm.dart';
+import 'package:awake/models/alarm_db_entry.dart';
 import 'package:awake/models/alarm_model.dart';
+import 'package:awake/services/alarm_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AlarmCubit extends Cubit<List<AlarmModel>> {
   AlarmCubit() : super([]) {
-    _loadAlarms();
+    unawaited(_loadAlarms());
   }
 
   Future<void> _loadAlarms() async {
-    final updatedAlarms = await Alarm.getAlarms();
+    final dbEntries = await AlarmDatabase.allAlarms();
+    final existingAlarms = await Alarm.getAlarms();
     final Map<TimeOfDay, List<AlarmSettings>> alarmSettingsSet = {};
-    for (final alarm in updatedAlarms) {
+    for (final alarm in existingAlarms) {
       final alarmTime = TimeOfDay.fromDateTime(alarm.dateTime);
-      if (alarmSettingsSet.containsKey(alarmTime)) {
-        alarmSettingsSet[alarmTime]?.add(alarm);
-      } else {
-        alarmSettingsSet[alarmTime] = [alarm];
-      }
+      alarmSettingsSet.putIfAbsent(alarmTime, () => []).add(alarm);
     }
+
+    for (final entry in dbEntries) {
+      await _ensureUpcomingWeek(entry.time, entry.days, alarmSettingsSet);
+    }
+
     final tempAlarms = <AlarmModel>[];
-    for (final key in alarmSettingsSet.keys) {
-      tempAlarms.add(
-        AlarmModel(timeOfDay: key, alarmSettings: alarmSettingsSet[key] ?? []),
-      );
-    }
+    alarmSettingsSet.forEach((key, value) {
+      tempAlarms.add(AlarmModel(timeOfDay: key, alarmSettings: value));
+    });
     emit(tempAlarms);
   }
 
@@ -34,11 +38,8 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
         id: id,
         dateTime: scheduledDate,
         assetAudioPath: "assets/alarm_ringtone.mp3",
-        volumeSettings: VolumeSettings.fixed(
-          volume: 1.0,
-          volumeEnforced: false,
-        ),
-        notificationSettings: NotificationSettings(
+        volumeSettings: const VolumeSettings.fixed(volume: 1.0),
+        notificationSettings: const NotificationSettings(
           title: "Alarm",
           body: "Time to Wake Up",
           stopButton: 'Stop',
@@ -54,6 +55,47 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
       debugPrint("Error setting alarm: $e");
     }
     return null;
+  }
+
+  Future<void> _ensureUpcomingWeek(
+    TimeOfDay timeOfDay,
+    List<int> days,
+    Map<TimeOfDay, List<AlarmSettings>> current,
+  ) async {
+    final now = DateTime.now();
+    for (var i = 0; i < 7; i++) {
+      final dateTime = DateTime(
+        now.year,
+        now.month,
+        now.day,
+        timeOfDay.hour,
+        timeOfDay.minute,
+      ).add(Duration(days: i));
+
+      if (!days.contains(dateTime.weekday)) continue;
+      if (i == 0 &&
+          (now.hour > timeOfDay.hour ||
+              (now.hour == timeOfDay.hour && now.minute >= timeOfDay.minute))) {
+        continue;
+      }
+      final exists =
+          current[timeOfDay]?.any(
+            (a) =>
+                a.dateTime.year == dateTime.year &&
+                a.dateTime.month == dateTime.month &&
+                a.dateTime.day == dateTime.day,
+          ) ??
+          false;
+      if (!exists) {
+        final newAlarm = await _setAlarm(
+          dateTime.millisecondsSinceEpoch.hashCode,
+          dateTime,
+        );
+        if (newAlarm != null) {
+          current.putIfAbsent(timeOfDay, () => []).add(newAlarm);
+        }
+      }
+    }
   }
 
   Future<void> snoozeAlarm({
@@ -79,41 +121,24 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
       DateTime.sunday,
     ],
   }) async {
-    final now = DateTime.now();
-    final List<AlarmSettings> newAlarmSettings = [];
-    // Loop through the next days
-    for (var i = 0; i < 7; i++) {
-      if (i == 0 &&
-          (now.hour > timeOfDay.hour ||
-              (now.hour == timeOfDay.hour && now.minute >= timeOfDay.minute))) {
-        // If the time is already passed for today, skip it
-        continue;
-      }
-      final dateTime = DateTime(
-        now.year,
-        now.month,
-        now.day,
-        timeOfDay.hour,
-        timeOfDay.minute,
-      ).add(Duration(days: i));
+    final existingEntry = await AlarmDatabase.getAlarm(timeOfDay);
+    final updatedDays = {...(existingEntry?.days ?? []), ...days}.toList();
 
-      if (days.contains(dateTime.weekday)) {
-        final newAlarm = await _setAlarm(
-          dateTime.millisecondsSinceEpoch.hashCode,
-          dateTime,
-        );
-        if (newAlarm != null) {
-          newAlarmSettings.add(newAlarm);
-        }
-      }
-    }
-    final newAlarmModel = AlarmModel(
-      timeOfDay: timeOfDay,
-      alarmSettings: newAlarmSettings,
+    await AlarmDatabase.insertOrUpdate(
+      AlarmDbEntry(time: timeOfDay, days: updatedDays),
     );
-    if (!state.contains(newAlarmModel)) {
-      emit([...state, newAlarmModel]);
-    }
+
+    final Map<TimeOfDay, List<AlarmSettings>> current = {
+      for (final m in state) m.timeOfDay: [...m.alarmSettings],
+    };
+
+    await _ensureUpcomingWeek(timeOfDay, updatedDays, current);
+
+    final tempAlarms = <AlarmModel>[];
+    current.forEach((key, value) {
+      tempAlarms.add(AlarmModel(timeOfDay: key, alarmSettings: value));
+    });
+    emit(tempAlarms);
   }
 
   Future<void> stopAlarm(int id) async {
@@ -124,6 +149,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     for (final alarm in alarmModel.alarmSettings) {
       await stopAlarm(alarm.id);
     }
+    await AlarmDatabase.delete(alarmModel.timeOfDay);
     emit(state.where((e) => e != alarmModel).toList());
   }
 }

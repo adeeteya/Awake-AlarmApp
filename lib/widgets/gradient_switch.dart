@@ -1,6 +1,6 @@
+import 'package:awake/theme/app_colors.dart';
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow_update/flutter_inset_box_shadow_update.dart';
-import 'package:awake/theme/app_colors.dart';
 
 class GradientSwitch extends StatefulWidget {
   final bool value;
@@ -48,7 +48,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
               color:
                   isChecked
                       ? null
-                      : (isDark)
+                      : isDark
                       ? AppColors.darkDeep
                       : AppColors.shadowLight.withValues(alpha: 0.25),
               borderRadius: BorderRadius.circular(40),
@@ -78,7 +78,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
                           ).withValues(alpha: 0.35),
                         ),
                       ]
-                      : (isDark)
+                      : isDark
                       ? [
                         BoxShadow(
                           offset: const Offset(-1.6, -1.6),
@@ -123,13 +123,13 @@ class _GradientSwitchState extends State<GradientSwitch> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color:
-                    (isDark)
-                        ? (isChecked)
+                    isDark
+                        ? isChecked
                             ? AppColors.lightScaffold2
                             : AppColors.darkGrey
                         : null,
                 gradient:
-                    (isDark)
+                    isDark
                         ? null
                         : const LinearGradient(
                           begin: Alignment.bottomLeft,
@@ -140,9 +140,9 @@ class _GradientSwitchState extends State<GradientSwitch> {
                           ],
                         ),
                 boxShadow:
-                    (isChecked)
+                    isChecked
                         ? null
-                        : (isDark)
+                        : isDark
                         ? [
                           BoxShadow(
                             offset: const Offset(-3, -3),
