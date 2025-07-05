@@ -7,10 +7,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'services/shared_prefs_with_cache.dart';
 import 'services/theme_cubit.dart';
+import 'services/alarm_database.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPreferencesWithCache.initialize();
+  await AlarmDatabase.initialize();
   await Alarm.init();
 
   runApp(MyApp());
