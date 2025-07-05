@@ -40,7 +40,7 @@ class AlarmRingingScreen extends StatelessWidget {
                 },
                 child: StopButton(),
               ),
-              Spacer(flex: 2),
+              Spacer(),
               SnoozeButton(
                 onSnoozePressed: (snoozeMinutes) {
                   context.read<AlarmCubit>().snoozeAlarm(

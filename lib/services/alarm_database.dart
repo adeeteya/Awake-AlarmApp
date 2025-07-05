@@ -1,16 +1,13 @@
+import 'package:awake/models/alarm_db_entry.dart';
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-
-import '../models/alarm_db_entry.dart';
 
 class AlarmDatabase {
   static Database? _db;
 
   static Future<void> initialize() async {
-    final dir = await getApplicationDocumentsDirectory();
-    final path = join(dir.path, 'alarms.db');
+    final dir = await getDatabasesPath();
+    final path = '$dir/alarms.db';
     _db = await openDatabase(
       path,
       version: 1,
