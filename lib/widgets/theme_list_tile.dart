@@ -1,16 +1,12 @@
+import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/theme/app_colors.dart';
 import 'package:flutter/material.dart';
-import '../theme/app_colors.dart';
-import '../extensions/context_extensions.dart';
 
 class ThemeListTile extends StatelessWidget {
   final ThemeMode mode;
   final ValueChanged<ThemeMode> onChanged;
 
-  const ThemeListTile({
-    super.key,
-    required this.mode,
-    required this.onChanged,
-  });
+  const ThemeListTile({super.key, required this.mode, required this.onChanged});
 
   IconData _iconForMode(ThemeMode m) {
     switch (m) {
@@ -42,15 +38,9 @@ class ThemeListTile extends StatelessWidget {
     return ListTile(
       title: Text(
         'Theme',
-        style: TextStyle(
-          color: color,
-          fontFamily: 'Poppins',
-        ),
+        style: TextStyle(color: color, fontFamily: 'Poppins'),
       ),
-      trailing: Icon(
-        _iconForMode(mode),
-        color: color,
-      ),
+      trailing: Icon(_iconForMode(mode), color: color),
       onTap: () => onChanged(_nextMode(mode)),
     );
   }

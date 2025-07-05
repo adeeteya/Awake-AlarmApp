@@ -1,11 +1,11 @@
 import 'package:alarm/alarm.dart';
+import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/widgets/snooze_button.dart';
 import 'package:awake/widgets/stop_alarm.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../extensions/context_extensions.dart';
 import 'package:lottie/lottie.dart';
 
 class AlarmRingingScreen extends StatelessWidget {

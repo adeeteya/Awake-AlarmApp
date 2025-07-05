@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:alarm/alarm.dart';
 import 'package:alarm/utils/alarm_set.dart';
+import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/screens/alarm_ringing_screen.dart';
@@ -13,7 +14,6 @@ import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../extensions/context_extensions.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -176,110 +176,115 @@ class _HomeState extends State<Home> {
                 flex: 2,
                 child: Hero(
                   tag: "InnerDecoratedBox",
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: (isDark) ? AppColors.darkBorder : Colors.white,
+                  child: Material(
+                    type: MaterialType.transparency,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: (isDark) ? AppColors.darkBorder : Colors.white,
+                        ),
+                        borderRadius: const BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors:
+                              (isDark)
+                                  ? [
+                                    AppColors.darkScaffold1,
+                                    AppColors.darkScaffold2,
+                                  ]
+                                  : [
+                                    AppColors.lightContainer1,
+                                    AppColors.lightContainer2,
+                                  ],
+                        ),
                       ),
-                      borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                      ),
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors:
-                            (isDark)
-                                ? [
-                                  AppColors.darkScaffold1,
-                                  AppColors.darkScaffold2,
-                                ]
-                                : [
-                                  AppColors.lightContainer1,
-                                  AppColors.lightContainer2,
-                                ],
-                      ),
-                    ),
-                    child: BlocBuilder<AlarmCubit, List<AlarmModel>>(
-                      buildWhen: (previous, current) => previous != current,
-                      builder: (context, alarms) {
-                        if (alarms.isEmpty) {
-                          return Center(
-                            child: Text(
-                              "No Alarms Added Yet",
-                              style: TextStyle(
-                                color:
-                                    (isDark)
-                                        ? AppColors.darkBackgroundText
-                                        : AppColors.lightBackgroundText,
-                                fontFamily: 'Poppins',
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                letterSpacing: 0.03,
+                      child: BlocBuilder<AlarmCubit, List<AlarmModel>>(
+                        buildWhen: (previous, current) => previous != current,
+                        builder: (context, alarms) {
+                          if (alarms.isEmpty) {
+                            return Center(
+                              child: Text(
+                                "No Alarms Added Yet",
+                                style: TextStyle(
+                                  color:
+                                      (isDark)
+                                          ? AppColors.darkBackgroundText
+                                          : AppColors.lightBackgroundText,
+                                  fontFamily: 'Poppins',
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.03,
+                                ),
                               ),
-                            ),
-                          );
-                        } else {
-                          return ListView(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 20,
-                              vertical: 24,
-                            ),
-                            children: [
-                              Row(
-                                children: [
-                                  const SizedBox(width: 15),
-                                  Text(
-                                    "Alarms",
-                                    style: TextStyle(
-                                      color:
-                                          (isDark)
-                                              ? AppColors.darkBackgroundText
-                                              : AppColors.lightBackgroundText,
-                                      fontFamily: 'Poppins',
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w500,
-                                      letterSpacing: 0.03,
-                                    ),
-                                  ),
-                                  const Spacer(),
-                                  IconButton(
-                                    onPressed: () {
-                                      Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                          builder: (context) => const SettingsScreen(),
-                                        ),
-                                      );
-                                    },
-                                    style: IconButton.styleFrom(
-                                      foregroundColor:
-                                          (isDark)
-                                              ? AppColors.darkBackgroundText
-                                              : AppColors.lightBackgroundText,
-                                    ),
-                                    icon: Icon(Icons.settings),
-                                  ),
-                                  const SizedBox(width: 15),
-                                ],
+                            );
+                          } else {
+                            return ListView(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 20,
+                                vertical: 24,
                               ),
-                              ...[
-                                for (
-                                  int index = 0;
-                                  index < alarms.length;
-                                  index++
-                                )
-                                  AlarmTile(
-                                    alarmModel: alarms[index],
-                                    onDelete:
-                                        () => context
-                                            .read<AlarmCubit>()
-                                            .deleteAlarmModel(alarms[index]),
-                                  ),
+                              children: [
+                                Row(
+                                  children: [
+                                    const SizedBox(width: 15),
+                                    Text(
+                                      "Alarms",
+                                      style: TextStyle(
+                                        color:
+                                            (isDark)
+                                                ? AppColors.darkBackgroundText
+                                                : AppColors.lightBackgroundText,
+                                        fontFamily: 'Poppins',
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: 0.03,
+                                      ),
+                                    ),
+                                    const Spacer(),
+                                    IconButton(
+                                      onPressed: () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                            builder:
+                                                (context) =>
+                                                    const SettingsScreen(),
+                                          ),
+                                        );
+                                      },
+                                      style: IconButton.styleFrom(
+                                        foregroundColor:
+                                            (isDark)
+                                                ? AppColors.darkBackgroundText
+                                                : AppColors.lightBackgroundText,
+                                      ),
+                                      icon: Icon(Icons.settings),
+                                    ),
+                                    const SizedBox(width: 15),
+                                  ],
+                                ),
+                                ...[
+                                  for (
+                                    int index = 0;
+                                    index < alarms.length;
+                                    index++
+                                  )
+                                    AlarmTile(
+                                      alarmModel: alarms[index],
+                                      onDelete:
+                                          () => context
+                                              .read<AlarmCubit>()
+                                              .deleteAlarmModel(alarms[index]),
+                                    ),
+                                ],
                               ],
-                            ],
-                          );
-                        }
-                      },
+                            );
+                          }
+                        },
+                      ),
                     ),
                   ),
                 ),
