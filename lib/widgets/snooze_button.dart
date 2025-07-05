@@ -32,7 +32,7 @@ class _SnoozeButtonState extends State<SnoozeButton> {
     return Row(
       children: [
         const SizedBox(width: 16),
-        GestureDetector(onTap: _decrement, child: MinusButton()),
+        GestureDetector(onTap: _decrement, child: const MinusButton()),
         const SizedBox(width: 16),
         Expanded(
           child: Material(
@@ -66,7 +66,7 @@ class _SnoozeButtonState extends State<SnoozeButton> {
           ),
         ),
         const SizedBox(width: 16),
-        GestureDetector(onTap: _increment, child: AddButton()),
+        GestureDetector(onTap: _increment, child: const AddButton()),
         const SizedBox(width: 16),
       ],
     );

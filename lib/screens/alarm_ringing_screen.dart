@@ -1,7 +1,7 @@
 import 'package:alarm/alarm.dart';
 import 'package:awake/extensions/context_extensions.dart';
-import 'package:awake/theme/app_colors.dart';
 import 'package:awake/services/alarm_cubit.dart';
+import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/snooze_button.dart';
 import 'package:awake/widgets/stop_alarm.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +22,7 @@ class AlarmRingingScreen extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors:
-                (isDark)
+                isDark
                     ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
                     : [AppColors.lightScaffold1, AppColors.lightScaffold2],
           ),
@@ -32,30 +32,36 @@ class AlarmRingingScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Lottie.asset("assets/lottie/clock.json"),
-              Spacer(),
+              const Spacer(),
               GestureDetector(
-                onTap: () {
-                  context.read<AlarmCubit>().stopAlarm(alarmSettings.id);
-                  Navigator.pop(context);
+                onTap: () async {
+                  await context.read<AlarmCubit>().stopAlarm(alarmSettings.id);
+                  if (context.mounted) {
+                    Navigator.pop(context);
+                  }
                 },
-                child: StopButton(),
+                child: const StopButton(),
               ),
-              Spacer(flex: 2),
+              const Spacer(),
               SnoozeButton(
-                onSnoozePressed: (snoozeMinutes) {
-                  context.read<AlarmCubit>().snoozeAlarm(
+                onSnoozePressed: (snoozeMinutes) async {
+                  await context.read<AlarmCubit>().snoozeAlarm(
                     alarmSettings: alarmSettings,
                     snoozeMinutes: snoozeMinutes,
                   );
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text("Alarm snoozed for $snoozeMinutes minutes"),
-                    ),
-                  );
-                  Navigator.pop(context);
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          "Alarm snoozed for $snoozeMinutes minutes",
+                        ),
+                      ),
+                    );
+                    Navigator.pop(context);
+                  }
                 },
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
             ],
           ),
         ),

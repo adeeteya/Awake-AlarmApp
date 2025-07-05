@@ -1,7 +1,6 @@
+import 'package:awake/services/shared_prefs_with_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'shared_prefs_with_cache.dart';
 
 class ThemeCubit extends Cubit<ThemeMode> {
   ThemeCubit()

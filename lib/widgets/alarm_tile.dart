@@ -1,6 +1,6 @@
 import 'package:awake/models/alarm_model.dart';
-import 'package:flutter/material.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:flutter/material.dart';
 
 class AlarmTile extends StatelessWidget {
   final AlarmModel alarmModel;
@@ -54,12 +54,12 @@ class AlarmTile extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors:
-              (isDark)
+              isDark
                   ? [AppColors.darkBorder, AppColors.darkScaffold2]
                   : [Colors.white, AppColors.lightScaffold2],
         ),
         boxShadow:
-            (isDark)
+            isDark
                 ? [
                   BoxShadow(
                     offset: const Offset(-5, -5),
@@ -97,7 +97,7 @@ class AlarmTile extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors:
-                (isDark)
+                isDark
                     ? [AppColors.darkClock1, AppColors.darkScaffold1]
                     : [AppColors.lightScaffold1, AppColors.lightGradient2],
           ),
@@ -108,7 +108,7 @@ class AlarmTile extends StatelessWidget {
               "${alarmModel.timeOfDay.hour < 10 ? "0${alarmModel.timeOfDay.hour}" : alarmModel.timeOfDay.hour}:${alarmModel.timeOfDay.minute < 10 ? "0${alarmModel.timeOfDay.minute}" : alarmModel.timeOfDay.minute}",
               style: TextStyle(
                 color:
-                    (isDark)
+                    isDark
                         ? AppColors.darkBackgroundText
                         : AppColors.lightBackgroundText,
                 fontFamily: 'Poppins',
@@ -122,7 +122,7 @@ class AlarmTile extends StatelessWidget {
             IconButton(
               onPressed: onDelete,
               tooltip: "Delete",
-              icon: Icon(Icons.delete),
+              icon: const Icon(Icons.delete),
               style: IconButton.styleFrom(foregroundColor: AppColors.primary),
             ),
           ],

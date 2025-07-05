@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'dart:math' as math;
-import 'package:flutter/material.dart';
+
 import 'package:awake/theme/app_colors.dart';
+import 'package:flutter/material.dart';
 
 class ClockWidget extends StatefulWidget {
   const ClockWidget({super.key});
@@ -50,7 +51,7 @@ class ClockPainter extends CustomPainter {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors:
-                (isDark)
+                isDark
                     ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
                     : [AppColors.lightClock2, AppColors.lightClock1],
           ).createShader(rectOuter);
@@ -60,7 +61,7 @@ class ClockPainter extends CustomPainter {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors:
-                (isDark)
+                isDark
                     ? [AppColors.darkBorder, AppColors.darkDeep]
                     : [AppColors.lightScaffold2, Colors.white],
           ).createShader(rectOuter);
@@ -88,7 +89,7 @@ class ClockPainter extends CustomPainter {
     final Paint minuteHandPaint =
         Paint()
           ..color =
-              (isDark)
+              isDark
                   ? AppColors.darkBackgroundText
                   : AppColors.lightBackgroundText
           ..strokeCap = StrokeCap.round
@@ -96,7 +97,7 @@ class ClockPainter extends CustomPainter {
     final Paint labelHandPaint =
         Paint()
           ..color =
-              (isDark)
+              isDark
                   ? AppColors.darkBorder
                   : AppColors.shadowLight.withValues(alpha: 0.57)
           ..strokeCap = StrokeCap.round
@@ -127,20 +128,20 @@ class ClockPainter extends CustomPainter {
       labelHandPaint,
     );
 
-    var minHandX =
+    final minHandX =
         centerX + radius / 1.8 * math.cos(dateTime.minute * 6 * math.pi / 180);
-    var minHandY =
+    final minHandY =
         centerY + radius / 1.8 * math.sin(dateTime.minute * 6 * math.pi / 180);
     canvas.drawLine(center, Offset(minHandX, minHandY), minuteHandPaint);
 
-    var hourHandX =
+    final hourHandX =
         centerX +
         radius /
             2.2 *
             math.cos(
               (dateTime.hour * 30 + dateTime.minute * 0.5) * math.pi / 180,
             );
-    var hourHandY =
+    final hourHandY =
         centerY +
         radius /
             2.2 *
@@ -149,17 +150,17 @@ class ClockPainter extends CustomPainter {
             );
     canvas.drawLine(center, Offset(hourHandX, hourHandY), minuteHandPaint);
 
-    var secHandX =
+    final secHandX =
         centerX + radius / 1.5 * math.cos(dateTime.second * 6 * math.pi / 180);
-    var secHandY =
+    final secHandY =
         centerY + radius / 1.5 * math.sin(dateTime.second * 6 * math.pi / 180);
-    var secHandEndX =
+    final secHandEndX =
         centerX - 15 * math.cos(dateTime.second * 6 * math.pi / 180);
-    var secHandEndY =
+    final secHandEndY =
         centerY - 15 * math.sin(dateTime.second * 6 * math.pi / 180);
-    var secHandButtX =
+    final secHandButtX =
         centerX - 30 * math.cos(dateTime.second * 6 * math.pi / 180);
-    var secHandButtY =
+    final secHandButtY =
         centerY - 30 * math.sin(dateTime.second * 6 * math.pi / 180);
     canvas.drawCircle(center, 3, secondHandPaint);
     canvas.drawLine(center, Offset(secHandEndX, secHandEndY), secondHandPaint);
