@@ -5,6 +5,7 @@ class AppTheme {
   AppTheme._();
 
   static ThemeData get lightTheme => ThemeData(
+    brightness: Brightness.light,
     colorSchemeSeed: AppColors.primary,
     dialogTheme: const DialogThemeData(
       backgroundColor: AppColors.lightScaffold1,
@@ -23,6 +24,7 @@ class AppTheme {
   );
 
   static ThemeData get darkTheme => ThemeData(
+    brightness: Brightness.dark,
     colorSchemeSeed: AppColors.primaryAlt,
     dialogTheme: const DialogThemeData(
       backgroundColor: AppColors.darkScaffold1,

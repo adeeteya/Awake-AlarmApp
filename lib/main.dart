@@ -5,12 +5,15 @@ import 'package:awake/services/alarm_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'services/shared_prefs_with_cache.dart';
+import 'services/theme_cubit.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  await SharedPreferencesWithCache.initialize();
   await Alarm.init();
 
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,15 +21,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => AlarmCubit(),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Awake- The Alarm Clock',
-        themeMode: ThemeMode.system,
-        theme: AppTheme.lightTheme,
-        darkTheme: AppTheme.darkTheme,
-        home: const Home(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => AlarmCubit()),
+        BlocProvider(create: (_) => ThemeCubit()),
+      ],
+      child: BlocBuilder<ThemeCubit, ThemeMode>(
+        builder: (context, mode) {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Awake- The Alarm Clock',
+            themeMode: mode,
+            theme: AppTheme.lightTheme,
+            darkTheme: AppTheme.darkTheme,
+            home: const Home(),
+          );
+        },
       ),
     );
   }

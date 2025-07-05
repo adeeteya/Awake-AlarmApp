@@ -21,8 +21,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark =
-        MediaQuery.platformBrightnessOf(context) == Brightness.dark;
+    final bool isDark = Theme.of(context).brightness == Brightness.dark;
     return GestureDetector(
       onTap: () {
         setState(() {

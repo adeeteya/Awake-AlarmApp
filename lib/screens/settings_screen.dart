@@ -1,29 +1,30 @@
 import 'package:awake/theme/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../services/theme_cubit.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark =
-        MediaQuery.platformBrightnessOf(context) == Brightness.dark;
+    final bool isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
-      backgroundColor: (isDark) ? AppColors.darkBorder : Colors.white,
+      backgroundColor: isDark ? AppColors.darkBorder : Colors.white,
       body: Hero(
-        tag: "InnerDecoratedBox",
+        tag: 'InnerDecoratedBox',
         child: DecoratedBox(
           decoration: BoxDecoration(
             border: Border.all(
-              color: (isDark) ? AppColors.darkBorder : Colors.white,
+              color: isDark ? AppColors.darkBorder : Colors.white,
             ),
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors:
-                  (isDark)
-                      ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
-                      : [AppColors.lightContainer1, AppColors.lightContainer2],
+              colors: isDark
+                  ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
+                  : [AppColors.lightContainer1, AppColors.lightContainer2],
             ),
           ),
           child: SafeArea(
@@ -36,30 +37,57 @@ class SettingsScreen extends StatelessWidget {
                     IconButton(
                       onPressed: () => Navigator.pop(context),
                       style: IconButton.styleFrom(
-                        foregroundColor:
-                            (isDark)
-                                ? AppColors.darkBackgroundText
-                                : AppColors.lightBackgroundText,
+                        foregroundColor: isDark
+                            ? AppColors.darkBackgroundText
+                            : AppColors.lightBackgroundText,
                       ),
-                      icon: Icon(Icons.arrow_back),
+                      icon: const Icon(Icons.arrow_back),
                     ),
                     Text(
-                      "Settings",
+                      'Settings',
                       style: TextStyle(
-                        color:
-                            (isDark)
-                                ? AppColors.darkBackgroundText
-                                : AppColors.lightBackgroundText,
+                        color: isDark
+                            ? AppColors.darkBackgroundText
+                            : AppColors.lightBackgroundText,
                         fontFamily: 'Poppins',
                         fontSize: 18,
                         fontWeight: FontWeight.w500,
                         letterSpacing: 0.03,
                       ),
                     ),
-                    IconButton(onPressed: null, icon: Offstage()),
+                    const IconButton(onPressed: null, icon: Offstage()),
                   ],
                 ),
-                // Add your settings options here
+                const SizedBox(height: 20),
+                BlocBuilder<ThemeCubit, ThemeMode>(
+                  builder: (context, mode) {
+                    return Column(
+                      children: [
+                        RadioListTile<ThemeMode>(
+                          title: const Text('System Default'),
+                          value: ThemeMode.system,
+                          groupValue: mode,
+                          onChanged: (m) =>
+                              context.read<ThemeCubit>().setTheme(m!),
+                        ),
+                        RadioListTile<ThemeMode>(
+                          title: const Text('Light'),
+                          value: ThemeMode.light,
+                          groupValue: mode,
+                          onChanged: (m) =>
+                              context.read<ThemeCubit>().setTheme(m!),
+                        ),
+                        RadioListTile<ThemeMode>(
+                          title: const Text('Dark'),
+                          value: ThemeMode.dark,
+                          groupValue: mode,
+                          onChanged: (m) =>
+                              context.read<ThemeCubit>().setTheme(m!),
+                        ),
+                      ],
+                    );
+                  },
+                ),
               ],
             ),
           ),
