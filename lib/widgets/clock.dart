@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:awake/theme/app_colors.dart';
 
 class ClockWidget extends StatefulWidget {
   const ClockWidget({super.key});
@@ -51,8 +52,8 @@ class ClockPainter extends CustomPainter {
             end: Alignment.bottomCenter,
             colors:
                 (isDark)
-                    ? [const Color(0xFF363E46), const Color(0xFF2C343C)]
-                    : [const Color(0xFFECEEF3), const Color(0xFFF1F2F7)],
+                    ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
+                    : [AppColors.lightClock2, AppColors.lightClock1],
           ).createShader(rectOuter);
     final Paint clockBackgroundBorderPaint =
         Paint()
@@ -61,8 +62,8 @@ class ClockPainter extends CustomPainter {
             end: Alignment.bottomRight,
             colors:
                 (isDark)
-                    ? [const Color(0xFF5D666D), const Color(0xFF232A30)]
-                    : [const Color(0xFFA5B1C3), const Color(0xFFFEFEFF)],
+                    ? [AppColors.darkBorder, AppColors.darkDeep]
+                    : [AppColors.lightScaffold2, Colors.white],
           ).createShader(rectOuter);
 
     //draw an interior border circle and the background circle itself
@@ -72,7 +73,7 @@ class ClockPainter extends CustomPainter {
     final Paint secondHandPaint =
         Paint()
           ..shader = const RadialGradient(
-            colors: [Color(0xFFFD251E), Color(0xFFFE725C)],
+            colors: [AppColors.primary, AppColors.primaryLight],
           ).createShader(Rect.fromCircle(center: center, radius: radius))
           ..strokeWidth = 4
           ..strokeCap = StrokeCap.round;
@@ -80,22 +81,25 @@ class ClockPainter extends CustomPainter {
     final Paint secondHandButtPaint =
         Paint()
           ..shader = const RadialGradient(
-            colors: [Color(0xFFFD251E), Color(0xFFFE725C)],
+            colors: [AppColors.primary, AppColors.primaryLight],
           ).createShader(Rect.fromCircle(center: center, radius: radius))
           ..strokeWidth = 8
           ..strokeCap = StrokeCap.round;
 
     final Paint minuteHandPaint =
         Paint()
-          ..color = (isDark) ? const Color(0xFF8E98A1) : const Color(0xFF646E82)
+          ..color =
+              (isDark)
+                  ? AppColors.darkBackgroundText
+                  : AppColors.lightBackgroundText
           ..strokeCap = StrokeCap.round
           ..strokeWidth = 6;
     final Paint labelHandPaint =
         Paint()
           ..color =
               (isDark)
-                  ? const Color(0xFF5D666D)
-                  : const Color(0xFFA6B4C8).withValues(alpha: 0.57)
+                  ? AppColors.darkBorder
+                  : AppColors.shadowLight.withValues(alpha: 0.57)
           ..strokeCap = StrokeCap.round
           ..strokeWidth = 2;
 

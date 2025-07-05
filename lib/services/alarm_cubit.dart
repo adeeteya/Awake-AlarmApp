@@ -43,7 +43,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
           body: "Time to Wake Up",
           stopButton: 'Stop',
           icon: 'notification_icon',
-          iconColor: Color(0xFFFFFFFF),
+          iconColor: Colors.white,
         ),
       );
       final alarmSet = await Alarm.set(alarmSettings: alarmSetting);

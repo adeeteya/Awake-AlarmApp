@@ -1,5 +1,6 @@
 import 'package:awake/models/alarm_model.dart';
 import 'package:flutter/material.dart';
+import 'package:awake/theme/app_colors.dart';
 
 class AlarmTile extends StatelessWidget {
   final AlarmModel alarmModel;
@@ -21,10 +22,10 @@ class AlarmTile extends StatelessWidget {
               .isNotEmpty;
       final color =
           isSelected
-              ? const Color(0xFFFD251E)
+              ? AppColors.primary
               : isDark
-              ? const Color(0xFF8E98A1)
-              : const Color(0xFF646E82);
+              ? AppColors.darkBackgroundText
+              : AppColors.lightBackgroundText;
 
       textSpans.add(
         TextSpan(text: '${dayLabels[i]} ', style: TextStyle(color: color)),
@@ -55,8 +56,8 @@ class AlarmTile extends StatelessWidget {
           end: Alignment.bottomRight,
           colors:
               (isDark)
-                  ? [const Color(0xFF5D666D), const Color(0xFF242B31)]
-                  : [Colors.white, const Color(0xFFBAC3CF)],
+                  ? [AppColors.darkBorder, AppColors.darkScaffold2]
+                  : [Colors.white, AppColors.lightScaffold2],
         ),
         boxShadow:
             (isDark)
@@ -64,13 +65,13 @@ class AlarmTile extends StatelessWidget {
                   BoxShadow(
                     offset: const Offset(-5, -5),
                     blurRadius: 20,
-                    color: const Color(0xFF48535C).withValues(alpha: 0.35),
+                    color: AppColors.darkGrey.withValues(alpha: 0.35),
                   ),
                   BoxShadow(
                     offset: const Offset(13, 14),
                     blurRadius: 12,
                     spreadRadius: -6,
-                    color: const Color(0xFF23282D).withValues(alpha: 0.70),
+                    color: AppColors.shadowDark.withValues(alpha: 0.70),
                   ),
                 ]
                 : [
@@ -83,7 +84,7 @@ class AlarmTile extends StatelessWidget {
                     offset: const Offset(13, 14),
                     blurRadius: 12,
                     spreadRadius: -6,
-                    color: const Color(0xFFA6B4C8).withValues(alpha: 0.57),
+                    color: AppColors.shadowLight.withValues(alpha: 0.57),
                   ),
                 ],
       ),
@@ -98,8 +99,8 @@ class AlarmTile extends StatelessWidget {
             end: Alignment.bottomRight,
             colors:
                 (isDark)
-                    ? [const Color(0xFF3F4850), const Color(0xFF363E46)]
-                    : [const Color(0xFFEEF0F5), const Color(0xFFE6E9EF)],
+                    ? [AppColors.darkClock1, AppColors.darkScaffold1]
+                    : [AppColors.lightScaffold1, AppColors.lightGradient2],
           ),
         ),
         child: Row(
@@ -109,8 +110,8 @@ class AlarmTile extends StatelessWidget {
               style: TextStyle(
                 color:
                     (isDark)
-                        ? const Color(0xFF8E98A1)
-                        : const Color(0xFF646E82),
+                        ? AppColors.darkBackgroundText
+                        : AppColors.lightBackgroundText,
                 fontFamily: 'Poppins',
                 fontSize: 34,
                 fontWeight: FontWeight.w500,
@@ -123,7 +124,7 @@ class AlarmTile extends StatelessWidget {
               onPressed: onDelete,
               tooltip: "Delete",
               icon: Icon(Icons.delete),
-              style: IconButton.styleFrom(foregroundColor: Color(0xFFFD251E)),
+              style: IconButton.styleFrom(foregroundColor: AppColors.primary),
             ),
           ],
         ),

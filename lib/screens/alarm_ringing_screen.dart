@@ -1,5 +1,5 @@
 import 'package:alarm/alarm.dart';
-import 'package:awake/constants.dart';
+import 'package:awake/theme/app_colors.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/widgets/snooze_button.dart';
 import 'package:awake/widgets/stop_alarm.dart';
@@ -23,11 +23,8 @@ class AlarmRingingScreen extends StatelessWidget {
             end: Alignment.bottomCenter,
             colors:
                 (isDark)
-                    ? [darkScaffoldGradient1Color, darkScaffoldGradient2Color]
-                    : [
-                      lightScaffoldGradient1Color,
-                      lightScaffoldGradient2Color,
-                    ],
+                    ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
+                    : [AppColors.lightScaffold1, AppColors.lightScaffold2],
           ),
         ),
         child: Center(

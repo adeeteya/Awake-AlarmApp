@@ -1,5 +1,5 @@
 import 'package:alarm/alarm.dart';
-import 'package:awake/constants.dart';
+import 'package:awake/theme/app_theme.dart';
 import 'package:awake/screens/home.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:flutter/material.dart';
@@ -24,41 +24,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Awake- The Alarm Clock',
         themeMode: ThemeMode.system,
-        theme: ThemeData(
-          colorSchemeSeed: primaryColor,
-          dialogTheme: DialogThemeData(
-            backgroundColor: lightScaffoldGradient1Color,
-          ),
-          timePickerTheme: const TimePickerThemeData(
-            backgroundColor: lightScaffoldGradient1Color,
-            hourMinuteTextColor: lightBackgroundTextColor,
-            dayPeriodTextColor: lightBackgroundTextColor,
-            entryModeIconColor: lightBackgroundTextColor,
-            dialTextColor: lightBackgroundTextColor,
-            helpTextStyle: TextStyle(
-              color: darkBackgroundTextColor,
-              fontFamily: "Poppins",
-            ),
-          ),
-        ),
-        darkTheme: ThemeData(
-          colorSchemeSeed: primaryAlternateColor,
-          dialogTheme: DialogThemeData(
-            backgroundColor: darkScaffoldGradient1Color,
-          ),
-          timePickerTheme: const TimePickerThemeData(
-            backgroundColor: darkScaffoldGradient2Color,
-            hourMinuteTextColor: darkBackgroundTextColor,
-            dayPeriodTextColor: darkBackgroundTextColor,
-            dialTextColor: darkBackgroundTextColor,
-            entryModeIconColor: darkBackgroundTextColor,
-            dialBackgroundColor: darkScaffoldGradient1Color,
-            helpTextStyle: TextStyle(
-              color: darkBackgroundTextColor,
-              fontFamily: "Poppins",
-            ),
-          ),
-        ),
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
         home: const Home(),
       ),
     );
