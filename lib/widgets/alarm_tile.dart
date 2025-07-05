@@ -44,8 +44,7 @@ class AlarmTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark =
-        MediaQuery.platformBrightnessOf(context) == Brightness.dark;
+    final bool isDark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       padding: const EdgeInsets.all(1),
       margin: const EdgeInsets.only(top: 23),

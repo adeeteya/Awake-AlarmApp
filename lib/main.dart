@@ -11,25 +11,20 @@ import 'services/theme_cubit.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPreferencesWithCache.initialize();
-  final index =
-      SharedPreferencesWithCache.instance.get<int>('themeMode') ??
-          ThemeMode.system.index;
   await Alarm.init();
 
-  final themeCubit = ThemeCubit(ThemeMode.values[index]);
-  runApp(MyApp(themeCubit: themeCubit));
+  runApp(MyApp());
 }
-class MyApp extends StatelessWidget {
-  const MyApp({super.key, required this.themeCubit});
 
-  final ThemeCubit themeCubit;
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => AlarmCubit()),
-        BlocProvider<ThemeCubit>.value(value: themeCubit),
+        BlocProvider(create: (_) => ThemeCubit()),
       ],
       child: BlocBuilder<ThemeCubit, ThemeMode>(
         builder: (context, mode) {
