@@ -51,7 +51,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
                       ? null
                       : (isDark)
                       ? AppColors.darkDeep
-                      : AppColors.shadowLight.withOpacity(0.25),
+                      : AppColors.shadowLight.withValues(alpha: 0.25),
               borderRadius: BorderRadius.circular(40),
               gradient:
                   isChecked
@@ -67,7 +67,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
                         BoxShadow(
                           offset: const Offset(1.6, 1.3),
                           blurRadius: 1.98,
-                          color: Colors.black.withOpacity(0.2),
+                          color: Colors.black.withValues(alpha: 0.2),
                           inset: true,
                         ),
                         BoxShadow(
@@ -76,7 +76,7 @@ class _GradientSwitchState extends State<GradientSwitch> {
                           spreadRadius: 2,
                           color: const Color(
                             0xFFFD251E,
-                          ).withOpacity(0.35),
+                          ).withValues(alpha: 0.35),
                         ),
                       ]
                       : (isDark)
@@ -86,13 +86,13 @@ class _GradientSwitchState extends State<GradientSwitch> {
                           blurRadius: 4.9,
                           color: const Color(
                             0xFF454D55,
-                          ).withOpacity(0.25),
+                          ).withValues(alpha: 0.25),
                           inset: true,
                         ),
                         BoxShadow(
                           offset: const Offset(1.6, 1.3),
                           blurRadius: 1.98,
-                          color: AppColors.shadowDark.withOpacity(0.7),
+                          color: AppColors.shadowDark.withValues(alpha: 0.7),
                           inset: true,
                         ),
                       ]
@@ -100,13 +100,15 @@ class _GradientSwitchState extends State<GradientSwitch> {
                         BoxShadow(
                           offset: const Offset(-1.6, -1.6),
                           blurRadius: 3,
-                          color: Colors.white.withOpacity(0.41),
+                          color: Colors.white.withValues(alpha: 0.41),
                           inset: true,
                         ),
                         BoxShadow(
                           offset: const Offset(1.6, 1.3),
                           blurRadius: 1.98,
-                          color: AppColors.lightBackgroundText.withOpacity(0.2),
+                          color: AppColors.lightBackgroundText.withValues(
+                            alpha: 0.2,
+                          ),
                           inset: true,
                         ),
                       ],
@@ -133,7 +135,10 @@ class _GradientSwitchState extends State<GradientSwitch> {
                         : const LinearGradient(
                           begin: Alignment.bottomLeft,
                           end: Alignment.topRight,
-                          colors: [AppColors.lightScaffold1, AppColors.lightGradient2],
+                          colors: [
+                            AppColors.lightScaffold1,
+                            AppColors.lightGradient2,
+                          ],
                         ),
                 boxShadow:
                     (isChecked)
@@ -145,28 +150,28 @@ class _GradientSwitchState extends State<GradientSwitch> {
                             blurRadius: 6,
                             color: const Color(
                               0xFF454D56,
-                            ).withOpacity(0.52),
+                            ).withValues(alpha: 0.52),
                           ),
                           BoxShadow(
                             offset: const Offset(3, 3),
                             blurRadius: 6,
                             color: const Color(
                               0xFF181E24,
-                            ).withOpacity(0.65),
+                            ).withValues(alpha: 0.65),
                           ),
                         ]
                         : [
                           BoxShadow(
                             offset: const Offset(-3, -3),
                             blurRadius: 6,
-                            color: Colors.white.withOpacity(0.9),
+                            color: Colors.white.withValues(alpha: 0.9),
                           ),
                           BoxShadow(
                             offset: const Offset(3, 3),
                             blurRadius: 6,
                             color: const Color(
                               0xFFA6B4C8,
-                            ).withOpacity(0.65),
+                            ).withValues(alpha: 0.65),
                           ),
                         ],
               ),

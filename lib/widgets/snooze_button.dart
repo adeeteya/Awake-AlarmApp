@@ -1,7 +1,6 @@
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/minus_button.dart';
 import 'package:flutter/material.dart';
-import 'package:awake/theme/app_colors.dart';
 
 class SnoozeButton extends StatefulWidget {
   final Function(int snoozeMinutes) onSnoozePressed;

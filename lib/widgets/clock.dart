@@ -88,7 +88,10 @@ class ClockPainter extends CustomPainter {
 
     final Paint minuteHandPaint =
         Paint()
-          ..color = (isDark) ? AppColors.darkBackgroundText : AppColors.lightBackgroundText
+          ..color =
+              (isDark)
+                  ? AppColors.darkBackgroundText
+                  : AppColors.lightBackgroundText
           ..strokeCap = StrokeCap.round
           ..strokeWidth = 6;
     final Paint labelHandPaint =
@@ -96,7 +99,7 @@ class ClockPainter extends CustomPainter {
           ..color =
               (isDark)
                   ? AppColors.darkBorder
-                  : AppColors.shadowLight.withOpacity(0.57)
+                  : AppColors.shadowLight.withValues(alpha: 0.57)
           ..strokeCap = StrokeCap.round
           ..strokeWidth = 2;
 

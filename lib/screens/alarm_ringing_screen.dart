@@ -24,10 +24,7 @@ class AlarmRingingScreen extends StatelessWidget {
             colors:
                 (isDark)
                     ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
-                    : [
-                      AppColors.lightScaffold1,
-                      AppColors.lightScaffold2,
-                    ],
+                    : [AppColors.lightScaffold1, AppColors.lightScaffold2],
           ),
         ),
         child: Center(

@@ -25,24 +25,24 @@ class AddButton extends StatelessWidget {
                   BoxShadow(
                     offset: const Offset(-5, -5),
                     blurRadius: 20,
-                    color: AppColors.darkGrey.withOpacity(0.35),
+                    color: AppColors.darkGrey.withValues(alpha: 0.35),
                   ),
                   BoxShadow(
                     offset: const Offset(5, 5),
                     blurRadius: 10,
-                    color: AppColors.shadowDark.withOpacity(0.7),
+                    color: AppColors.shadowDark.withValues(alpha: 0.7),
                   ),
                 ]
                 : [
                   BoxShadow(
                     offset: const Offset(-5, -5),
                     blurRadius: 10,
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withValues(alpha: 0.7),
                   ),
                   BoxShadow(
                     offset: const Offset(5, 5),
                     blurRadius: 10,
-                    color: AppColors.shadowLight.withOpacity(0.7),
+                    color: AppColors.shadowLight.withValues(alpha: 0.7),
                   ),
                 ],
         shape: BoxShape.circle,
@@ -97,7 +97,7 @@ class AddButtonPainter extends CustomPainter {
         );
     canvas.drawShadow(
       semiOvalBottomRight,
-      AppColors.primary.withOpacity(0.35),
+      AppColors.primary.withValues(alpha: 0.35),
       11,
       true,
     );

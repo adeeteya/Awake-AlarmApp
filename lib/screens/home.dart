@@ -81,10 +81,7 @@ class _HomeState extends State<Home> {
             colors:
                 (isDark)
                     ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
-                    : [
-                      AppColors.lightScaffold1,
-                      AppColors.lightScaffold2,
-                    ],
+                    : [AppColors.lightScaffold1, AppColors.lightScaffold2],
           ),
         ),
         child: SafeArea(
@@ -107,10 +104,7 @@ class _HomeState extends State<Home> {
                           end: Alignment.bottomCenter,
                           colors:
                               (isDark)
-                                  ? [
-                                    AppColors.darkClock1,
-                                    AppColors.darkClock2,
-                                  ]
+                                  ? [AppColors.darkClock1, AppColors.darkClock2]
                                   : [
                                     AppColors.lightClock1,
                                     AppColors.lightClock2,
@@ -123,18 +117,24 @@ class _HomeState extends State<Home> {
                                     offset: const Offset(19, 25),
                                     blurRadius: 92,
                                     spreadRadius: -32,
-                                    color: AppColors.shadowDark.withOpacity(0.35),
+                                    color: AppColors.shadowDark.withValues(
+                                      alpha: 0.35,
+                                    ),
                                   ),
                                   BoxShadow(
                                     offset: const Offset(-20, -20),
                                     blurRadius: 61,
-                                    color: AppColors.darkGrey.withOpacity(0.25),
+                                    color: AppColors.darkGrey.withValues(
+                                      alpha: 0.25,
+                                    ),
                                   ),
                                   BoxShadow(
                                     offset: const Offset(13, 14),
                                     blurRadius: 12,
                                     spreadRadius: -6,
-                                    color: AppColors.shadowDark.withOpacity(0.50),
+                                    color: AppColors.shadowDark.withValues(
+                                      alpha: 0.50,
+                                    ),
                                   ),
                                 ]
                                 : [
@@ -142,18 +142,22 @@ class _HomeState extends State<Home> {
                                     offset: const Offset(19, 25),
                                     blurRadius: 92,
                                     spreadRadius: -32,
-                                    color: AppColors.shadowLight.withOpacity(0.45),
+                                    color: AppColors.shadowLight.withValues(
+                                      alpha: 0.45,
+                                    ),
                                   ),
                                   BoxShadow(
                                     offset: const Offset(-20, -20),
                                     blurRadius: 61,
-                                    color: Colors.white.withOpacity(0.53),
+                                    color: Colors.white.withValues(alpha: 0.53),
                                   ),
                                   BoxShadow(
                                     offset: const Offset(13, 14),
                                     blurRadius: 12,
                                     spreadRadius: -6,
-                                    color: AppColors.shadowLight.withOpacity(0.57),
+                                    color: AppColors.shadowLight.withValues(
+                                      alpha: 0.57,
+                                    ),
                                   ),
                                 ],
                         shape: BoxShape.circle,
@@ -175,8 +179,7 @@ class _HomeState extends State<Home> {
                   child: DecoratedBox(
                     decoration: BoxDecoration(
                       border: Border.all(
-                        color:
-                            (isDark) ? AppColors.darkBorder : Colors.white,
+                        color: (isDark) ? AppColors.darkBorder : Colors.white,
                       ),
                       borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(20),

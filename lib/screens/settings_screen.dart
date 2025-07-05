@@ -23,10 +23,7 @@ class SettingsScreen extends StatelessWidget {
               colors:
                   (isDark)
                       ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
-                      : [
-                        AppColors.lightContainer1,
-                        AppColors.lightContainer2,
-                      ],
+                      : [AppColors.lightContainer1, AppColors.lightContainer2],
             ),
           ),
           child: SafeArea(
