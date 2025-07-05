@@ -13,6 +13,7 @@ import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../extensions/context_extensions.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -64,7 +65,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = Theme.of(context).brightness == Brightness.dark;
+    final bool isDark = context.isDarkMode;
 
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,

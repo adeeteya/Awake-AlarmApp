@@ -5,6 +5,7 @@ import 'package:awake/widgets/snooze_button.dart';
 import 'package:awake/widgets/stop_alarm.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../extensions/context_extensions.dart';
 import 'package:lottie/lottie.dart';
 
 class AlarmRingingScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class AlarmRingingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = Theme.of(context).brightness == Brightness.dark;
+    final bool isDark = context.isDarkMode;
     return Scaffold(
       body: DecoratedBox(
         decoration: BoxDecoration(

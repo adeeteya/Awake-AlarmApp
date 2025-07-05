@@ -1,15 +1,17 @@
 import 'package:awake/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../extensions/context_extensions.dart';
 
 import '../services/theme_cubit.dart';
+import '../widgets/theme_list_tile.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = Theme.of(context).brightness == Brightness.dark;
+    final bool isDark = context.isDarkMode;
     return Scaffold(
       backgroundColor: isDark ? AppColors.darkBorder : Colors.white,
       body: Hero(
@@ -61,30 +63,10 @@ class SettingsScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 BlocBuilder<ThemeCubit, ThemeMode>(
                   builder: (context, mode) {
-                    return Column(
-                      children: [
-                        RadioListTile<ThemeMode>(
-                          title: const Text('System Default'),
-                          value: ThemeMode.system,
-                          groupValue: mode,
-                          onChanged: (m) =>
-                              context.read<ThemeCubit>().setTheme(m!),
-                        ),
-                        RadioListTile<ThemeMode>(
-                          title: const Text('Light'),
-                          value: ThemeMode.light,
-                          groupValue: mode,
-                          onChanged: (m) =>
-                              context.read<ThemeCubit>().setTheme(m!),
-                        ),
-                        RadioListTile<ThemeMode>(
-                          title: const Text('Dark'),
-                          value: ThemeMode.dark,
-                          groupValue: mode,
-                          onChanged: (m) =>
-                              context.read<ThemeCubit>().setTheme(m!),
-                        ),
-                      ],
+                    return ThemeListTile(
+                      mode: mode,
+                      onChanged: (m) =>
+                          context.read<ThemeCubit>().setTheme(m),
                     );
                   },
                 ),
