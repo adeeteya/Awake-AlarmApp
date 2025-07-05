@@ -1,14 +1,15 @@
 import 'dart:async';
 import 'dart:math';
+
 import 'package:alarm/alarm.dart';
 import 'package:alarm/utils/alarm_set.dart';
 import 'package:awake/extensions/context_extensions.dart';
-import 'package:awake/theme/app_colors.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/screens/alarm_ringing_screen.dart';
 import 'package:awake/screens/settings_screen.dart';
-import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/alarm_cubit.dart';
+import 'package:awake/services/alarm_permissions.dart';
+import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
@@ -26,7 +27,7 @@ class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
 
   Future<void> _addAlarm() async {
-    TimeOfDay? timeOfDay = await showTimePicker(
+    final TimeOfDay? timeOfDay = await showTimePicker(
       context: context,
       initialTime: TimeOfDay.now(),
       helpText: "Set Alarm Time",
@@ -40,15 +41,15 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    AlarmPermissions.checkNotificationPermission().then(
+    unawaited(AlarmPermissions.checkNotificationPermission().then(
       (_) => AlarmPermissions.checkAndroidScheduleExactAlarmPermission(),
-    );
+    ));
     _ringSubscription = Alarm.ringing.listen(_ringingAlarmsChanged);
   }
 
   @override
   void dispose() {
-    _ringSubscription.cancel();
+    unawaited(_ringSubscription.cancel());
     super.dispose();
   }
 
@@ -71,7 +72,7 @@ class _HomeState extends State<Home> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: GestureDetector(
         onTap: _addAlarm,
-        child: AddButton(),
+        child: const AddButton(),
       ),
       body: DecoratedBox(
         decoration: BoxDecoration(
@@ -79,7 +80,7 @@ class _HomeState extends State<Home> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors:
-                (isDark)
+                isDark
                     ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
                     : [AppColors.lightScaffold1, AppColors.lightScaffold2],
           ),
@@ -90,7 +91,7 @@ class _HomeState extends State<Home> {
               Expanded(
                 child: LayoutBuilder(
                   builder: (context, constraints) {
-                    double radius = min(
+                    final double radius = min(
                       constraints.maxHeight,
                       constraints.maxWidth,
                     );
@@ -103,7 +104,7 @@ class _HomeState extends State<Home> {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors:
-                              (isDark)
+                              isDark
                                   ? [AppColors.darkClock1, AppColors.darkClock2]
                                   : [
                                     AppColors.lightClock1,
@@ -111,7 +112,7 @@ class _HomeState extends State<Home> {
                                   ],
                         ),
                         boxShadow:
-                            (isDark)
+                            isDark
                                 ? [
                                   BoxShadow(
                                     offset: const Offset(19, 25),
@@ -181,7 +182,7 @@ class _HomeState extends State<Home> {
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: (isDark) ? AppColors.darkBorder : Colors.white,
+                          color: isDark ? AppColors.darkBorder : Colors.white,
                         ),
                         borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(20),
@@ -191,7 +192,7 @@ class _HomeState extends State<Home> {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors:
-                              (isDark)
+                              isDark
                                   ? [
                                     AppColors.darkScaffold1,
                                     AppColors.darkScaffold2,
@@ -211,7 +212,7 @@ class _HomeState extends State<Home> {
                                 "No Alarms Added Yet",
                                 style: TextStyle(
                                   color:
-                                      (isDark)
+                                      isDark
                                           ? AppColors.darkBackgroundText
                                           : AppColors.lightBackgroundText,
                                   fontFamily: 'Poppins',
@@ -235,7 +236,7 @@ class _HomeState extends State<Home> {
                                       "Alarms",
                                       style: TextStyle(
                                         color:
-                                            (isDark)
+                                            isDark
                                                 ? AppColors.darkBackgroundText
                                                 : AppColors.lightBackgroundText,
                                         fontFamily: 'Poppins',
@@ -246,8 +247,8 @@ class _HomeState extends State<Home> {
                                     ),
                                     const Spacer(),
                                     IconButton(
-                                      onPressed: () {
-                                        Navigator.of(context).push(
+                                      onPressed: () async {
+                                        await Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder:
                                                 (context) =>
@@ -257,11 +258,11 @@ class _HomeState extends State<Home> {
                                       },
                                       style: IconButton.styleFrom(
                                         foregroundColor:
-                                            (isDark)
+                                            isDark
                                                 ? AppColors.darkBackgroundText
                                                 : AppColors.lightBackgroundText,
                                       ),
-                                      icon: Icon(Icons.settings),
+                                      icon: const Icon(Icons.settings),
                                     ),
                                     const SizedBox(width: 15),
                                   ],

@@ -29,7 +29,7 @@ class AlarmDatabase {
 
   static Future<List<AlarmDbEntry>> allAlarms() async {
     final rows = await _database.query('alarms');
-    return rows.map((e) => AlarmDbEntry.fromMap(e)).toList();
+    return rows.map(AlarmDbEntry.fromMap).toList();
   }
 
   static Future<AlarmDbEntry?> getAlarm(TimeOfDay time) async {

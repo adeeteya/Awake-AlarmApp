@@ -1,13 +1,15 @@
+import 'dart:async';
+
 import 'package:alarm/alarm.dart';
-import 'package:awake/models/alarm_model.dart';
 import 'package:awake/models/alarm_db_entry.dart';
+import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AlarmCubit extends Cubit<List<AlarmModel>> {
   AlarmCubit() : super([]) {
-    _loadAlarms();
+    unawaited(_loadAlarms());
   }
 
   Future<void> _loadAlarms() async {
@@ -36,11 +38,8 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
         id: id,
         dateTime: scheduledDate,
         assetAudioPath: "assets/alarm_ringtone.mp3",
-        volumeSettings: VolumeSettings.fixed(
-          volume: 1.0,
-          volumeEnforced: false,
-        ),
-        notificationSettings: NotificationSettings(
+        volumeSettings: const VolumeSettings.fixed(volume: 1.0),
+        notificationSettings: const NotificationSettings(
           title: "Alarm",
           body: "Time to Wake Up",
           stopButton: 'Stop',
@@ -79,7 +78,8 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
               (now.hour == timeOfDay.hour && now.minute >= timeOfDay.minute))) {
         continue;
       }
-      final exists = current[timeOfDay]?.any(
+      final exists =
+          current[timeOfDay]?.any(
             (a) =>
                 a.dateTime.year == dateTime.year &&
                 a.dateTime.month == dateTime.month &&
@@ -122,17 +122,14 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     ],
   }) async {
     final existingEntry = await AlarmDatabase.getAlarm(timeOfDay);
-    final updatedDays = {
-      ...(existingEntry?.days ?? []),
-      ...days,
-    }.toList();
+    final updatedDays = {...(existingEntry?.days ?? []), ...days}.toList();
 
     await AlarmDatabase.insertOrUpdate(
       AlarmDbEntry(time: timeOfDay, days: updatedDays),
     );
 
     final Map<TimeOfDay, List<AlarmSettings>> current = {
-      for (final m in state) m.timeOfDay: [...m.alarmSettings]
+      for (final m in state) m.timeOfDay: [...m.alarmSettings],
     };
 
     await _ensureUpcomingWeek(timeOfDay, updatedDays, current);
