@@ -131,7 +131,6 @@ class _AlarmTileState extends State<AlarmTile> {
 
   Future<void> _showEditDialog() async {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
-    var tempDays = {..._selectedDays};
     await showDialog<void>(
       context: context,
       builder: (context) {
@@ -146,8 +145,22 @@ class _AlarmTileState extends State<AlarmTile> {
               content: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  _daySelector(tempDays, isDark, (d) {
-                    setStateDialog(() => tempDays = d);
+                  Text(
+                    "${widget.alarmModel.timeOfDay.hour.toString().padLeft(2, '0')}:${widget.alarmModel.timeOfDay.minute.toString().padLeft(2, '0')}",
+                    style: TextStyle(
+                      color: isDark
+                          ? AppColors.darkBackgroundText
+                          : AppColors.lightBackgroundText,
+                      fontFamily: 'Poppins',
+                      fontSize: 34,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  _daySelector(_selectedDays, isDark, (d) {
+                    setState(() => _selectedDays = d);
+                    setStateDialog(() {});
+                    widget.onDaysChanged(_selectedDays.toList());
                   }),
                   const SizedBox(height: 16),
                   TextButton.icon(
@@ -160,22 +173,6 @@ class _AlarmTileState extends State<AlarmTile> {
                   ),
                 ],
               ),
-              actions: [
-                TextButton(
-                  onPressed: () => Navigator.of(context).pop(),
-                  child: const Text('Cancel'),
-                ),
-                TextButton(
-                  onPressed: () {
-                    setState(() {
-                      _selectedDays = tempDays;
-                    });
-                    widget.onDaysChanged(_selectedDays.toList());
-                    Navigator.of(context).pop();
-                  },
-                  child: const Text('Save'),
-                ),
-              ],
             );
           },
         );
