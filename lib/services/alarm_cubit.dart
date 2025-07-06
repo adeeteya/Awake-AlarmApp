@@ -220,4 +220,12 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
 
     await _loadAlarms(presetAlarms: current.values.expand((e) => e).toList());
   }
+
+  Future<void> updateVibrationForAll(bool vibrate) async {
+    final alarms = await Alarm.getAlarms();
+    for (final alarm in alarms) {
+      await Alarm.set(alarmSettings: alarm.copyWith(vibrate: vibrate));
+    }
+    await _loadAlarms();
+  }
 }

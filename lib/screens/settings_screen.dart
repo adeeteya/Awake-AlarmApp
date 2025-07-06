@@ -1,8 +1,10 @@
 import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/gradient_switch.dart';
 import 'package:awake/widgets/theme_list_tile.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -185,12 +187,14 @@ class SettingsScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 23),
                           GestureDetector(
-                            onTap:
-                                () => context
-                                    .read<SettingsCubit>()
-                                    .setVibrationEnabled(
-                                      !state.vibrationEnabled,
-                                    ),
+                            onTap: () async {
+                              final settingsCubit =
+                                  context.read<SettingsCubit>();
+                              final alarmCubit = context.read<AlarmCubit>();
+                              final newValue = !state.vibrationEnabled;
+                              await settingsCubit.setVibrationEnabled(newValue);
+                              await alarmCubit.updateVibrationForAll(newValue);
+                            },
                             child: Container(
                               padding: const EdgeInsets.all(1),
                               decoration: BoxDecoration(
@@ -278,10 +282,14 @@ class SettingsScreen extends StatelessWidget {
                                     const Spacer(),
                                     GradientSwitch(
                                       value: state.vibrationEnabled,
-                                      onChanged:
-                                          (v) => context
-                                              .read<SettingsCubit>()
-                                              .setVibrationEnabled(v),
+                                      onChanged: (v) async {
+                                        final settingsCubit =
+                                            context.read<SettingsCubit>();
+                                        final alarmCubit =
+                                            context.read<AlarmCubit>();
+                                        await settingsCubit.setVibrationEnabled(v);
+                                        await alarmCubit.updateVibrationForAll(v);
+                                      },
                                     ),
                                   ],
                                 ),
