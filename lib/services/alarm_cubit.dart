@@ -4,6 +4,7 @@ import 'package:alarm/alarm.dart';
 import 'package:awake/models/alarm_db_entry.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_database.dart';
+import 'package:awake/services/shared_prefs_with_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -46,11 +47,15 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
 
   Future<AlarmSettings?> _setAlarm(int id, DateTime scheduledDate) async {
     try {
+      final vibrate =
+          (SharedPreferencesWithCache.instance.get<int>('vibrationEnabled') ??
+              1) ==
+          1;
       final alarmSetting = AlarmSettings(
         id: id,
         dateTime: scheduledDate,
         assetAudioPath: "assets/alarm_ringtone.mp3",
-        vibrate: false,
+        vibrate: vibrate,
         volumeSettings: const VolumeSettings.fixed(volume: 1.0),
         notificationSettings: const NotificationSettings(
           title: "Alarm",
@@ -214,5 +219,13 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     }
 
     await _loadAlarms(presetAlarms: current.values.expand((e) => e).toList());
+  }
+
+  Future<void> updateVibrationForAll(bool vibrate) async {
+    final alarms = await Alarm.getAlarms();
+    for (final alarm in alarms) {
+      await Alarm.set(alarmSettings: alarm.copyWith(vibrate: vibrate));
+    }
+    await _loadAlarms();
   }
 }

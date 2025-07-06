@@ -279,22 +279,26 @@ class _AlarmTileState extends State<AlarmTile> {
                     padding: const EdgeInsets.symmetric(horizontal: 18),
                     child: Row(
                       children: [
-                        Text(
-                          MaterialLocalizations.of(context).formatTimeOfDay(
-                            widget.alarmModel.timeOfDay,
-                            alwaysUse24HourFormat: use24h,
-                          ),
-                          style: TextStyle(
-                            color:
-                                isDark
-                                    ? AppColors.darkBackgroundText
-                                    : AppColors.lightBackgroundText,
-                            fontFamily: 'Poppins',
-                            fontSize: 34,
-                            fontWeight: FontWeight.w500,
+                        Expanded(
+                          child: Text(
+                            MaterialLocalizations.of(context).formatTimeOfDay(
+                              widget.alarmModel.timeOfDay,
+                              alwaysUse24HourFormat: use24h,
+                            ),
+                            style: TextStyle(
+                              color:
+                                  isDark
+                                      ? AppColors.darkBackgroundText
+                                      : AppColors.lightBackgroundText,
+                              fontFamily: 'Poppins',
+                              fontSize: 34,
+                              fontWeight: FontWeight.w500,
+                              fontFeatures: const [
+                                FontFeature.tabularFigures(),
+                              ],
+                            ),
                           ),
                         ),
-                        const Spacer(),
                         _repeatDayText(isDark),
                         const SizedBox(width: 12),
                         GradientSwitch(
