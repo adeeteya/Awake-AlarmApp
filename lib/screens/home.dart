@@ -291,6 +291,10 @@ class _HomeState extends State<Home> {
                                                 alarms[index].timeOfDay,
                                                 days,
                                               ),
+                                      onDelete:
+                                          () => context
+                                              .read<AlarmCubit>()
+                                              .deleteAlarmModel(alarms[index]),
                                     ),
                                 ],
                               ],
