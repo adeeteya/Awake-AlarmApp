@@ -83,30 +83,40 @@ class _AlarmTileState extends State<AlarmTile> {
               });
               widget.onDaysChanged(_selectedDays.toList());
             },
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 6),
-              decoration: BoxDecoration(
-                color:
-                    _selectedDays.contains(i + 1)
-                        ? AppColors.primary
-                        : Colors.transparent,
-                borderRadius: BorderRadius.circular(6),
-                border: Border.all(
-                  color:
-                      isDark ? AppColors.darkBorder : AppColors.lightBlueGrey,
-                ),
-              ),
-              child: Text(
-                dayLabels[i],
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 12,
+            child: SizedBox(
+              height: 24,
+              width: 24,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
                   color:
                       _selectedDays.contains(i + 1)
-                          ? Colors.white
-                          : isDark
-                          ? AppColors.darkBackgroundText
-                          : AppColors.lightBackgroundText,
+                          ? AppColors.primary
+                          : Colors.transparent,
+                  border:
+                      _selectedDays.contains(i + 1)
+                          ? null
+                          : Border.all(
+                            color:
+                                isDark
+                                    ? AppColors.darkBorder
+                                    : AppColors.lightBlueGrey,
+                          ),
+                ),
+                child: Center(
+                  child: Text(
+                    dayLabels[i],
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 12,
+                      color:
+                          _selectedDays.contains(i + 1)
+                              ? Colors.white
+                              : isDark
+                              ? AppColors.darkBackgroundText
+                              : AppColors.lightBackgroundText,
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -139,26 +149,26 @@ class _AlarmTileState extends State<AlarmTile> {
                     BoxShadow(
                       offset: const Offset(-5, -5),
                       blurRadius: 20,
-                      color: AppColors.darkGrey.withOpacity(0.35),
+                      color: AppColors.darkGrey.withValues(alpha: 0.35),
                     ),
                     BoxShadow(
                       offset: const Offset(13, 14),
                       blurRadius: 12,
                       spreadRadius: -6,
-                      color: AppColors.shadowDark.withOpacity(0.70),
+                      color: AppColors.shadowDark.withValues(alpha: 0.70),
                     ),
                   ]
                   : [
                     BoxShadow(
                       offset: const Offset(-5, -5),
                       blurRadius: 20,
-                      color: Colors.white.withOpacity(0.53),
+                      color: Colors.white.withValues(alpha: 0.53),
                     ),
                     BoxShadow(
                       offset: const Offset(13, 14),
                       blurRadius: 12,
                       spreadRadius: -6,
-                      color: AppColors.shadowLight.withOpacity(0.57),
+                      color: AppColors.shadowLight.withValues(alpha: 0.57),
                     ),
                   ],
         ),
