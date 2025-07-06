@@ -145,24 +145,38 @@ class _AlarmTileState extends State<AlarmTile> {
               content: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
-                    "${widget.alarmModel.timeOfDay.hour.toString().padLeft(2, '0')}:${widget.alarmModel.timeOfDay.minute.toString().padLeft(2, '0')}",
-                    style: TextStyle(
-                      color: isDark
-                          ? AppColors.darkBackgroundText
-                          : AppColors.lightBackgroundText,
-                      fontFamily: 'Poppins',
-                      fontSize: 34,
-                      fontWeight: FontWeight.w500,
-                    ),
+                  Row(
+                    children: [
+                      Text(
+                        "${widget.alarmModel.timeOfDay.hour.toString().padLeft(2, '0')}:${widget.alarmModel.timeOfDay.minute.toString().padLeft(2, '0')}",
+                        style: TextStyle(
+                          color:
+                              isDark
+                                  ? AppColors.darkBackgroundText
+                                  : AppColors.lightBackgroundText,
+                          fontFamily: 'Poppins',
+                          fontSize: 34,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      const Spacer(),
+                      GradientSwitch(
+                        value: _enabled,
+                        onChanged: (v) {
+                          setState(() => _enabled = v);
+                          setStateDialog(() {});
+                          widget.onEnabledChanged(v);
+                        },
+                      ),
+                    ],
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 20),
                   _daySelector(_selectedDays, isDark, (d) {
                     setState(() => _selectedDays = d);
                     setStateDialog(() {});
                     widget.onDaysChanged(_selectedDays.toList());
                   }),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 20),
                   TextButton.icon(
                     onPressed: () {
                       Navigator.of(context).pop();
@@ -183,11 +197,9 @@ class _AlarmTileState extends State<AlarmTile> {
   @override
   Widget build(BuildContext context) {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
-    return GestureDetector(
-      onTap: _showEditDialog,
-      child: Container(
-        padding: const EdgeInsets.all(1),
-        margin: const EdgeInsets.only(top: 23),
+    return Padding(
+      padding: const EdgeInsets.only(top: 23),
+      child: DecoratedBox(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           gradient: LinearGradient(
@@ -227,51 +239,63 @@ class _AlarmTileState extends State<AlarmTile> {
                     ),
                   ],
         ),
-        child: Container(
-          height: 74,
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 18),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors:
-                  isDark
-                      ? [AppColors.darkClock1, AppColors.darkScaffold1]
-                      : [AppColors.lightScaffold1, AppColors.lightGradient2],
-            ),
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Row(
-                children: [
-                  Text(
-                    "${widget.alarmModel.timeOfDay.hour.toString().padLeft(2, '0')}:${widget.alarmModel.timeOfDay.minute.toString().padLeft(2, '0')}",
-                    style: TextStyle(
-                      color:
-                          isDark
-                              ? AppColors.darkBackgroundText
-                              : AppColors.lightBackgroundText,
-                      fontFamily: 'Poppins',
-                      fontSize: 34,
-                      fontWeight: FontWeight.w500,
+        child: Padding(
+          padding: const EdgeInsets.all(1),
+          child: SizedBox(
+            height: 74,
+            width: double.infinity,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors:
+                      isDark
+                          ? [AppColors.darkClock1, AppColors.darkScaffold1]
+                          : [
+                            AppColors.lightScaffold1,
+                            AppColors.lightGradient2,
+                          ],
+                ),
+              ),
+              child: Material(
+                type: MaterialType.transparency,
+                child: InkWell(
+                  onTap: _showEditDialog,
+                  borderRadius: const BorderRadius.all(Radius.circular(20)),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 18),
+                    child: Row(
+                      children: [
+                        Text(
+                          "${widget.alarmModel.timeOfDay.hour.toString().padLeft(2, '0')}:${widget.alarmModel.timeOfDay.minute.toString().padLeft(2, '0')}",
+                          style: TextStyle(
+                            color:
+                                isDark
+                                    ? AppColors.darkBackgroundText
+                                    : AppColors.lightBackgroundText,
+                            fontFamily: 'Poppins',
+                            fontSize: 34,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const Spacer(),
+                        _repeatDayText(isDark),
+                        const SizedBox(width: 12),
+                        GradientSwitch(
+                          value: _enabled,
+                          onChanged: (v) {
+                            setState(() => _enabled = v);
+                            widget.onEnabledChanged(v);
+                          },
+                        ),
+                      ],
                     ),
                   ),
-                  const Spacer(),
-                  _repeatDayText(isDark),
-                  const SizedBox(width: 12),
-                  GradientSwitch(
-                    value: _enabled,
-                    onChanged: (v) {
-                      setState(() => _enabled = v);
-                      widget.onEnabledChanged(v);
-                    },
-                  ),
-                ],
+                ),
               ),
-            ],
+            ),
           ),
         ),
       ),
