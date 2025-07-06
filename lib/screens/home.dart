@@ -9,7 +9,7 @@ import 'package:awake/screens/alarm_ringing_screen.dart';
 import 'package:awake/screens/settings_screen.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_permissions.dart';
-import 'package:awake/services/theme_cubit.dart';
+import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/alarm_tile.dart';
@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
 
   Future<void> _addAlarm() async {
-    final bool use24h = context.read<ThemeCubit>().state.use24HourFormat;
+    final bool use24h = context.read<SettingsCubit>().state.use24HourFormat;
     final TimeOfDay? timeOfDay = await showTimePicker(
       context: context,
       initialTime: TimeOfDay.now(),
