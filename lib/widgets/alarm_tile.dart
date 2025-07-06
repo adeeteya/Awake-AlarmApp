@@ -1,7 +1,9 @@
 import 'package:awake/models/alarm_model.dart';
+import 'package:awake/services/theme_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/gradient_switch.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AlarmTile extends StatefulWidget {
   final AlarmModel alarmModel;
@@ -131,6 +133,7 @@ class _AlarmTileState extends State<AlarmTile> {
 
   Future<void> _showEditDialog() async {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
+    final bool use24h = context.read<ThemeCubit>().state.use24HourFormat;
     await showDialog<void>(
       context: context,
       builder: (context) {
@@ -148,7 +151,10 @@ class _AlarmTileState extends State<AlarmTile> {
                   Row(
                     children: [
                       Text(
-                        "${widget.alarmModel.timeOfDay.hour.toString().padLeft(2, '0')}:${widget.alarmModel.timeOfDay.minute.toString().padLeft(2, '0')}",
+                        MaterialLocalizations.of(context).formatTimeOfDay(
+                          widget.alarmModel.timeOfDay,
+                          alwaysUse24HourFormat: use24h,
+                        ),
                         style: TextStyle(
                           color:
                               isDark
@@ -197,6 +203,7 @@ class _AlarmTileState extends State<AlarmTile> {
   @override
   Widget build(BuildContext context) {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
+    final bool use24h = context.watch<ThemeCubit>().state.use24HourFormat;
     return Padding(
       padding: const EdgeInsets.only(top: 23),
       child: DecoratedBox(
@@ -269,7 +276,10 @@ class _AlarmTileState extends State<AlarmTile> {
                     child: Row(
                       children: [
                         Text(
-                          "${widget.alarmModel.timeOfDay.hour.toString().padLeft(2, '0')}:${widget.alarmModel.timeOfDay.minute.toString().padLeft(2, '0')}",
+                          MaterialLocalizations.of(context).formatTimeOfDay(
+                            widget.alarmModel.timeOfDay,
+                            alwaysUse24HourFormat: use24h,
+                          ),
                           style: TextStyle(
                             color:
                                 isDark

@@ -1,6 +1,7 @@
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/services/theme_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/widgets/gradient_switch.dart';
 import 'package:awake/widgets/theme_list_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -65,12 +66,96 @@ class SettingsScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 20),
-                  BlocBuilder<ThemeCubit, ThemeMode>(
-                    builder: (context, mode) {
-                      return ThemeListTile(
-                        mode: mode,
-                        onChanged:
-                            (m) => context.read<ThemeCubit>().setTheme(m),
+                  BlocBuilder<ThemeCubit, ThemeState>(
+                    builder: (context, state) {
+                      final color = isDark
+                          ? AppColors.darkBackgroundText
+                          : AppColors.lightBackgroundText;
+                      return Column(
+                        children: [
+                          ThemeListTile(
+                            mode: state.mode,
+                            onChanged:
+                                (m) => context.read<ThemeCubit>().setTheme(m),
+                          ),
+                          GestureDetector(
+                            onTap: () => context
+                                .read<ThemeCubit>()
+                                .setUse24HourFormat(!state.use24HourFormat),
+                            child: Container(
+                              padding: const EdgeInsets.all(1),
+                              margin: const EdgeInsets.only(top: 23),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: isDark
+                                      ? [AppColors.darkBorder, AppColors.darkScaffold2]
+                                      : [Colors.white, AppColors.lightScaffold2],
+                                ),
+                                boxShadow: isDark
+                                    ? [
+                                        BoxShadow(
+                                          offset: const Offset(-5, -5),
+                                          blurRadius: 20,
+                                          color: AppColors.darkGrey.withValues(alpha: 0.35),
+                                        ),
+                                        BoxShadow(
+                                          offset: const Offset(13, 14),
+                                          blurRadius: 12,
+                                          spreadRadius: -6,
+                                          color: AppColors.shadowDark.withValues(alpha: 0.70),
+                                        ),
+                                      ]
+                                    : [
+                                        BoxShadow(
+                                          offset: const Offset(-5, -5),
+                                          blurRadius: 20,
+                                          color: Colors.white.withValues(alpha: 0.53),
+                                        ),
+                                        BoxShadow(
+                                          offset: const Offset(13, 14),
+                                          blurRadius: 12,
+                                          spreadRadius: -6,
+                                          color: AppColors.shadowLight.withValues(alpha: 0.57),
+                                        ),
+                                      ],
+                              ),
+                              child: Container(
+                                height: 74,
+                                width: double.infinity,
+                                padding: const EdgeInsets.symmetric(horizontal: 18),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: isDark
+                                        ? [AppColors.darkClock1, AppColors.darkScaffold1]
+                                        : [AppColors.lightScaffold1, AppColors.lightGradient2],
+                                  ),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      '24-Hour Format',
+                                      style:
+                                          TextStyle(color: color, fontFamily: 'Poppins'),
+                                    ),
+                                    const Spacer(),
+                                    GradientSwitch(
+                                      value: state.use24HourFormat,
+                                      onChanged: (v) => context
+                                          .read<ThemeCubit>()
+                                          .setUse24HourFormat(v),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       );
                     },
                   ),

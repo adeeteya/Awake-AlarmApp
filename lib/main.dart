@@ -27,12 +27,12 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (_) => AlarmCubit()),
         BlocProvider(create: (_) => ThemeCubit()),
       ],
-      child: BlocBuilder<ThemeCubit, ThemeMode>(
-        builder: (context, mode) {
+      child: BlocBuilder<ThemeCubit, ThemeState>(
+        builder: (context, state) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Awake- The Alarm Clock',
-            themeMode: mode,
+            themeMode: state.mode,
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
             home: const Home(),
