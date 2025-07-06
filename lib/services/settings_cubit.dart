@@ -8,6 +8,7 @@ class SettingsState {
   final bool vibrationEnabled;
   final bool fadeInAlarm;
   final double alarmVolume;
+  final String alarmAudioPath;
 
   const SettingsState({
     required this.mode,
@@ -15,6 +16,7 @@ class SettingsState {
     required this.vibrationEnabled,
     required this.fadeInAlarm,
     required this.alarmVolume,
+    required this.alarmAudioPath,
   });
 
   SettingsState copyWith({
@@ -23,6 +25,7 @@ class SettingsState {
     bool? vibrationEnabled,
     bool? fadeInAlarm,
     double? alarmVolume,
+    String? alarmAudioPath,
   }) {
     return SettingsState(
       mode: mode ?? this.mode,
@@ -30,6 +33,7 @@ class SettingsState {
       vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
       fadeInAlarm: fadeInAlarm ?? this.fadeInAlarm,
       alarmVolume: alarmVolume ?? this.alarmVolume,
+      alarmAudioPath: alarmAudioPath ?? this.alarmAudioPath,
     );
   }
 }
@@ -38,30 +42,13 @@ class SettingsCubit extends Cubit<SettingsState> {
   SettingsCubit()
     : super(
         SettingsState(
-          mode:
-              ThemeMode.values[SharedPreferencesWithCache.instance.get<int>(
-                    'themeMode',
-                  ) ??
-                  ThemeMode.system.index],
-          use24HourFormat:
-              (SharedPreferencesWithCache.instance.get<int>(
-                    'use24HourFormat',
-                  ) ??
-                  0) ==
-              1,
-          vibrationEnabled:
-              (SharedPreferencesWithCache.instance.get<int>(
-                    'vibrationEnabled',
-                  ) ??
-                  1) ==
-              1,
-          fadeInAlarm:
-              (SharedPreferencesWithCache.instance.get<int>('fadeInAlarm') ??
-                  0) ==
-              1,
-          alarmVolume:
-              SharedPreferencesWithCache.instance.get<double>('alarmVolume') ??
-              1.0,
+          mode: ThemeMode.values[SharedPreferencesWithCache.instance.get<int>('themeMode') ?? ThemeMode.system.index],
+          use24HourFormat: (SharedPreferencesWithCache.instance.get<int>('use24HourFormat') ?? 0) == 1,
+          vibrationEnabled: (SharedPreferencesWithCache.instance.get<int>('vibrationEnabled') ?? 1) == 1,
+          fadeInAlarm: (SharedPreferencesWithCache.instance.get<int>('fadeInAlarm') ?? 0) == 1,
+          alarmVolume: SharedPreferencesWithCache.instance.get<double>('alarmVolume') ?? 1.0,
+          alarmAudioPath:
+              SharedPreferencesWithCache.instance.get<String>('alarmAudioPath') ?? 'assets/alarm_ringtone.mp3',
         ),
       );
 
@@ -71,31 +58,27 @@ class SettingsCubit extends Cubit<SettingsState> {
   }
 
   Future<void> setUse24HourFormat(bool use24Hour) async {
-    await SharedPreferencesWithCache.instance.setInt(
-      'use24HourFormat',
-      use24Hour ? 1 : 0,
-    );
+    await SharedPreferencesWithCache.instance.setInt('use24HourFormat', use24Hour ? 1 : 0);
     emit(state.copyWith(use24HourFormat: use24Hour));
   }
 
   Future<void> setVibrationEnabled(bool enabled) async {
-    await SharedPreferencesWithCache.instance.setInt(
-      'vibrationEnabled',
-      enabled ? 1 : 0,
-    );
+    await SharedPreferencesWithCache.instance.setInt('vibrationEnabled', enabled ? 1 : 0);
     emit(state.copyWith(vibrationEnabled: enabled));
   }
 
   Future<void> setFadeInAlarm(bool enabled) async {
-    await SharedPreferencesWithCache.instance.setInt(
-      'fadeInAlarm',
-      enabled ? 1 : 0,
-    );
+    await SharedPreferencesWithCache.instance.setInt('fadeInAlarm', enabled ? 1 : 0);
     emit(state.copyWith(fadeInAlarm: enabled));
   }
 
   Future<void> setAlarmVolume(double volume) async {
     await SharedPreferencesWithCache.instance.setDouble('alarmVolume', volume);
     emit(state.copyWith(alarmVolume: volume));
+  }
+
+  Future<void> setAlarmAudioPath(String path) async {
+    await SharedPreferencesWithCache.instance.setString('alarmAudioPath', path);
+    emit(state.copyWith(alarmAudioPath: path));
   }
 }

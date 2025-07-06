@@ -34,12 +34,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     for (final entry in dbEntries) {
       final alarms = alarmSettingsSet[entry.time] ?? [];
       tempAlarms.add(
-        AlarmModel(
-          timeOfDay: entry.time,
-          days: entry.days,
-          enabled: entry.enabled,
-          alarmSettings: alarms,
-        ),
+        AlarmModel(timeOfDay: entry.time, days: entry.days, enabled: entry.enabled, alarmSettings: alarms),
       );
     }
     emit(tempAlarms);
@@ -47,27 +42,19 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
 
   Future<AlarmSettings?> _setAlarm(int id, DateTime scheduledDate) async {
     try {
-      final vibrate =
-          (SharedPreferencesWithCache.instance.get<int>('vibrationEnabled') ??
-              1) ==
-          1;
-      final fadeIn =
-          (SharedPreferencesWithCache.instance.get<int>('fadeInAlarm') ?? 0) ==
-          1;
-      final volume =
-          SharedPreferencesWithCache.instance.get<double>('alarmVolume') ?? 1.0;
+      final vibrate = (SharedPreferencesWithCache.instance.get<int>('vibrationEnabled') ?? 1) == 1;
+      final fadeIn = (SharedPreferencesWithCache.instance.get<int>('fadeInAlarm') ?? 0) == 1;
+      final volume = SharedPreferencesWithCache.instance.get<double>('alarmVolume') ?? 1.0;
+      final audioPath =
+          SharedPreferencesWithCache.instance.get<String>('alarmAudioPath') ?? 'assets/alarm_ringtone.mp3';
       final volumeSettings =
           fadeIn
-              ? VolumeSettings.fade(
-                fadeDuration: const Duration(seconds: 60),
-                volume: volume,
-                volumeEnforced: true,
-              )
+              ? VolumeSettings.fade(fadeDuration: const Duration(seconds: 60), volume: volume, volumeEnforced: true)
               : VolumeSettings.fixed(volume: volume, volumeEnforced: true);
       final alarmSetting = AlarmSettings(
         id: id,
         dateTime: scheduledDate,
-        assetAudioPath: "assets/alarm_ringtone.mp3",
+        assetAudioPath: audioPath,
         vibrate: vibrate,
         volumeSettings: volumeSettings,
         notificationSettings: const NotificationSettings(
@@ -95,18 +82,10 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
   ) async {
     final now = DateTime.now();
     for (var i = 0; i < 7; i++) {
-      final dateTime = DateTime(
-        now.year,
-        now.month,
-        now.day,
-        timeOfDay.hour,
-        timeOfDay.minute,
-      ).add(Duration(days: i));
+      final dateTime = DateTime(now.year, now.month, now.day, timeOfDay.hour, timeOfDay.minute).add(Duration(days: i));
 
       if (!days.contains(dateTime.weekday)) continue;
-      if (i == 0 &&
-          (now.hour > timeOfDay.hour ||
-              (now.hour == timeOfDay.hour && now.minute >= timeOfDay.minute))) {
+      if (i == 0 && (now.hour > timeOfDay.hour || (now.hour == timeOfDay.hour && now.minute >= timeOfDay.minute))) {
         continue;
       }
       final exists =
@@ -118,10 +97,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
           ) ??
           false;
       if (!exists) {
-        final newAlarm = await _setAlarm(
-          dateTime.millisecondsSinceEpoch.hashCode,
-          dateTime,
-        );
+        final newAlarm = await _setAlarm(dateTime.millisecondsSinceEpoch.hashCode, dateTime);
         if (newAlarm != null) {
           current.putIfAbsent(timeOfDay, () => []).add(newAlarm);
         }
@@ -129,14 +105,9 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     }
   }
 
-  Future<void> snoozeAlarm({
-    required AlarmSettings alarmSettings,
-    int snoozeMinutes = 5,
-  }) async {
+  Future<void> snoozeAlarm({required AlarmSettings alarmSettings, int snoozeMinutes = 5}) async {
     await Alarm.set(
-      alarmSettings: alarmSettings.copyWith(
-        dateTime: DateTime.now().add(Duration(minutes: snoozeMinutes)),
-      ),
+      alarmSettings: alarmSettings.copyWith(dateTime: DateTime.now().add(Duration(minutes: snoozeMinutes))),
     );
   }
 
@@ -156,9 +127,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     final updatedDays = {...(existingEntry?.days ?? []), ...days}.toList();
     final enabled = existingEntry?.enabled ?? true;
 
-    await AlarmDatabase.insertOrUpdate(
-      AlarmDbEntry(time: timeOfDay, days: updatedDays, enabled: enabled),
-    );
+    await AlarmDatabase.insertOrUpdate(AlarmDbEntry(time: timeOfDay, days: updatedDays, enabled: enabled));
 
     if (enabled) {
       final existing = await Alarm.getAlarms();
@@ -189,9 +158,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
   Future<void> toggleAlarmEnabled(TimeOfDay timeOfDay, bool enabled) async {
     final entry = await AlarmDatabase.getAlarm(timeOfDay);
     if (entry == null) return;
-    await AlarmDatabase.insertOrUpdate(
-      AlarmDbEntry(time: timeOfDay, days: entry.days, enabled: enabled),
-    );
+    await AlarmDatabase.insertOrUpdate(AlarmDbEntry(time: timeOfDay, days: entry.days, enabled: enabled));
 
     if (!enabled) {
       final existing = await Alarm.getAlarms();
@@ -212,9 +179,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
   Future<void> updateAlarmDays(TimeOfDay timeOfDay, List<int> days) async {
     final entry = await AlarmDatabase.getAlarm(timeOfDay);
     final bool enabled = days.isNotEmpty && (entry?.enabled ?? true);
-    await AlarmDatabase.insertOrUpdate(
-      AlarmDbEntry(time: timeOfDay, days: days, enabled: enabled),
-    );
+    await AlarmDatabase.insertOrUpdate(AlarmDbEntry(time: timeOfDay, days: days, enabled: enabled));
 
     final existing = await Alarm.getAlarms();
     final Map<TimeOfDay, List<AlarmSettings>> current = {};
@@ -242,22 +207,14 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     await _loadAlarms();
   }
 
-  Future<void> updateVolumeSettingsForAll({
-    required bool fadeIn,
-    required double volume,
-  }) async {
+  Future<void> updateVolumeSettingsForAll({required bool fadeIn, required double volume}) async {
     final alarms = await Alarm.getAlarms();
     final volumeSettings =
         fadeIn
-            ? VolumeSettings.fade(
-              fadeDuration: const Duration(seconds: 5),
-              volume: volume,
-            )
+            ? VolumeSettings.fade(fadeDuration: const Duration(seconds: 5), volume: volume)
             : VolumeSettings.fixed(volume: volume);
     for (final alarm in alarms) {
-      await Alarm.set(
-        alarmSettings: alarm.copyWith(volumeSettings: volumeSettings),
-      );
+      await Alarm.set(alarmSettings: alarm.copyWith(volumeSettings: volumeSettings));
     }
     await _loadAlarms();
   }
