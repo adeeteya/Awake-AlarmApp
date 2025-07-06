@@ -132,7 +132,7 @@ class _AlarmTileState extends State<AlarmTile> {
   }
 
   Future<void> _showEditDialog() async {
-    final bool isDark = Theme.of(context).brightness == Brightness.dark;
+    final bool isDark = Theme.brightnessOf(context) == Brightness.dark;
     final bool use24h = context.read<SettingsCubit>().state.use24HourFormat;
     await showDialog<void>(
       context: context,
@@ -206,7 +206,7 @@ class _AlarmTileState extends State<AlarmTile> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = Theme.of(context).brightness == Brightness.dark;
+    final bool isDark = Theme.brightnessOf(context) == Brightness.dark;
     final bool use24h = context.watch<SettingsCubit>().state.use24HourFormat;
     return Padding(
       padding: const EdgeInsets.only(top: 23),

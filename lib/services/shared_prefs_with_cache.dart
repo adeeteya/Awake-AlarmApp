@@ -33,4 +33,9 @@ class SharedPreferencesWithCache {
     _cache[key] = value;
     return _prefs.setInt(key, value);
   }
+
+  Future<bool> setDouble(String key, double value) async {
+    _cache[key] = value;
+    return _prefs.setDouble(key, value);
+  }
 }
