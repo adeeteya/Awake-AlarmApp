@@ -284,6 +284,7 @@ class _HomeState extends State<Home> {
                                     index++
                                   )
                                     AlarmTile(
+                                      key: ValueKey(alarms[index].timeOfDay),
                                       alarmModel: alarms[index],
                                       onEnabledChanged:
                                           (v) => context
