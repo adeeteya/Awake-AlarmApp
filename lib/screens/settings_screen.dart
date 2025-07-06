@@ -2,6 +2,7 @@ import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/widgets/gradient_slider.dart';
 import 'package:awake/widgets/gradient_switch.dart';
 import 'package:awake/widgets/theme_list_tile.dart';
 
@@ -505,8 +506,9 @@ class SettingsScreen extends StatelessWidget {
                                         : Icons.volume_mute_rounded,
                                     color: color,
                                   ),
+                                  const SizedBox(width: 10),
                                   Expanded(
-                                    child: Slider(
+                                    child: GradientSlider(
                                       value: state.alarmVolume,
                                       onChanged: (v) async {
                                         final settingsCubit =

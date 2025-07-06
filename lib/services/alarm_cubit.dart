@@ -59,10 +59,11 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
       final volumeSettings =
           fadeIn
               ? VolumeSettings.fade(
-                fadeDuration: const Duration(seconds: 5),
+                fadeDuration: const Duration(seconds: 60),
                 volume: volume,
+                volumeEnforced: true,
               )
-              : VolumeSettings.fixed(volume: volume);
+              : VolumeSettings.fixed(volume: volume, volumeEnforced: true);
       final alarmSetting = AlarmSettings(
         id: id,
         dateTime: scheduledDate,
