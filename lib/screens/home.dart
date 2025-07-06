@@ -41,9 +41,11 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    unawaited(AlarmPermissions.checkNotificationPermission().then(
-      (_) => AlarmPermissions.checkAndroidScheduleExactAlarmPermission(),
-    ));
+    unawaited(
+      AlarmPermissions.checkNotificationPermission().then(
+        (_) => AlarmPermissions.checkAndroidScheduleExactAlarmPermission(),
+      ),
+    );
     _ringSubscription = Alarm.ringing.listen(_ringingAlarmsChanged);
   }
 
@@ -275,10 +277,20 @@ class _HomeState extends State<Home> {
                                   )
                                     AlarmTile(
                                       alarmModel: alarms[index],
-                                      onDelete:
-                                          () => context
+                                      onEnabledChanged:
+                                          (v) => context
                                               .read<AlarmCubit>()
-                                              .deleteAlarmModel(alarms[index]),
+                                              .toggleAlarmEnabled(
+                                                alarms[index].timeOfDay,
+                                                v,
+                                              ),
+                                      onDaysChanged:
+                                          (days) => context
+                                              .read<AlarmCubit>()
+                                              .updateAlarmDays(
+                                                alarms[index].timeOfDay,
+                                                days,
+                                              ),
                                     ),
                                 ],
                               ],
