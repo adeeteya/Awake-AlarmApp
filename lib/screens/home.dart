@@ -96,95 +96,103 @@ class _HomeState extends State<Home> {
           ),
         ),
         child: SafeArea(
-          child: Column(
-            children: [
-              Expanded(
+          child: CustomScrollView(
+            slivers: [
+              SliverToBoxAdapter(
                 child: LayoutBuilder(
                   builder: (context, constraints) {
-                    final double radius = min(
-                      constraints.maxHeight,
-                      constraints.maxWidth,
-                    );
-                    return Container(
+                    final Size size = MediaQuery.of(context).size;
+                    final double radius = min(size.width, size.height / 3);
+                    return SizedBox(
                       height: radius,
-                      width: radius,
-                      margin: const EdgeInsets.all(15),
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors:
-                              isDark
-                                  ? [AppColors.darkClock1, AppColors.darkClock2]
-                                  : [
-                                    AppColors.lightClock1,
-                                    AppColors.lightClock2,
-                                  ],
-                        ),
-                        boxShadow:
-                            isDark
-                                ? [
-                                  BoxShadow(
-                                    offset: const Offset(19, 25),
-                                    blurRadius: 92,
-                                    spreadRadius: -32,
-                                    color: AppColors.shadowDark.withValues(
-                                      alpha: 0.35,
-                                    ),
-                                  ),
-                                  BoxShadow(
-                                    offset: const Offset(-20, -20),
-                                    blurRadius: 61,
-                                    color: AppColors.darkGrey.withValues(
-                                      alpha: 0.25,
-                                    ),
-                                  ),
-                                  BoxShadow(
-                                    offset: const Offset(13, 14),
-                                    blurRadius: 12,
-                                    spreadRadius: -6,
-                                    color: AppColors.shadowDark.withValues(
-                                      alpha: 0.50,
-                                    ),
-                                  ),
-                                ]
-                                : [
-                                  BoxShadow(
-                                    offset: const Offset(19, 25),
-                                    blurRadius: 92,
-                                    spreadRadius: -32,
-                                    color: AppColors.shadowLight.withValues(
-                                      alpha: 0.45,
-                                    ),
-                                  ),
-                                  BoxShadow(
-                                    offset: const Offset(-20, -20),
-                                    blurRadius: 61,
-                                    color: Colors.white.withValues(alpha: 0.53),
-                                  ),
-                                  BoxShadow(
-                                    offset: const Offset(13, 14),
-                                    blurRadius: 12,
-                                    spreadRadius: -6,
-                                    color: AppColors.shadowLight.withValues(
-                                      alpha: 0.57,
-                                    ),
-                                  ),
-                                ],
-                        shape: BoxShape.circle,
-                      ),
-                      child: RepaintBoundary(
-                        child: Transform.rotate(
-                          angle: -pi / 2,
-                          child: const ClockWidget(),
+                      width: double.infinity,
+                      child: Center(
+                        child: Container(
+                          height: radius,
+                          width: radius,
+                          margin: const EdgeInsets.all(15),
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors:
+                                  isDark
+                                      ? [
+                                        AppColors.darkClock1,
+                                        AppColors.darkClock2,
+                                      ]
+                                      : [
+                                        AppColors.lightClock1,
+                                        AppColors.lightClock2,
+                                      ],
+                            ),
+                            boxShadow:
+                                isDark
+                                    ? [
+                                      BoxShadow(
+                                        offset: const Offset(19, 25),
+                                        blurRadius: 92,
+                                        spreadRadius: -32,
+                                        color: AppColors.shadowDark.withValues(
+                                          alpha: 0.35,
+                                        ),
+                                      ),
+                                      BoxShadow(
+                                        offset: const Offset(-20, -20),
+                                        blurRadius: 61,
+                                        color: AppColors.darkGrey.withValues(
+                                          alpha: 0.25,
+                                        ),
+                                      ),
+                                      BoxShadow(
+                                        offset: const Offset(13, 14),
+                                        blurRadius: 12,
+                                        spreadRadius: -6,
+                                        color: AppColors.shadowDark.withValues(
+                                          alpha: 0.50,
+                                        ),
+                                      ),
+                                    ]
+                                    : [
+                                      BoxShadow(
+                                        offset: const Offset(19, 25),
+                                        blurRadius: 92,
+                                        spreadRadius: -32,
+                                        color: AppColors.shadowLight.withValues(
+                                          alpha: 0.45,
+                                        ),
+                                      ),
+                                      BoxShadow(
+                                        offset: const Offset(-20, -20),
+                                        blurRadius: 61,
+                                        color: Colors.white.withValues(
+                                          alpha: 0.53,
+                                        ),
+                                      ),
+                                      BoxShadow(
+                                        offset: const Offset(13, 14),
+                                        blurRadius: 12,
+                                        spreadRadius: -6,
+                                        color: AppColors.shadowLight.withValues(
+                                          alpha: 0.57,
+                                        ),
+                                      ),
+                                    ],
+                            shape: BoxShape.circle,
+                          ),
+                          child: RepaintBoundary(
+                            child: Transform.rotate(
+                              angle: -pi / 2,
+                              child: const ClockWidget(),
+                            ),
+                          ),
                         ),
                       ),
                     );
                   },
                 ),
               ),
-              Expanded(
-                flex: 2,
+              SliverToBoxAdapter(
                 child: Hero(
                   tag: "InnerDecoratedBox",
                   child: Material(
@@ -233,80 +241,86 @@ class _HomeState extends State<Home> {
                               ),
                             );
                           } else {
-                            return ListView(
+                            return Padding(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 20,
                                 vertical: 24,
                               ),
-                              children: [
-                                Row(
-                                  children: [
-                                    const SizedBox(width: 15),
-                                    Text(
-                                      "Alarms",
-                                      style: TextStyle(
-                                        color:
-                                            isDark
-                                                ? AppColors.darkBackgroundText
-                                                : AppColors.lightBackgroundText,
-                                        fontFamily: 'Poppins',
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w500,
-                                        letterSpacing: 0.03,
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      const SizedBox(width: 15),
+                                      Text(
+                                        "Alarms",
+                                        style: TextStyle(
+                                          color:
+                                              isDark
+                                                  ? AppColors.darkBackgroundText
+                                                  : AppColors
+                                                      .lightBackgroundText,
+                                          fontFamily: 'Poppins',
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                          letterSpacing: 0.03,
+                                        ),
                                       ),
-                                    ),
-                                    const Spacer(),
-                                    IconButton(
-                                      onPressed: () async {
-                                        await Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                            builder:
-                                                (context) =>
-                                                    const SettingsScreen(),
-                                          ),
-                                        );
-                                      },
-                                      style: IconButton.styleFrom(
-                                        foregroundColor:
-                                            isDark
-                                                ? AppColors.darkBackgroundText
-                                                : AppColors.lightBackgroundText,
+                                      const Spacer(),
+                                      IconButton(
+                                        onPressed: () async {
+                                          await Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                              builder:
+                                                  (context) =>
+                                                      const SettingsScreen(),
+                                            ),
+                                          );
+                                        },
+                                        style: IconButton.styleFrom(
+                                          foregroundColor:
+                                              isDark
+                                                  ? AppColors.darkBackgroundText
+                                                  : AppColors
+                                                      .lightBackgroundText,
+                                        ),
+                                        icon: const Icon(Icons.settings),
                                       ),
-                                      icon: const Icon(Icons.settings),
-                                    ),
-                                    const SizedBox(width: 15),
+                                      const SizedBox(width: 15),
+                                    ],
+                                  ),
+                                  ...[
+                                    for (
+                                      int index = 0;
+                                      index < alarms.length;
+                                      index++
+                                    )
+                                      AlarmTile(
+                                        key: ValueKey(alarms[index].timeOfDay),
+                                        alarmModel: alarms[index],
+                                        onEnabledChanged:
+                                            (v) => context
+                                                .read<AlarmCubit>()
+                                                .toggleAlarmEnabled(
+                                                  alarms[index].timeOfDay,
+                                                  v,
+                                                ),
+                                        onDaysChanged:
+                                            (days) => context
+                                                .read<AlarmCubit>()
+                                                .updateAlarmDays(
+                                                  alarms[index].timeOfDay,
+                                                  days,
+                                                ),
+                                        onDelete:
+                                            () => context
+                                                .read<AlarmCubit>()
+                                                .deleteAlarmModel(
+                                                  alarms[index],
+                                                ),
+                                      ),
                                   ],
-                                ),
-                                ...[
-                                  for (
-                                    int index = 0;
-                                    index < alarms.length;
-                                    index++
-                                  )
-                                    AlarmTile(
-                                      key: ValueKey(alarms[index].timeOfDay),
-                                      alarmModel: alarms[index],
-                                      onEnabledChanged:
-                                          (v) => context
-                                              .read<AlarmCubit>()
-                                              .toggleAlarmEnabled(
-                                                alarms[index].timeOfDay,
-                                                v,
-                                              ),
-                                      onDaysChanged:
-                                          (days) => context
-                                              .read<AlarmCubit>()
-                                              .updateAlarmDays(
-                                                alarms[index].timeOfDay,
-                                                days,
-                                              ),
-                                      onDelete:
-                                          () => context
-                                              .read<AlarmCubit>()
-                                              .deleteAlarmModel(alarms[index]),
-                                    ),
                                 ],
-                              ],
+                              ),
                             );
                           }
                         },
