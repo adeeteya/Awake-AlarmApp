@@ -50,6 +50,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
         id: id,
         dateTime: scheduledDate,
         assetAudioPath: "assets/alarm_ringtone.mp3",
+        vibrate: false,
         volumeSettings: const VolumeSettings.fixed(volume: 1.0),
         notificationSettings: const NotificationSettings(
           title: "Alarm",
