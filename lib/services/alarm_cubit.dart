@@ -12,9 +12,9 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     unawaited(_loadAlarms());
   }
 
-  Future<void> _loadAlarms() async {
+  Future<void> _loadAlarms({List<AlarmSettings>? presetAlarms}) async {
     final dbEntries = await AlarmDatabase.allAlarms();
-    final existingAlarms = await Alarm.getAlarms();
+    final existingAlarms = presetAlarms ?? await Alarm.getAlarms();
     final Map<TimeOfDay, List<AlarmSettings>> alarmSettingsSet = {};
     for (final alarm in existingAlarms) {
       final alarmTime = TimeOfDay.fromDateTime(alarm.dateTime);
@@ -22,13 +22,25 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     }
 
     for (final entry in dbEntries) {
-      await _ensureUpcomingWeek(entry.time, entry.days, alarmSettingsSet);
+      if (entry.enabled) {
+        await _ensureUpcomingWeek(entry.time, entry.days, alarmSettingsSet);
+      } else {
+        alarmSettingsSet.putIfAbsent(entry.time, () => []);
+      }
     }
 
     final tempAlarms = <AlarmModel>[];
-    alarmSettingsSet.forEach((key, value) {
-      tempAlarms.add(AlarmModel(timeOfDay: key, alarmSettings: value));
-    });
+    for (final entry in dbEntries) {
+      final alarms = alarmSettingsSet[entry.time] ?? [];
+      tempAlarms.add(
+        AlarmModel(
+          timeOfDay: entry.time,
+          days: entry.days,
+          enabled: entry.enabled,
+          alarmSettings: alarms,
+        ),
+      );
+    }
     emit(tempAlarms);
   }
 
@@ -123,22 +135,24 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
   }) async {
     final existingEntry = await AlarmDatabase.getAlarm(timeOfDay);
     final updatedDays = {...(existingEntry?.days ?? []), ...days}.toList();
+    final enabled = existingEntry?.enabled ?? true;
 
     await AlarmDatabase.insertOrUpdate(
-      AlarmDbEntry(time: timeOfDay, days: updatedDays),
+      AlarmDbEntry(time: timeOfDay, days: updatedDays, enabled: enabled),
     );
 
-    final Map<TimeOfDay, List<AlarmSettings>> current = {
-      for (final m in state) m.timeOfDay: [...m.alarmSettings],
-    };
-
-    await _ensureUpcomingWeek(timeOfDay, updatedDays, current);
-
-    final tempAlarms = <AlarmModel>[];
-    current.forEach((key, value) {
-      tempAlarms.add(AlarmModel(timeOfDay: key, alarmSettings: value));
-    });
-    emit(tempAlarms);
+    if (enabled) {
+      final existing = await Alarm.getAlarms();
+      final Map<TimeOfDay, List<AlarmSettings>> current = {};
+      for (final alarm in existing) {
+        final alarmTime = TimeOfDay.fromDateTime(alarm.dateTime);
+        current.putIfAbsent(alarmTime, () => []).add(alarm);
+      }
+      await _ensureUpcomingWeek(timeOfDay, updatedDays, current);
+      await _loadAlarms(presetAlarms: current.values.expand((e) => e).toList());
+    } else {
+      await _loadAlarms();
+    }
   }
 
   Future<void> stopAlarm(int id) async {
@@ -151,5 +165,53 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     }
     await AlarmDatabase.delete(alarmModel.timeOfDay);
     emit(state.where((e) => e != alarmModel).toList());
+  }
+
+  Future<void> toggleAlarmEnabled(TimeOfDay timeOfDay, bool enabled) async {
+    final entry = await AlarmDatabase.getAlarm(timeOfDay);
+    if (entry == null) return;
+    await AlarmDatabase.insertOrUpdate(
+      AlarmDbEntry(time: timeOfDay, days: entry.days, enabled: enabled),
+    );
+
+    if (!enabled) {
+      final existing = await Alarm.getAlarms();
+      final remaining = <AlarmSettings>[];
+      for (final alarm in existing) {
+        if (TimeOfDay.fromDateTime(alarm.dateTime) == timeOfDay) {
+          await stopAlarm(alarm.id);
+        } else {
+          remaining.add(alarm);
+        }
+      }
+      await _loadAlarms(presetAlarms: remaining);
+    } else {
+      await _loadAlarms();
+    }
+  }
+
+  Future<void> updateAlarmDays(TimeOfDay timeOfDay, List<int> days) async {
+    final entry = await AlarmDatabase.getAlarm(timeOfDay);
+    final enabled = entry?.enabled ?? true;
+    await AlarmDatabase.insertOrUpdate(
+      AlarmDbEntry(time: timeOfDay, days: days, enabled: enabled),
+    );
+
+    final existing = await Alarm.getAlarms();
+    final Map<TimeOfDay, List<AlarmSettings>> current = {};
+    for (final alarm in existing) {
+      final alarmTime = TimeOfDay.fromDateTime(alarm.dateTime);
+      if (alarmTime == timeOfDay) {
+        await stopAlarm(alarm.id);
+      } else {
+        current.putIfAbsent(alarmTime, () => []).add(alarm);
+      }
+    }
+
+    if (enabled) {
+      await _ensureUpcomingWeek(timeOfDay, days, current);
+    }
+
+    await _loadAlarms(presetAlarms: current.values.expand((e) => e).toList());
   }
 }
