@@ -5,13 +5,23 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class SettingsState {
   final ThemeMode mode;
   final bool use24HourFormat;
+  final bool vibrationEnabled;
 
-  const SettingsState({required this.mode, required this.use24HourFormat});
+  const SettingsState({
+    required this.mode,
+    required this.use24HourFormat,
+    required this.vibrationEnabled,
+  });
 
-  SettingsState copyWith({ThemeMode? mode, bool? use24HourFormat}) {
+  SettingsState copyWith({
+    ThemeMode? mode,
+    bool? use24HourFormat,
+    bool? vibrationEnabled,
+  }) {
     return SettingsState(
       mode: mode ?? this.mode,
       use24HourFormat: use24HourFormat ?? this.use24HourFormat,
+      vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
     );
   }
 }
@@ -31,6 +41,12 @@ class SettingsCubit extends Cubit<SettingsState> {
                   ) ??
                   0) ==
               1,
+          vibrationEnabled:
+              (SharedPreferencesWithCache.instance.get<int>(
+                    'vibrationEnabled',
+                  ) ??
+                  1) ==
+              1,
         ),
       );
 
@@ -45,5 +61,13 @@ class SettingsCubit extends Cubit<SettingsState> {
       use24Hour ? 1 : 0,
     );
     emit(state.copyWith(use24HourFormat: use24Hour));
+  }
+
+  Future<void> setVibrationEnabled(bool enabled) async {
+    await SharedPreferencesWithCache.instance.setInt(
+      'vibrationEnabled',
+      enabled ? 1 : 0,
+    );
+    emit(state.copyWith(vibrationEnabled: enabled));
   }
 }

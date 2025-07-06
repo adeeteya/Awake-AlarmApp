@@ -183,6 +183,111 @@ class SettingsScreen extends StatelessWidget {
                               ),
                             ),
                           ),
+                          const SizedBox(height: 23),
+                          GestureDetector(
+                            onTap:
+                                () => context
+                                    .read<SettingsCubit>()
+                                    .setVibrationEnabled(
+                                      !state.vibrationEnabled,
+                                    ),
+                            child: Container(
+                              padding: const EdgeInsets.all(1),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors:
+                                      isDark
+                                          ? [
+                                            AppColors.darkBorder,
+                                            AppColors.darkScaffold2,
+                                          ]
+                                          : [
+                                            Colors.white,
+                                            AppColors.lightScaffold2,
+                                          ],
+                                ),
+                                boxShadow:
+                                    isDark
+                                        ? [
+                                          BoxShadow(
+                                            offset: const Offset(-5, -5),
+                                            blurRadius: 20,
+                                            color: AppColors.darkGrey
+                                                .withValues(alpha: 0.35),
+                                          ),
+                                          BoxShadow(
+                                            offset: const Offset(13, 14),
+                                            blurRadius: 12,
+                                            spreadRadius: -6,
+                                            color: AppColors.shadowDark
+                                                .withValues(alpha: 0.70),
+                                          ),
+                                        ]
+                                        : [
+                                          BoxShadow(
+                                            offset: const Offset(-5, -5),
+                                            blurRadius: 20,
+                                            color: Colors.white.withValues(
+                                              alpha: 0.53,
+                                            ),
+                                          ),
+                                          BoxShadow(
+                                            offset: const Offset(13, 14),
+                                            blurRadius: 12,
+                                            spreadRadius: -6,
+                                            color: AppColors.shadowLight
+                                                .withValues(alpha: 0.57),
+                                          ),
+                                        ],
+                              ),
+                              child: Container(
+                                height: 74,
+                                width: double.infinity,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 18,
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors:
+                                        isDark
+                                            ? [
+                                              AppColors.darkClock1,
+                                              AppColors.darkScaffold1,
+                                            ]
+                                            : [
+                                              AppColors.lightScaffold1,
+                                              AppColors.lightGradient2,
+                                            ],
+                                  ),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'Vibration',
+                                      style: TextStyle(
+                                        color: color,
+                                        fontFamily: 'Poppins',
+                                      ),
+                                    ),
+                                    const Spacer(),
+                                    GradientSwitch(
+                                      value: state.vibrationEnabled,
+                                      onChanged:
+                                          (v) => context
+                                              .read<SettingsCubit>()
+                                              .setVibrationEnabled(v),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       );
                     },
