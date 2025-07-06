@@ -192,7 +192,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
 
   Future<void> updateAlarmDays(TimeOfDay timeOfDay, List<int> days) async {
     final entry = await AlarmDatabase.getAlarm(timeOfDay);
-    final enabled = entry?.enabled ?? true;
+    final bool enabled = days.isNotEmpty && (entry?.enabled ?? true);
     await AlarmDatabase.insertOrUpdate(
       AlarmDbEntry(time: timeOfDay, days: days, enabled: enabled),
     );

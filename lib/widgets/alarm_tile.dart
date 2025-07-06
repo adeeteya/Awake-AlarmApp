@@ -179,6 +179,10 @@ class _AlarmTileState extends State<AlarmTile> {
                   const SizedBox(height: 20),
                   _daySelector(_selectedDays, isDark, (d) {
                     setState(() => _selectedDays = d);
+                    if (_selectedDays.isEmpty && _enabled) {
+                      setState(() => _enabled = false);
+                      widget.onEnabledChanged(false);
+                    }
                     setStateDialog(() {});
                     widget.onDaysChanged(_selectedDays.toList());
                   }),
