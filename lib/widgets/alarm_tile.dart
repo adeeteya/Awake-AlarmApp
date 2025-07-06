@@ -7,12 +7,14 @@ class AlarmTile extends StatefulWidget {
   final AlarmModel alarmModel;
   final ValueChanged<bool> onEnabledChanged;
   final ValueChanged<List<int>> onDaysChanged;
+  final VoidCallback onDelete;
 
   const AlarmTile({
     super.key,
     required this.alarmModel,
     required this.onEnabledChanged,
     required this.onDaysChanged,
+    required this.onDelete,
   });
 
   @override
@@ -20,7 +22,6 @@ class AlarmTile extends StatefulWidget {
 }
 
 class _AlarmTileState extends State<AlarmTile> {
-  bool _expanded = false;
   late bool _enabled;
   late Set<int> _selectedDays;
 
@@ -66,7 +67,11 @@ class _AlarmTileState extends State<AlarmTile> {
     );
   }
 
-  Widget _daySelector(bool isDark) {
+  Widget _daySelector(
+    Set<int> days,
+    bool isDark,
+    ValueChanged<Set<int>> onChanged,
+  ) {
     const dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'Su'];
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -74,14 +79,13 @@ class _AlarmTileState extends State<AlarmTile> {
         for (int i = 0; i < dayLabels.length; i++)
           GestureDetector(
             onTap: () {
-              setState(() {
-                if (_selectedDays.contains(i + 1)) {
-                  _selectedDays.remove(i + 1);
-                } else {
-                  _selectedDays.add(i + 1);
-                }
-              });
-              widget.onDaysChanged(_selectedDays.toList());
+              final newDays = <int>{...days};
+              if (newDays.contains(i + 1)) {
+                newDays.remove(i + 1);
+              } else {
+                newDays.add(i + 1);
+              }
+              onChanged(newDays);
             },
             child: SizedBox(
               height: 24,
@@ -90,11 +94,11 @@ class _AlarmTileState extends State<AlarmTile> {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color:
-                      _selectedDays.contains(i + 1)
+                      days.contains(i + 1)
                           ? AppColors.primary
                           : Colors.transparent,
                   border:
-                      _selectedDays.contains(i + 1)
+                      days.contains(i + 1)
                           ? null
                           : Border.all(
                             color:
@@ -110,7 +114,7 @@ class _AlarmTileState extends State<AlarmTile> {
                       fontFamily: 'Poppins',
                       fontSize: 12,
                       color:
-                          _selectedDays.contains(i + 1)
+                          days.contains(i + 1)
                               ? Colors.white
                               : isDark
                               ? AppColors.darkBackgroundText
@@ -125,11 +129,62 @@ class _AlarmTileState extends State<AlarmTile> {
     );
   }
 
+  Future<void> _showEditDialog() async {
+    final bool isDark = Theme.of(context).brightness == Brightness.dark;
+    await showDialog<void>(
+      context: context,
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setStateDialog) {
+            return AlertDialog(
+              backgroundColor:
+                  isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    "${widget.alarmModel.timeOfDay.hour.toString().padLeft(2, '0')}:${widget.alarmModel.timeOfDay.minute.toString().padLeft(2, '0')}",
+                    style: TextStyle(
+                      color: isDark
+                          ? AppColors.darkBackgroundText
+                          : AppColors.lightBackgroundText,
+                      fontFamily: 'Poppins',
+                      fontSize: 34,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  _daySelector(_selectedDays, isDark, (d) {
+                    setState(() => _selectedDays = d);
+                    setStateDialog(() {});
+                    widget.onDaysChanged(_selectedDays.toList());
+                  }),
+                  const SizedBox(height: 16),
+                  TextButton.icon(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                      widget.onDelete();
+                    },
+                    icon: const Icon(Icons.delete),
+                    label: const Text('Delete Alarm'),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     return GestureDetector(
-      onTap: () => setState(() => _expanded = !_expanded),
+      onTap: _showEditDialog,
       child: Container(
         padding: const EdgeInsets.all(1),
         margin: const EdgeInsets.only(top: 23),
@@ -172,9 +227,8 @@ class _AlarmTileState extends State<AlarmTile> {
                     ),
                   ],
         ),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          height: _expanded ? 120 : 74,
+        child: Container(
+          height: 74,
           width: double.infinity,
           padding: const EdgeInsets.symmetric(horizontal: 18),
           decoration: BoxDecoration(
@@ -217,10 +271,6 @@ class _AlarmTileState extends State<AlarmTile> {
                   ),
                 ],
               ),
-              if (_expanded) ...[
-                const SizedBox(height: 12),
-                _daySelector(isDark),
-              ],
             ],
           ),
         ),
