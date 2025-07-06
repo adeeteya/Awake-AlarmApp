@@ -51,12 +51,24 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
           (SharedPreferencesWithCache.instance.get<int>('vibrationEnabled') ??
               1) ==
           1;
+      final fadeIn =
+          (SharedPreferencesWithCache.instance.get<int>('fadeInAlarm') ?? 0) ==
+          1;
+      final volume =
+          SharedPreferencesWithCache.instance.get<double>('alarmVolume') ?? 1.0;
+      final volumeSettings =
+          fadeIn
+              ? VolumeSettings.fade(
+                fadeDuration: const Duration(seconds: 5),
+                volume: volume,
+              )
+              : VolumeSettings.fixed(volume: volume);
       final alarmSetting = AlarmSettings(
         id: id,
         dateTime: scheduledDate,
         assetAudioPath: "assets/alarm_ringtone.mp3",
         vibrate: vibrate,
-        volumeSettings: const VolumeSettings.fixed(volume: 1.0),
+        volumeSettings: volumeSettings,
         notificationSettings: const NotificationSettings(
           title: "Alarm",
           body: "Time to Wake Up",
@@ -225,6 +237,26 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     final alarms = await Alarm.getAlarms();
     for (final alarm in alarms) {
       await Alarm.set(alarmSettings: alarm.copyWith(vibrate: vibrate));
+    }
+    await _loadAlarms();
+  }
+
+  Future<void> updateVolumeSettingsForAll({
+    required bool fadeIn,
+    required double volume,
+  }) async {
+    final alarms = await Alarm.getAlarms();
+    final volumeSettings =
+        fadeIn
+            ? VolumeSettings.fade(
+              fadeDuration: const Duration(seconds: 5),
+              volume: volume,
+            )
+            : VolumeSettings.fixed(volume: volume);
+    for (final alarm in alarms) {
+      await Alarm.set(
+        alarmSettings: alarm.copyWith(volumeSettings: volumeSettings),
+      );
     }
     await _loadAlarms();
   }
