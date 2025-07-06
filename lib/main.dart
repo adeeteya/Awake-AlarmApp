@@ -2,8 +2,8 @@ import 'package:alarm/alarm.dart';
 import 'package:awake/screens/home.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_database.dart';
+import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/services/shared_prefs_with_cache.dart';
-import 'package:awake/services/theme_cubit.dart';
 import 'package:awake/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,14 +25,14 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => AlarmCubit()),
-        BlocProvider(create: (_) => ThemeCubit()),
+        BlocProvider(create: (_) => SettingsCubit()),
       ],
-      child: BlocBuilder<ThemeCubit, ThemeMode>(
-        builder: (context, mode) {
+      child: BlocBuilder<SettingsCubit, SettingsState>(
+        builder: (context, state) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Awake- The Alarm Clock',
-            themeMode: mode,
+            themeMode: state.mode,
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
             home: const Home(),
