@@ -17,7 +17,21 @@ class GradientSwitch extends StatefulWidget {
 }
 
 class _GradientSwitchState extends State<GradientSwitch> {
-  late bool isChecked = widget.value;
+  late bool isChecked;
+
+  @override
+  void initState() {
+    super.initState();
+    isChecked = widget.value;
+  }
+
+  @override
+  void didUpdateWidget(covariant GradientSwitch oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.value != widget.value) {
+      isChecked = widget.value;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
