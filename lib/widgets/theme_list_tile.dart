@@ -1,5 +1,6 @@
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/widgets/settings_tile.dart';
 import 'package:flutter/material.dart';
 
 class ThemeListTile extends StatelessWidget {
@@ -35,84 +36,14 @@ class ThemeListTile extends StatelessWidget {
     final bool isDark = context.isDarkMode;
     final color =
         isDark ? AppColors.darkBackgroundText : AppColors.lightBackgroundText;
-    return GestureDetector(
+    return SettingsTile(
       onTap: () => onChanged(_nextMode(mode)),
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors:
-                isDark
-                    ? [AppColors.darkBorder, AppColors.darkScaffold2]
-                    : [Colors.white, AppColors.lightScaffold2],
-          ),
-          boxShadow:
-              isDark
-                  ? [
-                    BoxShadow(
-                      offset: const Offset(-5, -5),
-                      blurRadius: 20,
-                      color: AppColors.darkGrey.withValues(alpha: 0.35),
-                    ),
-                    BoxShadow(
-                      offset: const Offset(13, 14),
-                      blurRadius: 12,
-                      spreadRadius: -6,
-                      color: AppColors.shadowDark.withValues(alpha: 0.70),
-                    ),
-                  ]
-                  : [
-                    BoxShadow(
-                      offset: const Offset(-5, -5),
-                      blurRadius: 20,
-                      color: Colors.white.withValues(alpha: 0.53),
-                    ),
-                    BoxShadow(
-                      offset: const Offset(13, 14),
-                      blurRadius: 12,
-                      spreadRadius: -6,
-                      color: AppColors.shadowLight.withValues(alpha: 0.57),
-                    ),
-                  ],
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(1),
-          child: SizedBox(
-            height: 74,
-            width: double.infinity,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors:
-                      isDark
-                          ? [AppColors.darkClock1, AppColors.darkScaffold1]
-                          : [
-                            AppColors.lightScaffold1,
-                            AppColors.lightGradient2,
-                          ],
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 18),
-                child: Row(
-                  children: [
-                    Text(
-                      'Theme',
-                      style: TextStyle(color: color, fontFamily: 'Poppins'),
-                    ),
-                    const Spacer(),
-                    Icon(_iconForMode(mode), color: color),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
+      child: Row(
+        children: [
+          Text('Theme', style: TextStyle(color: color, fontFamily: 'Poppins')),
+          const Spacer(),
+          Icon(_iconForMode(mode), color: color),
+        ],
       ),
     );
   }
