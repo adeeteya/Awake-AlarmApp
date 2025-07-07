@@ -93,8 +93,10 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 23),
                 SettingsTile(
-                  onTap: () =>
-                      context.read<SettingsCubit>().setUse24HourFormat(!state.use24HourFormat),
+                  onTap:
+                      () => context.read<SettingsCubit>().setUse24HourFormat(
+                        !state.use24HourFormat,
+                      ),
                   child: Row(
                     children: [
                       Text(
@@ -104,9 +106,10 @@ class SettingsScreen extends StatelessWidget {
                       const Spacer(),
                       GradientSwitch(
                         value: state.use24HourFormat,
-                        onChanged: (v) => context
-                            .read<SettingsCubit>()
-                            .setUse24HourFormat(v),
+                        onChanged:
+                            (v) => context
+                                .read<SettingsCubit>()
+                                .setUse24HourFormat(v),
                       ),
                     ],
                   ),
@@ -189,7 +192,7 @@ class SettingsScreen extends StatelessWidget {
                       ),
                       const DropdownMenuItem(
                         value: '__add__',
-                        child: Text('Add Alarm'),
+                        child: Text('Add Sound'),
                       ),
                     ];
                     final values =
@@ -218,7 +221,10 @@ class SettingsScreen extends StatelessWidget {
                         children: [
                           Text(
                             'Alarm Sound',
-                            style: TextStyle(color: color, fontFamily: 'Poppins'),
+                            style: TextStyle(
+                              color: color,
+                              fontFamily: 'Poppins',
+                            ),
                           ),
                           const SizedBox(width: 20),
                           Expanded(
@@ -228,7 +234,9 @@ class SettingsScreen extends StatelessWidget {
                               enableFeedback: true,
                               isExpanded: true,
                               dropdownColor:
-                                  isDark ? AppColors.darkScaffold1 : Colors.white,
+                                  isDark
+                                      ? AppColors.darkScaffold1
+                                      : Colors.white,
                               items: items,
                               onChanged: (v) async {
                                 if (v == null) return;
@@ -257,8 +265,8 @@ class SettingsScreen extends StatelessWidget {
                         state.alarmVolume > 0.7
                             ? Icons.volume_up_rounded
                             : state.alarmVolume > 0.1
-                                ? Icons.volume_down_rounded
-                                : Icons.volume_mute_rounded,
+                            ? Icons.volume_down_rounded
+                            : Icons.volume_mute_rounded,
                         color: color,
                       ),
                       const SizedBox(width: 10),
