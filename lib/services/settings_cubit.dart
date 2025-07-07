@@ -1,7 +1,7 @@
+import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/services/shared_prefs_with_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:awake/models/alarm_screen_type.dart';
 
 class SettingsState {
   final ThemeMode mode;
@@ -76,8 +76,9 @@ class SettingsCubit extends Cubit<SettingsState> {
                 'alarmAudioPath',
               ) ??
               'assets/alarm_ringtone.mp3',
-          alarmScreenType: AlarmScreenType.values[
-              SharedPreferencesWithCache.instance.get<int>('alarmScreenType') ??
+          alarmScreenType:
+              AlarmScreenType.values[SharedPreferencesWithCache.instance
+                      .get<int>('alarmScreenType') ??
                   AlarmScreenType.ringing.index],
         ),
       );

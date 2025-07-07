@@ -40,7 +40,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
     final answer = int.tryParse(_controller.text);
     if (answer == _a + _b) {
       await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
-      if (context.mounted) {
+      if (mounted) {
         Navigator.pop(context);
       }
     } else {
@@ -51,54 +51,64 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
   @override
   Widget build(BuildContext context) {
     final bool isDark = context.isDarkMode;
-    return Scaffold(
-      body: DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: isDark
-                ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
-                : [AppColors.lightScaffold1, AppColors.lightScaffold2],
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        body: DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors:
+                  isDark
+                      ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
+                      : [AppColors.lightScaffold1, AppColors.lightScaffold2],
+            ),
           ),
-        ),
-        child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'Solve: $_a + $_b = ?',
-                style: TextStyle(
-                  color: isDark
-                      ? AppColors.darkBackgroundText
-                      : AppColors.lightBackgroundText,
-                  fontSize: 24,
-                  fontFamily: 'Poppins',
-                ),
-              ),
-              const SizedBox(height: 20),
-              SizedBox(
-                width: 100,
-                child: TextField(
-                  controller: _controller,
-                  keyboardType: TextInputType.number,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: isDark
-                        ? AppColors.darkBackgroundText
-                        : AppColors.lightBackgroundText,
+              const Spacer(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Solve: $_a + $_b = ',
+                    style: TextStyle(
+                      color:
+                          isDark
+                              ? AppColors.darkBackgroundText
+                              : AppColors.lightBackgroundText,
+                      fontSize: 24,
+                      fontFamily: 'Poppins',
+                    ),
                   ),
-                  decoration: InputDecoration(
-                    hintText: 'Answer',
-                    errorText: _error,
+                  const SizedBox(width: 5),
+                  SizedBox(
+                    width: 100,
+                    child: TextField(
+                      autofocus: true,
+                      controller: _controller,
+                      keyboardType: TextInputType.number,
+                      textAlign: TextAlign.center,
+                      onEditingComplete: _tryStop,
+                      onSubmitted: (_) => _tryStop,
+                      style: TextStyle(
+                        color:
+                            isDark
+                                ? AppColors.darkBackgroundText
+                                : AppColors.lightBackgroundText,
+                      ),
+                      decoration: InputDecoration(
+                        hintText: '?',
+                        errorText: _error,
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
-              const SizedBox(height: 20),
-              GestureDetector(
-                onTap: _tryStop,
-                child: const StopButton(),
-              ),
+              const SizedBox(height: 50),
+              GestureDetector(onTap: _tryStop, child: const StopButton()),
+              const Spacer(),
             ],
           ),
         ),
