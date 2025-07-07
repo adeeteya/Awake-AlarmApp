@@ -1,8 +1,8 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/services/alarm_cubit.dart';
+import 'package:awake/services/custom_sounds_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/gradient_slider.dart';
@@ -12,41 +12,25 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:path/path.dart';
-import 'package:path_provider/path_provider.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
-  Future<List<String>> _loadAudioFiles() async {
-    final dir = await getApplicationDocumentsDirectory();
-    final customDir = Directory(join(dir.path, 'custom_alarm_sounds'));
-    if (!await customDir.exists()) {
-      await customDir.create(recursive: true);
-    }
-    final files =
-        customDir
-            .listSync()
-            .whereType<File>()
-            .where((f) => f.path.toLowerCase().endsWith('.mp3'))
-            .map((f) => f.path)
-            .toList();
-    return files;
-  }
-
   Future<void> _pickAndAddAudio(BuildContext context) async {
+    final result = await FilePicker.platform.pickFiles(type: FileType.audio);
+    if (!context.mounted ||
+        result == null ||
+        result.files.single.path == null) {
+      return;
+    }
+    final path = result.files.single.path!;
+
+    final soundsCubit = context.read<CustomSoundsCubit>();
     final settingsCubit = context.read<SettingsCubit>();
     final alarmCubit = context.read<AlarmCubit>();
 
-    final result = await FilePicker.platform.pickFiles(type: FileType.audio);
-    if (result == null || result.files.single.path == null) return;
-    final path = result.files.single.path!;
-    final dir = await getApplicationDocumentsDirectory();
-    final customDir = Directory(join(dir.path, 'custom_alarm_sounds'));
-    if (!await customDir.exists()) {
-      await customDir.create(recursive: true);
-    }
-    final newPath = join(customDir.path, basename(path));
-    await File(path).copy(newPath);
+    final newPath = await soundsCubit.addSound(path);
+    if (newPath == null) return;
     await settingsCubit.setAlarmAudioPath(newPath);
     await alarmCubit.updateAudioPathForAll(newPath);
   }
@@ -442,10 +426,8 @@ class SettingsScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 23),
-                FutureBuilder<List<String>>(
-                  future: _loadAudioFiles(),
-                  builder: (context, snapshot) {
-                    final files = snapshot.data ?? [];
+                BlocBuilder<CustomSoundsCubit, List<String>>(
+                  builder: (context, files) {
                     final items = <DropdownMenuItem<String>>[
                       const DropdownMenuItem(
                         value: 'assets/alarm_ringtone.mp3',
@@ -469,7 +451,11 @@ class SettingsScreen extends StatelessWidget {
                             .whereType<String>()
                             .toList();
                     String dropdownValue = state.alarmAudioPath;
-                    if (!values.contains(dropdownValue)) {
+                    if (files.isEmpty &&
+                        dropdownValue != 'assets/alarm_ringtone.mp3') {
+                      dropdownValue = 'assets/alarm_ringtone.mp3';
+                    } else if (files.isNotEmpty &&
+                        !values.contains(dropdownValue)) {
                       dropdownValue = 'assets/alarm_ringtone.mp3';
                       WidgetsBinding.instance.addPostFrameCallback((_) {
                         unawaited(
