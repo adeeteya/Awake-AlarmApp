@@ -202,6 +202,10 @@ class SettingsScreen extends StatelessWidget {
                               value: AlarmScreenType.math,
                               child: Text('Math Challenge'),
                             ),
+                            DropdownMenuItem(
+                              value: AlarmScreenType.shake,
+                              child: Text('Shake to Stop'),
+                            ),
                           ],
                           onChanged: (v) async {
                             if (v != null) {
