@@ -75,9 +75,10 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: GestureDetector(
-        onTap: _addAlarm,
-        child: const AddButton(),
+      floatingActionButton: IconButton(
+        tooltip: "Add Alarm",
+        onPressed: _addAlarm,
+        icon: const AddButton(),
       ),
       body: DecoratedBox(
         decoration: BoxDecoration(
@@ -248,6 +249,8 @@ class _HomeState extends State<Home> {
                                 ),
                                 const Spacer(),
                                 IconButton(
+                                  icon: const Icon(Icons.settings),
+                                  tooltip: "Settings",
                                   onPressed: () async {
                                     await Navigator.of(context).push(
                                       MaterialPageRoute(
@@ -262,7 +265,6 @@ class _HomeState extends State<Home> {
                                             ? AppColors.darkBackgroundText
                                             : AppColors.lightBackgroundText,
                                   ),
-                                  icon: const Icon(Icons.settings),
                                 ),
                                 const SizedBox(width: 15),
                               ],

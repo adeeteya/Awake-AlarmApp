@@ -71,27 +71,31 @@ class _GradientSliderState extends State<GradientSlider> {
                 Positioned(
                   left: trackLeft,
                   right: thumbRadius,
-                  child: Container(
+                  child: SizedBox(
                     height: 6,
-                    decoration: BoxDecoration(
-                      color:
-                          isDark
-                              ? AppColors.shadowDark.withValues(alpha: 0.25)
-                              : AppColors.shadowLight.withValues(alpha: 0.25),
-                      borderRadius: BorderRadius.circular(6),
-                      boxShadow: [
-                        BoxShadow(
-                          offset: const Offset(1.5, 1.5),
-                          blurRadius: 3,
-                          color:
-                              isDark
-                                  ? AppColors.shadowDark.withValues(alpha: 0.4)
-                                  : AppColors.lightBackgroundText.withValues(
-                                    alpha: 0.4,
-                                  ),
-                          inset: true,
-                        ),
-                      ],
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        color:
+                            isDark
+                                ? AppColors.shadowDark.withValues(alpha: 0.25)
+                                : AppColors.shadowLight.withValues(alpha: 0.25),
+                        borderRadius: BorderRadius.circular(6),
+                        boxShadow: [
+                          BoxShadow(
+                            offset: const Offset(1.5, 1.5),
+                            blurRadius: 3,
+                            color:
+                                isDark
+                                    ? AppColors.shadowDark.withValues(
+                                      alpha: 0.4,
+                                    )
+                                    : AppColors.lightBackgroundText.withValues(
+                                      alpha: 0.4,
+                                    ),
+                            inset: true,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -99,13 +103,15 @@ class _GradientSliderState extends State<GradientSlider> {
                 // Active track (gradient)
                 Positioned(
                   left: trackLeft,
-                  child: Container(
+                  child: SizedBox(
                     height: 6,
                     width: thumbX - trackLeft,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(6),
-                      gradient: const LinearGradient(
-                        colors: [AppColors.primary, AppColors.primaryLight],
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(6),
+                        gradient: const LinearGradient(
+                          colors: [AppColors.primary, AppColors.primaryLight],
+                        ),
                       ),
                     ),
                   ),
@@ -114,47 +120,49 @@ class _GradientSliderState extends State<GradientSlider> {
                 // Thumb (always visible)
                 Positioned(
                   left: thumbX - thumbRadius,
-                  child: Container(
+                  child: SizedBox(
                     width: thumbRadius * 2,
                     height: thumbRadius * 2,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      gradient:
-                          isDark
-                              ? null
-                              : const LinearGradient(
-                                begin: Alignment.bottomLeft,
-                                end: Alignment.topRight,
-                                colors: [
-                                  AppColors.lightScaffold1,
-                                  AppColors.lightGradient2,
-                                ],
-                              ),
-                      color: isDark ? AppColors.lightScaffold2 : null,
-                      boxShadow: [
-                        BoxShadow(
-                          offset: const Offset(-3, -3),
-                          blurRadius: 6,
-                          color:
-                              isDark
-                                  ? const Color(
-                                    0xFF454D56,
-                                  ).withValues(alpha: 0.5)
-                                  : Colors.white.withValues(alpha: 0.8),
-                        ),
-                        BoxShadow(
-                          offset: const Offset(3, 3),
-                          blurRadius: 6,
-                          color:
-                              isDark
-                                  ? const Color(
-                                    0xFF181E24,
-                                  ).withValues(alpha: 0.6)
-                                  : const Color(
-                                    0xFFA6B4C8,
-                                  ).withValues(alpha: 0.6),
-                        ),
-                      ],
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient:
+                            isDark
+                                ? null
+                                : const LinearGradient(
+                                  begin: Alignment.bottomLeft,
+                                  end: Alignment.topRight,
+                                  colors: [
+                                    AppColors.lightScaffold1,
+                                    AppColors.lightGradient2,
+                                  ],
+                                ),
+                        color: isDark ? AppColors.lightScaffold2 : null,
+                        boxShadow: [
+                          BoxShadow(
+                            offset: const Offset(-3, -3),
+                            blurRadius: 6,
+                            color:
+                                isDark
+                                    ? const Color(
+                                      0xFF454D56,
+                                    ).withValues(alpha: 0.5)
+                                    : Colors.white.withValues(alpha: 0.8),
+                          ),
+                          BoxShadow(
+                            offset: const Offset(3, 3),
+                            blurRadius: 6,
+                            color:
+                                isDark
+                                    ? const Color(
+                                      0xFF181E24,
+                                    ).withValues(alpha: 0.6)
+                                    : const Color(
+                                      0xFFA6B4C8,
+                                    ).withValues(alpha: 0.6),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

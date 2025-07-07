@@ -90,8 +90,8 @@ class _AlarmTileState extends State<AlarmTile> {
               onChanged(newDays);
             },
             child: SizedBox(
-              height: 24,
-              width: 24,
+              height: 32,
+              width: 32,
               child: DecoratedBox(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -114,7 +114,6 @@ class _AlarmTileState extends State<AlarmTile> {
                     dayLabels[i],
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      fontSize: 12,
                       color:
                           days.contains(i + 1)
                               ? Colors.white

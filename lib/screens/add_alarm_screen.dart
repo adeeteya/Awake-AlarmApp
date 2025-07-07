@@ -78,8 +78,8 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           GestureDetector(
             onTap: () => _toggleDay(i + 1),
             child: SizedBox(
-              height: 24,
-              width: 24,
+              height: 32,
+              width: 32,
               child: DecoratedBox(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -102,7 +102,6 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     dayLabels[i],
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      fontSize: 12,
                       color:
                           _selectedDays.contains(i + 1)
                               ? Colors.white
@@ -123,83 +122,87 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   Widget build(BuildContext context) {
     final bool isDark = context.isDarkMode;
     final bool use24h = context.watch<SettingsCubit>().state.use24HourFormat;
-    return Scaffold(
-      backgroundColor: isDark ? AppColors.darkBorder : Colors.white,
-      appBar: AppBar(
-        backgroundColor:
-            isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
-        leading: IconButton(
-          onPressed: () => Navigator.pop(context),
-          style: IconButton.styleFrom(
-            foregroundColor:
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        backgroundColor: isDark ? AppColors.darkBorder : Colors.white,
+        appBar: AppBar(
+          backgroundColor:
+              isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
+          leading: IconButton(
+            tooltip: "Back",
+            onPressed: () => Navigator.pop(context),
+            style: IconButton.styleFrom(
+              foregroundColor:
+                  isDark
+                      ? AppColors.darkBackgroundText
+                      : AppColors.lightBackgroundText,
+            ),
+            icon: const Icon(Icons.arrow_back),
+          ),
+          centerTitle: true,
+          title: const Text('Add Alarm'),
+          titleTextStyle: TextStyle(
+            color:
                 isDark
                     ? AppColors.darkBackgroundText
                     : AppColors.lightBackgroundText,
-          ),
-          icon: const Icon(Icons.arrow_back),
-        ),
-        centerTitle: true,
-        title: const Text('Add Alarm'),
-        titleTextStyle: TextStyle(
-          color:
-              isDark
-                  ? AppColors.darkBackgroundText
-                  : AppColors.lightBackgroundText,
-          fontFamily: 'Poppins',
-          fontSize: 18,
-          fontWeight: FontWeight.w500,
-          letterSpacing: 0.03,
-        ),
-      ),
-      body: DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors:
-                isDark
-                    ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
-                    : [AppColors.lightContainer1, AppColors.lightContainer2],
+            fontFamily: 'Poppins',
+            fontSize: 18,
+            fontWeight: FontWeight.w500,
+            letterSpacing: 0.03,
           ),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: ListView(
-            children: [
-              TextButton(
-                onPressed: _pickTime,
-                style: TextButton.styleFrom(
-                  foregroundColor:
-                      isDark
-                          ? AppColors.darkBackgroundText
-                          : AppColors.lightBackgroundText,
-                ),
-                child: Text(
-                  MaterialLocalizations.of(context).formatTimeOfDay(
-                    _selectedTime,
-                    alwaysUse24HourFormat: use24h,
+        body: DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors:
+                  isDark
+                      ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
+                      : [AppColors.lightContainer1, AppColors.lightContainer2],
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: ListView(
+              children: [
+                TextButton(
+                  onPressed: _pickTime,
+                  style: TextButton.styleFrom(
+                    foregroundColor:
+                        isDark
+                            ? AppColors.darkBackgroundText
+                            : AppColors.lightBackgroundText,
                   ),
-                  style: const TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 34,
-                    fontWeight: FontWeight.w500,
-                    letterSpacing: 0.03,
+                  child: Text(
+                    MaterialLocalizations.of(context).formatTimeOfDay(
+                      _selectedTime,
+                      alwaysUse24HourFormat: use24h,
+                    ),
+                    style: const TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 34,
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: 0.03,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 16),
-              TextField(
-                controller: _titleController,
-                decoration: const InputDecoration(labelText: 'Title'),
-              ),
-              const SizedBox(height: 16),
-              _daySelector(isDark),
-              const SizedBox(height: 24),
-              ElevatedButton(
-                onPressed: _addAlarm,
-                child: const Text('Add Alarm'),
-              ),
-            ],
+                const SizedBox(height: 16),
+                _daySelector(isDark),
+                const SizedBox(height: 16),
+                TextField(
+                  controller: _titleController,
+                  decoration: const InputDecoration(labelText: 'Title'),
+                ),
+                const SizedBox(height: 24),
+                ElevatedButton(
+                  onPressed: _addAlarm,
+                  child: const Text('Add Alarm'),
+                ),
+              ],
+            ),
           ),
         ),
       ),

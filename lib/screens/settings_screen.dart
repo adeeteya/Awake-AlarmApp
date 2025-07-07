@@ -46,6 +46,7 @@ class SettingsScreen extends StatelessWidget {
         backgroundColor:
             isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
         leading: IconButton(
+          tooltip: "Back",
           onPressed: () => Navigator.pop(context),
           style: IconButton.styleFrom(
             foregroundColor:
