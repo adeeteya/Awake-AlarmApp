@@ -21,13 +21,7 @@ class CustomSoundsCubit extends Cubit<List<String>> {
 
   Future<void> _loadSounds() async {
     final dir = await _customDir;
-    final files =
-        dir
-            .listSync()
-            .whereType<File>()
-            .where((f) => f.path.toLowerCase().endsWith('.mp3'))
-            .map((f) => f.path)
-            .toList();
+    final files = dir.listSync().whereType<File>().map((f) => f.path).toList();
     emit(files);
   }
 
