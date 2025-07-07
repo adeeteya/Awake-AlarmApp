@@ -1,0 +1,1 @@
+enum AlarmScreenType { ringing, math }

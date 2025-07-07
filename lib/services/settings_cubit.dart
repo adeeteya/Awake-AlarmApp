@@ -1,3 +1,4 @@
+import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/services/shared_prefs_with_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,6 +10,7 @@ class SettingsState {
   final bool fadeInAlarm;
   final double alarmVolume;
   final String alarmAudioPath;
+  final AlarmScreenType alarmScreenType;
 
   const SettingsState({
     required this.mode,
@@ -17,6 +19,7 @@ class SettingsState {
     required this.fadeInAlarm,
     required this.alarmVolume,
     required this.alarmAudioPath,
+    required this.alarmScreenType,
   });
 
   SettingsState copyWith({
@@ -26,6 +29,7 @@ class SettingsState {
     bool? fadeInAlarm,
     double? alarmVolume,
     String? alarmAudioPath,
+    AlarmScreenType? alarmScreenType,
   }) {
     return SettingsState(
       mode: mode ?? this.mode,
@@ -34,6 +38,7 @@ class SettingsState {
       fadeInAlarm: fadeInAlarm ?? this.fadeInAlarm,
       alarmVolume: alarmVolume ?? this.alarmVolume,
       alarmAudioPath: alarmAudioPath ?? this.alarmAudioPath,
+      alarmScreenType: alarmScreenType ?? this.alarmScreenType,
     );
   }
 }
@@ -71,6 +76,10 @@ class SettingsCubit extends Cubit<SettingsState> {
                 'alarmAudioPath',
               ) ??
               'assets/alarm_ringtone.mp3',
+          alarmScreenType:
+              AlarmScreenType.values[SharedPreferencesWithCache.instance
+                      .get<int>('alarmScreenType') ??
+                  AlarmScreenType.ringing.index],
         ),
       );
 
@@ -111,5 +120,13 @@ class SettingsCubit extends Cubit<SettingsState> {
   Future<void> setAlarmAudioPath(String path) async {
     await SharedPreferencesWithCache.instance.setString('alarmAudioPath', path);
     emit(state.copyWith(alarmAudioPath: path));
+  }
+
+  Future<void> setAlarmScreenType(AlarmScreenType type) async {
+    await SharedPreferencesWithCache.instance.setInt(
+      'alarmScreenType',
+      type.index,
+    );
+    emit(state.copyWith(alarmScreenType: type));
   }
 }
