@@ -37,9 +37,7 @@ class ThemeListTile extends StatelessWidget {
         isDark ? AppColors.darkBackgroundText : AppColors.lightBackgroundText;
     return GestureDetector(
       onTap: () => onChanged(_nextMode(mode)),
-      child: Container(
-        padding: const EdgeInsets.all(1),
-        margin: const EdgeInsets.only(top: 23),
+      child: DecoratedBox(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           gradient: LinearGradient(
@@ -79,30 +77,40 @@ class ThemeListTile extends StatelessWidget {
                     ),
                   ],
         ),
-        child: Container(
-          height: 74,
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 18),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors:
-                  isDark
-                      ? [AppColors.darkClock1, AppColors.darkScaffold1]
-                      : [AppColors.lightScaffold1, AppColors.lightGradient2],
-            ),
-          ),
-          child: Row(
-            children: [
-              Text(
-                'Theme',
-                style: TextStyle(color: color, fontFamily: 'Poppins'),
+        child: Padding(
+          padding: const EdgeInsets.all(1),
+          child: SizedBox(
+            height: 74,
+            width: double.infinity,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors:
+                      isDark
+                          ? [AppColors.darkClock1, AppColors.darkScaffold1]
+                          : [
+                            AppColors.lightScaffold1,
+                            AppColors.lightGradient2,
+                          ],
+                ),
               ),
-              const Spacer(),
-              Icon(_iconForMode(mode), color: color),
-            ],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 18),
+                child: Row(
+                  children: [
+                    Text(
+                      'Theme',
+                      style: TextStyle(color: color, fontFamily: 'Poppins'),
+                    ),
+                    const Spacer(),
+                    Icon(_iconForMode(mode), color: color),
+                  ],
+                ),
+              ),
+            ),
           ),
         ),
       ),

@@ -42,13 +42,35 @@ class SettingsCubit extends Cubit<SettingsState> {
   SettingsCubit()
     : super(
         SettingsState(
-          mode: ThemeMode.values[SharedPreferencesWithCache.instance.get<int>('themeMode') ?? ThemeMode.system.index],
-          use24HourFormat: (SharedPreferencesWithCache.instance.get<int>('use24HourFormat') ?? 0) == 1,
-          vibrationEnabled: (SharedPreferencesWithCache.instance.get<int>('vibrationEnabled') ?? 1) == 1,
-          fadeInAlarm: (SharedPreferencesWithCache.instance.get<int>('fadeInAlarm') ?? 0) == 1,
-          alarmVolume: SharedPreferencesWithCache.instance.get<double>('alarmVolume') ?? 1.0,
+          mode:
+              ThemeMode.values[SharedPreferencesWithCache.instance.get<int>(
+                    'themeMode',
+                  ) ??
+                  ThemeMode.system.index],
+          use24HourFormat:
+              (SharedPreferencesWithCache.instance.get<int>(
+                    'use24HourFormat',
+                  ) ??
+                  0) ==
+              1,
+          vibrationEnabled:
+              (SharedPreferencesWithCache.instance.get<int>(
+                    'vibrationEnabled',
+                  ) ??
+                  1) ==
+              1,
+          fadeInAlarm:
+              (SharedPreferencesWithCache.instance.get<int>('fadeInAlarm') ??
+                  0) ==
+              1,
+          alarmVolume:
+              SharedPreferencesWithCache.instance.get<double>('alarmVolume') ??
+              1.0,
           alarmAudioPath:
-              SharedPreferencesWithCache.instance.get<String>('alarmAudioPath') ?? 'assets/alarm_ringtone.mp3',
+              SharedPreferencesWithCache.instance.get<String>(
+                'alarmAudioPath',
+              ) ??
+              'assets/alarm_ringtone.mp3',
         ),
       );
 
@@ -58,17 +80,26 @@ class SettingsCubit extends Cubit<SettingsState> {
   }
 
   Future<void> setUse24HourFormat(bool use24Hour) async {
-    await SharedPreferencesWithCache.instance.setInt('use24HourFormat', use24Hour ? 1 : 0);
+    await SharedPreferencesWithCache.instance.setInt(
+      'use24HourFormat',
+      use24Hour ? 1 : 0,
+    );
     emit(state.copyWith(use24HourFormat: use24Hour));
   }
 
   Future<void> setVibrationEnabled(bool enabled) async {
-    await SharedPreferencesWithCache.instance.setInt('vibrationEnabled', enabled ? 1 : 0);
+    await SharedPreferencesWithCache.instance.setInt(
+      'vibrationEnabled',
+      enabled ? 1 : 0,
+    );
     emit(state.copyWith(vibrationEnabled: enabled));
   }
 
   Future<void> setFadeInAlarm(bool enabled) async {
-    await SharedPreferencesWithCache.instance.setInt('fadeInAlarm', enabled ? 1 : 0);
+    await SharedPreferencesWithCache.instance.setInt(
+      'fadeInAlarm',
+      enabled ? 1 : 0,
+    );
     emit(state.copyWith(fadeInAlarm: enabled));
   }
 
