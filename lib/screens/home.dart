@@ -6,10 +6,12 @@ import 'package:alarm/utils/alarm_set.dart';
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/screens/alarm_ringing_screen.dart';
+import 'package:awake/screens/math_alarm_screen.dart';
 import 'package:awake/screens/settings_screen.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/settings_cubit.dart';
+import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/alarm_tile.dart';
@@ -65,12 +67,14 @@ class _HomeState extends State<Home> {
 
   Future<void> _ringingAlarmsChanged(AlarmSet alarms) async {
     if (alarms.alarms.isEmpty) return;
+    final screenType = context.read<SettingsCubit>().state.alarmScreenType;
+    Widget screen = AlarmRingingScreen(alarmSettings: alarms.alarms.first);
+    if (screenType == AlarmScreenType.math) {
+      screen = MathAlarmScreen(alarmSettings: alarms.alarms.first);
+    }
     await Navigator.push(
       context,
-      MaterialPageRoute<void>(
-        builder:
-            (context) => AlarmRingingScreen(alarmSettings: alarms.alarms.first),
-      ),
+      MaterialPageRoute<void>(builder: (context) => screen),
     );
   }
 

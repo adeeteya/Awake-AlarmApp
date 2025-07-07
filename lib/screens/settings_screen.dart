@@ -4,6 +4,7 @@ import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/custom_sounds_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
+import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/gradient_slider.dart';
 import 'package:awake/widgets/gradient_switch.dart';
@@ -172,6 +173,44 @@ class SettingsScreen extends StatelessWidget {
                             volume: state.alarmVolume,
                           );
                         },
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 23),
+                SettingsTile(
+                  child: Row(
+                    children: [
+                      Text(
+                        'Alarm Screen',
+                        style: TextStyle(color: color, fontFamily: 'Poppins'),
+                      ),
+                      const SizedBox(width: 20),
+                      Expanded(
+                        child: DropdownButton<AlarmScreenType>(
+                          value: state.alarmScreenType,
+                          underline: const SizedBox(),
+                          isExpanded: true,
+                          dropdownColor:
+                              isDark ? AppColors.darkScaffold1 : Colors.white,
+                          items: const [
+                            DropdownMenuItem(
+                              value: AlarmScreenType.ringing,
+                              child: Text('Default'),
+                            ),
+                            DropdownMenuItem(
+                              value: AlarmScreenType.math,
+                              child: Text('Math Challenge'),
+                            ),
+                          ],
+                          onChanged: (v) {
+                            if (v != null) {
+                              context
+                                  .read<SettingsCubit>()
+                                  .setAlarmScreenType(v);
+                            }
+                          },
+                        ),
                       ),
                     ],
                   ),
