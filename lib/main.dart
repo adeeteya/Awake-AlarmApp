@@ -2,6 +2,7 @@ import 'package:alarm/alarm.dart';
 import 'package:awake/screens/home.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_database.dart';
+import 'package:awake/services/custom_sounds_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/services/shared_prefs_with_cache.dart';
 import 'package:awake/theme/app_theme.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (_) => AlarmCubit()),
         BlocProvider(create: (_) => SettingsCubit()),
+        BlocProvider(create: (_) => CustomSoundsCubit()),
       ],
       child: BlocBuilder<SettingsCubit, SettingsState>(
         builder: (context, state) {

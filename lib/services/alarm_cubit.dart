@@ -264,4 +264,12 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     }
     await _loadAlarms();
   }
+
+  Future<void> updateAudioPathForAll(String audioPath) async {
+    final alarms = await Alarm.getAlarms();
+    for (final alarm in alarms) {
+      await Alarm.set(alarmSettings: alarm.copyWith(assetAudioPath: audioPath));
+    }
+    await _loadAlarms();
+  }
 }
