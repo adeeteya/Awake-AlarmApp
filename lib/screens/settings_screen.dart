@@ -259,7 +259,8 @@ class SettingsScreen extends StatelessWidget {
                         );
                       });
                     }
-                    return SettingsTile(
+
+                    final alarmSoundTile = SettingsTile(
                       child: Row(
                         children: [
                           Text(
@@ -297,6 +298,36 @@ class SettingsScreen extends StatelessWidget {
                           ),
                         ],
                       ),
+                    );
+
+                    if (files.isEmpty) {
+                      return alarmSoundTile;
+                    }
+
+                    return Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        alarmSoundTile,
+                        const SizedBox(height: 23),
+                        SettingsTile(
+                          onTap: () async {
+                            await context
+                                .read<CustomSoundsCubit>()
+                                .clearSounds();
+                          },
+                          child: Row(
+                            children: [
+                              Text(
+                                'Clear Custom Sounds',
+                                style: TextStyle(
+                                  color: color,
+                                  fontFamily: 'Poppins',
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     );
                   },
                 ),

@@ -32,4 +32,16 @@ class CustomSoundsCubit extends Cubit<List<String>> {
     await _loadSounds();
     return newPath;
   }
+
+  Future<void> clearSounds() async {
+    final dir = await _customDir;
+    if (await dir.exists()) {
+      await for (final entity in dir.list()) {
+        if (entity is File) {
+          await entity.delete();
+        }
+      }
+    }
+    await _loadSounds();
+  }
 }
