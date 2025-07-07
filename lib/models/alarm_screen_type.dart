@@ -1,1 +1,1 @@
-enum AlarmScreenType { ringing, math }
+enum AlarmScreenType { ringing, math, shake }

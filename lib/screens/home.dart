@@ -9,6 +9,7 @@ import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/screens/alarm_ringing_screen.dart';
 import 'package:awake/screens/math_alarm_screen.dart';
 import 'package:awake/screens/settings_screen.dart';
+import 'package:awake/screens/shake_alarm_screen.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/settings_cubit.dart';
@@ -71,6 +72,8 @@ class _HomeState extends State<Home> {
     Widget screen = AlarmRingingScreen(alarmSettings: alarms.alarms.first);
     if (screenType == AlarmScreenType.math) {
       screen = MathAlarmScreen(alarmSettings: alarms.alarms.first);
+    } else if (screenType == AlarmScreenType.shake) {
+      screen = ShakeAlarmScreen(alarmSettings: alarms.alarms.first);
     }
     await Navigator.push(
       context,
