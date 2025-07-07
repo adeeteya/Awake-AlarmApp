@@ -6,6 +6,7 @@ import 'package:alarm/utils/alarm_set.dart';
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/models/alarm_screen_type.dart';
+import 'package:awake/screens/add_alarm_screen.dart';
 import 'package:awake/screens/alarm_ringing_screen.dart';
 import 'package:awake/screens/math_alarm_screen.dart';
 import 'package:awake/screens/settings_screen.dart';
@@ -31,22 +32,9 @@ class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
 
   Future<void> _addAlarm() async {
-    final bool use24h = context.read<SettingsCubit>().state.use24HourFormat;
-    final TimeOfDay? timeOfDay = await showTimePicker(
-      context: context,
-      initialTime: TimeOfDay.now(),
-      helpText: "Set Alarm Time",
-      confirmText: "Confirm",
-      builder: (context, child) {
-        return MediaQuery(
-          data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: use24h),
-          child: child!,
-        );
-      },
-    );
-    if (timeOfDay != null && mounted) {
-      await context.read<AlarmCubit>().setPeriodicAlarms(timeOfDay: timeOfDay);
-    }
+    await Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const AddAlarmScreen()));
   }
 
   @override
