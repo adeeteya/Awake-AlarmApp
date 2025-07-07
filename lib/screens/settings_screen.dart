@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:awake/extensions/context_extensions.dart';
@@ -33,6 +34,9 @@ class SettingsScreen extends StatelessWidget {
   }
 
   Future<void> _pickAndAddAudio(BuildContext context) async {
+    final settingsCubit = context.read<SettingsCubit>();
+    final alarmCubit = context.read<AlarmCubit>();
+
     final result = await FilePicker.platform.pickFiles(type: FileType.audio);
     if (result == null || result.files.single.path == null) return;
     final path = result.files.single.path!;
@@ -43,9 +47,8 @@ class SettingsScreen extends StatelessWidget {
     }
     final newPath = join(customDir.path, basename(path));
     await File(path).copy(newPath);
-    if (context.mounted) {
-      await context.read<SettingsCubit>().setAlarmAudioPath(newPath);
-    }
+    await settingsCubit.setAlarmAudioPath(newPath);
+    await alarmCubit.updateAudioPathForAll(newPath);
   }
 
   @override
@@ -459,6 +462,23 @@ class SettingsScreen extends StatelessWidget {
                         child: Text('Add Alarm'),
                       ),
                     ];
+                    final values =
+                        items
+                            .where((e) => e.value != '__add__')
+                            .map((e) => e.value)
+                            .whereType<String>()
+                            .toList();
+                    String dropdownValue = state.alarmAudioPath;
+                    if (!values.contains(dropdownValue)) {
+                      dropdownValue = 'assets/alarm_ringtone.mp3';
+                      WidgetsBinding.instance.addPostFrameCallback((_) {
+                        unawaited(
+                          context.read<SettingsCubit>().setAlarmAudioPath(
+                            dropdownValue,
+                          ),
+                        );
+                      });
+                    }
                     return DecoratedBox(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
@@ -547,7 +567,7 @@ class SettingsScreen extends StatelessWidget {
                                   const SizedBox(width: 20),
                                   Expanded(
                                     child: DropdownButton<String>(
-                                      value: state.alarmAudioPath,
+                                      value: dropdownValue,
                                       underline: const SizedBox(),
                                       enableFeedback: true,
                                       isExpanded: true,
@@ -561,9 +581,15 @@ class SettingsScreen extends StatelessWidget {
                                         if (v == '__add__') {
                                           await _pickAndAddAudio(context);
                                         } else {
-                                          await context
-                                              .read<SettingsCubit>()
-                                              .setAlarmAudioPath(v);
+                                          final settingsCubit =
+                                              context.read<SettingsCubit>();
+                                          final alarmCubit =
+                                              context.read<AlarmCubit>();
+                                          await settingsCubit.setAlarmAudioPath(
+                                            v,
+                                          );
+                                          await alarmCubit
+                                              .updateAudioPathForAll(v);
                                         }
                                       },
                                     ),
