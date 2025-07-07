@@ -15,54 +15,59 @@ class AlarmRingingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool isDark = context.isDarkMode;
-    return Scaffold(
-      body: DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors:
-                isDark
-                    ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
-                    : [AppColors.lightScaffold1, AppColors.lightScaffold2],
+    return PopScope(
+      canPop: false,
+      child: Scaffold(
+        body: DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors:
+                  isDark
+                      ? [AppColors.darkScaffold1, AppColors.darkScaffold2]
+                      : [AppColors.lightScaffold1, AppColors.lightScaffold2],
+            ),
           ),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Lottie.asset("assets/lottie/clock.json"),
-              const Spacer(),
-              GestureDetector(
-                onTap: () async {
-                  await context.read<AlarmCubit>().stopAlarm(alarmSettings.id);
-                  if (context.mounted) {
-                    Navigator.pop(context);
-                  }
-                },
-                child: const StopButton(),
-              ),
-              const Spacer(),
-              SnoozeButton(
-                onSnoozePressed: (snoozeMinutes) async {
-                  await context.read<AlarmCubit>().snoozeAlarm(
-                    alarmSettings: alarmSettings,
-                    snoozeMinutes: snoozeMinutes,
-                  );
-                  if (context.mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text(
-                          "Alarm snoozed for $snoozeMinutes minutes",
-                        ),
-                      ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Lottie.asset("assets/lottie/clock.json"),
+                const Spacer(),
+                GestureDetector(
+                  onTap: () async {
+                    await context.read<AlarmCubit>().stopAlarm(
+                      alarmSettings.id,
                     );
-                    Navigator.pop(context);
-                  }
-                },
-              ),
-              const SizedBox(height: 20),
-            ],
+                    if (context.mounted) {
+                      Navigator.pop(context);
+                    }
+                  },
+                  child: const StopButton(),
+                ),
+                const Spacer(),
+                SnoozeButton(
+                  onSnoozePressed: (snoozeMinutes) async {
+                    await context.read<AlarmCubit>().snoozeAlarm(
+                      alarmSettings: alarmSettings,
+                      snoozeMinutes: snoozeMinutes,
+                    );
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            "Alarm snoozed for $snoozeMinutes minutes",
+                          ),
+                        ),
+                      );
+                      Navigator.pop(context);
+                    }
+                  },
+                ),
+                const SizedBox(height: 20),
+              ],
+            ),
           ),
         ),
       ),
