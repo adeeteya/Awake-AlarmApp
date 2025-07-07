@@ -21,6 +21,7 @@ class ShakeAlarmScreen extends StatefulWidget {
 
 class _ShakeAlarmScreenState extends State<ShakeAlarmScreen> {
   late final StreamSubscription<AccelerometerEvent> _subscription;
+  Timer? _debounce;
   int _shakeCount = 0;
   static const int _requiredShakes = 10;
   static const double _threshold = 2;
@@ -37,19 +38,27 @@ class _ShakeAlarmScreenState extends State<ShakeAlarmScreen> {
     final double gZ = event.z / 9.81;
     final double gForce = sqrt(gX * gX + gY * gY + gZ * gZ);
     if (gForce > _threshold) {
-      setState(() {
-        _shakeCount++;
-      });
-      if (_shakeCount >= _requiredShakes) {
-        await _subscription.cancel();
-        if (mounted) {
-          await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
+      _debounce?.cancel();
+      _debounce = Timer(const Duration(milliseconds: 300), () async {
+        setState(() => _shakeCount++);
+        if (_shakeCount >= _requiredShakes) {
+          await _subscription.cancel();
           if (mounted) {
-            Navigator.pop(context);
+            await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
+            if (mounted) {
+              Navigator.pop(context);
+            }
           }
         }
-      }
+      });
     }
+  }
+
+  @override
+  void dispose() {
+    unawaited(_subscription.cancel());
+    _debounce?.cancel();
+    super.dispose();
   }
 
   @override
