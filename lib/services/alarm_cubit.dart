@@ -56,6 +56,9 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
           1;
       final volume =
           SharedPreferencesWithCache.instance.get<double>('alarmVolume') ?? 1.0;
+      final audioPath =
+          SharedPreferencesWithCache.instance.get<String>('alarmAudioPath') ??
+          'assets/alarm_ringtone.mp3';
       final volumeSettings =
           fadeIn
               ? VolumeSettings.fade(
@@ -67,7 +70,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
       final alarmSetting = AlarmSettings(
         id: id,
         dateTime: scheduledDate,
-        assetAudioPath: "assets/alarm_ringtone.mp3",
+        assetAudioPath: audioPath,
         vibrate: vibrate,
         volumeSettings: volumeSettings,
         notificationSettings: const NotificationSettings(

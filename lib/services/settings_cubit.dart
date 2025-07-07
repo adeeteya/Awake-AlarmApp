@@ -8,6 +8,7 @@ class SettingsState {
   final bool vibrationEnabled;
   final bool fadeInAlarm;
   final double alarmVolume;
+  final String alarmAudioPath;
 
   const SettingsState({
     required this.mode,
@@ -15,6 +16,7 @@ class SettingsState {
     required this.vibrationEnabled,
     required this.fadeInAlarm,
     required this.alarmVolume,
+    required this.alarmAudioPath,
   });
 
   SettingsState copyWith({
@@ -23,6 +25,7 @@ class SettingsState {
     bool? vibrationEnabled,
     bool? fadeInAlarm,
     double? alarmVolume,
+    String? alarmAudioPath,
   }) {
     return SettingsState(
       mode: mode ?? this.mode,
@@ -30,6 +33,7 @@ class SettingsState {
       vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
       fadeInAlarm: fadeInAlarm ?? this.fadeInAlarm,
       alarmVolume: alarmVolume ?? this.alarmVolume,
+      alarmAudioPath: alarmAudioPath ?? this.alarmAudioPath,
     );
   }
 }
@@ -62,6 +66,11 @@ class SettingsCubit extends Cubit<SettingsState> {
           alarmVolume:
               SharedPreferencesWithCache.instance.get<double>('alarmVolume') ??
               1.0,
+          alarmAudioPath:
+              SharedPreferencesWithCache.instance.get<String>(
+                'alarmAudioPath',
+              ) ??
+              'assets/alarm_ringtone.mp3',
         ),
       );
 
@@ -97,5 +106,10 @@ class SettingsCubit extends Cubit<SettingsState> {
   Future<void> setAlarmVolume(double volume) async {
     await SharedPreferencesWithCache.instance.setDouble('alarmVolume', volume);
     emit(state.copyWith(alarmVolume: volume));
+  }
+
+  Future<void> setAlarmAudioPath(String path) async {
+    await SharedPreferencesWithCache.instance.setString('alarmAudioPath', path);
+    emit(state.copyWith(alarmAudioPath: path));
   }
 }
