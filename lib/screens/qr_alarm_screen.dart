@@ -1,6 +1,8 @@
+import 'dart:async';
+
 import 'package:alarm/alarm.dart';
+import 'package:awake/constants.dart';
 import 'package:awake/extensions/context_extensions.dart';
-import 'package:awake/models/qr_alarm_constants.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +25,7 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
   void initState() {
     super.initState();
     _controller = MobileScannerController();
-    _requestPermission();
+    unawaited(_requestPermission());
   }
 
   Future<void> _requestPermission() async {
@@ -35,17 +37,23 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
 
   @override
   void dispose() {
-    _controller.dispose();
+    unawaited(_controller.dispose());
     super.dispose();
   }
 
   Future<void> _onDetect(BarcodeCapture capture) async {
-    final value = capture.barcodes.first.rawValue;
-    if (value == qrAlarmText) {
+    final value = capture.barcodes.last.rawValue;
+    if (value == kQRCodeText) {
       await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
       if (mounted) {
         Navigator.pop(context);
       }
+    } else if (value != null && value.isNotEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Wrong QR Code. Please scan the correct one.'),
+        ),
+      );
     }
   }
 

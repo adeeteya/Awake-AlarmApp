@@ -11,11 +11,8 @@ import 'package:awake/widgets/gradient_switch.dart';
 import 'package:awake/widgets/settings_tile.dart';
 import 'package:awake/widgets/theme_list_tile.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:qr_flutter/qr_flutter.dart';
-import 'dart:io';
-import 'package:path_provider/path_provider.dart';
-import 'package:awake/models/qr_alarm_constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:path/path.dart';
 
@@ -42,16 +39,16 @@ class SettingsScreen extends StatelessWidget {
   }
 
   Future<void> _downloadQrCode(BuildContext context) async {
-    final painter = QrPainter(data: qrAlarmText, version: QrVersions.auto);
-    final imageData = await painter.toImageData(300);
-    if (imageData == null) return;
-    final dir = await getApplicationDocumentsDirectory();
-    final file = File(join(dir.path, 'awake_qr.png'));
-    await file.writeAsBytes(imageData.buffer.asUint8List());
+    final byteData = await rootBundle.load("assets/qr_code.png");
+    final saveLocation = await FilePicker.platform.saveFile(
+      fileName: 'awake_qr.png',
+      type: FileType.image,
+      bytes: byteData.buffer.asUint8List(),
+    );
     if (context.mounted) {
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text('Saved to ${file.path}')));
+      ).showSnackBar(SnackBar(content: Text('File saved to $saveLocation')));
     }
   }
 
