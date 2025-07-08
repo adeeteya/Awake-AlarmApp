@@ -34,6 +34,18 @@ class AlarmRingingScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Lottie.asset("assets/lottie/clock.json"),
+                const SizedBox(height: 20),
+                Text(
+                  alarmSettings.notificationSettings.body,
+                  style: TextStyle(
+                    color:
+                        isDark
+                            ? AppColors.darkBackgroundText
+                            : AppColors.lightBackgroundText,
+                    fontSize: 24,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
                 const Spacer(),
                 GestureDetector(
                   onTap: () async {

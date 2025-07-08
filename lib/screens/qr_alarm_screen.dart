@@ -77,6 +77,18 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
           child: Column(
             children: [
               const Spacer(),
+              Text(
+                widget.alarmSettings.notificationSettings.body,
+                style: TextStyle(
+                  color:
+                      isDark
+                          ? AppColors.darkBackgroundText
+                          : AppColors.lightBackgroundText,
+                  fontSize: 24,
+                  fontFamily: 'Poppins',
+                ),
+              ),
+              const SizedBox(height: 20),
               Expanded(
                 flex: 6,
                 child: MobileScanner(
