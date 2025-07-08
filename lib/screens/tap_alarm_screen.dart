@@ -77,7 +77,7 @@ class _TapAlarmScreenState extends State<TapAlarmScreen> {
                 ),
                 const SizedBox(height: 20),
                 Text(
-                  'Taps: \$_tapCount / \$_requiredTaps',
+                  'Taps: $_tapCount / $_requiredTaps',
                   style: TextStyle(
                     color:
                         isDark

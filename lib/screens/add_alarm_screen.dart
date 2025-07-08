@@ -257,6 +257,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                         controller: _titleController,
                         focusNode: _focusNode,
                         decoration: const InputDecoration(labelText: 'Title'),
+                        onSubmitted: (_) => _addAlarm(),
                       ),
                       const SizedBox(height: 16),
                       InkWell(onTap: _addAlarm, child: const AddButton()),

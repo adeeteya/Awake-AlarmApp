@@ -209,7 +209,9 @@ class SettingsScreen extends StatelessWidget {
                           underline: const SizedBox(),
                           isExpanded: true,
                           dropdownColor:
-                              isDark ? AppColors.darkScaffold1 : Colors.white,
+                              isDark
+                                  ? AppColors.darkScaffold1
+                                  : AppColors.lightScaffold1,
                           items: const [
                             DropdownMenuItem(
                               value: AlarmScreenType.ringing,
