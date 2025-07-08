@@ -32,23 +32,6 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
     super.dispose();
   }
 
-  Future<void> _pickTime() async {
-    final bool use24h = context.read<SettingsCubit>().state.use24HourFormat;
-    final TimeOfDay? time = await showTimePicker(
-      context: context,
-      initialTime: _selectedTime,
-      helpText: 'Set Alarm Time',
-      confirmText: 'Confirm',
-      builder: (context, child) {
-        return MediaQuery(
-          data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: use24h),
-          child: child!,
-        );
-      },
-    );
-    if (time != null) setState(() => _selectedTime = time);
-  }
-
   void _toggleDay(int day) {
     setState(() {
       if (_selectedDays.contains(day)) {
@@ -122,7 +105,6 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   @override
   Widget build(BuildContext context) {
     final bool isDark = context.isDarkMode;
-    final bool use24h = context.watch<SettingsCubit>().state.use24HourFormat;
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
@@ -165,51 +147,43 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                       : [AppColors.lightContainer1, AppColors.lightContainer2],
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: ListView(
-              children: [
-                TimePickerWidget(
-                  initialTime: _selectedTime,
-                  onTimeChanged: (time) {
-                    print('Selected time: $time');
-                  },
-                ),
-                TextButton(
-                  onPressed: _pickTime,
-                  style: TextButton.styleFrom(
-                    foregroundColor:
-                        isDark
-                            ? AppColors.darkBackgroundText
-                            : AppColors.lightBackgroundText,
+          child: Column(
+            children: [
+              Expanded(
+                child: MediaQuery(
+                  data: MediaQuery.of(context).copyWith(
+                    alwaysUse24HourFormat:
+                        context.read<SettingsCubit>().state.use24HourFormat,
                   ),
-                  child: Text(
-                    MaterialLocalizations.of(context).formatTimeOfDay(
-                      _selectedTime,
-                      alwaysUse24HourFormat: use24h,
-                    ),
-                    style: const TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 34,
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: 0.03,
-                    ),
+                  child: TimePickerWidget(
+                    initialTime: _selectedTime,
+                    onTimeChanged: (time) {
+                      setState(() {
+                        _selectedTime = time;
+                      });
+                    },
                   ),
                 ),
-                const SizedBox(height: 16),
-                _daySelector(isDark),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _titleController,
-                  decoration: const InputDecoration(labelText: 'Title'),
+              ),
+              SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Column(
+                  children: [
+                    _daySelector(isDark),
+                    const SizedBox(height: 16),
+                    TextField(
+                      controller: _titleController,
+                      decoration: const InputDecoration(labelText: 'Title'),
+                    ),
+                    const SizedBox(height: 24),
+                    ElevatedButton(
+                      onPressed: _addAlarm,
+                      child: const Text('Add Alarm'),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 24),
-                ElevatedButton(
-                  onPressed: _addAlarm,
-                  child: const Text('Add Alarm'),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

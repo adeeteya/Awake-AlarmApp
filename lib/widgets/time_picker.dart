@@ -607,11 +607,7 @@ class _TimePickerState extends State<_TimePicker> with RestorationMixin {
       case TimePickerEntryMode.dial:
       case TimePickerEntryMode.dialOnly:
         final EdgeInsetsGeometry dialPadding = switch (orientation) {
-          Orientation.portrait => const EdgeInsets.only(
-            left: 12,
-            right: 12,
-            top: 36,
-          ),
+          Orientation.portrait => const EdgeInsets.only(bottom: 36),
           Orientation.landscape => const EdgeInsetsDirectional.only(start: 64),
         };
         final Widget dial = Padding(
@@ -639,7 +635,6 @@ class _TimePickerState extends State<_TimePicker> with RestorationMixin {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                const _TimePickerHeader(),
                 Expanded(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
@@ -649,6 +644,7 @@ class _TimePickerState extends State<_TimePicker> with RestorationMixin {
                     ],
                   ),
                 ),
+                const _TimePickerHeader(),
               ],
             );
           case Orientation.landscape:
