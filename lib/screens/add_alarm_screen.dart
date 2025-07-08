@@ -51,7 +51,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
     await context.read<AlarmCubit>().setPeriodicAlarms(
       timeOfDay: _selectedTime,
       days: _selectedDays.toList(),
-      body: title.isEmpty ? 'Time to Wake Up' : title,
+      body: title,
     );
     if (mounted) Navigator.pop(context);
   }
