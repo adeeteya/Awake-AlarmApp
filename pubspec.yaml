@@ -20,6 +20,8 @@ dependencies:
   sensors_plus: ^6.1.1
   shared_preferences: ^2.5.3
   sqflite: ^2.4.2
+  mobile_scanner: ^4.0.1
+  qr_flutter: ^4.1.0
 
 dev_dependencies:
   flutter_lints: ^6.0.0

@@ -11,6 +11,10 @@ import 'package:awake/widgets/gradient_switch.dart';
 import 'package:awake/widgets/settings_tile.dart';
 import 'package:awake/widgets/theme_list_tile.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:qr_flutter/qr_flutter.dart';
+import 'dart:io';
+import 'package:path_provider/path_provider.dart';
+import 'package:awake/models/qr_alarm_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:path/path.dart';
@@ -35,6 +39,20 @@ class SettingsScreen extends StatelessWidget {
     if (newPath == null) return;
     await settingsCubit.setAlarmAudioPath(newPath);
     await alarmCubit.updateAudioPathForAll(newPath);
+  }
+
+  Future<void> _downloadQrCode(BuildContext context) async {
+    final painter = QrPainter(data: qrAlarmText, version: QrVersions.auto);
+    final imageData = await painter.toImageData(300);
+    if (imageData == null) return;
+    final dir = await getApplicationDocumentsDirectory();
+    final file = File(join(dir.path, 'awake_qr.png'));
+    await file.writeAsBytes(imageData.buffer.asUint8List());
+    if (context.mounted) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Saved to ${file.path}')));
+    }
   }
 
   @override
@@ -207,6 +225,10 @@ class SettingsScreen extends StatelessWidget {
                               value: AlarmScreenType.shake,
                               child: Text('Shake to Stop'),
                             ),
+                            DropdownMenuItem(
+                              value: AlarmScreenType.qr,
+                              child: Text('QR Code Scan'),
+                            ),
                           ],
                           onChanged: (v) async {
                             if (v != null) {
@@ -221,6 +243,22 @@ class SettingsScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 23),
+                if (state.alarmScreenType == AlarmScreenType.qr)
+                  SettingsTile(
+                    onTap: () async {
+                      await _downloadQrCode(context);
+                    },
+                    child: Row(
+                      children: [
+                        Text(
+                          'Download QR Code',
+                          style: TextStyle(color: color, fontFamily: 'Poppins'),
+                        ),
+                      ],
+                    ),
+                  ),
+                if (state.alarmScreenType == AlarmScreenType.qr)
+                  const SizedBox(height: 23),
                 BlocBuilder<CustomSoundsCubit, List<String>>(
                   builder: (context, files) {
                     final items = <DropdownMenuItem<String>>[
