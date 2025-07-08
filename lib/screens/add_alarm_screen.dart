@@ -1,4 +1,5 @@
 import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
@@ -8,25 +9,40 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AddAlarmScreen extends StatefulWidget {
-  const AddAlarmScreen({super.key});
+  final AlarmModel? alarmModel;
+
+  const AddAlarmScreen({super.key, this.alarmModel});
 
   @override
   State<AddAlarmScreen> createState() => _AddAlarmScreenState();
 }
 
 class _AddAlarmScreenState extends State<AddAlarmScreen> {
-  TimeOfDay _selectedTime = TimeOfDay.now();
+  late TimeOfDay _selectedTime;
   final TextEditingController _titleController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
-  final Set<int> _selectedDays = <int>{
-    DateTime.monday,
-    DateTime.tuesday,
-    DateTime.wednesday,
-    DateTime.thursday,
-    DateTime.friday,
-    DateTime.saturday,
-    DateTime.sunday,
-  };
+  late Set<int> _selectedDays;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.alarmModel != null) {
+      _selectedTime = widget.alarmModel!.timeOfDay;
+      _selectedDays = widget.alarmModel!.days.toSet();
+      _titleController.text = widget.alarmModel!.body;
+    } else {
+      _selectedTime = TimeOfDay.now();
+      _selectedDays = <int>{
+        DateTime.monday,
+        DateTime.tuesday,
+        DateTime.wednesday,
+        DateTime.thursday,
+        DateTime.friday,
+        DateTime.saturday,
+        DateTime.sunday,
+      };
+    }
+  }
 
   @override
   void dispose() {
@@ -48,11 +64,25 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   Future<void> _addAlarm() async {
     if (_selectedDays.isEmpty) return;
     final title = _titleController.text.trim();
-    await context.read<AlarmCubit>().setPeriodicAlarms(
-      timeOfDay: _selectedTime,
-      days: _selectedDays.toList(),
-      body: title,
-    );
+    final cubit = context.read<AlarmCubit>();
+    if (widget.alarmModel != null) {
+      final oldModel = widget.alarmModel!;
+      await cubit.deleteAlarmModel(oldModel);
+      await cubit.setPeriodicAlarms(
+        timeOfDay: _selectedTime,
+        days: _selectedDays.toList(),
+        body: title,
+      );
+      if (!oldModel.enabled) {
+        await cubit.toggleAlarmEnabled(_selectedTime, false);
+      }
+    } else {
+      await cubit.setPeriodicAlarms(
+        timeOfDay: _selectedTime,
+        days: _selectedDays.toList(),
+        body: title,
+      );
+    }
     if (mounted) Navigator.pop(context);
   }
 
@@ -127,7 +157,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
             icon: const Icon(Icons.arrow_back),
           ),
           centerTitle: true,
-          title: const Text('Add Alarm'),
+          title: Text(widget.alarmModel == null ? 'Add Alarm' : 'Edit Alarm'),
           titleTextStyle: TextStyle(
             color:
                 isDark
