@@ -2,6 +2,7 @@ import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/time_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -16,6 +17,7 @@ class AddAlarmScreen extends StatefulWidget {
 class _AddAlarmScreenState extends State<AddAlarmScreen> {
   TimeOfDay _selectedTime = TimeOfDay.now();
   final TextEditingController _titleController = TextEditingController();
+  final FocusNode _focusNode = FocusNode();
   final Set<int> _selectedDays = <int>{
     DateTime.monday,
     DateTime.tuesday,
@@ -29,6 +31,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   @override
   void dispose() {
     _titleController.dispose();
+    _focusNode.dispose();
     super.dispose();
   }
 
@@ -106,7 +109,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   Widget build(BuildContext context) {
     final bool isDark = context.isDarkMode;
     return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
+      onTap: _focusNode.unfocus,
       child: Scaffold(
         backgroundColor: isDark ? AppColors.darkBorder : Colors.white,
         appBar: AppBar(
@@ -147,27 +150,27 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                       : [AppColors.lightContainer1, AppColors.lightContainer2],
             ),
           ),
-          child: Column(
-            children: [
-              Expanded(
-                flex: 2,
-                child: MediaQuery(
-                  data: MediaQuery.of(context).copyWith(
-                    alwaysUse24HourFormat:
-                        context.read<SettingsCubit>().state.use24HourFormat,
-                  ),
-                  child: TimePickerWidget(
-                    initialTime: _selectedTime,
-                    onTimeChanged: (time) {
-                      setState(() {
-                        _selectedTime = time;
-                      });
-                    },
+          child: Form(
+            child: Column(
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: MediaQuery(
+                    data: MediaQuery.of(context).copyWith(
+                      alwaysUse24HourFormat:
+                          context.read<SettingsCubit>().state.use24HourFormat,
+                    ),
+                    child: TimePickerWidget(
+                      initialTime: _selectedTime,
+                      onTimeChanged: (time) {
+                        setState(() {
+                          _selectedTime = time;
+                        });
+                      },
+                    ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: SingleChildScrollView(
+                SingleChildScrollView(
                   padding: const EdgeInsets.all(16),
                   child: Column(
                     children: [
@@ -175,18 +178,16 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                       const SizedBox(height: 16),
                       TextField(
                         controller: _titleController,
+                        focusNode: _focusNode,
                         decoration: const InputDecoration(labelText: 'Title'),
                       ),
-                      const SizedBox(height: 24),
-                      ElevatedButton(
-                        onPressed: _addAlarm,
-                        child: const Text('Add Alarm'),
-                      ),
+                      const SizedBox(height: 16),
+                      InkWell(onTap: _addAlarm, child: const AddButton()),
                     ],
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

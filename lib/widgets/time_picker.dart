@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
-const Duration _kDialogSizeAnimationDuration = Duration(milliseconds: 200);
 const Duration _kDialAnimateDuration = Duration(milliseconds: 200);
 const double _kTwoPi = 2 * math.pi;
 const Duration _kVibrateCommitDelay = Duration(milliseconds: 100);
@@ -63,7 +62,7 @@ class TimePickerWidget extends StatefulWidget {
 }
 
 class _TimePickerWidgetState extends State<TimePickerWidget>
-    with RestorationMixin {
+    with RestorationMixin, WidgetsBindingObserver {
   late final RestorableEnum<TimePickerEntryMode> _entryMode =
       RestorableEnum<TimePickerEntryMode>(
         widget.initialEntryMode,
@@ -84,6 +83,8 @@ class _TimePickerWidgetState extends State<TimePickerWidget>
         values: Orientation.values,
       );
 
+  bool _keyboardVisible = false;
+
   static const Size _kTimePickerPortraitSize = Size(310, 468);
   static const Size _kTimePickerLandscapeSize = Size(524, 342);
   static const Size _kTimePickerInputSize = Size(312, 216);
@@ -93,12 +94,51 @@ class _TimePickerWidgetState extends State<TimePickerWidget>
   static const Size _kTimePickerMinInputSize = Size(312, 196);
 
   @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _keyboardVisible =
+        WidgetsBinding
+            .instance
+            .platformDispatcher
+            .views
+            .first
+            .viewInsets
+            .bottom >
+        0;
+  }
+
+  @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _selectedTime.dispose();
     _entryMode.dispose();
     _autovalidateMode.dispose();
     _orientation.dispose();
     super.dispose();
+  }
+
+  @override
+  void didChangeMetrics() {
+    final bool nowVisible =
+        WidgetsBinding
+            .instance
+            .platformDispatcher
+            .views
+            .first
+            .viewInsets
+            .bottom >
+        0;
+
+    if (nowVisible == _keyboardVisible) return;
+    _keyboardVisible = nowVisible;
+
+    if (_keyboardVisible && _entryMode.value == TimePickerEntryMode.dial) {
+      _setEntryMode(TimePickerEntryMode.input);
+    } else if (!_keyboardVisible &&
+        _entryMode.value == TimePickerEntryMode.input) {
+      _setEntryMode(TimePickerEntryMode.dial);
+    }
   }
 
   @override
@@ -140,15 +180,14 @@ class _TimePickerWidgetState extends State<TimePickerWidget>
     }
   }
 
-  void _toggleEntryMode() {
-    switch (_entryMode.value) {
+  void _setEntryMode(TimePickerEntryMode entryMode) {
+    switch (entryMode) {
       case TimePickerEntryMode.dial:
-        _handleEntryModeChanged(TimePickerEntryMode.input);
-      case TimePickerEntryMode.input:
         _handleEntryModeChanged(TimePickerEntryMode.dial);
-      case TimePickerEntryMode.dialOnly:
-      case TimePickerEntryMode.inputOnly:
-        FlutterError('Can not change entry mode from $_entryMode');
+      case TimePickerEntryMode.input:
+        _handleEntryModeChanged(TimePickerEntryMode.input);
+      default:
+        break;
     }
   }
 
@@ -277,11 +316,9 @@ class _TimePickerWidgetState extends State<TimePickerWidget>
             scrollDirection: Axis.horizontal,
             child: SingleChildScrollView(
               restorationId: 'time_picker_scroll_view_vertical',
-              child: AnimatedContainer(
+              child: SizedBox(
                 width: allowedSize.width,
                 height: allowedSize.height,
-                duration: _kDialogSizeAnimationDuration,
-                curve: Curves.easeIn,
                 child: Form(
                   key: _formKey,
                   autovalidateMode: _autovalidateMode.value,
