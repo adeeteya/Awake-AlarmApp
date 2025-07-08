@@ -227,6 +227,10 @@ class SettingsScreen extends StatelessWidget {
                               value: AlarmScreenType.qr,
                               child: Text('QR Code Scan'),
                             ),
+                            DropdownMenuItem(
+                              value: AlarmScreenType.blow,
+                              child: Text('Blow to Stop'),
+                            ),
                           ],
                           onChanged: (v) async {
                             if (v == null) return;
