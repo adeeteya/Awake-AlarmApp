@@ -86,6 +86,37 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
     if (mounted) Navigator.pop(context);
   }
 
+  Future<void> _deleteAlarm() async {
+    final confirmed =
+        await showDialog<bool>(
+          context: context,
+          builder:
+              (context) => AlertDialog(
+                title: const Text('Delete Alarm'),
+                content: const Text(
+                  'Are you sure you want to delete this alarm?',
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.pop(context, false),
+                    child: const Text('Cancel'),
+                  ),
+                  TextButton(
+                    onPressed: () => Navigator.pop(context, true),
+                    child: const Text('Delete'),
+                  ),
+                ],
+              ),
+        ) ??
+        false;
+
+    if (!mounted || !confirmed) return;
+
+    final cubit = context.read<AlarmCubit>();
+    await cubit.deleteAlarmModel(widget.alarmModel!);
+    if (mounted) Navigator.pop(context);
+  }
+
   Widget _daySelector(bool isDark) {
     const dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'Su'];
     return Row(
@@ -156,6 +187,22 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
             ),
             icon: const Icon(Icons.arrow_back),
           ),
+          actions:
+              widget.alarmModel == null
+                  ? null
+                  : [
+                    IconButton(
+                      tooltip: 'Delete',
+                      onPressed: _deleteAlarm,
+                      style: IconButton.styleFrom(
+                        foregroundColor:
+                            isDark
+                                ? AppColors.darkBackgroundText
+                                : AppColors.lightBackgroundText,
+                      ),
+                      icon: const Icon(Icons.delete),
+                    ),
+                  ],
           centerTitle: true,
           title: Text(widget.alarmModel == null ? 'Add Alarm' : 'Edit Alarm'),
           titleTextStyle: TextStyle(
