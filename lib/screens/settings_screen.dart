@@ -46,7 +46,7 @@ class SettingsScreen extends StatelessWidget {
       type: FileType.image,
       bytes: byteData.buffer.asUint8List(),
     );
-    if (context.mounted) {
+    if (context.mounted && saveLocation != null) {
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text('File saved to $saveLocation')));
