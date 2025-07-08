@@ -28,7 +28,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
           entry.time,
           entry.days,
           alarmSettingsSet,
-          body: 'Time to Wake Up',
+          body: entry.body,
         );
       } else {
         alarmSettingsSet.putIfAbsent(entry.time, () => []);
@@ -43,6 +43,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
           timeOfDay: entry.time,
           days: entry.days,
           enabled: entry.enabled,
+          body: entry.body,
           alarmSettings: alarms,
         ),
       );
@@ -165,14 +166,19 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
       DateTime.saturday,
       DateTime.sunday,
     ],
-    String body = 'Time to Wake Up',
+    String body = '',
   }) async {
     final existingEntry = await AlarmDatabase.getAlarm(timeOfDay);
     final updatedDays = {...(existingEntry?.days ?? []), ...days}.toList();
     final enabled = existingEntry?.enabled ?? true;
 
     await AlarmDatabase.insertOrUpdate(
-      AlarmDbEntry(time: timeOfDay, days: updatedDays, enabled: enabled),
+      AlarmDbEntry(
+        time: timeOfDay,
+        days: updatedDays,
+        enabled: enabled,
+        body: body,
+      ),
     );
 
     if (enabled) {
@@ -182,12 +188,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
         final alarmTime = TimeOfDay.fromDateTime(alarm.dateTime);
         current.putIfAbsent(alarmTime, () => []).add(alarm);
       }
-      await _ensureUpcomingWeek(
-        timeOfDay,
-        updatedDays,
-        current,
-        body: 'Time to Wake Up',
-      );
+      await _ensureUpcomingWeek(timeOfDay, updatedDays, current, body: body);
       await _loadAlarms(presetAlarms: current.values.expand((e) => e).toList());
     } else {
       await _loadAlarms();
@@ -210,7 +211,12 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     final entry = await AlarmDatabase.getAlarm(timeOfDay);
     if (entry == null) return;
     await AlarmDatabase.insertOrUpdate(
-      AlarmDbEntry(time: timeOfDay, days: entry.days, enabled: enabled),
+      AlarmDbEntry(
+        time: timeOfDay,
+        days: entry.days,
+        enabled: enabled,
+        body: entry.body,
+      ),
     );
 
     if (!enabled) {
@@ -233,7 +239,12 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
     final entry = await AlarmDatabase.getAlarm(timeOfDay);
     final bool enabled = days.isNotEmpty && (entry?.enabled ?? true);
     await AlarmDatabase.insertOrUpdate(
-      AlarmDbEntry(time: timeOfDay, days: days, enabled: enabled),
+      AlarmDbEntry(
+        time: timeOfDay,
+        days: days,
+        enabled: enabled,
+        body: entry?.body ?? '',
+      ),
     );
 
     final existing = await Alarm.getAlarms();
@@ -252,7 +263,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
         timeOfDay,
         days,
         current,
-        body: 'Time to Wake Up',
+        body: entry?.body ?? '',
       );
     }
 

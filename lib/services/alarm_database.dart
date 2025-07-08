@@ -10,16 +10,21 @@ class AlarmDatabase {
     final path = '$dir/alarms.db';
     _db = await openDatabase(
       path,
-      version: 2,
+      version: 3,
       onCreate: (db, version) async {
         await db.execute(
-          'CREATE TABLE alarms(time TEXT PRIMARY KEY, days TEXT, enabled INTEGER)',
+          'CREATE TABLE alarms(time TEXT PRIMARY KEY, days TEXT, enabled INTEGER, body TEXT)',
         );
       },
       onUpgrade: (db, oldVersion, newVersion) async {
-        if (oldVersion == 1 && newVersion == 2) {
+        if (oldVersion < 2 && newVersion >= 2) {
           await db.execute(
             'ALTER TABLE alarms ADD COLUMN enabled INTEGER DEFAULT 1',
+          );
+        }
+        if (oldVersion < 3 && newVersion >= 3) {
+          await db.execute(
+            "ALTER TABLE alarms ADD COLUMN body TEXT DEFAULT ''",
           );
         }
       },

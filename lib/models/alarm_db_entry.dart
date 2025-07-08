@@ -4,8 +4,14 @@ class AlarmDbEntry {
   final TimeOfDay time;
   final List<int> days;
   final bool enabled;
+  final String body;
 
-  AlarmDbEntry({required this.time, required this.days, this.enabled = true});
+  AlarmDbEntry({
+    required this.time,
+    required this.days,
+    this.enabled = true,
+    this.body = '',
+  });
 
   Map<String, dynamic> toMap() {
     final timeString = '${time.hour}:${time.minute}';
@@ -13,6 +19,7 @@ class AlarmDbEntry {
       'time': timeString,
       'days': days.join(','),
       'enabled': enabled ? 1 : 0,
+      'body': body,
     };
   }
 
@@ -26,10 +33,12 @@ class AlarmDbEntry {
             ? <int>[]
             : daysString.split(',').map(int.parse).toList();
     final enabled = (map['enabled'] as int?) ?? 1;
+    final body = map['body'] as String? ?? '';
     return AlarmDbEntry(
       time: TimeOfDay(hour: hour, minute: minute),
       days: dayList,
       enabled: enabled == 1,
+      body: body,
     );
   }
 }
