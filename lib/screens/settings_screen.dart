@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/services/alarm_cubit.dart';
+import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/custom_sounds_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
@@ -45,7 +46,7 @@ class SettingsScreen extends StatelessWidget {
       type: FileType.image,
       bytes: byteData.buffer.asUint8List(),
     );
-    if (context.mounted) {
+    if (context.mounted && saveLocation != null) {
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text('File saved to $saveLocation')));
@@ -228,11 +229,27 @@ class SettingsScreen extends StatelessWidget {
                             ),
                           ],
                           onChanged: (v) async {
-                            if (v != null) {
-                              await context
-                                  .read<SettingsCubit>()
-                                  .setAlarmScreenType(v);
+                            if (v == null) return;
+                            if (v == AlarmScreenType.qr) {
+                              final granted =
+                                  await AlarmPermissions.checkCameraPermission();
+                              if (!granted) {
+                                if (context.mounted) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    const SnackBar(
+                                      content: Text(
+                                        'Camera permission is required for QR Code Scan',
+                                      ),
+                                    ),
+                                  );
+                                }
+                                return;
+                              }
                             }
+                            if (!context.mounted) return;
+                            await context
+                                .read<SettingsCubit>()
+                                .setAlarmScreenType(v);
                           },
                         ),
                       ),

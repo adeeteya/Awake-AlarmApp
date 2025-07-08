@@ -16,4 +16,12 @@ class AlarmPermissions {
       await Permission.scheduleExactAlarm.request();
     }
   }
+
+  static Future<bool> checkCameraPermission() async {
+    var status = await Permission.camera.status;
+    if (!status.isGranted) {
+      status = await Permission.camera.request();
+    }
+    return status.isGranted;
+  }
 }
