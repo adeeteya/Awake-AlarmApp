@@ -150,6 +150,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           child: Column(
             children: [
               Expanded(
+                flex: 2,
                 child: MediaQuery(
                   data: MediaQuery.of(context).copyWith(
                     alwaysUse24HourFormat:
@@ -165,22 +166,24 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                   ),
                 ),
               ),
-              SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Column(
-                  children: [
-                    _daySelector(isDark),
-                    const SizedBox(height: 16),
-                    TextField(
-                      controller: _titleController,
-                      decoration: const InputDecoration(labelText: 'Title'),
-                    ),
-                    const SizedBox(height: 24),
-                    ElevatedButton(
-                      onPressed: _addAlarm,
-                      child: const Text('Add Alarm'),
-                    ),
-                  ],
+              Expanded(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    children: [
+                      _daySelector(isDark),
+                      const SizedBox(height: 16),
+                      TextField(
+                        controller: _titleController,
+                        decoration: const InputDecoration(labelText: 'Title'),
+                      ),
+                      const SizedBox(height: 24),
+                      ElevatedButton(
+                        onPressed: _addAlarm,
+                        child: const Text('Add Alarm'),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
