@@ -86,6 +86,18 @@ class _ShakeAlarmScreenState extends State<ShakeAlarmScreen> {
                 Lottie.asset("assets/lottie/phone_vibrate.json"),
                 const SizedBox(height: 20),
                 Text(
+                  widget.alarmSettings.notificationSettings.body,
+                  style: TextStyle(
+                    color:
+                        isDark
+                            ? AppColors.darkBackgroundText
+                            : AppColors.lightBackgroundText,
+                    fontSize: 24,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Text(
                   'Shake the phone!',
                   style: TextStyle(
                     color:

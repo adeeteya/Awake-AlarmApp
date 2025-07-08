@@ -70,6 +70,18 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
             child: Column(
               children: [
                 const Spacer(),
+                Text(
+                  widget.alarmSettings.notificationSettings.body,
+                  style: TextStyle(
+                    color:
+                        isDark
+                            ? AppColors.darkBackgroundText
+                            : AppColors.lightBackgroundText,
+                    fontSize: 24,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
