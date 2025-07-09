@@ -71,13 +71,6 @@ class _AlarmTileState extends State<AlarmTile> {
     );
   }
 
-  Future<void> _showEditDialog() async {
-    await context.pushNamed(
-      AppRoute.addAlarm.name,
-      extra: widget.alarmModel,
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final bool isDark = Theme.brightnessOf(context) == Brightness.dark;
@@ -147,7 +140,11 @@ class _AlarmTileState extends State<AlarmTile> {
               child: Material(
                 type: MaterialType.transparency,
                 child: InkWell(
-                  onTap: _showEditDialog,
+                  onTap:
+                      () => context.goNamed(
+                        AppRoute.addAlarm.name,
+                        extra: widget.alarmModel,
+                      ),
                   borderRadius: const BorderRadius.all(Radius.circular(20)),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 18),

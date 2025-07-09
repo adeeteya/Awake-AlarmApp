@@ -44,12 +44,12 @@ class _ShakeAlarmScreenState extends State<ShakeAlarmScreen> {
         setState(() => _shakeCount++);
         if (_shakeCount >= _requiredShakes) {
           await _subscription.cancel();
+          if (mounted) {
+            await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
             if (mounted) {
-              await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
-              if (mounted) {
-                context.pop();
-              }
+              context.pop();
             }
+          }
         }
       });
     }

@@ -29,49 +29,60 @@ GoRouter createRouter() {
         path: '/',
         name: AppRoute.home.name,
         builder: (context, state) => const Home(),
-      ),
-      GoRoute(
-        path: '/add',
-        name: AppRoute.addAlarm.name,
-        builder: (context, state) {
-          final alarmModel = state.extra as AlarmModel?;
-          return AddAlarmScreen(alarmModel: alarmModel);
-        },
-      ),
-      GoRoute(
-        path: '/settings',
-        name: AppRoute.settings.name,
-        builder: (context, state) => const SettingsScreen(),
-      ),
-      GoRoute(
-        path: '/ringing',
-        name: AppRoute.alarmRinging.name,
-        builder: (context, state) =>
-            AlarmRingingScreen(alarmSettings: state.extra! as AlarmSettings),
-      ),
-      GoRoute(
-        path: '/math',
-        name: AppRoute.mathAlarm.name,
-        builder: (context, state) =>
-            MathAlarmScreen(alarmSettings: state.extra! as AlarmSettings),
-      ),
-      GoRoute(
-        path: '/shake',
-        name: AppRoute.shakeAlarm.name,
-        builder: (context, state) =>
-            ShakeAlarmScreen(alarmSettings: state.extra! as AlarmSettings),
-      ),
-      GoRoute(
-        path: '/qr',
-        name: AppRoute.qrAlarm.name,
-        builder: (context, state) =>
-            QrAlarmScreen(alarmSettings: state.extra! as AlarmSettings),
-      ),
-      GoRoute(
-        path: '/tap',
-        name: AppRoute.tapAlarm.name,
-        builder: (context, state) =>
-            TapAlarmScreen(alarmSettings: state.extra! as AlarmSettings),
+        routes: [
+          GoRoute(
+            path: AppRoute.addAlarm.name,
+            name: AppRoute.addAlarm.name,
+            builder: (context, state) {
+              final alarmModel = state.extra as AlarmModel?;
+              return AddAlarmScreen(alarmModel: alarmModel);
+            },
+          ),
+          GoRoute(
+            path: AppRoute.settings.name,
+            name: AppRoute.settings.name,
+            builder: (context, state) => const SettingsScreen(),
+          ),
+          GoRoute(
+            path: AppRoute.alarmRinging.name,
+            name: AppRoute.alarmRinging.name,
+            builder:
+                (context, state) => AlarmRingingScreen(
+                  alarmSettings: state.extra! as AlarmSettings,
+                ),
+          ),
+          GoRoute(
+            path: AppRoute.mathAlarm.name,
+            name: AppRoute.mathAlarm.name,
+            builder:
+                (context, state) => MathAlarmScreen(
+                  alarmSettings: state.extra! as AlarmSettings,
+                ),
+          ),
+          GoRoute(
+            path: AppRoute.shakeAlarm.name,
+            name: AppRoute.shakeAlarm.name,
+            builder:
+                (context, state) => ShakeAlarmScreen(
+                  alarmSettings: state.extra! as AlarmSettings,
+                ),
+          ),
+          GoRoute(
+            path: AppRoute.qrAlarm.name,
+            name: AppRoute.qrAlarm.name,
+            builder:
+                (context, state) =>
+                    QrAlarmScreen(alarmSettings: state.extra! as AlarmSettings),
+          ),
+          GoRoute(
+            path: AppRoute.tapAlarm.name,
+            name: AppRoute.tapAlarm.name,
+            builder:
+                (context, state) => TapAlarmScreen(
+                  alarmSettings: state.extra! as AlarmSettings,
+                ),
+          ),
+        ],
       ),
     ],
   );

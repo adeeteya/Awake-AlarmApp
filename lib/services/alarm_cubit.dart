@@ -86,7 +86,6 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
         notificationSettings: NotificationSettings(
           title: 'Alarm',
           body: body,
-          stopButton: 'Stop',
           icon: 'notification_icon',
           iconColor: Colors.white,
         ),

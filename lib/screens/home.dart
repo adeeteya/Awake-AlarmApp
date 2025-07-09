@@ -28,10 +28,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
 
-  Future<void> _addAlarm() async {
-    await context.pushNamed(AppRoute.addAlarm.name);
-  }
-
   @override
   void initState() {
     super.initState();
@@ -49,10 +45,9 @@ class _HomeState extends State<Home> {
     super.dispose();
   }
 
-  Future<void> _ringingAlarmsChanged(AlarmSet alarms) async {
+  void _ringingAlarmsChanged(AlarmSet alarms) {
     if (alarms.alarms.isEmpty) return;
     final screenType = context.read<SettingsCubit>().state.alarmScreenType;
-    final alarmSettings = alarms.alarms.first;
     final name = switch (screenType) {
       AlarmScreenType.math => AppRoute.mathAlarm.name,
       AlarmScreenType.shake => AppRoute.shakeAlarm.name,
@@ -60,7 +55,7 @@ class _HomeState extends State<Home> {
       AlarmScreenType.tap => AppRoute.tapAlarm.name,
       _ => AppRoute.alarmRinging.name,
     };
-    await context.pushNamed(name, extra: alarmSettings);
+    context.goNamed(name, extra: alarms.alarms.first);
   }
 
   @override
@@ -71,7 +66,7 @@ class _HomeState extends State<Home> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: IconButton(
         tooltip: "Add Alarm",
-        onPressed: _addAlarm,
+        onPressed: () => context.goNamed(AppRoute.addAlarm.name),
         icon: const AddButton(),
       ),
       body: DecoratedBox(
@@ -245,9 +240,10 @@ class _HomeState extends State<Home> {
                                 IconButton(
                                   icon: const Icon(Icons.settings),
                                   tooltip: "Settings",
-                                  onPressed: () async {
-                                    await context.pushNamed(AppRoute.settings.name);
-                                  },
+                                  onPressed:
+                                      () => context.goNamed(
+                                        AppRoute.settings.name,
+                                      ),
                                   style: IconButton.styleFrom(
                                     foregroundColor:
                                         isDark
