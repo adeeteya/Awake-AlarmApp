@@ -1,3 +1,4 @@
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/minus_button.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class _SnoozeButtonState extends State<SnoozeButton> {
                 ),
                 child: Text(
                   'Snooze: $snoozeMinutes min',
-                  style: TextStyle(
+                  style: AppTextStyles.body(context).copyWith(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                     color: isDark ? Colors.white : Colors.black87,

@@ -1,5 +1,6 @@
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/settings_tile.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +41,7 @@ class ThemeListTile extends StatelessWidget {
       onTap: () => onChanged(_nextMode(mode)),
       child: Row(
         children: [
-          Text('Theme', style: TextStyle(color: color, fontFamily: 'Poppins')),
+          Text('Theme', style: AppTextStyles.body(context)),
           const Spacer(),
           Icon(_iconForMode(mode), color: color),
         ],
