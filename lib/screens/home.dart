@@ -31,6 +31,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
   bool _isFabVisibile = true;
+  final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
+  final List<AlarmModel> _alarms = <AlarmModel>[];
 
   @override
   void initState() {
@@ -60,6 +62,55 @@ class _HomeState extends State<Home> {
       _ => AppRoute.alarmRinging.name,
     };
     context.goNamed(name, extra: alarms.alarms.first);
+  }
+
+  void _updateAlarms(List<AlarmModel> newAlarms) {
+    final AnimatedListState? list = _listKey.currentState;
+    for (int i = _alarms.length - 1; i >= 0; i--) {
+      final alarm = _alarms[i];
+      final exists = newAlarms.any((a) => a.timeOfDay == alarm.timeOfDay);
+      if (!exists) {
+        final removed = _alarms.removeAt(i);
+        list?.removeItem(
+          i,
+          (context, animation) => SizeTransition(
+            sizeFactor: animation,
+            child: AlarmTile(
+              key: ValueKey(removed.timeOfDay),
+              alarmModel: removed,
+              onEnabledChanged:
+                  (v) => context.read<AlarmCubit>().toggleAlarmEnabled(
+                    removed.timeOfDay,
+                    v,
+                  ),
+              onDaysChanged:
+                  (days) => context.read<AlarmCubit>().updateAlarmDays(
+                    removed.timeOfDay,
+                    days,
+                  ),
+              onDelete:
+                  () => context.read<AlarmCubit>().deleteAlarmModel(removed),
+            ),
+          ),
+        );
+      }
+    }
+
+    for (int i = 0; i < newAlarms.length; i++) {
+      final alarm = newAlarms[i];
+      final index = _alarms.indexWhere((a) => a.timeOfDay == alarm.timeOfDay);
+      if (index == -1) {
+        _alarms.insert(i, alarm);
+        list?.insertItem(i);
+      } else {
+        _alarms[index] = alarm;
+        if (index != i) {
+          final moved = _alarms.removeAt(index);
+          _alarms.insert(i, moved);
+        }
+      }
+    }
+    setState(() {});
   }
 
   @override
@@ -212,10 +263,17 @@ class _HomeState extends State<Home> {
                                     ],
                           ),
                         ),
-                        child: BlocBuilder<AlarmCubit, List<AlarmModel>>(
+                        child: BlocConsumer<AlarmCubit, List<AlarmModel>>(
+                          listenWhen:
+                              (previous, current) => previous != current,
+                          listener: (context, alarms) {
+                            WidgetsBinding.instance.addPostFrameCallback(
+                              (_) => _updateAlarms(alarms),
+                            );
+                          },
                           buildWhen: (previous, current) => previous != current,
                           builder: (context, alarms) {
-                            if (alarms.isEmpty) {
+                            if (_alarms.isEmpty) {
                               return Center(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -234,70 +292,87 @@ class _HomeState extends State<Home> {
                                 ),
                               );
                             } else {
-                              return ListView(
+                              return CustomScrollView(
                                 controller: scrollController,
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 20,
-                                  vertical: 24,
-                                ),
-                                children: [
-                                  Row(
-                                    children: [
-                                      const SizedBox(width: 15),
-                                      Text(
-                                        "Alarms",
-                                        style: AppTextStyles.heading(context),
-                                      ),
-                                      const Spacer(),
-                                      IconButton(
-                                        icon: const Icon(Icons.settings),
-                                        tooltip: "Settings",
-                                        onPressed:
-                                            () => context.goNamed(
-                                              AppRoute.settings.name,
+                                slivers: [
+                                  SliverPadding(
+                                    padding: const EdgeInsets.only(
+                                      left: 20,
+                                      right: 20,
+                                      top: 24,
+                                    ),
+                                    sliver: SliverToBoxAdapter(
+                                      child: Row(
+                                        children: [
+                                          const SizedBox(width: 15),
+                                          Text(
+                                            "Alarms",
+                                            style: AppTextStyles.heading(
+                                              context,
                                             ),
-                                        style: IconButton.styleFrom(
-                                          foregroundColor:
-                                              isDark
-                                                  ? AppColors.darkBackgroundText
-                                                  : AppColors
-                                                      .lightBackgroundText,
-                                        ),
+                                          ),
+                                          const Spacer(),
+                                          IconButton(
+                                            icon: const Icon(Icons.settings),
+                                            tooltip: "Settings",
+                                            onPressed:
+                                                () => context.goNamed(
+                                                  AppRoute.settings.name,
+                                                ),
+                                            style: IconButton.styleFrom(
+                                              foregroundColor:
+                                                  isDark
+                                                      ? AppColors
+                                                          .darkBackgroundText
+                                                      : AppColors
+                                                          .lightBackgroundText,
+                                            ),
+                                          ),
+                                          const SizedBox(width: 15),
+                                        ],
                                       ),
-                                      const SizedBox(width: 15),
-                                    ],
+                                    ),
                                   ),
-                                  ...[
-                                    for (
-                                      int index = 0;
-                                      index < alarms.length;
-                                      index++
-                                    )
-                                      AlarmTile(
-                                        key: ValueKey(alarms[index].timeOfDay),
-                                        alarmModel: alarms[index],
-                                        onEnabledChanged:
-                                            (v) => context
-                                                .read<AlarmCubit>()
-                                                .toggleAlarmEnabled(
-                                                  alarms[index].timeOfDay,
-                                                  v,
-                                                ),
-                                        onDaysChanged:
-                                            (days) => context
-                                                .read<AlarmCubit>()
-                                                .updateAlarmDays(
-                                                  alarms[index].timeOfDay,
-                                                  days,
-                                                ),
-                                        onDelete:
-                                            () => context
-                                                .read<AlarmCubit>()
-                                                .deleteAlarmModel(
-                                                  alarms[index],
-                                                ),
-                                      ),
-                                  ],
+                                  SliverPadding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 20,
+                                    ),
+                                    sliver: SliverAnimatedList(
+                                      key: _listKey,
+                                      initialItemCount: _alarms.length,
+                                      itemBuilder: (context, index, animation) {
+                                        final alarm = _alarms[index];
+                                        return SizeTransition(
+                                          sizeFactor: animation,
+                                          child: AlarmTile(
+                                            key: ValueKey(alarm.timeOfDay),
+                                            alarmModel: alarm,
+                                            onEnabledChanged:
+                                                (v) => context
+                                                    .read<AlarmCubit>()
+                                                    .toggleAlarmEnabled(
+                                                      alarm.timeOfDay,
+                                                      v,
+                                                    ),
+                                            onDaysChanged:
+                                                (days) => context
+                                                    .read<AlarmCubit>()
+                                                    .updateAlarmDays(
+                                                      alarm.timeOfDay,
+                                                      days,
+                                                    ),
+                                            onDelete:
+                                                () => context
+                                                    .read<AlarmCubit>()
+                                                    .deleteAlarmModel(alarm),
+                                          ),
+                                        );
+                                      },
+                                    ),
+                                  ),
+                                  const SliverPadding(
+                                    padding: EdgeInsets.only(bottom: 24),
+                                  ),
                                 ],
                               );
                             }
