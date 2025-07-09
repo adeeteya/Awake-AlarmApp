@@ -123,28 +123,31 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         for (int i = 0; i < dayLabels.length; i++)
-          GestureDetector(
-            onTap: () => _toggleDay(i + 1),
-            child: SizedBox(
+          Material(
+            type: MaterialType.transparency,
+            child: Ink(
               height: 32,
               width: 32,
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color:
+              decoration: ShapeDecoration(
+                color:
+                    _selectedDays.contains(i + 1)
+                        ? AppColors.primary
+                        : Colors.transparent,
+                shape: CircleBorder(
+                  side:
                       _selectedDays.contains(i + 1)
-                          ? AppColors.primary
-                          : Colors.transparent,
-                  border:
-                      _selectedDays.contains(i + 1)
-                          ? null
-                          : Border.all(
+                          ? BorderSide.none
+                          : BorderSide(
                             color:
                                 isDark
                                     ? AppColors.darkBorder
                                     : AppColors.lightBlueGrey,
                           ),
                 ),
+              ),
+              child: InkWell(
+                onTap: () => _toggleDay(i + 1),
+                customBorder: const CircleBorder(),
                 child: Center(
                   child: Text(
                     dayLabels[i],
@@ -260,7 +263,14 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                         onSubmitted: (_) => _addAlarm(),
                       ),
                       const SizedBox(height: 16),
-                      InkWell(onTap: _addAlarm, child: const AddButton()),
+                      IconButton(
+                        tooltip:
+                            widget.alarmModel == null
+                                ? 'Add Alarm'
+                                : 'Edit Alarm',
+                        onPressed: _addAlarm,
+                        icon: const AddButton(),
+                      ),
                     ],
                   ),
                 ),
