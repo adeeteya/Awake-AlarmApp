@@ -15,6 +15,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:path/path.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -63,7 +64,7 @@ class SettingsScreen extends StatelessWidget {
             isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
         leading: IconButton(
           tooltip: "Back",
-          onPressed: () => Navigator.pop(context),
+          onPressed: () => context.pop(),
           style: IconButton.styleFrom(
             foregroundColor:
                 isDark

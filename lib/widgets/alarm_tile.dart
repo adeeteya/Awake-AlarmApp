@@ -1,10 +1,11 @@
+import 'package:awake/app_router.dart';
 import 'package:awake/models/alarm_model.dart';
-import 'package:awake/screens/add_alarm_screen.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/gradient_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class AlarmTile extends StatefulWidget {
   final AlarmModel alarmModel;
@@ -71,10 +72,9 @@ class _AlarmTileState extends State<AlarmTile> {
   }
 
   Future<void> _showEditDialog() async {
-    await Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => AddAlarmScreen(alarmModel: widget.alarmModel),
-      ),
+    await context.pushNamed(
+      AppRoute.addAlarm.name,
+      extra: widget.alarmModel,
     );
   }
 

@@ -3,16 +3,10 @@ import 'dart:math';
 
 import 'package:alarm/alarm.dart';
 import 'package:alarm/utils/alarm_set.dart';
+import 'package:awake/app_router.dart';
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/models/alarm_screen_type.dart';
-import 'package:awake/screens/add_alarm_screen.dart';
-import 'package:awake/screens/alarm_ringing_screen.dart';
-import 'package:awake/screens/math_alarm_screen.dart';
-import 'package:awake/screens/qr_alarm_screen.dart';
-import 'package:awake/screens/settings_screen.dart';
-import 'package:awake/screens/shake_alarm_screen.dart';
-import 'package:awake/screens/tap_alarm_screen.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/settings_cubit.dart';
@@ -22,6 +16,7 @@ import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -34,9 +29,7 @@ class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
 
   Future<void> _addAlarm() async {
-    await Navigator.of(
-      context,
-    ).push(MaterialPageRoute(builder: (_) => const AddAlarmScreen()));
+    await context.pushNamed(AppRoute.addAlarm.name);
   }
 
   @override
@@ -59,20 +52,15 @@ class _HomeState extends State<Home> {
   Future<void> _ringingAlarmsChanged(AlarmSet alarms) async {
     if (alarms.alarms.isEmpty) return;
     final screenType = context.read<SettingsCubit>().state.alarmScreenType;
-    Widget screen = AlarmRingingScreen(alarmSettings: alarms.alarms.first);
-    if (screenType == AlarmScreenType.math) {
-      screen = MathAlarmScreen(alarmSettings: alarms.alarms.first);
-    } else if (screenType == AlarmScreenType.shake) {
-      screen = ShakeAlarmScreen(alarmSettings: alarms.alarms.first);
-    } else if (screenType == AlarmScreenType.qr) {
-      screen = QrAlarmScreen(alarmSettings: alarms.alarms.first);
-    } else if (screenType == AlarmScreenType.tap) {
-      screen = TapAlarmScreen(alarmSettings: alarms.alarms.first);
-    }
-    await Navigator.push(
-      context,
-      MaterialPageRoute<void>(builder: (context) => screen),
-    );
+    final alarmSettings = alarms.alarms.first;
+    final name = switch (screenType) {
+      AlarmScreenType.math => AppRoute.mathAlarm.name,
+      AlarmScreenType.shake => AppRoute.shakeAlarm.name,
+      AlarmScreenType.qr => AppRoute.qrAlarm.name,
+      AlarmScreenType.tap => AppRoute.tapAlarm.name,
+      _ => AppRoute.alarmRinging.name,
+    };
+    await context.pushNamed(name, extra: alarmSettings);
   }
 
   @override
@@ -258,12 +246,7 @@ class _HomeState extends State<Home> {
                                   icon: const Icon(Icons.settings),
                                   tooltip: "Settings",
                                   onPressed: () async {
-                                    await Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                        builder:
-                                            (context) => const SettingsScreen(),
-                                      ),
-                                    );
+                                    await context.pushNamed(AppRoute.settings.name);
                                   },
                                   style: IconButton.styleFrom(
                                     foregroundColor:

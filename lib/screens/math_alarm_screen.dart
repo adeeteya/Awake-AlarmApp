@@ -9,6 +9,7 @@ import 'package:awake/widgets/stop_alarm.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class MathAlarmScreen extends StatefulWidget {
   final AlarmSettings alarmSettings;
@@ -78,7 +79,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
     if (answer == correct) {
       await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
       if (mounted) {
-        Navigator.pop(context);
+        context.pop();
       }
     } else {
       setState(() => _error = 'Wrong answer');
