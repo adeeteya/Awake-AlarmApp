@@ -7,6 +7,7 @@ import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/custom_sounds_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/gradient_slider.dart';
 import 'package:awake/widgets/gradient_switch.dart';
 import 'package:awake/widgets/settings_tile.dart';
@@ -74,16 +75,7 @@ class SettingsScreen extends StatelessWidget {
         ),
         centerTitle: true,
         title: const Text('Settings'),
-        titleTextStyle: TextStyle(
-          color:
-              isDark
-                  ? AppColors.darkBackgroundText
-                  : AppColors.lightBackgroundText,
-          fontFamily: 'Poppins',
-          fontSize: 18,
-          fontWeight: FontWeight.w500,
-          letterSpacing: 0.03,
-        ),
+        titleTextStyle: AppTextStyles.heading(context),
       ),
       body: DecoratedBox(
         decoration: BoxDecoration(
@@ -119,7 +111,9 @@ class SettingsScreen extends StatelessWidget {
                     children: [
                       Text(
                         '24-Hour Format',
-                        style: TextStyle(color: color, fontFamily: 'Poppins'),
+                        style: AppTextStyles.body(
+                          context,
+                        ).copyWith(color: color),
                       ),
                       const Spacer(),
                       GradientSwitch(
@@ -145,7 +139,9 @@ class SettingsScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Vibration',
-                        style: TextStyle(color: color, fontFamily: 'Poppins'),
+                        style: AppTextStyles.body(
+                          context,
+                        ).copyWith(color: color),
                       ),
                       const Spacer(),
                       GradientSwitch(
@@ -176,7 +172,9 @@ class SettingsScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Gradual Fade In',
-                        style: TextStyle(color: color, fontFamily: 'Poppins'),
+                        style: AppTextStyles.body(
+                          context,
+                        ).copyWith(color: color),
                       ),
                       const Spacer(),
                       GradientSwitch(
@@ -200,7 +198,9 @@ class SettingsScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Alarm Screen',
-                        style: TextStyle(color: color, fontFamily: 'Poppins'),
+                        style: AppTextStyles.body(
+                          context,
+                        ).copyWith(color: color),
                       ),
                       const SizedBox(width: 20),
                       Expanded(
@@ -272,7 +272,9 @@ class SettingsScreen extends StatelessWidget {
                       children: [
                         Text(
                           'Download QR Code',
-                          style: TextStyle(color: color, fontFamily: 'Poppins'),
+                          style: AppTextStyles.body(
+                            context,
+                          ).copyWith(color: color),
                         ),
                       ],
                     ),
@@ -324,10 +326,9 @@ class SettingsScreen extends StatelessWidget {
                         children: [
                           Text(
                             'Alarm Sound',
-                            style: TextStyle(
-                              color: color,
-                              fontFamily: 'Poppins',
-                            ),
+                            style: AppTextStyles.body(
+                              context,
+                            ).copyWith(color: color),
                           ),
                           const SizedBox(width: 20),
                           Expanded(
@@ -378,10 +379,9 @@ class SettingsScreen extends StatelessWidget {
                             children: [
                               Text(
                                 'Clear Custom Sounds',
-                                style: TextStyle(
-                                  color: color,
-                                  fontFamily: 'Poppins',
-                                ),
+                                style: AppTextStyles.body(
+                                  context,
+                                ).copyWith(color: color),
                               ),
                             ],
                           ),

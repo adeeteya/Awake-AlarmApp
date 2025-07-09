@@ -2,6 +2,7 @@ import 'package:awake/models/alarm_model.dart';
 import 'package:awake/screens/add_alarm_screen.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/gradient_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -62,11 +63,7 @@ class _AlarmTileState extends State<AlarmTile> {
 
     return Text.rich(
       TextSpan(children: textSpans),
-      style: const TextStyle(
-        fontFamily: 'Poppins',
-        fontSize: 12,
-        letterSpacing: 0.03,
-      ),
+      style: AppTextStyles.caption(context),
     );
   }
 
@@ -165,30 +162,12 @@ class _AlarmTileState extends State<AlarmTile> {
                                   widget.alarmModel.timeOfDay,
                                   alwaysUse24HourFormat: use24h,
                                 ),
-                                style: TextStyle(
-                                  color:
-                                      isDark
-                                          ? AppColors.darkBackgroundText
-                                          : AppColors.lightBackgroundText,
-                                  fontFamily: 'Poppins',
-                                  fontSize: 34,
-                                  fontWeight: FontWeight.w500,
-                                  fontFeatures: const [
-                                    FontFeature.tabularFigures(),
-                                  ],
-                                ),
+                                style: AppTextStyles.bigTime(context),
                               ),
                               if (widget.alarmModel.body.isNotEmpty)
                                 Text(
                                   widget.alarmModel.body,
-                                  style: TextStyle(
-                                    color:
-                                        isDark
-                                            ? AppColors.darkBackgroundText
-                                            : AppColors.lightBackgroundText,
-                                    fontFamily: 'Poppins',
-                                    fontSize: 16,
-                                  ),
+                                  style: AppTextStyles.heading(context),
                                 ),
                               _repeatDayText(isDark),
                             ],

@@ -3,6 +3,7 @@ import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/time_picker.dart';
 import 'package:flutter/material.dart';
@@ -150,8 +151,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
             ),
             icon: Text(
               dayLabels[i],
-              style: TextStyle(
-                fontFamily: "Poppins",
+              style: AppTextStyles.caption(context).copyWith(
                 color:
                     _selectedDays.contains(i + 1)
                         ? Colors.white
@@ -204,16 +204,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                   ],
           centerTitle: true,
           title: Text(widget.alarmModel == null ? 'Add Alarm' : 'Edit Alarm'),
-          titleTextStyle: TextStyle(
-            color:
-                isDark
-                    ? AppColors.darkBackgroundText
-                    : AppColors.lightBackgroundText,
-            fontFamily: 'Poppins',
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-            letterSpacing: 0.03,
-          ),
+          titleTextStyle: AppTextStyles.heading(context),
         ),
         body: DecoratedBox(
           decoration: BoxDecoration(

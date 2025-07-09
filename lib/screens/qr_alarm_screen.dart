@@ -5,6 +5,7 @@ import 'package:awake/constants.dart';
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
@@ -79,14 +80,7 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
               const Spacer(),
               Text(
                 widget.alarmSettings.notificationSettings.body,
-                style: TextStyle(
-                  color:
-                      isDark
-                          ? AppColors.darkBackgroundText
-                          : AppColors.lightBackgroundText,
-                  fontSize: 24,
-                  fontFamily: 'Poppins',
-                ),
+                style: AppTextStyles.large(context),
               ),
               const SizedBox(height: 20),
               Expanded(
@@ -97,17 +91,7 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              Text(
-                'Scan the QR Code',
-                style: TextStyle(
-                  color:
-                      isDark
-                          ? AppColors.darkBackgroundText
-                          : AppColors.lightBackgroundText,
-                  fontSize: 24,
-                  fontFamily: 'Poppins',
-                ),
-              ),
+              Text('Scan the QR Code', style: AppTextStyles.large(context)),
               const Spacer(),
             ],
           ),
