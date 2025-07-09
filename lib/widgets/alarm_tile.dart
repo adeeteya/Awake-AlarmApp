@@ -154,26 +154,46 @@ class _AlarmTileState extends State<AlarmTile> {
                     child: Row(
                       children: [
                         Expanded(
-                          child: Text(
-                            MaterialLocalizations.of(context).formatTimeOfDay(
-                              widget.alarmModel.timeOfDay,
-                              alwaysUse24HourFormat: use24h,
-                            ),
-                            style: TextStyle(
-                              color:
-                                  isDark
-                                      ? AppColors.darkBackgroundText
-                                      : AppColors.lightBackgroundText,
-                              fontFamily: 'Poppins',
-                              fontSize: 34,
-                              fontWeight: FontWeight.w500,
-                              fontFeatures: const [
-                                FontFeature.tabularFigures(),
-                              ],
-                            ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                MaterialLocalizations.of(
+                                  context,
+                                ).formatTimeOfDay(
+                                  widget.alarmModel.timeOfDay,
+                                  alwaysUse24HourFormat: use24h,
+                                ),
+                                style: TextStyle(
+                                  color:
+                                      isDark
+                                          ? AppColors.darkBackgroundText
+                                          : AppColors.lightBackgroundText,
+                                  fontFamily: 'Poppins',
+                                  fontSize: 34,
+                                  fontWeight: FontWeight.w500,
+                                  fontFeatures: const [
+                                    FontFeature.tabularFigures(),
+                                  ],
+                                ),
+                              ),
+                              if (widget.alarmModel.body.isNotEmpty)
+                                Text(
+                                  widget.alarmModel.body,
+                                  style: TextStyle(
+                                    color:
+                                        isDark
+                                            ? AppColors.darkBackgroundText
+                                            : AppColors.lightBackgroundText,
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              _repeatDayText(isDark),
+                            ],
                           ),
                         ),
-                        _repeatDayText(isDark),
                         const SizedBox(width: 12),
                         GradientSwitch(
                           value: _enabled,
