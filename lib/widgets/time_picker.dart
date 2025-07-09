@@ -616,18 +616,15 @@ class _TimePickerState extends State<_TimePicker> with RestorationMixin {
             picker = Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Expanded(child: dial),
-                const _TimePickerHeader(),
-              ],
+              children: [Expanded(child: dial), const _TimePickerHeader()],
             );
           case Orientation.landscape:
             picker = Column(
-              children: <Widget>[
+              children: [
                 Expanded(
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: <Widget>[
+                    children: [
                       const _TimePickerHeader(),
                       Expanded(child: dial),
                     ],
@@ -640,7 +637,7 @@ class _TimePickerState extends State<_TimePicker> with RestorationMixin {
       case TimePickerEntryMode.inputOnly:
         picker = Column(
           mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
+          children: [
             _TimePickerInput(
               initialSelectedTime: _selectedTime.value,
               errorInvalidText: widget.errorInvalidText,
@@ -1601,13 +1598,12 @@ class _TimePickerInputState extends State<_TimePickerInput>
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
+      children: [
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children: [
             if (!use24HourDials &&
-                timeOfDayFormat ==
-                    TimeOfDayFormat.a_space_h_colon_mm) ...<Widget>[
+                timeOfDayFormat == TimeOfDayFormat.a_space_h_colon_mm) ...[
               Padding(
                 padding: const EdgeInsetsDirectional.only(end: 12),
                 child: _DayPeriodControl(
@@ -1620,18 +1616,17 @@ class _TimePickerInputState extends State<_TimePickerInput>
                 crossAxisAlignment: CrossAxisAlignment.start,
 
                 textDirection: TextDirection.ltr,
-                children: <Widget>[
+                children: [
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
+                      children: [
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10),
                           child: _HourTextField(
                             restorationId: 'hour_text_field',
                             selectedTime: _selectedTime.value,
                             style: hourMinuteStyle,
-                            autofocus: widget.autofocusHour,
                             inputAction: TextInputAction.next,
                             validator: _validateHour,
                             onSavedSubmitted: _handleHourSavedSubmitted,
@@ -1658,14 +1653,13 @@ class _TimePickerInputState extends State<_TimePickerInput>
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
+                      children: [
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10),
                           child: _MinuteTextField(
                             restorationId: 'minute_text_field',
                             selectedTime: _selectedTime.value,
                             style: hourMinuteStyle,
-                            autofocus: widget.autofocusMinute,
                             inputAction: TextInputAction.done,
                             validator: _validateMinute,
                             onSavedSubmitted: _handleMinuteSavedSubmitted,
@@ -1691,8 +1685,7 @@ class _TimePickerInputState extends State<_TimePickerInput>
               ),
             ),
             if (!use24HourDials &&
-                timeOfDayFormat !=
-                    TimeOfDayFormat.a_space_h_colon_mm) ...<Widget>[
+                timeOfDayFormat != TimeOfDayFormat.a_space_h_colon_mm) ...[
               Padding(
                 padding: const EdgeInsetsDirectional.only(start: 12),
                 child: _DayPeriodControl(
@@ -1721,7 +1714,6 @@ class _HourTextField extends StatelessWidget {
   const _HourTextField({
     required this.selectedTime,
     required this.style,
-    required this.autofocus,
     required this.inputAction,
     required this.validator,
     required this.onSavedSubmitted,
@@ -1732,7 +1724,6 @@ class _HourTextField extends StatelessWidget {
 
   final TimeOfDay selectedTime;
   final TextStyle style;
-  final bool? autofocus;
   final TextInputAction inputAction;
   final FormFieldValidator<String> validator;
   final ValueChanged<String?> onSavedSubmitted;
@@ -1746,7 +1737,6 @@ class _HourTextField extends StatelessWidget {
       restorationId: restorationId,
       selectedTime: selectedTime,
       isHour: true,
-      autofocus: autofocus,
       inputAction: inputAction,
       style: style,
       semanticHintText:
@@ -1763,7 +1753,6 @@ class _MinuteTextField extends StatelessWidget {
   const _MinuteTextField({
     required this.selectedTime,
     required this.style,
-    required this.autofocus,
     required this.inputAction,
     required this.validator,
     required this.onSavedSubmitted,
@@ -1773,7 +1762,6 @@ class _MinuteTextField extends StatelessWidget {
 
   final TimeOfDay selectedTime;
   final TextStyle style;
-  final bool? autofocus;
   final TextInputAction inputAction;
   final FormFieldValidator<String> validator;
   final ValueChanged<String?> onSavedSubmitted;
@@ -1786,7 +1774,6 @@ class _MinuteTextField extends StatelessWidget {
       restorationId: restorationId,
       selectedTime: selectedTime,
       isHour: false,
-      autofocus: autofocus,
       inputAction: inputAction,
       style: style,
       semanticHintText:
@@ -1802,7 +1789,6 @@ class _HourMinuteTextField extends StatefulWidget {
   const _HourMinuteTextField({
     required this.selectedTime,
     required this.isHour,
-    required this.autofocus,
     required this.inputAction,
     required this.style,
     required this.semanticHintText,
@@ -1814,7 +1800,6 @@ class _HourMinuteTextField extends StatefulWidget {
 
   final TimeOfDay selectedTime;
   final bool isHour;
-  final bool? autofocus;
   final TextInputAction inputAction;
   final TextStyle style;
   final String semanticHintText;
@@ -1902,29 +1887,41 @@ class _HourMinuteTextFieldState extends State<_HourMinuteTextField>
 
     final String? hintText = focusNode.hasFocus ? null : _formattedValue;
 
+    final Set<WidgetState> states = <WidgetState>{
+      if (focusNode.hasFocus) WidgetState.focused,
+      if (focusNode.hasFocus) WidgetState.selected,
+    };
+
     final Color startingFillColor =
         timePickerTheme.inputDecorationTheme?.fillColor ??
         timePickerTheme.hourMinuteColor ??
         defaultTheme.hourMinuteColor;
-    final Color fillColor =
-        WidgetStateProperty.resolveAs<Color>(startingFillColor, <WidgetState>{
-          if (focusNode.hasFocus) WidgetState.focused,
-          if (focusNode.hasFocus) WidgetState.selected,
-        });
+    final Color fillColor = WidgetStateProperty.resolveAs<Color>(
+      WidgetStateColor.resolveWith((state) {
+        if (state.contains(WidgetState.focused)) {
+          return AppColors.primary;
+        }
+        return startingFillColor;
+      }),
+      states,
+    );
+
+    final Color effectiveTextColor = WidgetStateProperty.resolveAs<Color>(
+      WidgetStateColor.resolveWith((state) {
+        if (state.contains(WidgetState.focused)) {
+          return Colors.white;
+        }
+        return timePickerTheme.hourMinuteTextColor ??
+            defaultTheme.hourMinuteTextColor;
+      }),
+      states,
+    );
 
     inputDecoration = inputDecoration.copyWith(
       hintText: hintText,
       fillColor: fillColor,
     );
 
-    final Set<WidgetState> states = <WidgetState>{
-      if (focusNode.hasFocus) WidgetState.focused,
-      if (focusNode.hasFocus) WidgetState.selected,
-    };
-    final Color effectiveTextColor = WidgetStateProperty.resolveAs<Color>(
-      timePickerTheme.hourMinuteTextColor ?? defaultTheme.hourMinuteTextColor,
-      states,
-    );
     final TextStyle effectiveStyle = WidgetStateProperty.resolveAs<TextStyle>(
       widget.style,
       states,
@@ -1942,7 +1939,6 @@ class _HourMinuteTextFieldState extends State<_HourMinuteTextField>
             label: widget.semanticHintText,
             child: TextFormField(
               restorationId: 'hour_minute_text_form_field',
-              autofocus: widget.autofocus ?? false,
               expands: true,
               maxLines: null,
               inputFormatters: <TextInputFormatter>[
@@ -2123,11 +2119,11 @@ class _TimePickerHeader extends StatelessWidget {
                   ? TextDirection.rtl
                   : TextDirection.ltr,
           spacing: 12,
-          children: <Widget>[
+          children: [
             Expanded(
               child: Row(
                 textDirection: TextDirection.ltr,
-                children: <Widget>[
+                children: [
                   const Expanded(child: _HourControl()),
                   _TimeSelectorSeparator(timeOfDayFormat: timeOfDayFormat),
                   const Expanded(child: _MinuteControl()),
@@ -2149,10 +2145,10 @@ class _TimePickerHeader extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             spacing: 12,
-            children: <Widget>[
+            children: [
               Row(
                 textDirection: TextDirection.ltr,
-                children: <Widget>[
+                children: [
                   const Expanded(child: _HourControl()),
                   _TimeSelectorSeparator(timeOfDayFormat: timeOfDayFormat),
                   const Expanded(child: _MinuteControl()),
@@ -2582,7 +2578,7 @@ class _DayPeriodControl extends StatelessWidget {
               color: Colors.transparent,
               shape: resolvedShape,
               child: Column(
-                children: <Widget>[
+                children: [
                   Expanded(child: amButton),
                   Container(
                     decoration: BoxDecoration(
@@ -2607,7 +2603,7 @@ class _DayPeriodControl extends StatelessWidget {
               color: Colors.transparent,
               shape: resolvedShape,
               child: Row(
-                children: <Widget>[
+                children: [
                   Expanded(child: amButton),
                   Container(
                     decoration: BoxDecoration(

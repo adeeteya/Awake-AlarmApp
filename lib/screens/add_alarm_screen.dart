@@ -22,6 +22,15 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   final TextEditingController _titleController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   late Set<int> _selectedDays;
+  final List<String> _dayNames = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
 
   @override
   void initState() {
@@ -123,42 +132,32 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         for (int i = 0; i < dayLabels.length; i++)
-          GestureDetector(
-            onTap: () => _toggleDay(i + 1),
-            child: SizedBox(
-              height: 32,
-              width: 32,
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color:
-                      _selectedDays.contains(i + 1)
-                          ? AppColors.primary
-                          : Colors.transparent,
-                  border:
-                      _selectedDays.contains(i + 1)
-                          ? null
-                          : Border.all(
-                            color:
-                                isDark
-                                    ? AppColors.darkBorder
-                                    : AppColors.lightBlueGrey,
-                          ),
-                ),
-                child: Center(
-                  child: Text(
-                    dayLabels[i],
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      color:
-                          _selectedDays.contains(i + 1)
-                              ? Colors.white
-                              : isDark
-                              ? AppColors.darkBackgroundText
-                              : AppColors.lightBackgroundText,
-                    ),
-                  ),
-                ),
+          IconButton(
+            tooltip: _dayNames[i],
+            onPressed: () => _toggleDay(i + 1),
+            style: IconButton.styleFrom(
+              backgroundColor:
+                  _selectedDays.contains(i + 1) ? AppColors.primary : null,
+              side:
+                  _selectedDays.contains(i + 1)
+                      ? BorderSide.none
+                      : BorderSide(
+                        color:
+                            isDark
+                                ? AppColors.darkBorder
+                                : AppColors.lightBlueGrey,
+                      ),
+            ),
+            icon: Text(
+              dayLabels[i],
+              style: TextStyle(
+                fontFamily: "Poppins",
+                color:
+                    _selectedDays.contains(i + 1)
+                        ? Colors.white
+                        : isDark
+                        ? AppColors.darkBackgroundText
+                        : AppColors.lightBackgroundText,
               ),
             ),
           ),
@@ -257,9 +256,17 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                         controller: _titleController,
                         focusNode: _focusNode,
                         decoration: const InputDecoration(labelText: 'Title'),
+                        onSubmitted: (_) => _addAlarm(),
                       ),
                       const SizedBox(height: 16),
-                      InkWell(onTap: _addAlarm, child: const AddButton()),
+                      IconButton(
+                        tooltip:
+                            widget.alarmModel == null
+                                ? 'Add Alarm'
+                                : 'Edit Alarm',
+                        onPressed: _addAlarm,
+                        icon: const AddButton(),
+                      ),
                     ],
                   ),
                 ),

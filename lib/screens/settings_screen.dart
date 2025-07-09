@@ -209,7 +209,9 @@ class SettingsScreen extends StatelessWidget {
                           underline: const SizedBox(),
                           isExpanded: true,
                           dropdownColor:
-                              isDark ? AppColors.darkScaffold1 : Colors.white,
+                              isDark
+                                  ? AppColors.darkScaffold1
+                                  : AppColors.lightScaffold1,
                           items: const [
                             DropdownMenuItem(
                               value: AlarmScreenType.ringing,
@@ -222,6 +224,10 @@ class SettingsScreen extends StatelessWidget {
                             DropdownMenuItem(
                               value: AlarmScreenType.shake,
                               child: Text('Shake to Stop'),
+                            ),
+                            DropdownMenuItem(
+                              value: AlarmScreenType.tap,
+                              child: Text('Tap Challenge'),
                             ),
                             DropdownMenuItem(
                               value: AlarmScreenType.qr,

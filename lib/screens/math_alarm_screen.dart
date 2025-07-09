@@ -16,29 +16,64 @@ class MathAlarmScreen extends StatefulWidget {
   State<MathAlarmScreen> createState() => _MathAlarmScreenState();
 }
 
+enum _Operation { add, subtract, multiply, divide }
+
 class _MathAlarmScreenState extends State<MathAlarmScreen> {
   late final int _a;
   late final int _b;
-  final TextEditingController _controller = TextEditingController();
+  late final _Operation _op;
+  String _input = '';
   String? _error;
 
   @override
   void initState() {
     super.initState();
     final rnd = Random();
-    _a = rnd.nextInt(10) + 1;
-    _b = rnd.nextInt(10) + 1;
+    _op = _Operation.values[rnd.nextInt(_Operation.values.length)];
+    switch (_op) {
+      case _Operation.add:
+        _a = rnd.nextInt(20) + 1;
+        _b = rnd.nextInt(20) + 1;
+        break;
+      case _Operation.subtract:
+        _a = rnd.nextInt(20) + 10;
+        _b = rnd.nextInt(_a) + 1;
+        break;
+      case _Operation.multiply:
+        _a = rnd.nextInt(12) + 1;
+        _b = rnd.nextInt(12) + 1;
+        break;
+      case _Operation.divide:
+        _b = rnd.nextInt(9) + 2; // avoid divide by 1
+        final res = rnd.nextInt(12) + 1;
+        _a = res * _b;
+        break;
+    }
   }
 
   @override
   void dispose() {
-    _controller.dispose();
     super.dispose();
   }
 
   Future<void> _tryStop() async {
-    final answer = int.tryParse(_controller.text);
-    if (answer == _a + _b) {
+    final answer = int.tryParse(_input);
+    int correct;
+    switch (_op) {
+      case _Operation.add:
+        correct = _a + _b;
+        break;
+      case _Operation.subtract:
+        correct = _a - _b;
+        break;
+      case _Operation.multiply:
+        correct = _a * _b;
+        break;
+      case _Operation.divide:
+        correct = _a ~/ _b;
+        break;
+    }
+    if (answer == correct) {
       await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
       if (mounted) {
         Navigator.pop(context);
@@ -48,9 +83,28 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
     }
   }
 
+  void _onKeyPressed(String value) {
+    setState(() {
+      _error = null;
+      if (value == 'DEL') {
+        if (_input.isNotEmpty) {
+          _input = _input.substring(0, _input.length - 1);
+        }
+      } else {
+        _input += value;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final bool isDark = context.isDarkMode;
+    final symbol = switch (_op) {
+      _Operation.add => '+',
+      _Operation.subtract => '-',
+      _Operation.multiply => '×',
+      _Operation.divide => '÷',
+    };
     return PopScope(
       canPop: false,
       child: GestureDetector(
@@ -86,7 +140,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Solve: $_a + $_b = ',
+                      'Solve: $_a $symbol $_b = ',
                       style: TextStyle(
                         color:
                             isDark
@@ -97,30 +151,39 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
                       ),
                     ),
                     const SizedBox(width: 5),
-                    SizedBox(
+                    Container(
                       width: 100,
-                      child: TextField(
-                        autofocus: true,
-                        controller: _controller,
-                        keyboardType: TextInputType.number,
-                        textAlign: TextAlign.center,
-                        onEditingComplete: _tryStop,
-                        onSubmitted: (_) => _tryStop,
+                      height: 40,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color:
+                              isDark
+                                  ? AppColors.darkBorder
+                                  : AppColors.lightBlueGrey,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        _input.isEmpty ? '?' : _input,
                         style: TextStyle(
                           color:
                               isDark
                                   ? AppColors.darkBackgroundText
                                   : AppColors.lightBackgroundText,
-                        ),
-                        decoration: InputDecoration(
-                          hintText: '?',
-                          errorText: _error,
+                          fontSize: 24,
                         ),
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 50),
+                if (_error != null) ...[
+                  const SizedBox(height: 8),
+                  Text(_error!, style: const TextStyle(color: Colors.red)),
+                ],
+                const SizedBox(height: 20),
+                _NumberPad(onKeyTap: _onKeyPressed, isDark: isDark),
+                const SizedBox(height: 20),
                 GestureDetector(onTap: _tryStop, child: const StopButton()),
                 const Spacer(),
               ],
@@ -128,6 +191,63 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
           ),
         ),
       ),
+    );
+  }
+}
+
+class _NumberPad extends StatelessWidget {
+  final void Function(String key) onKeyTap;
+  final bool isDark;
+
+  const _NumberPad({required this.onKeyTap, required this.isDark});
+
+  @override
+  Widget build(BuildContext context) {
+    final textColor =
+        isDark ? AppColors.darkBackgroundText : AppColors.lightBackgroundText;
+    Widget buildButton(String label) {
+      return GestureDetector(
+        onTap: () => onKeyTap(label),
+        child: Container(
+          width: 70,
+          height: 70,
+          margin: const EdgeInsets.all(6),
+          decoration: BoxDecoration(
+            color: isDark ? AppColors.darkScaffold1 : AppColors.lightContainer1,
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: isDark ? AppColors.darkBorder : AppColors.lightBlueGrey,
+            ),
+          ),
+          alignment: Alignment.center,
+          child: Text(
+            label == 'DEL' ? '⌫' : label,
+            style: TextStyle(fontSize: 24, color: textColor),
+          ),
+        ),
+      );
+    }
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [buildButton('1'), buildButton('2'), buildButton('3')],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [buildButton('4'), buildButton('5'), buildButton('6')],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [buildButton('7'), buildButton('8'), buildButton('9')],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [buildButton('DEL'), buildButton('0')],
+        ),
+      ],
     );
   }
 }
