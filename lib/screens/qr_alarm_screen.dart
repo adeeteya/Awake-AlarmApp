@@ -8,6 +8,7 @@ import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -47,7 +48,7 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
     if (value == kQRCodeText) {
       await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
       if (mounted) {
-        Navigator.pop(context);
+        context.pop();
       }
     } else if (value != null && value.isNotEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(

@@ -1,11 +1,12 @@
+import 'package:awake/app_router.dart';
 import 'package:awake/models/alarm_model.dart';
-import 'package:awake/screens/add_alarm_screen.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/gradient_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class AlarmTile extends StatefulWidget {
   final AlarmModel alarmModel;
@@ -64,14 +65,6 @@ class _AlarmTileState extends State<AlarmTile> {
     return Text.rich(
       TextSpan(children: textSpans),
       style: AppTextStyles.caption(context),
-    );
-  }
-
-  Future<void> _showEditDialog() async {
-    await Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => AddAlarmScreen(alarmModel: widget.alarmModel),
-      ),
     );
   }
 
@@ -144,7 +137,11 @@ class _AlarmTileState extends State<AlarmTile> {
               child: Material(
                 type: MaterialType.transparency,
                 child: InkWell(
-                  onTap: _showEditDialog,
+                  onTap:
+                      () => context.goNamed(
+                        AppRoute.addAlarm.name,
+                        extra: widget.alarmModel,
+                      ),
                   borderRadius: const BorderRadius.all(Radius.circular(20)),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 18),

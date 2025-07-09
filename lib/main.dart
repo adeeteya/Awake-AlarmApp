@@ -1,5 +1,5 @@
 import 'package:alarm/alarm.dart';
-import 'package:awake/screens/home.dart';
+import 'package:awake/app_router.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_database.dart';
 import 'package:awake/services/custom_sounds_cubit.dart';
@@ -8,6 +8,7 @@ import 'package:awake/services/shared_prefs_with_cache.dart';
 import 'package:awake/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +22,8 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  static final GoRouter _router = createRouter();
+
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -31,13 +34,13 @@ class MyApp extends StatelessWidget {
       ],
       child: BlocBuilder<SettingsCubit, SettingsState>(
         builder: (context, state) {
-          return MaterialApp(
+          return MaterialApp.router(
             debugShowCheckedModeBanner: false,
             title: 'Awake- The Alarm Clock',
             themeMode: state.mode,
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
-            home: const Home(),
+            routerConfig: _router,
           );
         },
       ),

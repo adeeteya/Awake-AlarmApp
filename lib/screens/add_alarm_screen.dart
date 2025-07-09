@@ -8,6 +8,7 @@ import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/time_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class AddAlarmScreen extends StatefulWidget {
   final AlarmModel? alarmModel;
@@ -93,7 +94,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
         body: title,
       );
     }
-    if (mounted) Navigator.pop(context);
+    if (mounted) context.pop();
   }
 
   Future<void> _deleteAlarm() async {
@@ -108,11 +109,11 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                 ),
                 actions: [
                   TextButton(
-                    onPressed: () => Navigator.pop(context, false),
+                    onPressed: () => context.pop(false),
                     child: const Text('Cancel'),
                   ),
                   TextButton(
-                    onPressed: () => Navigator.pop(context, true),
+                    onPressed: () => context.pop(true),
                     child: const Text('Delete'),
                   ),
                 ],
@@ -124,7 +125,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
 
     final cubit = context.read<AlarmCubit>();
     await cubit.deleteAlarmModel(widget.alarmModel!);
-    if (mounted) Navigator.pop(context);
+    if (mounted) context.pop();
   }
 
   Widget _daySelector(bool isDark) {
@@ -177,7 +178,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
               isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
           leading: IconButton(
             tooltip: "Back",
-            onPressed: () => Navigator.pop(context),
+            onPressed: () => context.pop(),
             style: IconButton.styleFrom(
               foregroundColor:
                   isDark

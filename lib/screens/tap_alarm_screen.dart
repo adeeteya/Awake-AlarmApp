@@ -6,6 +6,7 @@ import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/gradient_linear_progress_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class TapAlarmScreen extends StatefulWidget {
   final AlarmSettings alarmSettings;
@@ -25,7 +26,7 @@ class _TapAlarmScreenState extends State<TapAlarmScreen> {
     if (_tapCount >= _requiredTaps) {
       await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
       if (mounted) {
-        Navigator.pop(context);
+        context.pop();
       }
     }
   }

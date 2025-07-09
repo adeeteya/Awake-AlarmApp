@@ -9,6 +9,7 @@ import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/gradient_linear_progress_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 
@@ -47,7 +48,7 @@ class _ShakeAlarmScreenState extends State<ShakeAlarmScreen> {
           if (mounted) {
             await context.read<AlarmCubit>().stopAlarm(widget.alarmSettings.id);
             if (mounted) {
-              Navigator.pop(context);
+              context.pop();
             }
           }
         }
