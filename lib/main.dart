@@ -1,5 +1,6 @@
 import 'package:alarm/alarm.dart';
 import 'package:awake/app_router.dart';
+import 'package:awake/firebase_options.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_database.dart';
 import 'package:awake/services/custom_sounds_cubit.dart';
@@ -17,7 +18,7 @@ void main() async {
   await SharedPreferencesWithCache.initialize();
   await AlarmDatabase.initialize();
   await Alarm.init();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(const MyApp());
 }

@@ -1,7 +1,6 @@
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_cubit.dart';
-import 'package:awake/services/group_alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
@@ -223,8 +222,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           child: Form(
             child: Column(
               children: [
-                Expanded(
-                  flex: 2,
+                Flexible(
                   child: MediaQuery(
                     data: MediaQuery.of(context).copyWith(
                       alwaysUse24HourFormat:
@@ -240,46 +238,34 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     ),
                   ),
                 ),
-                SingleChildScrollView(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    children: [
-                      _daySelector(isDark),
-                      const SizedBox(height: 16),
-                      TextField(
-                        controller: _titleController,
-                        focusNode: _focusNode,
-                        decoration: const InputDecoration(labelText: 'Title'),
-                        onSubmitted: (_) => _addAlarm(),
-                      ),
-                      const SizedBox(height: 16),
-                      BlocBuilder<GroupAlarmCubit, String?>(
-                        builder: (context, groupId) {
-                          return SwitchListTile(
-                            title: const Text('Share with Group'),
-                            value: _shareWithGroup,
-                            onChanged:
-                                groupId == null
-                                    ? null
-                                    : (v) =>
-                                        setState(() => _shareWithGroup = v),
-                            subtitle:
-                                groupId == null
-                                    ? const Text('Join a group in Settings')
-                                    : Text("Group: $groupId"),
-                          );
-                        },
-                      ),
-                      const SizedBox(height: 16),
-                      IconButton(
-                        tooltip:
-                            widget.alarmModel == null
-                                ? 'Add Alarm'
-                                : 'Edit Alarm',
-                        onPressed: _addAlarm,
-                        icon: const AddButton(),
-                      ),
-                    ],
+                Expanded(
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      children: [
+                        _daySelector(isDark),
+                        const SizedBox(height: 16),
+                        TextField(
+                          controller: _titleController,
+                          focusNode: _focusNode,
+                          decoration: const InputDecoration(labelText: 'Title'),
+                          onSubmitted: (_) => _addAlarm(),
+                        ),
+                        SwitchListTile(
+                          title: const Text('Group Alarm'),
+                          value: _shareWithGroup,
+                          onChanged: (v) => setState(() => _shareWithGroup = v),
+                        ),
+                        IconButton(
+                          tooltip:
+                              widget.alarmModel == null
+                                  ? 'Add Alarm'
+                                  : 'Edit Alarm',
+                          onPressed: _addAlarm,
+                          icon: const AddButton(),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],

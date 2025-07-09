@@ -8,9 +8,9 @@ environment:
 
 dependencies:
   alarm: ^5.1.4
-  cloud_firestore: ^4.15.0
+  cloud_firestore: ^5.6.11
   file_picker: ^10.2.0
-  firebase_core: ^2.27.0
+  firebase_core: ^3.15.1
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1

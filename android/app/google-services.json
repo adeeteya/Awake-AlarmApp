@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "489370687881",
+    "project_id": "awake-1b3a5",
+    "storage_bucket": "awake-1b3a5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489370687881:android:67610c189a0d7ce8b66958",
+        "android_client_info": {
+          "package_name": "com.adeeteya.awake"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBreLl1WlTlunLf2cR6MUX0l3q7L7SX34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
