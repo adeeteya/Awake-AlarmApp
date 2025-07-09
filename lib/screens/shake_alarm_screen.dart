@@ -39,7 +39,7 @@ class _ShakeAlarmScreenState extends State<ShakeAlarmScreen> {
     final double gForce = sqrt(gX * gX + gY * gY + gZ * gZ);
     if (gForce > _threshold) {
       _debounce?.cancel();
-      _debounce = Timer(const Duration(milliseconds: 300), () async {
+      _debounce = Timer(const Duration(milliseconds: 100), () async {
         setState(() => _shakeCount++);
         if (_shakeCount >= _requiredShakes) {
           await _subscription.cancel();
