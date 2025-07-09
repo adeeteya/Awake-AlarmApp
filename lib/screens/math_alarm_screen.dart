@@ -92,7 +92,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
         if (_input.isNotEmpty) {
           _input = _input.substring(0, _input.length - 1);
         }
-      } else {
+      } else if (_input.length < 3) {
         _input += value;
       }
     });
@@ -219,7 +219,8 @@ class _NumberPad extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
                 side: BorderSide(
-                  color: isDark ? AppColors.darkBorder : AppColors.lightBlueGrey,
+                  color:
+                      isDark ? AppColors.darkBorder : AppColors.lightBlueGrey,
                 ),
               ),
               fixedSize: const Size(70, 70),
