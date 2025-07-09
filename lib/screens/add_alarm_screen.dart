@@ -22,6 +22,15 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   final TextEditingController _titleController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   late Set<int> _selectedDays;
+  final List<String> _dayNames = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
 
   @override
   void initState() {
@@ -123,45 +132,32 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         for (int i = 0; i < dayLabels.length; i++)
-          Material(
-            type: MaterialType.transparency,
-            child: Ink(
-              height: 32,
-              width: 32,
-              decoration: ShapeDecoration(
+          IconButton(
+            tooltip: _dayNames[i],
+            onPressed: () => _toggleDay(i + 1),
+            style: IconButton.styleFrom(
+              backgroundColor:
+                  _selectedDays.contains(i + 1) ? AppColors.primary : null,
+              side:
+                  _selectedDays.contains(i + 1)
+                      ? BorderSide.none
+                      : BorderSide(
+                        color:
+                            isDark
+                                ? AppColors.darkBorder
+                                : AppColors.lightBlueGrey,
+                      ),
+            ),
+            icon: Text(
+              dayLabels[i],
+              style: TextStyle(
+                fontFamily: "Poppins",
                 color:
                     _selectedDays.contains(i + 1)
-                        ? AppColors.primary
-                        : Colors.transparent,
-                shape: CircleBorder(
-                  side:
-                      _selectedDays.contains(i + 1)
-                          ? BorderSide.none
-                          : BorderSide(
-                            color:
-                                isDark
-                                    ? AppColors.darkBorder
-                                    : AppColors.lightBlueGrey,
-                          ),
-                ),
-              ),
-              child: InkWell(
-                onTap: () => _toggleDay(i + 1),
-                customBorder: const CircleBorder(),
-                child: Center(
-                  child: Text(
-                    dayLabels[i],
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      color:
-                          _selectedDays.contains(i + 1)
-                              ? Colors.white
-                              : isDark
-                              ? AppColors.darkBackgroundText
-                              : AppColors.lightBackgroundText,
-                    ),
-                  ),
-                ),
+                        ? Colors.white
+                        : isDark
+                        ? AppColors.darkBackgroundText
+                        : AppColors.lightBackgroundText,
               ),
             ),
           ),
