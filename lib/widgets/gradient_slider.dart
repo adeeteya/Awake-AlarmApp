@@ -60,8 +60,9 @@ class _GradientSliderState extends State<GradientSlider> {
             final newValue =
                 widget.min + newProgress * (widget.max - widget.min);
             setState(() => _value = newValue);
-            widget.onChanged(_value);
           },
+          onPanEnd: (_) => widget.onChanged(_value),
+          onPanCancel: () => widget.onChanged(_value),
           child: SizedBox(
             height: 48,
             child: Stack(
