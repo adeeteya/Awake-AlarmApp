@@ -1,6 +1,6 @@
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/minus_button.dart';
-import 'package:awake/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class SnoozeButton extends StatefulWidget {
