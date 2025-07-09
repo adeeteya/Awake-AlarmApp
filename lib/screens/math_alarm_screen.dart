@@ -5,6 +5,7 @@ import 'package:alarm/alarm.dart';
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/stop_alarm.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -128,14 +129,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
                 const Spacer(),
                 Text(
                   widget.alarmSettings.notificationSettings.body,
-                  style: TextStyle(
-                    color:
-                        isDark
-                            ? AppColors.darkBackgroundText
-                            : AppColors.lightBackgroundText,
-                    fontSize: 24,
-                    fontFamily: 'Poppins',
-                  ),
+                  style: AppTextStyles.large(context),
                 ),
                 const SizedBox(height: 20),
                 Row(
@@ -143,14 +137,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
                   children: [
                     Text(
                       'Solve: $_a $symbol $_b = ',
-                      style: TextStyle(
-                        color:
-                            isDark
-                                ? AppColors.darkBackgroundText
-                                : AppColors.lightBackgroundText,
-                        fontSize: 24,
-                        fontFamily: 'Poppins',
-                      ),
+                      style: AppTextStyles.large(context),
                     ),
                     const SizedBox(width: 5),
                     Container(
@@ -168,13 +155,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
                       ),
                       child: Text(
                         _input.isEmpty ? '?' : _input,
-                        style: TextStyle(
-                          color:
-                              isDark
-                                  ? AppColors.darkBackgroundText
-                                  : AppColors.lightBackgroundText,
-                          fontSize: 24,
-                        ),
+                        style: AppTextStyles.large(context),
                       ),
                     ),
                   ],
@@ -231,7 +212,7 @@ class _NumberPad extends StatelessWidget {
             },
             icon: Text(
               label == 'DEL' ? '⌫' : label,
-              style: TextStyle(fontSize: 24, color: textColor),
+              style: AppTextStyles.large(context).copyWith(color: textColor),
             ),
           ),
         ),

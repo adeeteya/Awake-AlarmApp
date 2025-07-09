@@ -17,6 +17,7 @@ import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
+import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
@@ -218,16 +219,7 @@ class _HomeState extends State<Home> {
                         return Center(
                           child: Text(
                             "No Alarms Added Yet",
-                            style: TextStyle(
-                              color:
-                                  isDark
-                                      ? AppColors.darkBackgroundText
-                                      : AppColors.lightBackgroundText,
-                              fontFamily: 'Poppins',
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500,
-                              letterSpacing: 0.03,
-                            ),
+                            style: AppTextStyles.heading(context),
                           ),
                         );
                       } else {
@@ -242,16 +234,7 @@ class _HomeState extends State<Home> {
                                 const SizedBox(width: 15),
                                 Text(
                                   "Alarms",
-                                  style: TextStyle(
-                                    color:
-                                        isDark
-                                            ? AppColors.darkBackgroundText
-                                            : AppColors.lightBackgroundText,
-                                    fontFamily: 'Poppins',
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w500,
-                                    letterSpacing: 0.03,
-                                  ),
+                                  style: AppTextStyles.heading(context),
                                 ),
                                 const Spacer(),
                                 IconButton(
