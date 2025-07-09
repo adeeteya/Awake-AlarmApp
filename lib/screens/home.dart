@@ -16,6 +16,7 @@ import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
@@ -28,6 +29,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
+  bool _isFabVisibile = true;
 
   @override
   void initState() {
@@ -62,14 +64,17 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     final bool isDark = context.isDarkMode;
-
+    final size = MediaQuery.sizeOf(context);
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: IconButton(
-        tooltip: "Add Alarm",
-        onPressed: () => context.goNamed(AppRoute.addAlarm.name),
-        icon: const AddButton(),
-      ),
+      floatingActionButton:
+          _isFabVisibile
+              ? IconButton(
+                tooltip: "Add Alarm",
+                onPressed: () => context.goNamed(AppRoute.addAlarm.name),
+                icon: const AddButton(),
+              )
+              : null,
       body: DecoratedBox(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -82,19 +87,16 @@ class _HomeState extends State<Home> {
           ),
         ),
         child: SafeArea(
-          child: Column(
+          child: Stack(
             children: [
-              Expanded(
-                child: LayoutBuilder(
-                  builder: (context, constraints) {
-                    final double radius = min(
-                      constraints.maxHeight,
-                      constraints.maxWidth,
-                    );
-                    return Container(
-                      height: radius,
-                      width: radius,
-                      margin: const EdgeInsets.all(15),
+              SizedBox(
+                width: double.infinity,
+                child: SizedBox(
+                  height: size.height * 0.33,
+                  width: size.height * 0.33,
+                  child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: DecoratedBox(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
@@ -165,112 +167,131 @@ class _HomeState extends State<Home> {
                           child: const ClockWidget(),
                         ),
                       ),
-                    );
-                  },
+                    ),
+                  ),
                 ),
               ),
-              Expanded(
-                flex: 2,
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: isDark ? AppColors.darkBorder : Colors.white,
-                    ),
-                    borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20),
-                    ),
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors:
-                          isDark
-                              ? [
-                                AppColors.darkScaffold1,
-                                AppColors.darkScaffold2,
-                              ]
-                              : [
-                                AppColors.lightContainer1,
-                                AppColors.lightContainer2,
-                              ],
-                    ),
-                  ),
-                  child: BlocBuilder<AlarmCubit, List<AlarmModel>>(
-                    buildWhen: (previous, current) => previous != current,
-                    builder: (context, alarms) {
-                      if (alarms.isEmpty) {
-                        return Center(
-                          child: Text(
-                            "No Alarms Added Yet",
-                            style: AppTextStyles.heading(context),
+              NotificationListener<UserScrollNotification>(
+                onNotification: (notification) {
+                  final ScrollDirection direction = notification.direction;
+                  setState(() {
+                    if (direction == ScrollDirection.reverse) {
+                      _isFabVisibile = false;
+                    } else if (direction == ScrollDirection.forward) {
+                      _isFabVisibile = true;
+                    }
+                  });
+                  return true;
+                },
+                child: DraggableScrollableSheet(
+                  minChildSize: 0.65,
+                  initialChildSize: 0.65,
+                  builder:
+                      (context, scrollController) => DecoratedBox(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: isDark ? AppColors.darkBorder : Colors.white,
                           ),
-                        );
-                      } else {
-                        return ListView(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 24,
+                          borderRadius: const BorderRadius.only(
+                            topLeft: Radius.circular(20),
+                            topRight: Radius.circular(20),
                           ),
-                          children: [
-                            Row(
-                              children: [
-                                const SizedBox(width: 15),
-                                Text(
-                                  "Alarms",
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors:
+                                isDark
+                                    ? [
+                                      AppColors.darkScaffold1,
+                                      AppColors.darkScaffold2,
+                                    ]
+                                    : [
+                                      AppColors.lightContainer1,
+                                      AppColors.lightContainer2,
+                                    ],
+                          ),
+                        ),
+                        child: BlocBuilder<AlarmCubit, List<AlarmModel>>(
+                          buildWhen: (previous, current) => previous != current,
+                          builder: (context, alarms) {
+                            if (alarms.isEmpty) {
+                              return Center(
+                                child: Text(
+                                  "No Alarms Added Yet",
                                   style: AppTextStyles.heading(context),
                                 ),
-                                const Spacer(),
-                                IconButton(
-                                  icon: const Icon(Icons.settings),
-                                  tooltip: "Settings",
-                                  onPressed:
-                                      () => context.goNamed(
-                                        AppRoute.settings.name,
+                              );
+                            } else {
+                              return ListView(
+                                controller: scrollController,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 20,
+                                  vertical: 24,
+                                ),
+                                children: [
+                                  Row(
+                                    children: [
+                                      const SizedBox(width: 15),
+                                      Text(
+                                        "Alarms",
+                                        style: AppTextStyles.heading(context),
                                       ),
-                                  style: IconButton.styleFrom(
-                                    foregroundColor:
-                                        isDark
-                                            ? AppColors.darkBackgroundText
-                                            : AppColors.lightBackgroundText,
+                                      const Spacer(),
+                                      IconButton(
+                                        icon: const Icon(Icons.settings),
+                                        tooltip: "Settings",
+                                        onPressed:
+                                            () => context.goNamed(
+                                              AppRoute.settings.name,
+                                            ),
+                                        style: IconButton.styleFrom(
+                                          foregroundColor:
+                                              isDark
+                                                  ? AppColors.darkBackgroundText
+                                                  : AppColors
+                                                      .lightBackgroundText,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 15),
+                                    ],
                                   ),
-                                ),
-                                const SizedBox(width: 15),
-                              ],
-                            ),
-                            ...[
-                              for (
-                                int index = 0;
-                                index < alarms.length;
-                                index++
-                              )
-                                AlarmTile(
-                                  key: ValueKey(alarms[index].timeOfDay),
-                                  alarmModel: alarms[index],
-                                  onEnabledChanged:
-                                      (v) => context
-                                          .read<AlarmCubit>()
-                                          .toggleAlarmEnabled(
-                                            alarms[index].timeOfDay,
-                                            v,
-                                          ),
-                                  onDaysChanged:
-                                      (days) => context
-                                          .read<AlarmCubit>()
-                                          .updateAlarmDays(
-                                            alarms[index].timeOfDay,
-                                            days,
-                                          ),
-                                  onDelete:
-                                      () => context
-                                          .read<AlarmCubit>()
-                                          .deleteAlarmModel(alarms[index]),
-                                ),
-                            ],
-                          ],
-                        );
-                      }
-                    },
-                  ),
+                                  ...[
+                                    for (
+                                      int index = 0;
+                                      index < alarms.length;
+                                      index++
+                                    )
+                                      AlarmTile(
+                                        key: ValueKey(alarms[index].timeOfDay),
+                                        alarmModel: alarms[index],
+                                        onEnabledChanged:
+                                            (v) => context
+                                                .read<AlarmCubit>()
+                                                .toggleAlarmEnabled(
+                                                  alarms[index].timeOfDay,
+                                                  v,
+                                                ),
+                                        onDaysChanged:
+                                            (days) => context
+                                                .read<AlarmCubit>()
+                                                .updateAlarmDays(
+                                                  alarms[index].timeOfDay,
+                                                  days,
+                                                ),
+                                        onDelete:
+                                            () => context
+                                                .read<AlarmCubit>()
+                                                .deleteAlarmModel(
+                                                  alarms[index],
+                                                ),
+                                      ),
+                                  ],
+                                ],
+                              );
+                            }
+                          },
+                        ),
+                      ),
                 ),
               ),
             ],
