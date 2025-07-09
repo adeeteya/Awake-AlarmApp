@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:alarm/alarm.dart';
@@ -6,6 +7,7 @@ import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/widgets/stop_alarm.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class MathAlarmScreen extends StatefulWidget {
@@ -90,7 +92,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
         if (_input.isNotEmpty) {
           _input = _input.substring(0, _input.length - 1);
         }
-      } else {
+      } else if (_input.length < 3) {
         _input += value;
       }
     });
@@ -206,23 +208,31 @@ class _NumberPad extends StatelessWidget {
     final textColor =
         isDark ? AppColors.darkBackgroundText : AppColors.lightBackgroundText;
     Widget buildButton(String label) {
-      return GestureDetector(
-        onTap: () => onKeyTap(label),
-        child: Container(
-          width: 70,
-          height: 70,
-          margin: const EdgeInsets.all(6),
-          decoration: BoxDecoration(
-            color: isDark ? AppColors.darkScaffold1 : AppColors.lightContainer1,
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(
-              color: isDark ? AppColors.darkBorder : AppColors.lightBlueGrey,
+      return Container(
+        margin: const EdgeInsets.all(6),
+        child: Tooltip(
+          message: label == 'DEL' ? 'Delete' : 'Number $label',
+          child: IconButton(
+            style: IconButton.styleFrom(
+              backgroundColor:
+                  isDark ? AppColors.darkScaffold1 : AppColors.lightContainer1,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+                side: BorderSide(
+                  color:
+                      isDark ? AppColors.darkBorder : AppColors.lightBlueGrey,
+                ),
+              ),
+              fixedSize: const Size(70, 70),
             ),
-          ),
-          alignment: Alignment.center,
-          child: Text(
-            label == 'DEL' ? '⌫' : label,
-            style: TextStyle(fontSize: 24, color: textColor),
+            onPressed: () {
+              unawaited(HapticFeedback.selectionClick());
+              onKeyTap(label);
+            },
+            icon: Text(
+              label == 'DEL' ? '⌫' : label,
+              style: TextStyle(fontSize: 24, color: textColor),
+            ),
           ),
         ),
       );
