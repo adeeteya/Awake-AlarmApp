@@ -8,6 +8,7 @@ import 'package:awake/models/alarm_model.dart';
 import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/screens/add_alarm_screen.dart';
 import 'package:awake/screens/alarm_ringing_screen.dart';
+import 'package:awake/screens/blow_alarm_screen.dart';
 import 'package:awake/screens/math_alarm_screen.dart';
 import 'package:awake/screens/qr_alarm_screen.dart';
 import 'package:awake/screens/settings_screen.dart';
@@ -68,6 +69,8 @@ class _HomeState extends State<Home> {
       screen = QrAlarmScreen(alarmSettings: alarms.alarms.first);
     } else if (screenType == AlarmScreenType.tap) {
       screen = TapAlarmScreen(alarmSettings: alarms.alarms.first);
+    } else if (screenType == AlarmScreenType.blow) {
+      screen = BlowAlarmScreen(alarmSettings: alarms.alarms.first);
     }
     await Navigator.push(
       context,

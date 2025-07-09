@@ -230,6 +230,10 @@ class SettingsScreen extends StatelessWidget {
                               child: Text('Tap Challenge'),
                             ),
                             DropdownMenuItem(
+                              value: AlarmScreenType.blow,
+                              child: Text('Blow to Stop'),
+                            ),
+                            DropdownMenuItem(
                               value: AlarmScreenType.qr,
                               child: Text('QR Code Scan'),
                             ),
