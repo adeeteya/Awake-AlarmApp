@@ -1,6 +1,7 @@
 import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_cubit.dart';
+import 'package:awake/services/group_alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
@@ -24,6 +25,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   final TextEditingController _titleController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   late Set<int> _selectedDays;
+  bool _shareWithGroup = false;
   final List<String> _dayNames = [
     "Monday",
     "Tuesday",
@@ -249,6 +251,24 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                         focusNode: _focusNode,
                         decoration: const InputDecoration(labelText: 'Title'),
                         onSubmitted: (_) => _addAlarm(),
+                      ),
+                      const SizedBox(height: 16),
+                      BlocBuilder<GroupAlarmCubit, String?>(
+                        builder: (context, groupId) {
+                          return SwitchListTile(
+                            title: const Text('Share with Group'),
+                            value: _shareWithGroup,
+                            onChanged:
+                                groupId == null
+                                    ? null
+                                    : (v) =>
+                                        setState(() => _shareWithGroup = v),
+                            subtitle:
+                                groupId == null
+                                    ? const Text('Join a group in Settings')
+                                    : Text("Group: $groupId"),
+                          );
+                        },
                       ),
                       const SizedBox(height: 16),
                       IconButton(

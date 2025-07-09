@@ -5,6 +5,7 @@ import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_permissions.dart';
 import 'package:awake/services/custom_sounds_cubit.dart';
+import 'package:awake/services/group_alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
@@ -52,6 +53,35 @@ class SettingsScreen extends StatelessWidget {
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text('File saved to $saveLocation')));
+    }
+  }
+
+  Future<void> _joinGroup(BuildContext context) async {
+    final groupCubit = context.read<GroupAlarmCubit>();
+    final controller = TextEditingController(text: groupCubit.state ?? '');
+    final id = await showDialog<String>(
+      context: context,
+      builder:
+          (context) => AlertDialog(
+            title: const Text('Join Group'),
+            content: TextField(
+              controller: controller,
+              decoration: const InputDecoration(labelText: 'Group ID'),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => context.pop(),
+                child: const Text('Cancel'),
+              ),
+              TextButton(
+                onPressed: () => context.pop(controller.text.trim()),
+                child: const Text('Join'),
+              ),
+            ],
+          ),
+    );
+    if (id != null && id.isNotEmpty) {
+      await groupCubit.joinGroup(id);
     }
   }
 
@@ -420,6 +450,39 @@ class SettingsScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                ),
+                const SizedBox(height: 23),
+                BlocBuilder<GroupAlarmCubit, String?>(
+                  builder: (context, groupId) {
+                    return SettingsTile(
+                      onTap: () => _joinGroup(context),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.group),
+                          const SizedBox(width: 20),
+                          Expanded(
+                            child: Text(
+                              groupId == null
+                                  ? 'Join Group'
+                                  : 'Group: \$groupId',
+                              style: AppTextStyles.body(
+                                context,
+                              ).copyWith(color: color),
+                            ),
+                          ),
+                          if (groupId != null)
+                            IconButton(
+                              icon: const Icon(Icons.close),
+                              onPressed:
+                                  () =>
+                                      context
+                                          .read<GroupAlarmCubit>()
+                                          .leaveGroup(),
+                            ),
+                        ],
+                      ),
+                    );
+                  },
                 ),
               ],
             );

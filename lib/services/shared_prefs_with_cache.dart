@@ -43,4 +43,9 @@ class SharedPreferencesWithCache {
     _cache[key] = value;
     return _prefs.setString(key, value);
   }
+
+  Future<bool> remove(String key) async {
+    _cache.remove(key);
+    return _prefs.remove(key);
+  }
 }
