@@ -19,6 +19,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:lottie/lottie.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -216,9 +217,20 @@ class _HomeState extends State<Home> {
                           builder: (context, alarms) {
                             if (alarms.isEmpty) {
                               return Center(
-                                child: Text(
-                                  "No Alarms Added Yet",
-                                  style: AppTextStyles.heading(context),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Lottie.asset(
+                                      "assets/lottie/monkey_head_nod.json",
+                                      width: 150,
+                                      fit: BoxFit.scaleDown,
+                                    ),
+                                    const SizedBox(height: 20),
+                                    Text(
+                                      "No Alarms Added Yet",
+                                      style: AppTextStyles.heading(context),
+                                    ),
+                                  ],
                                 ),
                               );
                             } else {

@@ -31,50 +31,51 @@ class AlarmRingingScreen extends StatelessWidget {
                       : [AppColors.lightScaffold1, AppColors.lightScaffold2],
             ),
           ),
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Lottie.asset("assets/lottie/clock.json"),
-                const SizedBox(height: 20),
-                Text(
-                  alarmSettings.notificationSettings.body,
-                  style: AppTextStyles.large(context),
-                ),
-                const Spacer(),
-                GestureDetector(
-                  onTap: () async {
-                    await context.read<AlarmCubit>().stopAlarm(
-                      alarmSettings.id,
-                    );
-                    if (context.mounted) {
-                      context.pop();
-                    }
-                  },
-                  child: const StopButton(),
-                ),
-                const Spacer(),
-                SnoozeButton(
-                  onSnoozePressed: (snoozeMinutes) async {
-                    await context.read<AlarmCubit>().snoozeAlarm(
-                      alarmSettings: alarmSettings,
-                      snoozeMinutes: snoozeMinutes,
-                    );
-                    if (context.mounted) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            "Alarm snoozed for $snoozeMinutes minutes",
-                          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Spacer(),
+              Lottie.asset(
+                "assets/lottie/clock.json",
+                fit: BoxFit.scaleDown,
+                width: 150,
+              ),
+              const SizedBox(height: 20),
+              Text(
+                alarmSettings.notificationSettings.body,
+                style: AppTextStyles.large(context),
+              ),
+              const Spacer(),
+              GestureDetector(
+                onTap: () async {
+                  await context.read<AlarmCubit>().stopAlarm(alarmSettings.id);
+                  if (context.mounted) {
+                    context.pop();
+                  }
+                },
+                child: const StopButton(),
+              ),
+              const Spacer(),
+              SnoozeButton(
+                onSnoozePressed: (snoozeMinutes) async {
+                  await context.read<AlarmCubit>().snoozeAlarm(
+                    alarmSettings: alarmSettings,
+                    snoozeMinutes: snoozeMinutes,
+                  );
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          "Alarm snoozed for $snoozeMinutes minutes",
                         ),
-                      );
-                      context.pop();
-                    }
-                  },
-                ),
-                const SizedBox(height: 20),
-              ],
-            ),
+                      ),
+                    );
+                    context.pop();
+                  }
+                },
+              ),
+              const SizedBox(height: 20),
+            ],
           ),
         ),
       ),
