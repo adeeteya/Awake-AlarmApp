@@ -32,6 +32,29 @@ class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
   bool _isFabVisibile = true;
 
+  DateTime _nextOccurrence(AlarmModel alarm) {
+    final now = DateTime.now();
+    for (int i = 0; i < 7; i++) {
+      final candidate = DateTime(
+        now.year,
+        now.month,
+        now.day,
+        alarm.timeOfDay.hour,
+        alarm.timeOfDay.minute,
+      ).add(Duration(days: i));
+      if (!alarm.days.contains(candidate.weekday)) continue;
+      if (i == 0 && candidate.isBefore(now)) continue;
+      return candidate;
+    }
+    return DateTime(
+      now.year,
+      now.month,
+      now.day,
+      alarm.timeOfDay.hour,
+      alarm.timeOfDay.minute,
+    );
+  }
+
   @override
   void initState() {
     super.initState();
@@ -234,6 +257,11 @@ class _HomeState extends State<Home> {
                                 ),
                               );
                             } else {
+                              final sortedAlarms = [...alarms]..sort(
+                                (a, b) => _nextOccurrence(
+                                  a,
+                                ).compareTo(_nextOccurrence(b)),
+                              );
                               return ListView(
                                 controller: scrollController,
                                 padding: const EdgeInsets.symmetric(
@@ -270,31 +298,33 @@ class _HomeState extends State<Home> {
                                   ...[
                                     for (
                                       int index = 0;
-                                      index < alarms.length;
+                                      index < sortedAlarms.length;
                                       index++
                                     )
                                       AlarmTile(
-                                        key: ValueKey(alarms[index].timeOfDay),
-                                        alarmModel: alarms[index],
+                                        key: ValueKey(
+                                          sortedAlarms[index].timeOfDay,
+                                        ),
+                                        alarmModel: sortedAlarms[index],
                                         onEnabledChanged:
                                             (v) => context
                                                 .read<AlarmCubit>()
                                                 .toggleAlarmEnabled(
-                                                  alarms[index].timeOfDay,
+                                                  sortedAlarms[index].timeOfDay,
                                                   v,
                                                 ),
                                         onDaysChanged:
                                             (days) => context
                                                 .read<AlarmCubit>()
                                                 .updateAlarmDays(
-                                                  alarms[index].timeOfDay,
+                                                  sortedAlarms[index].timeOfDay,
                                                   days,
                                                 ),
                                         onDelete:
                                             () => context
                                                 .read<AlarmCubit>()
                                                 .deleteAlarmModel(
-                                                  alarms[index],
+                                                  sortedAlarms[index],
                                                 ),
                                       ),
                                   ],
