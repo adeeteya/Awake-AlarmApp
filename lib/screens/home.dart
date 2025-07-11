@@ -30,7 +30,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   late final StreamSubscription<AlarmSet> _ringSubscription;
-  bool _isFabVisibile = true;
+  bool _isFabVisible = true;
 
   DateTime _nextOccurrence(AlarmModel alarm) {
     final now = DateTime.now();
@@ -92,7 +92,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton:
-          _isFabVisibile
+          _isFabVisible
               ? IconButton(
                 tooltip: "Add Alarm",
                 onPressed: () => context.goNamed(AppRoute.addAlarm.name),
@@ -200,9 +200,9 @@ class _HomeState extends State<Home> {
                   final ScrollDirection direction = notification.direction;
                   setState(() {
                     if (direction == ScrollDirection.reverse) {
-                      _isFabVisibile = false;
+                      _isFabVisible = false;
                     } else if (direction == ScrollDirection.forward) {
-                      _isFabVisibile = true;
+                      _isFabVisible = true;
                     }
                   });
                   return true;
