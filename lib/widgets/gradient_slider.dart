@@ -1,3 +1,4 @@
+import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow_update/flutter_inset_box_shadow_update.dart';
@@ -40,7 +41,7 @@ class _GradientSliderState extends State<GradientSlider> {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.brightnessOf(context) == Brightness.dark;
+    final isDark = context.isDarkMode;
 
     return LayoutBuilder(
       builder: (context, constraints) {

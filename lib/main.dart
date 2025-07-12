@@ -7,7 +7,9 @@ import 'package:awake/services/custom_sounds_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/services/shared_prefs_with_cache.dart';
 import 'package:awake/theme/app_theme.dart';
+import 'package:device_preview_plus/device_preview_plus.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
@@ -18,7 +20,11 @@ void main() async {
   await AlarmDatabase.initialize();
   await Alarm.init();
 
-  runApp(const MyApp());
+  if (appFlavor == "development") {
+    runApp(DevicePreview(builder: (context) => const MyApp()));
+  } else {
+    runApp(const MyApp());
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -28,6 +34,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool previewEnabled = DevicePreview.isEnabled(context);
+
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => AlarmCubit()),
@@ -51,6 +59,8 @@ class MyApp extends StatelessWidget {
               GlobalCupertinoLocalizations.delegate,
             ],
             supportedLocales: AppLocalizations.supportedLocales,
+            locale: previewEnabled ? DevicePreview.locale(context) : null,
+            builder: previewEnabled ? DevicePreview.appBuilder : null,
           );
         },
       ),
