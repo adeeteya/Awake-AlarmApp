@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:alarm/alarm.dart';
 import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
@@ -83,7 +84,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
         context.pop();
       }
     } else {
-      setState(() => _error = 'Wrong answer');
+      setState(() => _error = AppLocalizations.of(context)!.wrongAnswer);
     }
   }
 
@@ -135,7 +136,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Solve: $_a $symbol $_b = ',
+                    AppLocalizations.of(context)!.solve(_a, _b, symbol),
                     style: AppTextStyles.large(context),
                   ),
                   const SizedBox(width: 5),
@@ -193,7 +194,10 @@ class _NumberPad extends StatelessWidget {
       return Padding(
         padding: const EdgeInsets.all(6),
         child: IconButton(
-          tooltip: label == 'DEL' ? 'Delete' : 'Number $label',
+          tooltip:
+              label == 'DEL'
+                  ? AppLocalizations.of(context)!.deleteLabel
+                  : AppLocalizations.of(context)!.numberLabel(label),
           style: IconButton.styleFrom(
             backgroundColor:
                 isDark ? AppColors.darkScaffold1 : AppColors.lightContainer1,

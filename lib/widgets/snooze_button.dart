@@ -1,3 +1,4 @@
+import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/minus_button.dart';
@@ -55,7 +56,7 @@ class _SnoozeButtonState extends State<SnoozeButton> {
                           : Colors.black.withValues(alpha: 0.04),
                 ),
                 child: Text(
-                  'Snooze: $snoozeMinutes min',
+                  AppLocalizations.of(context)!.snoozeLabel(snoozeMinutes),
                   style: AppTextStyles.body(context).copyWith(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,

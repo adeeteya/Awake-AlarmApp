@@ -1,5 +1,6 @@
 import 'package:alarm/alarm.dart';
 import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
@@ -66,7 +67,9 @@ class AlarmRingingScreen extends StatelessWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
-                          "Alarm snoozed for $snoozeMinutes minutes",
+                          AppLocalizations.of(
+                            context,
+                          )!.alarmSnoozed(snoozeMinutes),
                         ),
                       ),
                     );

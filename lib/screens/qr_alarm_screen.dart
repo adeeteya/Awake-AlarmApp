@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:alarm/alarm.dart';
 import 'package:awake/constants.dart';
 import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
@@ -52,9 +53,7 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
       }
     } else if (value != null && value.isNotEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Wrong QR Code. Please scan the correct one.'),
-        ),
+        SnackBar(content: Text(AppLocalizations.of(context)!.wrongQr)),
       );
     }
   }
@@ -92,7 +91,10 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              Text('Scan the QR Code', style: AppTextStyles.large(context)),
+              Text(
+                AppLocalizations.of(context)!.scanQrInstruction,
+                style: AppTextStyles.large(context),
+              ),
               const Spacer(),
             ],
           ),

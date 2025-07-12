@@ -1,4 +1,5 @@
 import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
@@ -24,15 +25,6 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   final TextEditingController _titleController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   late Set<int> _selectedDays;
-  final List<String> _dayNames = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
 
   @override
   void initState() {
@@ -103,18 +95,16 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           context: context,
           builder:
               (context) => AlertDialog(
-                title: const Text('Delete Alarm'),
-                content: const Text(
-                  'Are you sure you want to delete this alarm?',
-                ),
+                title: Text(AppLocalizations.of(context)!.deleteAlarm),
+                content: Text(AppLocalizations.of(context)!.deleteAlarmPrompt),
                 actions: [
                   TextButton(
                     onPressed: () => context.pop(false),
-                    child: const Text('Cancel'),
+                    child: Text(AppLocalizations.of(context)!.cancel),
                   ),
                   TextButton(
                     onPressed: () => context.pop(true),
-                    child: const Text('Delete'),
+                    child: Text(AppLocalizations.of(context)!.delete),
                   ),
                 ],
               ),
@@ -130,12 +120,22 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
 
   Widget _daySelector(bool isDark) {
     const dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'Su'];
+    final localizations = AppLocalizations.of(context)!;
+    final dayNames = [
+      localizations.monday,
+      localizations.tuesday,
+      localizations.wednesday,
+      localizations.thursday,
+      localizations.friday,
+      localizations.saturday,
+      localizations.sunday,
+    ];
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         for (int i = 0; i < dayLabels.length; i++)
           IconButton(
-            tooltip: _dayNames[i],
+            tooltip: dayNames[i],
             onPressed: () => _toggleDay(i + 1),
             style: IconButton.styleFrom(
               backgroundColor:
@@ -177,7 +177,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           backgroundColor:
               isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
           leading: IconButton(
-            tooltip: "Back",
+            tooltip: AppLocalizations.of(context)!.back,
             onPressed: () => context.pop(),
             style: IconButton.styleFrom(
               foregroundColor:
@@ -192,7 +192,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                   ? null
                   : [
                     IconButton(
-                      tooltip: 'Delete',
+                      tooltip: AppLocalizations.of(context)!.delete,
                       onPressed: _deleteAlarm,
                       style: IconButton.styleFrom(
                         foregroundColor:
@@ -204,7 +204,11 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     ),
                   ],
           centerTitle: true,
-          title: Text(widget.alarmModel == null ? 'Add Alarm' : 'Edit Alarm'),
+          title: Text(
+            widget.alarmModel == null
+                ? AppLocalizations.of(context)!.addAlarm
+                : AppLocalizations.of(context)!.editAlarm,
+          ),
           titleTextStyle: AppTextStyles.heading(context),
         ),
         body: DecoratedBox(
@@ -247,15 +251,17 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                       TextField(
                         controller: _titleController,
                         focusNode: _focusNode,
-                        decoration: const InputDecoration(labelText: 'Title'),
+                        decoration: InputDecoration(
+                          labelText: AppLocalizations.of(context)!.titleLabel,
+                        ),
                         onSubmitted: (_) => _addAlarm(),
                       ),
                       const SizedBox(height: 16),
                       IconButton(
                         tooltip:
                             widget.alarmModel == null
-                                ? 'Add Alarm'
-                                : 'Edit Alarm',
+                                ? AppLocalizations.of(context)!.addAlarm
+                                : AppLocalizations.of(context)!.editAlarm,
                         onPressed: _addAlarm,
                         icon: const AddButton(),
                       ),

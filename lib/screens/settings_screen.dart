@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_permissions.dart';
@@ -49,9 +50,11 @@ class SettingsScreen extends StatelessWidget {
       bytes: byteData.buffer.asUint8List(),
     );
     if (context.mounted && saveLocation != null) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('File saved to $saveLocation')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.fileSaved(saveLocation)),
+        ),
+      );
     }
   }
 
@@ -64,7 +67,7 @@ class SettingsScreen extends StatelessWidget {
         backgroundColor:
             isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
         leading: IconButton(
-          tooltip: "Back",
+          tooltip: AppLocalizations.of(context)!.back,
           onPressed: () => context.pop(),
           style: IconButton.styleFrom(
             foregroundColor:
@@ -75,7 +78,7 @@ class SettingsScreen extends StatelessWidget {
           icon: const Icon(Icons.arrow_back),
         ),
         centerTitle: true,
-        title: const Text('Settings'),
+        title: Text(AppLocalizations.of(context)!.settings),
         titleTextStyle: AppTextStyles.heading(context),
       ),
       body: DecoratedBox(
@@ -111,7 +114,7 @@ class SettingsScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(
-                        '24-Hour Format',
+                        AppLocalizations.of(context)!.format24h,
                         style: AppTextStyles.body(
                           context,
                         ).copyWith(color: color),
@@ -139,7 +142,7 @@ class SettingsScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(
-                        'Vibration',
+                        AppLocalizations.of(context)!.vibration,
                         style: AppTextStyles.body(
                           context,
                         ).copyWith(color: color),
@@ -172,7 +175,7 @@ class SettingsScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(
-                        'Gradual Fade In',
+                        AppLocalizations.of(context)!.fadeIn,
                         style: AppTextStyles.body(
                           context,
                         ).copyWith(color: color),
@@ -198,7 +201,7 @@ class SettingsScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(
-                        'Alarm Screen',
+                        AppLocalizations.of(context)!.alarmScreen,
                         style: AppTextStyles.body(
                           context,
                         ).copyWith(color: color),
@@ -213,26 +216,36 @@ class SettingsScreen extends StatelessWidget {
                               isDark
                                   ? AppColors.darkScaffold1
                                   : AppColors.lightScaffold1,
-                          items: const [
+                          items: [
                             DropdownMenuItem(
                               value: AlarmScreenType.ringing,
-                              child: Text('Default'),
+                              child: Text(
+                                AppLocalizations.of(context)!.defaultOption,
+                              ),
                             ),
                             DropdownMenuItem(
                               value: AlarmScreenType.math,
-                              child: Text('Math Challenge'),
+                              child: Text(
+                                AppLocalizations.of(context)!.mathChallenge,
+                              ),
                             ),
                             DropdownMenuItem(
                               value: AlarmScreenType.shake,
-                              child: Text('Shake to Stop'),
+                              child: Text(
+                                AppLocalizations.of(context)!.shakeToStop,
+                              ),
                             ),
                             DropdownMenuItem(
                               value: AlarmScreenType.tap,
-                              child: Text('Tap Challenge'),
+                              child: Text(
+                                AppLocalizations.of(context)!.tapChallenge,
+                              ),
                             ),
                             DropdownMenuItem(
                               value: AlarmScreenType.qr,
-                              child: Text('QR Code Scan'),
+                              child: Text(
+                                AppLocalizations.of(context)!.qrCodeScan,
+                              ),
                             ),
                           ],
                           onChanged: (v) async {
@@ -243,9 +256,11 @@ class SettingsScreen extends StatelessWidget {
                               if (!granted) {
                                 if (context.mounted) {
                                   ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
+                                    SnackBar(
                                       content: Text(
-                                        'Camera permission is required for QR Code Scan',
+                                        AppLocalizations.of(
+                                          context,
+                                        )!.cameraPermissionRequired,
                                       ),
                                     ),
                                   );
@@ -272,7 +287,7 @@ class SettingsScreen extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          'Download QR Code',
+                          AppLocalizations.of(context)!.downloadQr,
                           style: AppTextStyles.body(
                             context,
                           ).copyWith(color: color),
@@ -285,9 +300,11 @@ class SettingsScreen extends StatelessWidget {
                 BlocBuilder<CustomSoundsCubit, List<String>>(
                   builder: (context, files) {
                     final items = <DropdownMenuItem<String>>[
-                      const DropdownMenuItem(
+                      DropdownMenuItem(
                         value: 'assets/alarm_ringtone.mp3',
-                        child: Text('Default'),
+                        child: Text(
+                          AppLocalizations.of(context)!.defaultOption,
+                        ),
                       ),
                       ...files.map(
                         (e) => DropdownMenuItem(
@@ -295,9 +312,9 @@ class SettingsScreen extends StatelessWidget {
                           child: Text(basename(e)),
                         ),
                       ),
-                      const DropdownMenuItem(
+                      DropdownMenuItem(
                         value: '__add__',
-                        child: Text('Add Sound'),
+                        child: Text(AppLocalizations.of(context)!.addSound),
                       ),
                     ];
                     final values =
@@ -326,7 +343,7 @@ class SettingsScreen extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(
-                            'Alarm Sound',
+                            AppLocalizations.of(context)!.alarmSound,
                             style: AppTextStyles.body(
                               context,
                             ).copyWith(color: color),
@@ -379,7 +396,7 @@ class SettingsScreen extends StatelessWidget {
                           child: Row(
                             children: [
                               Text(
-                                'Clear Custom Sounds',
+                                AppLocalizations.of(context)!.clearCustomSounds,
                                 style: AppTextStyles.body(
                                   context,
                                 ).copyWith(color: color),
