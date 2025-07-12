@@ -83,7 +83,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
         context.pop();
       }
     } else {
-      setState(() => _error = 'Wrong answer');
+      setState(() => _error = context.localization.wrongAnswer);
     }
   }
 
@@ -135,7 +135,7 @@ class _MathAlarmScreenState extends State<MathAlarmScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Solve: $_a $symbol $_b = ',
+                    context.localization.solve(_a, _b, symbol),
                     style: AppTextStyles.large(context),
                   ),
                   const SizedBox(width: 5),
@@ -193,7 +193,10 @@ class _NumberPad extends StatelessWidget {
       return Padding(
         padding: const EdgeInsets.all(6),
         child: IconButton(
-          tooltip: label == 'DEL' ? 'Delete' : 'Number $label',
+          tooltip:
+              label == 'DEL'
+                  ? context.localization.deleteLabel
+                  : context.localization.numberLabel(label),
           style: IconButton.styleFrom(
             backgroundColor:
                 isDark ? AppColors.darkScaffold1 : AppColors.lightContainer1,

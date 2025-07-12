@@ -14,7 +14,10 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^9.1.1
   flutter_inset_box_shadow_update: ^0.0.1
+  flutter_localizations:
+    sdk: flutter
   go_router: ^16.0.0
+  intl: ^0.20.2
   lottie: ^3.3.1
   mobile_scanner: ^7.0.1
   path: ^1.9.1
@@ -31,6 +34,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
 
   assets:
     - assets/

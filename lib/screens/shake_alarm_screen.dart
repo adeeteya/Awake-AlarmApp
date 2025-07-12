@@ -92,10 +92,16 @@ class _ShakeAlarmScreenState extends State<ShakeAlarmScreen> {
                   style: AppTextStyles.large(context),
                 ),
                 const SizedBox(height: 20),
-                Text('Shake the phone!', style: AppTextStyles.large(context)),
+                Text(
+                  context.localization.shakePhone,
+                  style: AppTextStyles.large(context),
+                ),
                 const SizedBox(height: 20),
                 Text(
-                  'Shakes: $_shakeCount / $_requiredShakes',
+                  context.localization.shakesCount(
+                    _shakeCount,
+                    _requiredShakes,
+                  ),
                   style: AppTextStyles.large(context),
                 ),
                 const SizedBox(height: 20),

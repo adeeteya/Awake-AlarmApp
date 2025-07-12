@@ -94,7 +94,7 @@ class _HomeState extends State<Home> {
       floatingActionButton:
           _isFabVisible
               ? IconButton(
-                tooltip: "Add Alarm",
+                tooltip: context.localization.addAlarm,
                 onPressed: () => context.goNamed(AppRoute.addAlarm.name),
                 icon: const AddButton(),
               )
@@ -250,7 +250,7 @@ class _HomeState extends State<Home> {
                                     ),
                                     const SizedBox(height: 20),
                                     Text(
-                                      "No Alarms Added Yet",
+                                      context.localization.noAlarms,
                                       style: AppTextStyles.heading(context),
                                     ),
                                   ],
@@ -273,13 +273,13 @@ class _HomeState extends State<Home> {
                                     children: [
                                       const SizedBox(width: 15),
                                       Text(
-                                        "Alarms",
+                                        context.localization.alarms,
                                         style: AppTextStyles.heading(context),
                                       ),
                                       const Spacer(),
                                       IconButton(
                                         icon: const Icon(Icons.settings),
-                                        tooltip: "Settings",
+                                        tooltip: context.localization.settings,
                                         onPressed:
                                             () => context.goNamed(
                                               AppRoute.settings.name,

@@ -24,15 +24,6 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   final TextEditingController _titleController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   late Set<int> _selectedDays;
-  final List<String> _dayNames = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
 
   @override
   void initState() {
@@ -103,18 +94,16 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           context: context,
           builder:
               (context) => AlertDialog(
-                title: const Text('Delete Alarm'),
-                content: const Text(
-                  'Are you sure you want to delete this alarm?',
-                ),
+                title: Text(context.localization.deleteAlarm),
+                content: Text(context.localization.deleteAlarmPrompt),
                 actions: [
                   TextButton(
                     onPressed: () => context.pop(false),
-                    child: const Text('Cancel'),
+                    child: Text(context.localization.cancel),
                   ),
                   TextButton(
                     onPressed: () => context.pop(true),
-                    child: const Text('Delete'),
+                    child: Text(context.localization.delete),
                   ),
                 ],
               ),
@@ -130,12 +119,22 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
 
   Widget _daySelector(bool isDark) {
     const dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'Su'];
+    final localizations = context.localization;
+    final dayNames = [
+      localizations.monday,
+      localizations.tuesday,
+      localizations.wednesday,
+      localizations.thursday,
+      localizations.friday,
+      localizations.saturday,
+      localizations.sunday,
+    ];
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         for (int i = 0; i < dayLabels.length; i++)
           IconButton(
-            tooltip: _dayNames[i],
+            tooltip: dayNames[i],
             onPressed: () => _toggleDay(i + 1),
             style: IconButton.styleFrom(
               backgroundColor:
@@ -177,7 +176,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           backgroundColor:
               isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
           leading: IconButton(
-            tooltip: "Back",
+            tooltip: context.localization.back,
             onPressed: () => context.pop(),
             style: IconButton.styleFrom(
               foregroundColor:
@@ -192,7 +191,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                   ? null
                   : [
                     IconButton(
-                      tooltip: 'Delete',
+                      tooltip: context.localization.delete,
                       onPressed: _deleteAlarm,
                       style: IconButton.styleFrom(
                         foregroundColor:
@@ -204,7 +203,11 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     ),
                   ],
           centerTitle: true,
-          title: Text(widget.alarmModel == null ? 'Add Alarm' : 'Edit Alarm'),
+          title: Text(
+            widget.alarmModel == null
+                ? context.localization.addAlarm
+                : context.localization.editAlarm,
+          ),
           titleTextStyle: AppTextStyles.heading(context),
         ),
         body: DecoratedBox(
@@ -251,15 +254,17 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                         child: TextField(
                           controller: _titleController,
                           focusNode: _focusNode,
-                          decoration: const InputDecoration(labelText: 'Title'),
+                          decoration: InputDecoration(
+                            labelText: context.localization.titleLabel,
+                          ),
                           onSubmitted: (_) => _addAlarm(),
                         ),
                       ),
                       IconButton(
                         tooltip:
                             widget.alarmModel == null
-                                ? 'Add Alarm'
-                                : 'Edit Alarm',
+                                ? context.localization.addAlarm
+                                : context.localization.editAlarm,
                         onPressed: _addAlarm,
                         icon: const AddButton(),
                       ),

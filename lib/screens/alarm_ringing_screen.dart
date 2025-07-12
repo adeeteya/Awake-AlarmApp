@@ -66,7 +66,7 @@ class AlarmRingingScreen extends StatelessWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
-                          "Alarm snoozed for $snoozeMinutes minutes",
+                          context.localization.alarmSnoozed(snoozeMinutes),
                         ),
                       ),
                     );

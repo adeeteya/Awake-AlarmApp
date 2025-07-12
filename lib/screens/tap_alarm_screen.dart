@@ -59,10 +59,13 @@ class _TapAlarmScreenState extends State<TapAlarmScreen> {
                   style: AppTextStyles.large(context),
                 ),
                 const SizedBox(height: 20),
-                Text('Tap the screen!', style: AppTextStyles.large(context)),
+                Text(
+                  context.localization.tapScreen,
+                  style: AppTextStyles.large(context),
+                ),
                 const SizedBox(height: 20),
                 Text(
-                  'Taps: $_tapCount / $_requiredTaps',
+                  context.localization.tapsCount(_tapCount, _requiredTaps),
                   style: AppTextStyles.large(context),
                 ),
                 const SizedBox(height: 20),

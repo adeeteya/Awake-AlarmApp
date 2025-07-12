@@ -1,5 +1,7 @@
 import 'package:alarm/alarm.dart';
 import 'package:awake/app_router.dart';
+import 'package:awake/extensions/context_extensions.dart';
+import 'package:awake/l10n/generated/app_localizations.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/alarm_database.dart';
 import 'package:awake/services/custom_sounds_cubit.dart';
@@ -10,6 +12,7 @@ import 'package:device_preview_plus/device_preview_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
 
 void main() async {
@@ -44,11 +47,18 @@ class MyApp extends StatelessWidget {
         builder: (context, state) {
           return MaterialApp.router(
             debugShowCheckedModeBanner: false,
-            title: 'Awake- The Alarm Clock',
+            onGenerateTitle: (context) => context.localization.appTitle,
             themeMode: state.mode,
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
             routerConfig: _router,
+            localizationsDelegates: const [
+              AppLocalizations.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: AppLocalizations.supportedLocales,
             locale: previewEnabled ? DevicePreview.locale(context) : null,
             builder: previewEnabled ? DevicePreview.appBuilder : null,
           );

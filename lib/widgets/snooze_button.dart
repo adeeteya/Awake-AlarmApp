@@ -56,7 +56,7 @@ class _SnoozeButtonState extends State<SnoozeButton> {
                           : Colors.black.withValues(alpha: 0.04),
                 ),
                 child: Text(
-                  'Snooze: $snoozeMinutes min',
+                  context.localization.snoozeLabel(snoozeMinutes),
                   style: AppTextStyles.body(context).copyWith(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,

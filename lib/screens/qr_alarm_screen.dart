@@ -51,11 +51,9 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
         context.pop();
       }
     } else if (value != null && value.isNotEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Wrong QR Code. Please scan the correct one.'),
-        ),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(context.localization.wrongQr)));
     }
   }
 
@@ -92,7 +90,10 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              Text('Scan the QR Code', style: AppTextStyles.large(context)),
+              Text(
+                context.localization.scanQrInstruction,
+                style: AppTextStyles.large(context),
+              ),
               const Spacer(),
             ],
           ),
