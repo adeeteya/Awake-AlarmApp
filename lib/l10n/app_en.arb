@@ -57,8 +57,7 @@
     "description": "A message to show the number of minutes the alarm was snoozed",
     "placeholders": {
       "minutes": {
-        "type": "num",
-        "format": "compact"
+        "type": "num"
       }
     }
   },
@@ -79,12 +78,10 @@
     "description": "To show the number of shakes remaining to stop the alarm",
     "placeholders": {
       "count": {
-        "type": "num",
-        "format": "compact"
+        "type": "num"
       },
       "required": {
-        "type": "num",
-        "format": "compact"
+        "type": "num"
       }
     }
   },
@@ -97,12 +94,10 @@
     "description": "To show the number of taps remaining to stop the alarm",
     "placeholders": {
       "count": {
-        "type": "num",
-        "format": "compact"
+        "type": "num"
       },
       "required": {
-        "type": "num",
-        "format": "compact"
+        "type": "num"
       }
     }
   },
@@ -176,7 +171,7 @@
     "description": "A message to show the number of minutes for snoozing the alarm",
     "placeholders": {
       "minutes": {
-        "type": "String"
+        "type": "num"
       }
     }
   },
@@ -185,12 +180,10 @@
     "description": "To show the math challenge equation",
     "placeholders": {
       "a": {
-        "type": "num",
-        "format": "compact"
+        "type": "num"
       },
       "b": {
-        "type": "num",
-        "format": "compact"
+        "type": "num"
       },
       "symbol": {
         "type": "String"
