@@ -83,6 +83,7 @@ class AlarmCubit extends Cubit<List<AlarmModel>> {
         assetAudioPath: audioPath,
         vibrate: vibrate,
         volumeSettings: volumeSettings,
+        androidStopAlarmOnTermination: false,
         notificationSettings: NotificationSettings(
           title: 'Alarm',
           body: body,

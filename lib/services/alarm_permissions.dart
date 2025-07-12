@@ -1,4 +1,5 @@
 import 'package:alarm/alarm.dart';
+import 'package:disable_battery_optimization/disable_battery_optimization.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class AlarmPermissions {
@@ -23,5 +24,24 @@ class AlarmPermissions {
       status = await Permission.camera.request();
     }
     return status.isGranted;
+  }
+
+  static Future<void> checkAutoStartPermission() async {
+    final isAutoStartEnabled =
+        await DisableBatteryOptimization.isAutoStartEnabled;
+    if (isAutoStartEnabled == false) {
+      await DisableBatteryOptimization.showEnableAutoStartSettings(
+        "Enable Auto Start",
+        "Follow the steps and enable the auto start of this app to show alarms",
+      );
+    }
+  }
+
+  static Future<void> checkBatteryOptimization() async {
+    final isBatteryOptimizationDisabled =
+        await DisableBatteryOptimization.isBatteryOptimizationDisabled;
+    if (isBatteryOptimizationDisabled == false) {
+      await DisableBatteryOptimization.showDisableBatteryOptimizationSettings();
+    }
   }
 }

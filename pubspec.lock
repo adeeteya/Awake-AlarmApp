@@ -97,6 +97,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.4"
+  disable_battery_optimization:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: fe575d9ae2c0444341296d77f8187ee9942c13fa
+      url: "https://github.com/adeeteya/Disable-Battery-Optimizations.git"
+    source: git
+    version: "1.1.1"
   equatable:
     dependency: transitive
     description:

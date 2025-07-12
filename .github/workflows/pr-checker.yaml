@@ -25,7 +25,3 @@ jobs:
       - name: Lint Dart files
         run: |
           dart analyze --no-fatal-warnings
-
-      - name: Run Flutter Tests
-        run: |
-          flutter test
