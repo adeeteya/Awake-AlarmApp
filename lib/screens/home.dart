@@ -5,7 +5,6 @@ import 'package:alarm/alarm.dart';
 import 'package:alarm/utils/alarm_set.dart';
 import 'package:awake/app_router.dart';
 import 'package:awake/extensions/context_extensions.dart';
-import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/models/alarm_screen_type.dart';
 import 'package:awake/services/alarm_cubit.dart';
@@ -95,7 +94,7 @@ class _HomeState extends State<Home> {
       floatingActionButton:
           _isFabVisible
               ? IconButton(
-                tooltip: AppLocalizations.of(context)!.addAlarm,
+                tooltip: context.localization.addAlarm,
                 onPressed: () => context.goNamed(AppRoute.addAlarm.name),
                 icon: const AddButton(),
               )
@@ -251,7 +250,7 @@ class _HomeState extends State<Home> {
                                     ),
                                     const SizedBox(height: 20),
                                     Text(
-                                      AppLocalizations.of(context)!.noAlarms,
+                                      context.localization.noAlarms,
                                       style: AppTextStyles.heading(context),
                                     ),
                                   ],
@@ -274,16 +273,13 @@ class _HomeState extends State<Home> {
                                     children: [
                                       const SizedBox(width: 15),
                                       Text(
-                                        AppLocalizations.of(context)!.alarms,
+                                        context.localization.alarms,
                                         style: AppTextStyles.heading(context),
                                       ),
                                       const Spacer(),
                                       IconButton(
                                         icon: const Icon(Icons.settings),
-                                        tooltip:
-                                            AppLocalizations.of(
-                                              context,
-                                            )!.settings,
+                                        tooltip: context.localization.settings,
                                         onPressed:
                                             () => context.goNamed(
                                               AppRoute.settings.name,

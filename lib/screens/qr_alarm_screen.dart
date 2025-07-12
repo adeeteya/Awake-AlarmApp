@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:alarm/alarm.dart';
 import 'package:awake/constants.dart';
 import 'package:awake/extensions/context_extensions.dart';
-import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:awake/theme/app_text_styles.dart';
@@ -52,9 +51,9 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
         context.pop();
       }
     } else if (value != null && value.isNotEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context)!.wrongQr)),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(context.localization.wrongQr)));
     }
   }
 
@@ -92,7 +91,7 @@ class _QrAlarmScreenState extends State<QrAlarmScreen> {
               ),
               const SizedBox(height: 20),
               Text(
-                AppLocalizations.of(context)!.scanQrInstruction,
+                context.localization.scanQrInstruction,
                 style: AppTextStyles.large(context),
               ),
               const Spacer(),

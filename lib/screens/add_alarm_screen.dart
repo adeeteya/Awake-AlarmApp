@@ -1,5 +1,4 @@
 import 'package:awake/extensions/context_extensions.dart';
-import 'package:awake/l10n/app_localizations.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/alarm_cubit.dart';
 import 'package:awake/services/settings_cubit.dart';
@@ -95,16 +94,16 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           context: context,
           builder:
               (context) => AlertDialog(
-                title: Text(AppLocalizations.of(context)!.deleteAlarm),
-                content: Text(AppLocalizations.of(context)!.deleteAlarmPrompt),
+                title: Text(context.localization.deleteAlarm),
+                content: Text(context.localization.deleteAlarmPrompt),
                 actions: [
                   TextButton(
                     onPressed: () => context.pop(false),
-                    child: Text(AppLocalizations.of(context)!.cancel),
+                    child: Text(context.localization.cancel),
                   ),
                   TextButton(
                     onPressed: () => context.pop(true),
-                    child: Text(AppLocalizations.of(context)!.delete),
+                    child: Text(context.localization.delete),
                   ),
                 ],
               ),
@@ -120,7 +119,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
 
   Widget _daySelector(bool isDark) {
     const dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'Su'];
-    final localizations = AppLocalizations.of(context)!;
+    final localizations = context.localization;
     final dayNames = [
       localizations.monday,
       localizations.tuesday,
@@ -177,7 +176,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           backgroundColor:
               isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
           leading: IconButton(
-            tooltip: AppLocalizations.of(context)!.back,
+            tooltip: context.localization.back,
             onPressed: () => context.pop(),
             style: IconButton.styleFrom(
               foregroundColor:
@@ -192,7 +191,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                   ? null
                   : [
                     IconButton(
-                      tooltip: AppLocalizations.of(context)!.delete,
+                      tooltip: context.localization.delete,
                       onPressed: _deleteAlarm,
                       style: IconButton.styleFrom(
                         foregroundColor:
@@ -206,8 +205,8 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
           centerTitle: true,
           title: Text(
             widget.alarmModel == null
-                ? AppLocalizations.of(context)!.addAlarm
-                : AppLocalizations.of(context)!.editAlarm,
+                ? context.localization.addAlarm
+                : context.localization.editAlarm,
           ),
           titleTextStyle: AppTextStyles.heading(context),
         ),
@@ -255,15 +254,17 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                         child: TextField(
                           controller: _titleController,
                           focusNode: _focusNode,
-                          decoration: InputDecoration(labelText: AppLocalizations.of(context)!.titleLabel),
+                          decoration: InputDecoration(
+                            labelText: context.localization.titleLabel,
+                          ),
                           onSubmitted: (_) => _addAlarm(),
                         ),
                       ),
                       IconButton(
                         tooltip:
                             widget.alarmModel == null
-                                ? AppLocalizations.of(context)!.addAlarm
-                                : AppLocalizations.of(context)!.editAlarm,
+                                ? context.localization.addAlarm
+                                : context.localization.editAlarm,
                         onPressed: _addAlarm,
                         icon: const AddButton(),
                       ),
