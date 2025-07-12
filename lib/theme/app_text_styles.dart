@@ -18,7 +18,7 @@ class AppTextStyles {
   ).copyWith(fontSize: 18, fontWeight: FontWeight.w500, letterSpacing: 0.03);
 
   static TextStyle bigTime(BuildContext context) => body(context).copyWith(
-    fontSize: 34,
+    fontSize: 30,
     fontWeight: FontWeight.w500,
     fontFeatures: const [FontFeature.tabularFigures()],
   );
