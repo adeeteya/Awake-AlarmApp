@@ -27,12 +27,21 @@ class AlarmPermissions {
   }
 
   static Future<void> checkAutoStartPermission() async {
-    final isAvailable = await DisableBatteryOptimization.isAutoStartEnabled;
-    if (isAvailable ?? false) {
+    final isAutoStartEnabled =
+        await DisableBatteryOptimization.isAutoStartEnabled;
+    if (isAutoStartEnabled == false) {
       await DisableBatteryOptimization.showEnableAutoStartSettings(
         "Enable Auto Start",
         "Follow the steps and enable the auto start of this app to show alarms",
       );
+    }
+  }
+
+  static Future<void> checkBatteryOptimization() async {
+    final isBatteryOptimizationDisabled =
+        await DisableBatteryOptimization.isBatteryOptimizationDisabled;
+    if (isBatteryOptimizationDisabled == false) {
+      await DisableBatteryOptimization.showDisableBatteryOptimizationSettings();
     }
   }
 }
