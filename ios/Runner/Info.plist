@@ -58,5 +58,9 @@
         <array>
         	<string>com.gdelataillade.fetch</string>
         </array>
+        <key>NSCameraUsageDescription</key>
+        <string>This app needs camera access to scan QR codes</string>
+        <key>NSMotionUsageDescription</key>
+        <string>This app requires access to the accelerometer to detect shaking</string>
 	</dict>
 </plist>
