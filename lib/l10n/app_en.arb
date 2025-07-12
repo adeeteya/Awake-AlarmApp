@@ -1,49 +1,241 @@
 {
   "@@locale": "en",
   "appTitle": "Awake- The Alarm Clock",
+  "@appTitle": {
+    "description": "The main title of the app"
+  },
   "addAlarm": "Add Alarm",
+  "@addAlarm": {
+    "description": "Title of the screen to add a new alarm"
+  },
   "editAlarm": "Edit Alarm",
+  "@editAlarm": {
+    "description": "Title of the screen to edit an existing alarm"
+  },
   "noAlarms": "No Alarms Added Yet",
+  "@noAlarms": {
+    "description": "Message shown when there are no alarms in the list"
+  },
   "alarms": "Alarms",
+  "@alarms": {
+    "description": "Title Text on the alarms list screen"
+  },
   "settings": "Settings",
+  "@settings": {
+    "description": "Label for the settings screen"
+  },
   "back": "Back",
+  "@back": {
+    "description": "Back navigation button label"
+  },
   "delete": "Delete",
+  "@delete": {
+    "description": "Button label to delete an item"
+  },
   "deleteAlarm": "Delete Alarm",
+  "@deleteAlarm": {
+    "description": "Tooltip text for deleting an alarm"
+  },
   "deleteAlarmPrompt": "Are you sure you want to delete this alarm?",
+  "@deleteAlarmPrompt": {
+    "description": "Confirmation prompt for deleting an alarm"
+  },
   "cancel": "Cancel",
+  "@cancel": {
+    "description": "Label for cancel button in dialogs or actions"
+  },
   "titleLabel": "Title",
+  "@titleLabel": {
+    "description": "Label for the alarm title input field"
+  },
   "wrongAnswer": "Wrong answer",
+  "@wrongAnswer": {
+    "description": "Message shown when the user gives a wrong answer in a challenge"
+  },
   "alarmSnoozed": "Alarm snoozed for {minutes} minutes",
+  "@alarmSnoozed": {
+    "description": "A message to show the number of minutes the alarm was snoozed",
+    "placeholders": {
+      "minutes": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
   "scanQrInstruction": "Scan the QR Code",
+  "@scanQrInstruction": {
+    "description": "Instruction to scan a QR code as a challenge"
+  },
   "wrongQr": "Wrong QR Code. Please scan the correct one.",
+  "@wrongQr": {
+    "description": "Error message shown when an incorrect QR code is scanned"
+  },
   "shakePhone": "Shake the phone!",
+  "@shakePhone": {
+    "description": "Instruction to shake the phone as part of the challenge"
+  },
   "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "description": "To show the number of shakes remaining to stop the alarm",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      },
+      "required": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
   "tapScreen": "Tap the screen!",
+  "@tapScreen": {
+    "description": "Instruction to tap the screen as part of the challenge"
+  },
   "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "description": "To show the number of taps remaining to stop the alarm",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      },
+      "required": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
   "downloadQr": "Download QR Code",
+  "@downloadQr": {
+    "description": "Button label to download a QR code for the alarm challenge"
+  },
   "fileSaved": "File saved to {path}",
+  "@fileSaved": {
+    "description": "A message to show the path where the QR code file is saved",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
   "cameraPermissionRequired": "Camera permission is required for QR Code Scan",
+  "@cameraPermissionRequired": {
+    "description": "Message shown when camera permission is needed for scanning QR codes"
+  },
   "vibration": "Vibration",
+  "@vibration": {
+    "description": "Toggle or setting for vibration option in alarm"
+  },
   "fadeIn": "Gradual Fade In",
+  "@fadeIn": {
+    "description": "Toggle or setting for alarm sound fade-in effect"
+  },
   "alarmScreen": "Alarm Screen",
+  "@alarmScreen": {
+    "description": "Label for the active alarm screen"
+  },
   "defaultOption": "Default",
+  "@defaultOption": {
+    "description": "Label to indicate default settings or options"
+  },
   "mathChallenge": "Math Challenge",
+  "@mathChallenge": {
+    "description": "Label for the math problem alarm challenge"
+  },
   "shakeToStop": "Shake to Stop",
+  "@shakeToStop": {
+    "description": "Label for shake-to-stop alarm challenge"
+  },
   "tapChallenge": "Tap Challenge",
+  "@tapChallenge": {
+    "description": "Label for tap-the-screen alarm challenge"
+  },
   "qrCodeScan": "QR Code Scan",
+  "@qrCodeScan": {
+    "description": "Label for QR code scanning alarm challenge"
+  },
   "alarmSound": "Alarm Sound",
+  "@alarmSound": {
+    "description": "Label for alarm sound settings"
+  },
   "addSound": "Add Sound",
+  "@addSound": {
+    "description": "Button label to add a new custom sound"
+  },
   "clearCustomSounds": "Clear Custom Sounds",
+  "@clearCustomSounds": {
+    "description": "Button label to remove all custom alarm sounds"
+  },
   "format24h": "24-Hour Format",
+  "@format24h": {
+    "description": "Toggle to switch between 12-hour and 24-hour time format"
+  },
   "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "description": "A message to show the number of minutes for snoozing the alarm",
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
   "solve": "Solve: {a} {symbol} {b} = ",
+  "@solve": {
+    "description": "To show the math challenge equation",
+    "placeholders": {
+      "a": {
+        "type": "num",
+        "format": "compact"
+      },
+      "b": {
+        "type": "num",
+        "format": "compact"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
   "numberLabel": "Number {label}",
+  "@numberLabel": {
+    "description": "A tooltip message for the number label in the math challenge number keyboard",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
   "deleteLabel": "Delete",
+  "@deleteLabel": {
+    "description": "Label for the delete button on the math challenge keyboard"
+  },
   "monday": "Monday",
+  "@monday": {
+    "description": "Day of the week"
+  },
   "tuesday": "Tuesday",
+  "@tuesday": {
+    "description": "Day of the week"
+  },
   "wednesday": "Wednesday",
+  "@wednesday": {
+    "description": "Day of the week"
+  },
   "thursday": "Thursday",
+  "@thursday": {
+    "description": "Day of the week"
+  },
   "friday": "Friday",
+  "@friday": {
+    "description": "Day of the week"
+  },
   "saturday": "Saturday",
-  "sunday": "Sunday"
+  "@saturday": {
+    "description": "Day of the week"
+  },
+  "sunday": "Sunday",
+  "@sunday": {
+    "description": "Day of the week"
+  }
 }
