@@ -14,7 +14,6 @@ env:
 
 jobs:
   build_android:
-    if: ${{ inputs.android }}
     name: Build Android
     runs-on: ubuntu-latest
     timeout-minutes: 40
