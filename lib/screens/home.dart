@@ -59,9 +59,9 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     unawaited(
-      AlarmPermissions.checkNotificationPermission().then(
-        (_) => AlarmPermissions.checkAndroidScheduleExactAlarmPermission(),
-      ),
+      AlarmPermissions.checkNotificationPermission()
+          .then((_) => AlarmPermissions.checkAndroidScheduleExactAlarmPermission())
+          .then((_) => AlarmPermissions.checkAutoStartPermission()),
     );
     _ringSubscription = Alarm.ringing.listen(_ringingAlarmsChanged);
   }
