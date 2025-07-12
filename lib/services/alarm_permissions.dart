@@ -1,4 +1,5 @@
 import 'package:alarm/alarm.dart';
+import 'package:auto_start_flutter/auto_start_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class AlarmPermissions {
@@ -23,5 +24,12 @@ class AlarmPermissions {
       status = await Permission.camera.request();
     }
     return status.isGranted;
+  }
+
+  static Future<void> checkAutoStartPermission() async {
+    final isAvailable = await isAutoStartAvailable;
+    if (isAvailable ?? false) {
+      await getAutoStartPermission();
+    }
   }
 }

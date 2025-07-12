@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   alarm: ^5.1.4
+  auto_start_flutter: ^0.1.4
   device_preview_plus: ^2.4.4
   file_picker: ^10.2.0
   flutter:
