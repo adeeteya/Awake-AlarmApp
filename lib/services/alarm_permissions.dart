@@ -1,5 +1,5 @@
 import 'package:alarm/alarm.dart';
-import 'package:auto_start_flutter/auto_start_flutter.dart';
+import 'package:disable_battery_optimization/disable_battery_optimization.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class AlarmPermissions {
@@ -27,9 +27,12 @@ class AlarmPermissions {
   }
 
   static Future<void> checkAutoStartPermission() async {
-    final isAvailable = await isAutoStartAvailable;
+    final isAvailable = await DisableBatteryOptimization.isAutoStartEnabled;
     if (isAvailable ?? false) {
-      await getAutoStartPermission();
+      await DisableBatteryOptimization.showEnableAutoStartSettings(
+        "Enable Auto Start",
+        "Follow the steps and enable the auto start of this app to show alarms",
+      );
     }
   }
 }
