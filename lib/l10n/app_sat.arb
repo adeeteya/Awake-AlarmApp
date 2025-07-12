@@ -1,0 +1,110 @@
+{
+  "@@locale": "sat",
+  "appTitle": "ᱢᱤᱫ ᱠᱟᱨ-----------",
+  "addAlarm": "ᱥᱮᱞᱮᱫᱤᱭᱟᱹ ᱠᱚ",
+  "editAlarm": "ᱮᱰᱵᱷᱮᱱᱪᱟᱨ",
+  "noAlarms": "ᱡᱮᱞᱠᱟ ᱩᱱᱠᱩ ᱥᱟᱶ ᱡᱚᱲᱟᱣ ᱢᱮᱱᱟᱜᱼᱟ",
+  "alarms": "ᱮᱞᱤᱥ",
+  "settings": "ᱥᱮᱴᱤᱝ",
+  "back": ".",
+  "delete": "ᱥᱤᱰᱤ",
+  "deleteAlarm": "ᱥᱮᱠᱨᱮᱴᱨᱤ",
+  "deleteAlarmPrompt": "ᱪᱮᱫ ᱟᱢ ᱱᱚᱣᱟᱢ ᱞᱟᱹᱭ ᱟᱢᱟ ᱡᱮ ᱟᱢ ᱫᱚ ᱰᱤᱞᱤᱴ ᱮᱢ ᱠᱩᱥᱤᱭᱟᱜ-ᱟ ?",
+  "cancel": "ᱥᱤ",
+  "titleLabel": "ᱟᱨ",
+  "wrongAnswer": "ᱛᱮᱞᱟ ᱮᱢ ᱠᱮᱫᱟᱭ",
+  "alarmSnoozed": "ᱯᱞᱟᱴᱯᱷᱚᱨᱢ ᱞᱟᱹᱜᱤᱫ ᱑᱐ ᱴᱤᱯᱤᱡ ᱞᱟᱹᱜᱤᱫ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ᱠᱭᱩᱟᱨᱥᱤ ᱠᱚᱰ ᱥᱮᱞᱮᱫ ᱢᱮ",
+  "wrongQr": "ᱠᱭᱩᱵᱤᱟᱨᱟᱨ ᱠᱚᱰ᱾ ᱫᱟᱭᱟ ᱠᱟᱛᱮ ᱥᱠᱮᱱ ᱢᱮ ᱾",
+  "shakePhone": "ᱩᱱᱤ ᱯᱷᱚᱱ ᱢᱮ!",
+  "shakesCount": "ᱨᱮᱯ: ___________/",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ᱥᱠᱨᱤᱱ ᱨᱮ ᱴᱮᱯ ᱢᱮ!",
+  "tapsCount": "ᱯᱞᱟᱴᱯᱷᱚᱨᱢ: ᱑-᱑᱐ |",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ᱤᱱᱴᱚᱨᱱᱮᱴ ᱠᱟᱨᱰ",
+  "fileSaved": "$00 ᱞᱟᱹᱜᱤᱫ ᱵᱮᱵᱷᱟᱨ ᱢᱮ",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "CTA ᱞᱟᱹᱜᱤᱫ ᱠᱤᱵᱚᱨᱰ ᱫᱚ ᱢᱤᱫ ᱥᱤᱢᱟᱹ ᱞᱟᱹᱜᱤᱫ ᱥᱚᱞᱦᱟ ᱮᱢᱚᱜ ᱠᱟᱱᱟ",
+  "vibration": "ᱤᱱᱴᱮᱜᱽᱨᱮᱴᱮᱰ",
+  "fadeIn": "ᱜᱽᱨᱟᱱᱰ ᱨᱮᱯᱴᱚᱨ",
+  "alarmScreen": "ᱟᱞᱢᱟᱨᱤ",
+  "defaultOption": "ᱤᱞᱮᱠᱴᱨᱳ",
+  "mathChallenge": "ᱢᱟᱨᱜᱽᱨᱮᱴ",
+  "shakeToStop": "ᱥᱱᱮᱯᱥᱚᱴ ᱞᱟᱹᱜᱤᱫ",
+  "tapChallenge": "ᱯᱞᱟᱴᱯᱷᱚᱨᱢ",
+  "qrCodeScan": "ᱠᱭᱩᱵᱽ ᱠᱚᱰ ᱠᱚᱰ",
+  "alarmSound": "ᱟᱰᱟᱢ",
+  "addSound": "ᱥᱤᱥᱴᱮᱢ ᱥᱮᱞᱮᱫ ᱢᱮ",
+  "clearCustomSounds": "ᱠᱟᱥᱴᱚᱢ ᱠᱟᱥᱴᱚᱢᱟᱭᱤᱡᱽ ᱞᱟᱭᱤᱱ",
+  "format24h": "᱒-᱔ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫ",
+  "snoozeLabel": "_______________________",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ᱱᱳᱴ:_____________________ |",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ᱮᱱᱯᱤ_____",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ᱥᱤᱰᱤ",
+  "monday": "ᱡᱟᱱᱣᱟᱨ |",
+  "tuesday": "ᱵᱟᱯᱞᱟ",
+  "wednesday": "ᱫᱚᱨᱭᱟ ᱫᱚᱨᱮᱭᱟ",
+  "thursday": "ᱥᱩᱨ ᱨᱮ ᱡᱟᱱᱟᱢ ᱞᱮᱱᱟᱭ ᱾",
+  "friday": "ᱢᱤᱫ ᱧᱤᱫᱟ.",
+  "saturday": "ᱚᱦ",
+  "sunday": "ᱛᱦᱟᱨᱤ"
+}

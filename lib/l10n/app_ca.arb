@@ -1,0 +1,110 @@
+{
+  "@@locale": "ca",
+  "appTitle": "Despert: el despertador",
+  "addAlarm": "Afegir alarma",
+  "editAlarm": "Editar alarma",
+  "noAlarms": "Encara no hi ha alarmes afegides",
+  "alarms": "Alarmes",
+  "settings": "Configuració",
+  "back": "Esquena",
+  "delete": "Esborrar",
+  "deleteAlarm": "Suprimeix l'alarma",
+  "deleteAlarmPrompt": "Esteu segur que voleu suprimir aquesta alarma?",
+  "cancel": "Cancel·lar",
+  "titleLabel": "Títol",
+  "wrongAnswer": "Resposta incorrecta",
+  "alarmSnoozed": "Alarma es va arrebossar durant {minutes} minuts",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Escanegeu el codi QR",
+  "wrongQr": "Codi QR equivocat. Si us plau, escanegeu el correcte.",
+  "shakePhone": "Agiteu el telèfon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Toqueu la pantalla!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Descarregueu el codi QR",
+  "fileSaved": "Fitxer desat a {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Es requereix un permís de la càmera per a la exploració del codi QR",
+  "vibration": "Vibració",
+  "fadeIn": "Esvaït gradual a",
+  "alarmScreen": "Pantalla d'alarma",
+  "defaultOption": "No pagar",
+  "mathChallenge": "Repte matemàtic",
+  "shakeToStop": "Sacsejar per aturar -se",
+  "tapChallenge": "TAP REPTE",
+  "qrCodeScan": "Exploració del codi QR",
+  "alarmSound": "So d'alarma",
+  "addSound": "Afegiu el so",
+  "clearCustomSounds": "Sons personalitzats nets",
+  "format24h": "Format 24 hores",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Resoldre: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Número {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Esborrar",
+  "monday": "Dilluns",
+  "tuesday": "Dimarts",
+  "wednesday": "Dimecres",
+  "thursday": "Dijous",
+  "friday": "Divendres",
+  "saturday": "Dissabte",
+  "sunday": "Diumenge"
+}

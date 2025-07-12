@@ -1,0 +1,110 @@
+{
+  "@@locale": "la",
+  "appTitle": "Expergiscitur terrorem horologium",
+  "addAlarm": "PRINGO",
+  "editAlarm": "Edit terror",
+  "noAlarms": "Nullum terret additae tamen",
+  "alarms": "Metus",
+  "settings": "Occasus",
+  "back": "Retrorsum",
+  "delete": "Delete",
+  "deleteAlarm": "Delete terrorem",
+  "deleteAlarmPrompt": "Tu certus vis delere hoc terrorem?",
+  "cancel": "Inrito",
+  "titleLabel": "Titulus",
+  "wrongAnswer": "Iniuriam respondere",
+  "alarmSnoozed": "Turbato Snoozed ad {minutes} minuta",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan QR code",
+  "wrongQr": "QR code iniuriam. Placere scan rectam unum.",
+  "shakePhone": "Excutite telephonum!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ICTUS in screen!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR code",
+  "fileSaved": "File salvus ad {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Camera permission is requiratur ad QR code scan",
+  "vibration": "Vibratio",
+  "fadeIn": "Gradual",
+  "alarmScreen": "Turbato screen",
+  "defaultOption": "Default",
+  "mathChallenge": "Math provocatione",
+  "shakeToStop": "Quassum prohibere",
+  "tapChallenge": "ICTUS provocatione",
+  "qrCodeScan": "QR code scan",
+  "alarmSound": "TUMULTUS",
+  "addSound": "Sonus",
+  "clearCustomSounds": "Patet consuetudo sonat",
+  "format24h": "XXIV-hora format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {symbol} {b} = =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Delete",
+  "monday": "Lunae",
+  "tuesday": "Martis",
+  "wednesday": "Mercurii",
+  "thursday": "Iovis",
+  "friday": "SENER",
+  "saturday": "Saturday",
+  "sunday": "Sunday"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ig",
+  "appTitle": "Teta- Elekere elekere",
+  "addAlarm": "Tinye mkpu",
+  "editAlarm": "Dezie mkpu",
+  "noAlarms": "Ọ dịghị mkpu mkpu",
+  "alarms": "Alaam",
+  "settings": "Ntọala",
+  "back": "Azu",
+  "delete": "Ihichapụ",
+  "deleteAlarm": "Hichapụ mkpu",
+  "deleteAlarmPrompt": "Ì ji n'aka na ịchọrọ ihichapụ mkpu a?",
+  "cancel": "Ikansulu",
+  "titleLabel": "Aha",
+  "wrongAnswer": "Azịza na-ezighi ezi",
+  "alarmSnoozed": "Oti mkpu na-maka {minutes} nkeji",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Nyochaa koodu QR",
+  "wrongQr": "Koodu QR na-ezighi ezi. Biko nyocha nke ziri ezi.",
+  "shakePhone": "Ikwanye ekwentị!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Kpatụ ihuenyo ahụ!",
+  "tapsCount": "TAPT: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Budata QR Koodu",
+  "fileSaved": "File zobere ka {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Achọrọ ikikere igwefoto maka QR Code Scan",
+  "vibration": "Ikwugbu",
+  "fadeIn": "Nwayọ nwayọ na",
+  "alarmScreen": "Ihuenyo mkpu",
+  "defaultOption": "Odida mkwa",
+  "mathChallenge": "Ntụle mgbakọ na mwepụ",
+  "shakeToStop": "Maa jijiji",
+  "tapChallenge": "Aka Aka Aka",
+  "qrCodeScan": "QR koodu nyocha",
+  "alarmSound": "Alaam",
+  "addSound": "Tinye ụda",
+  "clearCustomSounds": "Ikpochapụ ọdịnala",
+  "format24h": "Oge awa 24",
+  "snoozeLabel": "Sneoze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Dozie: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nọmba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ihichapụ",
+  "monday": "Monde",
+  "tuesday": "Tusdee",
+  "wednesday": "Wednesdee",
+  "thursday": "Tosdee",
+  "friday": "Fraaidee",
+  "saturday": "Satodee",
+  "sunday": "Sonde"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ku",
+  "appTitle": "Hişyar- demjimêra alarmê",
+  "addAlarm": "Alarm zêde bikin",
+  "editAlarm": "Alarm biguherînin",
+  "noAlarms": "No alarms nehatiye zêdekirin",
+  "alarms": "Hawîr",
+  "settings": "Mîhengan",
+  "back": "Paş",
+  "delete": "Lûleêkirin",
+  "deleteAlarm": "Alarmê jêbirin",
+  "deleteAlarmPrompt": "Ma hûn guman dikin ku hûn dixwazin vê alarmê jêbirin?",
+  "cancel": "Bişûndekirin",
+  "titleLabel": "Nav",
+  "wrongAnswer": "Bersiva çewt",
+  "alarmSnoozed": "Alarm ji bo {minutes} deqîqe snoozed",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR Code QR",
+  "wrongQr": "QR code QR çewt. Ji kerema xwe yek rast bikin.",
+  "shakePhone": "Telefonê dihejînin!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Dîmenderê Tap bikin!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR Code dakêşin",
+  "fileSaved": "Pel hate tomarkirin {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Destûra kamerayê ji bo QR Code Scan hewce ye",
+  "vibration": "Vibrasyon",
+  "fadeIn": "Hêdî hêdî di hundurê de",
+  "alarmScreen": "Alarka Dîmenderê",
+  "defaultOption": "Destçûnî",
+  "mathChallenge": "Math Challenge",
+  "shakeToStop": "Shake to Stop",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Dengê aramiyê",
+  "addSound": "Deng zêde bikin",
+  "clearCustomSounds": "Dengên xwerû yên zelal",
+  "format24h": "24-demjimêra",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Jimar {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Lûleêkirin",
+  "monday": "Duşem",
+  "tuesday": "Sêşem",
+  "wednesday": "Çarşem",
+  "thursday": "Pêncşem",
+  "friday": "Roja Înê",
+  "saturday": "Şemî",
+  "sunday": "Yekşem"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Uyanık- Çalar saat",
+  "addAlarm": "Alarm ekle",
+  "editAlarm": "Alarmı Düzenle",
+  "noAlarms": "Henüz alarm eklenmedi",
+  "alarms": "Alarmlar",
+  "settings": "Ayarlar",
+  "back": "Geri",
+  "delete": "Silmek",
+  "deleteAlarm": "Alarmı sil",
+  "deleteAlarmPrompt": "Bu alarmı silmek istediğinizden emin misiniz?",
+  "cancel": "İptal etmek",
+  "titleLabel": "Başlık",
+  "wrongAnswer": "Yanlış Cevap",
+  "alarmSnoozed": "Alarm {minutes} dakika için ertelendi",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR kodunu tarayın",
+  "wrongQr": "Yanlış QR kodu. Lütfen doğru olanı tarayın.",
+  "shakePhone": "Telefonu salla!",
+  "shakesCount": "Sallar: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ekrana dokunun!",
+  "tapsCount": "Musluklar: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR kodunu indir",
+  "fileSaved": "Dosya {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR kodu taraması için kamera izni gereklidir",
+  "vibration": "Titreşim",
+  "fadeIn": "Kademeli olarak kaybolur",
+  "alarmScreen": "Alarm ekranı",
+  "defaultOption": "Varsayılan",
+  "mathChallenge": "Matematik Mücadelesi",
+  "shakeToStop": "Durdurmak için salla",
+  "tapChallenge": "Musluk Mücadelesi",
+  "qrCodeScan": "QR Kod Taraması",
+  "alarmSound": "Alarm sesi",
+  "addSound": "Ses ekle",
+  "clearCustomSounds": "Özel Sesler",
+  "format24h": "24 saatlik format",
+  "snoozeLabel": "Erteleme: {minutes} dk",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Çözme: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "{label} numarası",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Silmek",
+  "monday": "Pazartesi",
+  "tuesday": "Salı",
+  "wednesday": "Çarşamba",
+  "thursday": "Perşembe",
+  "friday": "Cuma",
+  "saturday": "Cumartesi",
+  "sunday": "Pazar"
+}

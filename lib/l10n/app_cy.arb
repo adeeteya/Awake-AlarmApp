@@ -1,0 +1,110 @@
+{
+  "@@locale": "cy",
+  "appTitle": "Effro- y cloc larwm",
+  "addAlarm": "Ychwanegwch larwm",
+  "editAlarm": "Golygu larwm",
+  "noAlarms": "Ni ychwanegwyd larymau eto",
+  "alarms": "Larymau",
+  "settings": "Gosodiadau",
+  "back": "Baciwn",
+  "delete": "Croeswn",
+  "deleteAlarm": "Dileu larwm",
+  "deleteAlarmPrompt": "Ydych chi'n siŵr eich bod chi am ddileu'r larwm hwn?",
+  "cancel": "Chansliff",
+  "titleLabel": "Teitl",
+  "wrongAnswer": "Ateb Anghywir",
+  "alarmSnoozed": "Larwm snoozed am {minutes} munud",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Sganiwch y cod QR",
+  "wrongQr": "Cod QR anghywir. Sganiwch yr un cywir.",
+  "shakePhone": "Ysgwydwch y ffôn!",
+  "shakesCount": "Ysgwyd: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap y sgrin!",
+  "tapsCount": "Tapiau: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Dadlwythwch God QR",
+  "fileSaved": "Ffeil wedi'i chadw i {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Mae angen caniatâd camera ar gyfer sgan cod QR",
+  "vibration": "Dirgryniad",
+  "fadeIn": "Pylu graddol i mewn",
+  "alarmScreen": "Sgrin larwm",
+  "defaultOption": "Diofyn",
+  "mathChallenge": "Her Math",
+  "shakeToStop": "Ysgwyd i stopio",
+  "tapChallenge": "Her Tap",
+  "qrCodeScan": "Sgan cod qr",
+  "alarmSound": "Sain larwm",
+  "addSound": "Ychwanegu Sain",
+  "clearCustomSounds": "Seiniau Custom Clir",
+  "format24h": "Fformat 24 awr",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Datrys: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Rhif {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Croeswn",
+  "monday": "Dydd Llun",
+  "tuesday": "Dydd Mawrth",
+  "wednesday": "Dydd Mercher",
+  "thursday": "Dydd Iau",
+  "friday": "Dydd Gwener",
+  "saturday": "Dydd Sadwrn",
+  "sunday": "Sul"
+}

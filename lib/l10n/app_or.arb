@@ -1,0 +1,110 @@
+{
+  "@@locale": "or",
+  "appTitle": "ଜାଗ୍ରତ - ଆଲାର୍ମ ଘଣ୍ଟା |",
+  "addAlarm": "ଆଲାର୍ମ ଯୋଡନ୍ତୁ |",
+  "editAlarm": "ଆଲାର୍ମ ସଂପାଦନ କରନ୍ତୁ |",
+  "noAlarms": "କ a ଣସି ଆଲାର୍ମ ଏପର୍ଯ୍ୟନ୍ତ ଯୋଡି ନାହିଁ |",
+  "alarms": "ଆଲାର୍ମ",
+  "settings": "ସେଟିଂସମୂହ",
+  "back": "ପଛକୁ",
+  "delete": "ବିଲୋପ କରନ୍ତୁ |",
+  "deleteAlarm": "ଆଲାର୍ମ ବିଲୋପ କରନ୍ତୁ |",
+  "deleteAlarmPrompt": "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଏହି ଆଲାର୍ମ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛନ୍ତି?",
+  "cancel": "ବାତିଲ୍ କରନ୍ତୁ |",
+  "titleLabel": "ଆଖ୍ୟା",
+  "wrongAnswer": "ଭୁଲର ଉତ୍ତର",
+  "alarmSnoozed": "{minutes} ମିନିଟ୍ ପାଇଁ ଆଲାର୍ମ ସ୍ନୋଜଡ୍ |",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR କୋଡ୍ ସ୍କାନ୍ କରନ୍ତୁ |",
+  "wrongQr": "ଭୁଲ QR କୋଡ୍ | ଦୟାକରି ସଠିକ୍ ସ୍କାନ୍ କରନ୍ତୁ |",
+  "shakePhone": "ଫୋନକୁ ହଲାନ୍ତୁ!",
+  "shakesCount": "କମ୍ପନ: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ସ୍କ୍ରିନ୍ ଟ୍ୟାପ୍ କରନ୍ତୁ!",
+  "tapsCount": "ଟ୍ୟାପ୍: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR କୋଡ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ |",
+  "fileSaved": "ଫାଇଲ୍ {path} କୁ ସଞ୍ଚୟ ହୋଇଛି |",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR କୋଡ୍ ସ୍କାନ୍ ପାଇଁ କ୍ୟାମେରା ଅନୁମତି ଆବଶ୍ୟକ |",
+  "vibration": "କମ୍ପ୍ରେସନ",
+  "fadeIn": "ଧୀରେ ଧୀରେ ମଳିନ |",
+  "alarmScreen": "ଆଲାର୍ମ ସ୍କ୍ରିନ |",
+  "defaultOption": "ଡିଫଲ୍ଟ |",
+  "mathChallenge": "ଗଣିତ ଚ୍ୟାଲେଞ୍ଜ |",
+  "shakeToStop": "ବନ୍ଦ କରିବାକୁ କମ୍ପନ କରନ୍ତୁ |",
+  "tapChallenge": "ଚ୍ୟାଲେଞ୍ଜ ଟ୍ୟାପ୍ କରନ୍ତୁ |",
+  "qrCodeScan": "QR କୋଡ୍ ସ୍କାନ୍ |",
+  "alarmSound": "ଆଲାର୍ମ ଶବ୍ଦ",
+  "addSound": "ଧ୍ୱନି ଯୋଗ କରନ୍ତୁ |",
+  "clearCustomSounds": "କଷ୍ଟମ୍ ଶବ୍ଦ ସଫା କରନ୍ତୁ |",
+  "format24h": "24 ଘଣ୍ଟା ଫର୍ମାଟ୍ |",
+  "snoozeLabel": "ସ୍ନୁଜ୍: {minutes} ମିନିଟ୍ |",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ସମାଧାନ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ସଂଖ୍ୟା {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ବିଲୋପ କରନ୍ତୁ |",
+  "monday": "ସୋମବାର",
+  "tuesday": "ମଙ୍ଗଳବାର |",
+  "wednesday": "ବୁଧବାର",
+  "thursday": "ଗୁରୁବାର",
+  "friday": "ଶୁକ୍ରବାର",
+  "saturday": "ଶନିବାର",
+  "sunday": "ରବିବାର"
+}

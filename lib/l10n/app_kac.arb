@@ -1,0 +1,110 @@
+{
+  "@@locale": "kac",
+  "appTitle": "Awake- Alarm Clock",
+  "addAlarm": "Adda",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "N-gun n-jat ai lam n nga ai.",
+  "alarms": "machyi ai",
+  "settings": "settings",
+  "back": "Hting nut ai",
+  "delete": "Shaprai kau ai",
+  "deleteAlarm": "Alarm hpe yeng seng kau u",
+  "deleteAlarmPrompt": "Ndai alarm hpe delete galaw mayu ai hpe kam ai kun?",
+  "cancel": "dawm kau ai",
+  "titleLabel": "Gabaw",
+  "wrongAnswer": "Mahtai N kaja ai mahtai",
+  "alarmSnoozed": "Alarm gaw {minutes} minit daram n-gun n rawng ai",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR Code hpe scan galaw u",
+  "wrongQr": "Shut ai QR Tara. Teng ai hpe scan galaw u.",
+  "shakePhone": "Phone hpe shake galaw u!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Screen hpe dip u!",
+  "tapsCount": "Tap ni: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR Code hpe download galaw na",
+  "fileSaved": "File hpe {path} hku shinggyin tawn da ai.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR Code Scan .",
+  "vibration": "Ga",
+  "fadeIn": "Kalang ta hkrat sum ai In",
+  "alarmScreen": "Hkrit kajawng ai Screen",
+  "defaultOption": "Hprai ai",
+  "mathChallenge": "Masat Shakut ai lam",
+  "shakeToStop": "Shake kaw nna hkring hkra",
+  "tapChallenge": "Tap sat lawat",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm nsen",
+  "addSound": "Nsen hpe jat bang u",
+  "clearCustomSounds": "San seng ai Custom nsen ni",
+  "format24h": "24-Hkum tsup ai Format",
+  "snoozeLabel": "N-gun: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Hpaga ga: {a} {symbol} {b} =.",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nambat {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Shaprai kau ai",
+  "monday": "Bat langai ya",
+  "tuesday": "bat lahkawng ya",
+  "wednesday": "bat masum ya",
+  "thursday": "Bat mali ya",
+  "friday": "Bat manga ya shani",
+  "saturday": "bat kru ya shani",
+  "sunday": "Laban shani"
+}

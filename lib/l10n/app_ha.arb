@@ -1,0 +1,110 @@
+{
+  "@@locale": "ha",
+  "appTitle": "A farka- agogo mai ƙararrawa",
+  "addAlarm": "Ƙara ƙararrawa",
+  "editAlarm": "Shirya ƙararrawa",
+  "noAlarms": "Ba a kara ba tukuna",
+  "alarms": "Arara",
+  "settings": "Saitunan",
+  "back": "Goya baya",
+  "delete": "Share",
+  "deleteAlarm": "Share ƙararrawa",
+  "deleteAlarmPrompt": "Shin kun tabbata kuna son share wannan ƙararrawa?",
+  "cancel": "Warware",
+  "titleLabel": "Titbance",
+  "wrongAnswer": "Amsa ba daidai ba",
+  "alarmSnoozed": "Kararrawa snoqed don {minutes}",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Duba lambar QR",
+  "wrongQr": "Ba daidai ba QR code. Da fatan za a bincika daidai.",
+  "shakePhone": "Shake wayar!",
+  "shakesCount": "Shake: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Matsa allon!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Saukar da lambar QR",
+  "fileSaved": "Fayil da aka ajiye zuwa {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ana buƙatar izinin kamara don lambar code ta QR",
+  "vibration": "Ɓata",
+  "fadeIn": "A hankali a ciki",
+  "alarmScreen": "Allonarrawa",
+  "defaultOption": "Ƙin cika alƙawari",
+  "mathChallenge": "Kalubale na lissafi",
+  "shakeToStop": "Shake ya tsaya",
+  "tapChallenge": "Matsa Kalubale",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Sauti mai mahimmanci",
+  "addSound": "Sanya sauti",
+  "clearCustomSounds": "Share sautunan al'ada",
+  "format24h": "Tsarin sa'ara 24",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Warware: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Lamba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Share",
+  "monday": "Littinin",
+  "tuesday": "Talata",
+  "wednesday": "Laraba",
+  "thursday": "Alhamis",
+  "friday": "Juma'a",
+  "saturday": "Asabar",
+  "sunday": "Lahadi"
+}

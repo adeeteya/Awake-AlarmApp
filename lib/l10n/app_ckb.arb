@@ -1,0 +1,110 @@
+{
+  "@@locale": "ckb",
+  "appTitle": "بەئاگا- کاتژمێری زەنگ",
+  "addAlarm": "زەنگی ئاگادارکردنەوە زیاد بکە",
+  "editAlarm": "دەستکاری زەنگی ئاگادارکردنەوە بکە",
+  "noAlarms": "هێشتا هیچ زەنگێک زیاد نەکراوە",
+  "alarms": "زەنگی ئاگادارکردنەوە",
+  "settings": "ڕێکخستنەکان",
+  "back": "گەڕانەوە",
+  "delete": "سڕینەوە",
+  "deleteAlarm": "زەنگی ئاگادارکردنەوە بسڕەوە",
+  "deleteAlarmPrompt": "ئایا دڵنیای کە دەتەوێت ئەم زەنگە بسڕیتەوە؟",
+  "cancel": "ڕەتکردنەوە",
+  "titleLabel": "ناونیشان",
+  "wrongAnswer": "وەڵامی هەڵە",
+  "alarmSnoozed": "زەنگی ئاگادارکردنەوە بۆ ماوەی {minutes} خولەک",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "کۆدی QR سکان بکە",
+  "wrongQr": "کۆدی QR ی هەڵە. تکایە ئەوی دروستەکە سکان بکە.",
+  "shakePhone": "تەلەفۆنەکە هەڵبشێوێنە!",
+  "shakesCount": "لەرزین: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "پەنجە بنێ بە شاشەکە!",
+  "tapsCount": "لێدان: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "داگرتنی کۆدی QR",
+  "fileSaved": "فایلێک کە لە {path} هەڵگیراوە",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "مۆڵەتی کامێرا پێویستە بۆ سکانکردنی کۆدی QR",
+  "vibration": "لەرزین",
+  "fadeIn": "وردە وردە کاڵبوونەوە لە",
+  "alarmScreen": "شاشەی زەنگ",
+  "defaultOption": "بنەڕەتی",
+  "mathChallenge": "چالێنجێکی بیرکاری",
+  "shakeToStop": "لەرزین بۆ وەستان",
+  "tapChallenge": "پەنجە بنێ بە چالێنج",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "دەنگی زەنگ",
+  "addSound": "زیادکردنی دەنگ",
+  "clearCustomSounds": "دەنگە تایبەتەکان",
+  "format24h": "فۆرماتێکی ٢٤ کاتژمێری",
+  "snoozeLabel": "خەوتن: {minutes} مین",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "چارەسەر: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ژمارە {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "سڕینەوە",
+  "monday": "دوو شەمە",
+  "tuesday": "سێ شەمە",
+  "wednesday": "چوار شەمە",
+  "thursday": "پێنج شەمە",
+  "friday": "هەینی",
+  "saturday": "شەمە",
+  "sunday": "یەک شەمە"
+}

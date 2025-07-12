@@ -1,0 +1,110 @@
+{
+  "@@locale": "km",
+  "appTitle": "ភ្ញាក់ - ម៉ោងរោទិ៍",
+  "addAlarm": "បន្ថែមការជូនដំណឹង",
+  "editAlarm": "កែសម្រួលការជូនដំណឹង",
+  "noAlarms": "មិនទាន់បានបន្ថែមទៀតទេ",
+  "alarms": "រោទិ៍រោទិ៍រោទិ៍",
+  "settings": "ការកំណត់",
+  "back": "រតលប់",
+  "delete": "របៅបេលរសច",
+  "deleteAlarm": "លុបការជូនដំណឹង",
+  "deleteAlarmPrompt": "តើអ្នកពិតជាចង់លុបការជូនដំណឹងនេះមែនទេ?",
+  "cancel": "លប់ចោល",
+  "titleLabel": "ចមនងចើង",
+  "wrongAnswer": "ចម្លើយខុស",
+  "alarmSnoozed": "សំឡេងរោទិ៍ snoozed សម្រាប់ {minutes} នាទី",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ស្កេនលេខកូដ QR",
+  "wrongQr": "កូដ QR ខុស។ សូមស្កេនឱ្យត្រឹមត្រូវ។",
+  "shakePhone": "អ្រងួនទូរស័ព្ទ!",
+  "shakesCount": "អង្រួន: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ប៉ះអេក្រង់!",
+  "tapsCount": "taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ទាញយកលេខកូដ QR",
+  "fileSaved": "បានរក្សាទុកឯកសារទៅ {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ការអនុញ្ញាតកាមេរ៉ាគឺចាំបាច់សម្រាប់ការស្កេនកូដ QR",
+  "vibration": "ញង់តងតឹមរតុង",
+  "fadeIn": "រសាត់បន្តិចក្នុង",
+  "alarmScreen": "អេក្រង់សំឡេងរោទិ៍",
+  "defaultOption": "ការមិនកោរបតាមសន្យា",
+  "mathChallenge": "ការប្រកួតប្រជែងគណិតវិទ្យា",
+  "shakeToStop": "អ្រងួនដើម្បីបញ្ឈប់",
+  "tapChallenge": "ប៉ះការប្រកួតប្រជែង",
+  "qrCodeScan": "QR កូដស្កេន",
+  "alarmSound": "សំឡេងរោទិ៍",
+  "addSound": "បន្ថែមសំឡេង",
+  "clearCustomSounds": "សំអាតសំលេងផ្ទាល់ខ្លួន",
+  "format24h": "ទ្រង់ទ្រាយ 24 ម៉ោង",
+  "snoozeLabel": "snooze: {minutes} នាទី",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ដោះស្រាយ: {a} {symbol} {b} = =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ចំនួន {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "របៅបេលរសច",
+  "monday": "ថៃច័ន្ទ",
+  "tuesday": "ថៃអង្គារ",
+  "wednesday": "ថៃបុធ",
+  "thursday": "ថៃរបហស្បតី៍",
+  "friday": "ថៃសុរក",
+  "saturday": "ថៃសោរ៍",
+  "sunday": "ថៃអាតិត្យ"
+}

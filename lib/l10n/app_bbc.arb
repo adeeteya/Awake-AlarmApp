@@ -1,0 +1,110 @@
+{
+  "@@locale": "bbc",
+  "appTitle": "Dungo- Jam Alarm .",
+  "addAlarm": "Tamba ni alarm .",
+  "editAlarm": "Alarm Edit",
+  "noAlarms": "Ndang adong Alarm Ditambah Dope .",
+  "alarms": "Alarma",
+  "settings": "Pengaturan",
+  "back": "Mulak",
+  "delete": "Manghorus",
+  "deleteAlarm": "Hapus Alarm .",
+  "deleteAlarmPrompt": "Pos do rohamuna naeng dihapus hamu alarm on?",
+  "cancel": "Manengsang",
+  "titleLabel": "Titel",
+  "wrongAnswer": "Sala mangalusi",
+  "alarmSnoozed": "Alarm marnonang saleleng {minutes} menit .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan ma Kode QR .",
+  "wrongQr": "Salah Kode QR. Tolong ma scan na sintong.",
+  "shakePhone": "Goyanghon ma hape!",
+  "shakesCount": "Goyang: {count} {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ketuk ma layar!",
+  "tapsCount": "Ketukan: {count} {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download Kode QR .",
+  "fileSaved": "Berkas ditampan tu {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Dihaporluhon do ijin kamera tu Scan Kode QR .",
+  "vibration": "Getaran",
+  "fadeIn": "Tahulukan Face Di .",
+  "alarmScreen": "Layar alarm .",
+  "defaultOption": "Boanon",
+  "mathChallenge": "Tantangan Matematika .",
+  "shakeToStop": "Goyang ma tu Stop .",
+  "tapChallenge": "Tantangan Tap .",
+  "qrCodeScan": "Scan Kode QR .",
+  "alarmSound": "Suara alarm .",
+  "addSound": "Tambahon Soara",
+  "clearCustomSounds": "Soara Adat na Tangkas .",
+  "format24h": "Format 24 Jam .",
+  "snoozeLabel": "Nonak: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Patupahon: {a} {b} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomor {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Manghorus",
+  "monday": "Senen",
+  "tuesday": "Salasa",
+  "wednesday": "Rebo",
+  "thursday": "Kamis",
+  "friday": "Jumahat",
+  "saturday": "Sabtu",
+  "sunday": "Minggu"
+}

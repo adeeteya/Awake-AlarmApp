@@ -1,0 +1,110 @@
+{
+  "@@locale": "udm",
+  "appTitle": "Пробуждение- сигнализация час",
+  "addAlarm": "ватсаса сигнализация ватсаны",
+  "editAlarm": "Редактировать карыны тревога",
+  "noAlarms": "Ӧвӧл сигнализация ватсаса .",
+  "alarms": "сигнализациос",
+  "settings": "Настройкаос",
+  "back": "Берлань",
+  "delete": "Ӵушылон",
+  "deleteAlarm": "Удалтэ сигнализация",
+  "deleteAlarmPrompt": "Тон оскыса, тон та сигнализация удалтыны потэ?",
+  "cancel": "берланьтыны",
+  "titleLabel": "Нимыз",
+  "wrongAnswer": "янгыш валэктон",
+  "alarmSnoozed": "Тревога {minutes} минут ӵоже ӝутске .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Сканировать QR кодекс",
+  "wrongQr": "Янгыш QR кодекс. Пожалуйста, скачать шонер.",
+  "shakePhone": "Телефонэз шобыртыны!",
+  "shakesCount": "Шейк: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Экранэз таплы!",
+  "tapsCount": "Тапъёс: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Скачать QR Кодекс",
+  "fileSaved": "Файл {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Камера разрешение понна кулэ QR Код Сканировать .",
+  "vibration": "вибрациос",
+  "fadeIn": "Подгодный выцветание в",
+  "alarmScreen": "Тревожность экран",
+  "defaultOption": "Ватон",
+  "mathChallenge": "Математикаен нюръяськон",
+  "shakeToStop": "Шейк доры дугдӥллям",
+  "tapChallenge": "Тап-вызов",
+  "qrCodeScan": "QR Код Сканировать",
+  "alarmSound": "Трегадия",
+  "addSound": "ватсаса куара",
+  "clearCustomSounds": "Чылкыт пользовательский куараос",
+  "format24h": "24-час форматэн",
+  "snoozeLabel": "Снуз: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Решение: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Номер {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ӵушылон",
+  "monday": "Понедельник",
+  "tuesday": "Вторник",
+  "wednesday": "вирнунал",
+  "thursday": "Покчиарня",
+  "friday": "Удмуртарня",
+  "saturday": "кӧснунал",
+  "sunday": "Арня"
+}

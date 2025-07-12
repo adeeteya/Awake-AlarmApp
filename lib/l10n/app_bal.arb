@@ -1,0 +1,110 @@
+{
+  "@@locale": "bal",
+  "appTitle": "بیداری- بلوچی سی",
+  "addAlarm": "وانگ",
+  "editAlarm": "ورگ ءِ الارم",
+  "noAlarms": "انگت ءَ ھچ وڑیں الارم نہ کن اَنت",
+  "alarms": "بند",
+  "settings": "گچین کنگ",
+  "back": "پُشت",
+  "delete": "گار کنگ",
+  "deleteAlarm": "دیم ءَ برگ",
+  "deleteAlarmPrompt": "تو یقین ئے کہ تو الارم ءِ حذف کنگ لوٹ ئے؟",
+  "cancel": "کوتاه کنگ",
+  "titleLabel": "سرھال",
+  "wrongAnswer": "نگ",
+  "alarmSnoozed": "الارم ءَ {minutes} منٹ ءِ واستہ چنڈ کتگ ات",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "کوئر ءَ چیک کن",
+  "wrongQr": "کوئر QR ءِ نبشتہ کنگ۔ راستیں یکے ءَ اسکین بہ کن اِت۔",
+  "shakePhone": "فون ءَ بہ کن!",
+  "shakesCount": "شیکس : _ __/ {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "اسکرین ءِ سرا!",
+  "tapsCount": "{count}/ {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ڈاؤنلوڈ کیو آر کوڈ",
+  "fileSaved": "فائل ءَ __ ءَ چہ رکّ اِت",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "کیمریا ءِ اجازت پہ QRڈ اسکاکن ءَ لوٹ اِیت",
+  "vibration": "بَزن",
+  "fadeIn": "نوکر وپاری",
+  "alarmScreen": "الارم اسکرین",
+  "defaultOption": "پیسرا چہ گیشینتگیں",
+  "mathChallenge": "چِلنج",
+  "shakeToStop": "بند کنگ",
+  "tapChallenge": "گوں چیلنج",
+  "qrCodeScan": "کوئر کوڈ",
+  "alarmSound": "الارم ساؤنڈ",
+  "addSound": "ساؤنڈ",
+  "clearCustomSounds": "کلیئر کسٹ",
+  "format24h": "24-گھنٹہ",
+  "snoozeLabel": "اسنوز: {minutes}منی",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "سرمه: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "نمبر {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "گار کنگ",
+  "monday": "دوشمبے",
+  "tuesday": "سئے شمبے",
+  "wednesday": "چارشمبے",
+  "thursday": "پنچ شمبے",
+  "friday": "آدینگ",
+  "saturday": "شمبے",
+  "sunday": "یکشمبے"
+}

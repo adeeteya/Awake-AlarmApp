@@ -1,0 +1,110 @@
+{
+  "@@locale": "lt",
+  "appTitle": "Pabudęs- žadintuvas",
+  "addAlarm": "Pridėkite aliarmą",
+  "editAlarm": "Redaguoti aliarmą",
+  "noAlarms": "Dar nėra jokių aliarmų",
+  "alarms": "Aliarmai",
+  "settings": "Nustatymai",
+  "back": "Atgal",
+  "delete": "Ištrinti",
+  "deleteAlarm": "Ištrinkite aliarmą",
+  "deleteAlarmPrompt": "Ar tikrai norite ištrinti šį aliarmą?",
+  "cancel": "Atšaukti",
+  "titleLabel": "Pavadinimas",
+  "wrongAnswer": "Neteisingas atsakymas",
+  "alarmSnoozed": "Aliarmas snaudžia {minutes} minutes",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Nuskaitykite QR kodą",
+  "wrongQr": "Neteisingas QR kodas. Nuskaitykite teisingą.",
+  "shakePhone": "Pakratykite telefoną!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Palieskite ekraną!",
+  "tapsCount": "Čiaupai: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Atsisiųskite QR kodą",
+  "fileSaved": "Failas išsaugotas iki {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR kodo nuskaitymui reikalingas fotoaparato leidimas",
+  "vibration": "Vibracija",
+  "fadeIn": "Laipsniškas išnykimas",
+  "alarmScreen": "Aliarmo ekranas",
+  "defaultOption": "Numatytasis",
+  "mathChallenge": "Matematikos iššūkis",
+  "shakeToStop": "Kreipkite dėmesį",
+  "tapChallenge": "Bakstelėkite iššūkį",
+  "qrCodeScan": "QR kodo nuskaitymas",
+  "alarmSound": "Aliarmo garsas",
+  "addSound": "Pridėkite garsą",
+  "clearCustomSounds": "Išvalyti pasirinktinius garsus",
+  "format24h": "24 valandų formatas",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Išspręskite: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numeris {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ištrinti",
+  "monday": "Pirmadienis",
+  "tuesday": "Antradienis",
+  "wednesday": "Trečiadienis",
+  "thursday": "Ketvirtadienis",
+  "friday": "Penktadienis",
+  "saturday": "Šeštadienis",
+  "sunday": "Sekmadienis"
+}

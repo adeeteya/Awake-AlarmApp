@@ -1,0 +1,110 @@
+{
+  "@@locale": "he",
+  "appTitle": "ער- שעון המעורר",
+  "addAlarm": "הוסף אזעקה",
+  "editAlarm": "ערוך אזעקה",
+  "noAlarms": "עדיין לא התווספו אזעקות",
+  "alarms": "אַזעָקָה",
+  "settings": "הגדרות",
+  "back": "בְּחֲזָרָה",
+  "delete": "לִמְחוֹק",
+  "deleteAlarm": "מחק אזעקה",
+  "deleteAlarmPrompt": "האם אתה בטוח שאתה רוצה למחוק את האזעקה הזו?",
+  "cancel": "לְבַטֵל",
+  "titleLabel": "כּוֹתֶרֶת",
+  "wrongAnswer": "תשובה שגויה",
+  "alarmSnoozed": "אזעקה נדנתה למשך {minutes} דקות",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "סרוק את קוד ה- QR",
+  "wrongQr": "קוד QR שגוי. אנא סרוק את הנכון.",
+  "shakePhone": "לנער את הטלפון!",
+  "shakesCount": "שייק: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "הקש על המסך!",
+  "tapsCount": "ברזים: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "הורד קוד QR",
+  "fileSaved": "קובץ נשמר ב- {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "נדרשת הרשאת מצלמה לצורך סריקת קוד QR",
+  "vibration": "רֶטֶט",
+  "fadeIn": "דהייה הדרגתית פנימה",
+  "alarmScreen": "מסך אזעקה",
+  "defaultOption": "בְּרִירַת מֶחדָל",
+  "mathChallenge": "אתגר מתמטיקה",
+  "shakeToStop": "לנער לעצור",
+  "tapChallenge": "הקשור לאתגר",
+  "qrCodeScan": "סריקת קוד QR",
+  "alarmSound": "צליל אזעקה",
+  "addSound": "הוסף צליל",
+  "clearCustomSounds": "נקה צלילים מותאמים אישית",
+  "format24h": "פורמט 24 שעות ביממה",
+  "snoozeLabel": "נודניק: {minutes} דקות",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "לפתור: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "מספר {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "לִמְחוֹק",
+  "monday": "יוֹם שֵׁנִי",
+  "tuesday": "יוֹם שְׁלִישִׁי",
+  "wednesday": "יוֹם רְבִיעִי",
+  "thursday": "יוֹם חֲמִישִׁי",
+  "friday": "יוֹם שִׁישִׁי",
+  "saturday": "שַׁבָּת",
+  "sunday": "יוֹם רִאשׁוֹן"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ts",
+  "appTitle": "Pfuka- wachi ya alamu .",
+  "addAlarm": "Engetela alamu .",
+  "editAlarm": "Hlela alamu .",
+  "noAlarms": "Ku hava tialamu leti engeteriweke ku fikela sweswi .",
+  "alarms": "Tialamu .",
+  "settings": "Swiyimiso .",
+  "back": "Tlhelela",
+  "delete": "Sula",
+  "deleteAlarm": "Susa alamu .",
+  "deleteAlarmPrompt": "Xana u tiyisile leswaku u lava ku susa alamu leyi?",
+  "cancel": "Khansela",
+  "titleLabel": "Xirhangi",
+  "wrongAnswer": "Nhlamulo leyi hoxeke .",
+  "alarmSnoozed": "Alarm yi snoozeriwa ku ringana {minutes} wa timinete .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skena khodi ya QR .",
+  "wrongQr": "Khodi ya QR leyi hoxeke. Hi kombela u skena leyi faneleke.",
+  "shakePhone": "Hlengeleta riqingho!",
+  "shakesCount": "Ku rhurhumela: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Thepha xikirini!",
+  "tapsCount": "Tipompi: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download Khodi ya QR .",
+  "fileSaved": "Fayili leyi hlayisiweke eka {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Mpfumelelo wa khamera wa laveka eka QR code scan .",
+  "vibration": "Ku rhurhumela .",
+  "fadeIn": "Ku fade hakatsongo-tsongo eka .",
+  "alarmScreen": "Xikirini xa alamu .",
+  "defaultOption": "Ku tlula",
+  "mathChallenge": "Ntlhontlho wa tinhlayo .",
+  "shakeToStop": "Shake ku yima .",
+  "tapChallenge": "Ntlhontlho wa Tap .",
+  "qrCodeScan": "Xikeni xa Khodi ya QR .",
+  "alarmSound": "Mpfumawulo wa alamu .",
+  "addSound": "Engetela mpfumawulo .",
+  "clearCustomSounds": "Mimpfumawulo ya ntolovelo ya Clear .",
+  "format24h": "Xivumbeko xa tiawara ta 24 .",
+  "snoozeLabel": "Ku etlela: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Xitlhantlho: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomboro {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Sula",
+  "monday": "Musumbhunuku",
+  "tuesday": "Ravumbirhi",
+  "wednesday": "Ravunharhu",
+  "thursday": "Ravumune",
+  "friday": "Ravuntlhanu",
+  "saturday": "Muqibela",
+  "sunday": "Sonto"
+}

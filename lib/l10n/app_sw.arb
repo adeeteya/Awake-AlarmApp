@@ -1,0 +1,110 @@
+{
+  "@@locale": "sw",
+  "appTitle": "Amka- saa ya kengele",
+  "addAlarm": "Ongeza kengele",
+  "editAlarm": "Hariri kengele",
+  "noAlarms": "Hakuna kengele zilizoongezwa bado",
+  "alarms": "Kengele",
+  "settings": "Mipangilio",
+  "back": "Nyuma",
+  "delete": "Futa",
+  "deleteAlarm": "Futa kengele",
+  "deleteAlarmPrompt": "Je! Una uhakika unataka kufuta kengele hii?",
+  "cancel": "Ghairi",
+  "titleLabel": "Kichwa",
+  "wrongAnswer": "Jibu lisilofaa",
+  "alarmSnoozed": "Alarm snoozed kwa {minutes} dakika",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan nambari ya QR",
+  "wrongQr": "Msimbo Mbaya wa QR. Tafadhali chakane sahihi.",
+  "shakePhone": "Shika simu!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Gonga skrini!",
+  "tapsCount": "Bomba: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Pakua nambari ya QR",
+  "fileSaved": "Faili imehifadhiwa kwa {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ruhusa ya kamera inahitajika kwa skana ya nambari ya QR",
+  "vibration": "Vibration",
+  "fadeIn": "Polepole kufifia",
+  "alarmScreen": "Skrini ya kengele",
+  "defaultOption": "Chaguo -msingi",
+  "mathChallenge": "Changamoto ya Math",
+  "shakeToStop": "Shake kuacha",
+  "tapChallenge": "Gonga Changamoto",
+  "qrCodeScan": "Scan ya nambari ya QR",
+  "alarmSound": "Sauti ya kengele",
+  "addSound": "Ongeza sauti",
+  "clearCustomSounds": "Sauti za kawaida",
+  "format24h": "Fomati ya masaa 24",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Tatua: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nambari {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Futa",
+  "monday": "Jumatatu",
+  "tuesday": "Jumanne",
+  "wednesday": "Jumatano",
+  "thursday": "Alhamisi",
+  "friday": "Ijumaa",
+  "saturday": "Jumamosi",
+  "sunday": "Jumapili"
+}

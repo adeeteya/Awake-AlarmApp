@@ -1,0 +1,110 @@
+{
+  "@@locale": "min",
+  "appTitle": "Jago- Jam Alarm",
+  "addAlarm": "Tambah Alarm",
+  "editAlarm": "Suntiang Alarm",
+  "noAlarms": "Indak ado Alarm nan Ditambahkan Namun",
+  "alarms": "Alarma",
+  "settings": "Pangaturan",
+  "back": "Baliak",
+  "delete": "Maapuih",
+  "deleteAlarm": "Hapus Alarm",
+  "deleteAlarmPrompt": "Lai yakin sanak nio maapuih alarm ko?",
+  "cancel": "Bata",
+  "titleLabel": "Judul",
+  "wrongAnswer": "Jawek salah",
+  "alarmSnoozed": "Alarm manyuok salamo {minutes} minik",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Kode QR Scan .",
+  "wrongQr": "Salah Kode QR. Tolong scan nan batua.",
+  "shakePhone": "Goyang hape!",
+  "shakesCount": "Goyang: {count} {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ketuk layar!",
+  "tapsCount": "Ketuk: {count}/{required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Unduh Kode QR .",
+  "fileSaved": "File disimpan sampai {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Diparalukan izin kamera untuak Scan Kode QR .",
+  "vibration": "Getaran",
+  "fadeIn": "Fade Pascasar Dalam",
+  "alarmScreen": "Layar Alarm",
+  "defaultOption": "Baokan",
+  "mathChallenge": "Tantangan Matematika",
+  "shakeToStop": "Goyang untuak Singgah",
+  "tapChallenge": "Tantangan Ketuk",
+  "qrCodeScan": "Kode QR Scan",
+  "alarmSound": "Suaro Alarm",
+  "addSound": "Tambah Suaro",
+  "clearCustomSounds": "Jalehkan Babunyi Adat",
+  "format24h": "Format jam 24-jam",
+  "snoozeLabel": "Sorot: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Manyalasaikan: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomor {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Maapuih",
+  "monday": "Sanayan",
+  "tuesday": "Salasa",
+  "wednesday": "Rabaa",
+  "thursday": "Kamih",
+  "friday": "Jumaik",
+  "saturday": "Sabtu",
+  "sunday": "Minggu"
+}

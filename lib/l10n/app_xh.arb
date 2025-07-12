@@ -1,0 +1,110 @@
+{
+  "@@locale": "xh",
+  "appTitle": "Vuka- iwotshi yealam",
+  "addAlarm": "Yongeza i-alamu",
+  "editAlarm": "Hlela ialam",
+  "noAlarms": "Akukho alams ongezelelweyo",
+  "alarms": "Iialarm",
+  "settings": "Izicwangciso",
+  "back": "Umva",
+  "delete": "Cima",
+  "deleteAlarm": "Cima i-alamu",
+  "deleteAlarmPrompt": "Uqinisekile ukuba ufuna ukucima le alarm?",
+  "cancel": "Rhoxisa",
+  "titleLabel": "Isihloko",
+  "wrongAnswer": "Impendulo engalunganga",
+  "alarmSnoozed": "I-alamu idlwengulwe i-{minutes} imizuzu",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skena ikhowudi yeQR",
+  "wrongQr": "Ikhowudi ye-qr engalunganga. Nceda ujonge enye echanekileyo.",
+  "shakePhone": "Shake ifowuni!",
+  "shakesCount": "I-Shake: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Cofa isikrini!",
+  "tapsCount": "Iimpompo: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Khuphela ikhowudi yeQR",
+  "fileSaved": "Ifayile egcinwe kwi-{path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Imvume yeKhamera iyafuneka kwi-QR Codes Scan",
+  "vibration": "Vibration",
+  "fadeIn": "I-piply phed",
+  "alarmScreen": "Isikrini se-alarm",
+  "defaultOption": "Ukungagqibeki",
+  "mathChallenge": "Umceli mngeni",
+  "shakeToStop": "Shake ukuyeka",
+  "tapChallenge": "Cofa umngeni",
+  "qrCodeScan": "I-QR Codes Scan",
+  "alarmSound": "Isandi se-alamu",
+  "addSound": "Yongeza isandi",
+  "clearCustomSounds": "Sula izandi zesiko",
+  "format24h": "Ifomati yeeyure ezingama-24",
+  "snoozeLabel": "I-Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Sombulula: {a} {symbol} _2 = =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Inombolo {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Cima",
+  "monday": "uMvulo",
+  "tuesday": "uLwesibini",
+  "wednesday": "uLwesithathu",
+  "thursday": "uLwesine",
+  "friday": "uLwesihlanu",
+  "saturday": "uMgqibelo",
+  "sunday": "iCawe"
+}

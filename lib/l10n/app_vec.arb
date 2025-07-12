@@ -1,0 +1,110 @@
+{
+  "@@locale": "vec",
+  "appTitle": "Asvejo- El Coloco dei Ałarmi",
+  "addAlarm": "Xonta Ałarma",
+  "editAlarm": "Edit Alam",
+  "noAlarms": "No Alarmi Aggiunto Ancora .",
+  "alarms": "Alarmi",
+  "settings": "inpostasion",
+  "back": "Schena",
+  "delete": "Canselar",
+  "deleteAlarm": "Deleto Alam",
+  "deleteAlarmPrompt": "Sito sicuro che te vol eliminar sta allarme?",
+  "cancel": "Anula",
+  "titleLabel": "Titolo",
+  "wrongAnswer": "Risposta del sbajato",
+  "alarmSnoozed": "Allarm el ga s-ciopà par {minutes} minuti .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan el codice QR",
+  "wrongQr": "Conteggiata QR. Par piaser scanpare ła coreta.",
+  "shakePhone": "Scuote el telefono!",
+  "shakesCount": "Sloca: {count}/1_ 1_ 1_ .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Toca el schermo!",
+  "tapsCount": "Tasi: {count} / {required} 1_ 1_ .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Scaricare el codice QR",
+  "fileSaved": "El file salvado a {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "El permesso de ła camera el vien obliga",
+  "vibration": "Vibrassion",
+  "fadeIn": "Vide Graduale In",
+  "alarmScreen": "Scrinm de Carenm",
+  "defaultOption": "Predefinìo",
+  "mathChallenge": "Sfida de matematica",
+  "shakeToStop": "Slocca a Ferma",
+  "tapChallenge": "Far Sfida",
+  "qrCodeScan": "QR Scan",
+  "alarmSound": "El soo",
+  "addSound": "Aggiungere el sone",
+  "clearCustomSounds": "La Domanare chiara Suna",
+  "format24h": "24-Our Formato",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} _ {b} = 2_ =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}0.",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Canselar",
+  "monday": "Luni",
+  "tuesday": "marti",
+  "wednesday": "mèrcore",
+  "thursday": "zoba",
+  "friday": "Venare",
+  "saturday": "sabo",
+  "sunday": "Doménega"
+}

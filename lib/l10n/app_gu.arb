@@ -1,0 +1,110 @@
+{
+  "@@locale": "gu",
+  "appTitle": "જાગૃત- એલાર્મ ઘડિયાળ",
+  "addAlarm": "એલાર્મ ઉમેરો",
+  "editAlarm": "અલાર્મ સંપાદિત કરો",
+  "noAlarms": "હજી સુધી કોઈ એલાર્મ્સ ઉમેર્યા નથી",
+  "alarms": "રિસ્પ્લ્સ",
+  "settings": "પતાવટ",
+  "back": "પાછળની બાજુ",
+  "delete": "કા delી નાખવું",
+  "deleteAlarm": "એલાર્મ કા Delete ી નાખો",
+  "deleteAlarmPrompt": "શું તમે ખરેખર આ એલાર્મ કા delete ી નાખવા માંગો છો?",
+  "cancel": "રદ કરવું",
+  "titleLabel": "હક",
+  "wrongAnswer": "ગેરકાયદે જવાબ",
+  "alarmSnoozed": "એલાર્મ {minutes} મિનિટ માટે સ્નૂઝ્ડ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ક્યૂઆર કોડ સ્કેન કરો",
+  "wrongQr": "ખોટો ક્યૂઆર કોડ. કૃપા કરીને સાચી એક સ્કેન કરો.",
+  "shakePhone": "ફોન હલાવો!",
+  "shakesCount": "શેક્સ: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "સ્ક્રીન ટેપ કરો!",
+  "tapsCount": "નળ: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ક્યૂઆર કોડ ડાઉનલોડ કરો",
+  "fileSaved": "ફાઇલ {path} પર સાચવેલ",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ક્યૂઆર કોડ સ્કેન માટે કેમેરા પરવાનગી જરૂરી છે",
+  "vibration": "ઝાપટાં",
+  "fadeIn": "ક્રમિક નિસ્તેજ",
+  "alarmScreen": "ભયંકર ચિત્ર",
+  "defaultOption": "બાકી",
+  "mathChallenge": "ગણિતનો પડકાર",
+  "shakeToStop": "શેક કરવું",
+  "tapChallenge": "ટેપ ચેલેન્જ",
+  "qrCodeScan": "ક્યૂઆર કોડ સ્કેન",
+  "alarmSound": "ભયંકર અવાજ",
+  "addSound": "અવાજ ઉમેરો",
+  "clearCustomSounds": "સ્પષ્ટ કસ્ટમ અવાજો",
+  "format24h": "24-કલાકનું બંધારણ",
+  "snoozeLabel": "સ્નૂઝ: {minutes} મિનિટ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "હલ કરો: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "નંબર {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "કા delી નાખવું",
+  "monday": "સોમવાર",
+  "tuesday": "મંગળવાર",
+  "wednesday": "બુધવાર",
+  "thursday": "ગુરુવાર",
+  "friday": "શુક્રવાર",
+  "saturday": "શનિવાર",
+  "sunday": "રવિવાર"
+}

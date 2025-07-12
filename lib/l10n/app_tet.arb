@@ -1,0 +1,110 @@
+{
+  "@@locale": "tet",
+  "appTitle": "matan-moris- Relójiu Alarme .",
+  "addAlarm": "Hatama Alarme",
+  "editAlarm": "Alarme Edit",
+  "noAlarms": "Laiha Alarme sira Aumenta Maibé .",
+  "alarms": "Alarme",
+  "settings": "Konfigurasaun",
+  "back": "Kotuk",
+  "delete": "Apaga",
+  "deleteAlarm": "Apaga Alarme",
+  "deleteAlarmPrompt": "Ita iha serteza katak ita hakarak apaga alarme ne’e?",
+  "cancel": "Kansela",
+  "titleLabel": "Titulu",
+  "wrongAnswer": "Resposta sala",
+  "alarmSnoozed": "Alarme snoozed durante {minutes} minutu",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan Kódigu QR .",
+  "wrongQr": "Kódigu QR ne’ebé sala. Favor ida scan ida ne’ebé loos.",
+  "shakePhone": "Soke telefone!",
+  "shakesCount": "Soa: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Toka iha ekran!",
+  "tapsCount": "Toka: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Kódigu QR Download",
+  "fileSaved": "Arkivu ne’ebé salva ba {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Presiza lisensa Camera ba QR Code Scan .",
+  "vibration": "Vibrasaun",
+  "fadeIn": "Fade Graduál Iha",
+  "alarmScreen": "Tela Alarme",
+  "defaultOption": "Padraun",
+  "mathChallenge": "Dezafiu Matemátika",
+  "shakeToStop": "Soa ba Para",
+  "tapChallenge": "Dezafiu Toka",
+  "qrCodeScan": "QR Kódigu Scan .",
+  "alarmSound": "Son Alarme",
+  "addSound": "Hatama Son",
+  "clearCustomSounds": "Son Alfándega ne'ebé klaru",
+  "format24h": "24-Ora Formatu",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Rezolve: {a} {symbol} 2_ = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Númeru {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Apaga",
+  "monday": "Segunda",
+  "tuesday": "Tersa",
+  "wednesday": "Kuarta",
+  "thursday": "Kinta-feira",
+  "friday": "Sexta",
+  "saturday": "Sábadu",
+  "sunday": "Domingu"
+}

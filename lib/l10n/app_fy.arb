@@ -1,0 +1,110 @@
+{
+  "@@locale": "fy",
+  "appTitle": "Wekker - de wekker",
+  "addAlarm": "Add alarm",
+  "editAlarm": "Alarm bewurkje",
+  "noAlarms": "Noch gjin alarmen tafoege",
+  "alarms": "Alarmen",
+  "settings": "Ynstellings",
+  "back": "Rêch",
+  "delete": "Ferwiderje",
+  "deleteAlarm": "Alarm wiskje",
+  "deleteAlarmPrompt": "Binne jo wis dat jo dit alarm wolle wiskje?",
+  "cancel": "Opheffe",
+  "titleLabel": "Titel",
+  "wrongAnswer": "Ferkeard antwurd",
+  "alarmSnoozed": "Alarm snoozed foar {minutes} minuten",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan de QR-koade",
+  "wrongQr": "Ferkearde QR-koade. Scan asjebleaft de juste.",
+  "shakePhone": "Skodzje de tillefoan!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap op it skerm!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR-koade",
+  "fileSaved": "Bestân opslein nei {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera tastimming is fereaske foar QR-koade-scan",
+  "vibration": "Vibraasje",
+  "fadeIn": "Stadichoan ferdwine yn",
+  "alarmScreen": "Alarmskerm",
+  "defaultOption": "Ôfwêzichheid",
+  "mathChallenge": "Wiskunch útdaging",
+  "shakeToStop": "Skodzje om te stopjen",
+  "tapChallenge": "Tap útdaging",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarmklûd",
+  "addSound": "Slút tafoegje",
+  "clearCustomSounds": "Klante klinkt wiskje",
+  "format24h": "24-oere formaat",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Oantal {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ferwiderje",
+  "monday": "moandei",
+  "tuesday": "tiisdei",
+  "wednesday": "woansdei",
+  "thursday": "tongersdei",
+  "friday": "freed",
+  "saturday": "sneon",
+  "sunday": "snein"
+}

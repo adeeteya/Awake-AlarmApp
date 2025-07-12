@@ -1,0 +1,110 @@
+{
+  "@@locale": "bho",
+  "appTitle": "जागल- अलार्म घड़ी के बा",
+  "addAlarm": "अलार्म जोड़ल जाव",
+  "editAlarm": "अलार्म के संपादित करीं",
+  "noAlarms": "अभी तक कवनो अलार्म ना जोड़ल गईल बा .",
+  "alarms": "अलार्म बा .",
+  "settings": "सेटिंग्स के बा .",
+  "back": "पीछे",
+  "delete": "हटाईं",
+  "deleteAlarm": "अलार्म के हटाईं",
+  "deleteAlarmPrompt": "का रउवा पक्का बानी कि रउवा एह अलार्म के हटावल चाहत बानी?",
+  "cancel": "मना कइ दीं",
+  "titleLabel": "हक",
+  "wrongAnswer": "गलत जवाब बा .",
+  "alarmSnoozed": "{minutes} मिनट खातिर अलार्म स्नूज कइल गइल",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "क्यूआर कोड के स्कैन करीं .",
+  "wrongQr": "गलत क्यूआर कोड के बा। कृपया सही के स्कैन करीं।",
+  "shakePhone": "फोन के हिला दीं!",
+  "shakesCount": "हिला के: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "स्क्रीन पर टैप करीं!",
+  "tapsCount": "नल: {count} / {required} बा।",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "क्यूआर कोड डाउनलोड करीं",
+  "fileSaved": "फाइल {path} पर सेव कइल गइल बा।",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "क्यूआर कोड स्कैन खातिर कैमरा के अनुमति जरूरी बा",
+  "vibration": "कंपन के बा .",
+  "fadeIn": "में धीरे-धीरे फीका हो जाला।",
+  "alarmScreen": "अलार्म स्क्रीन के बा .",
+  "defaultOption": "बाकी",
+  "mathChallenge": "गणित के चुनौती 2019 के बा।",
+  "shakeToStop": "रुके खातिर हिला के",
+  "tapChallenge": "चुनौती टैप करे के बा .",
+  "qrCodeScan": "क्यूआर कोड स्कैन बा .",
+  "alarmSound": "अलार्म के आवाज़ 100 बा।",
+  "addSound": "ध्वनि जोड़ल जाला .",
+  "clearCustomSounds": "कस्टम साउंड के साफ करे के बा .",
+  "format24h": "24 घंटा के फॉर्मेट बा .",
+  "snoozeLabel": "स्नूज: {minutes} मिनट के बा।",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "हल करीं: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "नंबर {label} के बा।",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "हटाईं",
+  "monday": "सोमार",
+  "tuesday": "मंगर",
+  "wednesday": "बुध",
+  "thursday": "बियफे",
+  "friday": "शुक",
+  "saturday": "सनिचर",
+  "sunday": "इतवार"
+}

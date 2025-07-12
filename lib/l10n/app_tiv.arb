@@ -1,0 +1,110 @@
+{
+  "@@locale": "tiv",
+  "appTitle": "Awake- Ka Alarm Clock .",
+  "addAlarm": "Seer Alarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "No Alarms Alarms Kpa",
+  "alarms": "Alarm",
+  "settings": "Akaawan",
+  "back": "Ijime",
+  "delete": "Kough",
+  "deleteAlarm": "Delete Alarm",
+  "deleteAlarmPrompt": "U ngu a vangertiôr wer u soo u vihin alarm ne kpa?",
+  "cancel": "bunde",
+  "titleLabel": "Iti",
+  "wrongAnswer": "Mlumun u sha iti",
+  "alarmSnoozed": "Alarm yange cir miniti {minutes} .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan the QR Code .",
+  "wrongQr": "Kwagh u QR Code. Wea soo yô, ôr kwagh u a lu vough la.",
+  "shakePhone": "Pase sha telefon!",
+  "shakesCount": "Shakes: {count} / {required}_",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Kighir ikyav la!",
+  "tapsCount": "Taps: {count} / {required}_",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Tindi",
+  "fileSaved": "File yange lu {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ka i gba u a na ian i eren tom a QR Code Scan .",
+  "vibration": "Vihin",
+  "fadeIn": "Fade u Fade Ken .",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "Per",
+  "mathChallenge": "Math Challenge",
+  "shakeToStop": "Shake u Sep",
+  "tapChallenge": "Taver Challenge",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm Sound",
+  "addSound": "Seer Sound",
+  "clearCustomSounds": "Ikyaior",
+  "format24h": "24-Hour",
+  "snoozeLabel": "Snooze: {minutes} miniti",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Namba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Kough",
+  "monday": "Hiitom",
+  "tuesday": "tom ahar",
+  "wednesday": "tomatar",
+  "thursday": "tom anyiin",
+  "friday": "Tomataan",
+  "saturday": "sati",
+  "sunday": "Yange i memen"
+}

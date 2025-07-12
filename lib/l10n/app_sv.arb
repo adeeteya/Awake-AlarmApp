@@ -1,0 +1,110 @@
+{
+  "@@locale": "sv",
+  "appTitle": "Vaken- väckarklockan",
+  "addAlarm": "Larm",
+  "editAlarm": "Redigera larm",
+  "noAlarms": "Inga larm tillagda än",
+  "alarms": "Larm",
+  "settings": "Inställningar",
+  "back": "Tillbaka",
+  "delete": "Radera",
+  "deleteAlarm": "Ta bort larm",
+  "deleteAlarmPrompt": "Är du säker på att du vill ta bort detta larm?",
+  "cancel": "Avboka",
+  "titleLabel": "Titel",
+  "wrongAnswer": "Fel svar",
+  "alarmSnoozed": "Alarm snoozed i {minutes} minuter",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skanna QR -koden",
+  "wrongQr": "Fel QR -kod. Vänligen skanna rätt.",
+  "shakePhone": "Skaka på telefonen!",
+  "shakesCount": "Skakningar: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tryck på skärmen!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Ladda ner QR -kod",
+  "fileSaved": "Fil sparad till {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kameratillstånd krävs för QR -kodskanning",
+  "vibration": "Vibration",
+  "fadeIn": "Gradvis blekning",
+  "alarmScreen": "Larmskärm",
+  "defaultOption": "Standard",
+  "mathChallenge": "Matematikutmaning",
+  "shakeToStop": "Skaka för att stoppa",
+  "tapChallenge": "Knacka på utmaningen",
+  "qrCodeScan": "QR -kodskanning",
+  "alarmSound": "Larmljud",
+  "addSound": "Lägga till ljud",
+  "clearCustomSounds": "Clear Custom Sounds",
+  "format24h": "24-timmarsformat",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Lös: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nummer {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Radera",
+  "monday": "Måndag",
+  "tuesday": "Tisdag",
+  "wednesday": "Onsdag",
+  "thursday": "Torsdag",
+  "friday": "Fredag",
+  "saturday": "Lördag",
+  "sunday": "Söndag"
+}

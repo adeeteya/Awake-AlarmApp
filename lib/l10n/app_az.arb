@@ -1,0 +1,110 @@
+{
+  "@@locale": "az",
+  "appTitle": "Oyaq - zəngli saat",
+  "addAlarm": "Siqnal əlavə edin",
+  "editAlarm": "Siqnalı düzəldin",
+  "noAlarms": "Hələ həyəcan siqnalı əlavə olunmur",
+  "alarms": "Həyəcan siqnalları",
+  "settings": "Parametrlər",
+  "back": "Geri",
+  "delete": "Silmək",
+  "deleteAlarm": "Siqnalı silmək",
+  "deleteAlarmPrompt": "Bu həyəcanı silmək istədiyinizə əminsiniz?",
+  "cancel": "Ləğv etmək",
+  "titleLabel": "Başlıq",
+  "wrongAnswer": "Səhv cavab",
+  "alarmSnoozed": "Siqnal {minutes} dəqiqə üçün səsləndirildi",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR kodunu tarayın",
+  "wrongQr": "Səhv QR kodu. Zəhmət olmasa düzgün birini tarayın.",
+  "shakePhone": "Telefonu silkələyin!",
+  "shakesCount": "Sürpələr: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ekrana vurun!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR Kodunu yükləyin",
+  "fileSaved": "Fayl {path}-ə qədər saxlanılır",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR Code Scan üçün kamera icazəsi tələb olunur",
+  "vibration": "Vibrasiya",
+  "fadeIn": "Tədricən solur",
+  "alarmScreen": "Siqnal ekranı",
+  "defaultOption": "Defolt",
+  "mathChallenge": "Riyaziyyat problemi",
+  "shakeToStop": "Dayanmaq",
+  "tapChallenge": "Çağırış vurun",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Həyəcan səsi",
+  "addSound": "Səsi əlavə etmək",
+  "clearCustomSounds": "Xüsusi səsləri təmizləyin",
+  "format24h": "24 saatlıq format",
+  "snoozeLabel": "Mürgülə: {minutes} dəq",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Həll edin: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Sayı {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Silmək",
+  "monday": "Bazar ertəsi",
+  "tuesday": "Çərşənbə axşamı",
+  "wednesday": "Çərşənbə günü",
+  "thursday": "Cümə axşamı",
+  "friday": "Cümə",
+  "saturday": "Şənbə",
+  "sunday": "Bazar günü"
+}

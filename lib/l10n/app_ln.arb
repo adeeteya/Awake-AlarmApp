@@ -1,0 +1,110 @@
+{
+  "@@locale": "ln",
+  "appTitle": "Kolamuka- Réveil .",
+  "addAlarm": "Bobakisa alarme .",
+  "editAlarm": "Kobongola alarme .",
+  "noAlarms": "Ba alarmes oyo ebakisami naino te .",
+  "alarms": "Ba alarmes .",
+  "settings": "Paramètres .",
+  "back": "Mukongo",
+  "delete": "Boma",
+  "deleteAlarm": "Bolongola alarme .",
+  "deleteAlarmPrompt": "Ozali sûr que olingi o supprimer alarme oyo?",
+  "cancel": "Kolongola",
+  "titleLabel": "Titre",
+  "wrongAnswer": "Eyano ya mabe .",
+  "alarmSnoozed": "Alarme oyo elala mpɔngi na boumeli ya miniti {minutes} .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan ya code QR .",
+  "wrongQr": "Code QR ya mabe. Svp scanner oyo ebongi.",
+  "shakePhone": "koningana na telefone!",
+  "shakesCount": "Koningisa: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Finá na écran!",
+  "tapsCount": "Ba robinets: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Télécharger code QR .",
+  "fileSaved": "File oyo ebombami na {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ndingisa ya kamera esengeli mpo na scan ya code QR .",
+  "vibration": "Vibration .",
+  "fadeIn": "Fade ya mokemoke na .",
+  "alarmScreen": "Ecran ya alarme .",
+  "defaultOption": "Mbeba",
+  "mathChallenge": "Mokakatano ya matematiki .",
+  "shakeToStop": "koningana mpo na kotika .",
+  "tapChallenge": "Tap Mokakatano .",
+  "qrCodeScan": "Scan ya code QR .",
+  "alarmSound": "Son ya alarme .",
+  "addSound": "Bakisa son .",
+  "clearCustomSounds": "Makɛlɛlɛ ya pɛtɛɛ oyo esalemi na kolanda bamposa ya moto .",
+  "format24h": "Format ya ngonga 24 .",
+  "snoozeLabel": "Snooze: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Bosilisa: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Motango {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Boma",
+  "monday": "Mwa yambo",
+  "tuesday": "Mwa Mibale",
+  "wednesday": "Mwa Misato",
+  "thursday": "Mwa Minei",
+  "friday": "Mwa mitano",
+  "saturday": "Mwa Mposo",
+  "sunday": "Mwa lomingo"
+}

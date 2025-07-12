@@ -1,0 +1,110 @@
+{
+  "@@locale": "bn",
+  "appTitle": "জাগ্রত- অ্যালার্ম ঘড়ি",
+  "addAlarm": "অ্যালার্ম যোগ করুন",
+  "editAlarm": "অ্যালার্ম সম্পাদনা করুন",
+  "noAlarms": "এখনও কোনও অ্যালার্ম যুক্ত করা হয়নি",
+  "alarms": "অ্যালার্ম",
+  "settings": "সেটিংস",
+  "back": "পিছনে",
+  "delete": "মুছুন",
+  "deleteAlarm": "অ্যালার্ম মুছুন",
+  "deleteAlarmPrompt": "আপনি কি নিশ্চিত যে আপনি এই অ্যালার্মটি মুছতে চান?",
+  "cancel": "বাতিল",
+  "titleLabel": "শিরোনাম",
+  "wrongAnswer": "ভুল উত্তর",
+  "alarmSnoozed": "অ্যালার্ম {minutes} মিনিটের জন্য স্নুজেড",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "কিউআর কোড স্ক্যান করুন",
+  "wrongQr": "ভুল কিউআর কোড। দয়া করে সঠিকটি স্ক্যান করুন।",
+  "shakePhone": "ফোন কাঁপুন!",
+  "shakesCount": "কাঁপুন: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "স্ক্রিনে আলতো চাপুন!",
+  "tapsCount": "ট্যাপস: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "কিউআর কোড ডাউনলোড করুন",
+  "fileSaved": "ফাইল {path} এ সংরক্ষণ করা হয়েছে",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "কিউআর কোড স্ক্যানের জন্য ক্যামেরার অনুমতি প্রয়োজন",
+  "vibration": "কম্পন",
+  "fadeIn": "ধীরে ধীরে বিবর্ণ",
+  "alarmScreen": "অ্যালার্ম স্ক্রিন",
+  "defaultOption": "ডিফল্ট",
+  "mathChallenge": "গণিত চ্যালেঞ্জ",
+  "shakeToStop": "থামাতে কাঁপুন",
+  "tapChallenge": "চ্যালেঞ্জ আলতো চাপুন",
+  "qrCodeScan": "কিউআর কোড স্ক্যান",
+  "alarmSound": "অ্যালার্ম শব্দ",
+  "addSound": "শব্দ যোগ করুন",
+  "clearCustomSounds": "কাস্টম শব্দ সাফ করুন",
+  "format24h": "24 ঘন্টা ফর্ম্যাট",
+  "snoozeLabel": "স্নুজ: {minutes} মিনিট",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "সমাধান: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "সংখ্যা {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "মুছুন",
+  "monday": "সোমবার",
+  "tuesday": "মঙ্গলবার",
+  "wednesday": "বুধবার",
+  "thursday": "বৃহস্পতিবার",
+  "friday": "শুক্রবার",
+  "saturday": "শনিবার",
+  "sunday": "রবিবার"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "kk",
+  "appTitle": "Ою - оятар",
+  "addAlarm": "Дабыл қосу",
+  "editAlarm": "Дабылды өңдеу",
+  "noAlarms": "Әлі дабылдар жоқ",
+  "alarms": "Дабылдар",
+  "settings": "Параметрлер",
+  "back": "Көмектесу",
+  "delete": "Жою",
+  "deleteAlarm": "Дабылды жою",
+  "deleteAlarmPrompt": "Бұл дабылды жойғыңыз келе ме?",
+  "cancel": "Күшін жою",
+  "titleLabel": "Тақырып",
+  "wrongAnswer": "Қате жауап",
+  "alarmSnoozed": "{minutes} минуттары үшін дабыл",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR кодын сканерлеңіз",
+  "wrongQr": "QR коды дұрыс емес. Дұрыс сканерлеңіз.",
+  "shakePhone": "Телефонды шайқаңыз!",
+  "shakesCount": "Шайқалады: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Экранды түртіңіз!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR кодын жүктеп алыңыз",
+  "fileSaved": "{path}-ға сақталған файл",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Камераның рұқсаты QR кодын сканерлеу үшін қажет",
+  "vibration": "Діріл",
+  "fadeIn": "Біртіндеп түседі",
+  "alarmScreen": "Оятқыш экраны",
+  "defaultOption": "Міндеттемені орындамау",
+  "mathChallenge": "Математикалық сынақ",
+  "shakeToStop": "Тоқтату үшін шайқаңыз",
+  "tapChallenge": "БГБ Challenge",
+  "qrCodeScan": "QR кодын сканерлеу",
+  "alarmSound": "Дабыл дыбысы",
+  "addSound": "Дыбыс қосыңыз",
+  "clearCustomSounds": "Таза реттелетін дыбыстар",
+  "format24h": "24 сағаттық формат",
+  "snoozeLabel": "Қайталау: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Шешіңіз: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Саны {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Жою",
+  "monday": "Дүйсенбі",
+  "tuesday": "Сейсенбі",
+  "wednesday": "Сәрсенбі",
+  "thursday": "Бейсенбі",
+  "friday": "Жұма",
+  "saturday": "Сенбі",
+  "sunday": "Жексенбі"
+}

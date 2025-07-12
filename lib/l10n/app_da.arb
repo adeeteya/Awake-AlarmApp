@@ -1,0 +1,110 @@
+{
+  "@@locale": "da",
+  "appTitle": "Vågen- vækkeuret",
+  "addAlarm": "Tilføj alarm",
+  "editAlarm": "Rediger alarm",
+  "noAlarms": "Ingen alarmer tilføjet endnu",
+  "alarms": "Alarmer",
+  "settings": "Indstillinger",
+  "back": "Tilbage",
+  "delete": "Slet",
+  "deleteAlarm": "Slet alarm",
+  "deleteAlarmPrompt": "Er du sikker på, at du vil slette denne alarm?",
+  "cancel": "Ophæve",
+  "titleLabel": "Titel",
+  "wrongAnswer": "Forkert svar",
+  "alarmSnoozed": "Alarm snoozed for {minutes} minutter",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan QR -koden",
+  "wrongQr": "Forkert QR -kode. Scan den rigtige.",
+  "shakePhone": "Ryst telefonen!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tryk på skærmen!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR -kode",
+  "fileSaved": "Fil gemt til {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Tilladelse af kameraet er påkrævet til QR -kodescanning",
+  "vibration": "Vibrationer",
+  "fadeIn": "Gradvis falme i",
+  "alarmScreen": "Alarmskærm",
+  "defaultOption": "Misligholdelse",
+  "mathChallenge": "Matematikudfordring",
+  "shakeToStop": "Ryst for at stoppe",
+  "tapChallenge": "Tryk på Challenge",
+  "qrCodeScan": "QR -kodescanning",
+  "alarmSound": "Alarmlyd",
+  "addSound": "Tilføj lyd",
+  "clearCustomSounds": "Klare brugerdefinerede lyde",
+  "format24h": "24-timers format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Løs: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nummer {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Slet",
+  "monday": "mandag",
+  "tuesday": "tirsdag",
+  "wednesday": "onsdag",
+  "thursday": "torsdag",
+  "friday": "fredag",
+  "saturday": "lørdag",
+  "sunday": "søndag"
+}

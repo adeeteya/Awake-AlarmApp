@@ -1,0 +1,110 @@
+{
+  "@@locale": "as",
+  "appTitle": "Awake- এলাৰ্ম ঘড়ী",
+  "addAlarm": "এলাৰ্ম যোগ কৰক",
+  "editAlarm": "এলাৰ্ম সম্পাদনা কৰক",
+  "noAlarms": "এতিয়ালৈকে কোনো এলাৰ্ম যোগ কৰা হোৱা নাই",
+  "alarms": "এলাৰ্ম",
+  "settings": "সংহতিসমূহ",
+  "back": "পিছলৈ",
+  "delete": "বিলোপ",
+  "deleteAlarm": "এলাৰ্ম মচি পেলাওক",
+  "deleteAlarmPrompt": "আপুনি এই এলাৰ্মটো মচি পেলাব বিচাৰে বুলি নিশ্চিত নেকি?",
+  "cancel": "বাতিল কৰক",
+  "titleLabel": "অলপ",
+  "wrongAnswer": "ভুল উত্তৰ",
+  "alarmSnoozed": "{minutes} মিনিটৰ বাবে এলাৰ্ম স্নুজ কৰা হৈছে",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR ক'ড স্কেন কৰক",
+  "wrongQr": "ভুল QR ক'ড। অনুগ্ৰহ কৰি শুদ্ধটো স্কেন কৰক।",
+  "shakePhone": "ফোনটো জোকাৰি দিয়ক!",
+  "shakesCount": "শ্বেক: _০_ / _১_",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "স্ক্ৰীণ টেপ কৰক!",
+  "tapsCount": "টেপ: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ডাউনলোড QR Code",
+  "fileSaved": "ফাইল {path} ত সংৰক্ষণ কৰা হৈছে",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR ক'ড স্কেনৰ বাবে কেমেৰাৰ অনুমতিৰ প্ৰয়োজন",
+  "vibration": "কম্পন",
+  "fadeIn": "ক্ৰমান্বয়ে ম্লান",
+  "alarmScreen": "এলাৰ্ম পৰ্দা",
+  "defaultOption": "ডিফল্ট",
+  "mathChallenge": "Math Challenge",
+  "shakeToStop": "বন্ধ কৰিবলৈ শ্বেক কৰক",
+  "tapChallenge": "প্ৰত্যাহ্বান টেপ কৰক",
+  "qrCodeScan": "QR ক'ড স্কেন",
+  "alarmSound": "এলাৰ্ম শব্দ",
+  "addSound": "শব্দ যোগ কৰক",
+  "clearCustomSounds": "স্বনিৰ্বাচিত শব্দসমূহ পৰিষ্কাৰ কৰক",
+  "format24h": "২৪-ঘণ্টা ফৰ্মেট",
+  "snoozeLabel": "স্নুজ: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "সমাধান: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "সংখ্যা {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "বিলোপ",
+  "monday": "সোমবাৰ",
+  "tuesday": "মঙ্গলবাৰ",
+  "wednesday": "বুধবাৰ",
+  "thursday": "বৃহস্পতিবাৰ",
+  "friday": "শুক্ৰবাৰ",
+  "saturday": "শনিবাৰ",
+  "sunday": "দেওবাৰ"
+}

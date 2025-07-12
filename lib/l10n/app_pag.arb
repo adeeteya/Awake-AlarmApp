@@ -1,0 +1,110 @@
+{
+  "@@locale": "pag",
+  "appTitle": "Awake- Oras na Alarma .",
+  "addAlarm": "Idagdag so Alarm .",
+  "editAlarm": "I-edit Alarma",
+  "noAlarms": "Wala ray Alarma ya Inarum .",
+  "alarms": "Saray alarma",
+  "settings": "Saray panag-set",
+  "back": "Beneg",
+  "delete": "Ekalen",
+  "deleteAlarm": "Buraen so Alarma",
+  "deleteAlarmPrompt": "Segurado ka kasin labay mon buralen iyan alarma?",
+  "cancel": "Kanselaen",
+  "titleLabel": "Titulo",
+  "wrongAnswer": "Lingon ebat .",
+  "alarmSnoozed": "Si Alarm nan-snooz ed loob na {minutes} minuto",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan so Kodigo .",
+  "wrongQr": "Lingon Qode Code. Ipangasin i-scan so susto.",
+  "shakePhone": "Iyugyog so telepono!",
+  "shakesCount": "Ibabaw: {count} / {required}.",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "I-tap so iskrin!",
+  "tapsCount": "Taps: {count} / {required}.",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Code .",
+  "fileSaved": "file ya nisalba ed {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kaukolan so panag-abuloy na camerra parad Scan Kodo na Qde .",
+  "vibration": "Pakakar",
+  "fadeIn": "Kalkalnan Anak Diad .",
+  "alarmScreen": "Iskrin na Alam",
+  "defaultOption": "Babalingan",
+  "mathChallenge": "Angat ed Mateo",
+  "shakeToStop": "Iyugyog Pian Mantunda .",
+  "tapChallenge": "Splehyo",
+  "qrCodeScan": "QR Kon Scan Scan",
+  "alarmSound": "Alasma a Lila",
+  "addSound": "Idagdag so Tanol",
+  "clearCustomSounds": "Malinew ya Sunog so Sunog",
+  "format24h": "24-Oras ya Porma",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol}_ = = = =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ekalen",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Mierkoles",
+  "thursday": "Huebes",
+  "friday": "Biernes",
+  "saturday": "Sabado",
+  "sunday": "Simba"
+}

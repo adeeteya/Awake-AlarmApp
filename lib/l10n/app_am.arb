@@ -1,0 +1,110 @@
+{
+  "@@locale": "am",
+  "appTitle": "ማንቂያ ደወል ሰዓቱ",
+  "addAlarm": "ደወል ጨምር",
+  "editAlarm": "ማንቂያውን ያርትዑ",
+  "noAlarms": "እስካሁን ድረስ የታሸጉ ድሎች አልነበሩም",
+  "alarms": "ማንቂያዎች",
+  "settings": "ቅንብሮች",
+  "back": "ተመለስ",
+  "delete": "ሰርዝ",
+  "deleteAlarm": "ማንቂያ ሰርዝ",
+  "deleteAlarmPrompt": "እርግጠኛ ነዎት ይህንን ማንቂያ መሰረዝ ይፈልጋሉ?",
+  "cancel": "ይቅር",
+  "titleLabel": "ርዕስ",
+  "wrongAnswer": "የተሳሳተ መልስ",
+  "alarmSnoozed": "ማንቂያ ደወል ለ {minutes} ደቂቃዎች",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "የ QR ኮድ ይቃኙ",
+  "wrongQr": "የተሳሳተ QR ኮድ. እባክዎ ትክክለኛውን ይቃኙ.",
+  "shakePhone": "ስልኩን ይንቀጠቀጡ!",
+  "shakesCount": "መንቀጥቀጥ {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ማያ ገጹን መታ ያድርጉ!",
+  "tapsCount": "ቧንቧዎች: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR ኮድ ያውርዱ",
+  "fileSaved": "ፋይል ወደ {path} የተቀመጠ ፋይል",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ለ QR ኮድ ቅኝት ካሜራ ፈቃድ ያስፈልጋል",
+  "vibration": "ንዝረት",
+  "fadeIn": "ቀስ በቀስ ይሽራል",
+  "alarmScreen": "የማንቂያ ደወል ማሳያ",
+  "defaultOption": "ነባሪ",
+  "mathChallenge": "የሂሳብ ፈተና",
+  "shakeToStop": "ለማቆም ይንቀጠቀጡ",
+  "tapChallenge": "ተፈታታኝ ሁኔታ መታ ያድርጉ",
+  "qrCodeScan": "QR ኮድ ፍተሻ",
+  "alarmSound": "የደወል ድምፅ",
+  "addSound": "ድምጽ ያክሉ",
+  "clearCustomSounds": "ብጁ ድም sounds ችን ያፅዱ",
+  "format24h": "የ 24 ሰዓት ቅርጸት",
+  "snoozeLabel": "Snooze: {minutes} ደቂቃ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ይፍቱ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ቁጥር {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ሰርዝ",
+  "monday": "ሰኞ",
+  "tuesday": "ማክሰኞ",
+  "wednesday": "እሮብ",
+  "thursday": "ሐሙስ",
+  "friday": "አርብ",
+  "saturday": "ቅዳሜ",
+  "sunday": "እሁድ"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "yi",
+  "appTitle": "וואך - די שרעק זייגער",
+  "addAlarm": "לייג שרעק",
+  "editAlarm": "רעדאַגירן שרעק",
+  "noAlarms": "קיין אַלאַרמס צוגעגעבן נאָך",
+  "alarms": "אַלאַרמס",
+  "settings": "סעטטינגס",
+  "back": "צוריק",
+  "delete": "ויסמעקן",
+  "deleteAlarm": "ויסמעקן שרעק",
+  "deleteAlarmPrompt": "זענט איר זיכער אַז איר ווילט ויסמעקן דעם שרעק?",
+  "cancel": "באָטל מאַכן",
+  "titleLabel": "טיטל",
+  "wrongAnswer": "פאַלש ענטפֿערן",
+  "alarmSnoozed": "שרעק סנאָאָזעד פֿאַר {minutes} מינוט",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "יבערקוקן די QR קאָד",
+  "wrongQr": "פאַלש QR קאָד. ביטע יבערקוקן די ריכטיק.",
+  "shakePhone": "שאָקלען די טעלעפאָן!",
+  "shakesCount": "שייקס: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "צאַפּן אויף די פאַרשטעלן!",
+  "tapsCount": "טאַפּס: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "אראפקאפיע QR קאָד",
+  "fileSaved": "טעקע געראטעוועט צו {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "אַפּאַראַט דערלויבעניש איז פארלאנגט פֿאַר QR קאָד יבערקוקן",
+  "vibration": "ווייבריישאַן",
+  "fadeIn": "גראַדזשואַל וועלקן אין",
+  "alarmScreen": "שרעק סקרין",
+  "defaultOption": "ניט ויסצאָלן",
+  "mathChallenge": "מאַט טשאַלאַנדזש",
+  "shakeToStop": "טרייסלען צו האַלטן",
+  "tapChallenge": "צאַפּן אַרויסרופן",
+  "qrCodeScan": "QR קאָד יבערקוקן",
+  "alarmSound": "שרעק געזונט",
+  "addSound": "לייג געזונט",
+  "clearCustomSounds": "קלאָר מנהג סאָונדס",
+  "format24h": "24-שעה פֿאָרמאַט",
+  "snoozeLabel": "סנאָווז: {minutes} מין",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "סאָלווע: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "נומער {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ויסמעקן",
+  "monday": "מאָנטיק",
+  "tuesday": "דינסטיק",
+  "wednesday": "מיטוואָך",
+  "thursday": "דאָנערשטיק",
+  "friday": "פרייַטיק",
+  "saturday": "שאַבעס",
+  "sunday": "זונטיק"
+}

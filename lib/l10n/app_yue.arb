@@ -1,0 +1,110 @@
+{
+  "@@locale": "yue",
+  "appTitle": "覺醒 - 警報鐘",
+  "addAlarm": "加入警報",
+  "editAlarm": "編輯警報",
+  "noAlarms": "冇鬧鐘加咗啦",
+  "alarms": "警報",
+  "settings": "設定",
+  "back": "返回",
+  "delete": "刪除",
+  "deleteAlarm": "刪除阿拉姆",
+  "deleteAlarmPrompt": "你肯定想刪除呢個鬧鐘？",
+  "cancel": "取消",
+  "titleLabel": "題目",
+  "wrongAnswer": "答案錯",
+  "alarmSnoozed": "警報 _ 0 _ 分鐘內睡覺",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "掃描 QR Code",
+  "wrongQr": "錯 QR 代碼。請掃描正確",
+  "shakePhone": "搖動電話！",
+  "shakesCount": "搖晃： _ 0 _ / _ 1 _",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "撳一下畫面！",
+  "tapsCount": "水龍頭 : _ 0 _ / _ 1 _",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "下載 QR 代碼",
+  "fileSaved": "檔案儲存到 _ 0 _",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR Code 掃描需要相機權限",
+  "vibration": "震動",
+  "fadeIn": "漸漸淡化 In",
+  "alarmScreen": "警報屏幕",
+  "defaultOption": "預設",
+  "mathChallenge": "數學挑戰",
+  "shakeToStop": "搖搖欲墜停止",
+  "tapChallenge": "撳一下挑戰",
+  "qrCodeScan": "QR 代碼掃描",
+  "alarmSound": "警報聲",
+  "addSound": "加入聲音",
+  "clearCustomSounds": "清晰嘅自訂聲音",
+  "format24h": "24 小時格式",
+  "snoozeLabel": "嘔吐 : _ 0_ min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "解決 : _ 0 _ _ 1 _ _ 2 _ =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "號碼 _ 0 _",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "刪除",
+  "monday": "星期一",
+  "tuesday": "星期二",
+  "wednesday": "星期三",
+  "thursday": "禮拜四",
+  "friday": "星期五",
+  "saturday": "星期六",
+  "sunday": "星期日"
+}

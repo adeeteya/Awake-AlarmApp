@@ -1,0 +1,110 @@
+{
+  "@@locale": "pl",
+  "appTitle": "Puduj- budzik",
+  "addAlarm": "Dodaj alarm",
+  "editAlarm": "Edytuj alarm",
+  "noAlarms": "Nie dodano jeszcze żadnych alarmów",
+  "alarms": "Alarmy",
+  "settings": "Ustawienia",
+  "back": "Z powrotem",
+  "delete": "Usuwać",
+  "deleteAlarm": "Usuń alarm",
+  "deleteAlarmPrompt": "Czy na pewno chcesz usunąć ten alarm?",
+  "cancel": "Anulować",
+  "titleLabel": "Tytuł",
+  "wrongAnswer": "Niewłaściwa odpowiedź",
+  "alarmSnoozed": "Alarm drzemki przez {minutes} minuty",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Zeskanuj kod QR",
+  "wrongQr": "Niewłaściwy kod QR. Proszę zeskanować właściwy.",
+  "shakePhone": "Wstrząśnij telefon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Stuknij ekran!",
+  "tapsCount": "Krany: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Pobierz kod QR",
+  "fileSaved": "Plik zapisany na {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Zezwolenie na kamerę jest wymagane do skanowania kodu QR",
+  "vibration": "Wibracja",
+  "fadeIn": "Stopniowe zanikanie",
+  "alarmScreen": "Ekran alarmu",
+  "defaultOption": "Domyślny",
+  "mathChallenge": "Wyzwanie matematyczne",
+  "shakeToStop": "Shake, żeby się zatrzymać",
+  "tapChallenge": "Stuknij wyzwanie",
+  "qrCodeScan": "Skan kodu QR",
+  "alarmSound": "Dźwięk alarmowy",
+  "addSound": "Dodaj dźwięk",
+  "clearCustomSounds": "Wyczyść dźwięki niestandardowe",
+  "format24h": "24-godzinny format",
+  "snoozeLabel": "SNOZE: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Rozwiąż: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Liczba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Usuwać",
+  "monday": "Poniedziałek",
+  "tuesday": "Wtorek",
+  "wednesday": "Środa",
+  "thursday": "Czwartek",
+  "friday": "Piątek",
+  "saturday": "Sobota",
+  "sunday": "Niedziela"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ko",
+  "appTitle": "깨어- 알람 시계",
+  "addAlarm": "알람을 추가하십시오",
+  "editAlarm": "알람 편집",
+  "noAlarms": "아직 알람이 추가되지 않았습니다",
+  "alarms": "알람",
+  "settings": "설정",
+  "back": "뒤쪽에",
+  "delete": "삭제",
+  "deleteAlarm": "알람을 삭제하십시오",
+  "deleteAlarmPrompt": "이 알람을 삭제 하시겠습니까?",
+  "cancel": "취소",
+  "titleLabel": "제목",
+  "wrongAnswer": "잘못된 대답",
+  "alarmSnoozed": "{minutes} 분 동안 알람이 snoozed",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR 코드를 스캔하십시오",
+  "wrongQr": "잘못된 QR 코드. 올바른 것을 스캔하십시오.",
+  "shakePhone": "전화를 흔들어!",
+  "shakesCount": "쉐이크 : {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "화면을 누릅니다!",
+  "tapsCount": "탭 : {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR 코드를 다운로드하십시오",
+  "fileSaved": "{path}에 저장된 파일",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR 코드 스캔에는 카메라 권한이 필요합니다",
+  "vibration": "진동",
+  "fadeIn": "점진적으로 페이드",
+  "alarmScreen": "알람 화면",
+  "defaultOption": "기본",
+  "mathChallenge": "수학 도전",
+  "shakeToStop": "멈추기 위해 흔들립니다",
+  "tapChallenge": "도전 도전을 누릅니다",
+  "qrCodeScan": "QR 코드 스캔",
+  "alarmSound": "알람 소리",
+  "addSound": "소리를 추가하십시오",
+  "clearCustomSounds": "명확한 커스텀 사운드",
+  "format24h": "24 시간 형식",
+  "snoozeLabel": "스누즈 : {minutes} 분",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "해결 : {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "번호 {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "삭제",
+  "monday": "월요일",
+  "tuesday": "화요일",
+  "wednesday": "수요일",
+  "thursday": "목요일",
+  "friday": "금요일",
+  "saturday": "토요일",
+  "sunday": "일요일"
+}

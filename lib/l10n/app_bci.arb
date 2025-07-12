@@ -1,0 +1,110 @@
+{
+  "@@locale": "bci",
+  "appTitle": "Akpɔ- Alarme Clock",
+  "addAlarm": "Ɔ fa Alarm .",
+  "editAlarm": "Iti Alarm",
+  "noAlarms": "Be nga be fali be wun wlali nun’n, be nunman lɛ.",
+  "alarms": "alarmes",
+  "settings": "Ndɛ",
+  "back": "Si'n",
+  "delete": "Nu nu",
+  "deleteAlarm": "Delete Alarm",
+  "deleteAlarmPrompt": "?Amun lafi su kɛ amun kunndɛ kɛ amún súan alarm sɔ’n?",
+  "cancel": "yilɛ",
+  "titleLabel": "Iti",
+  "wrongAnswer": "Issu tɛ",
+  "alarmSnoozed": "Alarm’n tɔli {minutes} miniti .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan QR Code",
+  "wrongQr": "Code QR w’a yi i nglo. Yaci, nian fluwa’n i nun.",
+  "shakePhone": "Amun jran telefɔnu’n su!",
+  "shakesCount": "Ndɛ mma mun: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tin écran’n su!",
+  "tapsCount": "Afɔtuɛ: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Télécharger QR Code",
+  "fileSaved": "File de {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ɔ fata kɛ be man QR Code Scan i atin kɛ ɔ yo sɔ.",
+  "vibration": "Viema",
+  "fadeIn": "Aklunjuɛ dilɛ’n i su ndɛ’n",
+  "alarmScreen": "Alarme",
+  "defaultOption": "N'ga ti man wɔ anwlinssu",
+  "mathChallenge": "Man'ni sacilɛ",
+  "shakeToStop": "Fa ɔ wun mantan .",
+  "tapChallenge": "Tin kekle",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarme so’n",
+  "addSound": "Sɛ be fa like be gua su",
+  "clearCustomSounds": "Couverts de couture",
+  "format24h": "24-Dɔ 24-Dɔ .",
+  "snoozeLabel": "Score: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "I siesielɛ’n: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nimero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Nu nu",
+  "monday": "Kissie",
+  "tuesday": "jɔlɛ",
+  "wednesday": "mlan ʃin",
+  "thursday": "Jɔlɛ tʃin",
+  "friday": "Ya",
+  "saturday": "fue",
+  "sunday": "Mɔnnɛn"
+}

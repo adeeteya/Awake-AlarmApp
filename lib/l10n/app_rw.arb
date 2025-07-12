@@ -1,0 +1,110 @@
+{
+  "@@locale": "rw",
+  "appTitle": "Kanguka- isaha yo gutabaza",
+  "addAlarm": "Ongeraho Alarm",
+  "editAlarm": "Hindura",
+  "noAlarms": "Nta gushidikanya",
+  "alarms": "Impuruza",
+  "settings": "Igenamiterere",
+  "back": "Inyuma",
+  "delete": "Siba",
+  "deleteAlarm": "Siba impuruza",
+  "deleteAlarmPrompt": "Uzi neza ko ushaka gusiba iyi mpuruza?",
+  "cancel": "Guhagarika",
+  "titleLabel": "Umutwe",
+  "wrongAnswer": "Igisubizo kitari cyo",
+  "alarmSnoozed": "Alarm itontoma {minutes}_",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Sikana QR Code",
+  "wrongQr": "QR Code. Nyamuneka sobanura neza.",
+  "shakePhone": "Kunyeganyeza terefone!",
+  "shakesCount": "Kunyeganyeza: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Kanda kuri ecran!",
+  "tapsCount": "Kanda: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Kuramo QR Code",
+  "fileSaved": "Idosiye Yabitswe kuri {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Uruhushya rwa kamera rurakenewe kuri QR Code Scan",
+  "vibration": "Kunyeganyega",
+  "fadeIn": "Buhoro buhoro",
+  "alarmScreen": "Ecran ya ecran",
+  "defaultOption": "Mburabuzi",
+  "mathChallenge": "Ikibazo",
+  "shakeToStop": "Shake guhagarika",
+  "tapChallenge": "Kanda Ikibazo",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Ijwi",
+  "addSound": "Ongeraho amajwi",
+  "clearCustomSounds": "Gukuramo amajwi yihariye",
+  "format24h": "Imiterere y'amasaha 24",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Gukemura: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Umubare {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Siba",
+  "monday": "Ku wa mbere",
+  "tuesday": "Ku wa kabiri",
+  "wednesday": "Ku wa gatatu",
+  "thursday": "Ku wa kane",
+  "friday": "Ku wa gatanu",
+  "saturday": "Ku wa gatandatu",
+  "sunday": "Ku cyumweru"
+}

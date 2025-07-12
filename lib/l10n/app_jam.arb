@@ -1,0 +1,110 @@
+{
+  "@@locale": "jam",
+  "appTitle": "Awaak- Di Alarm Klak .",
+  "addAlarm": "Ad Allarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "No Alarms Ad Yet",
+  "alarms": "Alarms",
+  "settings": "Setins",
+  "back": "Back",
+  "delete": "Chrow weh",
+  "deleteAlarm": "Diliit Alarm",
+  "deleteAlarmPrompt": "Yu shuor se yu waahn diliit dis alarm?",
+  "cancel": "Shet dung",
+  "titleLabel": "Title",
+  "wrongAnswer": "Rang ansa",
+  "alarmSnoozed": "Alarm snuoz fi {minutes} minit .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skan di QR Kod .",
+  "wrongQr": "Rang QR Koud. Pliiz skan di karek wan.",
+  "shakePhone": "Shiek di fuon!",
+  "shakesCount": "Shiek: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap di skriin!",
+  "tapsCount": "Tap: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Daunlod QR Kod .",
+  "fileSaved": "Fail siev tu {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera permishan niid fi QR Kod Skan .",
+  "vibration": "Vibrieshan",
+  "fadeIn": "Gradual Fade Ina .",
+  "alarmScreen": "Alarm Skriin",
+  "defaultOption": "Default",
+  "mathChallenge": "Math Chalenj",
+  "shakeToStop": "Shiek tu Stap",
+  "tapChallenge": "Tap Chalenj",
+  "qrCodeScan": "QR Kod Skan .",
+  "alarmSound": "Alarm Saun",
+  "addSound": "Ad Saun",
+  "clearCustomSounds": "Klier Kastom Saun .",
+  "format24h": "24-Ou-waar Faamat",
+  "snoozeLabel": "Snuoz: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solv: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Chrow weh",
+  "monday": "Monday",
+  "tuesday": "Tuesday",
+  "wednesday": "Wensday",
+  "thursday": "Tursday",
+  "friday": "Friday",
+  "saturday": "Satiday",
+  "sunday": "Sunday"
+}

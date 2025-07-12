@@ -1,0 +1,110 @@
+{
+  "@@locale": "dv",
+  "appTitle": "ހޭލާ- އެލާމް ގަޑި",
+  "addAlarm": "އެލާމް އިތުރުކުރުން",
+  "editAlarm": "އެޑިޓް އެލާމް",
+  "noAlarms": "އަދި އެއްވެސް އެލާމްއެއް އިތުރުކޮށްފައެއް ނުވެއެވެ .",
+  "alarms": "އެލާމްތައް",
+  "settings": "ސެޓިންގސް",
+  "back": "ފަހަތް",
+  "delete": "ޑިލީޓް",
+  "deleteAlarm": "އެލާމް ޑިލީޓް ކުރުން",
+  "deleteAlarmPrompt": "މި އެލާމް ޑިލީޓް ކުރަން ބޭނުންވާކަން ޔަގީން ހެއްޔެވެ؟",
+  "cancel": "ކެންސަލް",
+  "titleLabel": "މަޤާމު",
+  "wrongAnswer": "ގޯސް ޖަވާބު",
+  "alarmSnoozed": "{minutes} މިނެޓް ވަންދެން އެލާމް ނިވާކޮށްފައި",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ކިއުއާރު ކޯޑް ސްކޭން ކުރުން",
+  "wrongQr": "ގޯސް QR ކޯޑެއް. ރަނގަޅު އެއްޗެއް ސްކޭން ކުރައްވާށެވެ.",
+  "shakePhone": "ފޯނު ތެޅުން!",
+  "shakesCount": "ޝޭކްސް: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ސްކްރީނަށް ޓެޕް ކުރާށެވެ!",
+  "tapsCount": "ޓޭޕް: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR code Download",
+  "fileSaved": "ފައިލް {path} އަށް ސޭވްކޮށްފައި",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ކިއުއާރު ކޯޑް ސްކޭން ކުރުމަށް ކެމެރާގެ ހުއްދަ ބޭނުން",
+  "vibration": "ވައިބަރޭޝަން",
+  "fadeIn": "މަޑުމަޑުން ފޭޑް އިން",
+  "alarmScreen": "އެލާމް ސްކްރީން",
+  "defaultOption": "ޑީފޯލްޓް",
+  "mathChallenge": "މެތު ޗެލެންޖް",
+  "shakeToStop": "ތެޅިގަންނަން",
+  "tapChallenge": "ޓޭޕް ޗެލެންޖް",
+  "qrCodeScan": "ކިއުއާރު ކޯޑް ސްކޭން",
+  "alarmSound": "އެލާމް އަޑު",
+  "addSound": "އަޑު އިތުރުކުރުން",
+  "clearCustomSounds": "ސާފު ކަސްޓަމް އަޑުތައް",
+  "format24h": "24 ގަޑިއިރުގެ ފޯމެޓެއް",
+  "snoozeLabel": "ސްނޫޒް: {minutes} މިން",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ހައްލު: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ނަންބަރު {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ޑިލީޓް",
+  "monday": "ހޯމަ ދުވަސް",
+  "tuesday": "އަންގާރަ ދުވަސް",
+  "wednesday": "ބުދަ ދުވަސް",
+  "thursday": "ބުރާސްފަތި",
+  "friday": "ހުކުރު ދުވަސް",
+  "saturday": "ހޮނިހިރު ދުވަސް",
+  "sunday": "އާދީއްތަ ދުވަސް"
+}

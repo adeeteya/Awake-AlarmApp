@@ -1,0 +1,110 @@
+{
+  "@@locale": "crh",
+  "appTitle": "Уянув- Сигнал сааты .",
+  "addAlarm": "Сифариш къош .",
+  "editAlarm": "«Сигнал»ны денъиштиринъиз",
+  "noAlarms": "«Сигнализация» ёкъ.",
+  "alarms": "Хамлеме",
+  "settings": "Параметр",
+  "back": "Кери",
+  "delete": "Сильмек",
+  "deleteAlarm": "Сильгилерни ёкъ этмек .",
+  "deleteAlarmPrompt": "Бу сигналны ёкъ этмек истегенинъизге эминсинъизми?",
+  "cancel": "Лягъу",
+  "titleLabel": "Башлыкъ",
+  "wrongAnswer": "Янълыш джевап",
+  "alarmSnoozed": "Сигнал {minutes} дакъкъа девамында янып-кюйип кетти .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR-кодны сканерлемек .",
+  "wrongQr": "Янълыш QR Кодекси. Догърусыны сканерлемек.",
+  "shakePhone": "Телефонны чайкъа!",
+  "shakesCount": "Зильтилер: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Экрангъа басынъыз!",
+  "tapsCount": "Ташлар: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR-кодны юкленъиз.",
+  "fileSaved": "Файл {path}-ге сакъланды.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR-код сканерине Камера рухсети керек .",
+  "vibration": "Титрев",
+  "fadeIn": "Яваштан сёндирювде .",
+  "alarmScreen": "Сигнал экраны .",
+  "defaultOption": "Огюнден козь огюне алынгъан",
+  "mathChallenge": "Математика сынавы .",
+  "shakeToStop": "Токътамакъ ичюн чайкъамакъ .",
+  "tapChallenge": "Чагъырув сынавы .",
+  "qrCodeScan": "QR-код сканери .",
+  "alarmSound": "Сигнал сеси .",
+  "addSound": "Сес .",
+  "clearCustomSounds": "Ачыкъ махсус сеслер",
+  "format24h": "24-саат форматы .",
+  "snoozeLabel": "Снозу: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Чыкъыш: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Сайы {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Сильмек",
+  "monday": "Базарэртеси",
+  "tuesday": "Салы",
+  "wednesday": "Чаршенбе",
+  "thursday": "Джумаакъшамы",
+  "friday": "Джума",
+  "saturday": "Джумаэртеси",
+  "sunday": "Базар куню"
+}

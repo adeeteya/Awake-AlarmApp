@@ -1,0 +1,110 @@
+{
+  "@@locale": "ber",
+  "appTitle": "ⵡⴰⴽ- The Alarm .",
+  "addAlarm": "ⵔⵏⵓ-ⴷ ⴰⵍⴰⵔⵎ",
+  "editAlarm": "ⴰⵙⵓⵖⵍ ⵏ ⴰⵍⴰⵔⵎ",
+  "noAlarms": "ⵓⵔ ⵍⵍⵉⵏ ⵉⴱⵍⴽⵉⵎⵏ ⴰⵔ ⵜⵜⵔⵏⵓⵏ ⵎⴰⵛⴰ",
+  "alarms": "ⵜⵉⴼⴰⵡⵉⵏ",
+  "settings": "ⴰⵙⵜⴰⵍ",
+  "back": "ⵖⴻⵔ ⴷⴻⴼⴼⵉⵔ",
+  "delete": "ⵙⵙⵓⴽⴽⴻⵙ",
+  "deleteAlarm": "ⴷⵉⵍⵉⵜ ⴰⵍⴰⵔⵎ",
+  "deleteAlarmPrompt": "ⴰⵔ ⵜⵙⵏⵓⵎⵎⴰⵍⴷ ⵎⴰⵙ ⵜⵔⵉⴷ ⴰⴷ ⵜⵙⵙⴽⵔⴷ ⴰⵙⴼⵙⵔ ⴰⴷ ?",
+  "cancel": "ⵢⴻⴽⴽⴻⵙ",
+  "titleLabel": "ⴰⵣⵡⴻⵍ",
+  "wrongAnswer": "ⴰⵔⵔⴰ ⵏ ⵡⴰⵡⴰⵍ ⴰⵡⵔⴰⵖ",
+  "alarmSnoozed": "ⴰⵔⵔⴰⵎ ⵉⴼⴼⵖ {minutes} ⵏ ⵜⵙⵔⴰⴳⵉⵏ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ⵙⴽⴰⵏ ⴰⵙⴽⴰⵏ QR Code",
+  "wrongQr": "Wrung QR Code. ⵜⵜⵅⵉⵍⴽ ⵙⵙⴽⵔ ⵢⴰⵏ ⵓⵏⵛⴽ ⵉⵣⴷⴷⵉⴳⵏ.",
+  "shakePhone": "ⴱⴹⵓ ⵜⵉⵍⵉⴼⵓⵏ!",
+  "shakesCount": "ⵛⵉⴽⵙ: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ⵟⵟⴼⵎ ⴰⵙⵎⵙⴰⵏ!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ⴰⵙⴷⴰⵡ ⵇⵔ ⴽⵓⴷ",
+  "fileSaved": "ⴰⴼⵉⵉⵍ ⵉⵜⵜⵓⵙⵏⴼⵍ ⵖⵔ {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ⴰⵙⵓⵜⵔ ⵏ ⴽⴰⵎⵔⴰ ⵉⵜⵜⵓⵙⵓⵜⵔ ⵉ QR Code Scan",
+  "vibration": "ⴰⵙⴱⴷⴰⴷ",
+  "fadeIn": "ⴼⴰⴷ ⴼⴰⴷ ⴳ",
+  "alarmScreen": "ⴰⵍⴰⵔⵎ ⵙⴽⵔⵉⵏ",
+  "defaultOption": "ⴰⵎⴽⴰⵏ ⵓⵔ ⵏⴻⵜⵜⵡⴰⵙⵙⴻⵏ",
+  "mathChallenge": "ⵜⵓⵙⵏⴰⴽⵜ ⵛⴰⵍⵏⵊ",
+  "shakeToStop": "ⵚⴰⴽⵉ ⵖⵔ ⵉⴱⴷⴷ",
+  "tapChallenge": "ⵟⴰⴱ ⵛⴰⵍⵏⵊ",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "ⴰⵍⴰⵔⵎ ⵙⵓⵏⴷ",
+  "addSound": "ⵔⵏⵓ-ⴷ ⴰⵙⴼⵓⴳⴻⵍ",
+  "clearCustomSounds": "ⴰⵙⵍⵍⵓ ⵙⵓⵏⴷⵙ",
+  "format24h": "24-ⵜⴰⵙⵔⴰⴳⵜ ⵏ ⵓⵙⵔⴰⴳ",
+  "snoozeLabel": "ⵙⵏⵓⵣⵉ: {minutes} ⵎⵉⵏ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ⴰⴼⵓⴷ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ⵓⵟⵟⵓⵏ {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ⵙⵙⵓⴽⴽⴻⵙ",
+  "monday": "Arim",
+  "tuesday": "ⴰⵙⵙ ⵏ ⵜⵍⴰⵜⴰ",
+  "wednesday": "ⵍⵃⴻⴷⴷ",
+  "thursday": "ⴰⵎⵀⴰⴷ",
+  "friday": "ⵍⵊⴻⵎⵄⴰ",
+  "saturday": "ⵙⴻⴷ",
+  "sunday": "ⴰⵛⴻⵔ"
+}

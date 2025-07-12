@@ -1,0 +1,110 @@
+{
+  "@@locale": "ml",
+  "appTitle": "ഉണരുക- അലാറം ക്ലോക്ക്",
+  "addAlarm": "അലാറം ചേർക്കുക",
+  "editAlarm": "അലാറം എഡിറ്റുചെയ്യുക",
+  "noAlarms": "ഇതുവരെ അലാറങ്ങൾ ചേർത്തിട്ടില്ല",
+  "alarms": "അലാറങ്ങൾ",
+  "settings": "ക്രമീകരണങ്ങൾ",
+  "back": "പിന്നിലുള്ള",
+  "delete": "ഇല്ലാതാക്കുക",
+  "deleteAlarm": "അലാറം ഇല്ലാതാക്കുക",
+  "deleteAlarmPrompt": "ഈ അലാറം ഇല്ലാതാക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?",
+  "cancel": "റദ്ദാക്കുക",
+  "titleLabel": "തലക്കെട്ട്",
+  "wrongAnswer": "തെറ്റായ ഉത്തരം",
+  "alarmSnoozed": "{minutes} മിനിറ്റ് അലാറം സ്നൂസ് ചെയ്തു",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR കോഡ് സ്കാൻ ചെയ്യുക",
+  "wrongQr": "തെറ്റായ QR കോഡ്. ശരിയായ ഒന്ന് സ്കാൻ ചെയ്യുക.",
+  "shakePhone": "ഫോൺ കുലുക്കുക!",
+  "shakesCount": "കുലുക്കം: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "സ്ക്രീൻ ടാപ്പുചെയ്യുക!",
+  "tapsCount": "ടാപ്പുകൾ: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR കോഡ് ഡൗൺലോഡുചെയ്യുക",
+  "fileSaved": "ഫയൽ {path} ലേക്ക് സംരക്ഷിച്ചു",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR കോഡ് സ്കാൻ ചെയ്യുന്നതിന് ക്യാമറ അനുമതി ആവശ്യമാണ്",
+  "vibration": "വൈബ്രേഷൻ",
+  "fadeIn": "ക്രമേണ മങ്ങുന്നു",
+  "alarmScreen": "അലാറം സ്ക്രീൻ",
+  "defaultOption": "കുറ്റം",
+  "mathChallenge": "മാത്ത് ചലഞ്ച്",
+  "shakeToStop": "നിർത്താൻ കുലുക്കുക",
+  "tapChallenge": "ടാപ്പ് ചലഞ്ച്",
+  "qrCodeScan": "QR കോഡ് സ്കാൻ",
+  "alarmSound": "അലാറം ശബ്ദം",
+  "addSound": "ശബ്ദം ചേർക്കുക",
+  "clearCustomSounds": "ഇഷ്ടാനുസൃത ശബ്ദങ്ങൾ മായ്ക്കുക",
+  "format24h": "24 മണിക്കൂർ ഫോർമാറ്റ്",
+  "snoozeLabel": "സ്നൂസ്: {minutes} മിനിറ്റ്",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "പരിഹരിക്കുക: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "നമ്പർ {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ഇല്ലാതാക്കുക",
+  "monday": "തിങ്കളാഴ്ച",
+  "tuesday": "ചൊവ്വാഴ്ച",
+  "wednesday": "ബുധനാഴ്ച",
+  "thursday": "വാഴാഴ്ച",
+  "friday": "വെള്ളിയാഴ്ച",
+  "saturday": "ശനിയാഴ്ച",
+  "sunday": "ഞായറാഴ്ച"
+}

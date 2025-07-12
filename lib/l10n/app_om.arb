@@ -1,0 +1,110 @@
+{
+  "@@locale": "om",
+  "appTitle": "Dammaqaa- Sa'aatii dammaqaa .",
+  "addAlarm": "Alaarmii itti dabali .",
+  "editAlarm": "Alaarmii gulaali .",
+  "noAlarms": "Alaarmiin hin dabalamne hanga ammaatti .",
+  "alarms": "Alaarmii .",
+  "settings": "Sajoo .",
+  "back": "Dugda",
+  "delete": "Haquu",
+  "deleteAlarm": "Alaarmii haquu .",
+  "deleteAlarmPrompt": "Alaarmii kana haquu akka barbaaddu mirkaneeffatteettaa?",
+  "cancel": "Haquu",
+  "titleLabel": "Mata-duree",
+  "wrongAnswer": "Deebii dogoggoraa .",
+  "alarmSnoozed": "Alaarmiin daqiiqaa {minutes}f rafe .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Koodii QR scan godhaa .",
+  "wrongQr": "Koodii QR dogoggoraa. Mee isa sirrii ta'e scan godhaa.",
+  "shakePhone": "Bilbila raasaa!",
+  "shakesCount": "Raafa: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Iskiriinii tuqi!",
+  "tapsCount": "tuqi: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Koodii .",
+  "fileSaved": "Faayilii gara {path}tti qusatame .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR code scan tiif hayyamni kaameraa barbaachisa .",
+  "vibration": "Rarra'uu .",
+  "fadeIn": "suuta suutaan fade in .",
+  "alarmScreen": "Iskiriinii alarmii .",
+  "defaultOption": "Durtii .",
+  "mathChallenge": "Qormaata Herregaa .",
+  "shakeToStop": "Dhaabuuf raasaa .",
+  "tapChallenge": "Qormaata Tap .",
+  "qrCodeScan": "QR Koodii Scan .",
+  "alarmSound": "Sagalee Alaarmii .",
+  "addSound": "Sagalee itti dabali .",
+  "clearCustomSounds": "Sagaleewwan aadaa qulqulleessi .",
+  "format24h": "Bifa sa'aatii 24 .",
+  "snoozeLabel": "Snooze: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Furmaata: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Lakkoofsa {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Haquu",
+  "monday": "Wiixata",
+  "tuesday": "Kibxata",
+  "wednesday": "Roobii",
+  "thursday": "Kamisa",
+  "friday": "Jimaata",
+  "saturday": "Sanbata",
+  "sunday": "Dilbata"
+}

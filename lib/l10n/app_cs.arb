@@ -1,0 +1,110 @@
+{
+  "@@locale": "cs",
+  "appTitle": "Vzhůru- budík",
+  "addAlarm": "Přidejte alarm",
+  "editAlarm": "Upravit alarm",
+  "noAlarms": "Dosud žádné přidány žádné alarmy",
+  "alarms": "Alarmy",
+  "settings": "Nastavení",
+  "back": "Zadní",
+  "delete": "Vymazat",
+  "deleteAlarm": "Odstranit alarm",
+  "deleteAlarmPrompt": "Jste si jisti, že chcete tento alarm odstranit?",
+  "cancel": "Zrušit",
+  "titleLabel": "Titul",
+  "wrongAnswer": "Špatná odpověď",
+  "alarmSnoozed": "Alarm odložený na {minutes} minuty",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Prohledejte QR kód",
+  "wrongQr": "Špatný QR kód. SKEZPEČNOST PROSÍM SPRÁVNĚ.",
+  "shakePhone": "Protřepejte telefon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Klepněte na obrazovku!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Stáhněte si QR kód",
+  "fileSaved": "Soubor uložen na {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Pro skenování QR kódu je vyžadováno povolení kamery",
+  "vibration": "Vibrace",
+  "fadeIn": "Postupné vyblednutí",
+  "alarmScreen": "Alarmová obrazovka",
+  "defaultOption": "Výchozí",
+  "mathChallenge": "Matematická výzva",
+  "shakeToStop": "Shake to zastavit",
+  "tapChallenge": "Klepněte na výzvu",
+  "qrCodeScan": "QR skenování kódu",
+  "alarmSound": "Alarmový zvuk",
+  "addSound": "Přidejte zvuk",
+  "clearCustomSounds": "Jasné zvuky",
+  "format24h": "24hodinový formát",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Řešení: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Číslo {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Vymazat",
+  "monday": "pondělí",
+  "tuesday": "úterý",
+  "wednesday": "středa",
+  "thursday": "čtvrtek",
+  "friday": "pátek",
+  "saturday": "sobota",
+  "sunday": "neděle"
+}

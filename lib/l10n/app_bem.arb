@@ -1,0 +1,110 @@
+{
+  "@@locale": "bem",
+  "appTitle": "Ukubuuka- Inkondo ya Maboko",
+  "addAlarm": "Lunda na Albor",
+  "editAlarm": "Ukulungika",
+  "noAlarms": "Takuli Amabala Ayalundileko Na kabili .",
+  "alarms": "Amakuya",
+  "settings": "Ukubika",
+  "back": "Kunuma",
+  "delete": "Ukufuta",
+  "deleteAlarm": "Doukomuna Aupwe",
+  "deleteAlarmPrompt": "Bushe nashininkisha ukuti mulefwaya ukufuuta ili alamu?",
+  "cancel": "Ukuleesha",
+  "titleLabel": "Umutwe",
+  "wrongAnswer": "Icasuko icakosa",
+  "alarmSnoozed": "Alrar alisalanganine pa maminiti {minutes}",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Sic ya Mafunde ya QR",
+  "wrongQr": "Ifunde lya QR ilyabipa. Mukwai moneni bwino bwino.",
+  "shakePhone": "Ukusansa foni!",
+  "shakesCount": "Amasanso: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tinikeni pa cikope!",
+  "tapsCount": "Ifyakucita: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Kopololeni Amafunde ya QR",
+  "fileSaved": "Fayilo yasungilwe ku {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ukusuminisha kwa kwa kamera kulakabilwa ku Kukonka Amafunde ya QR",
+  "vibration": "Ukubebema",
+  "fadeIn": "Iciputulwa ca Kupelela Mu",
+  "alarmScreen": "Insambu sha Maboko",
+  "defaultOption": "Ukubwesha",
+  "mathChallenge": "Ubwafya bwa Mashi",
+  "shakeToStop": "Ukusuntinkanya ku Kuleka",
+  "tapChallenge": "Tinikeni",
+  "qrCodeScan": "Icilangililo ca QR",
+  "alarmSound": "Iciunda ca Alrard",
+  "addSound": "Lundako Iciunda",
+  "clearCustomSounds": "Ifiunda ifyaumfwika bwino",
+  "format24h": "24-Imisango ya Ma-awala",
+  "snoozeLabel": "Snooze: {minutes} n",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Ici: {a} {symbol}1_ {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Namba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ukufuta",
+  "monday": "Pali cimo",
+  "tuesday": "Pali Cibili",
+  "wednesday": "Pali Citatu",
+  "thursday": "Pali Cisano",
+  "friday": "Pali cisano",
+  "saturday": "Pa Cibelushi",
+  "sunday": "Pamulungu"
+}

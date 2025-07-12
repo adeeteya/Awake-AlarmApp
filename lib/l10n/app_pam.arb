@@ -1,0 +1,110 @@
+{
+  "@@locale": "pam",
+  "appTitle": "Gising- Ing Batas ning Alam .",
+  "addAlarm": "Dagdagan Alarma",
+  "editAlarm": "I-edit ing Alarma",
+  "noAlarms": "Alang Alarma a Megdagdag Dapot .",
+  "alarms": "Alarma",
+  "settings": "Pamipalage",
+  "back": "Gulut",
+  "delete": "Lako",
+  "deleteAlarm": "Bura ning Alarma",
+  "deleteAlarmPrompt": "Siguradu ka bang buri meng i-delete ining alarma?",
+  "cancel": "ala",
+  "titleLabel": "Titulo",
+  "wrongAnswer": "Maling pakibat",
+  "alarmSnoozed": "Malarma yang mag-snooze kilub ning {minutes} minutu .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "I-scan ya ing Kuda ning QR .",
+  "wrongQr": "Mali ing QR Code. Paki-scan ye pu ing ustung metung.",
+  "shakePhone": "Iyugse me ing teleponu!",
+  "shakesCount": "Gulis: {count} / {required}_ .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "I-tap me ing screen!",
+  "tapsCount": "Taps: {count} / _1.",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Code .",
+  "fileSaved": "File miligtas ya keng {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ing paintulut ning camera kailangan ya para king QR Code Scan .",
+  "vibration": "Pamanganak",
+  "fadeIn": "Unting Fade Ing .",
+  "alarmScreen": "Maalar a Escreen .",
+  "defaultOption": "Panilinan",
+  "mathChallenge": "Hamon ning Mate",
+  "shakeToStop": "Iyugse ing gumulut .",
+  "tapChallenge": "Tap Hamon .",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Maalarma Tunog .",
+  "addSound": "Dagdagan ing Tunog",
+  "clearCustomSounds": "Malinis a Tunung Langun .",
+  "format24h": "24-Oras Kareta",
+  "snoozeLabel": "Snooo: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Bilang {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Lako",
+  "monday": "Lunis",
+  "tuesday": "martes",
+  "wednesday": "miyerkules",
+  "thursday": "huwebes",
+  "friday": "Biyernes",
+  "saturday": "Sabadu",
+  "sunday": "Domingo"
+}

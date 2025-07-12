@@ -1,0 +1,110 @@
+{
+  "@@locale": "luo",
+  "appTitle": "Chek- Saa mar Alaram",
+  "addAlarm": "Medi Chudo",
+  "editAlarm": "Diskom mar Edit",
+  "noAlarms": "Onge Alarm Ma Omed To",
+  "alarms": "Asrani",
+  "settings": "Sete",
+  "back": "Chien",
+  "delete": "Rucho",
+  "deleteAlarm": "Alarm mar Nyasaye",
+  "deleteAlarmPrompt": "Be in gadier ni idwaro rucho alarmni?",
+  "cancel": "ketho",
+  "titleLabel": "Nying",
+  "wrongAnswer": "Dwoko mowinjore",
+  "alarmSnoozed": "Sum mar larm ne osebedo ka ng’iyo kuom dakika {minutes}",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skan Kod mar QR",
+  "wrongQr": "Kod mar QR ma kare. Yie mondo skan ma kare.",
+  "shakePhone": "Ibed gi simu!",
+  "shakesCount": "Gik ma ng’ato timo: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Duong’ skrini!",
+  "tapsCount": "Tap: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Donde ma nigi QR Kwan",
+  "fileSaved": "Fail noreso ne {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Odwarore ni ng’ato oyiene ng’ato mondo omiye ratiro mar timo kamano kuom ng’iyo mar QR",
+  "vibration": "Ohala",
+  "fadeIn": "Modhi mos Fred",
+  "alarmScreen": "Skren mar Skul",
+  "defaultOption": "Rem timo",
+  "mathChallenge": "Gima duong' mar wang'",
+  "shakeToStop": "<2Zepa> Many mondo Sum",
+  "tapChallenge": "Gima duong'",
+  "qrCodeScan": "QR mar QR Skan",
+  "alarmSound": "Ombulu en ni tiende",
+  "addSound": "Bende, kendo",
+  "clearCustomSounds": "Kastoma mar wang'",
+  "format24h": "Fom mar saa 24",
+  "snoozeLabel": "Nyis: {minutes} dakika",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Suf: {a} {symbol} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Namba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Rucho",
+  "monday": "Wuok tich",
+  "tuesday": "Tich ariyo",
+  "wednesday": "Tich adek",
+  "thursday": "Tich ang'wen",
+  "friday": "Tich abich",
+  "saturday": "Sabato",
+  "sunday": "Jumapil"
+}

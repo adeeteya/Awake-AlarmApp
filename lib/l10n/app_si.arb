@@ -1,0 +1,110 @@
+{
+  "@@locale": "si",
+  "appTitle": "අවදි වන්න- එලාම් ඔරලෝසුව",
+  "addAlarm": "අනතුරු ඇඟවීම එක් කරන්න",
+  "editAlarm": "අනතුරු ඇඟවීම සංස්කරණය කරන්න",
+  "noAlarms": "තවම අනතුරු ඇඟවීම් නොමැත",
+  "alarms": "අනතුරු ඇඟවීම්",
+  "settings": "සැකසුම්",
+  "back": "ආපසු",
+  "delete": "මකන්න",
+  "deleteAlarm": "අනතුරු ඇඟවීම මකන්න",
+  "deleteAlarmPrompt": "ඔබට මෙම අනතුරු ඇඟවීම මකා දැමීමට අවශ්ය බව ඔබට විශ්වාසද?",
+  "cancel": "අවලංගු කරන්න",
+  "titleLabel": "මාතෘකාව",
+  "wrongAnswer": "වැරදි පිළිතුර",
+  "alarmSnoozed": "මිනිත්තු {minutes}_ සඳහා එලාම් සිනිඳුයි",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR කේතය පරිලෝකනය කරන්න",
+  "wrongQr": "වැරදි QR කේතය. කරුණාකර නිවැරදි එක පරිලෝකනය කරන්න.",
+  "shakePhone": "දුරකථනය සොලවන්න!",
+  "shakesCount": "ෂේක්: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "තිරය තට්ටු කරන්න!",
+  "tapsCount": "ටැප්ස්: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR කේතය බාගන්න",
+  "fileSaved": "ගොනුව {path} වෙත සුරකින ලදි",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR කේත පරිලෝකනය සඳහා කැමරා අවසරය අවශ්ය වේ",
+  "vibration": "කම්පනය",
+  "fadeIn": "ක්රමයෙන් මැකී යන්න",
+  "alarmScreen": "අනතුරු ඇඟවීමේ තිරය",
+  "defaultOption": "පෙරනිමි",
+  "mathChallenge": "ගණිත අභියෝගය",
+  "shakeToStop": "නැවැත්වීමට සොලවන්න",
+  "tapChallenge": "අභියෝගය තට්ටු කරන්න",
+  "qrCodeScan": "QR කේත ස්කෑන්",
+  "alarmSound": "අනතුරු ඇඟවීමේ ශබ්දය",
+  "addSound": "ශබ්දය එක් කරන්න",
+  "clearCustomSounds": "අභිරුචි ශබ්ද ඉවත් කරන්න",
+  "format24h": "පැය 24 ආකෘතිය",
+  "snoozeLabel": "Snose: {minutes} මිනි",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "විසඳන්න: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "අංකය {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "මකන්න",
+  "monday": "සඳුදා",
+  "tuesday": "අඟහරුවාදා",
+  "wednesday": "බදාදා",
+  "thursday": "බ්රහස්පතින්දා",
+  "friday": "සිකුරාදා",
+  "saturday": "සෙනසුරාදා",
+  "sunday": "ඉරිදා"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ta",
+  "appTitle": "விழித்தெழு- அலாரம் கடிகாரம்",
+  "addAlarm": "அலாரம் சேர்க்கவும்",
+  "editAlarm": "அலாரத்தைத் திருத்தவும்",
+  "noAlarms": "இன்னும் அலாரங்கள் எதுவும் சேர்க்கப்படவில்லை",
+  "alarms": "அலாரங்கள்",
+  "settings": "அமைப்புகள்",
+  "back": "பின்",
+  "delete": "நீக்கு",
+  "deleteAlarm": "அலாரத்தை நீக்கு",
+  "deleteAlarmPrompt": "இந்த அலாரத்தை நீக்க விரும்புகிறீர்களா?",
+  "cancel": "ரத்துசெய்",
+  "titleLabel": "தலைப்பு",
+  "wrongAnswer": "தவறான பதில்",
+  "alarmSnoozed": "அலாரம் {minutes} நிமிடங்களுக்கு உறக்கநிலை",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR குறியீட்டை ஸ்கேன் செய்யுங்கள்",
+  "wrongQr": "தவறான QR குறியீடு. சரியான ஒன்றை ஸ்கேன் செய்யுங்கள்.",
+  "shakePhone": "தொலைபேசியை அசைக்கவும்!",
+  "shakesCount": "குலுக்கல்: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "திரையைத் தட்டவும்!",
+  "tapsCount": "குழாய்கள்: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR குறியீட்டைப் பதிவிறக்கவும்",
+  "fileSaved": "கோப்பு {path} க்கு சேமிக்கப்பட்டது",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR குறியீடு ஸ்கேன் செய்ய கேமரா அனுமதி தேவை",
+  "vibration": "அதிர்வு",
+  "fadeIn": "படிப்படியாக மங்கிவிடும்",
+  "alarmScreen": "அலாரம் திரை",
+  "defaultOption": "இயல்புநிலை",
+  "mathChallenge": "கணித சவால்",
+  "shakeToStop": "நிறுத்த குலுக்கவும்",
+  "tapChallenge": "சவாலைத் தட்டவும்",
+  "qrCodeScan": "QR குறியீடு ஸ்கேன்",
+  "alarmSound": "அலாரம் ஒலி",
+  "addSound": "ஒலி சேர்க்கவும்",
+  "clearCustomSounds": "தனிப்பயன் ஒலிகளை அழிக்கவும்",
+  "format24h": "24 மணி நேர வடிவம்",
+  "snoozeLabel": "உறக்கநிலை: {minutes} நிமிடம்",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "தீர்க்க: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "எண் {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "நீக்கு",
+  "monday": "திங்கள்",
+  "tuesday": "செவ்வாய்க்கிழமை",
+  "wednesday": "புதன்கிழமை",
+  "thursday": "வியாழக்கிழமை",
+  "friday": "வெள்ளிக்கிழமை",
+  "saturday": "சனிக்கிழமை",
+  "sunday": "ஞாயிற்றுக்கிழமை"
+}

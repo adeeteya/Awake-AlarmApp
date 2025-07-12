@@ -1,0 +1,110 @@
+{
+  "@@locale": "din",
+  "appTitle": "Awuɔ̈c- Cɛɛp",
+  "addAlarm": "Tääu Alarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Nolars acï Yeen cɔk tɔ̈.",
+  "alarms": "Alarlim",
+  "settings": "Käk",
+  "back": "Dhuk ciëën",
+  "delete": "Cothden wei",
+  "deleteAlarm": "Yïn Alarm",
+  "deleteAlarmPrompt": "Ye ŋic lɔn wïc yïn ba alarm kënë nyaai?",
+  "cancel": "riɔ̈k",
+  "titleLabel": "Rin ë luɔi",
+  "wrongAnswer": "Dhuɔ̈k",
+  "alarmSnoozed": "Alarm acï gäi në {minutes} minit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Sakë lööŋ ke QR",
+  "wrongQr": "QR ë thäät ë thäät. Tïŋ kë thöŋ.",
+  "shakePhone": "Tääu ë telepun!",
+  "shakesCount": "Ac yai: {count}/ {required}__.",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tääu ë thëm!",
+  "tapsCount": "Käk ë yök: 0_/ {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Gɛ̈ɛ̈r de QR Löŋ",
+  "fileSaved": "File acï kony tënë {path}_.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kä cï keek puɔ̈l ke lööŋ aye keek kɔɔr tënë Sc Scan .",
+  "vibration": "Thi tɛ̈n",
+  "fadeIn": "Gäm de piɔ̈u Në",
+  "alarmScreen": "Aɣer",
+  "defaultOption": "Kä cë röt waar",
+  "mathChallenge": "Math ee bääny",
+  "shakeToStop": "Tääu yï nhom piny tënë Stop",
+  "tapChallenge": "Tap Allon",
+  "qrCodeScan": "QR Kë Sääd Sälës .",
+  "alarmSound": "Alarm Sony",
+  "addSound": "Tääu ë Kä rɛc",
+  "clearCustomSounds": "Kä cï röt nyuɔɔth ke Cusom aye luui",
+  "format24h": "24-KO ka n yök .",
+  "snoozeLabel": "Snhoze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Kër:___ {symbol} 2_ =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nyan _0 looi.",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Cothden wei",
+  "monday": "Akölnïn",
+  "tuesday": "Akölë",
+  "wednesday": "aköltuɔ̈ɔ̈n",
+  "thursday": "Aköl Ŋuan",
+  "friday": "Aköl lɔ̈ŋ",
+  "saturday": "aköl lɔ̈ŋ",
+  "sunday": "Akölnïn"
+}

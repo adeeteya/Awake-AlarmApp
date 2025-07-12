@@ -1,0 +1,110 @@
+{
+  "@@locale": "tt",
+  "appTitle": "Уяу - сигнализация сәгате",
+  "addAlarm": "Сигнализация өстәргә",
+  "editAlarm": "Сигнализацияне үзгәртү",
+  "noAlarms": "Әлегә бернинди сигнализация юк",
+  "alarms": "Сигнализация",
+  "settings": "Көйләүләр",
+  "back": "Кире",
+  "delete": "Бетерү",
+  "deleteAlarm": "Сигнализацияне бетерегез",
+  "deleteAlarmPrompt": "Сез бу сигнализацияне бетерергә телисезме?",
+  "cancel": "Бетерү",
+  "titleLabel": "Исем",
+  "wrongAnswer": "Ялгыш җавап",
+  "alarmSnoozed": "Сигнализация {minutes} минутларда селкенде",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR кодны сканерлагыз",
+  "wrongQr": "Ялгыш QR коды. Зинһар, дөресне сканерлагыз.",
+  "shakePhone": "Телефонны селкетегез!",
+  "shakesCount": "Селкет: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Экранга басыгыз!",
+  "tapsCount": "Таптыраулар: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR кодны йөкләү",
+  "fileSaved": "Файл сакланган {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR коды сканеры өчен камера рөхсәте кирәк",
+  "vibration": "Тибрәнү",
+  "fadeIn": "Әкренләп сүнә",
+  "alarmScreen": "Сигнализация экраны",
+  "defaultOption": "Килешү",
+  "mathChallenge": "Математика проблемасы",
+  "shakeToStop": "Туктарга селкетегез",
+  "tapChallenge": "Чакыру",
+  "qrCodeScan": "QR коды сканер",
+  "alarmSound": "Сигнализация тавышы",
+  "addSound": "Тавыш өстәгез",
+  "clearCustomSounds": "CructoLogy тавышын чистарту",
+  "format24h": "24 сәгать формат",
+  "snoozeLabel": "Сноз: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Чишү: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Сан номеры {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Бетерү",
+  "monday": "Дүшәмбе",
+  "tuesday": "Сишәмбе",
+  "wednesday": "Чәршәмбе",
+  "thursday": "Пәнҗешәмбе",
+  "friday": "Fridayомга",
+  "saturday": "Шимбә",
+  "sunday": "Якшәмбе"
+}

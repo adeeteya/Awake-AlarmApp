@@ -1,0 +1,110 @@
+{
+  "@@locale": "ro",
+  "appTitle": "Trezește-te- ceasul de alarmă",
+  "addAlarm": "Adăugați alarmă",
+  "editAlarm": "Editați alarma",
+  "noAlarms": "Nu au fost adăugate încă alarme",
+  "alarms": "Alarme",
+  "settings": "Setări",
+  "back": "Spate",
+  "delete": "Şterge",
+  "deleteAlarm": "Ștergeți alarma",
+  "deleteAlarmPrompt": "Ești sigur că vrei să ștergi această alarmă?",
+  "cancel": "Anula",
+  "titleLabel": "Titlu",
+  "wrongAnswer": "Răspuns greșit",
+  "alarmSnoozed": "Alarma s -a strecurat pentru {minutes} minute",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scanați codul QR",
+  "wrongQr": "Cod QR greșit. Vă rugăm să scanați cel corect.",
+  "shakePhone": "Scutură telefonul!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Atingeți ecranul!",
+  "tapsCount": "Robinete: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Descărcați codul QR",
+  "fileSaved": "Fișier salvat la {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Permisiunea camerei este necesară pentru scanarea codului QR",
+  "vibration": "Vibrații",
+  "fadeIn": "GRADUAL DESPRE",
+  "alarmScreen": "Ecran de alarmă",
+  "defaultOption": "Implicit",
+  "mathChallenge": "Provocare matematică",
+  "shakeToStop": "Se agită să se oprească",
+  "tapChallenge": "TOP Challenge",
+  "qrCodeScan": "Scanarea codului QR",
+  "alarmSound": "Sunet de alarmă",
+  "addSound": "Adăugați sunet",
+  "clearCustomSounds": "Clear sunete personalizate",
+  "format24h": "Format 24 de ore",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Rezolvați: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numărul {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Şterge",
+  "monday": "luni",
+  "tuesday": "marţi",
+  "wednesday": "miercuri",
+  "thursday": "joi",
+  "friday": "vineri",
+  "saturday": "sâmbătă",
+  "sunday": "duminică"
+}

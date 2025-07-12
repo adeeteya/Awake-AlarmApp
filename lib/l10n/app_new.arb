@@ -1,0 +1,110 @@
+{
+  "@@locale": "new",
+  "appTitle": "जागृत - अलार्म घडी",
+  "addAlarm": "अलार्म तनादिसँ",
+  "editAlarm": "सम्पादन अलार्म",
+  "noAlarms": "अझ नं अलार्म मदु",
+  "alarms": "अलार्म",
+  "settings": "सेटिङ",
+  "back": "लिने",
+  "delete": "मेटाउन",
+  "deleteAlarm": "अलार्म डिलिट या",
+  "deleteAlarmPrompt": "छिं थुगु अलार्म डिलिट याये मास्ति वः ला ?",
+  "cancel": "रोक्का",
+  "titleLabel": "उपाधि",
+  "wrongAnswer": "लिसः",
+  "alarmSnoozed": "_०_ मिनेटया निंतिं अलार्म स्नूज",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "क्यूआर कोड स्क्यान",
+  "wrongQr": "वीर्य क्यूआर कोड. पाय् छिगु छगू स्क्यान यानादिसँ ।",
+  "shakePhone": "फोनयात स्यंकि !",
+  "shakesCount": "शेक्स: _०_ / _१_",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "स्क्रिनय् ट्याप या !",
+  "tapsCount": "ट्याप : _०_ / _१_",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "क्यूआर कोड डाउनलोड यानादिसँ",
+  "fileSaved": "फाइल _०_य् बचत जुल",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "क्यूआर कोड स्क्यानया निंतिं क्यामेरा अनुमति माः",
+  "vibration": "कम्पन",
+  "fadeIn": "ग्रेडुअल फेड इन सन् २००७ में",
+  "alarmScreen": "अलार्म स्क्रीन",
+  "defaultOption": "पूर्वनिर्धारित",
+  "mathChallenge": "गणित च्यालेन्ज",
+  "shakeToStop": "स्टपय् शेक या",
+  "tapChallenge": "ट्याप",
+  "qrCodeScan": "क्यूआर कोड स्क्यान",
+  "alarmSound": "अलार्म मुद्दा",
+  "addSound": "तप्यंक तल",
+  "clearCustomSounds": "क्लियर कस्टम साउण्ड",
+  "format24h": "२४-घण्टाया स्वरुप",
+  "snoozeLabel": "धुम्रपान : _०_",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "समाधान : _०_ _१_ _२_ =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ल्याः _०_",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "मेटाउन",
+  "monday": "सोमबार",
+  "tuesday": "मङ्गलबार",
+  "wednesday": "बुधवार",
+  "thursday": "बसुवा",
+  "friday": "शुक्रबार",
+  "saturday": "संचरबार",
+  "sunday": "आइतबार"
+}

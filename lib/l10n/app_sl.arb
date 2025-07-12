@@ -1,0 +1,110 @@
+{
+  "@@locale": "sl",
+  "appTitle": "Buden- budilka",
+  "addAlarm": "Dodaj alarm",
+  "editAlarm": "Uredi alarm",
+  "noAlarms": "Še ni dodanih alarmov",
+  "alarms": "Alarmi",
+  "settings": "Nastavitve",
+  "back": "Nazaj",
+  "delete": "Izbrisati",
+  "deleteAlarm": "Izbriši alarm",
+  "deleteAlarmPrompt": "Ali ste prepričani, da želite izbrisati ta alarm?",
+  "cancel": "Odpovedati",
+  "titleLabel": "Naslov",
+  "wrongAnswer": "Napačen odgovor",
+  "alarmSnoozed": "Alarm je zasukal za {minutes} minut",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skenirajte QR kodo",
+  "wrongQr": "Napačna QR koda. Prosimo, preglejte pravilnega.",
+  "shakePhone": "Stresite telefon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tapnite zaslon!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Prenesite QR kodo",
+  "fileSaved": "Datoteka shranjena na {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Za skeniranje QR kode je potrebno dovoljenje za kamero",
+  "vibration": "Vibracija",
+  "fadeIn": "Postopno zbledeti v",
+  "alarmScreen": "Zaslon alarma",
+  "defaultOption": "Privzeto",
+  "mathChallenge": "Math Challenge",
+  "shakeToStop": "Strese, da se ustavi",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR Skeniranje kode",
+  "alarmSound": "Alarm zvok",
+  "addSound": "Dodaj zvok",
+  "clearCustomSounds": "Jasni zvoki po meri",
+  "format24h": "24-urni format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Rešite: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Številka {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Izbrisati",
+  "monday": "Ponedeljek",
+  "tuesday": "Torek",
+  "wednesday": "Sreda",
+  "thursday": "Četrtek",
+  "friday": "Petek",
+  "saturday": "Sobota",
+  "sunday": "Nedelja"
+}

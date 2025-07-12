@@ -1,0 +1,110 @@
+{
+  "@@locale": "gom",
+  "appTitle": "जागृत- गजर घड्याळ .",
+  "addAlarm": "गजर जोडचो .",
+  "editAlarm": "गजर संपादीत करप .",
+  "noAlarms": "अजून गजर जोडले नात .",
+  "alarms": "गजर 1 .",
+  "settings": "सेटिंग्ज 10.",
+  "back": "फाटीं",
+  "delete": "वगळावचें",
+  "deleteAlarm": "गजर काडून उडोवचो .",
+  "deleteAlarmPrompt": "तुमकां खात्री आसा की तुमकां हो गजर काडून उडोवपाचो आसा?",
+  "cancel": "रद्द",
+  "titleLabel": "शीर्षक",
+  "wrongAnswer": "चुकीची जाप .",
+  "alarmSnoozed": "गजर {minutes} मिनिटां खातीर snoozed",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "क्यूआर कोड स्कॅन करचो .",
+  "wrongQr": "चुकीचो क्यूआर कोड. उपकार करून योग्य एक स्कॅन करात.",
+  "shakePhone": "फोन हालोवचो!",
+  "shakesCount": "शेक: {count} / {required} 1.1.",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "पडद्याचेर टॅप करात!",
+  "tapsCount": "टॅप: {count} / {required} 1.1.",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "क्यूआर कोड डाउनलोड करचो .",
+  "fileSaved": "{path} कडेन जतनाय केल्ली फायल .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "क्यूआर कोड स्कॅनाखातीर कॅमेरा परवानगी घेवची पडटा .",
+  "vibration": "कंपन 1 .",
+  "fadeIn": "ल्हव ल्हव फीकी पडून .",
+  "alarmScreen": "गजर स्क्रीन 1 .",
+  "defaultOption": "डिफॉल्ट",
+  "mathChallenge": "गणित आव्हान 1 .",
+  "shakeToStop": "थांबपाक हालोवप .",
+  "tapChallenge": "टॅप चॅलेंज 1.1.",
+  "qrCodeScan": "क्यूआर कोड स्कॅन 1.1.",
+  "alarmSound": "गजर आवाज 1 .",
+  "addSound": "आवाज जोडचो .",
+  "clearCustomSounds": "सानुकूल आवाज साफ .",
+  "format24h": "२४ वरांचें स्वरूप .",
+  "snoozeLabel": "स्नूझ: {minutes} मि.",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "सोडोवप: {a} {symbol} {b} = 1.1.",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "क्रमांक {label} 1 .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "वगळावचें",
+  "monday": "सोमार",
+  "tuesday": "मंगळार",
+  "wednesday": "बुधवार",
+  "thursday": "बिरेस्तार",
+  "friday": "शुक्रार",
+  "saturday": "शेनवार",
+  "sunday": "आयतार"
+}

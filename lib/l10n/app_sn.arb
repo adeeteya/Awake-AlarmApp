@@ -1,0 +1,110 @@
+{
+  "@@locale": "sn",
+  "appTitle": "Kwayedza- Iyo Alarm Clock",
+  "addAlarm": "Wedzera alarm",
+  "editAlarm": "Edit alarm",
+  "noAlarms": "Hapana Alarms yakawedzerwa",
+  "alarms": "Maaramu",
+  "settings": "Zvirongwa",
+  "back": "Kumashure",
+  "delete": "Delete",
+  "deleteAlarm": "Delete Alarm",
+  "deleteAlarmPrompt": "Une chokwadi here kuti unoda kudzima iyi alarm?",
+  "cancel": "Kanzura",
+  "titleLabel": "Zita",
+  "wrongAnswer": "Mhinduro isiriyo",
+  "alarmSnoozed": "Alarm Snoozed for {minutes} maminetsi",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Tarisa iyo QR Code",
+  "wrongQr": "Zvisiri izvo QR kodhi. Ndokumbira utarise iyo chaiyo.",
+  "shakePhone": "Zunza foni!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tinya iyo skrini!",
+  "tapsCount": "Matipi: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Dhawunirodha QR Code",
+  "fileSaved": "Faira yakachengetedzwa kusvika {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera mvumo inodiwa kuti QR Code Scan",
+  "vibration": "Vibration",
+  "fadeIn": "Zvishoma nezvishoma inopera mukati",
+  "alarmScreen": "Alarm screen",
+  "defaultOption": "Default",
+  "mathChallenge": "Math Dambudziko",
+  "shakeToStop": "Zunza kumira",
+  "tapChallenge": "Tinya Dambudziko",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm kurira",
+  "addSound": "Wedzera ruzha",
+  "clearCustomSounds": "Bvisa tsika",
+  "format24h": "24-awa fomati",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Gadzirisa: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nhamba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Delete",
+  "monday": "Muvhuro",
+  "tuesday": "Chipiri",
+  "wednesday": "Chitatu",
+  "thursday": "China",
+  "friday": "Chishanu",
+  "saturday": "Mugovera",
+  "sunday": "Svondo"
+}

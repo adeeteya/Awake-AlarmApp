@@ -1,0 +1,110 @@
+{
+  "@@locale": "mt",
+  "appTitle": "Imqajjem- l-arloġġ tal-allarm",
+  "addAlarm": "Żid allarm",
+  "editAlarm": "Editja l-allarm",
+  "noAlarms": "L-ebda allarmi miżjuda s'issa",
+  "alarms": "Allarmi",
+  "settings": "Settings",
+  "back": "Lura",
+  "delete": "Ħassar",
+  "deleteAlarm": "Ħassar l-allarm",
+  "deleteAlarmPrompt": "Int żgur li trid tħassar dan l-allarm?",
+  "cancel": "Ikkanċella",
+  "titleLabel": "Titlu",
+  "wrongAnswer": "Tweġiba ħażina",
+  "alarmSnoozed": "Allarm imħassar għal {minutes} minuti",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skennja l-kodiċi QR",
+  "wrongQr": "Kodiċi QR ħażin. Jekk jogħġbok skennja dik korretta.",
+  "shakePhone": "Ħawwad it-telefon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tektek l-iskrin!",
+  "tapsCount": "Viti: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Niżżel il-kodiċi QR",
+  "fileSaved": "Fajl salvat għal {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Il-permess tal-kamera huwa meħtieġ għall-iskan tal-kodiċi QR",
+  "vibration": "Vibrazzjoni",
+  "fadeIn": "Fade gradwali",
+  "alarmScreen": "Skrin ta 'allarm",
+  "defaultOption": "Default",
+  "mathChallenge": "Sfida tal-Matematika",
+  "shakeToStop": "Ħawwad biex tieqaf",
+  "tapChallenge": "Tektek l-isfida",
+  "qrCodeScan": "Skan tal-kodiċi QR",
+  "alarmSound": "Alarm Sound",
+  "addSound": "Żid il-ħoss",
+  "clearCustomSounds": "Ħsejjes tad-dwana ċari",
+  "format24h": "Format ta '24 siegħa",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Issolvi: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numru {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ħassar",
+  "monday": "It-Tnejn",
+  "tuesday": "It-Tlieta",
+  "wednesday": "L-Erbgħa",
+  "thursday": "Il-Ħamis",
+  "friday": "Il-Ġimgħa",
+  "saturday": "Is-Sibt",
+  "sunday": "Ħadd"
+}

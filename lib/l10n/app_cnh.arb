@@ -1,0 +1,110 @@
+{
+  "@@locale": "cnh",
+  "appTitle": "I thawh- Alarm Clock",
+  "addAlarm": "Alarm chap",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "No Alarms Added yet",
+  "alarms": "Alarm",
+  "settings": "setting",
+  "back": "Kir",
+  "delete": "Hlonh",
+  "deleteAlarm": "Delete Alarm",
+  "deleteAlarmPrompt": "Hi alarm hi delete na duh hrimhrim maw?",
+  "cancel": "Letthan",
+  "titleLabel": "A tlangtaar",
+  "wrongAnswer": "A phi a palhmi",
+  "alarmSnoozed": "Alarm cu {minutes} minutes chung snoozeed .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR Code kha scan tuah .",
+  "wrongQr": "A palhmi QR Code. A dikmi kha scan tuah.",
+  "shakePhone": "Phone cu na hninh lai!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Screen kha hmet!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Code",
+  "fileSaved": "File nih {path} ah a khamh.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR Code Scan caah camera nawlpeknak a herh.",
+  "vibration": "Vibration",
+  "fadeIn": "Gradual Fade 2.",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "Tlolh",
+  "mathChallenge": "Math Challenge",
+  "shakeToStop": "Stop tuah ding in hninh",
+  "tapChallenge": "Tap Zuam",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm Aw",
+  "addSound": "Sound",
+  "clearCustomSounds": "Custom A aw a thiang",
+  "format24h": "24-Suimilam Format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nambar {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Hlonh",
+  "monday": "Nikhatni",
+  "tuesday": "Nihnihni",
+  "wednesday": "Nithumni",
+  "thursday": "Nihnihni",
+  "friday": "Ningani",
+  "saturday": "Zarhteni",
+  "sunday": "Zerhpini"
+}

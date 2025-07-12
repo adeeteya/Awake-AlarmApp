@@ -1,0 +1,110 @@
+{
+  "@@locale": "ktu",
+  "appTitle": "Réveillez-- Montre ya Bankunga .",
+  "addAlarm": "Yika Ba alarme",
+  "editAlarm": "Kuyidika Alarti",
+  "noAlarms": "Ata Ba alarme Ve Bo Me Sadila Kansi",
+  "alarms": "Ba alarme",
+  "settings": "Baparametre",
+  "back": "Nima",
+  "delete": "Kuvwansa",
+  "deleteAlarm": "Alarme ya Kufwa",
+  "deleteAlarmPrompt": "Keti nge ke ndima nde nge ke zola kufwa alarme yai?",
+  "cancel": "Kuyambula",
+  "titleLabel": "Titre",
+  "wrongAnswer": "Mvutu ya mbi",
+  "alarmSnoozed": "Alarme me kangama sambu na {minutes} miniti",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scanner Code ya QR .",
+  "wrongQr": "Kode ya QR ya mbi. Pardon, scanner yina ya mbote.",
+  "shakePhone": "Nikisa telefone!",
+  "shakesCount": "Kunikisa: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Fina écran!",
+  "tapsCount": "Kubula: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Telecharger Code QR",
+  "fileSaved": "Fishe me bumbana na {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Yo kelombaka nswa ya camera sambu na QR Scan .",
+  "vibration": "Kunikisa",
+  "fadeIn": "malembe-malembe Fade",
+  "alarmScreen": "Ecran ya alarme",
+  "defaultOption": "Mpila yo ke vandaka",
+  "mathChallenge": "Mpasi ya matematike",
+  "shakeToStop": "Nikisa na Telama",
+  "tapChallenge": "Fina mpasi",
+  "qrCodeScan": "Kode ya QR Scan",
+  "alarmSound": "Alarme Sorme",
+  "addSound": "Yika Mazuti",
+  "clearCustomSounds": "Makelele ya Kuvanda pwelele",
+  "format24h": "Format ya 24-Ntete",
+  "snoozeLabel": "Snooze: {minutes} Min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Kuyidika: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nimero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Kuvwansa",
+  "monday": "Kintete",
+  "tuesday": "Kizole",
+  "wednesday": "Kitatu",
+  "thursday": "Kiya",
+  "friday": "Kitanu",
+  "saturday": "Mposo",
+  "sunday": "Lumingu"
+}

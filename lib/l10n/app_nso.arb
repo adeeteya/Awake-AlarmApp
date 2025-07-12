@@ -1,0 +1,110 @@
+{
+  "@@locale": "nso",
+  "appTitle": "Phafoga- Sešupanako sa alamo .",
+  "addAlarm": "Oketša alamo .",
+  "editAlarm": "Edita alamo .",
+  "noAlarms": "Ga go na dialamo tšeo di okeditšwego go fihla ga bjale .",
+  "alarms": "Dialamo .",
+  "settings": "Dipeakanyo .",
+  "back": "Morago",
+  "delete": "Phumola",
+  "deleteAlarm": "Phimola alamo .",
+  "deleteAlarmPrompt": "Na o na le bonnete bja gore o nyaka go phumola alamo ye?",
+  "cancel": "Khansela",
+  "titleLabel": "Thaetlele",
+  "wrongAnswer": "Karabo e fošagetšego .",
+  "alarmSnoozed": "Alamo snoozer bakeng sa metsotso e {minutes} .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skena khoutu ya QR .",
+  "wrongQr": "Khoutu ya QR e fosahetseng. Hle skena sa maleba.",
+  "shakePhone": "Hlokomela mogala!",
+  "shakesCount": "Di šišinya: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tlanya skrine!",
+  "tapsCount": "Dipompo: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download Khoutu ya QR .",
+  "fileSaved": "Faele yeo e bolokilwego go {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Tumelelo ya khamera e a nyakega bakeng sa go hlahloba khoutu ya QR .",
+  "vibration": "Go thothomela .",
+  "fadeIn": "Go fela ga ganyenyane-ganyenyane ka .",
+  "alarmScreen": "Skrine sa alamo .",
+  "defaultOption": "Hlokomologa",
+  "mathChallenge": "Tlhohlo ya Dipalo .",
+  "shakeToStop": "Hlokomela go ema .",
+  "tapChallenge": "Tlhohlo ya Pompo .",
+  "qrCodeScan": "QR khoutu ya skena .",
+  "alarmSound": "Modumo wa alamo .",
+  "addSound": "Oketša modumo .",
+  "clearCustomSounds": "Hlakileng medumo ya tlwaelo .",
+  "format24h": "Sebopego sa diiri tše 24 .",
+  "snoozeLabel": "Snooze: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "rarolla: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomoro {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Phumola",
+  "monday": "Mošupologo",
+  "tuesday": "Labobedi",
+  "wednesday": "Laboraro",
+  "thursday": "Labone",
+  "friday": "Labohlano",
+  "saturday": "Mokibelo",
+  "sunday": "Sontaga"
+}

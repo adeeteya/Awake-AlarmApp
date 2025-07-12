@@ -1,0 +1,110 @@
+{
+  "@@locale": "hil",
+  "appTitle": "Magmata- Ang Alarm nga Oras .",
+  "addAlarm": "Idugang ang Alarma .",
+  "editAlarm": "I-edit nga Alarm .",
+  "noAlarms": "Wala sang mga Alarms nga gindugang bisan pa .",
+  "alarms": "mga Alimya .",
+  "settings": "mga setting",
+  "back": "Balik",
+  "delete": "Ginpanas",
+  "deleteAlarm": "Alarm sa pag-delete .",
+  "deleteAlarmPrompt": "Sigurado ka bala nga gusto mo nga i-delete ini nga alarma?",
+  "cancel": "I-kansel",
+  "titleLabel": "Titulo",
+  "wrongAnswer": "Sayup nga sabat .",
+  "alarmSnoozed": "Alarm nga nag-snooze sa {minutes} ka minuto .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan ang QR Code .",
+  "wrongQr": "Sayop nga QR Code. Palihug i-scan ang husto.",
+  "shakePhone": "I-uyog ang telepono!",
+  "shakesCount": "Mga pag-uyog: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "I-tap ang screen!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "I-download ang QR Code .",
+  "fileSaved": "File nga naluwas sa {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kinahanglan ang pagtugot sa Camera para sa QR Code Scan .",
+  "vibration": "pagtiyog",
+  "fadeIn": "Amat-amat nga Pag-fade Sa .",
+  "alarmScreen": "Alarma nga Screen .",
+  "defaultOption": "Ikasarang",
+  "mathChallenge": "Paghangkat sa Matematika .",
+  "shakeToStop": "Pag-uyog sa Paghunong .",
+  "tapChallenge": "Paghangkat sa Pag-tap .",
+  "qrCodeScan": "QR Code Scan .",
+  "alarmSound": "Tunog sa Alarma .",
+  "addSound": "Idugang ang Tunog",
+  "clearCustomSounds": "Tin-aw nga mga Tunog sa Kustombre .",
+  "format24h": "24-Oras nga Format .",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ginpanas",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Myerkules",
+  "thursday": "Webes",
+  "friday": "Byernes",
+  "saturday": "Sabado",
+  "sunday": "Dominggo"
+}

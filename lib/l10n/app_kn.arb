@@ -1,0 +1,110 @@
+{
+  "@@locale": "kn",
+  "appTitle": "ಎಚ್ಚರವಾಗಿ- ಅಲಾರಾಂ ಗಡಿಯಾರ",
+  "addAlarm": "ಅಲಾರಂ ಸೇರಿಸಿ",
+  "editAlarm": "ಅಲಾರಂ ಸಂಪಾದಿಸಿ",
+  "noAlarms": "ಇನ್ನೂ ಯಾವುದೇ ಅಲಾರಂಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ",
+  "alarms": "ಎಚ್ಚರಿಕೆ",
+  "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+  "back": "ಹಿ ೦ ದೆ",
+  "delete": "ಅಳಿಸು",
+  "deleteAlarm": "ಅಲಾರಂ ಅಳಿಸಿ",
+  "deleteAlarmPrompt": "ಈ ಅಲಾರಂ ಅನ್ನು ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
+  "cancel": "ರದ್ದುಮಾಡು",
+  "titleLabel": "ಶೀರ್ಷಿಕೆ",
+  "wrongAnswer": "ತಪ್ಪಾದ ಉತ್ತರ",
+  "alarmSnoozed": "ಅಲಾರ್ಮ್ {minutes} ನಿಮಿಷಗಳಿಗೆ ಸ್ನೂಜ್ ಮಾಡಲಾಗಿದೆ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ಕ್ಯೂಆರ್ ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
+  "wrongQr": "ತಪ್ಪಾದ ಕ್ಯೂಆರ್ ಕೋಡ್. ದಯವಿಟ್ಟು ಸರಿಯಾದದನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.",
+  "shakePhone": "ಫೋನ್ ಅಲ್ಲಾಡಿಸಿ!",
+  "shakesCount": "ಶೇಕ್ಸ್: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ಪರದೆಯನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ!",
+  "tapsCount": "ಟ್ಯಾಪ್ಸ್: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ಕ್ಯೂಆರ್ ಕೋಡ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+  "fileSaved": "ಫೈಲ್ ಅನ್ನು {path} ಗೆ ಉಳಿಸಲಾಗಿದೆ",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ಕ್ಯೂಆರ್ ಕೋಡ್ ಸ್ಕ್ಯಾನ್‌ಗೆ ಕ್ಯಾಮೆರಾ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ",
+  "vibration": "ಸ್ಪಂದನ",
+  "fadeIn": "ಕ್ರಮೇಣ ಫೇಡ್ ಇನ್",
+  "alarmScreen": "ಎಚ್ಚರಿಕೆಯ ಪರದೆ",
+  "defaultOption": "ಡಯೆಲು",
+  "mathChallenge": "ಗಣಿತ ಸವಾಲು",
+  "shakeToStop": "ನಿಲ್ಲಿಸಲು ಅಲ್ಲಾಡಿಸಿ",
+  "tapChallenge": "ಟ್ಯಾಪ್ ಸವಾಲು",
+  "qrCodeScan": "ಕ್ಯೂಆರ್ ಕೋಡ್ ಸ್ಕ್ಯಾನ್",
+  "alarmSound": "ಎಚ್ಚರಿಕೆಯ ಧ್ವನಿ",
+  "addSound": "ಧ್ವನಿ ಸೇರಿಸಿ",
+  "clearCustomSounds": "ಕಸ್ಟಮ್ ಶಬ್ದಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ",
+  "format24h": "24 ಗಂಟೆಗಳ ಸ್ವರೂಪ",
+  "snoozeLabel": "ಸ್ನೂಜ್: {minutes} ನಿಮಿಷ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ಪರಿಹರಿಸಿ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ಸಂಖ್ಯೆ {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ಅಳಿಸು",
+  "monday": "ಸೋಮವಾರ",
+  "tuesday": "ಮಂಗಳವಾರ",
+  "wednesday": "ಬುಧವಾರ",
+  "thursday": "ಗುರುವಾರ",
+  "friday": "ಶುಕ್ರವಾರ",
+  "saturday": "ಶನಿವಾರ",
+  "sunday": "ಭಾನುವಾರ"
+}

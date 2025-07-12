@@ -1,0 +1,110 @@
+{
+  "@@locale": "yua",
+  "appTitle": "Despertar- Le p'isibo' alarma",
+  "addAlarm": "Añadir alarma",
+  "editAlarm": "Editar Alarma",
+  "noAlarms": "Ma' alarmas agregados láayli'",
+  "alarms": "Alarmas",
+  "settings": "Configuración",
+  "back": "Pachil",
+  "delete": "Tuup",
+  "deleteAlarm": "Tselik Alarma",
+  "deleteAlarmPrompt": "Ba'ax táan seguro u k'áato' tselik le alarma?",
+  "cancel": "káanselar",
+  "titleLabel": "Jo'olts'íib",
+  "wrongAnswer": "K'aas núukik",
+  "alarmSnoozed": "Alarma snoozed ichil {minutes} minutos",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Escanear le Código QR",
+  "wrongQr": "Código QR incorrecto. Béet escanear le correcto.",
+  "shakePhone": "Sacudiendo le nu'ukul t'aan!",
+  "shakesCount": "Sacudidas: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Puntee ti' le pantalla!",
+  "tapsCount": "Le grifos: {count} / {required}.",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Descargar Código QR",
+  "fileSaved": "Archivo salvado ti' {path}.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Permiso cámara k'a'abéet utia'al u Scan código QR",
+  "vibration": "Vibración",
+  "fadeIn": "Gradual Fade Ti'",
+  "alarmScreen": "Pantalla u alarma",
+  "defaultOption": "Beytuno",
+  "mathChallenge": "Desafío matemáticas",
+  "shakeToStop": "Sacudida u Je'elel",
+  "tapChallenge": "Toque Challenge",
+  "qrCodeScan": "Código u QR Scan",
+  "alarmSound": "U juum le alarmaoʼ",
+  "addSound": "Añadir u juum",
+  "clearCustomSounds": "Justos personalizados u personalizados",
+  "format24h": "24-Hour Formato",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Resolver: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Número {label}.",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Tuup",
+  "monday": "Lunes",
+  "tuesday": "maartes",
+  "wednesday": "mierkoles",
+  "thursday": "juebes",
+  "friday": "Biernes",
+  "saturday": "sabado",
+  "sunday": "Domingo"
+}

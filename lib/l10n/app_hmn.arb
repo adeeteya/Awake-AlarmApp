@@ -1,0 +1,110 @@
+{
+  "@@locale": "hmn",
+  "appTitle": "Aw- lub tswb moos",
+  "addAlarm": "Ntxiv lub tswb",
+  "editAlarm": "Kho kom raug tswb",
+  "noAlarms": "Tsis muaj tswb",
+  "alarms": "Tswb",
+  "settings": "Chaw teeb tsa",
+  "back": "Nram ntej",
+  "delete": "Tshem tawm",
+  "deleteAlarm": "Rho tawm lub tswb",
+  "deleteAlarmPrompt": "Koj puas paub tseeb tias koj xav rho tawm lub tswb no?",
+  "cancel": "Tshem",
+  "titleLabel": "Lub npe",
+  "wrongAnswer": "Teb tsis ncaj ncees lawm",
+  "alarmSnoozed": "Tswb Snoozed rau {minutes} feeb",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Luam theej duab QR Code",
+  "wrongQr": "Tsis raug QR code. Thov luam theej duab qhov tseeb.",
+  "shakePhone": "Co lub xov tooj!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Coj mus rhaub qhov screen!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download tau QR Code",
+  "fileSaved": "Cov ntaub ntawv khaws tseg rau {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Koob Yees Duab Tso Cai Yuav Tsum Tau Rau QR Code Scill",
+  "vibration": "Kev co",
+  "fadeIn": "Gradual fade hauv",
+  "alarmScreen": "Moar Screen",
+  "defaultOption": "Tsis ua li raug txib lawm",
+  "mathChallenge": "Kev ua lej",
+  "shakeToStop": "Co kom nres",
+  "tapChallenge": "Coj mus rhaub kev sib tw",
+  "qrCodeScan": "QR code luam theej duab",
+  "alarmSound": "Lub suab tswb",
+  "addSound": "Ntxiv Suab",
+  "clearCustomSounds": "CLEAR Custom Sound",
+  "format24h": "24-teev hom",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Daws: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Tus lej {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Tshem tawm",
+  "monday": "Hnub ib",
+  "tuesday": "Hnub ob",
+  "wednesday": "Hnub peb",
+  "thursday": "Hnub plaub",
+  "friday": "Hnub tsib",
+  "saturday": "Hnub rau",
+  "sunday": "Hnub caiv"
+}

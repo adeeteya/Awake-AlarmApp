@@ -1,0 +1,110 @@
+{
+  "@@locale": "shn",
+  "appTitle": "ဢႃဢႃး- ပွၵ်ႉဢႃႇလႃႇမီႇ",
+  "addAlarm": "ထႅမ် Alarm",
+  "editAlarm": "မႄးထတ်း ဢႃႇလႃႇရမ်ႇ",
+  "noAlarms": "ဢမ်ႇမီးဢႃႇလႃႇမတ်ႉ သႂ်ႇထႅင်ႈ ၊",
+  "alarms": "ဢႃႇလၢမ်ႇ",
+  "settings": "လွင်ႈတမ်းဝၢင်း",
+  "back": "တၢင်းလင်",
+  "delete": "မွတ်ႇပႅတ်ႈ",
+  "deleteAlarm": "မွတ်ႇပႅတ်ႈ Alarm",
+  "deleteAlarmPrompt": "ၶႂ်ႈမွတ်ႇပႅတ်ႈ ၶိူင်ႈၾႆးၾႃႉၼႆႉႁႃႉ?",
+  "cancel": "ႁူၼ်ၶိုၼ်း",
+  "titleLabel": "ႁူဝ်ၶေႃႈ",
+  "wrongAnswer": "ၵႂၢမ်းတွပ်ႇၽိတ်း",
+  "alarmSnoozed": "ဢႃႇလႃႇရမ်ႇ ၼွၼ်းလပ်း {minutes} မိၼိတ်ႉ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "သၵႅၼ်ႇ မၢႆမီႈ QR",
+  "wrongQr": "ၽိတ်းမၢႆမီႈ QR ။ ၶႅၼ်းတေႃႈ သၵ်ႈၵႅၼ်ႇပၼ် ဢၼ်မႅၼ်ႈၼၼ်ႉတႃႉ။",
+  "shakePhone": "ယွၵ်ႇၾူၼ်း!",
+  "shakesCount": "သျႅၵ်ႉ {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ၼဵၵ်းတီႈၽႅၼ်ႇတူၺ်း!",
+  "tapsCount": "တၢပ်ႈ: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download မၢႆထၢမ် QR",
+  "fileSaved": "ၾၢႆႇဢၼ်ၵဵပ်းဝႆႉ {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "တႃႇ QR Code Scan ၼႆႉ လူဝ်ႇၶႂၢင်ႉ ၵွင်ႈထႆႇ",
+  "vibration": "သၼ်ႇဝႆ",
+  "fadeIn": "ၽႄမႅင်ႇၸၼ်ႉၼိုင်ႈ",
+  "alarmScreen": "ၼႃႈဢႃးလႃး",
+  "defaultOption": "လွတ်ႈႁၢမ်း",
+  "mathChallenge": "ႄမႈလွင်ႈၶဵင်ႇတႃႉ ၊",
+  "shakeToStop": "သဝ်ႉၵိုတ်း",
+  "tapChallenge": "တၢပ်ႈၶျႅၼ်ႇလႅၼ်ႇ",
+  "qrCodeScan": "QR Code သၵႅၼ်ႇ",
+  "alarmSound": "သဵင်ဢလွင်း",
+  "addSound": "ထႅမ်သဵင်",
+  "clearCustomSounds": "လၢင်ႉသဵင် Custom caster sounds",
+  "format24h": "24-ၾွၼ်ႉ",
+  "snoozeLabel": "သၼူႇ- {minutes} မိၼိတ်ႉ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ၵႄႈလိတ်ႈ {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "မၢႆ {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "မွတ်ႇပႅတ်ႈ",
+  "monday": "ဝၼ်းၸၼ်",
+  "tuesday": "ဝၼ်းဢၢင်းၵၢင်း",
+  "wednesday": "ဝၼ်းပုတ်ႉ",
+  "thursday": "ဝၼ်းၽတ်း",
+  "friday": "ဝၼ်းၽတ်း",
+  "saturday": "ဝၼ်းသဝ်",
+  "sunday": "ဝၼ်းတိတ်ႉ"
+}

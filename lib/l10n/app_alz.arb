@@ -1,0 +1,110 @@
+{
+  "@@locale": "alz",
+  "appTitle": "Awake-- Ng’atu m’ukwo i ng’ete .",
+  "addAlarm": "Inyalo ng’eyo ni",
+  "editAlarm": "Edit",
+  "noAlarms": "Lembe moko mbe m’ukoro nia etie ngo ku twero mi timo.",
+  "alarms": "Jukwenda",
+  "settings": "mingo",
+  "back": "Dwogo",
+  "delete": "Ruco",
+  "deleteAlarm": "Delem",
+  "deleteAlarmPrompt": "Be igeno ni idwaro ni ibed gi ng’eyo ma kamano?",
+  "cancel": "ngol",
+  "titleLabel": "Wilembe",
+  "wrongAnswer": "Wrong answer",
+  "alarmSnoozed": "Alarm ukoso pi dakika {minutes}",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan Qude mi Qu.",
+  "wrongQr": "Wod RR ma ng’ato nyalo ng’eyo. Wakwayu nia ibed iketh lembene ubed yot.",
+  "shakePhone": "Keth cing’i i kum simu!",
+  "shakesCount": "Shake: ___ / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ti ku screen mi skrin!",
+  "tapsCount": "Taps: {count} / __ .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Yub mi gwoko piny peri.",
+  "fileSaved": "File re ma ular uboth ni ___",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Jukwayu nia jumii igi twero mi bedo QR Codecan .",
+  "vibration": "Nen",
+  "fadeIn": "Lembe ma pire tek i I In .",
+  "alarmScreen": "Jarawec mi ng’om zoo",
+  "defaultOption": "Acaki",
+  "mathChallenge": "Mathth",
+  "shakeToStop": "Shanch .",
+  "tapChallenge": "Tap .",
+  "qrCodeScan": "QRcan .",
+  "alarmSound": "I ng’eye, edok etimo tic pare mi lembanyong’a.",
+  "addSound": "Dhu'",
+  "clearCustomSounds": "I ng’eye, edok etimo tic pare mi lembanyong’a i adhura ma tung’ tung’.",
+  "format24h": "24 A",
+  "snoozeLabel": "Snooze: __ mini",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Lembe ma jukoro: ___ __ __ _ _ _ .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nyutho number__",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ruco",
+  "monday": "Ceng kasi acel",
+  "tuesday": "cen aryo",
+  "wednesday": "Ceng adek",
+  "thursday": "ceng angwen",
+  "friday": "Ceng abic",
+  "saturday": "Ceng kasi abusiel",
+  "sunday": "Ceng yenga"
+}

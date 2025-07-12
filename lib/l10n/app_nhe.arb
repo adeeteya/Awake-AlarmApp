@@ -1,0 +1,110 @@
+{
+  "@@locale": "nhe",
+  "appTitle": "Xiisa- Nopa Alarm Clock",
+  "addAlarm": "Xijtlali nopa Alarma",
+  "editAlarm": "Alarma tlen editar",
+  "noAlarms": "Amo onca Alarmas catli quitlalijtoque ama",
+  "alarms": "piuilistli",
+  "settings": "lakya",
+  "back": "Ijka",
+  "delete": "Kotona",
+  "deleteAlarm": "Tlaxtlajtli",
+  "deleteAlarmPrompt": "¿Tijmati tijneki tijtlamiltis ni alarma?",
+  "cancel": "tlatiluauani",
+  "titleLabel": "Tlatokayotl",
+  "wrongAnswer": "amokualanki",
+  "alarmSnoozed": "Nopa alarma snooz para _00 minutos",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Xijtemo nopa Código QR",
+  "wrongQr": "Nopa Código QR. Xijtlachili nopa tlen xitlahuac.",
+  "shakePhone": "¡Xijtlali nopa teléfono!",
+  "shakesCount": "Tlayolmelahuali: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "¡Xijtlali nopa pantalla!",
+  "tapsCount": "Tlamantli: {count} / ___",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Xijtemo nopa Código QR",
+  "fileSaved": "Archivo tlen quimanahuijque ipan {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Monequi se permiso tlen cámara para nopa Scan de Código QR .",
+  "vibration": "paxalojketl",
+  "fadeIn": "Tlamachtili tlen gradual Ipan",
+  "alarmScreen": "Alarma tlen kinextia",
+  "defaultOption": "In tlapilchaualistli",
+  "mathChallenge": "Matemáticas",
+  "shakeToStop": "Xijtlatzquiltili hasta campa hueli",
+  "tapChallenge": "Tlajtlanili tlen nopa tlajtoli",
+  "qrCodeScan": "QR Código Scan",
+  "alarmSound": "Alarma sonido",
+  "addSound": "Xijtlali nopa Sonido",
+  "clearCustomSounds": "Tlapajtli tlen tlajtolpanextili",
+  "format24h": "24-Hour formato",
+  "snoozeLabel": "Snooz: _0 min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Xijsencahua: {a} {symbol} _2 =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Número {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Kotona",
+  "monday": "Lunes",
+  "tuesday": "martes",
+  "wednesday": "miércoles",
+  "thursday": "Jueves",
+  "friday": "Viernes",
+  "saturday": "Sábado",
+  "sunday": "Domingo"
+}

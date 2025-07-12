@@ -1,0 +1,110 @@
+{
+  "@@locale": "kha",
+  "appTitle": "Awake- Ka Klock Alarm .",
+  "addAlarm": "Pyndap ia ka Alarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Ym don ki Alarm ba la Add, .",
+  "alarms": "Ki runar",
+  "settings": "shong",
+  "back": "Ka met",
+  "delete": "Pyndam",
+  "deleteAlarm": "Ka Alarm kaba sniew",
+  "deleteAlarmPrompt": "Hato phi thikna ba phi kwah ban pynduh ia kane ka alarm?",
+  "cancel": "Pyndam",
+  "titleLabel": "Kyrdan",
+  "wrongAnswer": "Ka jubab kaba bakla",
+  "alarmSnoozed": "U Alarm u la tyrkhong haduh _0 minit .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "San ia ka QR Code .",
+  "wrongQr": "Ka Code kaba bakla. Sngewbha scan ia kaba dei.",
+  "shakePhone": "Pynkhih ia ka phone!",
+  "shakesCount": "Ki lynti: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap ia ka screen!",
+  "tapsCount": "Taps: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Code .",
+  "fileSaved": "U File u la im haduh {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ka jingbit jong ka Camera ka long kaba donkam na ka bynta u QR Code Scan .",
+  "vibration": "ka jingshon",
+  "fadeIn": "Sumar suki suki Ha",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "Kabym ia mynjur lang",
+  "mathChallenge": "Math",
+  "shakeToStop": "Pynkhih sha ka jaka ieng kali",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm Sur",
+  "addSound": "Pyndait",
+  "clearCustomSounds": "Ki jaka ba shai",
+  "format24h": "24 kynta .",
+  "snoozeLabel": "Sneoze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Kylleng: {a} _ _ _ =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Number {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Pyndam",
+  "monday": "Sngi nyngkong",
+  "tuesday": "Sngi Baar",
+  "wednesday": "Sngi Balang",
+  "thursday": "Sngi palei",
+  "friday": "Sngi thohdieng",
+  "saturday": "Sngi Saitjain",
+  "sunday": "Sngi u trai"
+}

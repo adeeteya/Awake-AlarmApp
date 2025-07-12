@@ -1,0 +1,110 @@
+{
+  "@@locale": "mai",
+  "appTitle": "जागल- अलार्म घड़ी",
+  "addAlarm": "अलार्म जोड़ू",
+  "editAlarm": "अलार्म संपादित करू",
+  "noAlarms": "एखन धरि कोनो अलार्म नहि जोड़ल गेल अछि",
+  "alarms": "अलार्म 2019।",
+  "settings": "सेटिंग्स 10।",
+  "back": "पाछू",
+  "delete": "हटानाइ",
+  "deleteAlarm": "अलार्म मेटाउ",
+  "deleteAlarmPrompt": "की अहाँ निश्चित छी जे अहाँ एहि अलार्म केँ मेटाबय चाहैत छी?",
+  "cancel": "रद्द",
+  "titleLabel": "शीर्षक",
+  "wrongAnswer": "गलत उत्तर २.",
+  "alarmSnoozed": "अलार्म {minutes} मिनट के लिये स्नूज",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "क्यूआर कोड स्कैन करू",
+  "wrongQr": "गलत क्यूआर कोड। कृपया सही एकटा के स्कैन करू।",
+  "shakePhone": "फोन हिलाउ!",
+  "shakesCount": "शेक : {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "स्क्रीन टैप करू!",
+  "tapsCount": "नल: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "डाउनलोड क्यूआर कोड",
+  "fileSaved": "{path} मे सहेजल गेल फाइल",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "क्यूआर कोड स्कैन के लेल कैमरा के अनुमति चाही",
+  "vibration": "स्पंदन ८.",
+  "fadeIn": "क्रमिक फीका में",
+  "alarmScreen": "अलार्म स्क्रीन 2019।",
+  "defaultOption": "चुकनाइ",
+  "mathChallenge": "गणित चुनौती २.",
+  "shakeToStop": "रुकबाक लेल हिलब",
+  "tapChallenge": "टैप चैलेंज 2019।",
+  "qrCodeScan": "क्यूआर कोड स्कैन 2019।",
+  "alarmSound": "अलार्म ध्वनि 2019।",
+  "addSound": "ध्वनि जोड़ू",
+  "clearCustomSounds": "स्पष्ट कस्टम ध्वनि",
+  "format24h": "२४ घण्टा प्रारूप २.",
+  "snoozeLabel": "स्नूज: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "हल: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "नम्बर {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "हटानाइ",
+  "monday": "सोमदिन",
+  "tuesday": "मंगलदिन",
+  "wednesday": "बुधदिन",
+  "thursday": "वृहस्पतिदिन",
+  "friday": "शुक्रदिन",
+  "saturday": "शनिदिन",
+  "sunday": "रविदिन"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ach",
+  "appTitle": "Awake- Dul ma loyo lok kom jami",
+  "addAlarm": "Med alaca",
+  "editAlarm": "Lok",
+  "noAlarms": "Pe tye jami mo ma ki medo ku",
+  "alarms": "alama",
+  "settings": "Jami ma ki keto",
+  "back": "Cen",
+  "delete": "Weyo",
+  "deleteAlarm": "Deger",
+  "deleteAlarmPrompt": "Tika itye ki gen ni imito kwanyo alarm man woko?",
+  "cancel": "Ngolo",
+  "titleLabel": "Kit ma ki lwongo kwede",
+  "wrongAnswer": "Lagam ma pe atir",
+  "alarmSnoozed": "Larar me virzim owinyo _0 dakika",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Cak coc me QR",
+  "wrongQr": "Kodi ma pe tye atir. Walegi ni ikwan gin ma tye kakare.",
+  "shakePhone": "Kwany cim ni!",
+  "shakesCount": "Jami ma kikwanyo: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap me skrika!",
+  "tapsCount": "Tap: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Coc me QR",
+  "fileSaved": "Fail ma kigwoko me {path}.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera twero me keto cik me QR Scan .",
+  "vibration": "Viel",
+  "fadeIn": "Miti me acel me acel I",
+  "alarmScreen": "Alarwanci me ceg",
+  "defaultOption": "Kit ma bino kwede",
+  "mathChallenge": "Peko me megi",
+  "shakeToStop": "Wir wek ocung",
+  "tapChallenge": "Tap Peko",
+  "qrCodeScan": "QR Coyo jami me atima pi cawa manok",
+  "alarmSound": "Alarair me Dwan",
+  "addSound": "Memed",
+  "clearCustomSounds": "Dwobi ma nen maber",
+  "format24h": "Yub me cawa me cawa 24",
+  "snoozeLabel": "Cwercwiny: {minutes} dakika",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Tic ki yat: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Namba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Weyo",
+  "monday": "Ceng barija",
+  "tuesday": "Ceng aryo",
+  "wednesday": "Ceng Adek",
+  "thursday": "Ceng Angwen",
+  "friday": "Ceng abic",
+  "saturday": "Ceng Abicel",
+  "sunday": "Ceng cabit"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ilo",
+  "appTitle": "Nariing- ti alarma a relo .",
+  "addAlarm": "Inayon ti alarma .",
+  "editAlarm": "I-edit ti alarma .",
+  "noAlarms": "Awan pay ti nainayon nga alarma .",
+  "alarms": "Dagiti alarma .",
+  "settings": "Dagiti setting .",
+  "back": "Likud",
+  "delete": "Ikkaten",
+  "deleteAlarm": "Ikkaten ti alarma .",
+  "deleteAlarmPrompt": "Siguradoka kadi a kayatmo nga i-delete daytoy nga alarma?",
+  "cancel": "Ikansela",
+  "titleLabel": "Titulo",
+  "wrongAnswer": "Di umiso a sungbat .",
+  "alarmSnoozed": "Alarm a na-snooze iti {minutes} a minuto .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "I-scan ti QR code .",
+  "wrongQr": "Di umiso a QR code. Pangngaasiyo ta i-scan-yo ti umiso.",
+  "shakePhone": "Iyugyugyog ti telepono!",
+  "shakesCount": "Dagiti panagkintayeg: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "I-tap-mo ti iskrin!",
+  "tapsCount": "Tap: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "I-download ti QR code .",
+  "fileSaved": "File nga naidulin iti {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Masapul ti pammalubos ti kamera para iti QR code scan .",
+  "vibration": "Panagtayyek .",
+  "fadeIn": "In-inut a panagkupas iti .",
+  "alarmScreen": "Iskrin ti alarma .",
+  "defaultOption": "Default",
+  "mathChallenge": "Karit ti Matematika .",
+  "shakeToStop": "Shake tapno agsardeng .",
+  "tapChallenge": "I-tap ti Karit .",
+  "qrCodeScan": "QR code scan .",
+  "alarmSound": "uni ti alarma .",
+  "addSound": "Inayon ti uni .",
+  "clearCustomSounds": "Nalawag a kostumbre nga uni .",
+  "format24h": "24-oras a pormat .",
+  "snoozeLabel": "Pagtugtugtugod: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solbaren: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ikkaten",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Mierkoles",
+  "thursday": "Huebes",
+  "friday": "Biernes",
+  "saturday": "Sabado",
+  "sunday": "Dominggo"
+}

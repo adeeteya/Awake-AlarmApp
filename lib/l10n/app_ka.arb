@@ -1,0 +1,110 @@
+{
+  "@@locale": "ka",
+  "appTitle": "გამოღვიძება- მაღვიძარა",
+  "addAlarm": "განგაშის დამატება",
+  "editAlarm": "განგაშის რედაქტირება",
+  "noAlarms": "სიგნალიზაცია ჯერ არ დაემატა",
+  "alarms": "სიგნალიზაცია",
+  "settings": "პარამეტრები",
+  "back": "ზურგი",
+  "delete": "წაშლა",
+  "deleteAlarm": "განგაშის წაშლა",
+  "deleteAlarmPrompt": "დარწმუნებული ხართ, რომ გსურთ ამ განგაშის წაშლა?",
+  "cancel": "გაუქმება",
+  "titleLabel": "ტიტული",
+  "wrongAnswer": "არასწორი პასუხი",
+  "alarmSnoozed": "სიგნალიზაცია {minutes} წუთის განმავლობაში",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR კოდის სკანირება",
+  "wrongQr": "არასწორი QR კოდი. გთხოვთ, სკანირება სწორი.",
+  "shakePhone": "შეანჯღრიე ტელეფონი!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "შეეხეთ ეკრანს!",
+  "tapsCount": "ონკანები: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ჩამოტვირთეთ QR კოდი",
+  "fileSaved": "ფაილი შენახული {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "კამერის ნებართვა საჭიროა QR კოდის სკანირებისთვის",
+  "vibration": "ვიბრაცია",
+  "fadeIn": "თანდათანობით ქრებოდა",
+  "alarmScreen": "განგაშის ეკრანი",
+  "defaultOption": "ვალდებულების შეუსრულებლობა",
+  "mathChallenge": "მათემატიკის გამოწვევა",
+  "shakeToStop": "შეანჯღრიე გაჩერებისთვის",
+  "tapChallenge": "შეეხეთ გამოწვევას",
+  "qrCodeScan": "QR კოდის სკანირება",
+  "alarmSound": "სიგნალიზაციის ხმა",
+  "addSound": "ხმის დამატება",
+  "clearCustomSounds": "სუფთა საბაჟო ხმები",
+  "format24h": "24-საათიანი ფორმატი",
+  "snoozeLabel": "Snooze: {minutes} წთ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "გადაწყვეტა: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ნომერი {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "წაშლა",
+  "monday": "ორშაბათი",
+  "tuesday": "სამშაბათი",
+  "wednesday": "ოთხშაბათი",
+  "thursday": "ხუთშაბათი",
+  "friday": "პარასკევი",
+  "saturday": "შაბათი",
+  "sunday": "კვირა"
+}

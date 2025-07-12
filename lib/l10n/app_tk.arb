@@ -1,0 +1,110 @@
+{
+  "@@locale": "tk",
+  "appTitle": "Oýandyrmak - jaň sagadyny",
+  "addAlarm": "Duýduryş goş",
+  "editAlarm": "Duýduryşy redaktirläň",
+  "noAlarms": "Entek duýduryş ýok",
+  "alarms": "Duýduryşlar",
+  "settings": "Sazlamalar",
+  "back": "Yza",
+  "delete": "Pozuň",
+  "deleteAlarm": "Duýduryşy pozuň",
+  "deleteAlarmPrompt": "Bu duýduryşy pozmak isleýändigiňize ynanýarsyňyzmy?",
+  "cancel": "Ýatyr",
+  "titleLabel": "Ady",
+  "wrongAnswer": "Ýalňyş jogap",
+  "alarmSnoozed": "{minutes} minut üçin duýduryş",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR koduny skanirläň",
+  "wrongQr": "QR kody nädogry Dogry birini skanirläň.",
+  "shakePhone": "Telefony silkit!",
+  "shakesCount": "Titkes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ekrana basyň!",
+  "tapsCount": "Tapmalar: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR koduny göçürip alyň",
+  "fileSaved": "Faýl {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR kody skaner üçin kamera rugsady talap edilýär",
+  "vibration": "Yrgyldy",
+  "fadeIn": "Kem-kemden ýitew geldi",
+  "alarmScreen": "Duýduryş ekrany",
+  "defaultOption": "Gaýybana",
+  "mathChallenge": "Matematika kynçylygy",
+  "shakeToStop": "Durmak üçin silkmek",
+  "tapChallenge": "Kyn meselä basyň",
+  "qrCodeScan": "QR kody skaner",
+  "alarmSound": "Duýduryş sesini",
+  "addSound": "Ses goşuň",
+  "clearCustomSounds": "Adaty bir sesleri arassalaň",
+  "format24h": "24 sagat format",
+  "snoozeLabel": "Snokze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Çözmek: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Belgisi {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Pozuň",
+  "monday": "Duşenbe",
+  "tuesday": "Sişenbe",
+  "wednesday": "Çarşenbe",
+  "thursday": "Penşenbe",
+  "friday": "Juma",
+  "saturday": "Şenbe",
+  "sunday": "Sundayekşenbe"
+}

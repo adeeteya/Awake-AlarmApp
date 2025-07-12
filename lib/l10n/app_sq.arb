@@ -1,0 +1,110 @@
+{
+  "@@locale": "sq",
+  "appTitle": "Zgjuar- ora e alarmit",
+  "addAlarm": "Shtoj alarmin",
+  "editAlarm": "Redakto alarmin",
+  "noAlarms": "Ende nuk ka shtuar alarme",
+  "alarms": "Alarme",
+  "settings": "Cilësimet",
+  "back": "I prapambetur",
+  "delete": "Nxjerr",
+  "deleteAlarm": "Fshi alarmin",
+  "deleteAlarmPrompt": "A jeni i sigurt që doni ta fshini këtë alarm?",
+  "cancel": "Anuloj",
+  "titleLabel": "Titull",
+  "wrongAnswer": "Përgjigje e gabuar",
+  "alarmSnoozed": "Alarmi u tërhoq për {minutes} minuta",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skanoni kodin QR",
+  "wrongQr": "Kodi i gabuar QR. Ju lutemi skanoni atë të saktë.",
+  "shakePhone": "Shkundni telefonin!",
+  "shakesCount": "Lëkundjet: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Trokitni lehtë mbi ekranin!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Shkarkoni Kodin QR",
+  "fileSaved": "Skedari i ruajtur në {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kërkohet leja e kamerës për skanimin e kodit QR",
+  "vibration": "Dridhje",
+  "fadeIn": "Zbehet gradual në",
+  "alarmScreen": "Ekran alarmi",
+  "defaultOption": "Mospagim",
+  "mathChallenge": "Sfidë e matematikës",
+  "shakeToStop": "Shake për të ndaluar",
+  "tapChallenge": "Trokitthek në sfidë",
+  "qrCodeScan": "Skanimi i kodit QR",
+  "alarmSound": "Tingull alarmi",
+  "addSound": "Shto tingullin",
+  "clearCustomSounds": "Tinguj të pastër me porosi",
+  "format24h": "Format 24-orësh",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Zgjidhni: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numri {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Nxjerr",
+  "monday": "E hënë",
+  "tuesday": "E martë",
+  "wednesday": "E mërkurë",
+  "thursday": "E enjte",
+  "friday": "E premte",
+  "saturday": "E shtunë",
+  "sunday": "E diel"
+}

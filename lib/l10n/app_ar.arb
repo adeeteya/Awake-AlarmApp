@@ -1,0 +1,110 @@
+{
+  "@@locale": "ar",
+  "appTitle": "مستيقظا- المنبه",
+  "addAlarm": "أضف الإنذار",
+  "editAlarm": "تحرير المنبه",
+  "noAlarms": "لم تضاف أي إنذارات حتى الآن",
+  "alarms": "إنذار",
+  "settings": "إعدادات",
+  "back": "خلف",
+  "delete": "يمسح",
+  "deleteAlarm": "حذف المنبه",
+  "deleteAlarmPrompt": "هل أنت متأكد من أنك تريد حذف هذا المنبه؟",
+  "cancel": "يلغي",
+  "titleLabel": "عنوان",
+  "wrongAnswer": "إجابة خاطئة",
+  "alarmSnoozed": "المنبه المنفصل عن {minutes} دقائق",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "مسح رمز الاستجابة السريعة",
+  "wrongQr": "رمز الاستجابة السريعة الخاطئة. يرجى مسح الصحيح.",
+  "shakePhone": "هز الهاتف!",
+  "shakesCount": "هز: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "اضغط على الشاشة!",
+  "tapsCount": "الصنابير: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "قم بتنزيل رمز الاستجابة السريعة",
+  "fileSaved": "تم حفظ الملف إلى {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "مطلوب إذن الكاميرا لمسح رمز الاستجابة السريعة",
+  "vibration": "اهتزاز",
+  "fadeIn": "تتلاشى تدريجي",
+  "alarmScreen": "شاشة الإنذار",
+  "defaultOption": "تقصير",
+  "mathChallenge": "تحدي الرياضيات",
+  "shakeToStop": "هز للتوقف",
+  "tapChallenge": "اضغط على التحدي",
+  "qrCodeScan": "فحص رمز الاستجابة السريعة",
+  "alarmSound": "صوت المنبه",
+  "addSound": "أضف الصوت",
+  "clearCustomSounds": "أصوات مخصصة واضحة",
+  "format24h": "تنسيق 24 ساعة",
+  "snoozeLabel": "الغفوة: {minutes} دقيقة",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "حل: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "الرقم {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "يمسح",
+  "monday": "الاثنين",
+  "tuesday": "يوم الثلاثاء",
+  "wednesday": "الأربعاء",
+  "thursday": "يوم الخميس",
+  "friday": "جمعة",
+  "saturday": "السبت",
+  "sunday": "الأحد"
+}

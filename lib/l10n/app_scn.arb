@@ -1,0 +1,110 @@
+{
+  "@@locale": "scn",
+  "appTitle": "Risvegghia - L'addettu di l'allarma",
+  "addAlarm": "Aggiungiri Alarma",
+  "editAlarm": "Mudifica Allarm",
+  "noAlarms": "Nisciuna allarmi agghiunciuti er. Eccedinna",
+  "alarms": "allarme",
+  "settings": "Impostazzioni",
+  "back": "Carina",
+  "delete": "Scanciḍḍari",
+  "deleteAlarm": "Cancilla Allarme",
+  "deleteAlarmPrompt": "Si sicuru ca voli cancillari stu allarme?",
+  "cancel": "sfai",
+  "titleLabel": "Tìtulu",
+  "wrongAnswer": "Risposta sbagghiata",
+  "alarmSnoozed": "Allarma snaussata pi _0 minuti",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scanna lu Codici QR",
+  "wrongQr": "Codici QR. Si prega di scansionari chiḍḍu giustu.",
+  "shakePhone": "Scuota lu telefunu!",
+  "shakesCount": "Scuzzu: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tocca lu schermu!",
+  "tapsCount": "Top: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Scaricari lu Codici QR",
+  "fileSaved": "File sarbatu a {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Lu pirmissu di Camera è nicissariu pâ Scaca dû Codici QR",
+  "vibration": "Vibbrazzioni",
+  "fadeIn": "Fadi a gradu Ntô 1992",
+  "alarmScreen": "Scherca di allarme",
+  "defaultOption": "Pridifinutu",
+  "mathChallenge": "Sfida di matimàtica",
+  "shakeToStop": "Scuotti a Firmati",
+  "tapChallenge": "Tocca Sfida",
+  "qrCodeScan": "Scaca dû Còdici QR",
+  "alarmSound": "Allarme sonu",
+  "addSound": "Aggiungi sonu",
+  "clearCustomSounds": "Cancilla su misura",
+  "format24h": "Furmatu 24-Unu",
+  "snoozeLabel": "Snozzi: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Risolvi: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nùmmaru {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Scanciḍḍari",
+  "monday": "Luni",
+  "tuesday": "marti",
+  "wednesday": "mèrcuri",
+  "thursday": "jovi",
+  "friday": "Vènniri",
+  "saturday": "sàbbatu",
+  "sunday": "Dumìnica"
+}

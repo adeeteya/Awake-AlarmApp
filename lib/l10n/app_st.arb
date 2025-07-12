@@ -1,0 +1,110 @@
+{
+  "@@locale": "st",
+  "appTitle": "Tsoha, alamo alamo",
+  "addAlarm": "Kenya Alamo",
+  "editAlarm": "Edita alamo",
+  "noAlarms": "Ha ho na alamo",
+  "alarms": "Lialamo",
+  "settings": "Litlhophiso",
+  "back": "Khutlela",
+  "delete": "Tlosa",
+  "deleteAlarm": "Tlosa alamo",
+  "deleteAlarmPrompt": "Na u na le bonnete ba hore u batla ho hlakola alamo ee?",
+  "cancel": "Hlakola",
+  "titleLabel": "Sehlooho",
+  "wrongAnswer": "Karabo e fosahetseng",
+  "alarmSnoozed": "Alamo e snoozed bakeng sa {minutes} metsotso",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skena khoutu ea QR",
+  "wrongQr": "Khoutu e fosahetseng ea QR. Ka kopo hlakola e nepahetseng.",
+  "shakePhone": "Shake mohala!",
+  "shakesCount": "Shake: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tlanya skrineng!",
+  "tapsCount": "Li-taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Khoele ea QR",
+  "fileSaved": "Faele e bolokiloe ho {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ho hlokahala tumello ea kh'amera bakeng sa QR Code Scan",
+  "vibration": "Vibration",
+  "fadeIn": "Khaso ea Coredaual Feade ka",
+  "alarmScreen": "Skrineng sa alamo",
+  "defaultOption": "Kamehla",
+  "mathChallenge": "Phephetso ea lipalo",
+  "shakeToStop": "Sisinya ho emisa",
+  "tapChallenge": "Tlanya Phephetso",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Molumo oa alamo",
+  "addSound": "Kenya molumo",
+  "clearCustomSounds": "Melumo e hlakileng ea tloaelo",
+  "format24h": "Sebopeho sa lihora tse 24",
+  "snoozeLabel": "Snooze: {minutes} Min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Rarolla: {a} {symbol}{b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomoro {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Tlosa",
+  "monday": "Mantaha",
+  "tuesday": "Labobeli",
+  "wednesday": "Laboraro",
+  "thursday": "Labone",
+  "friday": "Labohlano",
+  "saturday": "Moqebelo",
+  "sunday": "Sontaha"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "bik",
+  "appTitle": "An Pagmata- An Orasan kan Alarm",
+  "addAlarm": "Idagdag an Alarm",
+  "editAlarm": "Alarm sa Pag-edit .",
+  "noAlarms": "Mayo pa nin mga Alarm na idinagdag .",
+  "alarms": "Mga alarma",
+  "settings": "Mga pag-andam",
+  "back": "Likod",
+  "delete": "Haleon",
+  "deleteAlarm": "Burahon an Alarm .",
+  "deleteAlarmPrompt": "Sigurado ka na gusto mong buraon an alarma na ini?",
+  "cancel": "ikansela",
+  "titleLabel": "Titulo",
+  "wrongAnswer": "Sala na simbag",
+  "alarmSnoozed": "Alarm nagsnooze sa {minutes} minutos.",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "I-scan an Kodigo nin QR .",
+  "wrongQr": "Sala nga Kodigo sa QR. Paki-scan tabi an tama.",
+  "shakePhone": "Iyugyog an telepono!",
+  "shakesCount": "Mga Pag-uyugyog: {count} / {required}.",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "I-tap an screen!",
+  "tapsCount": "Mga tap: {count} / {required}.",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Kodigo",
+  "fileSaved": "File na naligtas sa {path}.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "An pagtugot sa Camera kaipuhan para sa QR Code .",
+  "vibration": "Pag-uyog",
+  "fadeIn": "Luway-luway na Paglaad Sa .",
+  "alarmScreen": "Alarm na Screen Screen .",
+  "defaultOption": "Palya",
+  "mathChallenge": "Hamon sa Matematika",
+  "shakeToStop": "Pag-uyog sa .",
+  "tapChallenge": "Hamon sa Tap",
+  "qrCodeScan": "QR Code Scan .",
+  "alarmSound": "Alarm Tunog .",
+  "addSound": "Idagdag an Tanog",
+  "clearCustomSounds": "Malinaw na Pasadya Mga Tunog .",
+  "format24h": "24-Oras na Pormat .",
+  "snoozeLabel": "Snoooze: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}.",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Haleon",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Miyerkules",
+  "thursday": "Webes",
+  "friday": "Biyernes",
+  "saturday": "Sabado",
+  "sunday": "Domingo"
+}

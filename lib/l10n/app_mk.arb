@@ -1,0 +1,110 @@
+{
+  "@@locale": "mk",
+  "appTitle": "Разбудете се- Алармниот часовник",
+  "addAlarm": "Додадете аларм",
+  "editAlarm": "Уреди аларм",
+  "noAlarms": "Сè уште нема додадени аларми",
+  "alarms": "Аларми",
+  "settings": "Поставки",
+  "back": "Назад",
+  "delete": "Избриши",
+  "deleteAlarm": "Избришете го алармот",
+  "deleteAlarmPrompt": "Дали сте сигурни дека сакате да го избришете овој аларм?",
+  "cancel": "Откажи",
+  "titleLabel": "Наслов",
+  "wrongAnswer": "Погрешен одговор",
+  "alarmSnoozed": "Алармот се испушти за {minutes} минути",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Скенирајте го QR -кодот",
+  "wrongQr": "Погрешен QR код. Ве молиме скенирајте го точниот.",
+  "shakePhone": "Тресете го телефонот!",
+  "shakesCount": "Тресе: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Допрете го екранот!",
+  "tapsCount": "Тапи: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Преземете QR код",
+  "fileSaved": "Датотека зачувана на {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Потребна е дозвола за камера за скенирање на QR код",
+  "vibration": "Вибрации",
+  "fadeIn": "Постепено избледување во",
+  "alarmScreen": "Екран за аларм",
+  "defaultOption": "Стандардно",
+  "mathChallenge": "Математички предизвик",
+  "shakeToStop": "Тресете да застанете",
+  "tapChallenge": "Допрете предизвик",
+  "qrCodeScan": "QR код за скенирање",
+  "alarmSound": "Звук на аларм",
+  "addSound": "Додадете звук",
+  "clearCustomSounds": "Јасни прилагодени звуци",
+  "format24h": "24-часовен формат",
+  "snoozeLabel": "Snooze: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Реши: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Број {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Избриши",
+  "monday": "Понеделник",
+  "tuesday": "Вторник",
+  "wednesday": "Среда",
+  "thursday": "Четврток",
+  "friday": "Петок",
+  "saturday": "Сабота",
+  "sunday": "Недела"
+}

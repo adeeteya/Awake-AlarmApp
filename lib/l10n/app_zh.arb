@@ -1,0 +1,110 @@
+{
+  "@@locale": "zh",
+  "appTitle": "醒来 - 闹钟",
+  "addAlarm": "添加警报",
+  "editAlarm": "编辑警报",
+  "noAlarms": "还没有添加警报",
+  "alarms": "警报",
+  "settings": "设置",
+  "back": "后退",
+  "delete": "删除",
+  "deleteAlarm": "删除警报",
+  "deleteAlarmPrompt": "您确定要删除此警报吗？",
+  "cancel": "取消",
+  "titleLabel": "标题",
+  "wrongAnswer": "答案错误",
+  "alarmSnoozed": "警报打{minutes}分钟",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "扫描QR码",
+  "wrongQr": "错误的QR码。请扫描正确的一个。",
+  "shakePhone": "摇动电话！",
+  "shakesCount": "振动：{count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "点击屏幕！",
+  "tapsCount": "水龙头：{count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "下载QR码",
+  "fileSaved": "保存到{path}的文件",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR代码扫描需要摄像机许可",
+  "vibration": "振动",
+  "fadeIn": "逐渐淡出",
+  "alarmScreen": "警报屏幕",
+  "defaultOption": "默认",
+  "mathChallenge": "数学挑战",
+  "shakeToStop": "摇了摇",
+  "tapChallenge": "点击挑战",
+  "qrCodeScan": "QR码扫描",
+  "alarmSound": "警报声音",
+  "addSound": "添加声音",
+  "clearCustomSounds": "清晰的自定义声音",
+  "format24h": "24小时格式",
+  "snoozeLabel": "贪睡：{minutes}分钟",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "解决：{a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "号码{label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "删除",
+  "monday": "周一",
+  "tuesday": "周二",
+  "wednesday": "周三",
+  "thursday": "周四",
+  "friday": "星期五",
+  "saturday": "周六",
+  "sunday": "星期日"
+}

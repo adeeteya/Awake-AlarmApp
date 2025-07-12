@@ -1,0 +1,110 @@
+{
+  "@@locale": "sd",
+  "appTitle": "جاڳيل- الارم ڪلاڪ",
+  "addAlarm": "الارم شامل ڪريو",
+  "editAlarm": "الارم ۾ تبديلي آڻيو",
+  "noAlarms": "الارم اڃا تائين شامل نه ڪيو ويو آهي",
+  "alarms": "الارم",
+  "settings": "سيٽنگ",
+  "back": "واپس",
+  "delete": "صفحو ڪلڪ ڪريو",
+  "deleteAlarm": "الارم ختم ڪريو",
+  "deleteAlarmPrompt": "ڇا توهان کي پڪ آهي ته توهان هن الارم کي ختم ڪرڻ چاهيو ٿا؟",
+  "cancel": "رد ڪري",
+  "titleLabel": "زمانو",
+  "wrongAnswer": "غلط جواب",
+  "alarmSnoozed": "الارم {minutes} منٽن لاء پريشان ڪيو ويو",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "آر آر ڪوڊ اسڪين ڪيو",
+  "wrongQr": "غلط QR ڪوڊ. مهرباني ڪري صحيح کي اسڪين ڪريو.",
+  "shakePhone": "فون کي شيڪ ڪريو!",
+  "shakesCount": "شڪي: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "اسڪرين تي ٽيپ ڪريو!",
+  "tapsCount": "ٽپس: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ڊائون لوڊ ڪيو آر آر ڪوڊ",
+  "fileSaved": "فائل {path} ڏانهن محفوظ ٿيل آهي",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ڪئميرا جي اجازت QR ڪوڊ اسڪين لاء گهربل آهي",
+  "vibration": "کمپن",
+  "fadeIn": "۾ آھستي آھستي",
+  "alarmScreen": "الارم اسڪرين",
+  "defaultOption": "ڊفالٽ",
+  "mathChallenge": "ميٿ چيلنج",
+  "shakeToStop": "روڪڻ لاء شڪي",
+  "tapChallenge": "چيلنج تي ٽيپ ڪريو",
+  "qrCodeScan": "آر آر ڪوڊ اسڪين",
+  "alarmSound": "الارم آواز",
+  "addSound": "آواز وڌائڻ",
+  "clearCustomSounds": "ڪسٽم آواز صاف ڪريو",
+  "format24h": "24 ڪلاڪ فارميٽ",
+  "snoozeLabel": "سنوز: {minutes} منٽ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "حل ڪريو: {a} {symbol} {b} = =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "نمبر {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "صفحو ڪلڪ ڪريو",
+  "monday": "سومر",
+  "tuesday": "اڱارو",
+  "wednesday": "اربع",
+  "thursday": "خميس",
+  "friday": "جمع",
+  "saturday": "ڇنڇر",
+  "sunday": "آچر"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ky",
+  "appTitle": "Ойгонгула- Ойготкуч саат",
+  "addAlarm": "Ойготкуч кошуңуз",
+  "editAlarm": "Ойготкуч",
+  "noAlarms": "Азырынча сигнал жок",
+  "alarms": "Ойготкучтар",
+  "settings": "Жөндөөлөр",
+  "back": "Артка",
+  "delete": "Жок кылуу",
+  "deleteAlarm": "Ойготкучту жок кылуу",
+  "deleteAlarmPrompt": "Бул ойготкучту жок кылгыңыз келеби?",
+  "cancel": "Жокко чыгаруу",
+  "titleLabel": "Аталышы",
+  "wrongAnswer": "Туура эмес жооп",
+  "alarmSnoozed": "Ойготкуч {minutes} мүнөткө созулган",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR кодун сканерлеңиз",
+  "wrongQr": "QR коду туура эмес. Сураныч, туура сканерлеңиз.",
+  "shakePhone": "Телефонду чайкагыла!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Экранды таптаңыз!",
+  "tapsCount": "Таптар: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR CODE жүктөө",
+  "fileSaved": "{path} чейин сакталган файл",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR Code Scan үчүн камера уруксат талап кылынат",
+  "vibration": "Термелүү",
+  "fadeIn": "Акырындык менен жоголуп",
+  "alarmScreen": "Ойготкуч экран",
+  "defaultOption": "По умолчанию",
+  "mathChallenge": "Математика чакырыгы",
+  "shakeToStop": "Токтоп калуу үчүн",
+  "tapChallenge": "Challenge таптап",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Ойготку үн",
+  "addSound": "Үн кошуу",
+  "clearCustomSounds": "Custom Custom Sounds",
+  "format24h": "24 сааттык формат",
+  "snoozeLabel": "Snooze: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Чечүү: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Номери {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Жок кылуу",
+  "monday": "Дүйшөмбү",
+  "tuesday": "Шейшемби",
+  "wednesday": "Шаршемби",
+  "thursday": "Бейшемби",
+  "friday": "Жума",
+  "saturday": "Ишемби",
+  "sunday": "Жекшемби"
+}

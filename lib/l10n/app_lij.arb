@@ -1,0 +1,110 @@
+{
+  "@@locale": "lij",
+  "appTitle": "Awake- O Relòggio de l'allarme .",
+  "addAlarm": "Auaroo",
+  "editAlarm": "Allarme Modificâ",
+  "noAlarms": "Nisciun allarme Azzonto ancon",
+  "alarms": "Arme",
+  "settings": "Impostensa",
+  "back": "Scheña",
+  "delete": "Scassâ",
+  "deleteAlarm": "Deleto l’allarme",
+  "deleteAlarmPrompt": "Sei seguo che ti veu cancellâ sto allarme?",
+  "cancel": "Scassa",
+  "titleLabel": "Titolo",
+  "wrongAnswer": "Bruxâ respòsta",
+  "alarmSnoozed": "L'allarme o l'à snooze pe {minutes} menuti",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scansionâ o Còdiçe QR",
+  "wrongQr": "Còdiçe QR arrægo. Pe favô, scanscionæ quello corretto.",
+  "shakePhone": "Scioccâ o telefòno!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tocca o schermo!",
+  "tapsCount": "Tocca: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Scaricâ o Còdiçe QR",
+  "fileSaved": "File sarvou in sce {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "O permisso de telecamere o l'é neçessäio pe-o Scan de Còdiçe QR",
+  "vibration": "Vibraçion",
+  "fadeIn": "Fade graduale In",
+  "alarmScreen": "Screen de l'allarme",
+  "defaultOption": "Predefinio",
+  "mathChallenge": "Conginemmo",
+  "shakeToStop": "Scioccâ à Fermâ",
+  "tapChallenge": "Sfiguraçion de top",
+  "qrCodeScan": "Scano do Còdiçe QR",
+  "alarmSound": "Sono de l'allarme",
+  "addSound": "Aggiungâ sein",
+  "clearCustomSounds": "Sonæ personalizzæ pe-a personalitæ",
+  "format24h": "Formato de 24 oe",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Scassâ",
+  "monday": "Lunesdì",
+  "tuesday": "mätesdì",
+  "wednesday": "mäcordì",
+  "thursday": "zeuggia",
+  "friday": "Venardì",
+  "saturday": "sabbo",
+  "sunday": "Domenega"
+}

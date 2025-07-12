@@ -1,0 +1,110 @@
+{
+  "@@locale": "ny",
+  "appTitle": "Gawani - Wotchi",
+  "addAlarm": "Onjezerani alamu",
+  "editAlarm": "Sinthani alamu",
+  "noAlarms": "Palibe ma alarm",
+  "alarms": "Manjira",
+  "settings": "Makonzedwe",
+  "back": "Limbikitsa",
+  "delete": "Chotsa",
+  "deleteAlarm": "Defuti",
+  "deleteAlarmPrompt": "Mukutsimikiza kuti mukufuna kuchotsa izi?",
+  "cancel": "Siya",
+  "titleLabel": "Mutu",
+  "wrongAnswer": "Yankho lolakwika",
+  "alarmSnoozed": "Alamu kutchula {minutes} mphindi",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Jambulani nambala ya QR",
+  "wrongQr": "Code yolakwika ya QR. Chonde sinthanitsani yoyenera.",
+  "shakePhone": "Gwedezani foni!",
+  "shakesCount": "Shakes: {count} / _ #",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Dinani chophimba!",
+  "tapsCount": "Taps: {count} / _ #",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Tsitsani nambala ya QR",
+  "fileSaved": "Fayilo yosungidwa ku {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Chilolezo cha kamera chimafunikira qr code scan",
+  "vibration": "Kugwedezeka",
+  "fadeIn": "Pang'ono",
+  "alarmScreen": "Alamu",
+  "defaultOption": "Osakwanitsa",
+  "mathChallenge": "Masanja a masamu",
+  "shakeToStop": "Kugwedeza kuti asiye",
+  "tapChallenge": "Dinani Vuto",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Phokoso phokoso",
+  "addSound": "Onjezani mawu",
+  "clearCustomSounds": "Mawu omveka bwino",
+  "format24h": "Mtundu wa maola 24",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Kuthetsa: {a} {symbol} _ = =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nambala {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Chotsa",
+  "monday": "Lolemba",
+  "tuesday": "Lachiwiri",
+  "wednesday": "Lachitatu",
+  "thursday": "Lachinayi",
+  "friday": "Lachisanu",
+  "saturday": "Lachiwelu",
+  "sunday": "Lasabata"
+}

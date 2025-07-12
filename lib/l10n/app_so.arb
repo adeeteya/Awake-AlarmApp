@@ -1,0 +1,110 @@
+{
+  "@@locale": "so",
+  "appTitle": "Soo jeed- saacadda digniinta",
+  "addAlarm": "Ku dar alaarmiga",
+  "editAlarm": "Tafatir qaylo-dhaanta",
+  "noAlarms": "Wax qaylo ah kuma darin wali",
+  "alarms": "Qaylo dharaan ah",
+  "settings": "Dejinta",
+  "back": "Xagga gadaale",
+  "delete": "Tirtirid",
+  "deleteAlarm": "Tirtir qaylo-dhaanta",
+  "deleteAlarmPrompt": "Ma hubtaa inaad rabto inaad tirtirto qalabkaan?",
+  "cancel": "Burin",
+  "titleLabel": "Cinwaan",
+  "wrongAnswer": "Jawaab qaldan",
+  "alarmSnoozed": "Qaylo-dhaan ah oo loogu talagalay {minutes} daqiiqado",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Iskaanka lambarka QR",
+  "wrongQr": "Xeerka QR qaldan. Fadlan iska baar kan saxda ah.",
+  "shakePhone": "Taleefanka rux!",
+  "shakesCount": "Rux: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Taabo shaashadda!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Code",
+  "fileSaved": "Ku keydiso lagu keydiyaa {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ogolaanshaha kamaradda ayaa looga baahan yahay skaanka sirta ah ee QR",
+  "vibration": "Ka gafka",
+  "fadeIn": "Tartiib tartiib ah",
+  "alarmScreen": "Shaashad qaylo-dhaan",
+  "defaultOption": "Fulin la'aan",
+  "mathChallenge": "Caqabadda xisaabta",
+  "shakeToStop": "Rux si aad u joojiso",
+  "tapChallenge": "Taabo tartan",
+  "qrCodeScan": "QR code Scan",
+  "alarmSound": "Dhaanta alaarmi",
+  "addSound": "Codka ku dar",
+  "clearCustomSounds": "Cad dhawaqa cadayga",
+  "format24h": "Qaabka 24-ka saac",
+  "snoozeLabel": "Snoeze: {minutes} MIN",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Xadhiga: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Lambarka {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Tirtirid",
+  "monday": "Isniin",
+  "tuesday": "Talaado",
+  "wednesday": "Arbaco",
+  "thursday": "Khamiis",
+  "friday": "Jimce",
+  "saturday": "Sabti",
+  "sunday": "Axad"
+}

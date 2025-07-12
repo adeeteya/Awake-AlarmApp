@@ -1,0 +1,110 @@
+{
+  "@@locale": "fi",
+  "appTitle": "Herätyskello",
+  "addAlarm": "Lisätä hälytystä",
+  "editAlarm": "Muokata hälytystä",
+  "noAlarms": "Ei vielä lisätty hälytyksiä",
+  "alarms": "Hälytykset",
+  "settings": "Asetukset",
+  "back": "Takaisin",
+  "delete": "Poistaa",
+  "deleteAlarm": "Poistaa hälytys",
+  "deleteAlarmPrompt": "Haluatko varmasti poistaa tämän hälytyksen?",
+  "cancel": "Peruuttaa",
+  "titleLabel": "Otsikko",
+  "wrongAnswer": "Väärä vastaus",
+  "alarmSnoozed": "Hälytys tornittu {minutes} minuuttia",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skannaa QR -koodi",
+  "wrongQr": "Väärä QR -koodi. Skannaa oikea.",
+  "shakePhone": "Ravista puhelinta!",
+  "shakesCount": "Ravistelut: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Napauta näyttöä!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Lataa QR -koodi",
+  "fileSaved": "Tiedosto tallennetaan osoitteeseen {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kameran lupa vaaditaan QR -koodin skannaukseen",
+  "vibration": "Värähtely",
+  "fadeIn": "Asteittainen haalistua",
+  "alarmScreen": "Hälytysnäyttö",
+  "defaultOption": "Laiminlyönti",
+  "mathChallenge": "Matematiikan haaste",
+  "shakeToStop": "Ravistaakseen",
+  "tapChallenge": "Napauttaa haaste",
+  "qrCodeScan": "QR -koodin skannaus",
+  "alarmSound": "Hälytysääni",
+  "addSound": "Lisätä äänen",
+  "clearCustomSounds": "Tyhjennä mukautetut äänet",
+  "format24h": "24 tunnin muoto",
+  "snoozeLabel": "Torkku: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Ratkaise: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Poistaa",
+  "monday": "maanantai",
+  "tuesday": "tiistai",
+  "wednesday": "keskiviikko",
+  "thursday": "torstai",
+  "friday": "perjantai",
+  "saturday": "Lauantai",
+  "sunday": "sunnuntai"
+}

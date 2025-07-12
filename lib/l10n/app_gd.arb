@@ -1,0 +1,110 @@
+{
+  "@@locale": "gd",
+  "appTitle": "A 'dùsgadh - an gleoc rabhaidh",
+  "addAlarm": "Cuir inneal-gearain ris",
+  "editAlarm": "Deasaich inneal-rabhaidh",
+  "noAlarms": "Cha deach rabhaidhean a chuir ris fhathast",
+  "alarms": "Innealan-rabhaidh",
+  "settings": "Roghainnean",
+  "back": "Air ais",
+  "delete": "Thoir às",
+  "deleteAlarm": "Cuir às do rabhaidh",
+  "deleteAlarmPrompt": "A bheil thu cinnteach gu bheil thu airson an inneal-rabhaidh seo a dhubhadh às?",
+  "cancel": "Sguir dheth",
+  "titleLabel": "Tiotal",
+  "wrongAnswer": "Freagairt ceàrr",
+  "alarmSnoozed": "Airmon a 'dol thairis airson {minutes} mionaidean",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan an còd QR",
+  "wrongQr": "Còd Qr ceàrr. Feuch an sgan rud ceart.",
+  "shakePhone": "Crathadh am fòn!",
+  "shakesCount": "A 'crathadh: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap air an sgrion!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Luchdaich sìos Còd QR",
+  "fileSaved": "Faidhle air a shàbhaladh gu {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Feumar cead camara airson scan còd QR",
+  "vibration": "Crathadh",
+  "fadeIn": "FREATH FEUD A 'GABHAIL A-STEACH",
+  "alarmScreen": "Sgrion rabhaidh",
+  "defaultOption": "Bunaiteach",
+  "mathChallenge": "Dùbhlan Math",
+  "shakeToStop": "Crathadh gus stad a chuir air",
+  "tapChallenge": "DÙBHLACHD Tap",
+  "qrCodeScan": "Scan còd QR",
+  "alarmSound": "Fuaim rabhaidh",
+  "addSound": "Cuir fuaim",
+  "clearCustomSounds": "Fuaimean gnàthaichte àbhaisteach",
+  "format24h": "Cruth 24-uair",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Fuasgladh: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Àireamh {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Thoir às",
+  "monday": "Diluain",
+  "tuesday": "Dimàirt",
+  "wednesday": "Diciadain",
+  "thursday": "Diardaoin",
+  "friday": "Dihaoine",
+  "saturday": "Disathairne",
+  "sunday": "Didòmhnaich"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "eu",
+  "appTitle": "Esna - iratzargailua",
+  "addAlarm": "Gehitu alarma",
+  "editAlarm": "Editatu",
+  "noAlarms": "Oraindik ez da alarmarik gehitu",
+  "alarms": "Alarma",
+  "settings": "Ezarpen",
+  "back": "Bizkar",
+  "delete": "Ezabatu",
+  "deleteAlarm": "Ezabatu alarma",
+  "deleteAlarmPrompt": "Ziur al zaude alarma hau ezabatu nahi duzula?",
+  "cancel": "Indargabetu",
+  "titleLabel": "Izenburu",
+  "wrongAnswer": "Erantzun okerra",
+  "alarmSnoozed": "Alarma snoozed {minutes} minutu",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Eskaneatu QR kodea",
+  "wrongQr": "QR kode okerra. Mesedez, eskaneatu zuzena.",
+  "shakePhone": "Telefonoa astindu!",
+  "shakesCount": "Astindu: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Punteatu pantaila!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Deskargatu QR kodea",
+  "fileSaved": "{path} gordetako fitxategia",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kameraren baimena beharrezkoa da QR kodea eskaneatzeko",
+  "vibration": "Bibiztuz",
+  "fadeIn": "Pixkanaka-pixkanaka",
+  "alarmScreen": "Alarma",
+  "defaultOption": "Ez ordaindu",
+  "mathChallenge": "Matematika erronka",
+  "shakeToStop": "Astindu gelditzeko",
+  "tapChallenge": "Punteatu erronka",
+  "qrCodeScan": "QR kodea eskaneatzea",
+  "alarmSound": "Alarma soinua",
+  "addSound": "Soinua gehitu",
+  "clearCustomSounds": "Soinu pertsonalizatuak garbitu",
+  "format24h": "24 orduko formatua",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Ebatzi: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Zenbakia {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ezabatu",
+  "monday": "Astelehen",
+  "tuesday": "Astearte",
+  "wednesday": "Asteazken",
+  "thursday": "Ostegun",
+  "friday": "Ostiral",
+  "saturday": "Larunbat",
+  "sunday": "Igande"
+}

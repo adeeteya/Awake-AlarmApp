@@ -1,0 +1,110 @@
+{
+  "@@locale": "lus",
+  "appTitle": "awake- alarm clock .",
+  "addAlarm": "Alarm add .",
+  "editAlarm": "Edit alarm .",
+  "noAlarms": "Alarm a la belh lo .",
+  "alarms": "Alarm te .",
+  "settings": "Settings 1000 a ni.",
+  "back": "Hnung",
+  "delete": "Ti reh",
+  "deleteAlarm": "alarm a delete .",
+  "deleteAlarmPrompt": "He alarm hi delete i duh tak tak em?",
+  "cancel": "Titawp",
+  "titleLabel": "Nihna",
+  "wrongAnswer": "Chhanna dik lo .",
+  "alarmSnoozed": "Alarm chu minute {minutes} chhung snoozed a ni.",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR code chu scan rawh .",
+  "wrongQr": "QR code dik lo a awm. Khawngaihin a dik tak chu scan rawh.",
+  "shakePhone": "Phone chu a ti nghing ta!",
+  "shakesCount": "Shakes: {count} / {required} a ni.",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Screen chu tap rawh!",
+  "tapsCount": "Tap: {count} / {required} a ni.",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR code download rawh .",
+  "fileSaved": "File chu {path} ah a save a.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR code scan atan camera phalna lak a ngai a ni .",
+  "vibration": "Vibration 1000 a ni.",
+  "fadeIn": "Zawi zawiin fade in .",
+  "alarmScreen": "Alarm screen a ni a, a screen pawh a tha hle.",
+  "defaultOption": "Hlawhchhamna",
+  "mathChallenge": "Math Challenge 1000 a ni.",
+  "shakeToStop": "Shake chu tihtawp a ni.",
+  "tapChallenge": "Tap challenge 1000 a ni.",
+  "qrCodeScan": "QR code scan a ni a.",
+  "alarmSound": "alarm ri a ni.",
+  "addSound": "Sound add .",
+  "clearCustomSounds": "Custom sound chiang tak tak .",
+  "format24h": "Darkar 24 chhunga format a ni .",
+  "snoozeLabel": "Snooze: {minutes} min tih a ni.",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "A chinfel dan: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "number {label} a ni.",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ti reh",
+  "monday": "Thawhtanni",
+  "tuesday": "Thawhlehni",
+  "wednesday": "NIlaini",
+  "thursday": "Ningani",
+  "friday": "Zirtawpni",
+  "saturday": "Inrinni",
+  "sunday": "Chawlhni"
+}

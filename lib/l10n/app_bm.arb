@@ -1,0 +1,110 @@
+{
+  "@@locale": "bm",
+  "appTitle": "Awake- la alarma .",
+  "addAlarm": "Aw bɛ alarma fara a kan .",
+  "editAlarm": "Alarma ladilan .",
+  "noAlarms": "Alarma si ma fara a kan hali bi .",
+  "alarms": "Alarms .",
+  "settings": "Settings .",
+  "back": "Kɔ",
+  "delete": "Ka jɔsi",
+  "deleteAlarm": "Alarma delete .",
+  "deleteAlarmPrompt": "Yala aw b’a fɛ ka nin alarma in bɔ wa?",
+  "cancel": "ka dankari",
+  "titleLabel": "Titiri",
+  "wrongAnswer": "Jaabi jugu .",
+  "alarmSnoozed": "Alarm snoozed for {minutes} miniti .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Aw ye QR code lajɛ .",
+  "wrongQr": "Kode QR jugu. Aw bɛ a sɛgɛsɛgɛ cogo bɛnnen na.",
+  "shakePhone": "Telefɔni yɛrɛyɛrɛ!",
+  "shakesCount": "A bɛ yɛrɛyɛrɛ: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "I bolo digi ekran kan!",
+  "tapsCount": "Taps: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Télécharger QR code .",
+  "fileSaved": "File min maralen bɛ {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera ka yamaruya ka kan ka sɔrɔ QR code scan .",
+  "vibration": "Yɛrɛyɛrɛli .",
+  "fadeIn": "Fade dɔɔnin dɔɔnin .",
+  "alarmScreen": "Alarma écran .",
+  "defaultOption": "Fɔlɔ",
+  "mathChallenge": "Math Challenge .",
+  "shakeToStop": "Aw bɛ a lamaga walasa a ka jɔ .",
+  "tapChallenge": "Tap Challenge .",
+  "qrCodeScan": "QR code scan .",
+  "alarmSound": "Alarm mankan .",
+  "addSound": "Aw bɛ mankan dɔ fara a kan .",
+  "clearCustomSounds": "Clear Custom Sounds .",
+  "format24h": "24-lɛrɛ cogoya .",
+  "snoozeLabel": "Snooze: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solution: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Jateden {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ka jɔsi",
+  "monday": "Tɛnɛ",
+  "tuesday": "tarata",
+  "wednesday": "araba",
+  "thursday": "alamisa",
+  "friday": "Juma",
+  "saturday": "sibiri",
+  "sunday": "Kari"
+}

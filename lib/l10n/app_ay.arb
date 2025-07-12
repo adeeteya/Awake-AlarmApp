@@ -1,0 +1,110 @@
+{
+  "@@locale": "ay",
+  "appTitle": "Ukatsti, uka despertadorjj .",
+  "addAlarm": "Alarma yapxataña .",
+  "editAlarm": "Alarma editar .",
+  "noAlarms": "Janiw kuna alarmas ukanakas yapxatatäkiti .",
+  "alarms": "Alarma ukax 1.1.",
+  "settings": "Ukaxa utt’ayatawa.",
+  "back": "Qhipa",
+  "delete": "Phiskhsuña",
+  "deleteAlarm": "Alarma chhaqtayaña .",
+  "deleteAlarmPrompt": "¿Aka alarma chhaqtayañ munasmati?",
+  "cancel": "Kansilaña",
+  "titleLabel": "Titulu",
+  "wrongAnswer": "Jan wali jaysäwi .",
+  "alarmSnoozed": "Alarma Snoozed ukax {minutes} minutos .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Uka QR codigo uñakipaña .",
+  "wrongQr": "Jan wali QR codigo. Uka chiqax chiqak uñakiptʼañamawa.",
+  "shakePhone": "¡Uka telefonot chʼalljjtayasim!",
+  "shakesCount": "ch’allxtawi: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "¡Pantalla ukar ch’iqt’añamawa!",
+  "tapsCount": "Ukax akham sañ muni: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR ukan código ukar apkatañamawa .",
+  "fileSaved": "Arsuwix {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Cámara ukan permiso ukax QR código escaneo ukatakiw wakisi .",
+  "vibration": "Vibración ukax 1.1.",
+  "fadeIn": "juk’at juk’at desfade ukan .",
+  "alarmScreen": "Alarma pantalla .",
+  "defaultOption": "Jan walitxa",
+  "mathChallenge": "Math Challenge ukax mä jach’a uñacht’äwiwa.",
+  "shakeToStop": "Ch’axwaña sayt’ayañataki .",
+  "tapChallenge": "TAP Challenge ukax mä jach’a uñacht’äwiwa.",
+  "qrCodeScan": "QR Código Scan .",
+  "alarmSound": "Alarma sonido ukax .",
+  "addSound": "Sonido ukar yapxataña .",
+  "clearCustomSounds": "Qhana costumbre sonidonaka .",
+  "format24h": "24-HORUACIÓN UKA CHIQAÑCHAÑATAKI .",
+  "snoozeLabel": "Snooze: {minutes} min ukat juk’ampinaka.",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "askichaña: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Jakhu {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Phiskhsuña",
+  "monday": "Lunisa",
+  "tuesday": "martisa",
+  "wednesday": "mirkulisa",
+  "thursday": "juwisa",
+  "friday": "Wirnisa",
+  "saturday": "sawaru",
+  "sunday": "Tuminku"
+}

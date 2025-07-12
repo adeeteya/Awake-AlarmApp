@@ -1,0 +1,110 @@
+{
+  "@@locale": "tum",
+  "appTitle": "Wukani- Kujala Kutsogolo",
+  "addAlarm": "Sazgilaniko",
+  "editAlarm": "Sinthani Alamu",
+  "noAlarms": "Yayi ma alams Kulizga wakazga.",
+  "alarms": "Ma alamu",
+  "settings": "vyakuŵikapo",
+  "back": "Kumanyuma",
+  "delete": "Sisita",
+  "deleteAlarm": "Alarm wakufufuzika",
+  "deleteAlarmPrompt": "Kasi mukusimikizga kuti mukukhumba kufunyapo alamu iyi?",
+  "cancel": "Kuleka",
+  "titleLabel": "Mutu",
+  "wrongAnswer": "Zgoro lake",
+  "alarmSnoozed": "Alarm wakakhuŵara kwa maminiti {minutes}",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan Code ya QR",
+  "wrongQr": "Code ya QR. Chonde wonani iyo njakwenelera.",
+  "shakePhone": "Kokani foni!",
+  "shakesCount": "Misisi: ___ / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tiyani pa skrini!",
+  "tapsCount": "Tip: _5_ / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Dawunirani QR Ada",
+  "fileSaved": "Fayilo iyo yikasungika pa 5_",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Chizomerezgo cha Camera chikukhumbikwa kuti QR Code Scan",
+  "vibration": "kugweteka",
+  "fadeIn": "Makuno Ghachoko Pa",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "Kuleka kukwaniriska",
+  "mathChallenge": "Suzgo la masamu",
+  "shakeToStop": "Sakanizgani kuti muleke",
+  "tapChallenge": "Tinyani Suzgo",
+  "qrCodeScan": "Malo gha QR",
+  "alarmSound": "Phoko ya Alarm",
+  "addSound": "Sakanizgani Mazgu",
+  "clearCustomSounds": "Kuwonekera kwakuwonekera",
+  "format24h": "24-Mtumikiro",
+  "snoozeLabel": "Snooze: _5 min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: ___ {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nambala {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Sisita",
+  "monday": "Pa mande",
+  "tuesday": "chibiri",
+  "wednesday": "chitatu",
+  "thursday": "chinayi",
+  "friday": "Chinkhondi",
+  "saturday": "chisulo",
+  "sunday": "Sabata"
+}

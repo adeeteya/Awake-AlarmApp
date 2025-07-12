@@ -1,0 +1,110 @@
+{
+  "@@locale": "mn",
+  "appTitle": "Сэрүүн - Сэрүүлгийн цаг",
+  "addAlarm": "Түгшүүр нэмэх",
+  "editAlarm": "Сэрүүлгийг засах",
+  "noAlarms": "Сэрүүлэг хараахан нэмээгүй байна",
+  "alarms": "Сэргээх ба",
+  "settings": "Тохиргоо",
+  "back": "Буцах",
+  "delete": "Эдгээх",
+  "deleteAlarm": "Сэрүүлгийг устгах",
+  "deleteAlarmPrompt": "Энэ сэрүүлгийг устгахыг хүсч байна уу?",
+  "cancel": "Цуаах",
+  "titleLabel": "Гарчиг",
+  "wrongAnswer": "Буруу хариулт",
+  "alarmSnoozed": "Сэрүүлэг нь {minutes} минутын турш сунгав",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR кодыг скан хийх",
+  "wrongQr": "Буруу QR код. Зөвийг нь сканнердах хэрэгтэй.",
+  "shakePhone": "Утсаа сэгсэрнэ үү!",
+  "shakesCount": "Чичиргээн: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Дэлгэц дээр товшино уу!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR код татаж авах",
+  "fileSaved": "Файлыг {path} хадгалсан",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Камерын зөвшөөрлийг QR код скан хийхэд шаардлагатай",
+  "vibration": "Чичир",
+  "fadeIn": "Аажмаар хатах",
+  "alarmScreen": "Сэрүүлгийн дэлгэц",
+  "defaultOption": "Үл хүрэлцэх",
+  "mathChallenge": "Математикийн сорилт",
+  "shakeToStop": "Зогсоох гэж байна",
+  "tapChallenge": "Сорилтот дээр товшино уу",
+  "qrCodeScan": "QR код скан хийх",
+  "alarmSound": "Сэрүүлгийн дуу",
+  "addSound": "Дуу нэмэх",
+  "clearCustomSounds": "Захиалгат дуу чимээ",
+  "format24h": "24 цагийн формат",
+  "snoozeLabel": "Snooze: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Шийдэх: {a} {symbol} {b} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Тоо {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Эдгээх",
+  "monday": "Даваа гариг",
+  "tuesday": "Мягмар гариг",
+  "wednesday": "Лхагва гараг",
+  "thursday": "Пурэв гариг",
+  "friday": "Баасан гариг",
+  "saturday": "Бямба гараг",
+  "sunday": "Ням гариг"
+}

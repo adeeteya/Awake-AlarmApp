@@ -1,0 +1,110 @@
+{
+  "@@locale": "ht",
+  "appTitle": "Reveye- revèy la",
+  "addAlarm": "Ajoute alam",
+  "editAlarm": "Edite alam",
+  "noAlarms": "Pa gen alam te ajoute ankò",
+  "alarms": "Alam",
+  "settings": "Se",
+  "back": "Dèyè",
+  "delete": "Efase",
+  "deleteAlarm": "Efase alam",
+  "deleteAlarmPrompt": "Èske ou sèten ou vle efase alam sa a?",
+  "cancel": "Anile",
+  "titleLabel": "Tit",
+  "wrongAnswer": "Move repons",
+  "alarmSnoozed": "Alam snoozed pou {minutes} minit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Eskane kòd QR la",
+  "wrongQr": "Mal kòd QR. Tanpri eskane youn ki kòrèk la.",
+  "shakePhone": "Souke telefòn lan!",
+  "shakesCount": "Tranbl: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tape ekran an!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Kòd",
+  "fileSaved": "Dosye sove a {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Pèmisyon kamera obligatwa pou eskanè kòd QR",
+  "vibration": "Vibrasyon",
+  "fadeIn": "Gradyèl fennen nan",
+  "alarmScreen": "Ekran alam",
+  "defaultOption": "Manke paròl",
+  "mathChallenge": "Challenge Matematik",
+  "shakeToStop": "Souke yo sispann",
+  "tapChallenge": "Tape defi",
+  "qrCodeScan": "QR kòd eskanè",
+  "alarmSound": "Son alam",
+  "addSound": "Ajoute son",
+  "clearCustomSounds": "Klè son koutim",
+  "format24h": "24-èdtan fòma",
+  "snoozeLabel": "Repetisyon: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Rezoud: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nimewo {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Efase",
+  "monday": "Lendi",
+  "tuesday": "Madi",
+  "wednesday": "Mèkredi",
+  "thursday": "Jedi",
+  "friday": "Vandredi",
+  "saturday": "Samdi",
+  "sunday": "Dimanch"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "fur",
+  "appTitle": "Sve",
+  "addAlarm": "Azontâ la alarme",
+  "editAlarm": "Modificâ Alarme",
+  "noAlarms": "Nissune alarme Aded",
+  "alarms": "Alarmis",
+  "settings": "Impostazions",
+  "back": "Schene",
+  "delete": "Scancelâ",
+  "deleteAlarm": "Elaborâ la alarme",
+  "deleteAlarmPrompt": "Si è sigûr di volê cancelâ cheste alarme?",
+  "cancel": "cancelâ",
+  "titleLabel": "Titul",
+  "wrongAnswer": "Rispueste sbassât",
+  "alarmSnoozed": "L’alarmatiche e si è stucide par _00- minûts",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scansionâ il Codiç QR",
+  "wrongQr": "Codiç QR sbaliât. Par plasê scansionâ chê corete.",
+  "shakePhone": "Scumissâ il telefonin!",
+  "shakesCount": "Shakes: {count} /_{required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tocje il schermi!",
+  "tapsCount": "Sugjieriments: {count} / {required}_",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Scaricâ il codiç QR",
+  "fileSaved": "File salvât a {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Al è necessari il permès de telecjamare pecan QR",
+  "vibration": "Vibrazions",
+  "fadeIn": "Fadebe graduâl In",
+  "alarmScreen": "Schermens di alarme",
+  "defaultOption": "Inadempiment",
+  "mathChallenge": "Sfide di matema",
+  "shakeToStop": "Scomençâ a fermâ",
+  "tapChallenge": "Aziende di sfide",
+  "qrCodeScan": "Scansion dal codiç QR",
+  "alarmSound": "Amorâ sun",
+  "addSound": "Azontâ sun",
+  "clearCustomSounds": "Cjacarâ suns personalizâts",
+  "format24h": "Format di 24 oris",
+  "snoozeLabel": "Snom: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Risolt: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numar {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Scancelâ",
+  "monday": "Lunis",
+  "tuesday": "martars",
+  "wednesday": "miercus",
+  "thursday": "joibe",
+  "friday": "Vinars",
+  "saturday": "sabide",
+  "sunday": "Domenie"
+}

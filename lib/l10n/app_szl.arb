@@ -1,0 +1,110 @@
+{
+  "@@locale": "szl",
+  "appTitle": "Abuke- Klang Alarm",
+  "addAlarm": "Przidaj Alarma",
+  "editAlarm": "Redyt Alarm",
+  "noAlarms": "Żodyn Alarms Alarmōw Jednak",
+  "alarms": "Alarmy",
+  "settings": "Ustawiynia",
+  "back": "Zadek",
+  "delete": "Wychrōniać",
+  "deleteAlarm": "Trzimyj Alarm",
+  "deleteAlarmPrompt": "Jesz pewny, iże chcesz usuniynć tyn alarm?",
+  "cancel": "Pociepnōńć",
+  "titleLabel": "Tytuł",
+  "wrongAnswer": "Wroz",
+  "alarmSnoozed": "Alarm żuł na {minutes} minut",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skanu Kodeks QR",
+  "wrongQr": "Kod QR QR. Proszymy skanować ôdpedni.",
+  "shakePhone": "Udzielaj sie telefōnu!",
+  "shakesCount": "Szaki: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Sprawdź ekran!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Pobierz kodeks QR",
+  "fileSaved": "File zapisoł sie do {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Przi zgoda z camerōm je wymogano dlo QR Kodeksu QR",
+  "vibration": "Nawiydzanie",
+  "fadeIn": "Termiyń Baualny W",
+  "alarmScreen": "Alarm.",
+  "defaultOption": "Sztandardowy",
+  "mathChallenge": "Math Ch Challenge",
+  "shakeToStop": "Dyszać do Stopniyńcio",
+  "tapChallenge": "Kliknij na Challenge nazod Challenge nazod Challenge namiyszany napōmniyń na Challenge namiyszany napōmniyń.",
+  "qrCodeScan": "Skan kodu QR",
+  "alarmSound": "Alarm Sound",
+  "addSound": "Przidać Sound",
+  "clearCustomSounds": "Klarowne Klinie",
+  "format24h": "24-Hour Format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Rozwiōnzanie: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numer {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Wychrōniać",
+  "monday": "Pyńdziałek",
+  "tuesday": "wtorek",
+  "wednesday": "strzoda",
+  "thursday": "sztwortek",
+  "friday": "Piōntek",
+  "saturday": "sobota",
+  "sunday": "Niydziela"
+}

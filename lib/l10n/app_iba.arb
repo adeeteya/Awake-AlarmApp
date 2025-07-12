@@ -1,0 +1,110 @@
+{
+  "@@locale": "iba",
+  "appTitle": "dani- Jam Penggera",
+  "addAlarm": "Masukka Penggera",
+  "editAlarm": "Edit Penggera",
+  "noAlarms": "Nadai Penggera Ditambah Enggau .",
+  "alarms": "Penggera",
+  "settings": "Settings",
+  "back": "Belakang",
+  "delete": "Padam",
+  "deleteAlarm": "Padamka Penggera",
+  "deleteAlarmPrompt": "Kati nuan tentu deka madamka penggera tu?",
+  "cancel": "enda jadi",
+  "titleLabel": "Tajuk",
+  "wrongAnswer": "Salah saut",
+  "alarmSnoozed": "Penggera ngeleseka {minutes} minit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan Kod QR",
+  "wrongQr": "Salah Kod. Minta nuan scan ke betul.",
+  "shakePhone": "Bayangka talipaun!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ketik skrin!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download Kod QR",
+  "fileSaved": "Fail disimpan ngagai {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Pemendar kamera diguna ungkup Scan Kod QR .",
+  "vibration": "Getar",
+  "fadeIn": "Sampal Fade Dalam",
+  "alarmScreen": "Skrin Penggera",
+  "defaultOption": "Lalai",
+  "mathChallenge": "Chabar Matematik",
+  "shakeToStop": "Gaga meh ke Ngetu .",
+  "tapChallenge": "Cabaran Tekan",
+  "qrCodeScan": "Kod QR Scan",
+  "alarmSound": "Munyi ti Ngeri.",
+  "addSound": "Tambahka Bunyi",
+  "clearCustomSounds": "Bunyi Memunyi .",
+  "format24h": "24-Jam Format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Mutarka: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Lumur {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Padam",
+  "monday": "Hari satu",
+  "tuesday": "Selasa",
+  "wednesday": "Rabu",
+  "thursday": "Khamis",
+  "friday": "Jumaat",
+  "saturday": "Sabtu",
+  "sunday": "Minggu"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ban",
+  "appTitle": "Awake- Jam Alarm",
+  "addAlarm": "Wewehin Alarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Tan wenten Alarm Katambahin Nanging",
+  "alarms": "Alarm",
+  "settings": "Setelan",
+  "back": "Kembali",
+  "delete": "Apus",
+  "deleteAlarm": "Icalang Alarm",
+  "deleteAlarmPrompt": "Napiké Sameton pastika jagi ngicalang alarm puniki?",
+  "cancel": "Batalang",
+  "titleLabel": "Judul",
+  "wrongAnswer": "Iwang pasaut",
+  "alarmSnoozed": "Alarm sane kagetep {minutes} menit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan Kode QR",
+  "wrongQr": "Kode QR sane iwang. Ngiring scan sane patut.",
+  "shakePhone": "Bayangin telpon punika!",
+  "shakesCount": "Goyang: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ketuk layar!",
+  "tapsCount": "Ketua: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Unduh Kode QR",
+  "fileSaved": "Berkas sané kasimpen mangda {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Izin kamera kabuatang antuk Scan Kode QR",
+  "vibration": "Basa Getaran",
+  "fadeIn": "Fade Luduran Ring",
+  "alarmScreen": "Layar Alarm",
+  "defaultOption": "Depault",
+  "mathChallenge": "Tantangan Matematika",
+  "shakeToStop": "Maguntun mangda Suud",
+  "tapChallenge": "Tap Tantangan",
+  "qrCodeScan": "Scan Kode QR",
+  "alarmSound": "Suara Alarm",
+  "addSound": "Tambahin Suara",
+  "clearCustomSounds": "Suara Khusus",
+  "format24h": "Format 24 Jam",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomor {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Apus",
+  "monday": "Soma",
+  "tuesday": "Anggara",
+  "wednesday": "Rebo",
+  "thursday": "Wrespati",
+  "friday": "Sukra",
+  "saturday": "Saniscara",
+  "sunday": "Redité"
+}

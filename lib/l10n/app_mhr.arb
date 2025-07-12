@@ -1,0 +1,110 @@
+{
+  "@@locale": "mhr",
+  "appTitle": "Ойган- Тревога шагат .",
+  "addAlarm": "Тревога ешарен .",
+  "editAlarm": "Тревога тӧрлаташ .",
+  "noAlarms": "Уке Тревога ешарен эше .",
+  "alarms": "Тревог",
+  "settings": "Настройко",
+  "back": "Ончыч",
+  "delete": "Кораҥдаш",
+  "deleteAlarm": "Тревогам кораҥдаш",
+  "deleteAlarmPrompt": "Те ӱшанеда, те тиде сигналым кораҥдаш шонеда?",
+  "cancel": "Шӧраш",
+  "titleLabel": "Лӱм",
+  "wrongAnswer": "Йоҥылыш вашмут",
+  "alarmSnoozed": "Тревога снузировать {minutes} минут .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Сканировать QR-код .",
+  "wrongQr": "Йоҥылыш QR-код. Пожалуйста, чын сканироватлаш.",
+  "shakePhone": "Телефоным шындыза!",
+  "shakesCount": "Шейк-влак: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Экраныште темдал!",
+  "tapsCount": "Краным: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Скачать QR-код .",
+  "fileSaved": "Файл {path} марте арален.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Камера разрешенийым кӱлеш QR Code Scan .",
+  "vibration": "Вибраций",
+  "fadeIn": "Эркын-эркын Фейд .",
+  "alarmScreen": "Тревога экраныште",
+  "defaultOption": "Экшык",
+  "mathChallenge": "Математике ӱчашымаш",
+  "shakeToStop": "Шейк да тошкалтыш .",
+  "tapChallenge": "Краным задачым шынден.",
+  "qrCodeScan": "QR-код сканирование .",
+  "alarmSound": "Тревога-влакын йӱкышт",
+  "addSound": "Йӱкым ешарен .",
+  "clearCustomSounds": "Йӱштӧ йӱк-йӱаным эрыктен",
+  "format24h": "24-шагат формат",
+  "snoozeLabel": "Сноуз: {minutes} мин .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Решатлымаш: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Номер {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Кораҥдаш",
+  "monday": "Шочмо",
+  "tuesday": "Кушкыжмо",
+  "wednesday": "Вӱргече",
+  "thursday": "Бейшемби",
+  "friday": "Кугарня",
+  "saturday": "Шуматкече",
+  "sunday": "Рушарня"
+}

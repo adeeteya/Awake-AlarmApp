@@ -1,0 +1,110 @@
+{
+  "@@locale": "hu",
+  "appTitle": "Ébren- az ébresztőóra",
+  "addAlarm": "Add hozzá riasztást",
+  "editAlarm": "Riasztás szerkesztése",
+  "noAlarms": "Még nem adtak hozzá riasztást",
+  "alarms": "Riasztások",
+  "settings": "Beállítások",
+  "back": "Vissza",
+  "delete": "Töröl",
+  "deleteAlarm": "Riasztás törlése",
+  "deleteAlarmPrompt": "Biztos benne, hogy törölni akarja ezt a riasztást?",
+  "cancel": "Töröl",
+  "titleLabel": "Cím",
+  "wrongAnswer": "Rossz válasz",
+  "alarmSnoozed": "A riasztás {minutes} percig",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Szkennelje be a QR -kódot",
+  "wrongQr": "Rossz QR kód. Kérjük, írja be a megfelelőt.",
+  "shakePhone": "Rázza meg a telefont!",
+  "shakesCount": "Rázások: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Érintse meg a képernyőt!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Töltse le a QR kódot",
+  "fileSaved": "A fájl {path} -re mentve",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera engedélyre van szükség a QR -kód vizsgálatához",
+  "vibration": "Rezgés",
+  "fadeIn": "Fokozatos elhalványulás",
+  "alarmScreen": "Riasztó képernyő",
+  "defaultOption": "Mulasztás",
+  "mathChallenge": "Matematikai kihívás",
+  "shakeToStop": "Rázza meg, hogy megálljon",
+  "tapChallenge": "Koppintolási lehetőség",
+  "qrCodeScan": "QR -kód vizsgálata",
+  "alarmSound": "Riasztási hang",
+  "addSound": "Hang hozzáadása",
+  "clearCustomSounds": "Tiszta egyedi hangok",
+  "format24h": "24 órás formátum",
+  "snoozeLabel": "Snooze: {minutes} perc",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Megoldás: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Szám {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Töröl",
+  "monday": "hétfő",
+  "tuesday": "kedd",
+  "wednesday": "szerda",
+  "thursday": "csütörtök",
+  "friday": "péntek",
+  "saturday": "szombat",
+  "sunday": "vasárnap"
+}

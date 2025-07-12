@@ -1,0 +1,110 @@
+{
+  "@@locale": "hy",
+  "appTitle": "Արթուն - Զարթուցիչ",
+  "addAlarm": "Զարթուցիչ ավելացնել",
+  "editAlarm": "Խմբագրել ազդանշանը",
+  "noAlarms": "Դեռ ահազանգ չկա",
+  "alarms": "Տագնապներ",
+  "settings": "Կարգավորումներ",
+  "back": "Ետեվ",
+  "delete": "Ջնջել",
+  "deleteAlarm": "Զարթուցիչը ջնջել",
+  "deleteAlarmPrompt": "Համոզված եք, որ ցանկանում եք ջնջել այս տագնապը:",
+  "cancel": "Չեղարկել",
+  "titleLabel": "Վերնագիր",
+  "wrongAnswer": "Սխալ պատասխան",
+  "alarmSnoozed": "Զարթուցիչը ցնցվեց {minutes} րոպեների համար",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Սկան QR ծածկագիրը",
+  "wrongQr": "Սխալ QR կոդ: Խնդրում ենք շտկել ճիշտը:",
+  "shakePhone": "Թափահարեք հեռախոսը:",
+  "shakesCount": "Shakes. {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Հպեք էկրանին:",
+  "tapsCount": "Ծորակներ. {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Ներբեռնեք QR կոդ",
+  "fileSaved": "Ֆայլը պահպանվել է {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Cam անկապատի թույլտվությունը անհրաժեշտ է QR կոդերի սկանավորման համար",
+  "vibration": "Թրթռում",
+  "fadeIn": "Աստիճանական մարում",
+  "alarmScreen": "Ազդանշանային էկրան",
+  "defaultOption": "Թերություն",
+  "mathChallenge": "Մաթեմատիկայի մարտահրավեր",
+  "shakeToStop": "Թափահարեք կանգ առնել",
+  "tapChallenge": "Հպեք մարտահրավերը",
+  "qrCodeScan": "QR կոդերի սկան",
+  "alarmSound": "Ազդանշանային ձայն",
+  "addSound": "Ձայն ավելացնել",
+  "clearCustomSounds": "Մաքրել մաքսային ձայները",
+  "format24h": "24-ժամյա ձեւաչափ",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Լուծել. {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Համարը {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ջնջել",
+  "monday": "Երկուշաբթի",
+  "tuesday": "Երեքշաբթի",
+  "wednesday": "Չորեքշաբթի",
+  "thursday": "Հինգշաբթի",
+  "friday": "Ուրբաթ",
+  "saturday": "Շաբաթ",
+  "sunday": "Կիրակի"
+}

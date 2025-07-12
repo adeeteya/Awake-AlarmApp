@@ -1,0 +1,110 @@
+{
+  "@@locale": "bg",
+  "appTitle": "Буден- будилникът",
+  "addAlarm": "Добавете аларма",
+  "editAlarm": "Редактиране на аларма",
+  "noAlarms": "Все още няма добавени аларми",
+  "alarms": "Аларми",
+  "settings": "Настройки",
+  "back": "Назад",
+  "delete": "Изтриване",
+  "deleteAlarm": "Изтриване на аларма",
+  "deleteAlarmPrompt": "Сигурни ли сте, че искате да изтриете тази аларма?",
+  "cancel": "Отказ",
+  "titleLabel": "Заглавие",
+  "wrongAnswer": "Грешен отговор",
+  "alarmSnoozed": "Аларма, отложена за {minutes} минути",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Сканирайте QR кода",
+  "wrongQr": "Грешен QR код. Моля, сканирайте правилния.",
+  "shakePhone": "Разклатете телефона!",
+  "shakesCount": "Шеки: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Докоснете екрана!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Изтеглете QR код",
+  "fileSaved": "Файл, запазен на {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Camera permission is required for QR Code Scan",
+  "vibration": "Вибрация",
+  "fadeIn": "Постепенно избледняване в",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "По подразбиране",
+  "mathChallenge": "Математическо предизвикателство",
+  "shakeToStop": "Shake to Stop",
+  "tapChallenge": "Докоснете предизвикателство",
+  "qrCodeScan": "QR код сканиране",
+  "alarmSound": "Звук на алармата",
+  "addSound": "Добавете звук",
+  "clearCustomSounds": "Ясни персонализирани звуци",
+  "format24h": "24-часов формат",
+  "snoozeLabel": "Snooze: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Решете: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Номер {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Изтриване",
+  "monday": "Понеделник",
+  "tuesday": "Вторник",
+  "wednesday": "Сряда",
+  "thursday": "Четвъртък",
+  "friday": "Петък",
+  "saturday": "Събота",
+  "sunday": "Неделя"
+}

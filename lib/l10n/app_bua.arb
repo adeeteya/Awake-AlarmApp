@@ -1,0 +1,110 @@
+{
+  "@@locale": "bua",
+  "appTitle": "Һэргээгээ- Сэрэмжын саг",
+  "addAlarm": "Сэрэмжэ нэмэхэ .",
+  "editAlarm": "Заһаха Хэрбэеэ һэргээхэ;",
+  "noAlarms": "Үгы дохёонууд нэмэгдэбэ .",
+  "alarms": "Зэрлиг",
+  "settings": "Настройко",
+  "back": "Хойшоо",
+  "delete": "Зайлуулха",
+  "deleteAlarm": "Хямдралта усадхаха",
+  "deleteAlarmPrompt": "Энэ дохио усадхаха һанаатай гүт гэжэ бата найданабта?",
+  "cancel": "Болюулга",
+  "titleLabel": "Хэргэм",
+  "wrongAnswer": "Буруу харюу",
+  "alarmSnoozed": "{minutes} минутын туршада дохиогүй дохио.",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR код сканераар сканердаха",
+  "wrongQr": "Буруу QR код. Зүб юумэ сканераар шалгагты.",
+  "shakePhone": "Телефоноо һэжэрхэ!",
+  "shakesCount": "Шейкс: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Дэлгэс дээрэ дараха хэрэгтэй!",
+  "tapsCount": "Тапууд: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR код татажа абаха",
+  "fileSaved": "Файл {path} хүрэтэр хадагалагдаһан байна.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR Code Scan-да камерын зүбшөөл хэрэгтэй.",
+  "vibration": "Вибраци",
+  "fadeIn": "Аажамаар һүнэһэн .",
+  "alarmScreen": "Сэрэмжэтэй дэлгэс",
+  "defaultOption": "Үгы байдал",
+  "mathChallenge": "Тоо бодолгын сорилго",
+  "shakeToStop": "Зогсоохо гэжэ һэжэрхэ .",
+  "tapChallenge": "Челленджые дараха",
+  "qrCodeScan": "QR Код Скан",
+  "alarmSound": "Дурм абяа",
+  "addSound": "Абяан нэмэхэ",
+  "clearCustomSounds": "Тодорхой захиалгын абяанууд",
+  "format24h": "24-часай формат",
+  "snoozeLabel": "Снуоз: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Далайлха: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "{label} дугаар.",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Зайлуулха",
+  "monday": "Нэгэдэхи үдэр",
+  "tuesday": "Хоёрдохи үдэр",
+  "wednesday": "Гурбадахи үдэр",
+  "thursday": "Дүрбэдэхи үдэр",
+  "friday": "Табадахи үдэр",
+  "saturday": "Зургаадахи үдэр",
+  "sunday": "Долоодохи үдэр"
+}

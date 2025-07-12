@@ -1,0 +1,110 @@
+{
+  "@@locale": "ug",
+  "appTitle": "ئويغىنىش - ئاگاھلاندۇرۇش سائىتى",
+  "addAlarm": "ئاگاھلاندۇرۇش سىگنالى قوشۇڭ",
+  "editAlarm": "ئاگاھلاندۇرۇش سىگنالىنى تەھرىرلەڭ",
+  "noAlarms": "ئاگاھلاندۇرۇش تېخى قوشمىدى",
+  "alarms": "ئاگاھلاندۇرۇش",
+  "settings": "تەڭشەك",
+  "back": "قايتىش",
+  "delete": "ئۆچۈرۈش",
+  "deleteAlarm": "ئاگاھلاندۇرۇش سىگنالىنى ئۆچۈرۈڭ",
+  "deleteAlarmPrompt": "بۇ ئاگاھلاندۇرۇش سىگنالىنى ئۆچۈرمەكچىمۇ?",
+  "cancel": "بىكار قىلىش",
+  "titleLabel": "ماۋزۇ",
+  "wrongAnswer": "خاتا جاۋاب",
+  "alarmSnoozed": "{minutes} مىنۇتتا ئاگاھلاندۇرۇش سىگنال",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR كودىنى سايىلەڭ",
+  "wrongQr": "خاتا QR كودى. توغرانى سىكانىرلاڭ.",
+  "shakePhone": "تېلېفوننى سىلكىڭ!",
+  "shakesCount": "سىلكىش: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ئېكراننى چېكىڭ!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR كودىنى چۈشۈرۈڭ",
+  "fileSaved": "ھۆججەت {path} غا ساقلانغان",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR كود سايىلەش ئۈچۈن كامېرا ئىجازەتنامىسى تەلەپ قىلىنىدۇ",
+  "vibration": "تەۋرىنىش",
+  "fadeIn": "تەدرىجىي سۇس",
+  "alarmScreen": "ئاگاھلاندۇرۇش ئېكرانى",
+  "defaultOption": "سۈكۈتتىكى",
+  "mathChallenge": "Math Commance",
+  "shakeToStop": "Shalle to stop",
+  "tapChallenge": "چېكىش",
+  "qrCodeScan": "QR كود سايىلەش",
+  "alarmSound": "ئاگاھلاندۇرۇش ئاۋازى",
+  "addSound": "ئاۋاز قوشۇڭ",
+  "clearCustomSounds": "تازىلاش ئاۋازلىرى",
+  "format24h": "24 سائەت فورماتى",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ھەل قىلىش: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "سان {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ئۆچۈرۈش",
+  "monday": "دۈشەنبە",
+  "tuesday": "سەيشەنبە",
+  "wednesday": "چارشەنبە",
+  "thursday": "پەيشەنبە",
+  "friday": "جۈمە",
+  "saturday": "شەنبە",
+  "sunday": "يەكشەنبە"
+}

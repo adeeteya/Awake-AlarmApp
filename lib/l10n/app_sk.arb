@@ -1,0 +1,110 @@
+{
+  "@@locale": "sk",
+  "appTitle": "Prebudiť- budík",
+  "addAlarm": "Pridať alarm",
+  "editAlarm": "Upraviť alarm",
+  "noAlarms": "Zatiaľ sa nepridali žiadne alarmy",
+  "alarms": "Alarmy",
+  "settings": "Nastavenia",
+  "back": "Chrbát",
+  "delete": "Vymazať",
+  "deleteAlarm": "Vymazať alarm",
+  "deleteAlarmPrompt": "Ste si istí, že chcete odstrániť tento alarm?",
+  "cancel": "Zrušiť",
+  "titleLabel": "Názov",
+  "wrongAnswer": "Nesprávna odpoveď",
+  "alarmSnoozed": "Alarm odložil na {minutes} minút",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Naskenujte kód QR",
+  "wrongQr": "Nesprávny QR kód. Skenujte ten správny.",
+  "shakePhone": "Potraste telefón!",
+  "shakesCount": "Otras: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Klepnite na obrazovku!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Stiahnite si QR kód",
+  "fileSaved": "Súbor uložený na {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Na skenovanie QR kód je potrebné povolenie fotoaparátu",
+  "vibration": "Vibrovanie",
+  "fadeIn": "Postupné vyblednutie",
+  "alarmScreen": "Obrazovka alarm",
+  "defaultOption": "Predvolený",
+  "mathChallenge": "Matematika",
+  "shakeToStop": "Potrasiť sa",
+  "tapChallenge": "Výziev",
+  "qrCodeScan": "Skenovanie kódu QR",
+  "alarmSound": "Alarmový zvuk",
+  "addSound": "Pridať zvuk",
+  "clearCustomSounds": "Vymažte vlastné zvuky",
+  "format24h": "24-hodinový formát",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Vyriešiť: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Číslo {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Vymazať",
+  "monday": "Pondelok",
+  "tuesday": "Utorok",
+  "wednesday": "Streda",
+  "thursday": "Štvrtok",
+  "friday": "Piatok",
+  "saturday": "Sobota",
+  "sunday": "Nedeľa"
+}

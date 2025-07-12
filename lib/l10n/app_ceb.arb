@@ -1,0 +1,110 @@
+{
+  "@@locale": "ceb",
+  "appTitle": "Pagmata - ang alarm clock",
+  "addAlarm": "Idugang ang alarma",
+  "editAlarm": "I-edit ang alarma",
+  "noAlarms": "Wala pa gidugang ang mga Alarm",
+  "alarms": "Alarma",
+  "settings": "Mga Setting",
+  "back": "Sa likod",
+  "delete": "Mobiya",
+  "deleteAlarm": "Pagwagtang sa Alerto",
+  "deleteAlarmPrompt": "Sigurado ka nga gusto nimo nga papason kini nga alarma?",
+  "cancel": "Kanselahon",
+  "titleLabel": "Titulo",
+  "wrongAnswer": "Sayup nga Tubag",
+  "alarmSnoozed": "Ang alarm Snoozed alang sa {minutes} minuto",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "I-scan ang QR Code",
+  "wrongQr": "Sayup nga QR Code. Palihug i-scan ang tama.",
+  "shakePhone": "Pag-uyog sa telepono!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tapik ang screen!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Pag-download sa QR Code",
+  "fileSaved": "File nga natipig sa {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Gikinahanglan ang pagtugot sa camera alang sa QR Code Scan",
+  "vibration": "Pag-ukol",
+  "fadeIn": "Anam-anam nga nawala sa",
+  "alarmScreen": "Screen sa alarma",
+  "defaultOption": "Mopakyas sa sabot",
+  "mathChallenge": "Matematika nga hagit",
+  "shakeToStop": "Pag-uyog aron mohunong",
+  "tapChallenge": "Tapikon nga Hagit",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Ang tunog sa alarma",
+  "addSound": "Idugang ang tunog",
+  "clearCustomSounds": "Tin-aw nga kostumbre nga mga tunog",
+  "format24h": "24-oras nga format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Pagsulbad: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Mobiya",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Miyerkules",
+  "thursday": "Huwebes",
+  "friday": "Biyernes",
+  "saturday": "Sabado",
+  "sunday": "Domingo"
+}

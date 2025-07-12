@@ -1,0 +1,110 @@
+{
+  "@@locale": "mwr",
+  "appTitle": "अवाके- अलार्म क्लर्क",
+  "addAlarm": "अलार्म",
+  "editAlarm": "एडिट",
+  "noAlarms": "ऐलरस ने भी नी",
+  "alarms": "हावम",
+  "settings": "सेटिंग",
+  "back": "पाछो",
+  "delete": "मिटाणो",
+  "deleteAlarm": "बौरा",
+  "deleteAlarmPrompt": "कांई आप पक्को हो कै आप इण अलार्म नैं पतला करणो चावो हो?",
+  "cancel": "रद्द",
+  "titleLabel": "शीर्षक",
+  "wrongAnswer": "खंडन",
+  "alarmSnoozed": "अलाम धूम्रपान में_",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "स्कंक कोड",
+  "wrongQr": "टनग क्यूआर कोड। कृपया सही स्कैन करो।",
+  "shakePhone": "फोन नै शेयर करो!",
+  "shakesCount": "शेक्स: 0_ / 1_/0/0 / 1",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "स्क्रीन माथै टैप करो!",
+  "tapsCount": "ताप: 0_ / 1_/0/0 / 1",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "डाउनलोड कराणो",
+  "fileSaved": "छेड़छाड़ सूं_",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "क्यूआर कोड स्कंक रै वास्तै कैमर री अनुमति री जरूरत है",
+  "vibration": "रिया",
+  "fadeIn": "ग्रेजुएट फैडिट एम",
+  "alarmScreen": "अलाम",
+  "defaultOption": "चूक",
+  "mathChallenge": "माथों",
+  "shakeToStop": "सिट्टो ले जाओ",
+  "tapChallenge": "चाबी",
+  "qrCodeScan": "क्यूआर कोड स्किन",
+  "alarmSound": "बिरादम",
+  "addSound": "साउंड",
+  "clearCustomSounds": "क्लेयर कस्टम साउंड्स",
+  "format24h": "24-हौर फोरेट",
+  "snoozeLabel": "स्वॉनोज:_ 1000 री ।",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "गठबंधन : 0{a}0{a}00_0000 रुप री बात है।",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "\"नाम्बर",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "मिटाणो",
+  "monday": "सोमार",
+  "tuesday": "मंगलवार",
+  "wednesday": "बुधवार",
+  "thursday": "बिस्पतिबार",
+  "friday": "शुक्रवार",
+  "saturday": "सनिवार",
+  "sunday": "दीतवार"
+}

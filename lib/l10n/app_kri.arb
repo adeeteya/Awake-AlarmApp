@@ -1,0 +1,110 @@
+{
+  "@@locale": "kri",
+  "appTitle": "Awake- Di alarm klok .",
+  "addAlarm": "Add alarm fɔ mek yu ala .",
+  "editAlarm": "Ɛdit Alam .",
+  "noAlarms": "No alarm dɛn we dɛn ad yet .",
+  "alarms": "Alam dɛn .",
+  "settings": "Sɛtin dɛn .",
+  "back": "Bak",
+  "delete": "Dilit",
+  "deleteAlarm": "Dilit Alam .",
+  "deleteAlarmPrompt": "Yu shɔ se yu want fɔ dilit dis alam?",
+  "cancel": "nɔ",
+  "titleLabel": "Taytul",
+  "wrongAnswer": "RAWND WE NƆ DE WRONG",
+  "alarmSnoozed": "Alarm bin snuz fɔ {minutes} minit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skan di QR kod .",
+  "wrongQr": "Wrong QR kod we dɛn mek. Duya, skan di kɔrɛkt wan.",
+  "shakePhone": "Shake di fon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap di skrin!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Daunlod QR Kod .",
+  "fileSaved": "Fayl we dɛn dɔn kip na {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera permishɔn nid fɔ de fɔ QR kod skan .",
+  "vibration": "Vaybrɛshɔn .",
+  "fadeIn": "smɔl smɔl tin dɛn we de apin na di wɔl.",
+  "alarmScreen": "Alarm skrin .",
+  "defaultOption": "Balans",
+  "mathChallenge": "Math Chalenj .",
+  "shakeToStop": "Shake fɔ stɔp .",
+  "tapChallenge": "Tap Chalenj .",
+  "qrCodeScan": "QR kod skan .",
+  "alarmSound": "Alarm Saund .",
+  "addSound": "Add Sound .",
+  "clearCustomSounds": "Klia kɔstɔm sawnd dɛn .",
+  "format24h": "24 awa fɔmat .",
+  "snoozeLabel": "Snuz: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Sɔlv: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nɔmba {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Dilit",
+  "monday": "Mɔnde",
+  "tuesday": "Tyusde",
+  "wednesday": "Wɛnsde",
+  "thursday": "Tɔsde",
+  "friday": "Frayde",
+  "saturday": "Satide",
+  "sunday": "Sɔnde"
+}

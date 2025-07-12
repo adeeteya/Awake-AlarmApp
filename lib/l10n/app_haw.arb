@@ -1,0 +1,110 @@
+{
+  "@@locale": "haw",
+  "appTitle": "E ala",
+  "addAlarm": "Hoʻohui i ka inoa",
+  "editAlarm": "Hoʻoponopono i ka ho'ālaʻana",
+  "noAlarms": "ʻAʻohe hoʻohui hou",
+  "alarms": "KA'ĀWAIʻO KESMS",
+  "settings": "Nā hoʻonohonoho",
+  "back": "Kua hope",
+  "delete": "Hoʻopue",
+  "deleteAlarm": "Hoʻopau i nā alarm",
+  "deleteAlarmPrompt": "ʻIkeʻoe makemakeʻoe e hoʻopau i kēia Alarm?",
+  "cancel": "Ke kāpae nei",
+  "titleLabel": "Kumuwai",
+  "wrongAnswer": "Pane hewa",
+  "alarmSnoozed": "Alarm snoozed no {minutes} mau minuke",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "E nānā i ka QR Code",
+  "wrongQr": "Hewa QR code. Eʻoluʻolu e nānā i ka pololei.",
+  "shakePhone": "E lulu i ke kelepona!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "E kaomi i ka pale!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Hoʻoiho iā QR Code",
+  "fileSaved": "Ua mālamaʻia nā faila i {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Pono kaʻaeʻana o ke kāmera no QR Code Scan",
+  "vibration": "Viguration",
+  "fadeIn": "Lohi i loko",
+  "alarmScreen": "Kanihaner screen",
+  "defaultOption": "Kūpono",
+  "mathChallenge": "ʻO Math Challenge",
+  "shakeToStop": "Lulu iho",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR code scan",
+  "alarmSound": "Alam i Ke Lila",
+  "addSound": "Hoʻohui i ke kani",
+  "clearCustomSounds": "Nā leo kūlohelohe maʻamau",
+  "format24h": "24-hola",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Helu {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Hoʻopue",
+  "monday": "Pōʻakahi",
+  "tuesday": "Pōʻalua",
+  "wednesday": "Pōʻakolu",
+  "thursday": "Pōʻahā",
+  "friday": "Pōʻalima",
+  "saturday": "Pōʻaono",
+  "sunday": "Lāpule"
+}

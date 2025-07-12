@@ -1,0 +1,110 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Бодрствование- будильник",
+  "addAlarm": "Добавить тревогу",
+  "editAlarm": "Редактировать тревогу",
+  "noAlarms": "Еще не добавлены тревоги",
+  "alarms": "Тревога",
+  "settings": "Настройки",
+  "back": "Назад",
+  "delete": "Удалить",
+  "deleteAlarm": "Удалить тревогу",
+  "deleteAlarmPrompt": "Вы уверены, что хотите удалить эту тревогу?",
+  "cancel": "Отмена",
+  "titleLabel": "Заголовок",
+  "wrongAnswer": "Неправильный ответ",
+  "alarmSnoozed": "Будильник заснул на {minutes} минуты",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Сканировать QR -код",
+  "wrongQr": "Неправильный QR -код. Пожалуйста, сканируйте правильный.",
+  "shakePhone": "Встряхните телефон!",
+  "shakesCount": "Встряхивание: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Нажмите на экран!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Скачать QR -код",
+  "fileSaved": "Файл сохранен в {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Для сканирования QR -кода требуется разрешение на камеру",
+  "vibration": "Вибрация",
+  "fadeIn": "Постепенное исчезновение",
+  "alarmScreen": "Экран тревоги",
+  "defaultOption": "По умолчанию",
+  "mathChallenge": "Математическая задача",
+  "shakeToStop": "Встряхнуть, чтобы остановиться",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR -код сканирование",
+  "alarmSound": "Сигнал тревоги",
+  "addSound": "Добавить звук",
+  "clearCustomSounds": "Четкие индивидуальные звуки",
+  "format24h": "24-часовой формат",
+  "snoozeLabel": "Сноми: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Решите: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Номер {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Удалить",
+  "monday": "Понедельник",
+  "tuesday": "Вторник",
+  "wednesday": "Среда",
+  "thursday": "Четверг",
+  "friday": "Пятница",
+  "saturday": "Суббота",
+  "sunday": "Воскресенье"
+}

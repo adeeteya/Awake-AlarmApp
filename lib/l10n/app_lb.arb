@@ -1,0 +1,110 @@
+{
+  "@@locale": "lb",
+  "appTitle": "Waakreg- den Alarm Auer",
+  "addAlarm": "Füügt Alarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Keng Alarmer nach bäigefüügt",
+  "alarms": "Alo-alarmen",
+  "settings": "Astellunge",
+  "back": "Zréck",
+  "delete": "Läschen",
+  "deleteAlarm": "Läschen Alarm",
+  "deleteAlarmPrompt": "Sidd Dir sécher, dass Dir dësen Alarm läscht?",
+  "cancel": "Ofbriechen",
+  "titleLabel": "Tittel",
+  "wrongAnswer": "Fielst Äntwert",
+  "alarmSnoozed": "Alarm snooded fir {minutes} Minutten",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scannt den QR Code",
+  "wrongQr": "Falsch QR Code. W.e.g. scannt déi richteg.",
+  "shakePhone": "Rëselt den Telefon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tippen op den Écran!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Eroflueden QR Code erof",
+  "fileSaved": "Datei gespuert op {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera Erlaabnis ass noutwendeg fir QR Code Scan",
+  "vibration": "Vibratioun",
+  "fadeIn": "Graduell Fuedem an",
+  "alarmScreen": "Alarm Écran",
+  "defaultOption": "Asofbild",
+  "mathChallenge": "Mathematik erausfuerderen",
+  "shakeToStop": "Shake fir ze stoppen",
+  "tapChallenge": "Tippen op Challenge",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm Sound",
+  "addSound": "Füügt Toun",
+  "clearCustomSounds": "Kloer personaliséiert Kläng",
+  "format24h": "24-Stonne Format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Léisen: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nummer {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Läschen",
+  "monday": "Méindeg",
+  "tuesday": "Dënschdeg",
+  "wednesday": "Mëttwoch",
+  "thursday": "Donneschdeg",
+  "friday": "Freideg",
+  "saturday": "Samschdeg",
+  "sunday": "Sonndeg"
+}

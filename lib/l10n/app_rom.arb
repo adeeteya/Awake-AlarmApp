@@ -1,0 +1,110 @@
+{
+  "@@locale": "rom",
+  "appTitle": "Uśti- O Alarmoqo Cloko",
+  "addAlarm": "Thov o Alèmo",
+  "editAlarm": "Editisarel o Alarmo",
+  "noAlarms": "Ni jekh Alarmură Adăugati Andă",
+  "alarms": "Kurmi",
+  "settings": "Sebèdia",
+  "back": "Palal",
+  "delete": "Ćhinel",
+  "deleteAlarm": "Alarm",
+  "deleteAlarmPrompt": "Si tu sigurno ke kames te des avri kado alarmo?",
+  "cancel": "Anulisarel",
+  "titleLabel": "Tìtulo",
+  "wrongAnswer": "Na-Dromesqo atveto",
+  "alarmSnoozed": "Alarmo snoozisardas {minutes} minutura .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan o QR-kode .",
+  "wrongQr": "Nasul QR Kodo. Te rughiv tut te skaniris o chachipe.",
+  "shakePhone": "Te ćhiven o telefono!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tapinen o ekran!",
+  "tapsCount": "Tapa: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Descarca QR Kodo",
+  "fileSaved": "Dos",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera permisia si musaj pala QR-kod Scan .",
+  "vibration": "Vibracia",
+  "fadeIn": "Gradualno Fade Ande",
+  "alarmScreen": "Alarmno ekran",
+  "defaultOption": "Pokinel butpalal",
+  "mathChallenge": "Matematika",
+  "shakeToStop": "Te ćhiven",
+  "tapChallenge": "Tapnàźo",
+  "qrCodeScan": "QR Kodo Scan",
+  "alarmSound": "Alarm Śundel pes",
+  "addSound": "Adjes si te avel tut Sunds",
+  "clearCustomSounds": "Shunel o Personali",
+  "format24h": "24-Sas",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ćhinel",
+  "monday": "Lujdĭves",
+  "tuesday": "Marci",
+  "wednesday": "Tetradĭ",
+  "thursday": "Màrci",
+  "friday": "Paraśtuj",
+  "saturday": "Savato",
+  "sunday": "Kurko"
+}

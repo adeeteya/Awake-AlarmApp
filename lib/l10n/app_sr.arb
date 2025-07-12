@@ -1,0 +1,110 @@
+{
+  "@@locale": "sr",
+  "appTitle": "Будан - будилник",
+  "addAlarm": "Додајте аларм",
+  "editAlarm": "Уређивање аларма",
+  "noAlarms": "Још није додат аларми",
+  "alarms": "Аларми",
+  "settings": "Подешавања",
+  "back": "Назад",
+  "delete": "Избрисати",
+  "deleteAlarm": "Избрисати аларм",
+  "deleteAlarmPrompt": "Јесте ли сигурни да желите да избришете овај аларм?",
+  "cancel": "Отказати",
+  "titleLabel": "Назив",
+  "wrongAnswer": "Погрешан одговор",
+  "alarmSnoozed": "Аларм је одступио за {minutes} минута",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Скенирајте КР цоде",
+  "wrongQr": "Погрешан КР цоде. Молимо вас да скенирате исправну.",
+  "shakePhone": "Стреси телефон!",
+  "shakesCount": "Тресе: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Додирните екран!",
+  "tapsCount": "Тапс: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Преузмите КР цоде",
+  "fileSaved": "Датотека сачувана на {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Дозвола за камеру је потребна за скенирање КР кода",
+  "vibration": "Вибрација",
+  "fadeIn": "Постепено бледи унутра",
+  "alarmScreen": "Алармни екран",
+  "defaultOption": "Подразумевано",
+  "mathChallenge": "Математички изазов",
+  "shakeToStop": "Протрести да се заустави",
+  "tapChallenge": "Додирните Изазов",
+  "qrCodeScan": "КР цоде скенирање",
+  "alarmSound": "Звук аларма",
+  "addSound": "Додати звук",
+  "clearCustomSounds": "Обриши прилагођени звукови",
+  "format24h": "24-сатни формат",
+  "snoozeLabel": "Сноозе: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Решавање: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Број {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Избрисати",
+  "monday": "Понедељак",
+  "tuesday": "У уторак",
+  "wednesday": "Среда",
+  "thursday": "У четвртак",
+  "friday": "Петак",
+  "saturday": "У суботу",
+  "sunday": "Недеља"
+}

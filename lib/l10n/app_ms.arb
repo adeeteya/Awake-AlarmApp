@@ -1,0 +1,110 @@
+{
+  "@@locale": "ms",
+  "appTitle": "Terjaga- jam penggera",
+  "addAlarm": "Tambah penggera",
+  "editAlarm": "Edit penggera",
+  "noAlarms": "Belum ada penggera yang ditambah",
+  "alarms": "Penggera",
+  "settings": "Tetapan",
+  "back": "Kembali",
+  "delete": "Padam",
+  "deleteAlarm": "Padam penggera",
+  "deleteAlarmPrompt": "Adakah anda pasti mahu memadamkan penggera ini?",
+  "cancel": "Batalkan",
+  "titleLabel": "Tajuk",
+  "wrongAnswer": "Jawapan yang salah",
+  "alarmSnoozed": "Penggera ditutup selama {minutes} minit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Imbas kod QR",
+  "wrongQr": "Kod QR yang salah. Sila imbas yang betul.",
+  "shakePhone": "Goncang telefon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ketik skrin!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Muat turun kod QR",
+  "fileSaved": "Fail disimpan ke {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kebenaran kamera diperlukan untuk imbasan kod QR",
+  "vibration": "Getaran",
+  "fadeIn": "Secara beransur -ansur pudar",
+  "alarmScreen": "Skrin penggera",
+  "defaultOption": "Lalai",
+  "mathChallenge": "Cabaran Matematik",
+  "shakeToStop": "Goncang untuk berhenti",
+  "tapChallenge": "Ketuk Cabaran",
+  "qrCodeScan": "Imbasan kod QR",
+  "alarmSound": "Bunyi penggera",
+  "addSound": "Tambah bunyi",
+  "clearCustomSounds": "Bunyi tersuai yang jelas",
+  "format24h": "Format 24-jam",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Menyelesaikan: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nombor {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Padam",
+  "monday": "Isnin",
+  "tuesday": "Selasa",
+  "wednesday": "Rabu",
+  "thursday": "Khamis",
+  "friday": "Jumaat",
+  "saturday": "Sabtu",
+  "sunday": "Ahad"
+}

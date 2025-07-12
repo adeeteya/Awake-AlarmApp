@@ -1,0 +1,110 @@
+{
+  "@@locale": "id",
+  "appTitle": "Bangun- jam alarm",
+  "addAlarm": "Tambahkan alarm",
+  "editAlarm": "Edit alarm",
+  "noAlarms": "Belum ada alarm yang ditambahkan",
+  "alarms": "Alarm",
+  "settings": "Pengaturan",
+  "back": "Kembali",
+  "delete": "Menghapus",
+  "deleteAlarm": "Hapus alarm",
+  "deleteAlarmPrompt": "Apakah Anda yakin ingin menghapus alarm ini?",
+  "cancel": "Membatalkan",
+  "titleLabel": "Judul",
+  "wrongAnswer": "Jawaban yang salah",
+  "alarmSnoozed": "Alarm tertunda selama {minutes} menit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Pindai kode QR",
+  "wrongQr": "Kode QR yang salah. Harap pindai yang benar.",
+  "shakePhone": "Kocok telepon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ketuk layar!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Unduh kode QR",
+  "fileSaved": "File disimpan ke {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Izin kamera diperlukan untuk pemindaian kode QR",
+  "vibration": "Getaran",
+  "fadeIn": "Fade secara bertahap",
+  "alarmScreen": "Layar alarm",
+  "defaultOption": "Bawaan",
+  "mathChallenge": "Tantangan matematika",
+  "shakeToStop": "Goyang untuk berhenti",
+  "tapChallenge": "Tap tantangan",
+  "qrCodeScan": "Pindai kode QR",
+  "alarmSound": "Suara alarm",
+  "addSound": "Tambahkan suara",
+  "clearCustomSounds": "Hapus Suara Kustom",
+  "format24h": "Format 24 jam",
+  "snoozeLabel": "Tunda: {minutes} mnt",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Selesaikan: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomor {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Menghapus",
+  "monday": "Senin",
+  "tuesday": "Selasa",
+  "wednesday": "Rabu",
+  "thursday": "Kamis",
+  "friday": "Jumat",
+  "saturday": "Sabtu",
+  "sunday": "Minggu"
+}

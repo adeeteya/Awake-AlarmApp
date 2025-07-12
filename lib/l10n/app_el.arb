@@ -1,0 +1,110 @@
+{
+  "@@locale": "el",
+  "appTitle": "Ξύπνιος- το ξυπνητήρι",
+  "addAlarm": "Προσθέστε συναγερμό",
+  "editAlarm": "Επεξεργασία συναγερμού",
+  "noAlarms": "Δεν προστέθηκαν ακόμα συναγερμοί",
+  "alarms": "Συναγερμός",
+  "settings": "Ρυθμίσεις",
+  "back": "Πίσω",
+  "delete": "Διαγράφω",
+  "deleteAlarm": "Διαγραφή συναγερμού",
+  "deleteAlarmPrompt": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το συναγερμό;",
+  "cancel": "Ματαίωση",
+  "titleLabel": "Τίτλος",
+  "wrongAnswer": "Λάθος απάντηση",
+  "alarmSnoozed": "Ο συναγερμός αναβοσβήνει για {minutes} λεπτά",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Σαρώστε τον κωδικό QR",
+  "wrongQr": "Λάθος κώδικα QR. Παρακαλώ σαρώστε το σωστό.",
+  "shakePhone": "Ανακινήστε το τηλέφωνο!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Πατήστε την οθόνη!",
+  "tapsCount": "Βρύσες: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Κατεβάστε τον κωδικό QR",
+  "fileSaved": "Αρχείο αποθηκευμένο στο {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Απαιτείται άδεια κάμερας για σάρωση κώδικα QR",
+  "vibration": "Δόνηση",
+  "fadeIn": "Σταδιακή εξασθένιση",
+  "alarmScreen": "Οθόνη συναγερμού",
+  "defaultOption": "Αθέτηση",
+  "mathChallenge": "Πρόκληση μαθηματικών",
+  "shakeToStop": "Κουνήστε για να σταματήσετε",
+  "tapChallenge": "Πατήστε πρόκληση",
+  "qrCodeScan": "Σάρωση κώδικα QR",
+  "alarmSound": "Ήχος συναγερμού",
+  "addSound": "Προσθέστε ήχο",
+  "clearCustomSounds": "Καθαρίστε τους προσαρμοσμένους ήχους",
+  "format24h": "24ωρη μορφή",
+  "snoozeLabel": "Snooze: {minutes} λεπτά",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Επίλυση: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Αριθμός {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Διαγράφω",
+  "monday": "Δευτέρα",
+  "tuesday": "Τρίτη",
+  "wednesday": "Τετάρτη",
+  "thursday": "Πέμπτη",
+  "friday": "Παρασκευή",
+  "saturday": "Σάββατο",
+  "sunday": "Κυριακή"
+}

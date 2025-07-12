@@ -1,0 +1,110 @@
+{
+  "@@locale": "mi",
+  "appTitle": "Oho- te karaka whakaoho",
+  "addAlarm": "Tāpiri whakaoho",
+  "editAlarm": "Whakatika Whakatika",
+  "noAlarms": "Kaore ano kia pakaru",
+  "alarms": "Whakaohooho",
+  "settings": "Tautuhinga",
+  "back": "Muri",
+  "delete": "Muku",
+  "deleteAlarm": "Muku i te whakaoho",
+  "deleteAlarmPrompt": "Kei te hiahia koe ki te muku i tenei whakaoho?",
+  "cancel": "Whakakore",
+  "titleLabel": "Taitara",
+  "wrongAnswer": "He whakautu he",
+  "alarmSnoozed": "Whakaohooho mo {minutes} meneti",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Matawai i te waehere QR",
+  "wrongQr": "Waehere QR. Tena tirohia te mea tika.",
+  "shakePhone": "Ruhia te waea!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap te mata!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Tangohia te waehere QR",
+  "fileSaved": "Kua tiakina te konae ki {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ko te whakaaetanga a te kāmera e hiahiatia ana mo te karapa QR Code",
+  "vibration": "Wiritanga",
+  "fadeIn": "Ka memeha haere i roto i",
+  "alarmScreen": "Mata whakaoho",
+  "defaultOption": "Hapanga",
+  "mathChallenge": "Te wero matatika",
+  "shakeToStop": "Wiri kia mutu",
+  "tapChallenge": "Whakaputanga Tap",
+  "qrCodeScan": "QR code scan",
+  "alarmSound": "Tangi tangi",
+  "addSound": "Tāpiri oro",
+  "clearCustomSounds": "Nga tangi oro",
+  "format24h": "Hōputu 24-Hor",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Whakaoti: {a} {symbol} {b} = =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nama {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Muku",
+  "monday": "Mane",
+  "tuesday": "Tūrei",
+  "wednesday": "Wenerei",
+  "thursday": "Tāite",
+  "friday": "Paraire",
+  "saturday": "Hātarei",
+  "sunday": "Rātapu"
+}

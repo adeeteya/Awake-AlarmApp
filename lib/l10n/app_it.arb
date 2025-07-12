@@ -1,0 +1,110 @@
+{
+  "@@locale": "it",
+  "appTitle": "Sveglia: la sveglia",
+  "addAlarm": "Aggiungi allarme",
+  "editAlarm": "Modifica allarme",
+  "noAlarms": "Nessun allarme ancora aggiunto",
+  "alarms": "Allarmi",
+  "settings": "Impostazioni",
+  "back": "Indietro",
+  "delete": "Eliminare",
+  "deleteAlarm": "Elimina l'allarme",
+  "deleteAlarmPrompt": "Sei sicuro di voler eliminare questo allarme?",
+  "cancel": "Cancellare",
+  "titleLabel": "Titolo",
+  "wrongAnswer": "Risposta sbagliata",
+  "alarmSnoozed": "L'allarme sonnecchiato per {minutes} minuti",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scansiona il codice QR",
+  "wrongQr": "Codice QR sbagliato. Si prega di scansionare quello corretto.",
+  "shakePhone": "Agita il telefono!",
+  "shakesCount": "Frullati: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tocca lo schermo!",
+  "tapsCount": "TAPS: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Scarica il codice QR",
+  "fileSaved": "File salvato a {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "L'autorizzazione della fotocamera è richiesta per la scansione del codice QR",
+  "vibration": "Vibrazione",
+  "fadeIn": "Dissolvenza graduale in",
+  "alarmScreen": "Schermo di allarme",
+  "defaultOption": "Predefinito",
+  "mathChallenge": "Sfida matematica",
+  "shakeToStop": "Agitare per fermarti",
+  "tapChallenge": "Tocca Challenge",
+  "qrCodeScan": "Scansione del codice QR",
+  "alarmSound": "Suono di allarme",
+  "addSound": "Aggiungi suono",
+  "clearCustomSounds": "Cancella suoni personalizzati",
+  "format24h": "Formato 24 ore su 24",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Risolvi: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Eliminare",
+  "monday": "Lunedi",
+  "tuesday": "Martedì",
+  "wednesday": "Mercoledì",
+  "thursday": "Giovedì",
+  "friday": "Venerdì",
+  "saturday": "Sabato",
+  "sunday": "Domenica"
+}

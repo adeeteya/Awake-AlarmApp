@@ -1,0 +1,110 @@
+{
+  "@@locale": "pa",
+  "appTitle": "ਜਾਗਰੂਕ- ਅਲਾਰਮ ਕਲਾਕ",
+  "addAlarm": "ਅਲਾਰਮ ਸ਼ਾਮਲ ਕਰੋ",
+  "editAlarm": "ਅਲਾਰਮ ਨੂੰ ਸੋਧੋ",
+  "noAlarms": "ਅਜੇ ਤੱਕ ਕੋਈ ਅਲਾਰਮ ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ",
+  "alarms": "ਅਲਾਰਮ",
+  "settings": "ਸੈਟਿੰਗਜ਼",
+  "back": "ਵਾਪਸ",
+  "delete": "ਮਿਟਾਓ",
+  "deleteAlarm": "ਅਲਾਰਮ ਨੂੰ ਮਿਟਾਓ",
+  "deleteAlarmPrompt": "ਕੀ ਤੁਸੀਂ ਇਸ ਅਲਾਰਮ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
+  "cancel": "ਰੱਦ ਕਰੋ",
+  "titleLabel": "ਸਿਰਲੇਖ",
+  "wrongAnswer": "ਗਲਤ ਜਵਾਬ",
+  "alarmSnoozed": "ਅਲਾਰਮ {minutes} ਮਿੰਟ ਲਈ ਸੁੰਘਦਾ ਹੈ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ਕਿ Q ਆਰ ਕੋਡ ਨੂੰ ਸਕੈਨ ਕਰੋ",
+  "wrongQr": "ਗਲਤ ਕਿ R ਆਰ ਕੋਡ. ਕਿਰਪਾ ਕਰਕੇ ਸਹੀ ਨੂੰ ਸਕੈਨ ਕਰੋ.",
+  "shakePhone": "ਫੋਨ ਨੂੰ ਹਿਲਾਓ!",
+  "shakesCount": "ਹਿਲਾਉਂਦਾ ਹੈ: {count} / _ 1_",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ਸਕ੍ਰੀਨ ਤੇ ਟੈਪ ਕਰੋ!",
+  "tapsCount": "ਟੌਪਸ: {count} / _ 1_",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ਡਾ. ਆਰ ਕੋਡ ਨੂੰ ਡਾ .ਨਲੋਡ ਕਰੋ",
+  "fileSaved": "ਫਾਈਲ ਨੂੰ {path} ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਕੀਤਾ",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ਕਿ Q ਆਰ ਕੋਡ ਸਕੈਨ ਲਈ ਕੈਮਰਾ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ",
+  "vibration": "ਕੰਬਣੀ",
+  "fadeIn": "ਵਿੱਚ ਹੌਲੀ ਹੌਲੀ ਫੇਡ",
+  "alarmScreen": "ਅਲਾਰਮ ਸਕ੍ਰੀਨ",
+  "defaultOption": "ਮੂਲ",
+  "mathChallenge": "ਗਣਿਤ ਦੀ ਚੁਣੌਤੀ",
+  "shakeToStop": "ਰੁਕਣ ਲਈ ਹਿਲਾਓ",
+  "tapChallenge": "ਟੈਪ ਚੁਣੌਤੀ",
+  "qrCodeScan": "QR ਕੋਡ ਸਕੈਨ",
+  "alarmSound": "ਅਲਾਰਮ ਆਵਾਜ਼",
+  "addSound": "ਆਵਾਜ਼ ਸ਼ਾਮਲ ਕਰੋ",
+  "clearCustomSounds": "ਕਸਟਮ ਆਵਾਜ਼ਾਂ ਸਾਫ਼ ਕਰੋ",
+  "format24h": "24 ਘੰਟੇ ਦਾ ਫਾਰਮੈਟ",
+  "snoozeLabel": "ਸਨੂਜ਼: {minutes} ਮਿੰਟ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ਹੱਲ ਕਰੋ: {a} _ 1_ {b} = = =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ਨੰਬਰ {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ਮਿਟਾਓ",
+  "monday": "ਸੋਮਵਾਰ",
+  "tuesday": "ਮੰਗਲਵਾਰ",
+  "wednesday": "ਬੁੱਧਵਾਰ",
+  "thursday": "ਵੀਰਵਾਰ",
+  "friday": "ਸ਼ੁੱਕਰਵਾਰ",
+  "saturday": "ਸ਼ਨੀਵਾਰ",
+  "sunday": "ਐਤਵਾਰ ਐਤਵਾਰ"
+}

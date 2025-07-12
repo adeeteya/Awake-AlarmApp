@@ -1,0 +1,110 @@
+{
+  "@@locale": "ti",
+  "appTitle": "ንቑሕ- ናይ ኣላርም ሰዓት",
+  "addAlarm": "ኣላርም ምውሳኽ .",
+  "editAlarm": "ኣላርም ኣርትዕ",
+  "noAlarms": "ክሳብ ሕጂ ዝኾነ ኣላርማት ኣይተወሰኸን ።",
+  "alarms": "ኣላርም .",
+  "settings": "ቅጥዕታት",
+  "back": "ዝባን",
+  "delete": "ምድምሳስ",
+  "deleteAlarm": "ኣላርም ምድምሳስ .",
+  "deleteAlarmPrompt": "ነዚ ኣላርም ክትድምስሶ ከም እትደሊ ርግጸኛ ዲኻ?",
+  "cancel": "ሰርዝ",
+  "titleLabel": "ርእሲ",
+  "wrongAnswer": "ጌጋ መልሲ",
+  "alarmSnoozed": "ን {minutes} ደቓይቕ ዝኸውን ስኑዝ ስኑዝ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ናይ QR ኮድ ስካን ግበሩ",
+  "wrongQr": "ጌጋ QR ኮድ። በጃኹም ቅኑዕ ስካን ግበሩ።",
+  "shakePhone": "ቴለፎን ንቕንቕ!",
+  "shakesCount": "ምውጥዋጥ: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ነቲ ስክሪን ንጥውቕ!",
+  "tapsCount": "ምጥዋይ: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR ኮድ ኣውርድ",
+  "fileSaved": "ናብ {path} ዝተቐመጠ ፋይል",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ንQR ኮድ ስካን ፍቓድ ካሜራ የድሊ።",
+  "vibration": "ምንቅጥቃጥ",
+  "fadeIn": "ቀስ ብቐስ ዝሃስስ ኣብ",
+  "alarmScreen": "ናይ ኣላርም ስክሪን",
+  "defaultOption": "ትሑዝ",
+  "mathChallenge": "ናይ ሒሳብ ብድሆ",
+  "shakeToStop": "ንምቁራጽ ምውጥዋጥ",
+  "tapChallenge": "ጣፕ ብድሆ",
+  "qrCodeScan": "QR ኮድ ስካን",
+  "alarmSound": "ናይ ኣላርም ድምጺ",
+  "addSound": "ድምጺ ምውሳኽ",
+  "clearCustomSounds": "ንጹር ብሕታዊ ድምጽታት",
+  "format24h": "ናይ 24 ሰዓታት ቅርጺ",
+  "snoozeLabel": "ስኑዝ: {minutes} ደቒቕ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ፍታሕ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ቁጽሪ {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ምድምሳስ",
+  "monday": "ሶኑይ",
+  "tuesday": "ሰሉስ",
+  "wednesday": "ረቡዕ",
+  "thursday": "ሓሙስ",
+  "friday": "ዓርቢ",
+  "saturday": "ቀዳም",
+  "sunday": "ሰንበት"
+}

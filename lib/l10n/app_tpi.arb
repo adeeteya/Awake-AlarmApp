@@ -1,0 +1,110 @@
+{
+  "@@locale": "tpi",
+  "appTitle": "Kirap- Klok bilong Alarm",
+  "addAlarm": "Putim Alarm",
+  "editAlarm": "Editim Alarm",
+  "noAlarms": "No gat ol Alarm Ol i bin putim Yet",
+  "alarms": "Ol alarm",
+  "settings": "Ol seting",
+  "back": "Baksait",
+  "delete": "Dilitim",
+  "deleteAlarm": "Dilitim Alarm",
+  "deleteAlarmPrompt": "Yu sua se yu wantem dilete alarm ia?",
+  "cancel": "kensel",
+  "titleLabel": "Taitel",
+  "wrongAnswer": "rong ansa",
+  "alarmSnoozed": "Alarm i bin slip inap {minutes} minit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skenim QR Kod",
+  "wrongQr": "Rong QR Kod. Plis skenim stretpela wanpela.",
+  "shakePhone": "Sekim fon!",
+  "shakesCount": "Ol Sek: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tapim skrin!",
+  "tapsCount": "Ol Tap: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Daonlodem QR Kod",
+  "fileSaved": "Fail i sevim i go long {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "I nidim raet blong kamera blong QR Kod Sken",
+  "vibration": "Vaibresen",
+  "fadeIn": "Isi isi long",
+  "alarmScreen": "Alarm Skrin",
+  "defaultOption": "Difolt",
+  "mathChallenge": "Salens bilong matematiks",
+  "shakeToStop": "Sekim bilong Stop",
+  "tapChallenge": "Tap Salens",
+  "qrCodeScan": "QR Kod Sken",
+  "alarmSound": "Alarm Saon",
+  "addSound": "Addim Saon",
+  "clearCustomSounds": "Klia Kastom Saon",
+  "format24h": "Fomat bilong 24-aua",
+  "snoozeLabel": "Snuze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solvim: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Namba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Dilitim",
+  "monday": "Mande",
+  "tuesday": "Tunde",
+  "wednesday": "Trinde",
+  "thursday": "Fonde",
+  "friday": "Fraide",
+  "saturday": "Sarere",
+  "sunday": "Sande"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "be",
+  "appTitle": "Прачні- будзільнік",
+  "addAlarm": "Дадаць трывогу",
+  "editAlarm": "Рэдагаваць трывогу",
+  "noAlarms": "Пакуль няма сігналізацыі",
+  "alarms": "Трывогі",
+  "settings": "Налады",
+  "back": "Назад",
+  "delete": "Выдаляць",
+  "deleteAlarm": "Выдаліць сігналізацыю",
+  "deleteAlarmPrompt": "Вы ўпэўнены, што хочаце выдаліць гэтую сігналізацыю?",
+  "cancel": "Ануляваць",
+  "titleLabel": "Загаловак",
+  "wrongAnswer": "Няправільны адказ",
+  "alarmSnoozed": "Сігналізацыя загінула на працягу {minutes} хвілін",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Скануйце QR -код",
+  "wrongQr": "Няправільны QR -код. Калі ласка, скануйце правільны.",
+  "shakePhone": "Патрасіце тэлефон!",
+  "shakesCount": "Кактэйлі: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Націсніце на экран!",
+  "tapsCount": "Націскі: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Спампаваць QR -код",
+  "fileSaved": "Файл захаваны да {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Дазвол камеры патрабуецца для сканавання QR -кода",
+  "vibration": "Вібрацыя",
+  "fadeIn": "Паступовае знікае ў",
+  "alarmScreen": "Экран сігналізацыі",
+  "defaultOption": "Недахоп",
+  "mathChallenge": "Матэматычны выклік",
+  "shakeToStop": "Патрасіце, каб спыніцца",
+  "tapChallenge": "Націсніце Challenge",
+  "qrCodeScan": "QR -сканаванне кода",
+  "alarmSound": "Гука сігналізацыі",
+  "addSound": "Дадайце гук",
+  "clearCustomSounds": "Ачышчаныя звычайныя гукі",
+  "format24h": "24-гадзінны фармат",
+  "snoozeLabel": "Скласці: {minutes} мін",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Вырашыце: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Нумар {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Выдаляць",
+  "monday": "Панядзелак",
+  "tuesday": "Аўторак",
+  "wednesday": "Серада",
+  "thursday": "Чацвер",
+  "friday": "Пятніца",
+  "saturday": "Субота",
+  "sunday": "Нядзеля"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "my",
+  "appTitle": "နိုးနိုးစရာနာရီ",
+  "addAlarm": "နှိုးစက်ထည့်ပါ",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "အဘယ်သူမျှမနှိုးဆော်သံမဆက်ဆက်",
+  "alarms": "နှိုးကား",
+  "settings": "ဆက်တင်များ",
+  "back": "ပြန်.",
+  "delete": "ဖျက်",
+  "deleteAlarm": "နှိုးစက်ကိုဖျက်ပါ",
+  "deleteAlarmPrompt": "ဒီနှိုးစက်ကိုသင်ဖျက်ချင်ပါသလား။",
+  "cancel": "ပျက်စေ",
+  "titleLabel": "ဘဲှ့",
+  "wrongAnswer": "မှားယွင်းသောအဖြေ",
+  "alarmSnoozed": "{minutes}0 မိနစ်အဘို့အနိုက် snoozed",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR ကုဒ်ကိုစစ်ဆေးပါ",
+  "wrongQr": "မှားယွင်း QR ကုဒ်မှား။ ကျေးဇူးပြု. မှန်ကန်သောတစ်ခုကိုစကင်ဖတ်ပါ။",
+  "shakePhone": "ဖုန်းကိုလှုပ်ပါ",
+  "shakesCount": "လှုပ်: {count} / {required}_",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "မျက်နှာပြင်ကိုအသာပုတ်ပါ။",
+  "tapsCount": "Taps: {count} / {required}{required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR ကုဒ်ကိုဒေါင်းလုပ်လုပ်ပါ",
+  "fileSaved": "file {path} သို့သိမ်းဆည်းခဲ့သည်",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR Code Scan အတွက်ကင်မရာခွင့်ပြုချက်လိုအပ်သည်",
+  "vibration": "တုန်ခါခြင်း",
+  "fadeIn": "တဖြည်းဖြည်း fade",
+  "alarmScreen": "နှိုးစက်မျက်နှာပြင်",
+  "defaultOption": "ပျက်ကွက်ခြင်း",
+  "mathChallenge": "သင်္ချာစိန်ခေါ်မှု",
+  "shakeToStop": "ရပ်တန့်ဖို့လှုပ်",
+  "tapChallenge": "စိန်ခေါ်မှုကိုအသာပုတ်ပါ",
+  "qrCodeScan": "QR CODECY Scan",
+  "alarmSound": "နှိုးစက်အသံ",
+  "addSound": "အသံထည့်ပါ",
+  "clearCustomSounds": "Clear Custom အသံ",
+  "format24h": "24 နာရီ format",
+  "snoozeLabel": "snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ဖြေရှင်းရန်: {a} {symbol}_{b}_ =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "နံပါတ် {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ဖျက်",
+  "monday": "တနင်္လာနေ့",
+  "tuesday": "အင်္ဂါနေ့",
+  "wednesday": "ဗုဒ္ဓဟူးနေ့",
+  "thursday": "ကြာသပတေးနေ့",
+  "friday": "သောကြာနေ့",
+  "saturday": "စနေနေ့",
+  "sunday": "တနင်္ဂနေှနေ့"
+}

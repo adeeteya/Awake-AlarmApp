@@ -1,0 +1,110 @@
+{
+  "@@locale": "mfe",
+  "appTitle": "Leve- Lizie alarm",
+  "addAlarm": "Azout alarm",
+  "editAlarm": "Modifie alarm",
+  "noAlarms": "Okenn Alarm pa finn azoute kanmem",
+  "alarms": "Bann alarm",
+  "settings": "Paramet",
+  "back": "Deryer",
+  "delete": "Efase",
+  "deleteAlarm": "Efas alarm",
+  "deleteAlarmPrompt": "To sir to anvi efas sa alarm la?",
+  "cancel": "Kennsel",
+  "titleLabel": "Tit",
+  "wrongAnswer": "Move repons",
+  "alarmSnoozed": "Alarm finn snooze pandan {minutes} minit",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan kod QR",
+  "wrongQr": "Move Kod QR. Silvouple scan bann ki bizin.",
+  "shakePhone": "Sakouy telefonn-la!",
+  "shakesCount": "Sakouy: {count} / {required}________________",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap lor lekran-la!",
+  "tapsCount": "Bann tap: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Telesarz kod QR",
+  "fileSaved": "Fisie-la finn anrezistre pou {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Permision kamera bizin pou Skane Kod QR",
+  "vibration": "Vibasion",
+  "fadeIn": "Defade gradyel dan",
+  "alarmScreen": "Lekran an alarm",
+  "defaultOption": "Defo",
+  "mathChallenge": "Defi matematik",
+  "shakeToStop": "Sakouy pou arete",
+  "tapChallenge": "Tap lor tap",
+  "qrCodeScan": "Skane kod QR",
+  "alarmSound": "Son an alarm",
+  "addSound": "Azout son",
+  "clearCustomSounds": "Kler sonn lor personalize",
+  "format24h": "Format 24-er",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "rezoud: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nimero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Efase",
+  "monday": "Lindi",
+  "tuesday": "mardi",
+  "wednesday": "merkredi",
+  "thursday": "zezi",
+  "friday": "Vandredi",
+  "saturday": "Samdi",
+  "sunday": "Dimans"
+}

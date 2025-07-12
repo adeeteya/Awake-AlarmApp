@@ -1,0 +1,110 @@
+{
+  "@@locale": "mak",
+  "appTitle": "Nampa nasuromi ke’nanga a’lampa mange ri .",
+  "addAlarm": "Tambah",
+  "editAlarm": "Edit Aram",
+  "noAlarms": "Tena Alarm Nipa’jari.",
+  "alarms": "Alarm",
+  "settings": "a'lampai",
+  "back": "Motere",
+  "delete": "Angngapusu",
+  "deleteAlarm": "Anjo Alot Amram",
+  "deleteAlarmPrompt": "Apa nupa’jari tappa’ angkanaya ero’nu ampasuluki anjo alarm?",
+  "cancel": "Cmbatalkan",
+  "titleLabel": "Judulu",
+  "wrongAnswer": "sipa",
+  "alarmSnoozed": "Alarm a’dakka-dakkai untu’ _0 rua menit .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skan Kode QR",
+  "wrongQr": "Nampa nasuromi ke’nanga a’lampa mange ri Kode QR. Pa’pilajarang ri sesena anjo.",
+  "shakePhone": "A’lampako mange ri anjo telepona!",
+  "shakesCount": "Pa’bageang: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tappa’ layara’na!",
+  "tapsCount": "Sapu: {count} / ___ .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download Kode QR",
+  "fileSaved": "File niaka ri ___",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Nampa nasuromi ke’nanga a’lampa mange ri QR Kode Scan .",
+  "vibration": "Vinge",
+  "fadeIn": "Fakta Fakta Granual .",
+  "alarmScreen": "Layar Alarm",
+  "defaultOption": "Erangan",
+  "mathChallenge": "Tantangan matematika",
+  "shakeToStop": "A’bicara",
+  "tapChallenge": "Tap Tantangan",
+  "qrCodeScan": "QR Kode San .",
+  "alarmSound": "Alarm San .",
+  "addSound": "Tambah tongi .",
+  "clearCustomSounds": "Pa’risi’na Pa’rasangang Beasa",
+  "format24h": "24-Hour Format",
+  "snoozeLabel": "Snoze: ___ min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Pa’bulekang: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomoro __",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Angngapusu",
+  "monday": "Sanning",
+  "tuesday": "Salasa",
+  "wednesday": "araba",
+  "thursday": "Kammisi",
+  "friday": "Juma",
+  "saturday": "sattu",
+  "sunday": "Aha"
+}

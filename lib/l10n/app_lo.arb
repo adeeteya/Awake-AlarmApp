@@ -1,0 +1,110 @@
+{
+  "@@locale": "lo",
+  "appTitle": "ຕື່ນນອນ - ໂມງປຸກ",
+  "addAlarm": "ຕື່ມການແຈ້ງເຕືອນ",
+  "editAlarm": "ແກ້ສຽງ",
+  "noAlarms": "ບໍ່ມີສຽງເຕືອນເຖິງເທື່ອ",
+  "alarms": "ການແຈ້ງເຕືອນ",
+  "settings": "ການກໍານົດ",
+  "back": "ກັບຄືນໄປບ່ອນ",
+  "delete": "ລົບ",
+  "deleteAlarm": "ລົບລ້າງຄວາມຕື່ນຕົກໃຈ",
+  "deleteAlarmPrompt": "ທ່ານແນ່ໃຈບໍ່ວ່າທ່ານຕ້ອງການລຶບເຕືອນນີ້?",
+  "cancel": "ຍົກເລີກ",
+  "titleLabel": "ໃບຕາດິນ",
+  "wrongAnswer": "ຄໍາຕອບທີ່ບໍ່ຖືກຕ້ອງ",
+  "alarmSnoozed": "ສຽງດັງ snorm snoozed ສໍາລັບ {minutes} ນາທີ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "ສະແກນລະຫັດ QR",
+  "wrongQr": "ລະຫັດ QR ທີ່ບໍ່ຖືກຕ້ອງ. ກະລຸນາສະແກນທີ່ຖືກຕ້ອງ.",
+  "shakePhone": "ສັ່ນໂທລະສັບ!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "ແຕະຫນ້າຈໍ!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ດາວໂຫລດ QR Code",
+  "fileSaved": "ແຟ້ມທີ່ບັນທຶກໄວ້ເປັນ {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "ການອະນຸຍາດຈາກກ້ອງຖ່າຍຮູບແມ່ນຈໍາເປັນສໍາລັບ QR Code Scan",
+  "vibration": "ການສັ່ນສະເທືອນ",
+  "fadeIn": "ຄ່ອຍໆຈາງຫາຍໄປໃນ",
+  "alarmScreen": "ຫນ້າຈໍເຕືອນ",
+  "defaultOption": "ໃນຕອນຕົ້ນ",
+  "mathChallenge": "ສິ່ງທ້າທາຍຫລັງ",
+  "shakeToStop": "ສັ່ນທີ່ຈະຢຸດ",
+  "tapChallenge": "ແຕະທ້າຫມູ່ຫຼິ້ນ",
+  "qrCodeScan": "ສະແກນລະຫັດ QR",
+  "alarmSound": "ສຽງປຸກ",
+  "addSound": "ເພີ່ມສຽງ",
+  "clearCustomSounds": "ສຽງທີ່ຈະແຈ້ງ",
+  "format24h": "ຮູບແບບ 24 ຊົ່ວໂມງ",
+  "snoozeLabel": "Snooze: {minutes} ນາທີ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "ແກ້ໄຂ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "ຈໍານວນ {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ລົບ",
+  "monday": "ວັນຈັນ",
+  "tuesday": "ວັນອັງຄານ",
+  "wednesday": "ວັນພຸດ",
+  "thursday": "ວັນພະຫັດ",
+  "friday": "ວັນສຸກ",
+  "saturday": "ວັນເສົາ",
+  "sunday": "ວັນອາທິດ"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "ur",
+  "appTitle": "جاگ- الارم گھڑی",
+  "addAlarm": "الارم شامل کریں",
+  "editAlarm": "الارم میں ترمیم کریں",
+  "noAlarms": "ابھی تک کوئی الارم شامل نہیں کیا گیا",
+  "alarms": "الارم",
+  "settings": "ترتیبات",
+  "back": "واپس",
+  "delete": "حذف کریں",
+  "deleteAlarm": "الارم حذف کریں",
+  "deleteAlarmPrompt": "کیا آپ واقعی اس الارم کو حذف کرنا چاہتے ہیں؟",
+  "cancel": "منسوخ کریں",
+  "titleLabel": "عنوان",
+  "wrongAnswer": "غلط جواب",
+  "alarmSnoozed": "الارم {minutes} منٹ کے لئے اسنوزڈ",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR کوڈ کو اسکین کریں",
+  "wrongQr": "غلط کیو آر کوڈ۔ براہ کرم صحیح اسکین کریں۔",
+  "shakePhone": "فون ہلا دو!",
+  "shakesCount": "شیک: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "اسکرین پر ٹیپ کریں!",
+  "tapsCount": "ٹیپس: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR کوڈ ڈاؤن لوڈ کریں",
+  "fileSaved": "فائل {path} پر محفوظ ہے",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "کیو آر کوڈ اسکین کے لئے کیمرا کی اجازت ضروری ہے",
+  "vibration": "کمپن",
+  "fadeIn": "آہستہ آہستہ دھندلا",
+  "alarmScreen": "الارم اسکرین",
+  "defaultOption": "پہلے سے طے شدہ",
+  "mathChallenge": "ریاضی چیلنج",
+  "shakeToStop": "رکنے کے لئے ہلا",
+  "tapChallenge": "چیلنج کو تھپتھپائیں",
+  "qrCodeScan": "QR کوڈ اسکین",
+  "alarmSound": "الارم کی آواز",
+  "addSound": "آواز شامل کریں",
+  "clearCustomSounds": "صاف کسٹم آوازیں",
+  "format24h": "24 گھنٹے کی شکل",
+  "snoozeLabel": "اسنوز: {minutes} منٹ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "حل کریں: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "نمبر {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "حذف کریں",
+  "monday": "پیر",
+  "tuesday": "منگل",
+  "wednesday": "بدھ",
+  "thursday": "جمعرات",
+  "friday": "جمعہ",
+  "saturday": "ہفتہ",
+  "sunday": "اتوار"
+}

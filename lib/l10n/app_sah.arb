@@ -1,0 +1,110 @@
+{
+  "@@locale": "sah",
+  "appTitle": "Уэйк- Сигнатура чааһа",
+  "addAlarm": "Сигнализацияны эбэн биэр",
+  "editAlarm": "Редактировать сигнализация",
+  "noAlarms": "Нет тревоги Добавлены Его",
+  "alarms": "сигналлар",
+  "settings": "Настройки",
+  "back": "Кэтэх",
+  "delete": "Соттор",
+  "deleteAlarm": "Снимать сигнализация",
+  "deleteAlarmPrompt": "Бу сигнализацияны суох оҥоруоххун баҕараҕын дуо диэн эрэнэҕин дуо?",
+  "cancel": "Соттор",
+  "titleLabel": "Аат",
+  "wrongAnswer": "Сыыһа эппиэт",
+  "alarmSnoozed": "Сигнализация {minutes} мүнүүтэ устата ыһыллыбыт",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Скан",
+  "wrongQr": "Сыыһа QR Код. Сөпкө сканердаан эрэ.",
+  "shakePhone": "Телефону тэбэн кэбиьин!",
+  "shakesCount": "Шейкс: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Экран диэни баттаан кэбиһиҥ!",
+  "tapsCount": "Намы: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Скачать QR Код",
+  "fileSaved": "Файл сохранена на {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Камера разрешения требуется для QR Code Scan .",
+  "vibration": "Вибрация",
+  "fadeIn": "Градальная преимущества В",
+  "alarmScreen": "Сигнализация экрана",
+  "defaultOption": "Куолутунан",
+  "mathChallenge": "Математика сорудаҕын",
+  "shakeToStop": "Тохтоон тохтобул",
+  "tapChallenge": "Нажмите Челлендж",
+  "qrCodeScan": "QR-кода скан",
+  "alarmSound": "Сигноз дорҕооно",
+  "addSound": "Тыыны эбэн биэр",
+  "clearCustomSounds": "Чуолкай пользовательскай звуктары чуолкай",
+  "format24h": "24-Час формата",
+  "snoozeLabel": "Снуз: {minutes} мин",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Решение: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Номер {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Соттор",
+  "monday": "Бэнидиэнник",
+  "tuesday": "Оптуорунньук",
+  "wednesday": "Сэрэдэ",
+  "thursday": "Чэппиэр",
+  "friday": "Бээтинсэ",
+  "saturday": "Субуота",
+  "sunday": "Баскыһыанньа"
+}

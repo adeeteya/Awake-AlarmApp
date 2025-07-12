@@ -1,0 +1,110 @@
+{
+  "@@locale": "tg",
+  "appTitle": "Бедор шавед - соати ҳушдор",
+  "addAlarm": "Оҳиста-ҳуш",
+  "editAlarm": "Таҳрир",
+  "noAlarms": "Ҳанӯз ҳушдор илова нашудааст",
+  "alarms": "Ҳушдорҳо",
+  "settings": "Танзимот",
+  "back": "Пушт",
+  "delete": "Нест",
+  "deleteAlarm": "Ҳушдор нест",
+  "deleteAlarmPrompt": "Шумо мутмаин ҳастед, ки ин ҳушдорро нест кардан мехоҳед?",
+  "cancel": "Манъ кардан",
+  "titleLabel": "Ном",
+  "wrongAnswer": "Ҷавоби нодуруст",
+  "alarmSnoozed": "Ҳушдор snoozed барои {minutes} дақиқа",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Коди QR-ро скан кунед",
+  "wrongQr": "Рамзи нодурусти QR. Лутфан дурустро скан кунед.",
+  "shakePhone": "Телефонро ларзонед!",
+  "shakesCount": "Ширинҳо: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Экранро клик кунед!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Коди QR -ро зеркашӣ кунед",
+  "fileSaved": "Файл ба {path} сарфа шудааст",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Барои сканерии QR барои Scan Counter талаб карда мешавад",
+  "vibration": "Вибратсия",
+  "fadeIn": "Фурӯтан пажмурда мешавад",
+  "alarmScreen": "Экрани ҳушдор",
+  "defaultOption": "Иьро накардани ӯҳдадорӣ",
+  "mathChallenge": "Мушкилоти риёзӣ",
+  "shakeToStop": "Ларзонданро бас кунед",
+  "tapChallenge": "Тугмаи ламс",
+  "qrCodeScan": "Коди QR SCAN",
+  "alarmSound": "Садои ҳушдор",
+  "addSound": "Овоз илова кунед",
+  "clearCustomSounds": "Офаридгори муқаррарӣ",
+  "format24h": "Формати 24-соат",
+  "snoozeLabel": "Snoozz: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Ҳалли: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Рақам {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Нест",
+  "monday": "Душанбе",
+  "tuesday": "Сешанбе",
+  "wednesday": "Чоршанбе",
+  "thursday": "Паньшанбе",
+  "friday": "Ьумаъ",
+  "saturday": "Шанбе",
+  "sunday": "Якшанбе"
+}

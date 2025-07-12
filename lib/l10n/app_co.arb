@@ -1,0 +1,110 @@
+{
+  "@@locale": "co",
+  "appTitle": "Svegliu - u clock di alarme",
+  "addAlarm": "Aghjustate l'alarma",
+  "editAlarm": "Edità alarme",
+  "noAlarms": "Nisun alarmi aghjuntu ancora",
+  "alarms": "Alarmi",
+  "settings": "Configurazioni",
+  "back": "Torna",
+  "delete": "Sguassà",
+  "deleteAlarm": "Elimina l'alarma",
+  "deleteAlarmPrompt": "Hè sicura chì vulete sguassà sta alarma?",
+  "cancel": "Annulla",
+  "titleLabel": "Titulu",
+  "wrongAnswer": "Risposta sbagliata",
+  "alarmSnoozed": "Alarma snoozed per {minutes} minuti",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scansate u Codice QR",
+  "wrongQr": "Codice QR sbagliatu. Per piacè scansa a curretta.",
+  "shakePhone": "Scuzzulate u telefunu!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Toccate u screnu!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Scaricate u Codice QR",
+  "fileSaved": "File salvatu à {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "U permessu di a càmera hè necessaria per scansione di codice QR",
+  "vibration": "Vibrazione",
+  "fadeIn": "Fade graduale in",
+  "alarmScreen": "Screnu di alarme",
+  "defaultOption": "Prefettu",
+  "mathChallenge": "Sfida matematica",
+  "shakeToStop": "Scossa di piantà",
+  "tapChallenge": "Tap Sfida",
+  "qrCodeScan": "Scan di codice QR",
+  "alarmSound": "Sonu di alarme",
+  "addSound": "Aghjunghjite u sonu",
+  "clearCustomSounds": "Sona Custom",
+  "format24h": "Format di 24 ore",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Risolve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numeru {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Sguassà",
+  "monday": "Luni",
+  "tuesday": "Marti",
+  "wednesday": "Marcuri",
+  "thursday": "Ghjovi",
+  "friday": "Vennari",
+  "saturday": "Sabatu",
+  "sunday": "Dumenica"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "hrx",
+  "appTitle": "Erwake- Te Alarm Uhr",
+  "addAlarm": "Alarm rin tuun",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Keen Alarmes aan khom sin.",
+  "alarms": "Allarme",
+  "settings": "Insetsunge",
+  "back": "Tsurik",
+  "delete": "Aus lose",
+  "deleteAlarm": "Alarm aus këpe",
+  "deleteAlarmPrompt": "Sin se sicher tas tuu tiise alarm aus lëye wilst?",
+  "cancel": "ap saan",
+  "titleLabel": "Tithel",
+  "wrongAnswer": "Wront ti antwort",
+  "alarmSnoozed": "Alarm hot {minutes} minute snoost",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan te QR Kode",
+  "wrongQr": "Wrong QR Kode. Tuu ti richtich scanne.",
+  "shakePhone": "Tuu te telefoon xmayse!",
+  "shakesCount": "Schaten: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tuu te xpiichle in te xteke!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Kode",
+  "fileSaved": "File kerne fer {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera erlaupnis is neetich fer QR Code Scan .",
+  "vibration": "Xrift",
+  "fadeIn": "Gradule Fade In",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "Xtantart",
+  "mathChallenge": "Matematik",
+  "shakeToStop": "Schaak fer Stop",
+  "tapChallenge": "Tuu ti kilere",
+  "qrCodeScan": "QR Kode Scan",
+  "alarmSound": "Alarm Klingt",
+  "addSound": "Suuch",
+  "clearCustomSounds": "Kleene Kinder Klingt",
+  "format24h": "24-Simst Form",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Lös: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numer {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Aus lose",
+  "monday": "Moontaach",
+  "tuesday": "tiinstaach",
+  "wednesday": "mitwoch",
+  "thursday": "tunerstaach",
+  "friday": "Fraytaach",
+  "saturday": "samstaach",
+  "sunday": "Suntaach"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "eo",
+  "appTitle": "Veki- La Alarmo-Horloĝo",
+  "addAlarm": "Aldonu alarmon",
+  "editAlarm": "Redaktu Alarmon",
+  "noAlarms": "Ankoraŭ ne aldonitaj alarmoj",
+  "alarms": "Alarmoj",
+  "settings": "Agordoj",
+  "back": "Reen",
+  "delete": "Forigi",
+  "deleteAlarm": "Forigi alarmon",
+  "deleteAlarmPrompt": "Ĉu vi certas, ke vi volas forigi ĉi tiun alarmon?",
+  "cancel": "Nuligi",
+  "titleLabel": "Titolo",
+  "wrongAnswer": "Malĝusta respondo",
+  "alarmSnoozed": "Alarmo Snoozita por {minutes} Minutoj",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skanu la QR -kodon",
+  "wrongQr": "Malĝusta QR -kodo. Bonvolu skani la ĝustan.",
+  "shakePhone": "Skuu la telefonon!",
+  "shakesCount": "Skuoj: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Frapu la ekranon!",
+  "tapsCount": "Frapetoj: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Elŝutu QR -Kodon",
+  "fileSaved": "Dosiero konservita al {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Fotila permeso estas bezonata por QR -koda skanado",
+  "vibration": "Vibro",
+  "fadeIn": "Laŭgrada fado en",
+  "alarmScreen": "Alarma ekrano",
+  "defaultOption": "Defaŭlta",
+  "mathChallenge": "Matematika Defio",
+  "shakeToStop": "Skuu por ĉesi",
+  "tapChallenge": "Frapeta Defio",
+  "qrCodeScan": "QR -koda skanado",
+  "alarmSound": "Alarma sono",
+  "addSound": "Aldonu sonon",
+  "clearCustomSounds": "Klaraj kutimaj sonoj",
+  "format24h": "24-hora formato",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solvu: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Forigi",
+  "monday": "Lundo",
+  "tuesday": "Mardo",
+  "wednesday": "Merkredo",
+  "thursday": "Thursdayaŭdo",
+  "friday": "Vendredo",
+  "saturday": "Sabato",
+  "sunday": "Dimanĉe"
+}

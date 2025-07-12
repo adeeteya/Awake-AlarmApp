@@ -1,0 +1,110 @@
+{
+  "@@locale": "de",
+  "appTitle": "Wach- der Wecker",
+  "addAlarm": "Alarm hinzufügen",
+  "editAlarm": "Alarm bearbeiten",
+  "noAlarms": "Noch keine Alarme hinzugefügt",
+  "alarms": "Alarm",
+  "settings": "Einstellungen",
+  "back": "Zurück",
+  "delete": "Löschen",
+  "deleteAlarm": "Alarm löschen",
+  "deleteAlarmPrompt": "Sind Sie sicher, dass Sie diesen Alarm löschen möchten?",
+  "cancel": "Stornieren",
+  "titleLabel": "Titel",
+  "wrongAnswer": "Falsche Antwort",
+  "alarmSnoozed": "Alarm für {minutes} Minuten verfälscht",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scannen Sie den QR -Code",
+  "wrongQr": "Falscher QR -Code. Bitte scannen Sie den richtigen.",
+  "shakePhone": "Schütteln Sie das Telefon!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tippen Sie auf den Bildschirm!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Laden Sie den QR -Code herunter",
+  "fileSaved": "Datei gespeichert in {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Für den QR -Code -Scan ist eine Kameraerlaubnis erforderlich",
+  "vibration": "Vibration",
+  "fadeIn": "Allmählich verblassen",
+  "alarmScreen": "Alarmbildschirm",
+  "defaultOption": "Standard",
+  "mathChallenge": "Mathematikherausforderung",
+  "shakeToStop": "Schütteln, um anzuhalten",
+  "tapChallenge": "Herausforderung tippen",
+  "qrCodeScan": "QR -Code -Scan",
+  "alarmSound": "Alarmschall",
+  "addSound": "Fügen Sie Ton hinzu",
+  "clearCustomSounds": "Clear Custom Sounds",
+  "format24h": "24-Stunden-Format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Lösen Sie: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nummer {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Löschen",
+  "monday": "Montag",
+  "tuesday": "Dienstag",
+  "wednesday": "Mittwoch",
+  "thursday": "Donnerstag",
+  "friday": "Freitag",
+  "saturday": "Samstag",
+  "sunday": "Sonntag"
+}

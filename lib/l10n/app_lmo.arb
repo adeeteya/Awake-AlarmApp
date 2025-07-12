@@ -1,0 +1,110 @@
+{
+  "@@locale": "lmo",
+  "appTitle": "Aggiornamento de l'Allezione.",
+  "addAlarm": "Accenti la fotocamera .",
+  "editAlarm": "someia",
+  "noAlarms": "Nugun de l’audio de l’Allea.",
+  "alarms": "picinin",
+  "settings": "Sì",
+  "back": "S'ciena",
+  "delete": "Scancellar",
+  "deleteAlarm": "Us",
+  "deleteAlarmPrompt": "Te g’hes de vèss sicür che te g’hes de vèss?",
+  "cancel": "scancella",
+  "titleLabel": "Titol",
+  "wrongAnswer": "Mes",
+  "alarmSnoozed": "I 10 minuti per la prima volta l’è la prima volta.",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Reportaziun del ADN.",
+  "wrongQr": "Neet l’è el CEO. Per piasér, g’he de vèss sicür che l’è.",
+  "shakePhone": "Vai a telefonar!",
+  "shakesCount": "Sì: 1/2/1/1.",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Clicca sul schermo!",
+  "tapsCount": "Scarica: 1/2/1/1.",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Reportaziun del APC",
+  "fileSaved": "Godeta el 100%.",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "El Consigli de la Francia de la dumanda l’è un’opziun de la proprietà.",
+  "vibration": "moder",
+  "fadeIn": "L’è",
+  "alarmScreen": "Sultant",
+  "defaultOption": "Predefinid",
+  "mathChallenge": "l'era",
+  "shakeToStop": "Mett el numer",
+  "tapChallenge": "secolo",
+  "qrCodeScan": "Sent",
+  "alarmSound": "fenomen",
+  "addSound": "Sì",
+  "clearCustomSounds": "Foto de la Gran Bretagna.",
+  "format24h": "4.",
+  "snoozeLabel": "Risposta: 10.",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Risposta: 10.1.2.",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Ottensilament",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Scancellar",
+  "monday": "Lunedì",
+  "tuesday": "martedì",
+  "wednesday": "mercoldì",
+  "thursday": "jovedì",
+  "friday": "Venerdì",
+  "saturday": "sabet",
+  "sunday": "Dumenega"
+}

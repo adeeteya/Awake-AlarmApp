@@ -1,0 +1,110 @@
+{
+  "@@locale": "sus",
+  "appTitle": "Awake- Alarm xa banxi .",
+  "addAlarm": "Wo xa Alarmè",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Alarms yo mu saxi a ma .",
+  "alarms": "Alarmu",
+  "settings": "settings",
+  "back": "Ifari",
+  "delete": "Éfacé",
+  "deleteAlarm": "Delete Alarm",
+  "deleteAlarmPrompt": "Wo laxi a ra wo wama yi alarm xa fe raxarafe ?",
+  "cancel": "abama",
+  "titleLabel": "Khou yi",
+  "wrongAnswer": "a yaabi",
+  "alarmSnoozed": "Alarm naxa a raxara han miniti {minutes} .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan xa QR .",
+  "wrongQr": "Wo xa QR Code sɛbɛ. Wo xa na fe tinxinxi mato.",
+  "shakePhone": "Wo xa na telefone rawali!",
+  "shakesCount": "Yi buki: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Wo xa na sɛbɛli mato!",
+  "tapsCount": "Tape: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Wo xa QR Code .",
+  "fileSaved": "File naxa {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Camera xa yaamari nan lanma a xa findi QR Code Scan .",
+  "vibration": "faté",
+  "fadeIn": "Ɲɛ .",
+  "alarmScreen": "Alarm xa screen",
+  "defaultOption": "Kiya kobi",
+  "mathChallenge": "Matematiki xa fe ra",
+  "shakeToStop": "Wo xa na wali fɔlɔ .",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm xui",
+  "addSound": "Wo xa na sɛbɛ .",
+  "clearCustomSounds": "Klear Custom xa s nb .",
+  "format24h": "24- Waxati .",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Wo xa a rawali: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Éfacé",
+  "monday": "Tenin lökhè",
+  "tuesday": "talata lokhè",
+  "wednesday": "araba lokhè",
+  "thursday": "alkhamousèï",
+  "friday": "Youmè",
+  "saturday": "simiti lokhè",
+  "sunday": "Sandé"
+}

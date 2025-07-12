@@ -1,0 +1,110 @@
+{
+  "@@locale": "mam",
+  "appTitle": "Awaque- Aju’ q’ol tqanil te alarma",
+  "addAlarm": "Qʼonxa",
+  "editAlarm": "b'itzil",
+  "noAlarms": "No alarmas adidición",
+  "alarms": "A",
+  "settings": "iq'b'aj",
+  "back": "Tijxi",
+  "delete": "Siky'il",
+  "deleteAlarm": "Aju qʼinumabʼil",
+  "deleteAlarmPrompt": "¿Qʼuqli tkʼuʼja tiʼj qa taja tuʼn tkubʼ tnajsaʼna alarma lu?",
+  "cancel": "okxju",
+  "titleLabel": "Tb'i",
+  "wrongAnswer": "NA",
+  "alarmSnoozed": "Alarma b’aj t-xb’alumin tib’ tu’n {minutes} minut",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Q’onka twitza ti’j RR .",
+  "wrongQr": "Aju’ b’ajsb’il QR. B’a’n tu’n tkub’ qka’yin jun.",
+  "shakePhone": "¡Qʼonka twitza tiʼj!",
+  "shakesCount": "Shares: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "¡Tap!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Descargas descarga .",
+  "fileSaved": "Archivo q’i’n toj 0_",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Il tiʼj tuʼn tten ambʼil tuʼn t-xi qʼet Código QR .",
+  "vibration": "Vidanización",
+  "fadeIn": "Bʼet-ximaj",
+  "alarmScreen": "Alarma",
+  "defaultOption": "Estzen tu´n",
+  "mathChallenge": "Matemáticas",
+  "shakeToStop": "Q’onka twitza",
+  "tapChallenge": "Tap tb’anil",
+  "qrCodeScan": "QR Co S S Sab .",
+  "alarmSound": "tx'olb'ab'il",
+  "addSound": "q´onxa",
+  "clearCustomSounds": "Aju qʼij te qʼijbʼil",
+  "format24h": "24-hora Forma",
+  "snoozeLabel": "Snooze: n",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "T-xilen: {a} {symbol} {b}",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Número .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Siky'il",
+  "monday": "Xjaw",
+  "tuesday": "kaq´ij",
+  "wednesday": "ixq'ij",
+  "thursday": "kyaq'ij",
+  "friday": "Joq'ij",
+  "saturday": "qaq´ij",
+  "sunday": "Domindo"
+}

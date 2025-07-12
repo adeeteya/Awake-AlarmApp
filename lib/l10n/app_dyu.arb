@@ -1,0 +1,110 @@
+{
+  "@@locale": "dyu",
+  "appTitle": "Lafiɲɛ- Alarm yɔrɔ",
+  "addAlarm": "Alarmu fara a kan",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Alarmu si ma fara a kan tugun",
+  "alarms": "Alarmu",
+  "settings": "Paramɛtiri",
+  "back": "Kɔfɛ",
+  "delete": "Ka jɔsi",
+  "deleteAlarm": "Alarmu halaki",
+  "deleteAlarmPrompt": "Yala i lanin b’a la ko i b’a fɛ k’o alarm jɔsi wa?",
+  "cancel": "weleku",
+  "titleLabel": "Tɔgɔ",
+  "wrongAnswer": "Jaabi",
+  "alarmSnoozed": "Alarm tun be sɔgɔ {minutes} miniti .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR sariya sɛgɛsɛgɛ .",
+  "wrongQr": "QR sariya. Aw k’a filɛ min ka ɲi.",
+  "shakePhone": "Aw ye telefɔni yuguyugu!",
+  "shakesCount": "A yɔrɔw: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "I bolo digi ekran kan!",
+  "tapsCount": "Talenw: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR Code telesarse",
+  "fileSaved": "Filɛri maranin be {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera ka yamaruya ka kan ka sɔrɔ QR Code Scan kama .",
+  "vibration": "Vibɛrɛ",
+  "fadeIn": "Dɔɔni dɔɔni kɔnɔ, saan 2019’ kɔnɔ.",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "Fili",
+  "mathChallenge": "Jatikalanko",
+  "shakeToStop": "A lalɔ",
+  "tapChallenge": "Tagamasiɲɛ",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm mankan",
+  "addSound": "Mankanw fara a kan",
+  "clearCustomSounds": "Custom sounds .",
+  "format24h": "24-Lɛri .",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "A ɲɛfɔ: {a} {symbol} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Jateden {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ka jɔsi",
+  "monday": "Tɛnɛ",
+  "tuesday": "Tarata",
+  "wednesday": "arabalon",
+  "thursday": "alamisa",
+  "friday": "Juma",
+  "saturday": "Sibirilon",
+  "sunday": "Dimansilon"
+}

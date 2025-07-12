@@ -1,0 +1,110 @@
+{
+  "@@locale": "et",
+  "appTitle": "Ärkvel- äratuskell",
+  "addAlarm": "Lisa häire",
+  "editAlarm": "Redigeeri häiret",
+  "noAlarms": "Alarme pole veel lisatud",
+  "alarms": "Alarmid",
+  "settings": "Sätted",
+  "back": "Tagurpidi",
+  "delete": "Kustutama",
+  "deleteAlarm": "Kustuta häire",
+  "deleteAlarmPrompt": "Kas olete kindel, et soovite selle häire kustutada?",
+  "cancel": "Tühistama",
+  "titleLabel": "Tiitel",
+  "wrongAnswer": "Vale vastus",
+  "alarmSnoozed": "Alarm snozed {minutes} minutiks",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skaneerige QR -kood",
+  "wrongQr": "Vale QR -kood. Palun skannige õige.",
+  "shakePhone": "Raputage telefoni!",
+  "shakesCount": "Raputused: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Puudutage ekraani!",
+  "tapsCount": "Kraanid: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Laadige alla QR -kood",
+  "fileSaved": "Fail salvestatud {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kaamera luba on vaja QR -koodi skaneerimiseks",
+  "vibration": "Vibratsioon",
+  "fadeIn": "Järkjärguline tuhmumine",
+  "alarmScreen": "Häireekraan",
+  "defaultOption": "Täitmata jätmine",
+  "mathChallenge": "Matemaatika väljakutse",
+  "shakeToStop": "Raputage peatumiseks",
+  "tapChallenge": "TAP -KISSUS",
+  "qrCodeScan": "QR -koodi skaneerimine",
+  "alarmSound": "Häireheli",
+  "addSound": "Lisage heli",
+  "clearCustomSounds": "Selged kohandatud helid",
+  "format24h": "24-tunnine formaat",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Lahendage: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Number {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Kustutama",
+  "monday": "Esmaspäev",
+  "tuesday": "Teisipäev",
+  "wednesday": "Kolmapäev",
+  "thursday": "Neljapäev",
+  "friday": "Reede",
+  "saturday": "Laupäev",
+  "sunday": "Pühapäev"
+}

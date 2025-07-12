@@ -1,0 +1,110 @@
+{
+  "@@locale": "kek",
+  "appTitle": "Xwaklijik- Li Reloj li Alarma .",
+  "addAlarm": "Taak'e li Alarma",
+  "editAlarm": "Alarma Edit",
+  "noAlarms": "Maak’a’ li Alarmas K’eeb’il re A’an, a’an .",
+  "alarms": "Ebʼ li alés",
+  "settings": "Xwotzb’al",
+  "back": "Chirix",
+  "delete": "Risinkil",
+  "deleteAlarm": "Xsachbal li Alarm",
+  "deleteAlarmPrompt": "Ma chʼolchʼo chaawu xsachbʼal li alarma aʼin?",
+  "cancel": "Inka chik",
+  "titleLabel": "Kabail",
+  "wrongAnswer": "xsumenkil chi chaab’il",
+  "alarmSnoozed": "Li alarma ki’ok chi q’unb’esiik chiru {minutes} k’asal .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Xk’eeb’al li chaq’rab’ QR .",
+  "wrongQr": "Xk’uub’ankil li QR Code. B’aanu usilal, b’aanu li tz’aqal.",
+  "shakePhone": "Xb’onb’al li teléfono!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tat-ok sa’ li pantalla!",
+  "tapsCount": "Eb’ li b’atz’unk: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Xkub’sinkil li chaq’rab’ QR .",
+  "fileSaved": "Archivo kolb’il re {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Li permiso re li cámara na’ajman ru choq’ re li QR Code Scan .",
+  "vibration": "Vibración",
+  "fadeIn": "Li q’axal chaab’il sa’ li .",
+  "alarmScreen": "Xk’ab’a’ li Alarma",
+  "defaultOption": "Xbanaq",
+  "mathChallenge": "Challenge re li Matemática",
+  "shakeToStop": "Xb’oqb’al",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Xyaab’ kuxej li Alarma",
+  "addSound": "Xkomon",
+  "clearCustomSounds": "Ch’olch’o ru li k’uub’anb’il na’leb’ .",
+  "format24h": "24-Xk’ulub’il li wa’ak .",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Xtuqub’ankil ru: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numero {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Risinkil",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Miércoles",
+  "thursday": "Jueves",
+  "friday": "Viernes",
+  "saturday": "Sábado",
+  "sunday": "Domingo"
+}

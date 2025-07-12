@@ -1,0 +1,110 @@
+{
+  "@@locale": "ga",
+  "appTitle": "Awake- an clog aláraim",
+  "addAlarm": "Aláram a chur leis",
+  "editAlarm": "Aláram a chur in eagar",
+  "noAlarms": "Níor cuireadh aon aláraim curtha leis go fóill",
+  "alarms": "Aláraim",
+  "settings": "Suíomhanna",
+  "back": "Tacaigh le",
+  "delete": "Scrios amach",
+  "deleteAlarm": "Aláram a scriosadh",
+  "deleteAlarmPrompt": "An bhfuil tú cinnte gur mhaith leat an t -aláram seo a scriosadh?",
+  "cancel": "Cealaigh",
+  "titleLabel": "Ceart",
+  "wrongAnswer": "Freagra mícheart",
+  "alarmSnoozed": "Aláram snoozed le haghaidh {minutes} nóiméad",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan an cód QR",
+  "wrongQr": "Cód QR mícheart. Scan an ceann ceart le do thoil.",
+  "shakePhone": "Croith an fón!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Beartaíonn ar an scáileán!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Íoslódáil cód QR",
+  "fileSaved": "Comhad a shábháil go {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Teastaíonn cead ceamara le haghaidh scanadh cód QR",
+  "vibration": "Fírinne",
+  "fadeIn": "Céimnithe de réir a chéile i",
+  "alarmScreen": "Scáileán aláraim",
+  "defaultOption": "Mainneachtain",
+  "mathChallenge": "Dúshlán mata",
+  "shakeToStop": "Croith chun stopadh",
+  "tapChallenge": "Beartaíonn Dúshlán",
+  "qrCodeScan": "Scanadh cód QR",
+  "alarmSound": "Fuaim an aláraim",
+  "addSound": "Cuir fuaim leis",
+  "clearCustomSounds": "Fuaimeanna saincheaptha soiléire",
+  "format24h": "Formáid 24 uair an chloig",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Réitigh: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Uimhir {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Scrios amach",
+  "monday": "An Luan",
+  "tuesday": "Dé Máirt",
+  "wednesday": "An Chéadaoin",
+  "thursday": "Déardaoin",
+  "friday": "An Aoine",
+  "saturday": "An Satharn",
+  "sunday": "An Domhnach"
+}

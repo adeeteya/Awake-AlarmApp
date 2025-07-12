@@ -1,0 +1,110 @@
+{
+  "@@locale": "ps",
+  "appTitle": "بیداریدل - د الارم ساعت",
+  "addAlarm": "الارم اضافه کړئ",
+  "editAlarm": "الارم",
+  "noAlarms": "هیڅ عقلت نه دی",
+  "alarms": "الارمونه",
+  "settings": "امستنې",
+  "back": "شاته",
+  "delete": "حذف کول",
+  "deleteAlarm": "الارم حذف کړئ",
+  "deleteAlarmPrompt": "ایا ته باوري یې چې دا الارم ړنګول غواړې؟",
+  "cancel": "لغوه کول",
+  "titleLabel": "سرلیک",
+  "wrongAnswer": "غلط ځواب",
+  "alarmSnoozed": "الارم د {minutes} دقیقو لپاره سنوز شوی",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "د QR کوډ سکین کړئ",
+  "wrongQr": "د QR غلط کوډ. مهرباني وکړئ یو سم سکین کړئ.",
+  "shakePhone": "تلیفون ووهئ!",
+  "shakesCount": "شیکونه: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "پرده وکړئ!",
+  "tapsCount": "نلونه: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "دانلود Qr کوډ",
+  "fileSaved": "دوتنه {path} ته خوندي شوه",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "د QR کوډ سکین لپاره د کیمرې اجازه ته اړتیا ده",
+  "vibration": "کمپن",
+  "fadeIn": "په تدریجي فیډ کې",
+  "alarmScreen": "د الارم پرده",
+  "defaultOption": "ډیفالټ",
+  "mathChallenge": "د ریاض ننګونه",
+  "shakeToStop": "بندول",
+  "tapChallenge": "د ننګونې ننګونې",
+  "qrCodeScan": "د QR کوډ سکین",
+  "alarmSound": "د الارم غږ",
+  "addSound": "غږ اضافه کړئ",
+  "clearCustomSounds": "د ګمرک غږونه پاک کړئ",
+  "format24h": "د 24 ساعتونو ب format ه",
+  "snoozeLabel": "سنوز: {minutes} دقیقې",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "حل کړئ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "نمبر {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "حذف کول",
+  "monday": "دوشنبه",
+  "tuesday": "سه شنبه",
+  "wednesday": "چهارشنبه",
+  "thursday": "پنجشنبه",
+  "friday": "جمعه",
+  "saturday": "شنبه",
+  "sunday": "یک شنبه"
+}

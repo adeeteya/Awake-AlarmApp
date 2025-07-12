@@ -1,0 +1,110 @@
+{
+  "@@locale": "th",
+  "appTitle": "ตื่น- นาฬิกาปลุก",
+  "addAlarm": "เพิ่มสัญญาณเตือนภัย",
+  "editAlarm": "แก้ไขสัญญาณเตือนภัย",
+  "noAlarms": "ยังไม่มีการเพิ่มสัญญาณเตือน",
+  "alarms": "สัญญาณเตือนภัย",
+  "settings": "การตั้งค่า",
+  "back": "กลับ",
+  "delete": "ลบ",
+  "deleteAlarm": "ลบสัญญาณเตือน",
+  "deleteAlarmPrompt": "แน่ใจหรือว่าต้องการลบสัญญาณเตือนนี้?",
+  "cancel": "ยกเลิก",
+  "titleLabel": "ชื่อ",
+  "wrongAnswer": "คำตอบที่ผิด",
+  "alarmSnoozed": "การเตือนภัยจะงีบหลับเป็นเวลา {minutes} นาที",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "สแกนรหัส QR",
+  "wrongQr": "รหัส QR ผิด กรุณาสแกนที่ถูกต้อง",
+  "shakePhone": "เขย่าโทรศัพท์!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "แตะหน้าจอ!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "ดาวน์โหลดรหัส QR",
+  "fileSaved": "ไฟล์บันทึกเป็น {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "จำเป็นต้องได้รับอนุญาตจากกล้องสำหรับการสแกนรหัส QR",
+  "vibration": "การสั่นสะเทือน",
+  "fadeIn": "ค่อยๆจางหายไป",
+  "alarmScreen": "หน้าจอเตือนภัย",
+  "defaultOption": "ค่าเริ่มต้น",
+  "mathChallenge": "ความท้าทายทางคณิตศาสตร์",
+  "shakeToStop": "เขย่าเพื่อหยุด",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "การสแกนรหัส QR",
+  "alarmSound": "เสียงปลุก",
+  "addSound": "เพิ่มเสียง",
+  "clearCustomSounds": "ชัดเจนเสียงที่กำหนดเอง",
+  "format24h": "รูปแบบ 24 ชั่วโมง",
+  "snoozeLabel": "การงีบหลับ: {minutes} ขั้นต่ำ",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "แก้ปัญหา: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "หมายเลข {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "ลบ",
+  "monday": "วันจันทร์",
+  "tuesday": "วันอังคาร",
+  "wednesday": "วันพุธ",
+  "thursday": "วันพฤหัสบดี",
+  "friday": "วันศุกร์",
+  "saturday": "วันเสาร์",
+  "sunday": "วันอาทิตย์"
+}

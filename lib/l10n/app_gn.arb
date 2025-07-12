@@ -1,0 +1,110 @@
+{
+  "@@locale": "gn",
+  "appTitle": "Despierta- pe despertador .",
+  "addAlarm": "Oñemoĩve alarma .",
+  "editAlarm": "Omohenda alarma .",
+  "noAlarms": "No hay alarmas añadido aún .",
+  "alarms": "Alarmas rehegua .",
+  "settings": "Ñe’ẽñemi .",
+  "back": "Kupe",
+  "delete": "Mboje'oha",
+  "deleteAlarm": "Ombogue alarma .",
+  "deleteAlarmPrompt": "¿Reime seguro rembogueseha ko alarma?",
+  "cancel": "Heja",
+  "titleLabel": "Myakãha",
+  "wrongAnswer": "Mbohovái vai .",
+  "alarmSnoozed": "Alarma Snoozed {minutes} minutos .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Escanear el código QR rehegua .",
+  "wrongQr": "Código QR Equivocado rehegua. Por favor, eescána pe oĩ porãva.",
+  "shakePhone": "¡Emboveve pe teléfono!",
+  "shakesCount": "Oñemboty: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "¡Epoko pe pantalla rehe!",
+  "tapsCount": "Taps: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Descargar Código QR rehegua .",
+  "fileSaved": "archivo oñeñongatu {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Oñeikotevẽ cámara permiso kódigo QR escaneo-pe g̃uarã .",
+  "vibration": "Vibración rehegua .",
+  "fadeIn": "desvanecimiento gradual ary 1999-pe.",
+  "alarmScreen": "Pantalla de alarma rehegua .",
+  "defaultOption": "Upevakuére",
+  "mathChallenge": "Desafío de Matemáticas rehegua .",
+  "shakeToStop": "Oñemboveve haguã ojejoko haguã .",
+  "tapChallenge": "Tap Desafío rehegua .",
+  "qrCodeScan": "Escaneo de código QR rehegua .",
+  "alarmSound": "Alarma Ñe’ẽpu .",
+  "addSound": "Oñemoĩve tyapu .",
+  "clearCustomSounds": "Umi tyapu jepokuaa hesakãva .",
+  "format24h": "formato 24 aravo .",
+  "snoozeLabel": "Snooze: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solución: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Papapy {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Mboje'oha",
+  "monday": "Arakõi",
+  "tuesday": "araapy",
+  "wednesday": "ararundy",
+  "thursday": "arapo",
+  "friday": "Arapoteĩ",
+  "saturday": "arapokõi",
+  "sunday": "Arateĩ"
+}

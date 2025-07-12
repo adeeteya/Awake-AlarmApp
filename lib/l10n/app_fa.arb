@@ -1,0 +1,110 @@
+{
+  "@@locale": "fa",
+  "appTitle": "بیدار- ساعت زنگ دار",
+  "addAlarm": "هشدار اضافه کنید",
+  "editAlarm": "هشدار ویرایش",
+  "noAlarms": "هنوز هشدار اضافه نشده است",
+  "alarms": "هشدارها",
+  "settings": "تنظیمات",
+  "back": "پشت",
+  "delete": "حذف کردن",
+  "deleteAlarm": "هشدار را حذف کنید",
+  "deleteAlarmPrompt": "آیا مطمئن هستید که می خواهید این زنگ را حذف کنید؟",
+  "cancel": "لغو کردن",
+  "titleLabel": "عنوان",
+  "wrongAnswer": "جواب اشتباه",
+  "alarmSnoozed": "زنگ خطر برای {minutes} دقیقه",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "کد QR را اسکن کنید",
+  "wrongQr": "کد QR اشتباه است. لطفاً صحیح را اسکن کنید.",
+  "shakePhone": "تلفن را تکان دهید!",
+  "shakesCount": "لرزش: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "روی صفحه ضربه بزنید!",
+  "tapsCount": "شیر آب: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "بارگیری کد QR",
+  "fileSaved": "پرونده ذخیره شده در {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "مجوز دوربین برای اسکن کد QR لازم است",
+  "vibration": "ارتعاش",
+  "fadeIn": "تدریجی محو شدن در",
+  "alarmScreen": "صفحه نمایش زنگ دار",
+  "defaultOption": "پیش فرض",
+  "mathChallenge": "چالش ریاضی",
+  "shakeToStop": "لرزش برای متوقف کردن",
+  "tapChallenge": "روی چالش ضربه بزنید",
+  "qrCodeScan": "اسکن کد QR",
+  "alarmSound": "صدای زنگ خطر",
+  "addSound": "صدا را اضافه کنید",
+  "clearCustomSounds": "صداهای سفارشی را پاک کنید",
+  "format24h": "قالب 24 ساعته",
+  "snoozeLabel": "چرت زدن: {minutes} دقیقه",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "حل: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "شماره {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "حذف کردن",
+  "monday": "دوشنبه",
+  "tuesday": "سه شنبه",
+  "wednesday": "چهارشنبه",
+  "thursday": "پنجشنبه",
+  "friday": "جمعه",
+  "saturday": "شنبه",
+  "sunday": "یکشنبه"
+}

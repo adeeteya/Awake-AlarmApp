@@ -1,0 +1,110 @@
+{
+  "@@locale": "te",
+  "appTitle": "మేల్కొని- అలారం గడియారం",
+  "addAlarm": "అలారం జోడించండి",
+  "editAlarm": "అలారం సవరించండి",
+  "noAlarms": "ఇంకా అలారాలు జోడించబడలేదు",
+  "alarms": "అలారాలు",
+  "settings": "సెట్టింగులు",
+  "back": "తిరిగి",
+  "delete": "తొలగించు",
+  "deleteAlarm": "అలారం తొలగించండి",
+  "deleteAlarmPrompt": "మీరు ఖచ్చితంగా ఈ అలారం తొలగించాలనుకుంటున్నారా?",
+  "cancel": "రద్దు చేయండి",
+  "titleLabel": "శీర్షిక",
+  "wrongAnswer": "తప్పు సమాధానం",
+  "alarmSnoozed": "అలారం {minutes} నిమిషాలు తాత్కాలికంగా ఉపయోగించింది",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR కోడ్‌ను స్కాన్ చేయండి",
+  "wrongQr": "తప్పు QR కోడ్. దయచేసి సరైనదాన్ని స్కాన్ చేయండి.",
+  "shakePhone": "ఫోన్‌ను కదిలించండి!",
+  "shakesCount": "షేక్స్: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "స్క్రీన్‌ను నొక్కండి!",
+  "tapsCount": "ట్యాప్స్: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR కోడ్‌ను డౌన్‌లోడ్ చేయండి",
+  "fileSaved": "ఫైల్ {path} కు సేవ్ చేయబడింది",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR కోడ్ స్కాన్ కోసం కెమెరా అనుమతి అవసరం",
+  "vibration": "వైబ్రేషన్",
+  "fadeIn": "క్రమంగా ఫేడ్ ఇన్",
+  "alarmScreen": "అలారం స్క్రీన్",
+  "defaultOption": "డిఫాల్ట్",
+  "mathChallenge": "గణిత ఛాలెంజ్",
+  "shakeToStop": "ఆపడానికి కదిలించండి",
+  "tapChallenge": "ఛాలెంజ్ నొక్కండి",
+  "qrCodeScan": "QR కోడ్ స్కాన్",
+  "alarmSound": "అలారం ధ్వని",
+  "addSound": "ధ్వనిని జోడించండి",
+  "clearCustomSounds": "కస్టమ్ శబ్దాలను క్లియర్ చేయండి",
+  "format24h": "24 గంటల ఆకృతి",
+  "snoozeLabel": "తాత్కాలికంగా ఆపివేయండి: {minutes} నిమి",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "పరిష్కరించండి: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "సంఖ్య {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "తొలగించు",
+  "monday": "సోమవారం",
+  "tuesday": "మంగళవారం",
+  "wednesday": "బుధవారం",
+  "thursday": "గురువారం",
+  "friday": "శుక్రవారం",
+  "saturday": "శనివారం",
+  "sunday": "ఆదివారం"
+}

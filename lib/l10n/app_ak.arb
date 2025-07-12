@@ -1,0 +1,110 @@
+{
+  "@@locale": "ak",
+  "appTitle": "Awake- Alarm dɔn no .",
+  "addAlarm": "Fa alarm ka ho .",
+  "editAlarm": "Sesa alarm .",
+  "noAlarms": "Alarm biara nni hɔ a wɔde aka ho de besi nnɛ .",
+  "alarms": "Alarm ahorow .",
+  "settings": "Nsiesiei .",
+  "back": "Akyire",
+  "delete": "Pepa",
+  "deleteAlarm": "Popa Alarm .",
+  "deleteAlarmPrompt": "Wopɛ sɛ wopopa saa alarm yi?",
+  "cancel": "Twam",
+  "titleLabel": "Atiti asɛm",
+  "wrongAnswer": "Mmuae a ɛnteɛ .",
+  "alarmSnoozed": "Alarm snoozed simma {minutes} .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan QR code no .",
+  "wrongQr": "QR koodu a ɛnteɛ. Yɛsrɛ sɛ scan nea ɛteɛ no.",
+  "shakePhone": "Wosow fon no!",
+  "shakesCount": "Nnua a wɔwosow no: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Kɔ screen no so!",
+  "tapsCount": "Taps: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Twe QR koodu no bi .",
+  "fileSaved": "Fael a wɔde asie no {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Camera ho kwan ho hia ma QR code scan .",
+  "vibration": "wosow .",
+  "fadeIn": "nkakrankakra fade wɔ .",
+  "alarmScreen": "Alarm screen .",
+  "defaultOption": "Mfiaseɛ",
+  "mathChallenge": "Nkontaabu mu Nsɛnnennen .",
+  "shakeToStop": "Wosow na woagyae .",
+  "tapChallenge": "Kɔ Challenge so .",
+  "qrCodeScan": "QR koodu scan .",
+  "alarmSound": "Alarm nnyigyei .",
+  "addSound": "Fa nnyigyei ka ho .",
+  "clearCustomSounds": "Nnyigyei a ɛyɛ amanne a emu da hɔ .",
+  "format24h": "Nnɔnhwerew 24 nhyehyɛe .",
+  "snoozeLabel": "Snooze: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nnɔmba {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Pepa",
+  "monday": "Dwoada",
+  "tuesday": "Benada",
+  "wednesday": "Wukuada",
+  "thursday": "Yawoada",
+  "friday": "Fiada",
+  "saturday": "Memeneda",
+  "sunday": "Kwasiada"
+}

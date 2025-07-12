@@ -1,0 +1,110 @@
+{
+  "@@locale": "gaa",
+  "appTitle": "Awake- Alarm Clock lɛ",
+  "addAlarm": "Kɛ fata he",
+  "editAlarm": "Tsakemɔ Alarm",
+  "noAlarms": "Alarmbii komɛi fataaa he.",
+  "alarms": "dó",
+  "settings": "gbɛjianɔtoi",
+  "back": "Sɛɛ",
+  "delete": "Foomli",
+  "deleteAlarm": "Jiemɔ Alarm",
+  "deleteAlarmPrompt": "Ani oyɛ nɔmimaa akɛ oosumɔ ni ojie alarm nɛɛ?",
+  "cancel": "foo mli",
+  "titleLabel": "Yitso",
+  "wrongAnswer": "Hetoo ni ejaaa",
+  "alarmSnoozed": "Akɛ {minutes} minitii",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skan QR mla lɛ",
+  "wrongQr": "QR Kod ni ejaaa. Ofainɛ kwɛmɔ nɔ ni ja lɛ.",
+  "shakePhone": "Gbalamɔ tɛlifoŋ lɛ!",
+  "shakesCount": "Nɔ ni ejaaa: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Nyɛɛ skrin lɛ nɔ!",
+  "tapsCount": "Nyiɛmɔi: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Gbalamɔ QR Kode",
+  "fileSaved": "Fail ni akɛto {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera hegbɛ he miihia kɛha QR Code Scan",
+  "vibration": "Saramɔ",
+  "fadeIn": "Nɔ ni yɔɔ naakpɛɛ yɛ",
+  "alarmScreen": "Alamɔ Skrin",
+  "defaultOption": "Difɔɔt",
+  "mathChallenge": "Akuntaabuu Kaŋ.",
+  "shakeToStop": "Shake ni okpa",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR Kodɛ",
+  "alarmSound": "Alarm gbɛɛmɔ",
+  "addSound": "Kɛɛmɔ",
+  "clearCustomSounds": "Gbɛɛmɔi ni mli tse",
+  "format24h": "ŋmɛlɛtswai 24 gbɛjianɔtoo",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Tsumɔ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Yibɔi {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Foomli",
+  "monday": "Ju",
+  "tuesday": "Jufɔ",
+  "wednesday": "shɔɔ",
+  "thursday": "soo",
+  "friday": "Sohaa",
+  "saturday": "hɔɔ",
+  "sunday": "Hɔgbaa"
+}

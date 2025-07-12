@@ -1,0 +1,110 @@
+{
+  "@@locale": "war",
+  "appTitle": "Pagmata- An Alarm nga Oras .",
+  "addAlarm": "Dugangi hin Alarm",
+  "editAlarm": "I-edit Alarm .",
+  "noAlarms": "Waray Alarm nga Gindugangan Bisan .",
+  "alarms": "Mga alarma",
+  "settings": "Mga setting",
+  "back": "Balik",
+  "delete": "Pagpara",
+  "deleteAlarm": "Pagpara han Alarm .",
+  "deleteAlarmPrompt": "Sigurado ka ba nga karuyag mo bayaan ini nga alarma?",
+  "cancel": "Pagkansela",
+  "titleLabel": "Titulo",
+  "wrongAnswer": "Sayop",
+  "alarmSnoozed": "Nag-snooze hi Alarm hin {minutes} minutos .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "I-scan an QR Code .",
+  "wrongQr": "Sayop nga QR Code. Alayon pag-scan an tama.",
+  "shakePhone": "Pag-uyog han telepono!",
+  "shakesCount": "Mga Pag-uyog: {count} {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "I-tap an iskrin!",
+  "tapsCount": "Mga Tap: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Code .",
+  "fileSaved": "File nga naluwas ha {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kinahanglan an pagtugot han kamera para han QR Code Scan .",
+  "vibration": "pag-uyog",
+  "fadeIn": "Hinay-hinay nga Fade Ha .",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "Kawaray",
+  "mathChallenge": "Ayat han Matematika",
+  "shakeToStop": "Pag-uyog ha Pag-uyog",
+  "tapChallenge": "I-tap an Ayat .",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm nga Tunog",
+  "addSound": "Dugangi",
+  "clearCustomSounds": "Malimpyo nga Pasadya nga Tunog .",
+  "format24h": "24-Oras ngaaw .",
+  "snoozeLabel": "Snoose: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Ihap {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Pagpara",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Miyerkules",
+  "thursday": "Huwebes",
+  "friday": "Biyernes",
+  "saturday": "Sabado",
+  "sunday": "Domingo"
+}

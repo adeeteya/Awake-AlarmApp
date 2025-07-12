@@ -1,0 +1,110 @@
+{
+  "@@locale": "ace",
+  "appTitle": "Jam Jam Alarm .",
+  "addAlarm": "Alamat Alam Alama",
+  "editAlarm": "Alarm Edit",
+  "noAlarms": "Hana Alarm Ditamah lom .",
+  "alarms": "Alarm",
+  "settings": "Pengaturan",
+  "back": "Balek",
+  "delete": "Peugadeuh",
+  "deleteAlarm": "Alarma Hapus .",
+  "deleteAlarmPrompt": "Peu keuh droeneuh yakin droeneuh neuk peusampôh alarm nyoe?",
+  "cancel": "batai",
+  "titleLabel": "Judui",
+  "wrongAnswer": "Jawab",
+  "alarmSnoozed": "Alarm nyan ji snoozed seulama {minutes} minet .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan Kode QR .",
+  "wrongQr": "Salah QR Kode. Neu scan nyang beutoi.",
+  "shakePhone": "Hireun hp nyan!",
+  "shakesCount": "Shakes: {count} / {required}.",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap layeue!",
+  "tapsCount": "Tap: {count} / {required}.",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Kode QR .",
+  "fileSaved": "File disimpan jeut keu {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Izin kamera dipeureulee keu Kode QR Scan .",
+  "vibration": "Geumpa",
+  "fadeIn": "Fade Takkuit Dalam 2019 .",
+  "alarmScreen": "Layeue Alarm",
+  "defaultOption": "Lagena",
+  "mathChallenge": "Tantangan Matematika",
+  "shakeToStop": "Beudoh keu Stop",
+  "tapChallenge": "Tap Tantang",
+  "qrCodeScan": "KUHP QR Scan .",
+  "alarmSound": "Bunyi Alarm",
+  "addSound": "Tambah Bunyi",
+  "clearCustomSounds": "Bunyi Cukai Jeulaih .",
+  "format24h": "24-Jumoh Format .",
+  "snoozeLabel": "Sooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Peumikiran: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomor {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Peugadeuh",
+  "monday": "Seulanyan",
+  "tuesday": "seulasa",
+  "wednesday": "rabu",
+  "thursday": "hameh",
+  "friday": "Jumuat",
+  "saturday": "sabtu",
+  "sunday": "Binggu"
+}

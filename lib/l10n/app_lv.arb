@@ -1,0 +1,110 @@
+{
+  "@@locale": "lv",
+  "appTitle": "Nomodā- modinātājs",
+  "addAlarm": "Pievienot trauksmi",
+  "editAlarm": "Rediģēt trauksmi",
+  "noAlarms": "Pagaidām nav pievienoti trauksmes",
+  "alarms": "Trauksmes",
+  "settings": "Iestatījumi",
+  "back": "Aizmugure",
+  "delete": "Dzēst",
+  "deleteAlarm": "Dzēst trauksmi",
+  "deleteAlarmPrompt": "Vai esat pārliecināts, ka vēlaties izdzēst šo trauksmi?",
+  "cancel": "Atcelt",
+  "titleLabel": "Tituls",
+  "wrongAnswer": "Nepareiza atbilde",
+  "alarmSnoozed": "Trauksme snoozēja {minutes} minūtes",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skenējiet QR kodu",
+  "wrongQr": "Nepareizs QR kods. Lūdzu, skenējiet pareizo.",
+  "shakePhone": "Kratiet tālruni!",
+  "shakesCount": "Satricinājumi: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Pieskarieties ekrānam!",
+  "tapsCount": "Piesprādzēti: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Lejupielādējiet QR kodu",
+  "fileSaved": "Fails, kas saglabāts uz {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kameras atļauja ir nepieciešama QR koda skenēšanai",
+  "vibration": "Vibrācija",
+  "fadeIn": "Pakāpeniski izbalināt",
+  "alarmScreen": "Trauksmes ekrāns",
+  "defaultOption": "Nepildīt",
+  "mathChallenge": "Matemātikas izaicinājums",
+  "shakeToStop": "Kratīt, lai apstātos",
+  "tapChallenge": "Krāna izaicinājums",
+  "qrCodeScan": "QR koda skenēšana",
+  "alarmSound": "Trauksmes skaņa",
+  "addSound": "Pievienot skaņu",
+  "clearCustomSounds": "Skaidras pielāgotas skaņas",
+  "format24h": "24 stundu formāts",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Atrisināt: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numurs {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Dzēst",
+  "monday": "Pirmdiena",
+  "tuesday": "Otrdiena",
+  "wednesday": "Trešdiena",
+  "thursday": "Ceturtdiena",
+  "friday": "Piektdiena",
+  "saturday": "Sestdiena",
+  "sunday": "Svētdiena"
+}

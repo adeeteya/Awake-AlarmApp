@@ -1,0 +1,110 @@
+{
+  "@@locale": "sm",
+  "appTitle": "Alafua- le uati",
+  "addAlarm": "Faaopopo atuatuvale",
+  "editAlarm": "EDIT alarm",
+  "noAlarms": "Leai ni moli faaopoopo",
+  "alarms": "Artor",
+  "settings": "Tulaga",
+  "back": "I tua",
+  "delete": "Tape",
+  "deleteAlarm": "Aveese le popole",
+  "deleteAlarmPrompt": "O e mautinoa e te manaʻo e tape lenei faʻaituau?",
+  "cancel": "Faaleaogaina",
+  "titleLabel": "Ulutala",
+  "wrongAnswer": "Tali sese",
+  "alarmSnoozed": "Alarm snoozed mo {minutes} minute",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Faitau vave le QR code",
+  "wrongQr": "Sese QR code. Faʻamolemole faʻaaoga le saʻo.",
+  "shakePhone": "Lulu le telefoni!",
+  "shakesCount": "Lulu: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Maua le mata!",
+  "tapsCount": "Tap: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Sii mai QR Code",
+  "fileSaved": "Faila na sefeina i {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "O le mea pueata faʻatagaina e manaʻomia mo QR code Scan",
+  "vibration": "Gauaʻi",
+  "fadeIn": "Faasolosolo malie",
+  "alarmScreen": "Alarm screen",
+  "defaultOption": "Lē oʻo mai",
+  "mathChallenge": "Math Challenge",
+  "shakeToStop": "Lulu e taofi",
+  "tapChallenge": "Tap luitau",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Atuatuvale leo",
+  "addSound": "Faaopopo leo",
+  "clearCustomSounds": "Manino leo leo",
+  "format24h": "24-itula faatulagaga",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Fofo: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numera {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Tape",
+  "monday": "Aso Gafua",
+  "tuesday": "Aso Lua",
+  "wednesday": "Aso Lulu",
+  "thursday": "Aso Tofi",
+  "friday": "Aso Faralie",
+  "saturday": "Aso Tona'i",
+  "sunday": "Aso Sa"
+}

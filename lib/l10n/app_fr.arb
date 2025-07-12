@@ -1,0 +1,110 @@
+{
+  "@@locale": "fr",
+  "appTitle": "Awake - le réveil",
+  "addAlarm": "Ajouter une alarme",
+  "editAlarm": "Modifier l'alarme",
+  "noAlarms": "Aucune alarme ajoutée encore",
+  "alarms": "Alarmes",
+  "settings": "Paramètres",
+  "back": "Dos",
+  "delete": "Supprimer",
+  "deleteAlarm": "Supprimer l'alarme",
+  "deleteAlarmPrompt": "Êtes-vous sûr de vouloir supprimer cette alarme?",
+  "cancel": "Annuler",
+  "titleLabel": "Titre",
+  "wrongAnswer": "Mauvaise réponse",
+  "alarmSnoozed": "Alarme somancé pendant {minutes} minutes",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scanner le code QR",
+  "wrongQr": "Mauvais code QR. Veuillez analyser le bon.",
+  "shakePhone": "Secouez le téléphone!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Appuyez sur l'écran!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Télécharger le code QR",
+  "fileSaved": "Fichier enregistré sur {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "L'autorisation de la caméra est requise pour la numérisation du code QR",
+  "vibration": "Vibration",
+  "fadeIn": "Fondu graduel dans",
+  "alarmScreen": "Écran d'alarme",
+  "defaultOption": "Défaut",
+  "mathChallenge": "Défi mathématique",
+  "shakeToStop": "Secouer pour s'arrêter",
+  "tapChallenge": "Défi du robinet",
+  "qrCodeScan": "Analyse du code QR",
+  "alarmSound": "Son d'alarme",
+  "addSound": "Ajouter un son",
+  "clearCustomSounds": "Clear Custom Sons",
+  "format24h": "Format 24 heures",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nombre {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Supprimer",
+  "monday": "Lundi",
+  "tuesday": "Mardi",
+  "wednesday": "Mercredi",
+  "thursday": "Jeudi",
+  "friday": "Vendredi",
+  "saturday": "Samedi",
+  "sunday": "Dimanche"
+}

@@ -1,0 +1,110 @@
+{
+  "@@locale": "is",
+  "appTitle": "Vaknið- Vekjaraklukkan",
+  "addAlarm": "Bættu við vekjaranum",
+  "editAlarm": "Breyta viðvörun",
+  "noAlarms": "Engar viðvaranir bætt við ennþá",
+  "alarms": "Viðvaranir",
+  "settings": "Stillingar",
+  "back": "Aftur",
+  "delete": "Eyða",
+  "deleteAlarm": "Eyða viðvörun",
+  "deleteAlarmPrompt": "Ertu viss um að þú viljir eyða þessum viðvörun?",
+  "cancel": "Hætta við",
+  "titleLabel": "Titill",
+  "wrongAnswer": "Rangt svar",
+  "alarmSnoozed": "Vekjaraklukka blundaði í {minutes} mínútur",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skannaðu QR kóðann",
+  "wrongQr": "Rangur QR kóða. Vinsamlegast skannaðu réttan.",
+  "shakePhone": "Hristu símann!",
+  "shakesCount": "Hristing: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Pikkaðu á skjáinn!",
+  "tapsCount": "Kranar: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Sæktu QR kóða",
+  "fileSaved": "Skrá vistað í {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Leyfi myndavélar er krafist fyrir QR kóða skönnun",
+  "vibration": "Titringur",
+  "fadeIn": "Smám saman dofna í",
+  "alarmScreen": "Viðvörunarskjár",
+  "defaultOption": "Sjálfgefið",
+  "mathChallenge": "Stærðfræðiáskorun",
+  "shakeToStop": "Hrista til að hætta",
+  "tapChallenge": "Pikkaðu á áskorun",
+  "qrCodeScan": "QR kóða skönnun",
+  "alarmSound": "Viðvörunarhljóð",
+  "addSound": "Bættu við hljóði",
+  "clearCustomSounds": "Skýr sérsniðin hljóð",
+  "format24h": "Sólarhrings snið",
+  "snoozeLabel": "Snooze: {minutes} mín",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Leysið: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Númer {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Eyða",
+  "monday": "Mánudag",
+  "tuesday": "Þriðjudagur",
+  "wednesday": "Miðvikudag",
+  "thursday": "Fimmtudag",
+  "friday": "Föstudag",
+  "saturday": "Laugardag",
+  "sunday": "Sunnudagur"
+}

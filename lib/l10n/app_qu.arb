@@ -1,0 +1,110 @@
+{
+  "@@locale": "qu",
+  "appTitle": "Rikch'arisqa- Chay despertador .",
+  "addAlarm": "Alarmata yapay .",
+  "editAlarm": "Alarma llamk'apuy .",
+  "noAlarms": "Mana alarmakuna yapasqaraqchu .",
+  "alarms": "Alarmas .",
+  "settings": "Ajustes .",
+  "back": "Qipaman",
+  "delete": "Chinkachiy",
+  "deleteAlarm": "Alarmata chinkachiy .",
+  "deleteAlarmPrompt": "¿Segurochu kanki kay alarmata chinkachiyta munanki?",
+  "cancel": "Sayachiy",
+  "titleLabel": "Suti",
+  "wrongAnswer": "Mana allin kutichiy .",
+  "alarmSnoozed": "Alarma snoozed by {minutes} minutos .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR código nisqapi qhaway .",
+  "wrongQr": "Código QR pantasqa. Ama hina kaspa, allin kaqta qhaway.",
+  "shakePhone": "¡Telefonota chhaphchiy!",
+  "shakesCount": "Shakes: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "¡Pantallapi ñit’iy!",
+  "tapsCount": "Taps: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Descargar Código QR .",
+  "fileSaved": "{path} nisqapi waqaychasqa willañiqi .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Camara permiso nisqa QR código escaneo nisqapaqmi necesitakun .",
+  "vibration": "Vibración .",
+  "fadeIn": "Pisi pisimanta chinkay .",
+  "alarmScreen": "Pantalla de alarma .",
+  "defaultOption": "Ñawpaqchasqa",
+  "mathChallenge": "Matemáticas nisqamanta sasachakuy .",
+  "shakeToStop": "SHAKE PARA PARA .",
+  "tapChallenge": "Taytay takay .",
+  "qrCodeScan": "QR código escaneo .",
+  "alarmSound": "Alarma uyarinapaq .",
+  "addSound": "T'uqyay yapay .",
+  "clearCustomSounds": "Ch'uya ruwasqa t'uqyaykuna .",
+  "format24h": "24 pacha formato .",
+  "snoozeLabel": "Snooze: {minutes} min.",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Allinchay: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Yupay {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Chinkachiy",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Miercoles",
+  "thursday": "Jueves",
+  "friday": "Viernes",
+  "saturday": "Sabado",
+  "sunday": "Domingo"
+}

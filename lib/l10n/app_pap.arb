@@ -1,0 +1,110 @@
+{
+  "@@locale": "pap",
+  "appTitle": "Spierta- E Reloj di Alarma",
+  "addAlarm": "Agregá Alarma",
+  "editAlarm": "Editá Alarma",
+  "noAlarms": "No Alarma Agregá Toch",
+  "alarms": "Alarmanan",
+  "settings": "Konfigurashonnan",
+  "back": "Patras",
+  "delete": "Eliminá",
+  "deleteAlarm": "Elimina Alarma",
+  "deleteAlarmPrompt": "Bo ta sigur ku bo ke eliminá e alarma aki?",
+  "cancel": "Kanselá",
+  "titleLabel": "Titulo",
+  "wrongAnswer": "Kontesta robes",
+  "alarmSnoozed": "Alarma a snooze pa {minutes} minuut",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan e Kódigo di QR",
+  "wrongQr": "Kódigo di QR robes. Por fabor scan esun corecto.",
+  "shakePhone": "Saka e telefon!",
+  "shakesCount": "Saka: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap e pantaya!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download Kódigo QR",
+  "fileSaved": "Archivo salbá na {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Permiso di kamera ta nesesario pa e Scan di Kódigo di QR",
+  "vibration": "Vibrashon",
+  "fadeIn": "Fade Gradual Na",
+  "alarmScreen": "Pantalla di Alarma",
+  "defaultOption": "Standart",
+  "mathChallenge": "Reto di Matemátika",
+  "shakeToStop": "Sacudi pa Stop",
+  "tapChallenge": "Reto di Tap",
+  "qrCodeScan": "Scan di Kódigo di QR",
+  "alarmSound": "Sonido di Alarma",
+  "addSound": "Agregá Zonido",
+  "clearCustomSounds": "Zonidonan Personalisa Kla",
+  "format24h": "Formato di 24 Ora",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solushon: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Number {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Eliminá",
+  "monday": "Djaluna",
+  "tuesday": "Djamars",
+  "wednesday": "Djárason",
+  "thursday": "Djaweps",
+  "friday": "Djabièrnè",
+  "saturday": "Djasabra",
+  "sunday": "Djadumingu"
+}

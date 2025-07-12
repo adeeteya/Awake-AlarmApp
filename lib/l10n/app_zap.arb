@@ -1,0 +1,110 @@
+{
+  "@@locale": "zap",
+  "appTitle": "Despertar- Reloj de alarma",
+  "addAlarm": "Bicaa Alarma .",
+  "editAlarm": "Editar alarma",
+  "noAlarms": "No Alarma Añadido aparte",
+  "alarms": "Alarma",
+  "settings": "Configuración .",
+  "back": "Deche",
+  "delete": "Rixá",
+  "deleteAlarm": "Eliminar Alarma",
+  "deleteAlarmPrompt": "Ñee nuuluʼ seguru racaláʼdxiluʼ gucaaluʼ alarma riʼ la?",
+  "cancel": "runi cancelar",
+  "titleLabel": "Títulu",
+  "wrongAnswer": "Respuesta malu .",
+  "alarmSnoozed": "Alarma ni biʼniʼ spilar {minutes} minutu",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Biiyaʼ Código QR .",
+  "wrongQr": "Código QR ni cadi jneza. Biʼniʼ escanear ni jneza.",
+  "shakePhone": "¡Biʼniʼ arrastrar teléfono!",
+  "shakesCount": "Ca costura: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "¡Biʼniʼ clic lu pantalla ca!",
+  "tapsCount": "Tapas: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Biʼniʼ descargar Código QR .",
+  "fileSaved": "Archivu ni guca guardar para {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Caquiiñeʼ permisu stiʼ cámara para escaneo de Código QR .",
+  "vibration": "Vibración",
+  "fadeIn": "Biʼniʼ deshacerluʼ lu",
+  "alarmScreen": "Pantalla de alarma .",
+  "defaultOption": "Predeterminado",
+  "mathChallenge": "Desafiu de matemática",
+  "shakeToStop": "Biʼniʼ sacudiʼ para gucueezaluʼ .",
+  "tapChallenge": "Biʼniʼ tostarluʼ",
+  "qrCodeScan": "QR Código Escaneo",
+  "alarmSound": "Alarma Sonido",
+  "addSound": "Bicaa Sonido .",
+  "clearCustomSounds": "Bicaadiaga ca sonidu personalizadu .",
+  "format24h": "Formato 24 hora",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Solve: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Número {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Rixá",
+  "monday": "Lune",
+  "tuesday": "marte",
+  "wednesday": "miércole",
+  "thursday": "Febes",
+  "friday": "Vierne",
+  "saturday": "Sábadu",
+  "sunday": "Domingu"
+}

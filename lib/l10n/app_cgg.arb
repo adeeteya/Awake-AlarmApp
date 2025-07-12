@@ -1,0 +1,110 @@
+{
+  "@@locale": "cgg",
+  "appTitle": "Awake- Eibumba rya Alarm",
+  "addAlarm": "Yongyeraho Alarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Tihariho Amaizi Akoora",
+  "alarms": "Alarms",
+  "settings": "Okutebekanisa",
+  "back": "Enyima",
+  "delete": "Okusangura",
+  "deleteAlarm": "Delee Alarm",
+  "deleteAlarmPrompt": "Noohamya ngu nooyenda kwihaho alarm egi?",
+  "cancel": "okushazamu",
+  "titleLabel": "Eizina",
+  "wrongAnswer": "Ekyokugarukamu",
+  "alarmSnoozed": "Arlarm akahuuta ahabw'edakiika {minutes}",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan kiragiro kya QR",
+  "wrongQr": "Endagaano ya QR. Nyabura we scase ekihikire.",
+  "shakePhone": "Shaba esimu!",
+  "shakesCount": "Emigabo: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Taho aha skriini!",
+  "tapsCount": "Ebitebyo: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Taho QR Code",
+  "fileSaved": "File ekabiikwa {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Orusa rwa Camera nirukyetengyesa ahari QR Code Scan",
+  "vibration": "Vibration",
+  "fadeIn": "Amaziima Omu",
+  "alarmScreen": "Screen",
+  "defaultOption": "Obuzibu",
+  "mathChallenge": "Math Empindahinduka",
+  "shakeToStop": "Oteke",
+  "tapChallenge": "Tap Empindahinduka",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Erangi ya Alarm",
+  "addSound": "Yongyeramu",
+  "clearCustomSounds": "Shuri",
+  "format24h": "24- Eshaaha",
+  "snoozeLabel": "Snooze: {minutes} 8",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Ekirundo: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Namba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Okusangura",
+  "monday": "Orwokubanza",
+  "tuesday": "orwakabiri",
+  "wednesday": "orwakashatu",
+  "thursday": "orwakana",
+  "friday": "Orwakatano",
+  "saturday": "orwamukaga",
+  "sunday": "Ahasande"
+}

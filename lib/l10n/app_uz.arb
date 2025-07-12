@@ -1,0 +1,110 @@
+{
+  "@@locale": "uz",
+  "appTitle": "Uyg'oning - uyg'otuvchi soat",
+  "addAlarm": "Signal qo'shing",
+  "editAlarm": "Signalni tahrirlash",
+  "noAlarms": "Hech qanday signal qo'shilmagan",
+  "alarms": "Signal",
+  "settings": "Sozlash",
+  "back": "Orqaga qaytish",
+  "delete": "O'chirmoq",
+  "deleteAlarm": "Signalni o'chirish",
+  "deleteAlarmPrompt": "Haqiqatan ham ushbu signalni yo'q qilmoqchimisiz?",
+  "cancel": "Bekor qilmoq",
+  "titleLabel": "Sarlavha",
+  "wrongAnswer": "Noto'g'ri javob",
+  "alarmSnoozed": "Signal {minutes} daqiqa uchun kulgili",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR kodini skanerlang",
+  "wrongQr": "Noto'g'ri QR kodi. Iltimos, to'g'ri skanerlang.",
+  "shakePhone": "Telefonni silkit!",
+  "shakesCount": "Shishlar: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ekranga teging!",
+  "tapsCount": "TOPLAR: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR kodini yuklab oling",
+  "fileSaved": "Fayl {path}-ga saqlandi",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR kodi tekshiruvi uchun kamera ruxsatnomasi talab qilinadi",
+  "vibration": "Tebranish",
+  "fadeIn": "Asta-sekin so'n",
+  "alarmScreen": "Budilnik ekranlari",
+  "defaultOption": "Bajarilish",
+  "mathChallenge": "Matematik qiyinchilik",
+  "shakeToStop": "To'xtatish uchun silkiting",
+  "tapChallenge": "Challenge-ga teging",
+  "qrCodeScan": "QR kodini tekshirish",
+  "alarmSound": "Signal ovozi",
+  "addSound": "Ovozni qo'shing",
+  "clearCustomSounds": "Custom tovushlarni tozalash",
+  "format24h": "24 soatlik format",
+  "snoozeLabel": "SNOOZE: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Himoya: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Raqam {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "O'chirmoq",
+  "monday": "Dushanba",
+  "tuesday": "Seshanba",
+  "wednesday": "Chorshanba",
+  "thursday": "Payshanba",
+  "friday": "Juma",
+  "saturday": "Shanba",
+  "sunday": "Yakshanba"
+}

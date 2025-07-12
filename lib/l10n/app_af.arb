@@ -1,0 +1,110 @@
+{
+  "@@locale": "af",
+  "appTitle": "Wakker- die wekker",
+  "addAlarm": "Voeg alarm by",
+  "editAlarm": "Redigeer alarm",
+  "noAlarms": "Nog geen alarms bygevoeg nie",
+  "alarms": "Alarms",
+  "settings": "Instellings",
+  "back": "Agter",
+  "delete": "Verwyder",
+  "deleteAlarm": "Verwyder alarm",
+  "deleteAlarmPrompt": "Is u seker dat u hierdie alarm wil uitvee?",
+  "cancel": "Kanselleer",
+  "titleLabel": "Titel",
+  "wrongAnswer": "Verkeerde antwoord",
+  "alarmSnoozed": "Alarm sluimer vir {minutes} minute",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skandeer die QR -kode",
+  "wrongQr": "Verkeerde QR -kode. Skandeer asseblief die regte een.",
+  "shakePhone": "Skud die telefoon!",
+  "shakesCount": "Skud: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tik op die skerm!",
+  "tapsCount": "Krane: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Laai QR -kode af",
+  "fileSaved": "Lêer gestoor aan {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kamera -toestemming is nodig vir QR -kode -skandering",
+  "vibration": "Vibrasie",
+  "fadeIn": "Geleidelik vervaag in",
+  "alarmScreen": "Alarmskerm",
+  "defaultOption": "Versuim",
+  "mathChallenge": "Wiskunde -uitdaging",
+  "shakeToStop": "Skud om te stop",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR -kodeskandering",
+  "alarmSound": "Alarm klank",
+  "addSound": "Voeg klank by",
+  "clearCustomSounds": "Duidelike pasgemaakte klanke",
+  "format24h": "24-uur-formaat",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Los op: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nommer {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Verwyder",
+  "monday": "Maandag",
+  "tuesday": "Dinsdag",
+  "wednesday": "Woensdag",
+  "thursday": "Donderdag",
+  "friday": "Vrydag",
+  "saturday": "Saterdag",
+  "sunday": "Sondag"
+}

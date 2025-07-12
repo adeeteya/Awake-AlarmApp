@@ -1,0 +1,110 @@
+{
+  "@@locale": "fil",
+  "appTitle": "Gising- ang alarm clock",
+  "addAlarm": "Magdagdag ng alarma",
+  "editAlarm": "I -edit ang alarma",
+  "noAlarms": "Wala pang idinagdag na mga alarma",
+  "alarms": "Mga alarma",
+  "settings": "Mga setting",
+  "back": "Balik",
+  "delete": "Tanggalin",
+  "deleteAlarm": "Tanggalin ang alarma",
+  "deleteAlarmPrompt": "Sigurado ka bang nais mong tanggalin ang alarma na ito?",
+  "cancel": "Kanselahin",
+  "titleLabel": "Pamagat",
+  "wrongAnswer": "Maling sagot",
+  "alarmSnoozed": "Nag -snoozed ang alarm para sa {minutes} minuto",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "I -scan ang QR code",
+  "wrongQr": "Maling QR Code. Mangyaring i -scan ang tama.",
+  "shakePhone": "Iling ang telepono!",
+  "shakesCount": "Nanginginig: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tapikin ang screen!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "I -download ang QR Code",
+  "fileSaved": "Nai -save ang file sa {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Kinakailangan ang pahintulot ng camera para sa QR code scan",
+  "vibration": "Panginginig ng boses",
+  "fadeIn": "Unti -unting kumukupas",
+  "alarmScreen": "Alarm screen",
+  "defaultOption": "Default",
+  "mathChallenge": "Hamon sa matematika",
+  "shakeToStop": "Iling para huminto",
+  "tapChallenge": "Tapikin ang Hamon",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Tunog ng alarma",
+  "addSound": "Magdagdag ng tunog",
+  "clearCustomSounds": "Malinaw na mga pasadyang tunog",
+  "format24h": "24 na oras na format",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Malutas: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Bilang {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Tanggalin",
+  "monday": "Lunes",
+  "tuesday": "Martes",
+  "wednesday": "Miyerkules",
+  "thursday": "Huwebes",
+  "friday": "Biyernes",
+  "saturday": "Sabado",
+  "sunday": "Linggo"
+}

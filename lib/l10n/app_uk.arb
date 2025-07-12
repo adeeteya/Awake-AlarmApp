@@ -1,0 +1,110 @@
+{
+  "@@locale": "uk",
+  "appTitle": "Неспання- будильник",
+  "addAlarm": "Додати тривогу",
+  "editAlarm": "Редагувати сигнал тривоги",
+  "noAlarms": "Ще не додано тривоги",
+  "alarms": "Тривоги",
+  "settings": "Налаштування",
+  "back": "Спинка",
+  "delete": "Видаляти",
+  "deleteAlarm": "Видалити тривогу",
+  "deleteAlarmPrompt": "Ви впевнені, що хочете видалити цю тривогу?",
+  "cancel": "Скасувати",
+  "titleLabel": "Титул",
+  "wrongAnswer": "Неправильна відповідь",
+  "alarmSnoozed": "Сигналізація, що забирається на {minutes} хвилин",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Сканувати QR -код",
+  "wrongQr": "Неправильний QR -код. Будь ласка, скануйте правильну.",
+  "shakePhone": "Похитай телефон!",
+  "shakesCount": "Шейки: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Торкніться екрана!",
+  "tapsCount": "Крани: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Завантажте QR -код",
+  "fileSaved": "Файл збережений до {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Дозвіл на камеру необхідний для сканування QR -коду",
+  "vibration": "Вібрація",
+  "fadeIn": "Поступове в’янення в",
+  "alarmScreen": "Екран тривоги",
+  "defaultOption": "За замовчуванням",
+  "mathChallenge": "Математичний виклик",
+  "shakeToStop": "Струсити, щоб зупинитися",
+  "tapChallenge": "Tap Challenge",
+  "qrCodeScan": "QR -код сканування",
+  "alarmSound": "Звук тривоги",
+  "addSound": "Додайте звук",
+  "clearCustomSounds": "Чіткі звичні звуки",
+  "format24h": "24-годинний формат",
+  "snoozeLabel": "Захисник: {minutes} хв",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Розв’яжіть: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Число {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Видаляти",
+  "monday": "Понеділок",
+  "tuesday": "У вівторок",
+  "wednesday": "Середа",
+  "thursday": "Четвер",
+  "friday": "П’ятниця",
+  "saturday": "Субота",
+  "sunday": "Неділя"
+}

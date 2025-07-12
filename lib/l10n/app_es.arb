@@ -1,44 +1,105 @@
 {
   "@@locale": "es",
-  "appTitle": "Awake - El Despertador",
-  "addAlarm": "Agregar Alarma",
-  "editAlarm": "Editar Alarma",
-  "noAlarms": "No hay alarmas",
-  "alarms": "Alarmas",
-  "settings": "Configuración",
+  "appTitle": "Despierto- el despertador",
+  "addAlarm": "Agregar alarma",
+  "editAlarm": "Editar alarma",
+  "noAlarms": "No hay alarmas agregadas todavía",
+  "alarms": "Alarma",
+  "settings": "Ajustes",
   "back": "Atrás",
-  "delete": "Eliminar",
-  "deleteAlarm": "Eliminar Alarma",
-  "deleteAlarmPrompt": "¿Seguro que deseas eliminar esta alarma?",
+  "delete": "Borrar",
+  "deleteAlarm": "Eliminar la alarma",
+  "deleteAlarmPrompt": "¿Estás seguro de que quieres eliminar esta alarma?",
   "cancel": "Cancelar",
   "titleLabel": "Título",
   "wrongAnswer": "Respuesta incorrecta",
-  "alarmSnoozed": "Alarma pospuesta por {minutes} minutos",
-  "scanQrInstruction": "Escanea el código QR",
+  "alarmSnoozed": "La alarma se dio un error durante {minutes} minutos",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Escanear el código QR",
   "wrongQr": "Código QR incorrecto. Escanee el correcto.",
-  "shakePhone": "¡Agita el teléfono!",
-  "shakesCount": "Agitaciones: {count} / {required}",
-  "tapScreen": "¡Toca la pantalla!",
-  "tapsCount": "Toques: {count} / {required}",
+  "shakePhone": "¡Saca el teléfono!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "¡Toque la pantalla!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
   "downloadQr": "Descargar código QR",
   "fileSaved": "Archivo guardado en {path}",
-  "cameraPermissionRequired": "Se requiere permiso de cámara para escanear QR",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Se requiere permiso de la cámara para el escaneo de código QR",
   "vibration": "Vibración",
-  "fadeIn": "Aumento gradual",
+  "fadeIn": "Desvanecimiento gradual en",
   "alarmScreen": "Pantalla de alarma",
-  "defaultOption": "Predeterminado",
+  "defaultOption": "Por defecto",
   "mathChallenge": "Desafío matemático",
-  "shakeToStop": "Agitar para detener",
-  "tapChallenge": "Desafío de toques",
-  "qrCodeScan": "Escanear código QR",
-  "alarmSound": "Sonido de alarma",
+  "shakeToStop": "Batir para detenerse",
+  "tapChallenge": "Desafío de toque",
+  "qrCodeScan": "Escaneo de código QR",
+  "alarmSound": "Sonido de la alarma",
   "addSound": "Agregar sonido",
-  "clearCustomSounds": "Borrar sonidos personalizados",
-  "format24h": "Formato 24 horas",
-  "snoozeLabel": "Posponer: {minutes} min",
-  "solve": "Resuelve: {a} {symbol} {b} = ",
+  "clearCustomSounds": "Sonidos personalizados claros",
+  "format24h": "Formato de 24 horas",
+  "snoozeLabel": "Mundir: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Resolver: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
   "numberLabel": "Número {label}",
-  "deleteLabel": "Eliminar",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Borrar",
   "monday": "Lunes",
   "tuesday": "Martes",
   "wednesday": "Miércoles",

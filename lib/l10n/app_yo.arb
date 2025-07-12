@@ -1,0 +1,110 @@
+{
+  "@@locale": "yo",
+  "appTitle": "Ahoro- aago itaniji",
+  "addAlarm": "Fi itaniji kun",
+  "editAlarm": "Ṣatunkọ itaniji",
+  "noAlarms": "Ko si awọn itaniji ti a fi kun sibẹsibẹ",
+  "alarms": "Awọn itaniji",
+  "settings": "Eto",
+  "back": "Ẹhin",
+  "delete": "Paarẹ",
+  "deleteAlarm": "Paarẹ itaniji",
+  "deleteAlarmPrompt": "Ṣe o da ọ loju pe o fẹ lati pa itaniji yii?",
+  "cancel": "Fagilee",
+  "titleLabel": "Akọle",
+  "wrongAnswer": "Idahun ti ko tọ",
+  "alarmSnoozed": "Itaniji ti o mọ fun {minutes} iṣẹju",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Ṣayẹwo koodu QR naa",
+  "wrongQr": "Koodu QR ti ko tọ si. Jọwọ ọlọjẹ ọkan ti o pe.",
+  "shakePhone": "Gbọn foonu naa!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Fọwọ ba iboju!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Ṣe igbasilẹ koodu QR",
+  "fileSaved": "Faili Ti o fipamọ si {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "A nilo aṣẹ Kamẹra fun ọlọjẹ Koodu QR",
+  "vibration": "-Iwọle",
+  "fadeIn": "Atura ṣaju ninu",
+  "alarmScreen": "Iboju itaniji",
+  "defaultOption": "Aiyipada",
+  "mathChallenge": "Ipenija Math",
+  "shakeToStop": "Gbọn lati da duro",
+  "tapChallenge": "Ṣe ipenija",
+  "qrCodeScan": "Qr scan koodu",
+  "alarmSound": "Ohun itaniji",
+  "addSound": "Ṣafikun ohun",
+  "clearCustomSounds": "Ko ba awọn ohun aṣa jẹ",
+  "format24h": "Ọna 24-wakati",
+  "snoozeLabel": "Snize: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Yanju: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nọmba {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Paarẹ",
+  "monday": "Ọjọ Aarọ",
+  "tuesday": "Ọjọ Iṣẹsẹ",
+  "wednesday": "Ọjọ-aye",
+  "thursday": "Ọjọbọ",
+  "friday": "Ọjọ Jimọ",
+  "saturday": "Satidee",
+  "sunday": "Ọjọ Sundee"
+}

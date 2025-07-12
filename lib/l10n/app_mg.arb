@@ -1,0 +1,110 @@
+{
+  "@@locale": "mg",
+  "appTitle": "Mifohaza- ny famantaranandro fanairana",
+  "addAlarm": "Ampio fanairana",
+  "editAlarm": "Hanova fanairana",
+  "noAlarms": "Tsy misy angano nampidirina",
+  "alarms": "fanairana",
+  "settings": "Fikirana",
+  "back": "indray",
+  "delete": "Mamafa",
+  "deleteAlarm": "Hamafa ny fanairana",
+  "deleteAlarmPrompt": "Azo antoka ve fa te-hamafa ity fanairana ity ianao?",
+  "cancel": "hanafoana",
+  "titleLabel": "Lohateny",
+  "wrongAnswer": "Valiny diso",
+  "alarmSnoozed": "Fanairana ny fanairana ny {minutes} minitra",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan ny kaody QR",
+  "wrongQr": "Diso QR Code. Azafady zahao ny marina.",
+  "shakePhone": "Aforeto ny telefaona!",
+  "shakesCount": "Mangovitra: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tsindrio ny efijery!",
+  "tapsCount": "Tapts: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Ampidino ny kaody QR",
+  "fileSaved": "Rakitra voatahiry amin'ny {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Ny fahazoan-dàlana fakantsary dia takiana amin'ny QR Code Scan",
+  "vibration": "hovitrovitra",
+  "fadeIn": "Mihena tsikelikely",
+  "alarmScreen": "Efijery fanairana",
+  "defaultOption": "toerana misy anao",
+  "mathChallenge": "Fanamby matematika",
+  "shakeToStop": "Mihorohoro mba hijanonana",
+  "tapChallenge": "Tsindrio ny fanamby",
+  "qrCodeScan": "QR Code scan",
+  "alarmSound": "Feo fanairana",
+  "addSound": "Asio feo",
+  "clearCustomSounds": "Feo am-panao mazava",
+  "format24h": "Format 24-ora",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Vahaolana: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Number {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Mamafa",
+  "monday": "ALATSINAINY",
+  "tuesday": "TALATA",
+  "wednesday": "ALAROBIA",
+  "thursday": "ALAKAMISY",
+  "friday": "ZOMA",
+  "saturday": "ASABOTSY",
+  "sunday": "ALAHADY"
+}

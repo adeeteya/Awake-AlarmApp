@@ -1,0 +1,110 @@
+{
+  "@@locale": "vi",
+  "appTitle": "Awake- Đồng hồ báo thức",
+  "addAlarm": "Thêm báo động",
+  "editAlarm": "Chỉnh sửa báo động",
+  "noAlarms": "Chưa có báo động nào được thêm vào",
+  "alarms": "Báo động",
+  "settings": "Cài đặt",
+  "back": "Mặt sau",
+  "delete": "Xóa bỏ",
+  "deleteAlarm": "Xóa báo động",
+  "deleteAlarmPrompt": "Bạn có chắc là bạn muốn xóa báo thức này?",
+  "cancel": "Hủy bỏ",
+  "titleLabel": "Tiêu đề",
+  "wrongAnswer": "Câu trả lời sai",
+  "alarmSnoozed": "Báo thức đã ngủ cho {minutes} phút",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Quét mã QR",
+  "wrongQr": "Mã QR sai. Vui lòng quét đúng.",
+  "shakePhone": "Lắc điện thoại!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Nhấn vào màn hình!",
+  "tapsCount": "Taps: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Tải xuống mã QR",
+  "fileSaved": "Tệp được lưu vào {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Cần có sự cho phép của camera để quét mã QR",
+  "vibration": "Rung động",
+  "fadeIn": "Dần dần mờ dần trong",
+  "alarmScreen": "Màn hình báo động",
+  "defaultOption": "Mặc định",
+  "mathChallenge": "Thử thách toán học",
+  "shakeToStop": "Lắc để dừng lại",
+  "tapChallenge": "Chang thử thách",
+  "qrCodeScan": "Quét mã QR",
+  "alarmSound": "Âm thanh báo động",
+  "addSound": "Thêm âm thanh",
+  "clearCustomSounds": "Xóa âm thanh tùy chỉnh",
+  "format24h": "Định dạng 24 giờ",
+  "snoozeLabel": "Snooze: {minutes} phút",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Giải quyết: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Số {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Xóa bỏ",
+  "monday": "Thứ hai",
+  "tuesday": "Thứ ba",
+  "wednesday": "Thứ Tư",
+  "thursday": "Thứ năm",
+  "friday": "Thứ sáu",
+  "saturday": "Thứ bảy",
+  "sunday": "Chủ nhật"
+}

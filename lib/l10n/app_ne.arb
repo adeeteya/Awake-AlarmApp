@@ -1,0 +1,110 @@
+{
+  "@@locale": "ne",
+  "appTitle": "ब्यूँझनुहोस् - अलार्म घडी",
+  "addAlarm": "अलार्म थप्नुहोस्",
+  "editAlarm": "अलार्म सम्पादन गर्नुहोस्",
+  "noAlarms": "कुनै अलार्महरू थपिएन",
+  "alarms": "अलार्म",
+  "settings": "बतंग",
+  "back": "पिठिउ",
+  "delete": "मेटाउन",
+  "deleteAlarm": "अलार्म मेट्नुहोस्",
+  "deleteAlarmPrompt": "के तपाईं यो अलार्म मेटाउन निश्चित हुनुहुन्छ?",
+  "cancel": "रद्द गर्नु",
+  "titleLabel": "शीर्षक",
+  "wrongAnswer": "गलत जवाफ",
+  "alarmSnoozed": "{minutes} मिनेटको लागि अलार्म स्नगो",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR कोड स्क्यान गर्नुहोस्",
+  "wrongQr": "गलत QR कोड। कृपया सहि स्क्यान गर्नुहोस्।",
+  "shakePhone": "फोन हल्लाउनुहोस्!",
+  "shakesCount": "हल्लाउँछ: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "स्क्रिन ट्याप गर्नुहोस्!",
+  "tapsCount": "ट्याप: {count} / / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR कोड डाउनलोड गर्नुहोस्",
+  "fileSaved": "फाईल {path} लाई बचत गरियो",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR कोड स्क्यानका लागि क्यामेरा अनुमति आवश्यक छ",
+  "vibration": "पुरातात्व",
+  "fadeIn": "क्रमिक फीड मा",
+  "alarmScreen": "अलार्म स्क्रीन",
+  "defaultOption": "पुरा नगर्नु",
+  "mathChallenge": "गणित चुनौती",
+  "shakeToStop": "रोक्नको लागि हल्लायो",
+  "tapChallenge": "ट्याप चुनौती",
+  "qrCodeScan": "QR कोड स्क्यान",
+  "alarmSound": "अलार्म आवाज",
+  "addSound": "आवाज थप्नुहोस्",
+  "clearCustomSounds": "स्पष्ट कस्टम ध्वनि",
+  "format24h": "2-घण्टा ढाँचा",
+  "snoozeLabel": "स्नुज: {minutes} मिनेट",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "समाधान: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "नम्बर {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "मेटाउन",
+  "monday": "सोमवार",
+  "tuesday": "मंगलवार",
+  "wednesday": "बुधबार",
+  "thursday": "बिहिवार",
+  "friday": "शुक्रवार",
+  "saturday": "शनिवार",
+  "sunday": "आइतबार"
+}

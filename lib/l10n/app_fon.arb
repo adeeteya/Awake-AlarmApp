@@ -1,0 +1,110 @@
+{
+  "@@locale": "fon",
+  "appTitle": "Fɔ́n- Alarm Cloku ɔ",
+  "addAlarm": "Gɔ́ Alarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Alarm ɖebu gɔ́ na ǎ.",
+  "alarms": "Akɔjɔ",
+  "settings": "ɖŏnu",
+  "back": "Lɛkɔ",
+  "delete": "Ɖè",
+  "deleteAlarm": "Susu Alarm",
+  "deleteAlarmPrompt": "A ka kudeji ɖɔ emi jló na súnsún alarme enɛ à?",
+  "cancel": "ÐáñáôçñÞóôå",
+  "titleLabel": "Xota tɔn",
+  "wrongAnswer": "Xósin e ma sɔgbe ǎ é",
+  "alarmSnoozed": "Alarm nɔ xò kɔ́ nú cɛju {minutes}",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Sɛ́n QR tɔn",
+  "wrongQr": "Sɛ́n QR e ɖò xixo wɛ é. Kɛnklɛn kpɔ́n ee sɔgbe é.",
+  "shakePhone": "Mi xò alokan ɔ!",
+  "shakesCount": "Nǔ e è nɔ kpɔ́n lɛ é: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Zǐn ɖiɖe ɔ!",
+  "tapsCount": "Avi lɛ: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Code",
+  "fileSaved": "Fí e è hɛn ɖ’ayǐ nú {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "È byɔ gbè nú kamela nú QR Code Scan",
+  "vibration": "kpɔ́n",
+  "fadeIn": "Fade de dégésé Ðò .",
+  "alarmScreen": "Alarm Screen",
+  "defaultOption": "Jijɔ nyanya",
+  "mathChallenge": "Math Challenge",
+  "shakeToStop": "Mi hɛn .",
+  "tapChallenge": "Zǐn kpɛɖé",
+  "qrCodeScan": "QR Code Scan",
+  "alarmSound": "Alarm Sound",
+  "addSound": "Gɔ́ nú",
+  "clearCustomSounds": "Gbè e è nɔ dó kpɔ́n mɛ lɛ é sín gbè lɛ .",
+  "format24h": "24-Hùn",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Ɖɔ: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Numɛro {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ɖè",
+  "monday": "Ténigbé",
+  "tuesday": "Azǎn atɔngɔ",
+  "wednesday": "Azǎnzǎn",
+  "thursday": "lamisigbè",
+  "friday": "Gbɔjɛ",
+  "saturday": "gbɔjɛzán",
+  "sunday": "Gbadanu"
+}

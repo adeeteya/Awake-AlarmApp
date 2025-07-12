@@ -1,0 +1,110 @@
+{
+  "@@locale": "bts",
+  "appTitle": "Puho ma- Jam Allarm .",
+  "addAlarm": "Tambahkon ma Alarm",
+  "editAlarm": "Edit Alarm",
+  "noAlarms": "Lang dong Alarm na Itambahi Tapi .",
+  "alarms": "Alerm",
+  "settings": "Mangatur",
+  "back": "Pudi",
+  "delete": "Ihapus",
+  "deleteAlarm": "Hapuskon Alarm",
+  "deleteAlarmPrompt": "Ai yakin do nasiam sihol manghapus alarm on?",
+  "cancel": "Lang saud",
+  "titleLabel": "Golar",
+  "wrongAnswer": "Hasaksian",
+  "alarmSnoozed": "Alarm marsogam ni {minutes} menit .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Scan KUHP .",
+  "wrongQr": "Kode QR na markaya. Tolong ma scan nasiam na sintong.",
+  "shakePhone": "Goyangkon ma hape ai!",
+  "shakesCount": "Marguboh: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Ketuk ma layar ai!",
+  "tapsCount": "Ketuk: ___ / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download KUHP .",
+  "fileSaved": "Berkas na isimpan bani ___",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Izin Camera do na ihaporluhon bani QR Kode Scan .",
+  "vibration": "Vifrasi",
+  "fadeIn": "Kepuasan sarjana Bani",
+  "alarmScreen": "Layar Alarm",
+  "defaultOption": "Biak",
+  "mathChallenge": "Math Tantangan",
+  "shakeToStop": "Martukar ma nasiam pakon Masyarakat",
+  "tapChallenge": "Tap Tantangan",
+  "qrCodeScan": "QR Kode Kode Scan",
+  "alarmSound": "Soara Alarm",
+  "addSound": "Tambahkon ma",
+  "clearCustomSounds": "Soara Adat na borsih",
+  "format24h": "24-Perlakuan .",
+  "snoozeLabel": "Sonoze: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Saluran: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nomor {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Ihapus",
+  "monday": "Senin",
+  "tuesday": "Selasa",
+  "wednesday": "Rabu",
+  "thursday": "ari Kamis",
+  "friday": "Jumat",
+  "saturday": "Sabtu",
+  "sunday": "Ari minggu"
+}

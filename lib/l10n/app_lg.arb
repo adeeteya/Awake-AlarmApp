@@ -1,0 +1,110 @@
+{
+  "@@locale": "lg",
+  "appTitle": "zuukuka- essaawa ya alamu .",
+  "addAlarm": "Okwongerako alamu .",
+  "editAlarm": "Edita alamu .",
+  "noAlarms": "Tewali alamu zongerwako n'okutuusa kati .",
+  "alarms": "alamu .",
+  "settings": "Enteekateeka .",
+  "back": "Mabega",
+  "delete": "Okusiimuula",
+  "deleteAlarm": "Ssaawo alamu .",
+  "deleteAlarmPrompt": "Okakasa nti oyagala kusazaamu alamu eno?",
+  "cancel": "okusazaamu",
+  "titleLabel": "Omutwe",
+  "wrongAnswer": "Eky'okuddamu ekikyamu .",
+  "alarmSnoozed": "Alarm snoozed okumala eddakiika {minutes} .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Sikaani ya QR code .",
+  "wrongQr": "QR code enkyamu. Nsaba sikaani entuufu.",
+  "shakePhone": "Kankanya essimu!",
+  "shakesCount": "Shakes: {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Koona ku ssirini!",
+  "tapsCount": "Taapu: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Download QR Code .",
+  "fileSaved": "Fayiro eterekeddwa ku {path} .",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Olukusa lwa kamera lwetaagibwa ku QR Code Scan .",
+  "vibration": "Okukankana .",
+  "fadeIn": "mpolampola okufa mu .",
+  "alarmScreen": "Ssikirini ya Alarm .",
+  "defaultOption": "Okukosamu",
+  "mathChallenge": "Okusoomoozebwa mu kubala .",
+  "shakeToStop": "Kankanya okukomya .",
+  "tapChallenge": "Okusoomoozebwa kwa Tap .",
+  "qrCodeScan": "QR Code Scan .",
+  "alarmSound": "Eddoboozi lya Alarm .",
+  "addSound": "Okwongerako eddoboozi .",
+  "clearCustomSounds": "Amaloboozi agategeerekeka obulungi .",
+  "format24h": "Enkola y'essaawa 24 .",
+  "snoozeLabel": "Snooze: {minutes} eddakiika .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Okugonjoola: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Ennamba {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Okusiimuula",
+  "monday": "Olunaku ol'wabbalaza",
+  "tuesday": "Olunaku olw'okubiri",
+  "wednesday": "Olunaku olwokusatu",
+  "thursday": "olunaku olw'okuna",
+  "friday": "Olunaku olw'okutaano",
+  "saturday": "Olunaku ol'wamukaaga",
+  "sunday": "Sabiiti"
+}

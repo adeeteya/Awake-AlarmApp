@@ -1,0 +1,110 @@
+{
+  "@@locale": "ltg",
+  "appTitle": "Nūmūdā- Traucīņa stuņdinīks .",
+  "addAlarm": "Pīvīnojit Traucieju",
+  "editAlarm": "Rediģēt trauksme",
+  "noAlarms": "Nivīns Trauksmis napīvīnuots tūmār .",
+  "alarms": "trauks",
+  "settings": "īreicieja",
+  "back": "Mugura",
+  "delete": "Izdzēst",
+  "deleteAlarm": "Izdzēst Trauksmi",
+  "deleteAlarmPrompt": "Voi esi puorlīcynuots, ka gribi izdzēst itū trauksmi?",
+  "cancel": "atceļt",
+  "titleLabel": "Nūsaukums",
+  "wrongAnswer": "Napareiza atbiļde .",
+  "alarmSnoozed": "100 doc#1159 Trauksme šņabs {minutes} minotys .",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skenēt QR kodu .",
+  "wrongQr": "Napareizais QR kods. Lyudzu, skenej pareizū.",
+  "shakePhone": "Pakrateit telefonu!",
+  "shakesCount": "Krath: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Pīsaskar ekranam!",
+  "tapsCount": "Pīteikumi: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Lejupielādēt QR kodu .",
+  "fileSaved": "Fails ītaupeits leidz {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "100 doc#1281 Kamerys atļuove ir vajadzeiga QR koda skenim .",
+  "vibration": "vibraceja",
+  "fadeIn": "100 doc#1281 Pamozom izgaist 1999 .",
+  "alarmScreen": "100 doc#1163 .",
+  "defaultOption": "Nūklusejums",
+  "mathChallenge": "Matematikys izaicynuojums",
+  "shakeToStop": "Pakrateit iz Pīturu .",
+  "tapChallenge": "Pīsaskart izaicynuojums",
+  "qrCodeScan": "QR kodeks Skenēt .",
+  "alarmSound": "traucejumi skaņa .",
+  "addSound": "Pīvīnojit Skaņu",
+  "clearCustomSounds": "Skaidrys Pīlāguotuos skanis .",
+  "format24h": "stuņžu forma .",
+  "snoozeLabel": "Snooze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Atrysynoj: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "numurs {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Izdzēst",
+  "monday": "Pyrmūdīne",
+  "tuesday": "ūtardīne",
+  "wednesday": "trešdīne",
+  "thursday": "catūrtdine",
+  "friday": "Pīktdīne",
+  "saturday": "sastdīne",
+  "sunday": "Svātdīne"
+}

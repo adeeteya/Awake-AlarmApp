@@ -1,0 +1,110 @@
+{
+  "@@locale": "chk",
+  "appTitle": "Awake- Ewe Alam Klok .",
+  "addAlarm": "Apacha Apacha",
+  "editAlarm": "Ewe Alast",
+  "noAlarms": "Ese wor Alam A apachalong Nge .",
+  "alarms": "Aarm",
+  "settings": "Settin",
+  "back": "Mwirin",
+  "delete": "Tonu",
+  "deleteAlarm": "Kopwe angei ewe Angei",
+  "deleteAlarmPrompt": "Ka nuku pwe ka mochen kopwe angei ei angang?",
+  "cancel": "Eukano",
+  "titleLabel": "Iten wisan",
+  "wrongAnswer": "Pölüwan",
+  "alarmSnoozed": "Alam a ssá fán iten {minutes} minich",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Skan ewe koten QR .",
+  "wrongQr": "Iwe, ewe QR mi Pin. Kopwe scan ewe mi pwung.",
+  "shakePhone": "Kopwe suki ewe fon!",
+  "shakesCount": "Ekkewe chon angang: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tapw ewe screen!",
+  "tapsCount": "Ekkewe Toap: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Dowlow QR .",
+  "fileSaved": "Fut ngeni {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "A lamot ngeni ewe monien Cana fan iten ewe QR.",
+  "vibration": "Vipert",
+  "fadeIn": "Ewe Fade Fan Iten Fansoun meinisin .",
+  "alarmScreen": "Aarm Skrin",
+  "defaultOption": "Pukupukun",
+  "mathChallenge": "Math a osukosuk",
+  "shakeToStop": "Suuk pwe repwe ukutiw",
+  "tapChallenge": "Tapasa",
+  "qrCodeScan": "QR Kopwe ngeni",
+  "alarmSound": "Aarm Sopai",
+  "addSound": "Apachata Aramas",
+  "clearCustomSounds": "Ekkewe Susom mi ling",
+  "format24h": "24-Awa",
+  "snoozeLabel": "Sopun: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Sopwe: {a} {symbol} {b} .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Nampa {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Tonu",
+  "monday": "Sarinfan",
+  "tuesday": "Oruw",
+  "wednesday": "Aunungat",
+  "thursday": "Eruwanun",
+  "friday": "Enimuuw",
+  "saturday": "Amwon",
+  "sunday": "Raninifen"
+}

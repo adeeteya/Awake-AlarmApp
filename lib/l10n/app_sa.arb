@@ -1,0 +1,110 @@
+{
+  "@@locale": "sa",
+  "appTitle": "जागर- अलार्म घड़ी .",
+  "addAlarm": "अलार्म add .",
+  "editAlarm": "अलार्म को सम्पादित करें .",
+  "noAlarms": "अद्यापि न अलार्म योजितम् .",
+  "alarms": "अलार्म 1 .",
+  "settings": "सेटिंग्स् 1 .",
+  "back": "पृष्ठभागः",
+  "delete": "लुप्",
+  "deleteAlarm": "अलार्म विलोपयतु .",
+  "deleteAlarmPrompt": "किं भवन्तः निश्चयेन एतत् अलार्मं विलोपयितुम् इच्छन्ति?",
+  "cancel": "निरसयतु",
+  "titleLabel": "शीर्षक",
+  "wrongAnswer": "गलत उत्तर 1 .",
+  "alarmSnoozed": "अलार्म {minutes} मिनट तक स्नूज किया गया",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QR कोड स्कैन करें .",
+  "wrongQr": "गलत QR कोड। कृपया सम्यक् एकं स्कैन कुर्वन्तु।",
+  "shakePhone": "दूरभाषं कम्पयन्तु !",
+  "shakesCount": "शेक्सः {count} / {required} .",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "स्क्रीन ट्याप् कुर्वन्तु!",
+  "tapsCount": "नल: {count} / {required} .",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QR कोड डाउनलोड करें .",
+  "fileSaved": "{path} इत्यत्र रक्षिता सञ्चिका ।",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QR कोड स्कैन कृते कैमरा अनुमतिः आवश्यकी भवति।",
+  "vibration": "स्पन्दनम् २.",
+  "fadeIn": "क्रमिक फीड in in .",
+  "alarmScreen": "अलार्म स्क्रीन 1 .",
+  "defaultOption": "मूलभूतम्‌",
+  "mathChallenge": "गणित चुनौती 1 .",
+  "shakeToStop": "निवारणार्थं कम्पनं कुर्वन्तु .",
+  "tapChallenge": "टैप चुनौती 1 .",
+  "qrCodeScan": "QR कोड स्कैन 1 .",
+  "alarmSound": "अलार्म ध्वनि 1 .",
+  "addSound": "ध्वनिं योजयतु .",
+  "clearCustomSounds": "स्पष्टं कस्टम् ध्वनिः .",
+  "format24h": "24-घण्टा प्रारूप 1 .",
+  "snoozeLabel": "स्नूज: {minutes} min .",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "समाधान: {a} {symbol} {b} = .",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "संख्या {label} .",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "लुप्",
+  "monday": "सोमवारं",
+  "tuesday": "मङ्गलवारः",
+  "wednesday": "बुधवारः",
+  "thursday": "बृहस्पतिवारः",
+  "friday": "शुक्रवारं",
+  "saturday": "शनिवारं",
+  "sunday": "रविवारं"
+}

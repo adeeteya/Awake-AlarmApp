@@ -1,0 +1,110 @@
+{
+  "@@locale": "nus",
+  "appTitle": "Awake- Ɛn A-lam kɛɛ Alaar Clock",
+  "addAlarm": "Matdɛl A-ma̱t",
+  "editAlarm": "Ɛdi",
+  "noAlarms": "No-nɔm-ni̱ cu kɛnɛ nyɔk kɛ la̱t",
+  "alarms": "A-dɔam",
+  "settings": "läth kä gua̱th",
+  "back": "Jɔk",
+  "delete": "Cuɔ̱m",
+  "deleteAlarm": "Liŋɛli Alarm",
+  "deleteAlarmPrompt": "Kä ji̱n go̱o̱ri ɣöö bi alarm ɛmɛ woc?",
+  "cancel": "wuɔ̱c",
+  "titleLabel": "Cio̱t kä duɔ̱r",
+  "wrongAnswer": "Wrong luɔ̱c",
+  "alarmSnoozed": "Kä tet kɛl snoozed kɛ {minutes} minitni̱",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "kan QR Code",
+  "wrongQr": "Wreg QR Kɔd. Ɣän göörä ɣöö bä thɛm kɛ min ca gɔ̱r piny.",
+  "shakePhone": "Käpni phone!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Tap i̱thkri̱i̱n!",
+  "tapsCount": "Tapni̱: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Da̱wnk QRRRɔd",
+  "fileSaved": "Thurɛ min ca tɔ̱w kä {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "Camera permiciɔn go̱o̱rɛ kɛ kui̱ QR Kɔd I̱thkan",
+  "vibration": "ja̱l",
+  "fadeIn": "Gra̱ral Pade In",
+  "alarmScreen": "A-nɛm I̱thkiɛm",
+  "defaultOption": "Bä kärɔa̱",
+  "mathChallenge": "thok Mathga̱l",
+  "shakeToStop": "Shake ɛ Seop",
+  "tapChallenge": "thok thuɔk duëël",
+  "qrCodeScan": "QR Kɔd I̱thkɔt",
+  "alarmSound": "A-dɛäm liak",
+  "addSound": "Matdɛ kä gɔ̱rii raar",
+  "clearCustomSounds": "ram min ŋäc ŋɔak",
+  "format24h": "24-Puɔthdan",
+  "snoozeLabel": "Snoze: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Thölk: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Number {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Cuɔ̱m",
+  "monday": "Jiëc la̱t",
+  "tuesday": "cäŋ kä rɛw kä juɔ̱k",
+  "wednesday": "Cäŋ kä diɔ̱k kä juɔ̱k",
+  "thursday": "Cäŋ kä ŋua̱n kä juɔ̱k",
+  "friday": "Cäŋ kä dhiëc kä juɔ̱k",
+  "saturday": "caäŋ kä bäkɛl kä juɔ̱k",
+  "sunday": "Cäŋ kuɔ̱th"
+}

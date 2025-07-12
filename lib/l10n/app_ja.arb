@@ -1,0 +1,110 @@
+{
+  "@@locale": "ja",
+  "appTitle": "目覚め - 目覚まし時計",
+  "addAlarm": "アラームを追加します",
+  "editAlarm": "アラームを編集します",
+  "noAlarms": "アラームはまだ追加されていません",
+  "alarms": "アラーム",
+  "settings": "設定",
+  "back": "戻る",
+  "delete": "消去",
+  "deleteAlarm": "アラームを削除します",
+  "deleteAlarmPrompt": "このアラームを削除したいですか？",
+  "cancel": "キャンセル",
+  "titleLabel": "タイトル",
+  "wrongAnswer": "間違った答え",
+  "alarmSnoozed": "アラームは{minutes}分でスヌーズします",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "QRコードをスキャンします",
+  "wrongQr": "間違ったQRコード。正しいものをスキャンしてください。",
+  "shakePhone": "電話を振る！",
+  "shakesCount": "シェイク：{count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "画面をタップしてください！",
+  "tapsCount": "タップ：{count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "QRコードをダウンロードします",
+  "fileSaved": "{path}に保存されたファイル",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "QRコードスキャンにはカメラの許可が必要です",
+  "vibration": "振動",
+  "fadeIn": "段階的なフェードイン",
+  "alarmScreen": "アラーム画面",
+  "defaultOption": "デフォルト",
+  "mathChallenge": "数学チャレンジ",
+  "shakeToStop": "停止するために振る",
+  "tapChallenge": "タップチャレンジ",
+  "qrCodeScan": "QRコードスキャン",
+  "alarmSound": "アラーム音",
+  "addSound": "音を追加します",
+  "clearCustomSounds": "カスタムサウンドをクリアします",
+  "format24h": "24時間形式",
+  "snoozeLabel": "スヌーズ：{minutes}分",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "解決：{a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "番号{label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "消去",
+  "monday": "月曜日",
+  "tuesday": "火曜日",
+  "wednesday": "水曜日",
+  "thursday": "木曜日",
+  "friday": "金曜日",
+  "saturday": "土曜日",
+  "sunday": "日曜日"
+}

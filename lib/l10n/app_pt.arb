@@ -1,0 +1,110 @@
+{
+  "@@locale": "pt",
+  "appTitle": "Acordado- o despertador",
+  "addAlarm": "Adicione alarme",
+  "editAlarm": "Editar alarme",
+  "noAlarms": "Nenhum alarmes adicionado ainda",
+  "alarms": "Alarmes",
+  "settings": "Configurações",
+  "back": "Voltar",
+  "delete": "Excluir",
+  "deleteAlarm": "Excluir alarme",
+  "deleteAlarmPrompt": "Tem certeza de que deseja excluir este alarme?",
+  "cancel": "Cancelar",
+  "titleLabel": "Título",
+  "wrongAnswer": "Resposta errada",
+  "alarmSnoozed": "Alarme cochilado por {minutes} minutos",
+  "@alarmSnoozed": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "scanQrInstruction": "Digitalize o código QR",
+  "wrongQr": "Código QR errado. Por favor, digitalize o correto.",
+  "shakePhone": "Agite o telefone!",
+  "shakesCount": "Shakes: {count} / {required}",
+  "@shakesCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "tapScreen": "Toque na tela!",
+  "tapsCount": "Torneiras: {count} / {required}",
+  "@tapsCount": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      },
+      "required": {
+        "type": "num"
+      }
+    }
+  },
+  "downloadQr": "Baixe o código QR",
+  "fileSaved": "Arquivo salvo para {path}",
+  "@fileSaved": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionRequired": "A permissão da câmera é necessária para a verificação de código QR",
+  "vibration": "Vibração",
+  "fadeIn": "Fade gradual em",
+  "alarmScreen": "Tela de alarme",
+  "defaultOption": "Padrão",
+  "mathChallenge": "Desafio matemático",
+  "shakeToStop": "Agite para parar",
+  "tapChallenge": "Desafio de toque",
+  "qrCodeScan": "Digitalização de código QR",
+  "alarmSound": "Som de alarme",
+  "addSound": "Adicione som",
+  "clearCustomSounds": "Claros sons personalizados",
+  "format24h": "Formato de 24 horas",
+  "snoozeLabel": "Soneca: {minutes} min",
+  "@snoozeLabel": {
+    "placeholders": {
+      "minutes": {
+        "type": "num"
+      }
+    }
+  },
+  "solve": "Resolva: {a} {symbol} {b} =",
+  "@solve": {
+    "placeholders": {
+      "a": {
+        "type": "num"
+      },
+      "b": {
+        "type": "num"
+      },
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "numberLabel": "Número {label}",
+  "@numberLabel": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteLabel": "Excluir",
+  "monday": "Segunda-feira",
+  "tuesday": "Terça-feira",
+  "wednesday": "Quarta-feira",
+  "thursday": "Quinta-feira",
+  "friday": "Sexta-feira",
+  "saturday": "Sábado",
+  "sunday": "Domingo"
+}
