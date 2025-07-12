@@ -61,7 +61,7 @@ platform :android do
         track: 'internal',
         release_status: 'draft',
         aab: File.expand_path(File.join("..", "..", "build", "app", "outputs", "bundle", "productionRelease", "app-production-release.aab"), Dir.pwd),
-        mapping_paths: [symbols_file_path, File.expand_path(File.join("..", "..", "build", "app", "outputs", "mapping", "release", "mapping.txt"), Dir.pwd)],
+        mapping_paths: [symbols_file_path, File.expand_path(File.join("..", "..", "build", "app", "outputs", "mapping", "productionRelease", "mapping.txt"), Dir.pwd)],
         metadata_path:"../fastlane/metadata/android",
         json_key: google_service_account_json_path,
         skip_upload_apk: true, # Upload the aab instead of apk
