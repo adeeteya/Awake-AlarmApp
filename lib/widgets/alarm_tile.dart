@@ -1,4 +1,5 @@
 import 'package:awake/app_router.dart';
+import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/models/alarm_model.dart';
 import 'package:awake/services/settings_cubit.dart';
 import 'package:awake/theme/app_colors.dart';
@@ -70,7 +71,7 @@ class _AlarmTileState extends State<AlarmTile> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = Theme.brightnessOf(context) == Brightness.dark;
+    final bool isDark = context.isDarkMode;
     final bool use24h = context.watch<SettingsCubit>().state.use24HourFormat;
     return Padding(
       padding: const EdgeInsets.only(top: 23),

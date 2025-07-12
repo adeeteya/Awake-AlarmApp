@@ -1,3 +1,4 @@
+import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/theme/app_text_styles.dart';
 import 'package:awake/widgets/add_button.dart';
 import 'package:awake/widgets/minus_button.dart';
@@ -28,7 +29,7 @@ class _SnoozeButtonState extends State<SnoozeButton> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = Theme.brightnessOf(context) == Brightness.dark;
+    final bool isDark = context.isDarkMode;
 
     return Row(
       children: [

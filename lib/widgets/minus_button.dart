@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:awake/extensions/context_extensions.dart';
 import 'package:awake/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,7 @@ class MinusButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = Theme.brightnessOf(context) == Brightness.dark;
+    final bool isDark = context.isDarkMode;
 
     return DecoratedBox(
       decoration: BoxDecoration(
