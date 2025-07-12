@@ -610,13 +610,20 @@ class _TimePickerState extends State<_TimePicker> with RestorationMixin {
             ),
           ),
         );
-
         switch (orientation) {
           case Orientation.portrait:
             picker = Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [Expanded(child: dial), const _TimePickerHeader()],
+              children: [
+                Expanded(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [Expanded(child: dial)],
+                  ),
+                ),
+                const _TimePickerHeader(),
+              ],
             );
           case Orientation.landscape:
             picker = Column(

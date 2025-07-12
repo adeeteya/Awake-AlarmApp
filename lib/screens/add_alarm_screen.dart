@@ -239,18 +239,22 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                   ),
                 ),
                 SingleChildScrollView(
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Column(
                     children: [
-                      _daySelector(isDark),
-                      const SizedBox(height: 16),
-                      TextField(
-                        controller: _titleController,
-                        focusNode: _focusNode,
-                        decoration: const InputDecoration(labelText: 'Title'),
-                        onSubmitted: (_) => _addAlarm(),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: _daySelector(isDark),
                       ),
-                      const SizedBox(height: 16),
+                      Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: TextField(
+                          controller: _titleController,
+                          focusNode: _focusNode,
+                          decoration: const InputDecoration(labelText: 'Title'),
+                          onSubmitted: (_) => _addAlarm(),
+                        ),
+                      ),
                       IconButton(
                         tooltip:
                             widget.alarmModel == null
