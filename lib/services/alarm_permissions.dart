@@ -36,12 +36,4 @@ class AlarmPermissions {
       );
     }
   }
-
-  static Future<void> checkBatteryOptimization() async {
-    final isBatteryOptimizationDisabled =
-        await DisableBatteryOptimization.isBatteryOptimizationDisabled;
-    if (isBatteryOptimizationDisabled == false) {
-      await DisableBatteryOptimization.showDisableBatteryOptimizationSettings();
-    }
-  }
 }

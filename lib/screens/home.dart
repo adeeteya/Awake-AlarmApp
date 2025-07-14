@@ -63,8 +63,7 @@ class _HomeState extends State<Home> {
           .then(
             (_) => AlarmPermissions.checkAndroidScheduleExactAlarmPermission(),
           )
-          .then((_) => AlarmPermissions.checkAutoStartPermission())
-          .then((_) => AlarmPermissions.checkBatteryOptimization()),
+          .then((_) => AlarmPermissions.checkAutoStartPermission()),
     );
     _ringSubscription = Alarm.ringing.listen(_ringingAlarmsChanged);
   }

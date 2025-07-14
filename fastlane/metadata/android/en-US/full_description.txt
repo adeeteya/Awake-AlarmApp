@@ -1,0 +1,32 @@
+Awake – The Alarm Clock
+
+Awake is a modern Flutter-based alarm app that lets you fine‑tune every detail of how you wake up. Set repeating alarms, customize their look and sound, and choose creative ways to dismiss them.
+
+Key Features
+🌗 Switch between light, dark, and system themes.
+
+🕑 Toggle 12‑hour or 24‑hour time format.
+
+📳 Enable or disable vibration when alarms go off.
+
+🔊 Adjust alarm volume with an optional gradual fade‑in.
+
+🎵 Pick custom alarm sounds directly from your device.
+
+🏷️ Add a title to each alarm and manage multiple alarms with ease.
+
+🔁 Select the days of the week for repeat alarms.
+
+💤 Snooze alarms for a custom duration.
+
+❌ Dismiss alarms in fun ways:
+• ⏰ Default ringing screen
+• 🧮 Math challenge
+• 📳 Shake to stop
+• 👆 Tap challenge
+• 🤳 QR code scan (QR code download available in settings)
+
+Why You'll Love It
+Set it and forget it, knowing that Awake will reliably ring and challenge you however you choose. Whether you want to shake your phone awake or solve a quick math problem, you’re free to customize your morning routine. With full control over vibration, volume, and themes, you can fine‑tune the experience to your personal style.
+
+Wake up your way – with a little fun and a lot of flexibility!
