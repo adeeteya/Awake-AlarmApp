@@ -28,7 +28,7 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> {
+class _HomeState extends State<Home> with WidgetsBindingObserver {
   late final StreamSubscription<AlarmSet> _ringSubscription;
   bool _isFabVisible = true;
 
@@ -58,6 +58,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     unawaited(
       AlarmPermissions.checkNotificationPermission()
           .then(
@@ -67,10 +68,12 @@ class _HomeState extends State<Home> {
           .then((_) => AlarmPermissions.checkBatteryOptimization()),
     );
     _ringSubscription = Alarm.ringing.listen(_ringingAlarmsChanged);
+    unawaited(_checkForRingingAlarm());
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     unawaited(_ringSubscription.cancel());
     super.dispose();
   }
@@ -86,6 +89,31 @@ class _HomeState extends State<Home> {
       _ => AppRoute.alarmRinging.name,
     };
     context.goNamed(name, extra: alarms.alarms.first);
+  }
+
+  Future<void> _checkForRingingAlarm() async {
+    if (await Alarm.isRinging()) {
+      var alarms = Alarm.ringing.value.alarms;
+      if (alarms.isEmpty) {
+        final all = await Alarm.getAlarms();
+        for (final alarm in all) {
+          if (await Alarm.isRinging(alarm.id)) {
+            alarms = {alarm};
+            break;
+          }
+        }
+      }
+      if (alarms.isNotEmpty) {
+        _ringingAlarmsChanged(AlarmSet(alarms));
+      }
+    }
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      unawaited(_checkForRingingAlarm());
+    }
   }
 
   @override
