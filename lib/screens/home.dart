@@ -17,6 +17,7 @@ import 'package:awake/widgets/alarm_tile.dart';
 import 'package:awake/widgets/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
@@ -91,6 +92,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     final bool isDark = context.isDarkMode;
     final size = MediaQuery.sizeOf(context);
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        systemNavigationBarIconBrightness:
+            isDark ? Brightness.light : Brightness.dark,
+        systemNavigationBarColor:
+            isDark ? AppColors.darkScaffold2 : AppColors.lightScaffold2,
+      ),
+    );
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton:
@@ -215,8 +224,11 @@ class _HomeState extends State<Home> {
                   builder:
                       (context, scrollController) => DecoratedBox(
                         decoration: BoxDecoration(
-                          border: Border.all(
-                            color: isDark ? AppColors.darkBorder : Colors.white,
+                          border: Border(
+                            top: BorderSide(
+                              color:
+                                  isDark ? AppColors.darkBorder : Colors.white,
+                            ),
                           ),
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(20),
