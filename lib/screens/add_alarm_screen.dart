@@ -242,7 +242,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                   ),
                 ),
                 SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  padding: const EdgeInsets.only(top: 16, bottom: 8),
                   child: Column(
                     children: [
                       Padding(
@@ -271,6 +271,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     ],
                   ),
                 ),
+                SizedBox(height: MediaQuery.paddingOf(context).bottom),
               ],
             ),
           ),

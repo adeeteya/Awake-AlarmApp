@@ -61,6 +61,7 @@ class SettingsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: isDark ? AppColors.darkBorder : Colors.white,
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor:
             isDark ? AppColors.darkScaffold1 : AppColors.lightScaffold1,
         leading: IconButton(
@@ -423,7 +424,7 @@ class SettingsScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height: 23),
+                SizedBox(height: 23 + MediaQuery.viewPaddingOf(context).bottom),
               ],
             );
           },
