@@ -1,7 +1,7 @@
 name: awake
 description: A neumorphic themed digital calculator which has keyboard and dark mode support
 publish_to: 'none'
-version: 1.1.1+3
+version: 1.1.2+4
 environment:
   sdk: ^3.7.0
   flutter: 3.32.6

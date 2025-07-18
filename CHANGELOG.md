@@ -1,0 +1,2 @@
+- Fixed System Navbar colors
+- Fixed Screen getting clipped due to the System Navbar
