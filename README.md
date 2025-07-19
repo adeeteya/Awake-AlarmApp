@@ -2,7 +2,7 @@
 
 # ⏰ Awake
 
-A modern Flutter alarm clock.
+A modern smart alarm clock.
 
 </div>
 
@@ -29,7 +29,7 @@ If you enjoy using this project please ⭐ star the repo.
   - 🧮 Math challenge
   - 📳 Shake to stop
   - 👆 Tap challenge
-  - 🤳 QR code scan (download the code from settings)
+  - 🤳 QR code scan (download the code from settings or [Download Link](https://github.com/adeeteya/Awake-AlarmApp/blob/master/assets/qr_code.png))
 
 ### 🔜 Upcoming Features
 
@@ -49,6 +49,10 @@ If you enjoy using this project please ⭐ star the repo.
     <td>
       <a href="https://play.google.com/store/apps/details?id=com.adeeteya.awake">
         <img height="80" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+      </a>
+      <br>
+      <a href="https://f-droid.org/packages/com.adeeteya.awake">
+        <img height="80" alt="Get it on F-Droid" src="https://f-droid.org/badge/get-it-on.png">
       </a>
       <br>
       <a href="https://github.com/adeeteya/Awake-AlarmApp/releases/latest/download/Awake-Android.apk">
