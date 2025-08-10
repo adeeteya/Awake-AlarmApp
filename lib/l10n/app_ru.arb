@@ -1,19 +1,19 @@
 {
   "@@locale": "ru",
-  "appTitle": "Бодрствование- будильник",
-  "addAlarm": "Добавить тревогу",
-  "editAlarm": "Редактировать тревогу",
-  "noAlarms": "Еще не добавлены тревоги",
-  "alarms": "Тревога",
+  "appTitle": "Awake - будильник",
+  "addAlarm": "Добавить будильник",
+  "editAlarm": "Редактировать будильник",
+  "noAlarms": "Еще не добавлены будильники",
+  "alarms": "Будильники",
   "settings": "Настройки",
   "back": "Назад",
   "delete": "Удалить",
-  "deleteAlarm": "Удалить тревогу",
-  "deleteAlarmPrompt": "Вы уверены, что хотите удалить эту тревогу?",
+  "deleteAlarm": "Удалить будильник",
+  "deleteAlarmPrompt": "Вы уверены, что хотите удалить этот будильник?",
   "cancel": "Отмена",
   "titleLabel": "Заголовок",
   "wrongAnswer": "Неправильный ответ",
-  "alarmSnoozed": "Будильник заснул на {minutes} минуты",
+  "alarmSnoozed": "Будильник отложен на {minutes} минуты",
   "@alarmSnoozed": {
     "placeholders": {
       "minutes": {
@@ -21,10 +21,10 @@
       }
     }
   },
-  "scanQrInstruction": "Сканировать QR -код",
-  "wrongQr": "Неправильный QR -код. Пожалуйста, сканируйте правильный.",
+  "scanQrInstruction": "Сканировать QR-код",
+  "wrongQr": "Неправильный QR-код. Пожалуйста, отсканируйте правильный.",
   "shakePhone": "Встряхните телефон!",
-  "shakesCount": "Встряхивание: {count} / {required}",
+  "shakesCount": "Встряхивания: {count} / {required}",
   "@shakesCount": {
     "placeholders": {
       "count": {
@@ -36,7 +36,7 @@
     }
   },
   "tapScreen": "Нажмите на экран!",
-  "tapsCount": "TAPS: {count} / {required}",
+  "tapsCount": "Нажатия: {count} / {required}",
   "@tapsCount": {
     "placeholders": {
       "count": {
@@ -47,7 +47,7 @@
       }
     }
   },
-  "downloadQr": "Скачать QR -код",
+  "downloadQr": "Скачать QR-код",
   "fileSaved": "Файл сохранен в {path}",
   "@fileSaved": {
     "placeholders": {
@@ -56,28 +56,30 @@
       }
     }
   },
-  "cameraPermissionRequired": "Для сканирования QR -кода требуется разрешение на камеру",
+  "cameraPermissionRequired": "Для сканирования QR-кода требуется разрешение на доступ к камере",
   "vibration": "Вибрация",
-  "fadeIn": "Постепенное исчезновение",
-  "alarmScreen": "Экран тревоги",
+  "fadeIn": "Постепенно увеличиивать громкость",
+  "alarmScreen": "Экран будильника",
   "defaultOption": "По умолчанию",
   "mathChallenge": "Математическая задача",
-  "shakeToStop": "Встряхнуть, чтобы остановиться",
-  "tapChallenge": "Tap Challenge",
-  "qrCodeScan": "QR -код сканирование",
-  "alarmSound": "Сигнал тревоги",
+  "shakeToStop": "Встряхнуть, чтобы остановить",
+  "tapChallenge": "Клик челленж",
+  "qrCodeScan": "Сканирование QR-кода",
+  "alarmSound": "Сигнал будильника",
   "addSound": "Добавить звук",
-  "clearCustomSounds": "Четкие индивидуальные звуки",
+  "clearCustomSounds": "Удалить пользовательские звуки",
   "format24h": "24-часовой формат",
-  "snoozeLabel": "Сноми: {minutes} мин",
-  "@snoozeLabel": {
+  "snoozeLabel": "Будильник отложен на {minutes, plural, =1{1 минуту} one{{minutes} минуту} few{{minutes} минуты} other{{minutes} минут}}",
+  "@alarmSnoozed": {
+    "description": "A message to show the number of minutes the alarm was snoozed",
     "placeholders": {
       "minutes": {
-        "type": "num"
+        "type": "num",
+        "format": "compact"
       }
     }
   },
-  "solve": "Решите: {a} {symbol} {b} =",
+  "solve": "Решите: {a} {symbol} {b} = ",
   "@solve": {
     "placeholders": {
       "a": {
@@ -91,7 +93,7 @@
       }
     }
   },
-  "numberLabel": "Номер {label}",
+  "numberLabel": "Цифра {label}",
   "@numberLabel": {
     "placeholders": {
       "label": {
